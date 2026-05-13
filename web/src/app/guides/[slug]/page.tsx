@@ -1,10 +1,20 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { marked } from 'marked'
-import { getAllGuides, readSkillContent } from '@/lib/content'
+import {
+  getAllGuides,
+  readSkillContent,
+  resolveGuideFilePath,
+  SUPPORTED_LANGS,
+  LANG_LABELS,
+  type Lang,
+} from '@/lib/content'
 import type { Metadata } from 'next'
 
-type Props = { params: Promise<{ slug: string }> }
+type Props = {
+  params: Promise<{ slug: string }>
+  searchParams: Promise<{ lang?: string }>
+}
 
 export async function generateStaticParams() {
   const guides = getAllGuides()
@@ -19,22 +29,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return { title: guide.title }
 }
 
-const LANGUAGE_MAP: Record<string, string> = {
-  en: 'English',
-  fr: 'Français',
-  de: 'Deutsch',
-  nl: 'Nederlands',
-  es: 'Español',
-}
-
-export default async function GuidePage({ params }: Props) {
+export default async function GuidePage({ params, searchParams }: Props) {
   const { slug } = await params
+  const { lang: langParam } = await searchParams
+  const lang: Lang = SUPPORTED_LANGS.includes(langParam as Lang) ? (langParam as Lang) : 'en'
+
   const guides = getAllGuides()
   const guide = guides.find(g => g.slug === slug)
   if (!guide) notFound()
 
-  const content = readSkillContent(guide.filePath)
+  const filePath = resolveGuideFilePath(slug, lang)
+  const content = readSkillContent(filePath)
   const html = await marked(content)
+
+  const guideUrl = `/guides/${slug}`
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-10">
@@ -46,15 +54,26 @@ export default async function GuidePage({ params }: Props) {
       </div>
 
       {/* Header */}
-      <div className="neo-card p-6 mb-8 bg-orange-500">
+      <div className="neo-card p-6 mb-6 bg-orange-500">
         <h1 className="text-3xl font-black">{guide.title}</h1>
-        <div className="flex gap-2 mt-3 flex-wrap">
-          {Object.entries(LANGUAGE_MAP).map(([code, label]) => (
-            <span key={code} className={`text-xs font-bold px-2 py-1 border border-black ${code === 'en' ? 'bg-black text-orange-100' : 'bg-white text-black'}`}>
-              {label}
-            </span>
-          ))}
-        </div>
+      </div>
+
+      {/* Language switcher */}
+      <div className="flex items-center gap-2 mb-8 flex-wrap">
+        <span className="text-sm font-bold text-gray-500">Language:</span>
+        {SUPPORTED_LANGS.map(l => (
+          <Link
+            key={l}
+            href={l === 'en' ? guideUrl : `${guideUrl}?lang=${l}`}
+            className={`text-xs font-bold px-3 py-1.5 border-2 border-black transition-colors ${
+              lang === l
+                ? 'bg-black text-white'
+                : 'bg-white text-black hover:bg-orange-500 hover:text-white'
+            }`}
+          >
+            {LANG_LABELS[l]}
+          </Link>
+        ))}
       </div>
 
       {/* Content */}

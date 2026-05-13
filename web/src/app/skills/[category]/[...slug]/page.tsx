@@ -1,10 +1,22 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { marked } from 'marked'
-import { getAllSkills, readSkillContent, CATEGORY_LABELS, SKILL_CATEGORIES_LIST } from '@/lib/content'
+import {
+  getAllSkills,
+  readSkillContent,
+  CATEGORY_LABELS,
+  SKILL_CATEGORIES_LIST,
+  SUPPORTED_LANGS,
+  LANG_LABELS,
+  resolveSkillFilePath,
+  type Lang,
+} from '@/lib/content'
 import type { Metadata } from 'next'
 
-type Props = { params: Promise<{ category: string; slug: string[] }> }
+type Props = {
+  params: Promise<{ category: string; slug: string[] }>
+  searchParams: Promise<{ lang?: string }>
+}
 
 export async function generateStaticParams() {
   const skills = getAllSkills()
@@ -17,21 +29,26 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { category, slug } = await params
   const skills = getAllSkills()
-  const slugStr = slug.join('/')
-  const skill = skills.find(s => s.category === category && s.slug === slugStr)
+  const skill = skills.find(s => s.category === category && s.slug === slug.join('/'))
   if (!skill) return { title: 'Not Found' }
   return { title: `${skill.title} — ${CATEGORY_LABELS[category]} Skill` }
 }
 
-export default async function SkillPage({ params }: Props) {
+export default async function SkillPage({ params, searchParams }: Props) {
   const { category, slug } = await params
+  const { lang: langParam } = await searchParams
+  const lang: Lang = SUPPORTED_LANGS.includes(langParam as Lang) ? (langParam as Lang) : 'en'
+
   const slugStr = slug.join('/')
   const skills = getAllSkills()
   const skill = skills.find(s => s.category === category && s.slug === slugStr)
   if (!skill) notFound()
 
-  const content = readSkillContent(skill.filePath)
+  const filePath = resolveSkillFilePath(skill.filePath, lang)
+  const content = readSkillContent(filePath)
   const html = await marked(content)
+
+  const skillUrl = `/skills/${category}/${slugStr}`
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-10">
@@ -47,30 +64,33 @@ export default async function SkillPage({ params }: Props) {
       </div>
 
       {/* Header */}
-      <div className="neo-card p-6 mb-8 bg-orange-500">
+      <div className="neo-card p-6 mb-6 bg-orange-500">
         <div className="flex flex-col md:flex-row md:items-start justify-between gap-4">
           <div>
             <h1 className="text-3xl font-black">{skill.title}</h1>
             <p className="font-mono text-sm text-gray-700 mt-2">/{category}/{slugStr}</p>
           </div>
-          <div className="flex flex-col gap-2 shrink-0">
-            <span className="neo-btn px-3 py-1 bg-black text-orange-100 text-xs text-center">
-              {CATEGORY_LABELS[category]}
-            </span>
-          </div>
+          <span className="neo-btn px-3 py-1 bg-black text-white text-xs text-center shrink-0">
+            {CATEGORY_LABELS[category]}
+          </span>
         </div>
       </div>
 
       {/* Language switcher */}
       <div className="flex items-center gap-2 mb-8 flex-wrap">
         <span className="text-sm font-bold text-gray-500">Language:</span>
-        {['EN', 'FR', 'DE', 'NL', 'ES'].map(lang => (
-          <span
-            key={lang}
-            className={`text-xs font-bold px-2 py-1 border border-black ${lang === 'EN' ? 'bg-black text-orange-100' : 'bg-white text-black cursor-not-allowed opacity-50'}`}
+        {SUPPORTED_LANGS.map(l => (
+          <Link
+            key={l}
+            href={l === 'en' ? skillUrl : `${skillUrl}?lang=${l}`}
+            className={`text-xs font-bold px-3 py-1.5 border-2 border-black transition-colors ${
+              lang === l
+                ? 'bg-black text-white'
+                : 'bg-white text-black hover:bg-orange-500 hover:text-white'
+            }`}
           >
-            {lang}
-          </span>
+            {LANG_LABELS[l]}
+          </Link>
         ))}
       </div>
 

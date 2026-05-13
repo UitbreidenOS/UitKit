@@ -100,6 +100,42 @@ export function readSkillContent(filePath: string): string {
   return fs.existsSync(filePath) ? fs.readFileSync(filePath, 'utf-8') : ''
 }
 
+export const SUPPORTED_LANGS = ['en', 'fr', 'de', 'nl', 'es'] as const
+export type Lang = typeof SUPPORTED_LANGS[number]
+
+export const LANG_LABELS: Record<Lang, string> = {
+  en: 'EN',
+  fr: 'FR',
+  de: 'DE',
+  nl: 'NL',
+  es: 'ES',
+}
+
+/**
+ * Resolves the file path for a skill in a given language.
+ * Translated files live in a `{lang}/` subdirectory next to the English file.
+ * Falls back to English if the translation doesn't exist.
+ */
+export function resolveSkillFilePath(englishFilePath: string, lang: Lang): string {
+  if (lang === 'en') return englishFilePath
+  const dir = path.dirname(englishFilePath)
+  const filename = path.basename(englishFilePath)
+  const translated = path.join(dir, lang, filename)
+  return fs.existsSync(translated) ? translated : englishFilePath
+}
+
+/**
+ * Resolves the file path for a guide in a given language.
+ */
+export function resolveGuideFilePath(slug: string, lang: Lang): string {
+  if (lang === 'en') {
+    return path.join(REPO_ROOT, 'guides', `${slug}.md`)
+  }
+  const translated = path.join(REPO_ROOT, 'guides', lang, `${slug}.md`)
+  const fallback = path.join(REPO_ROOT, 'guides', `${slug}.md`)
+  return fs.existsSync(translated) ? translated : fallback
+}
+
 export function getAllGuides(lang: string = 'en'): GuideMeta[] {
   const dir = lang === 'en'
     ? path.join(REPO_ROOT, 'guides')
