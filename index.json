@@ -1,0 +1,1745 @@
+{
+  "version": "0.2.0",
+  "generated": "2026-05-16T16:48:18.892Z",
+  "skills": [
+    {
+      "id": "backend/dotnet/csharp",
+      "category": "backend",
+      "lang": "en",
+      "title": "C#/.NET Skill",
+      "file": "skills/backend/dotnet/csharp.md"
+    },
+    {
+      "id": "backend/dotnet/csharp",
+      "category": "backend",
+      "lang": "de",
+      "title": "C#/.NET Skill",
+      "file": "skills/backend/dotnet/de/csharp.md"
+    },
+    {
+      "id": "backend/dotnet/csharp",
+      "category": "backend",
+      "lang": "es",
+      "title": "Skill de C#/.NET",
+      "file": "skills/backend/dotnet/es/csharp.md"
+    },
+    {
+      "id": "backend/dotnet/csharp",
+      "category": "backend",
+      "lang": "fr",
+      "title": "Compétence C#/.NET",
+      "file": "skills/backend/dotnet/fr/csharp.md"
+    },
+    {
+      "id": "backend/dotnet/csharp",
+      "category": "backend",
+      "lang": "nl",
+      "title": "C#/.NET Skill",
+      "file": "skills/backend/dotnet/nl/csharp.md"
+    },
+    {
+      "id": "backend/go/go",
+      "category": "backend",
+      "lang": "de",
+      "title": "Go Skill",
+      "file": "skills/backend/go/de/go.md"
+    },
+    {
+      "id": "backend/go/go",
+      "category": "backend",
+      "lang": "es",
+      "title": "Skill de Go",
+      "file": "skills/backend/go/es/go.md"
+    },
+    {
+      "id": "backend/go/go",
+      "category": "backend",
+      "lang": "fr",
+      "title": "Compétence Go",
+      "file": "skills/backend/go/fr/go.md"
+    },
+    {
+      "id": "backend/go/go",
+      "category": "backend",
+      "lang": "en",
+      "title": "Go Skill",
+      "file": "skills/backend/go/go.md"
+    },
+    {
+      "id": "backend/go/go",
+      "category": "backend",
+      "lang": "nl",
+      "title": "Go Skill",
+      "file": "skills/backend/go/nl/go.md"
+    },
+    {
+      "id": "backend/java/spring-boot",
+      "category": "backend",
+      "lang": "en",
+      "title": "Spring Boot Skill",
+      "file": "skills/backend/java/spring-boot.md"
+    },
+    {
+      "id": "backend/nodejs/nestjs",
+      "category": "backend",
+      "lang": "de",
+      "title": "NestJS Skill",
+      "file": "skills/backend/nodejs/de/nestjs.md"
+    },
+    {
+      "id": "backend/nodejs/nextjs",
+      "category": "backend",
+      "lang": "de",
+      "title": "Next.js Skill",
+      "file": "skills/backend/nodejs/de/nextjs.md"
+    },
+    {
+      "id": "backend/nodejs/nestjs",
+      "category": "backend",
+      "lang": "es",
+      "title": "Skill de NestJS",
+      "file": "skills/backend/nodejs/es/nestjs.md"
+    },
+    {
+      "id": "backend/nodejs/nextjs",
+      "category": "backend",
+      "lang": "es",
+      "title": "Skill de Next.js",
+      "file": "skills/backend/nodejs/es/nextjs.md"
+    },
+    {
+      "id": "backend/nodejs/nestjs",
+      "category": "backend",
+      "lang": "fr",
+      "title": "Compétence NestJS",
+      "file": "skills/backend/nodejs/fr/nestjs.md"
+    },
+    {
+      "id": "backend/nodejs/nextjs",
+      "category": "backend",
+      "lang": "fr",
+      "title": "Compétence Next.js",
+      "file": "skills/backend/nodejs/fr/nextjs.md"
+    },
+    {
+      "id": "backend/nodejs/nestjs",
+      "category": "backend",
+      "lang": "en",
+      "title": "NestJS Skill",
+      "file": "skills/backend/nodejs/nestjs.md"
+    },
+    {
+      "id": "backend/nodejs/nextjs",
+      "category": "backend",
+      "lang": "en",
+      "title": "Next.js Skill",
+      "file": "skills/backend/nodejs/nextjs.md"
+    },
+    {
+      "id": "backend/nodejs/nestjs",
+      "category": "backend",
+      "lang": "nl",
+      "title": "NestJS Skill",
+      "file": "skills/backend/nodejs/nl/nestjs.md"
+    },
+    {
+      "id": "backend/nodejs/nextjs",
+      "category": "backend",
+      "lang": "nl",
+      "title": "Next.js Skill",
+      "file": "skills/backend/nodejs/nl/nextjs.md"
+    },
+    {
+      "id": "backend/python/django",
+      "category": "backend",
+      "lang": "de",
+      "title": "Django Skill",
+      "file": "skills/backend/python/de/django.md"
+    },
+    {
+      "id": "backend/python/fastapi",
+      "category": "backend",
+      "lang": "de",
+      "title": "FastAPI Skill",
+      "file": "skills/backend/python/de/fastapi.md"
+    },
+    {
+      "id": "backend/python/django",
+      "category": "backend",
+      "lang": "en",
+      "title": "Django Skill",
+      "file": "skills/backend/python/django.md"
+    },
+    {
+      "id": "backend/python/django",
+      "category": "backend",
+      "lang": "es",
+      "title": "Skill de Django",
+      "file": "skills/backend/python/es/django.md"
+    },
+    {
+      "id": "backend/python/fastapi",
+      "category": "backend",
+      "lang": "es",
+      "title": "Skill de FastAPI",
+      "file": "skills/backend/python/es/fastapi.md"
+    },
+    {
+      "id": "backend/python/fastapi",
+      "category": "backend",
+      "lang": "en",
+      "title": "FastAPI Skill",
+      "file": "skills/backend/python/fastapi.md"
+    },
+    {
+      "id": "backend/python/django",
+      "category": "backend",
+      "lang": "fr",
+      "title": "Compétence Django",
+      "file": "skills/backend/python/fr/django.md"
+    },
+    {
+      "id": "backend/python/fastapi",
+      "category": "backend",
+      "lang": "fr",
+      "title": "Compétence FastAPI",
+      "file": "skills/backend/python/fr/fastapi.md"
+    },
+    {
+      "id": "backend/python/django",
+      "category": "backend",
+      "lang": "nl",
+      "title": "Django Skill",
+      "file": "skills/backend/python/nl/django.md"
+    },
+    {
+      "id": "backend/python/fastapi",
+      "category": "backend",
+      "lang": "nl",
+      "title": "FastAPI Skill",
+      "file": "skills/backend/python/nl/fastapi.md"
+    },
+    {
+      "id": "devops-infra/docker",
+      "category": "devops-infra",
+      "lang": "de",
+      "title": "Docker Skill",
+      "file": "skills/devops-infra/de/docker.md"
+    },
+    {
+      "id": "devops-infra/github-actions",
+      "category": "devops-infra",
+      "lang": "de",
+      "title": "GitHub Actions Skill",
+      "file": "skills/devops-infra/de/github-actions.md"
+    },
+    {
+      "id": "devops-infra/kubernetes",
+      "category": "devops-infra",
+      "lang": "de",
+      "title": "Kubernetes Skill",
+      "file": "skills/devops-infra/de/kubernetes.md"
+    },
+    {
+      "id": "devops-infra/terraform",
+      "category": "devops-infra",
+      "lang": "de",
+      "title": "Terraform Skill",
+      "file": "skills/devops-infra/de/terraform.md"
+    },
+    {
+      "id": "devops-infra/docker",
+      "category": "devops-infra",
+      "lang": "en",
+      "title": "Docker Skill",
+      "file": "skills/devops-infra/docker.md"
+    },
+    {
+      "id": "devops-infra/docker",
+      "category": "devops-infra",
+      "lang": "es",
+      "title": "Skill de Docker",
+      "file": "skills/devops-infra/es/docker.md"
+    },
+    {
+      "id": "devops-infra/github-actions",
+      "category": "devops-infra",
+      "lang": "es",
+      "title": "Skill de GitHub Actions",
+      "file": "skills/devops-infra/es/github-actions.md"
+    },
+    {
+      "id": "devops-infra/kubernetes",
+      "category": "devops-infra",
+      "lang": "es",
+      "title": "Skill de Kubernetes",
+      "file": "skills/devops-infra/es/kubernetes.md"
+    },
+    {
+      "id": "devops-infra/terraform",
+      "category": "devops-infra",
+      "lang": "es",
+      "title": "Skill de Terraform",
+      "file": "skills/devops-infra/es/terraform.md"
+    },
+    {
+      "id": "devops-infra/docker",
+      "category": "devops-infra",
+      "lang": "fr",
+      "title": "Compétence Docker",
+      "file": "skills/devops-infra/fr/docker.md"
+    },
+    {
+      "id": "devops-infra/github-actions",
+      "category": "devops-infra",
+      "lang": "fr",
+      "title": "Compétence GitHub Actions",
+      "file": "skills/devops-infra/fr/github-actions.md"
+    },
+    {
+      "id": "devops-infra/kubernetes",
+      "category": "devops-infra",
+      "lang": "fr",
+      "title": "Compétence Kubernetes",
+      "file": "skills/devops-infra/fr/kubernetes.md"
+    },
+    {
+      "id": "devops-infra/terraform",
+      "category": "devops-infra",
+      "lang": "fr",
+      "title": "Compétence Terraform",
+      "file": "skills/devops-infra/fr/terraform.md"
+    },
+    {
+      "id": "devops-infra/github-actions",
+      "category": "devops-infra",
+      "lang": "en",
+      "title": "GitHub Actions Skill",
+      "file": "skills/devops-infra/github-actions.md"
+    },
+    {
+      "id": "devops-infra/kubernetes",
+      "category": "devops-infra",
+      "lang": "en",
+      "title": "Kubernetes Skill",
+      "file": "skills/devops-infra/kubernetes.md"
+    },
+    {
+      "id": "devops-infra/docker",
+      "category": "devops-infra",
+      "lang": "nl",
+      "title": "Docker Skill",
+      "file": "skills/devops-infra/nl/docker.md"
+    },
+    {
+      "id": "devops-infra/github-actions",
+      "category": "devops-infra",
+      "lang": "nl",
+      "title": "GitHub Actions Skill",
+      "file": "skills/devops-infra/nl/github-actions.md"
+    },
+    {
+      "id": "devops-infra/kubernetes",
+      "category": "devops-infra",
+      "lang": "nl",
+      "title": "Kubernetes Skill",
+      "file": "skills/devops-infra/nl/kubernetes.md"
+    },
+    {
+      "id": "devops-infra/terraform",
+      "category": "devops-infra",
+      "lang": "nl",
+      "title": "Terraform Skill",
+      "file": "skills/devops-infra/nl/terraform.md"
+    },
+    {
+      "id": "devops-infra/terraform",
+      "category": "devops-infra",
+      "lang": "en",
+      "title": "Terraform Skill",
+      "file": "skills/devops-infra/terraform.md"
+    },
+    {
+      "id": "data-ml/dbt-data-pipelines",
+      "category": "data-ml",
+      "lang": "en",
+      "title": "dbt Data Pipelines Skill",
+      "file": "skills/data-ml/dbt-data-pipelines.md"
+    },
+    {
+      "id": "data-ml/dbt-data-pipelines",
+      "category": "data-ml",
+      "lang": "de",
+      "title": "dbt Data Pipelines Skill",
+      "file": "skills/data-ml/de/dbt-data-pipelines.md"
+    },
+    {
+      "id": "data-ml/pandas-polars",
+      "category": "data-ml",
+      "lang": "de",
+      "title": "Pandas / Polars Skill",
+      "file": "skills/data-ml/de/pandas-polars.md"
+    },
+    {
+      "id": "data-ml/pytorch-tensorflow",
+      "category": "data-ml",
+      "lang": "de",
+      "title": "PyTorch / TensorFlow Skill",
+      "file": "skills/data-ml/de/pytorch-tensorflow.md"
+    },
+    {
+      "id": "data-ml/dbt-data-pipelines",
+      "category": "data-ml",
+      "lang": "es",
+      "title": "Skill de dbt Data Pipelines",
+      "file": "skills/data-ml/es/dbt-data-pipelines.md"
+    },
+    {
+      "id": "data-ml/pandas-polars",
+      "category": "data-ml",
+      "lang": "es",
+      "title": "Skill de Pandas / Polars",
+      "file": "skills/data-ml/es/pandas-polars.md"
+    },
+    {
+      "id": "data-ml/pytorch-tensorflow",
+      "category": "data-ml",
+      "lang": "es",
+      "title": "Skill de PyTorch / TensorFlow",
+      "file": "skills/data-ml/es/pytorch-tensorflow.md"
+    },
+    {
+      "id": "data-ml/dbt-data-pipelines",
+      "category": "data-ml",
+      "lang": "fr",
+      "title": "Compétence dbt Data Pipelines",
+      "file": "skills/data-ml/fr/dbt-data-pipelines.md"
+    },
+    {
+      "id": "data-ml/pandas-polars",
+      "category": "data-ml",
+      "lang": "fr",
+      "title": "Compétence Pandas / Polars",
+      "file": "skills/data-ml/fr/pandas-polars.md"
+    },
+    {
+      "id": "data-ml/pytorch-tensorflow",
+      "category": "data-ml",
+      "lang": "fr",
+      "title": "Compétence PyTorch / TensorFlow",
+      "file": "skills/data-ml/fr/pytorch-tensorflow.md"
+    },
+    {
+      "id": "data-ml/dbt-data-pipelines",
+      "category": "data-ml",
+      "lang": "nl",
+      "title": "dbt Data Pipelines Skill",
+      "file": "skills/data-ml/nl/dbt-data-pipelines.md"
+    },
+    {
+      "id": "data-ml/pandas-polars",
+      "category": "data-ml",
+      "lang": "nl",
+      "title": "Pandas / Polars Skill",
+      "file": "skills/data-ml/nl/pandas-polars.md"
+    },
+    {
+      "id": "data-ml/pytorch-tensorflow",
+      "category": "data-ml",
+      "lang": "nl",
+      "title": "PyTorch / TensorFlow Skill",
+      "file": "skills/data-ml/nl/pytorch-tensorflow.md"
+    },
+    {
+      "id": "data-ml/pandas-polars",
+      "category": "data-ml",
+      "lang": "en",
+      "title": "Pandas / Polars Skill",
+      "file": "skills/data-ml/pandas-polars.md"
+    },
+    {
+      "id": "data-ml/pytorch-tensorflow",
+      "category": "data-ml",
+      "lang": "en",
+      "title": "PyTorch / TensorFlow Skill",
+      "file": "skills/data-ml/pytorch-tensorflow.md"
+    },
+    {
+      "id": "database/graphql",
+      "category": "database",
+      "lang": "de",
+      "title": "GraphQL Skill",
+      "file": "skills/database/de/graphql.md"
+    },
+    {
+      "id": "database/graphql",
+      "category": "database",
+      "lang": "es",
+      "title": "Skill de GraphQL",
+      "file": "skills/database/es/graphql.md"
+    },
+    {
+      "id": "database/graphql",
+      "category": "database",
+      "lang": "fr",
+      "title": "Compétence GraphQL",
+      "file": "skills/database/fr/graphql.md"
+    },
+    {
+      "id": "database/graphql",
+      "category": "database",
+      "lang": "en",
+      "title": "GraphQL Skill",
+      "file": "skills/database/graphql.md"
+    },
+    {
+      "id": "database/graphql",
+      "category": "database",
+      "lang": "nl",
+      "title": "GraphQL Skill",
+      "file": "skills/database/nl/graphql.md"
+    },
+    {
+      "id": "finance-payments/stripe",
+      "category": "finance-payments",
+      "lang": "de",
+      "title": "Stripe Integration Skill",
+      "file": "skills/finance-payments/de/stripe.md"
+    },
+    {
+      "id": "finance-payments/stripe",
+      "category": "finance-payments",
+      "lang": "es",
+      "title": "Skill de Integración con Stripe",
+      "file": "skills/finance-payments/es/stripe.md"
+    },
+    {
+      "id": "finance-payments/stripe",
+      "category": "finance-payments",
+      "lang": "fr",
+      "title": "Compétence Intégration Stripe",
+      "file": "skills/finance-payments/fr/stripe.md"
+    },
+    {
+      "id": "finance-payments/stripe",
+      "category": "finance-payments",
+      "lang": "nl",
+      "title": "Stripe Integratie Skill",
+      "file": "skills/finance-payments/nl/stripe.md"
+    },
+    {
+      "id": "finance-payments/stripe",
+      "category": "finance-payments",
+      "lang": "en",
+      "title": "Stripe Integration Skill",
+      "file": "skills/finance-payments/stripe.md"
+    },
+    {
+      "id": "ai-engineering/agent-construction",
+      "category": "ai-engineering",
+      "lang": "en",
+      "title": "Agent Construction Skill",
+      "file": "skills/ai-engineering/agent-construction.md"
+    },
+    {
+      "id": "ai-engineering/claude-api",
+      "category": "ai-engineering",
+      "lang": "en",
+      "title": "Claude API Skill",
+      "file": "skills/ai-engineering/claude-api.md"
+    },
+    {
+      "id": "ai-engineering/agent-construction",
+      "category": "ai-engineering",
+      "lang": "de",
+      "title": "Agent Construction Skill",
+      "file": "skills/ai-engineering/de/agent-construction.md"
+    },
+    {
+      "id": "ai-engineering/claude-api",
+      "category": "ai-engineering",
+      "lang": "de",
+      "title": "Claude API Skill",
+      "file": "skills/ai-engineering/de/claude-api.md"
+    },
+    {
+      "id": "ai-engineering/agent-construction",
+      "category": "ai-engineering",
+      "lang": "es",
+      "title": "Skill de Construcción de Agentes",
+      "file": "skills/ai-engineering/es/agent-construction.md"
+    },
+    {
+      "id": "ai-engineering/claude-api",
+      "category": "ai-engineering",
+      "lang": "es",
+      "title": "Skill de Claude API",
+      "file": "skills/ai-engineering/es/claude-api.md"
+    },
+    {
+      "id": "ai-engineering/agent-construction",
+      "category": "ai-engineering",
+      "lang": "fr",
+      "title": "Compétence Construction d'Agents",
+      "file": "skills/ai-engineering/fr/agent-construction.md"
+    },
+    {
+      "id": "ai-engineering/claude-api",
+      "category": "ai-engineering",
+      "lang": "fr",
+      "title": "Compétence API Claude",
+      "file": "skills/ai-engineering/fr/claude-api.md"
+    },
+    {
+      "id": "ai-engineering/agent-construction",
+      "category": "ai-engineering",
+      "lang": "nl",
+      "title": "Agent Construction Skill",
+      "file": "skills/ai-engineering/nl/agent-construction.md"
+    },
+    {
+      "id": "ai-engineering/claude-api",
+      "category": "ai-engineering",
+      "lang": "nl",
+      "title": "Claude API Skill",
+      "file": "skills/ai-engineering/nl/claude-api.md"
+    },
+    {
+      "id": "productivity/caveman",
+      "category": "productivity",
+      "lang": "en",
+      "title": "Caveman Mode Skill",
+      "file": "skills/productivity/caveman.md"
+    }
+  ],
+  "agents": [
+    {
+      "id": "build-resolvers/python-resolver",
+      "lang": "de",
+      "title": "Python Build Resolver Agent",
+      "file": "agents/build-resolvers/de/python-resolver.md"
+    },
+    {
+      "id": "build-resolvers/typescript-resolver",
+      "lang": "de",
+      "title": "TypeScript Build Resolver Agent",
+      "file": "agents/build-resolvers/de/typescript-resolver.md"
+    },
+    {
+      "id": "build-resolvers/python-resolver",
+      "lang": "es",
+      "title": "Agente Resolvedor de Builds Python",
+      "file": "agents/build-resolvers/es/python-resolver.md"
+    },
+    {
+      "id": "build-resolvers/typescript-resolver",
+      "lang": "es",
+      "title": "Agente Resolvedor de Builds TypeScript",
+      "file": "agents/build-resolvers/es/typescript-resolver.md"
+    },
+    {
+      "id": "build-resolvers/python-resolver",
+      "lang": "fr",
+      "title": "Agent Résolveur de Build Python",
+      "file": "agents/build-resolvers/fr/python-resolver.md"
+    },
+    {
+      "id": "build-resolvers/typescript-resolver",
+      "lang": "fr",
+      "title": "Agent Résolveur de Build TypeScript",
+      "file": "agents/build-resolvers/fr/typescript-resolver.md"
+    },
+    {
+      "id": "build-resolvers/python-resolver",
+      "lang": "nl",
+      "title": "Python Build Resolver Agent",
+      "file": "agents/build-resolvers/nl/python-resolver.md"
+    },
+    {
+      "id": "build-resolvers/typescript-resolver",
+      "lang": "nl",
+      "title": "TypeScript Build Resolver Agent",
+      "file": "agents/build-resolvers/nl/typescript-resolver.md"
+    },
+    {
+      "id": "build-resolvers/python-resolver",
+      "lang": "en",
+      "title": "Python Build Resolver Agent",
+      "file": "agents/build-resolvers/python-resolver.md"
+    },
+    {
+      "id": "build-resolvers/typescript-resolver",
+      "lang": "en",
+      "title": "TypeScript Build Resolver Agent",
+      "file": "agents/build-resolvers/typescript-resolver.md"
+    },
+    {
+      "id": "core/architect",
+      "lang": "en",
+      "title": "Architect Agent",
+      "file": "agents/core/architect.md"
+    },
+    {
+      "id": "core/code-reviewer",
+      "lang": "en",
+      "title": "Code Reviewer Agent",
+      "file": "agents/core/code-reviewer.md"
+    },
+    {
+      "id": "core/architect",
+      "lang": "de",
+      "title": "Architect Agent",
+      "file": "agents/core/de/architect.md"
+    },
+    {
+      "id": "core/code-reviewer",
+      "lang": "de",
+      "title": "Code Reviewer Agent",
+      "file": "agents/core/de/code-reviewer.md"
+    },
+    {
+      "id": "core/planner",
+      "lang": "de",
+      "title": "Planner Agent",
+      "file": "agents/core/de/planner.md"
+    },
+    {
+      "id": "core/security-reviewer",
+      "lang": "de",
+      "title": "Security Reviewer Agent",
+      "file": "agents/core/de/security-reviewer.md"
+    },
+    {
+      "id": "core/architect",
+      "lang": "es",
+      "title": "Agente Arquitecto",
+      "file": "agents/core/es/architect.md"
+    },
+    {
+      "id": "core/code-reviewer",
+      "lang": "es",
+      "title": "Agente Revisor de Código",
+      "file": "agents/core/es/code-reviewer.md"
+    },
+    {
+      "id": "core/planner",
+      "lang": "es",
+      "title": "Agente Planificador",
+      "file": "agents/core/es/planner.md"
+    },
+    {
+      "id": "core/security-reviewer",
+      "lang": "es",
+      "title": "Agente Revisor de Seguridad",
+      "file": "agents/core/es/security-reviewer.md"
+    },
+    {
+      "id": "core/architect",
+      "lang": "fr",
+      "title": "Agent Architecte",
+      "file": "agents/core/fr/architect.md"
+    },
+    {
+      "id": "core/code-reviewer",
+      "lang": "fr",
+      "title": "Agent Réviseur de Code",
+      "file": "agents/core/fr/code-reviewer.md"
+    },
+    {
+      "id": "core/planner",
+      "lang": "fr",
+      "title": "Agent Planificateur",
+      "file": "agents/core/fr/planner.md"
+    },
+    {
+      "id": "core/security-reviewer",
+      "lang": "fr",
+      "title": "Agent Réviseur de Sécurité",
+      "file": "agents/core/fr/security-reviewer.md"
+    },
+    {
+      "id": "core/architect",
+      "lang": "nl",
+      "title": "Architect Agent",
+      "file": "agents/core/nl/architect.md"
+    },
+    {
+      "id": "core/code-reviewer",
+      "lang": "nl",
+      "title": "Code Reviewer Agent",
+      "file": "agents/core/nl/code-reviewer.md"
+    },
+    {
+      "id": "core/planner",
+      "lang": "nl",
+      "title": "Planner Agent",
+      "file": "agents/core/nl/planner.md"
+    },
+    {
+      "id": "core/security-reviewer",
+      "lang": "nl",
+      "title": "Security Reviewer Agent",
+      "file": "agents/core/nl/security-reviewer.md"
+    },
+    {
+      "id": "core/planner",
+      "lang": "en",
+      "title": "Planner Agent",
+      "file": "agents/core/planner.md"
+    },
+    {
+      "id": "core/security-reviewer",
+      "lang": "en",
+      "title": "Security Reviewer Agent",
+      "file": "agents/core/security-reviewer.md"
+    }
+  ],
+  "hooks": [
+    {
+      "id": "lifecycle/cost-tracker",
+      "category": "lifecycle",
+      "title": "Hook: Cost Tracker",
+      "file": "hooks/lifecycle/cost-tracker.md"
+    },
+    {
+      "id": "lifecycle/pre-compact-save",
+      "category": "lifecycle",
+      "title": "Hook: Pre-Compact Save",
+      "file": "hooks/lifecycle/pre-compact-save.md"
+    },
+    {
+      "id": "lifecycle/session-start",
+      "category": "lifecycle",
+      "title": "Hook: Session Start",
+      "file": "hooks/lifecycle/session-start.md"
+    },
+    {
+      "id": "post-tool-use/audit-log",
+      "category": "post-tool-use",
+      "title": "Hook: Audit Log",
+      "file": "hooks/post-tool-use/audit-log.md"
+    },
+    {
+      "id": "post-tool-use/prettier",
+      "category": "post-tool-use",
+      "title": "Hook: Auto-Prettier",
+      "file": "hooks/post-tool-use/prettier.md"
+    },
+    {
+      "id": "pre-tool-use/block-dangerous",
+      "category": "pre-tool-use",
+      "title": "Hook: Block Dangerous Commands",
+      "file": "hooks/pre-tool-use/block-dangerous.md"
+    },
+    {
+      "id": "pre-tool-use/git-push-confirm",
+      "category": "pre-tool-use",
+      "title": "Hook: Git Push Confirmation",
+      "file": "hooks/pre-tool-use/git-push-confirm.md"
+    }
+  ],
+  "rules": [
+    {
+      "id": "common/coding-style",
+      "lang": "en",
+      "title": "Coding Style Rules",
+      "file": "rules/common/coding-style.md"
+    },
+    {
+      "id": "common/coding-style",
+      "lang": "de",
+      "title": "Coding Style Regeln",
+      "file": "rules/common/de/coding-style.md"
+    },
+    {
+      "id": "common/git",
+      "lang": "de",
+      "title": "Git Regeln",
+      "file": "rules/common/de/git.md"
+    },
+    {
+      "id": "common/performance",
+      "lang": "de",
+      "title": "Performance-Regeln",
+      "file": "rules/common/de/performance.md"
+    },
+    {
+      "id": "common/security",
+      "lang": "de",
+      "title": "Sicherheitsregeln",
+      "file": "rules/common/de/security.md"
+    },
+    {
+      "id": "common/testing",
+      "lang": "de",
+      "title": "Test-Regeln",
+      "file": "rules/common/de/testing.md"
+    },
+    {
+      "id": "common/coding-style",
+      "lang": "es",
+      "title": "Reglas de Estilo de Código",
+      "file": "rules/common/es/coding-style.md"
+    },
+    {
+      "id": "common/git",
+      "lang": "es",
+      "title": "Reglas de Git",
+      "file": "rules/common/es/git.md"
+    },
+    {
+      "id": "common/performance",
+      "lang": "es",
+      "title": "Reglas de Rendimiento",
+      "file": "rules/common/es/performance.md"
+    },
+    {
+      "id": "common/security",
+      "lang": "es",
+      "title": "Reglas de Seguridad",
+      "file": "rules/common/es/security.md"
+    },
+    {
+      "id": "common/testing",
+      "lang": "es",
+      "title": "Reglas de Testing",
+      "file": "rules/common/es/testing.md"
+    },
+    {
+      "id": "common/coding-style",
+      "lang": "fr",
+      "title": "Règles de Style de Code",
+      "file": "rules/common/fr/coding-style.md"
+    },
+    {
+      "id": "common/git",
+      "lang": "fr",
+      "title": "Règles Git",
+      "file": "rules/common/fr/git.md"
+    },
+    {
+      "id": "common/performance",
+      "lang": "fr",
+      "title": "Règles de Performance",
+      "file": "rules/common/fr/performance.md"
+    },
+    {
+      "id": "common/security",
+      "lang": "fr",
+      "title": "Règles de Sécurité",
+      "file": "rules/common/fr/security.md"
+    },
+    {
+      "id": "common/testing",
+      "lang": "fr",
+      "title": "Règles de Tests",
+      "file": "rules/common/fr/testing.md"
+    },
+    {
+      "id": "common/git",
+      "lang": "en",
+      "title": "Git Rules",
+      "file": "rules/common/git.md"
+    },
+    {
+      "id": "common/coding-style",
+      "lang": "nl",
+      "title": "Codeerstijlregels",
+      "file": "rules/common/nl/coding-style.md"
+    },
+    {
+      "id": "common/git",
+      "lang": "nl",
+      "title": "Git-regels",
+      "file": "rules/common/nl/git.md"
+    },
+    {
+      "id": "common/performance",
+      "lang": "nl",
+      "title": "Prestatieregels",
+      "file": "rules/common/nl/performance.md"
+    },
+    {
+      "id": "common/security",
+      "lang": "nl",
+      "title": "Beveiligingsregels",
+      "file": "rules/common/nl/security.md"
+    },
+    {
+      "id": "common/testing",
+      "lang": "nl",
+      "title": "Testregels",
+      "file": "rules/common/nl/testing.md"
+    },
+    {
+      "id": "common/performance",
+      "lang": "en",
+      "title": "Performance Rules",
+      "file": "rules/common/performance.md"
+    },
+    {
+      "id": "common/security",
+      "lang": "en",
+      "title": "Security Rules",
+      "file": "rules/common/security.md"
+    },
+    {
+      "id": "common/testing",
+      "lang": "en",
+      "title": "Testing Rules",
+      "file": "rules/common/testing.md"
+    },
+    {
+      "id": "language-specific/go",
+      "lang": "de",
+      "title": "Go Regeln",
+      "file": "rules/language-specific/de/go.md"
+    },
+    {
+      "id": "language-specific/python",
+      "lang": "de",
+      "title": "Python Regeln",
+      "file": "rules/language-specific/de/python.md"
+    },
+    {
+      "id": "language-specific/typescript",
+      "lang": "de",
+      "title": "TypeScript Regeln",
+      "file": "rules/language-specific/de/typescript.md"
+    },
+    {
+      "id": "language-specific/go",
+      "lang": "es",
+      "title": "Reglas de Go",
+      "file": "rules/language-specific/es/go.md"
+    },
+    {
+      "id": "language-specific/python",
+      "lang": "es",
+      "title": "Reglas de Python",
+      "file": "rules/language-specific/es/python.md"
+    },
+    {
+      "id": "language-specific/typescript",
+      "lang": "es",
+      "title": "Reglas de TypeScript",
+      "file": "rules/language-specific/es/typescript.md"
+    },
+    {
+      "id": "language-specific/go",
+      "lang": "fr",
+      "title": "Règles Go",
+      "file": "rules/language-specific/fr/go.md"
+    },
+    {
+      "id": "language-specific/python",
+      "lang": "fr",
+      "title": "Règles Python",
+      "file": "rules/language-specific/fr/python.md"
+    },
+    {
+      "id": "language-specific/typescript",
+      "lang": "fr",
+      "title": "Règles TypeScript",
+      "file": "rules/language-specific/fr/typescript.md"
+    },
+    {
+      "id": "language-specific/go",
+      "lang": "en",
+      "title": "Go Rules",
+      "file": "rules/language-specific/go.md"
+    },
+    {
+      "id": "language-specific/go",
+      "lang": "nl",
+      "title": "Go-regels",
+      "file": "rules/language-specific/nl/go.md"
+    },
+    {
+      "id": "language-specific/python",
+      "lang": "nl",
+      "title": "Python-regels",
+      "file": "rules/language-specific/nl/python.md"
+    },
+    {
+      "id": "language-specific/typescript",
+      "lang": "nl",
+      "title": "TypeScript-regels",
+      "file": "rules/language-specific/nl/typescript.md"
+    },
+    {
+      "id": "language-specific/python",
+      "lang": "en",
+      "title": "Python Rules",
+      "file": "rules/language-specific/python.md"
+    },
+    {
+      "id": "language-specific/typescript",
+      "lang": "en",
+      "title": "TypeScript Rules",
+      "file": "rules/language-specific/typescript.md"
+    }
+  ],
+  "workflows": [
+    {
+      "id": "code-review",
+      "lang": "en",
+      "title": "Code Review Workflow",
+      "file": "workflows/code-review.md"
+    },
+    {
+      "id": "code-review",
+      "lang": "de",
+      "title": "Code-Review-Workflow",
+      "file": "workflows/de/code-review.md"
+    },
+    {
+      "id": "debugging-session",
+      "lang": "de",
+      "title": "Debugging-Sitzungs-Workflow",
+      "file": "workflows/de/debugging-session.md"
+    },
+    {
+      "id": "feature-development",
+      "lang": "de",
+      "title": "Feature-Entwicklungs-Workflow",
+      "file": "workflows/de/feature-development.md"
+    },
+    {
+      "id": "new-project-bootstrap",
+      "lang": "de",
+      "title": "Neues Projekt Bootstrap Workflow",
+      "file": "workflows/de/new-project-bootstrap.md"
+    },
+    {
+      "id": "refactor-safely",
+      "lang": "de",
+      "title": "Sicher Refactoren Workflow",
+      "file": "workflows/de/refactor-safely.md"
+    },
+    {
+      "id": "debugging-session",
+      "lang": "en",
+      "title": "Debugging Session Workflow",
+      "file": "workflows/debugging-session.md"
+    },
+    {
+      "id": "code-review",
+      "lang": "es",
+      "title": "Flujo de Trabajo de Revisión de Código",
+      "file": "workflows/es/code-review.md"
+    },
+    {
+      "id": "debugging-session",
+      "lang": "es",
+      "title": "Flujo de Trabajo de Sesión de Depuración",
+      "file": "workflows/es/debugging-session.md"
+    },
+    {
+      "id": "feature-development",
+      "lang": "es",
+      "title": "Flujo de Trabajo de Desarrollo de Funcionalidades",
+      "file": "workflows/es/feature-development.md"
+    },
+    {
+      "id": "new-project-bootstrap",
+      "lang": "es",
+      "title": "Flujo de Trabajo de Bootstrap de Nuevo Proyecto",
+      "file": "workflows/es/new-project-bootstrap.md"
+    },
+    {
+      "id": "refactor-safely",
+      "lang": "es",
+      "title": "Flujo de Trabajo de Refactoring Seguro",
+      "file": "workflows/es/refactor-safely.md"
+    },
+    {
+      "id": "feature-development",
+      "lang": "en",
+      "title": "Feature Development Workflow",
+      "file": "workflows/feature-development.md"
+    },
+    {
+      "id": "code-review",
+      "lang": "fr",
+      "title": "Workflow de Révision de Code",
+      "file": "workflows/fr/code-review.md"
+    },
+    {
+      "id": "debugging-session",
+      "lang": "fr",
+      "title": "Workflow de Session de Débogage",
+      "file": "workflows/fr/debugging-session.md"
+    },
+    {
+      "id": "feature-development",
+      "lang": "fr",
+      "title": "Workflow de Développement de Fonctionnalité",
+      "file": "workflows/fr/feature-development.md"
+    },
+    {
+      "id": "new-project-bootstrap",
+      "lang": "fr",
+      "title": "Workflow de Bootstrap de Nouveau Projet",
+      "file": "workflows/fr/new-project-bootstrap.md"
+    },
+    {
+      "id": "refactor-safely",
+      "lang": "fr",
+      "title": "Workflow de Refactoring Sécurisé",
+      "file": "workflows/fr/refactor-safely.md"
+    },
+    {
+      "id": "new-project-bootstrap",
+      "lang": "en",
+      "title": "New Project Bootstrap Workflow",
+      "file": "workflows/new-project-bootstrap.md"
+    },
+    {
+      "id": "code-review",
+      "lang": "nl",
+      "title": "Code Review Workflow",
+      "file": "workflows/nl/code-review.md"
+    },
+    {
+      "id": "debugging-session",
+      "lang": "nl",
+      "title": "Debugging Session Workflow",
+      "file": "workflows/nl/debugging-session.md"
+    },
+    {
+      "id": "feature-development",
+      "lang": "nl",
+      "title": "Feature Development Workflow",
+      "file": "workflows/nl/feature-development.md"
+    },
+    {
+      "id": "new-project-bootstrap",
+      "lang": "nl",
+      "title": "New Project Bootstrap Workflow",
+      "file": "workflows/nl/new-project-bootstrap.md"
+    },
+    {
+      "id": "refactor-safely",
+      "lang": "nl",
+      "title": "Refactor Safely Workflow",
+      "file": "workflows/nl/refactor-safely.md"
+    },
+    {
+      "id": "refactor-safely",
+      "lang": "en",
+      "title": "Refactor Safely Workflow",
+      "file": "workflows/refactor-safely.md"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "project-starters/fastapi-project",
+      "category": "project-starters",
+      "lang": "de",
+      "title": "Projekt-Starter: FastAPI",
+      "file": "prompts/project-starters/de/fastapi-project.md"
+    },
+    {
+      "id": "project-starters/nextjs-project",
+      "category": "project-starters",
+      "lang": "de",
+      "title": "Projekt-Starter: Next.js",
+      "file": "prompts/project-starters/de/nextjs-project.md"
+    },
+    {
+      "id": "project-starters/fastapi-project",
+      "category": "project-starters",
+      "lang": "es",
+      "title": "Iniciador de Proyecto: FastAPI",
+      "file": "prompts/project-starters/es/fastapi-project.md"
+    },
+    {
+      "id": "project-starters/nextjs-project",
+      "category": "project-starters",
+      "lang": "es",
+      "title": "Iniciador de Proyecto: Next.js",
+      "file": "prompts/project-starters/es/nextjs-project.md"
+    },
+    {
+      "id": "project-starters/fastapi-project",
+      "category": "project-starters",
+      "lang": "en",
+      "title": "Project Starter: FastAPI",
+      "file": "prompts/project-starters/fastapi-project.md"
+    },
+    {
+      "id": "project-starters/fastapi-project",
+      "category": "project-starters",
+      "lang": "fr",
+      "title": "Starter de Projet : FastAPI",
+      "file": "prompts/project-starters/fr/fastapi-project.md"
+    },
+    {
+      "id": "project-starters/nextjs-project",
+      "category": "project-starters",
+      "lang": "fr",
+      "title": "Starter de Projet : Next.js",
+      "file": "prompts/project-starters/fr/nextjs-project.md"
+    },
+    {
+      "id": "project-starters/nextjs-project",
+      "category": "project-starters",
+      "lang": "en",
+      "title": "Project Starter: Next.js",
+      "file": "prompts/project-starters/nextjs-project.md"
+    },
+    {
+      "id": "project-starters/fastapi-project",
+      "category": "project-starters",
+      "lang": "nl",
+      "title": "Project Starter: FastAPI",
+      "file": "prompts/project-starters/nl/fastapi-project.md"
+    },
+    {
+      "id": "project-starters/nextjs-project",
+      "category": "project-starters",
+      "lang": "nl",
+      "title": "Project Starter: Next.js",
+      "file": "prompts/project-starters/nl/nextjs-project.md"
+    },
+    {
+      "id": "system-prompts/ai-product",
+      "category": "system-prompts",
+      "lang": "en",
+      "title": "CLAUDE.md Starter — AI Product",
+      "file": "prompts/system-prompts/ai-product.md"
+    },
+    {
+      "id": "system-prompts/data-pipeline",
+      "category": "system-prompts",
+      "lang": "en",
+      "title": "CLAUDE.md Starter — Data Pipeline Project",
+      "file": "prompts/system-prompts/data-pipeline.md"
+    },
+    {
+      "id": "system-prompts/ai-product",
+      "category": "system-prompts",
+      "lang": "de",
+      "title": "CLAUDE.md Starter — KI-Produkt",
+      "file": "prompts/system-prompts/de/ai-product.md"
+    },
+    {
+      "id": "system-prompts/data-pipeline",
+      "category": "system-prompts",
+      "lang": "de",
+      "title": "CLAUDE.md Starter — Data Pipeline Projekt",
+      "file": "prompts/system-prompts/de/data-pipeline.md"
+    },
+    {
+      "id": "system-prompts/saas-backend",
+      "category": "system-prompts",
+      "lang": "de",
+      "title": "CLAUDE.md Starter — SaaS Backend",
+      "file": "prompts/system-prompts/de/saas-backend.md"
+    },
+    {
+      "id": "system-prompts/ai-product",
+      "category": "system-prompts",
+      "lang": "es",
+      "title": "CLAUDE.md Starter — Producto de IA",
+      "file": "prompts/system-prompts/es/ai-product.md"
+    },
+    {
+      "id": "system-prompts/data-pipeline",
+      "category": "system-prompts",
+      "lang": "es",
+      "title": "CLAUDE.md Starter — Proyecto de Pipeline de Datos",
+      "file": "prompts/system-prompts/es/data-pipeline.md"
+    },
+    {
+      "id": "system-prompts/saas-backend",
+      "category": "system-prompts",
+      "lang": "es",
+      "title": "CLAUDE.md Starter — Backend SaaS",
+      "file": "prompts/system-prompts/es/saas-backend.md"
+    },
+    {
+      "id": "system-prompts/ai-product",
+      "category": "system-prompts",
+      "lang": "fr",
+      "title": "Starter CLAUDE.md — Produit IA",
+      "file": "prompts/system-prompts/fr/ai-product.md"
+    },
+    {
+      "id": "system-prompts/data-pipeline",
+      "category": "system-prompts",
+      "lang": "fr",
+      "title": "Starter CLAUDE.md — Projet de Pipeline de Données",
+      "file": "prompts/system-prompts/fr/data-pipeline.md"
+    },
+    {
+      "id": "system-prompts/saas-backend",
+      "category": "system-prompts",
+      "lang": "fr",
+      "title": "Starter CLAUDE.md — Backend SaaS",
+      "file": "prompts/system-prompts/fr/saas-backend.md"
+    },
+    {
+      "id": "system-prompts/ai-product",
+      "category": "system-prompts",
+      "lang": "nl",
+      "title": "CLAUDE.md Starter — AI-product",
+      "file": "prompts/system-prompts/nl/ai-product.md"
+    },
+    {
+      "id": "system-prompts/data-pipeline",
+      "category": "system-prompts",
+      "lang": "nl",
+      "title": "CLAUDE.md Starter — Data Pipeline Project",
+      "file": "prompts/system-prompts/nl/data-pipeline.md"
+    },
+    {
+      "id": "system-prompts/saas-backend",
+      "category": "system-prompts",
+      "lang": "nl",
+      "title": "CLAUDE.md Starter — SaaS Backend",
+      "file": "prompts/system-prompts/nl/saas-backend.md"
+    },
+    {
+      "id": "system-prompts/saas-backend",
+      "category": "system-prompts",
+      "lang": "en",
+      "title": "CLAUDE.md Starter — SaaS Backend",
+      "file": "prompts/system-prompts/saas-backend.md"
+    },
+    {
+      "id": "task-specific/changelog",
+      "category": "task-specific",
+      "lang": "en",
+      "title": "Prompt: Generate Changelog",
+      "file": "prompts/task-specific/changelog.md"
+    },
+    {
+      "id": "task-specific/changelog",
+      "category": "task-specific",
+      "lang": "de",
+      "title": "Prompt: Changelog generieren",
+      "file": "prompts/task-specific/de/changelog.md"
+    },
+    {
+      "id": "task-specific/debugging",
+      "category": "task-specific",
+      "lang": "de",
+      "title": "Prompt: Strukturiertes Debugging",
+      "file": "prompts/task-specific/de/debugging.md"
+    },
+    {
+      "id": "task-specific/pr-description",
+      "category": "task-specific",
+      "lang": "de",
+      "title": "Prompt: PR-Beschreibung generieren",
+      "file": "prompts/task-specific/de/pr-description.md"
+    },
+    {
+      "id": "task-specific/debugging",
+      "category": "task-specific",
+      "lang": "en",
+      "title": "Prompt: Structured Debugging",
+      "file": "prompts/task-specific/debugging.md"
+    },
+    {
+      "id": "task-specific/changelog",
+      "category": "task-specific",
+      "lang": "es",
+      "title": "Prompt: Generar Changelog",
+      "file": "prompts/task-specific/es/changelog.md"
+    },
+    {
+      "id": "task-specific/debugging",
+      "category": "task-specific",
+      "lang": "es",
+      "title": "Prompt: Depuración Estructurada",
+      "file": "prompts/task-specific/es/debugging.md"
+    },
+    {
+      "id": "task-specific/pr-description",
+      "category": "task-specific",
+      "lang": "es",
+      "title": "Prompt: Generar Descripción de PR",
+      "file": "prompts/task-specific/es/pr-description.md"
+    },
+    {
+      "id": "task-specific/changelog",
+      "category": "task-specific",
+      "lang": "fr",
+      "title": "Prompt : Générer un Changelog",
+      "file": "prompts/task-specific/fr/changelog.md"
+    },
+    {
+      "id": "task-specific/debugging",
+      "category": "task-specific",
+      "lang": "fr",
+      "title": "Prompt : Débogage Structuré",
+      "file": "prompts/task-specific/fr/debugging.md"
+    },
+    {
+      "id": "task-specific/pr-description",
+      "category": "task-specific",
+      "lang": "fr",
+      "title": "Prompt : Générer une Description de PR",
+      "file": "prompts/task-specific/fr/pr-description.md"
+    },
+    {
+      "id": "task-specific/changelog",
+      "category": "task-specific",
+      "lang": "nl",
+      "title": "Prompt: Changelog Genereren",
+      "file": "prompts/task-specific/nl/changelog.md"
+    },
+    {
+      "id": "task-specific/debugging",
+      "category": "task-specific",
+      "lang": "nl",
+      "title": "Prompt: Gestructureerd Debuggen",
+      "file": "prompts/task-specific/nl/debugging.md"
+    },
+    {
+      "id": "task-specific/pr-description",
+      "category": "task-specific",
+      "lang": "nl",
+      "title": "Prompt: PR-beschrijving Genereren",
+      "file": "prompts/task-specific/nl/pr-description.md"
+    },
+    {
+      "id": "task-specific/pr-description",
+      "category": "task-specific",
+      "lang": "en",
+      "title": "Prompt: Generate PR Description",
+      "file": "prompts/task-specific/pr-description.md"
+    }
+  ],
+  "guides": [
+    {
+      "id": "agent-orchestration",
+      "lang": "en",
+      "title": "Agent Orchestration Guide",
+      "file": "guides/agent-orchestration.md"
+    },
+    {
+      "id": "agent-orchestration",
+      "lang": "de",
+      "title": "Leitfaden zur Agentenorchestrierung",
+      "file": "guides/de/agent-orchestration.md"
+    },
+    {
+      "id": "getting-started",
+      "lang": "de",
+      "title": "Erste Schritte mit Claudient",
+      "file": "guides/de/getting-started.md"
+    },
+    {
+      "id": "hooks-cookbook",
+      "lang": "de",
+      "title": "Hooks-Kochbuch",
+      "file": "guides/de/hooks-cookbook.md"
+    },
+    {
+      "id": "memory-management",
+      "lang": "de",
+      "title": "Leitfaden zur Speicherverwaltung",
+      "file": "guides/de/memory-management.md"
+    },
+    {
+      "id": "security",
+      "lang": "de",
+      "title": "Sicherheitsleitfaden",
+      "file": "guides/de/security.md"
+    },
+    {
+      "id": "skill-authoring",
+      "lang": "de",
+      "title": "Leitfaden zur Skill-Erstellung",
+      "file": "guides/de/skill-authoring.md"
+    },
+    {
+      "id": "token-optimization",
+      "lang": "de",
+      "title": "Token-Optimierungsleitfaden",
+      "file": "guides/de/token-optimization.md"
+    },
+    {
+      "id": "agent-orchestration",
+      "lang": "es",
+      "title": "Guía de orquestación de agentes",
+      "file": "guides/es/agent-orchestration.md"
+    },
+    {
+      "id": "getting-started",
+      "lang": "es",
+      "title": "Primeros pasos con Claudient",
+      "file": "guides/es/getting-started.md"
+    },
+    {
+      "id": "hooks-cookbook",
+      "lang": "es",
+      "title": "Libro de recetas de hooks",
+      "file": "guides/es/hooks-cookbook.md"
+    },
+    {
+      "id": "memory-management",
+      "lang": "es",
+      "title": "Guía de gestión de memoria",
+      "file": "guides/es/memory-management.md"
+    },
+    {
+      "id": "security",
+      "lang": "es",
+      "title": "Guía de seguridad",
+      "file": "guides/es/security.md"
+    },
+    {
+      "id": "skill-authoring",
+      "lang": "es",
+      "title": "Guía de creación de skills",
+      "file": "guides/es/skill-authoring.md"
+    },
+    {
+      "id": "token-optimization",
+      "lang": "es",
+      "title": "Guía de optimización de tokens",
+      "file": "guides/es/token-optimization.md"
+    },
+    {
+      "id": "agent-orchestration",
+      "lang": "fr",
+      "title": "Guide d'orchestration des agents",
+      "file": "guides/fr/agent-orchestration.md"
+    },
+    {
+      "id": "getting-started",
+      "lang": "fr",
+      "title": "Premiers pas avec Claudient",
+      "file": "guides/fr/getting-started.md"
+    },
+    {
+      "id": "hooks-cookbook",
+      "lang": "fr",
+      "title": "Livre de recettes des hooks",
+      "file": "guides/fr/hooks-cookbook.md"
+    },
+    {
+      "id": "memory-management",
+      "lang": "fr",
+      "title": "Guide de gestion de la mémoire",
+      "file": "guides/fr/memory-management.md"
+    },
+    {
+      "id": "security",
+      "lang": "fr",
+      "title": "Guide de sécurité",
+      "file": "guides/fr/security.md"
+    },
+    {
+      "id": "skill-authoring",
+      "lang": "fr",
+      "title": "Guide de création de compétences",
+      "file": "guides/fr/skill-authoring.md"
+    },
+    {
+      "id": "token-optimization",
+      "lang": "fr",
+      "title": "Guide d'optimisation des tokens",
+      "file": "guides/fr/token-optimization.md"
+    },
+    {
+      "id": "getting-started",
+      "lang": "en",
+      "title": "Getting Started with Claudient",
+      "file": "guides/getting-started.md"
+    },
+    {
+      "id": "hooks-cookbook",
+      "lang": "en",
+      "title": "Hooks Cookbook",
+      "file": "guides/hooks-cookbook.md"
+    },
+    {
+      "id": "memory-management",
+      "lang": "en",
+      "title": "Memory Management Guide",
+      "file": "guides/memory-management.md"
+    },
+    {
+      "id": "agent-orchestration",
+      "lang": "nl",
+      "title": "Handleiding voor agentorkestratie",
+      "file": "guides/nl/agent-orchestration.md"
+    },
+    {
+      "id": "getting-started",
+      "lang": "nl",
+      "title": "Aan de slag met Claudient",
+      "file": "guides/nl/getting-started.md"
+    },
+    {
+      "id": "hooks-cookbook",
+      "lang": "nl",
+      "title": "Hooks Kookboek",
+      "file": "guides/nl/hooks-cookbook.md"
+    },
+    {
+      "id": "memory-management",
+      "lang": "nl",
+      "title": "Handleiding voor geheugenbeheer",
+      "file": "guides/nl/memory-management.md"
+    },
+    {
+      "id": "security",
+      "lang": "nl",
+      "title": "Beveiligingshandleiding",
+      "file": "guides/nl/security.md"
+    },
+    {
+      "id": "skill-authoring",
+      "lang": "nl",
+      "title": "Handleiding voor het schrijven van skills",
+      "file": "guides/nl/skill-authoring.md"
+    },
+    {
+      "id": "token-optimization",
+      "lang": "nl",
+      "title": "Handleiding voor token-optimalisatie",
+      "file": "guides/nl/token-optimization.md"
+    },
+    {
+      "id": "security",
+      "lang": "en",
+      "title": "Security Guide",
+      "file": "guides/security.md"
+    },
+    {
+      "id": "skill-authoring",
+      "lang": "en",
+      "title": "Skill Authoring Guide",
+      "file": "guides/skill-authoring.md"
+    },
+    {
+      "id": "token-optimization",
+      "lang": "en",
+      "title": "Token Optimization Guide",
+      "file": "guides/token-optimization.md"
+    }
+  ],
+  "summary": {
+    "skills": 19,
+    "agents": 6,
+    "hooks": 7,
+    "rules": 8,
+    "workflows": 5,
+    "prompts": 8,
+    "guides": 7,
+    "languages": [
+      "en",
+      "fr",
+      "de",
+      "nl",
+      "es"
+    ]
+  }
+}

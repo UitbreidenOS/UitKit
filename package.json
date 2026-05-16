@@ -34,12 +34,14 @@
     "guides/",
     ".claude-plugin/",
     "CONTEXT.md",
-    "README.md"
+    "README.md",
+    "index.json"
   ],
   "engines": {
     "node": ">=18"
   },
   "scripts": {
-    "list": "node scripts/cli.js list"
+    "list": "node scripts/cli.js list",
+    "build-index": "node scripts/build-index.js"
   }
 }
