@@ -1,6 +1,6 @@
 {
-  "version": "0.5.0",
-  "generated": "2026-05-16T17:51:55.779Z",
+  "version": "0.6.0",
+  "generated": "2026-05-16T17:57:21.855Z",
   "skills": [
     {
       "id": "backend/dotnet/csharp",
@@ -769,6 +769,14 @@
       "title": "Skill Mode Caveman",
       "description": "",
       "file": "skills/productivity/fr/caveman.md"
+    },
+    {
+      "id": "productivity/lean-claude",
+      "category": "productivity",
+      "lang": "en",
+      "title": "Lean Claude",
+      "description": "Activate token-efficient mode: caveman output, right model selection, MCP discipline, compaction strategy, cavecrew agents — all in one",
+      "file": "skills/productivity/lean-claude.md"
     },
     {
       "id": "productivity/caveman",
@@ -1894,7 +1902,7 @@
     }
   ],
   "summary": {
-    "skills": 21,
+    "skills": 22,
     "agents": 6,
     "hooks": 7,
     "rules": 8,

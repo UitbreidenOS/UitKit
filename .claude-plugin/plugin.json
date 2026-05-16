@@ -21,7 +21,8 @@
     { "id": "data-ml/dbt-data-pipelines", "name": "dbt & Data Pipelines", "file": "skills/data-ml/dbt-data-pipelines.md", "status": "active" },
     { "id": "database/graphql", "name": "GraphQL", "file": "skills/database/graphql.md", "status": "active" },
     { "id": "finance-payments/stripe", "name": "Stripe", "file": "skills/finance-payments/stripe.md", "status": "active" },
-    { "id": "productivity/caveman", "name": "Caveman Mode", "file": "skills/productivity/caveman.md", "status": "active" }
+    { "id": "productivity/caveman", "name": "Caveman Mode", "file": "skills/productivity/caveman.md", "status": "active" },
+    { "id": "productivity/lean-claude", "name": "Lean Claude", "file": "skills/productivity/lean-claude.md", "status": "active" }
   ],
   "agents": [
     { "id": "core/planner", "name": "Planner", "file": "agents/core/planner.md", "status": "active" },
