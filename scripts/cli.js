@@ -19,6 +19,7 @@ const SKILL_CATEGORIES = [
   'database',
   'finance-payments',
   'ai-engineering',
+  'productivity',
 ]
 
 const SUPPORTED_LANGS = ['en', 'fr', 'de', 'nl', 'es']
