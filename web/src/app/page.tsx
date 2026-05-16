@@ -167,6 +167,11 @@ export default async function HomePage() {
                 accent: 'bg-pink-400',
               },
               {
+                title: 'Maximum efficiency, built in',
+                body: 'The /lean-claude skill activates token-efficient mode in one prompt — right model, right context, right agent pattern.',
+                accent: 'bg-teal-400',
+              },
+              {
                 title: 'Open source, MIT licensed',
                 body: 'Backed by Uitbreiden. Fork it, extend it, contribute skills. Join us on Reddit · YouTube.',
                 accent: 'bg-orange-300',

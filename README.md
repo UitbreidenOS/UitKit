@@ -23,11 +23,24 @@ That's it. All skills are copied to `~/.claude/skills/`. Restart Claude Code and
 
 ---
 
+## Run Claude at maximum efficiency
+
+Claudient includes a `/lean-claude` skill that activates token-efficient mode for any session with a single prompt. It consolidates model selection, context management, output compression, subagent strategy, and prompt efficiency into one ready-to-use activation command.
+
+```bash
+npx claudient add skills productivity
+# Then use /lean-claude in Claude Code to activate it
+```
+
+See [`skills/productivity/lean-claude.md`](skills/productivity/lean-claude.md) for the full reference.
+
+---
+
 ## What's included
 
 | Type | Count | What it does |
 |---|---|---|
-| Skills | 17 | Slash commands for FastAPI, NestJS, Kubernetes, Terraform, Go, C#, Claude API, and more |
+| Skills | 22 | FastAPI, NestJS, Kubernetes, Terraform, Go, C#, Claude API, MLflow, Spark, and more |
 | Agents | 6 | Subagent definitions — Planner, Architect, Code Reviewer, Security Reviewer, Build Resolvers |
 | Hooks | 7 | Pre-tool-use safety, post-tool-use formatting and audit logging, lifecycle tracking |
 | Rules | 8 | Coding standards, git hygiene, security, testing, and language-specific guidelines |
@@ -52,6 +65,10 @@ npx claudient add rules                     # shows rules + instructions
 npx claudient add rules --write             # appends all rules to ./CLAUDE.md
 npx claudient add all                       # skills + agents + hooks
 npx claudient add all --lang de             # everything in German
+
+# Search
+npx claudient search fastapi                # find skills by name or description
+npx claudient search "model registry"       # search across all 22 skills
 
 # Manage
 npx claudient remove skills backend         # uninstall a category
