@@ -148,6 +148,41 @@ See `hooks/lifecycle/cost-tracker.sh` for a ready-to-use implementation.
 
 ---
 
+## 5. Caveman Mode — Output Compression
+
+Caveman mode is a token-compression technique that instructs Claude to respond in terse, fragment-style prose. Benchmarked results (March 2026, [arxiv.org/abs/2604.00025](https://arxiv.org/abs/2604.00025)):
+
+- ~65% reduction in output tokens
+- 26-point accuracy improvement on benchmarks — brevity sharpens reasoning
+- 100% technical accuracy maintained
+
+**Compression levels:**
+
+| Level | Rule |
+|-------|------|
+| `lite` | Drop filler and hedging, keep full sentences |
+| `full` | Drop articles, fragments OK, short synonyms |
+| `ultra` | Abbreviate prose, strip conjunctions, arrows for causality |
+
+**Activating in a session:**
+```
+Use caveman mode (full level). Drop articles, use fragments, short synonyms.
+Auto-revert to normal prose for: security warnings, irreversible confirmations,
+multi-step sequences where fragment ambiguity risks misread.
+```
+
+**caveman-compress** — rewrites `.md` memory and CLAUDE.md files to caveman prose. Because these files are re-read on every context load, compressed files save ~46% input tokens *every session*.
+
+```
+/caveman-compress .claude/memory/project-context.md
+```
+
+**Reference:** The full implementation is at [github.com/JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman). Claudient also includes `skills/productivity/caveman.md` as a concise usage reference.
+
+**When NOT to use:** Security warnings, irreversible action confirmations, onboarding docs, external-facing documentation.
+
+---
+
 ## Quick Reference
 
 | Situation | Action |
@@ -159,6 +194,8 @@ See `hooks/lifecycle/cost-tracker.sh` for a ready-to-use implementation.
 | Task is self-contained | Use a subagent |
 | Vague request producing long responses | Rewrite as a specific, scoped prompt |
 | CLAUDE.md over 500 lines | Audit and trim dead rules |
+| Very long session, verbosity is slowing you | Enable caveman mode (full level) |
+| Memory files growing large | Run caveman-compress on them |
 
 ---
 

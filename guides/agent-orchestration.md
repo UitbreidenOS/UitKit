@@ -221,6 +221,7 @@ Subagents communicate back to the parent in two ways:
 | Task works better with setup | Soft dependency — degrade gracefully |
 | Large subagent output | Write to file, parent reads it |
 | Small structured result | Return message |
+| High token cost on simple tasks | Use cavecrew (Haiku + caveman) |
 
 ---
 
