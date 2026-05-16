@@ -1,3 +1,8 @@
+---
+name: pandas-polars
+description: "Pandas and Polars data manipulation: filtering, groupby, joins, time series, performance optimization"
+---
+
 # Pandas / Polars Skill
 
 ## When to activate

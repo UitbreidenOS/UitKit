@@ -1,3 +1,8 @@
+---
+name: django
+description: "Django project layout, ORM models, migrations, DRF serializers, viewsets, Celery tasks, admin customization"
+---
+
 # Django Skill
 
 ## When to activate

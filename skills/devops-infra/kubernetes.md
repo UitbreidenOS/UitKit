@@ -1,3 +1,8 @@
+---
+name: kubernetes
+description: "Kubernetes manifests, resource limits, health probes, secrets, RBAC, HPA, CrashLoopBackOff diagnosis"
+---
+
 # Kubernetes Skill
 
 ## When to activate

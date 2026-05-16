@@ -1,3 +1,8 @@
+---
+name: docker
+description: "Dockerfile best practices, multi-stage builds, Compose services, networking, volumes, build caching"
+---
+
 # Docker Skill
 
 ## When to activate

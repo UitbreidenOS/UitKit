@@ -1,3 +1,8 @@
+---
+name: pytorch-tensorflow
+description: "PyTorch and TensorFlow model training, data loaders, GPU setup, checkpointing, inference optimization"
+---
+
 # PyTorch / TensorFlow Skill
 
 ## When to activate

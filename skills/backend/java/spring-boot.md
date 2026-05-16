@@ -1,3 +1,8 @@
+---
+name: spring-boot
+description: "Spring Boot REST API, JPA repositories, Spring Security JWT, @WebMvcTest, @SpringBootTest, Spring Cloud"
+---
+
 # Spring Boot Skill
 
 ## When to activate

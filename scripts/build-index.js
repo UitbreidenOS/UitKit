@@ -34,9 +34,35 @@ function getLang(filepath) {
   return 'en'
 }
 
+function readFrontmatter(filepath) {
+  try {
+    const content = fs.readFileSync(filepath, 'utf-8')
+    if (!content.startsWith('---')) return {}
+    const end = content.indexOf('---', 3)
+    if (end === -1) return {}
+    const yaml = content.slice(3, end).trim()
+    const result = {}
+    for (const line of yaml.split('\n')) {
+      const colon = line.indexOf(':')
+      if (colon === -1) continue
+      const key = line.slice(0, colon).trim()
+      const val = line.slice(colon + 1).trim().replace(/^["']|["']$/g, '')
+      result[key] = val
+    }
+    return result
+  } catch { return {} }
+}
+
 function readTitle(filepath) {
   try {
-    const first = fs.readFileSync(filepath, 'utf-8').split('\n').find(l => l.startsWith('# '))
+    const content = fs.readFileSync(filepath, 'utf-8')
+    // Try frontmatter name first
+    const fm = readFrontmatter(filepath)
+    if (fm.name) {
+      return fm.name.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
+        .replace(/Dotnet/, '.NET').replace(/Csharp/, 'C#').replace(/Dbt/, 'dbt')
+    }
+    const first = content.split('\n').find(l => l.startsWith('# '))
     return first ? first.replace(/^# /, '').trim() : path.basename(filepath, '.md')
   } catch {
     return path.basename(filepath, '.md')
@@ -62,11 +88,13 @@ for (const cat of SKILL_CATEGORIES) {
     const rel = relPath(file)
     const lang = getLang(rel)
     const slug = rel.replace(/^skills\//, '').replace(/\.md$/, '').replace(/\/(fr|de|nl|es)\//, '/')
+    const fm = readFrontmatter(file)
     index.skills.push({
       id: slug,
       category: cat,
       lang,
       title: readTitle(file),
+      description: fm.description || '',
       file: rel,
     })
   }

@@ -44,8 +44,24 @@ function isLangDir(name: string): boolean {
   return (SUPPORTED_LANGS as readonly string[]).includes(name)
 }
 
-function readMarkdownFiles(dir: string, prefix = ''): { slug: string; title: string; filePath: string }[] {
-  const results: { slug: string; title: string; filePath: string }[] = []
+function parseFrontmatter(content: string): Record<string, string> {
+  if (!content.startsWith('---')) return {}
+  const end = content.indexOf('---', 3)
+  if (end === -1) return {}
+  const yaml = content.slice(3, end).trim()
+  const result: Record<string, string> = {}
+  for (const line of yaml.split('\n')) {
+    const colon = line.indexOf(':')
+    if (colon === -1) continue
+    const key = line.slice(0, colon).trim()
+    const val = line.slice(colon + 1).trim().replace(/^["']|["']$/g, '')
+    result[key] = val
+  }
+  return result
+}
+
+function readMarkdownFiles(dir: string, prefix = ''): { slug: string; title: string; filePath: string; description?: string }[] {
+  const results: { slug: string; title: string; filePath: string; description?: string }[] = []
   if (!fs.existsSync(dir)) return results
   for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
     const full = path.join(dir, entry.name)
@@ -53,7 +69,9 @@ function readMarkdownFiles(dir: string, prefix = ''): { slug: string; title: str
       results.push(...readMarkdownFiles(full, prefix ? `${prefix}/${entry.name}` : entry.name))
     } else if (entry.isFile() && entry.name.endsWith('.md')) {
       const slug = prefix ? `${prefix}/${entry.name.replace(/\.md$/, '')}` : entry.name.replace(/\.md$/, '')
-      results.push({ slug, title: titleFromFilename(entry.name), filePath: full })
+      const content = fs.readFileSync(full, 'utf-8')
+      const fm = parseFrontmatter(content)
+      results.push({ slug, title: titleFromFilename(entry.name), filePath: full, description: fm.description })
     }
   }
   return results
@@ -66,7 +84,7 @@ export function getAllSkills(): SkillMeta[] {
   for (const category of SKILL_CATEGORIES_LIST) {
     const dir = path.join(REPO_ROOT, 'skills', category)
     for (const f of readMarkdownFiles(dir)) {
-      skills.push({ id: `${category}/${f.slug}`, category, slug: f.slug, title: f.title, filePath: f.filePath })
+      skills.push({ id: `${category}/${f.slug}`, category, slug: f.slug, title: f.title, filePath: f.filePath, description: f.description })
     }
   }
   return skills
@@ -74,7 +92,7 @@ export function getAllSkills(): SkillMeta[] {
 
 export function getSkillsByCategory(category: string): SkillMeta[] {
   return readMarkdownFiles(path.join(REPO_ROOT, 'skills', category)).map(f => ({
-    id: `${category}/${f.slug}`, category, slug: f.slug, title: f.title, filePath: f.filePath,
+    id: `${category}/${f.slug}`, category, slug: f.slug, title: f.title, filePath: f.filePath, description: f.description,
   }))
 }
 

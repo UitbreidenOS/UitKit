@@ -1,3 +1,8 @@
+---
+name: graphql
+description: "GraphQL schema design, resolvers, mutations, subscriptions, DataLoader, Prisma integration, N+1 prevention"
+---
+
 # GraphQL Skill
 
 ## When to activate

@@ -1,3 +1,8 @@
+---
+name: nestjs
+description: "NestJS modules, controllers, services, guards, interceptors, TypeORM, CQRS, microservices, Jest testing"
+---
+
 # NestJS Skill
 
 ## When to activate

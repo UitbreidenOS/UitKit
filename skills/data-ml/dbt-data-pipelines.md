@@ -1,3 +1,8 @@
+---
+name: dbt
+description: "dbt models, sources, tests, macros, incremental models, documentation, CI integration, Jinja patterns"
+---
+
 # dbt Data Pipelines Skill
 
 ## When to activate

@@ -1,3 +1,8 @@
+---
+name: stripe
+description: "Stripe Checkout, subscriptions, webhooks, customer portal, payment intents, test mode, idempotency"
+---
+
 # Stripe Integration Skill
 
 ## When to activate

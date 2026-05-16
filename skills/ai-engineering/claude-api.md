@@ -1,3 +1,8 @@
+---
+name: claude-api
+description: "Anthropic Claude API: prompt caching, streaming, tool use, batch processing, model selection, cost optimization"
+---
+
 # Claude API Skill
 
 ## When to activate

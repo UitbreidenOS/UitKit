@@ -6,6 +6,7 @@ export type SkillMeta = {
   slug: string
   title: string
   filePath: string
+  description?: string
 }
 
 export const SKILL_CATEGORIES_LIST = [

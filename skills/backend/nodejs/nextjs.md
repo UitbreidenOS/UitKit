@@ -1,3 +1,8 @@
+---
+name: nextjs
+description: "Next.js App Router patterns: Server Components, Server Actions, route handlers, middleware, parallel routes, ISR"
+---
+
 # Next.js Skill
 
 ## When to activate

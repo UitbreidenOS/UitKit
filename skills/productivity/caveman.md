@@ -1,3 +1,8 @@
+---
+name: caveman
+description: "Token compression via caveman mode: ~65% output reduction, caveman-compress, cavecrew subagents"
+---
+
 # Caveman Mode Skill
 
 ## When to activate

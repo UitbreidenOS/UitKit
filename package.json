@@ -42,6 +42,7 @@
   },
   "scripts": {
     "list": "node scripts/cli.js list",
-    "build-index": "node scripts/build-index.js"
+    "build-index": "node scripts/build-index.js",
+    "add-frontmatter": "node scripts/add-frontmatter.js"
   }
 }

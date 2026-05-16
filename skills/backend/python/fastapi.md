@@ -1,3 +1,8 @@
+---
+name: fastapi
+description: "FastAPI app structure, async routes, Pydantic models, SQLAlchemy, dependency injection, background tasks, TestClient"
+---
+
 # FastAPI Skill
 
 ## When to activate

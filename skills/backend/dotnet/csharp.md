@@ -1,3 +1,8 @@
+---
+name: csharp
+description: "C#/.NET minimal API, Entity Framework Core, dependency injection, background services, middleware, LINQ"
+---
+
 # C#/.NET Skill
 
 ## When to activate

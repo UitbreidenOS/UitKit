@@ -1,3 +1,8 @@
+---
+name: terraform
+description: "Terraform modules, state management, workspaces, provider config, plan/apply workflow, remote backends"
+---
+
 # Terraform Skill
 
 ## When to activate

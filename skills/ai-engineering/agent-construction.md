@@ -1,3 +1,8 @@
+---
+name: agent-construction
+description: "Multi-agent architecture, orchestrator patterns, tool design, agent loops, memory, error handling, handoffs"
+---
+
 # Agent Construction Skill
 
 ## When to activate

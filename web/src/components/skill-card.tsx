@@ -8,20 +8,21 @@ export function SkillCard({ skill }: { skill: SkillMeta }) {
 
   return (
     <Link
-      href={`/skills/${skill.category}/${skill.slug.replace(/\//g, '/')}`}
-      className="neo-card neo-card-hover block p-5 group"
+      href={`/skills/${skill.category}/${skill.slug}`}
+      className="neo-card neo-card-hover flex flex-col p-5 group"
     >
-      <div className="flex items-start justify-between gap-2 mb-3">
-        <h3 className="font-bold text-base leading-tight group-hover:underline">
+      <div className="flex items-start justify-between gap-2 mb-2">
+        <h3 className="font-black text-base leading-tight group-hover:underline">
           {skill.title}
         </h3>
         <span className={`shrink-0 text-xs font-bold px-2 py-0.5 border border-black ${categoryColor}`}>
           {categoryLabel}
         </span>
       </div>
-      <div className="flex items-center gap-1 mt-auto">
-        <span className="text-xs text-gray-500 font-mono">/{skill.category}/{skill.slug}</span>
-      </div>
+      {skill.description && (
+        <p className="text-xs text-gray-600 leading-relaxed mb-3 line-clamp-2">{skill.description}</p>
+      )}
+      <span className="text-xs text-gray-400 font-mono mt-auto">/{skill.category}/{skill.slug}</span>
     </Link>
   )
 }

@@ -1,12 +1,13 @@
 {
   "version": "0.5.0",
-  "generated": "2026-05-16T17:33:40.657Z",
+  "generated": "2026-05-16T17:45:38.537Z",
   "skills": [
     {
       "id": "backend/dotnet/csharp",
       "category": "backend",
       "lang": "en",
-      "title": "C#/.NET Skill",
+      "title": "C#",
+      "description": "C#/.NET minimal API, Entity Framework Core, dependency injection, background services, middleware, LINQ",
       "file": "skills/backend/dotnet/csharp.md"
     },
     {
@@ -14,6 +15,7 @@
       "category": "backend",
       "lang": "de",
       "title": "C#/.NET Skill",
+      "description": "",
       "file": "skills/backend/dotnet/de/csharp.md"
     },
     {
@@ -21,6 +23,7 @@
       "category": "backend",
       "lang": "es",
       "title": "Skill de C#/.NET",
+      "description": "",
       "file": "skills/backend/dotnet/es/csharp.md"
     },
     {
@@ -28,6 +31,7 @@
       "category": "backend",
       "lang": "fr",
       "title": "Compétence C#/.NET",
+      "description": "",
       "file": "skills/backend/dotnet/fr/csharp.md"
     },
     {
@@ -35,6 +39,7 @@
       "category": "backend",
       "lang": "nl",
       "title": "C#/.NET Skill",
+      "description": "",
       "file": "skills/backend/dotnet/nl/csharp.md"
     },
     {
@@ -42,6 +47,7 @@
       "category": "backend",
       "lang": "de",
       "title": "Go Skill",
+      "description": "",
       "file": "skills/backend/go/de/go.md"
     },
     {
@@ -49,6 +55,7 @@
       "category": "backend",
       "lang": "es",
       "title": "Skill de Go",
+      "description": "",
       "file": "skills/backend/go/es/go.md"
     },
     {
@@ -56,13 +63,15 @@
       "category": "backend",
       "lang": "fr",
       "title": "Compétence Go",
+      "description": "",
       "file": "skills/backend/go/fr/go.md"
     },
     {
       "id": "backend/go/go",
       "category": "backend",
       "lang": "en",
-      "title": "Go Skill",
+      "title": "Go",
+      "description": "Go project layout, HTTP handlers, interfaces, goroutines, error wrapping, table-driven tests, slog logging",
       "file": "skills/backend/go/go.md"
     },
     {
@@ -70,6 +79,7 @@
       "category": "backend",
       "lang": "nl",
       "title": "Go Skill",
+      "description": "",
       "file": "skills/backend/go/nl/go.md"
     },
     {
@@ -77,6 +87,7 @@
       "category": "backend",
       "lang": "de",
       "title": "Spring Boot Skill",
+      "description": "",
       "file": "skills/backend/java/de/spring-boot.md"
     },
     {
@@ -84,6 +95,7 @@
       "category": "backend",
       "lang": "es",
       "title": "Skill Spring Boot",
+      "description": "",
       "file": "skills/backend/java/es/spring-boot.md"
     },
     {
@@ -91,6 +103,7 @@
       "category": "backend",
       "lang": "fr",
       "title": "Skill Spring Boot",
+      "description": "",
       "file": "skills/backend/java/fr/spring-boot.md"
     },
     {
@@ -98,13 +111,15 @@
       "category": "backend",
       "lang": "nl",
       "title": "Spring Boot Skill",
+      "description": "",
       "file": "skills/backend/java/nl/spring-boot.md"
     },
     {
       "id": "backend/java/spring-boot",
       "category": "backend",
       "lang": "en",
-      "title": "Spring Boot Skill",
+      "title": "Spring Boot",
+      "description": "Spring Boot REST API, JPA repositories, Spring Security JWT, @WebMvcTest, @SpringBootTest, Spring Cloud",
       "file": "skills/backend/java/spring-boot.md"
     },
     {
@@ -112,6 +127,7 @@
       "category": "backend",
       "lang": "de",
       "title": "NestJS Skill",
+      "description": "",
       "file": "skills/backend/nodejs/de/nestjs.md"
     },
     {
@@ -119,6 +135,7 @@
       "category": "backend",
       "lang": "de",
       "title": "Next.js Skill",
+      "description": "",
       "file": "skills/backend/nodejs/de/nextjs.md"
     },
     {
@@ -126,6 +143,7 @@
       "category": "backend",
       "lang": "es",
       "title": "Skill de NestJS",
+      "description": "",
       "file": "skills/backend/nodejs/es/nestjs.md"
     },
     {
@@ -133,6 +151,7 @@
       "category": "backend",
       "lang": "es",
       "title": "Skill de Next.js",
+      "description": "",
       "file": "skills/backend/nodejs/es/nextjs.md"
     },
     {
@@ -140,6 +159,7 @@
       "category": "backend",
       "lang": "fr",
       "title": "Compétence NestJS",
+      "description": "",
       "file": "skills/backend/nodejs/fr/nestjs.md"
     },
     {
@@ -147,20 +167,23 @@
       "category": "backend",
       "lang": "fr",
       "title": "Compétence Next.js",
+      "description": "",
       "file": "skills/backend/nodejs/fr/nextjs.md"
     },
     {
       "id": "backend/nodejs/nestjs",
       "category": "backend",
       "lang": "en",
-      "title": "NestJS Skill",
+      "title": "Nestjs",
+      "description": "NestJS modules, controllers, services, guards, interceptors, TypeORM, CQRS, microservices, Jest testing",
       "file": "skills/backend/nodejs/nestjs.md"
     },
     {
       "id": "backend/nodejs/nextjs",
       "category": "backend",
       "lang": "en",
-      "title": "Next.js Skill",
+      "title": "Nextjs",
+      "description": "Next.js App Router patterns: Server Components, Server Actions, route handlers, middleware, parallel routes, ISR",
       "file": "skills/backend/nodejs/nextjs.md"
     },
     {
@@ -168,6 +191,7 @@
       "category": "backend",
       "lang": "nl",
       "title": "NestJS Skill",
+      "description": "",
       "file": "skills/backend/nodejs/nl/nestjs.md"
     },
     {
@@ -175,6 +199,7 @@
       "category": "backend",
       "lang": "nl",
       "title": "Next.js Skill",
+      "description": "",
       "file": "skills/backend/nodejs/nl/nextjs.md"
     },
     {
@@ -182,6 +207,7 @@
       "category": "backend",
       "lang": "de",
       "title": "Django Skill",
+      "description": "",
       "file": "skills/backend/python/de/django.md"
     },
     {
@@ -189,13 +215,15 @@
       "category": "backend",
       "lang": "de",
       "title": "FastAPI Skill",
+      "description": "",
       "file": "skills/backend/python/de/fastapi.md"
     },
     {
       "id": "backend/python/django",
       "category": "backend",
       "lang": "en",
-      "title": "Django Skill",
+      "title": "Django",
+      "description": "Django project layout, ORM models, migrations, DRF serializers, viewsets, Celery tasks, admin customization",
       "file": "skills/backend/python/django.md"
     },
     {
@@ -203,6 +231,7 @@
       "category": "backend",
       "lang": "es",
       "title": "Skill de Django",
+      "description": "",
       "file": "skills/backend/python/es/django.md"
     },
     {
@@ -210,13 +239,15 @@
       "category": "backend",
       "lang": "es",
       "title": "Skill de FastAPI",
+      "description": "",
       "file": "skills/backend/python/es/fastapi.md"
     },
     {
       "id": "backend/python/fastapi",
       "category": "backend",
       "lang": "en",
-      "title": "FastAPI Skill",
+      "title": "Fastapi",
+      "description": "FastAPI app structure, async routes, Pydantic models, SQLAlchemy, dependency injection, background tasks, TestClient",
       "file": "skills/backend/python/fastapi.md"
     },
     {
@@ -224,6 +255,7 @@
       "category": "backend",
       "lang": "fr",
       "title": "Compétence Django",
+      "description": "",
       "file": "skills/backend/python/fr/django.md"
     },
     {
@@ -231,6 +263,7 @@
       "category": "backend",
       "lang": "fr",
       "title": "Compétence FastAPI",
+      "description": "",
       "file": "skills/backend/python/fr/fastapi.md"
     },
     {
@@ -238,6 +271,7 @@
       "category": "backend",
       "lang": "nl",
       "title": "Django Skill",
+      "description": "",
       "file": "skills/backend/python/nl/django.md"
     },
     {
@@ -245,6 +279,7 @@
       "category": "backend",
       "lang": "nl",
       "title": "FastAPI Skill",
+      "description": "",
       "file": "skills/backend/python/nl/fastapi.md"
     },
     {
@@ -252,6 +287,7 @@
       "category": "devops-infra",
       "lang": "de",
       "title": "Docker Skill",
+      "description": "",
       "file": "skills/devops-infra/de/docker.md"
     },
     {
@@ -259,6 +295,7 @@
       "category": "devops-infra",
       "lang": "de",
       "title": "GitHub Actions Skill",
+      "description": "",
       "file": "skills/devops-infra/de/github-actions.md"
     },
     {
@@ -266,6 +303,7 @@
       "category": "devops-infra",
       "lang": "de",
       "title": "Kubernetes Skill",
+      "description": "",
       "file": "skills/devops-infra/de/kubernetes.md"
     },
     {
@@ -273,13 +311,15 @@
       "category": "devops-infra",
       "lang": "de",
       "title": "Terraform Skill",
+      "description": "",
       "file": "skills/devops-infra/de/terraform.md"
     },
     {
       "id": "devops-infra/docker",
       "category": "devops-infra",
       "lang": "en",
-      "title": "Docker Skill",
+      "title": "Docker",
+      "description": "Dockerfile best practices, multi-stage builds, Compose services, networking, volumes, build caching",
       "file": "skills/devops-infra/docker.md"
     },
     {
@@ -287,6 +327,7 @@
       "category": "devops-infra",
       "lang": "es",
       "title": "Skill de Docker",
+      "description": "",
       "file": "skills/devops-infra/es/docker.md"
     },
     {
@@ -294,6 +335,7 @@
       "category": "devops-infra",
       "lang": "es",
       "title": "Skill de GitHub Actions",
+      "description": "",
       "file": "skills/devops-infra/es/github-actions.md"
     },
     {
@@ -301,6 +343,7 @@
       "category": "devops-infra",
       "lang": "es",
       "title": "Skill de Kubernetes",
+      "description": "",
       "file": "skills/devops-infra/es/kubernetes.md"
     },
     {
@@ -308,6 +351,7 @@
       "category": "devops-infra",
       "lang": "es",
       "title": "Skill de Terraform",
+      "description": "",
       "file": "skills/devops-infra/es/terraform.md"
     },
     {
@@ -315,6 +359,7 @@
       "category": "devops-infra",
       "lang": "fr",
       "title": "Compétence Docker",
+      "description": "",
       "file": "skills/devops-infra/fr/docker.md"
     },
     {
@@ -322,6 +367,7 @@
       "category": "devops-infra",
       "lang": "fr",
       "title": "Compétence GitHub Actions",
+      "description": "",
       "file": "skills/devops-infra/fr/github-actions.md"
     },
     {
@@ -329,6 +375,7 @@
       "category": "devops-infra",
       "lang": "fr",
       "title": "Compétence Kubernetes",
+      "description": "",
       "file": "skills/devops-infra/fr/kubernetes.md"
     },
     {
@@ -336,20 +383,23 @@
       "category": "devops-infra",
       "lang": "fr",
       "title": "Compétence Terraform",
+      "description": "",
       "file": "skills/devops-infra/fr/terraform.md"
     },
     {
       "id": "devops-infra/github-actions",
       "category": "devops-infra",
       "lang": "en",
-      "title": "GitHub Actions Skill",
+      "title": "Github Actions",
+      "description": "GitHub Actions workflows, job matrices, caching, secrets, reusable workflows, deployment environments",
       "file": "skills/devops-infra/github-actions.md"
     },
     {
       "id": "devops-infra/kubernetes",
       "category": "devops-infra",
       "lang": "en",
-      "title": "Kubernetes Skill",
+      "title": "Kubernetes",
+      "description": "Kubernetes manifests, resource limits, health probes, secrets, RBAC, HPA, CrashLoopBackOff diagnosis",
       "file": "skills/devops-infra/kubernetes.md"
     },
     {
@@ -357,6 +407,7 @@
       "category": "devops-infra",
       "lang": "nl",
       "title": "Docker Skill",
+      "description": "",
       "file": "skills/devops-infra/nl/docker.md"
     },
     {
@@ -364,6 +415,7 @@
       "category": "devops-infra",
       "lang": "nl",
       "title": "GitHub Actions Skill",
+      "description": "",
       "file": "skills/devops-infra/nl/github-actions.md"
     },
     {
@@ -371,6 +423,7 @@
       "category": "devops-infra",
       "lang": "nl",
       "title": "Kubernetes Skill",
+      "description": "",
       "file": "skills/devops-infra/nl/kubernetes.md"
     },
     {
@@ -378,20 +431,23 @@
       "category": "devops-infra",
       "lang": "nl",
       "title": "Terraform Skill",
+      "description": "",
       "file": "skills/devops-infra/nl/terraform.md"
     },
     {
       "id": "devops-infra/terraform",
       "category": "devops-infra",
       "lang": "en",
-      "title": "Terraform Skill",
+      "title": "Terraform",
+      "description": "Terraform modules, state management, workspaces, provider config, plan/apply workflow, remote backends",
       "file": "skills/devops-infra/terraform.md"
     },
     {
       "id": "data-ml/dbt-data-pipelines",
       "category": "data-ml",
       "lang": "en",
-      "title": "dbt Data Pipelines Skill",
+      "title": "dbt",
+      "description": "dbt models, sources, tests, macros, incremental models, documentation, CI integration, Jinja patterns",
       "file": "skills/data-ml/dbt-data-pipelines.md"
     },
     {
@@ -399,6 +455,7 @@
       "category": "data-ml",
       "lang": "de",
       "title": "dbt Data Pipelines Skill",
+      "description": "",
       "file": "skills/data-ml/de/dbt-data-pipelines.md"
     },
     {
@@ -406,6 +463,7 @@
       "category": "data-ml",
       "lang": "de",
       "title": "Pandas / Polars Skill",
+      "description": "",
       "file": "skills/data-ml/de/pandas-polars.md"
     },
     {
@@ -413,6 +471,7 @@
       "category": "data-ml",
       "lang": "de",
       "title": "PyTorch / TensorFlow Skill",
+      "description": "",
       "file": "skills/data-ml/de/pytorch-tensorflow.md"
     },
     {
@@ -420,6 +479,7 @@
       "category": "data-ml",
       "lang": "es",
       "title": "Skill de dbt Data Pipelines",
+      "description": "",
       "file": "skills/data-ml/es/dbt-data-pipelines.md"
     },
     {
@@ -427,6 +487,7 @@
       "category": "data-ml",
       "lang": "es",
       "title": "Skill de Pandas / Polars",
+      "description": "",
       "file": "skills/data-ml/es/pandas-polars.md"
     },
     {
@@ -434,6 +495,7 @@
       "category": "data-ml",
       "lang": "es",
       "title": "Skill de PyTorch / TensorFlow",
+      "description": "",
       "file": "skills/data-ml/es/pytorch-tensorflow.md"
     },
     {
@@ -441,6 +503,7 @@
       "category": "data-ml",
       "lang": "fr",
       "title": "Compétence dbt Data Pipelines",
+      "description": "",
       "file": "skills/data-ml/fr/dbt-data-pipelines.md"
     },
     {
@@ -448,6 +511,7 @@
       "category": "data-ml",
       "lang": "fr",
       "title": "Compétence Pandas / Polars",
+      "description": "",
       "file": "skills/data-ml/fr/pandas-polars.md"
     },
     {
@@ -455,6 +519,7 @@
       "category": "data-ml",
       "lang": "fr",
       "title": "Compétence PyTorch / TensorFlow",
+      "description": "",
       "file": "skills/data-ml/fr/pytorch-tensorflow.md"
     },
     {
@@ -462,6 +527,7 @@
       "category": "data-ml",
       "lang": "nl",
       "title": "dbt Data Pipelines Skill",
+      "description": "",
       "file": "skills/data-ml/nl/dbt-data-pipelines.md"
     },
     {
@@ -469,6 +535,7 @@
       "category": "data-ml",
       "lang": "nl",
       "title": "Pandas / Polars Skill",
+      "description": "",
       "file": "skills/data-ml/nl/pandas-polars.md"
     },
     {
@@ -476,20 +543,23 @@
       "category": "data-ml",
       "lang": "nl",
       "title": "PyTorch / TensorFlow Skill",
+      "description": "",
       "file": "skills/data-ml/nl/pytorch-tensorflow.md"
     },
     {
       "id": "data-ml/pandas-polars",
       "category": "data-ml",
       "lang": "en",
-      "title": "Pandas / Polars Skill",
+      "title": "Pandas Polars",
+      "description": "Pandas and Polars data manipulation: filtering, groupby, joins, time series, performance optimization",
       "file": "skills/data-ml/pandas-polars.md"
     },
     {
       "id": "data-ml/pytorch-tensorflow",
       "category": "data-ml",
       "lang": "en",
-      "title": "PyTorch / TensorFlow Skill",
+      "title": "Pytorch Tensorflow",
+      "description": "PyTorch and TensorFlow model training, data loaders, GPU setup, checkpointing, inference optimization",
       "file": "skills/data-ml/pytorch-tensorflow.md"
     },
     {
@@ -497,6 +567,7 @@
       "category": "database",
       "lang": "de",
       "title": "GraphQL Skill",
+      "description": "",
       "file": "skills/database/de/graphql.md"
     },
     {
@@ -504,6 +575,7 @@
       "category": "database",
       "lang": "es",
       "title": "Skill de GraphQL",
+      "description": "",
       "file": "skills/database/es/graphql.md"
     },
     {
@@ -511,13 +583,15 @@
       "category": "database",
       "lang": "fr",
       "title": "Compétence GraphQL",
+      "description": "",
       "file": "skills/database/fr/graphql.md"
     },
     {
       "id": "database/graphql",
       "category": "database",
       "lang": "en",
-      "title": "GraphQL Skill",
+      "title": "Graphql",
+      "description": "GraphQL schema design, resolvers, mutations, subscriptions, DataLoader, Prisma integration, N+1 prevention",
       "file": "skills/database/graphql.md"
     },
     {
@@ -525,6 +599,7 @@
       "category": "database",
       "lang": "nl",
       "title": "GraphQL Skill",
+      "description": "",
       "file": "skills/database/nl/graphql.md"
     },
     {
@@ -532,6 +607,7 @@
       "category": "finance-payments",
       "lang": "de",
       "title": "Stripe Integration Skill",
+      "description": "",
       "file": "skills/finance-payments/de/stripe.md"
     },
     {
@@ -539,6 +615,7 @@
       "category": "finance-payments",
       "lang": "es",
       "title": "Skill de Integración con Stripe",
+      "description": "",
       "file": "skills/finance-payments/es/stripe.md"
     },
     {
@@ -546,6 +623,7 @@
       "category": "finance-payments",
       "lang": "fr",
       "title": "Compétence Intégration Stripe",
+      "description": "",
       "file": "skills/finance-payments/fr/stripe.md"
     },
     {
@@ -553,27 +631,31 @@
       "category": "finance-payments",
       "lang": "nl",
       "title": "Stripe Integratie Skill",
+      "description": "",
       "file": "skills/finance-payments/nl/stripe.md"
     },
     {
       "id": "finance-payments/stripe",
       "category": "finance-payments",
       "lang": "en",
-      "title": "Stripe Integration Skill",
+      "title": "Stripe",
+      "description": "Stripe Checkout, subscriptions, webhooks, customer portal, payment intents, test mode, idempotency",
       "file": "skills/finance-payments/stripe.md"
     },
     {
       "id": "ai-engineering/agent-construction",
       "category": "ai-engineering",
       "lang": "en",
-      "title": "Agent Construction Skill",
+      "title": "Agent Construction",
+      "description": "Multi-agent architecture, orchestrator patterns, tool design, agent loops, memory, error handling, handoffs",
       "file": "skills/ai-engineering/agent-construction.md"
     },
     {
       "id": "ai-engineering/claude-api",
       "category": "ai-engineering",
       "lang": "en",
-      "title": "Claude API Skill",
+      "title": "Claude Api",
+      "description": "Anthropic Claude API: prompt caching, streaming, tool use, batch processing, model selection, cost optimization",
       "file": "skills/ai-engineering/claude-api.md"
     },
     {
@@ -581,6 +663,7 @@
       "category": "ai-engineering",
       "lang": "de",
       "title": "Agent Construction Skill",
+      "description": "",
       "file": "skills/ai-engineering/de/agent-construction.md"
     },
     {
@@ -588,6 +671,7 @@
       "category": "ai-engineering",
       "lang": "de",
       "title": "Claude API Skill",
+      "description": "",
       "file": "skills/ai-engineering/de/claude-api.md"
     },
     {
@@ -595,6 +679,7 @@
       "category": "ai-engineering",
       "lang": "es",
       "title": "Skill de Construcción de Agentes",
+      "description": "",
       "file": "skills/ai-engineering/es/agent-construction.md"
     },
     {
@@ -602,6 +687,7 @@
       "category": "ai-engineering",
       "lang": "es",
       "title": "Skill de Claude API",
+      "description": "",
       "file": "skills/ai-engineering/es/claude-api.md"
     },
     {
@@ -609,6 +695,7 @@
       "category": "ai-engineering",
       "lang": "fr",
       "title": "Compétence Construction d'Agents",
+      "description": "",
       "file": "skills/ai-engineering/fr/agent-construction.md"
     },
     {
@@ -616,6 +703,7 @@
       "category": "ai-engineering",
       "lang": "fr",
       "title": "Compétence API Claude",
+      "description": "",
       "file": "skills/ai-engineering/fr/claude-api.md"
     },
     {
@@ -623,6 +711,7 @@
       "category": "ai-engineering",
       "lang": "nl",
       "title": "Agent Construction Skill",
+      "description": "",
       "file": "skills/ai-engineering/nl/agent-construction.md"
     },
     {
@@ -630,13 +719,15 @@
       "category": "ai-engineering",
       "lang": "nl",
       "title": "Claude API Skill",
+      "description": "",
       "file": "skills/ai-engineering/nl/claude-api.md"
     },
     {
       "id": "productivity/caveman",
       "category": "productivity",
       "lang": "en",
-      "title": "Caveman Mode Skill",
+      "title": "Caveman",
+      "description": "Token compression via caveman mode: ~65% output reduction, caveman-compress, cavecrew subagents",
       "file": "skills/productivity/caveman.md"
     },
     {
@@ -644,6 +735,7 @@
       "category": "productivity",
       "lang": "de",
       "title": "Caveman Mode Skill",
+      "description": "",
       "file": "skills/productivity/de/caveman.md"
     },
     {
@@ -651,6 +743,7 @@
       "category": "productivity",
       "lang": "es",
       "title": "Skill Modo Caveman",
+      "description": "",
       "file": "skills/productivity/es/caveman.md"
     },
     {
@@ -658,6 +751,7 @@
       "category": "productivity",
       "lang": "fr",
       "title": "Skill Mode Caveman",
+      "description": "",
       "file": "skills/productivity/fr/caveman.md"
     },
     {
@@ -665,6 +759,7 @@
       "category": "productivity",
       "lang": "nl",
       "title": "Caveman Mode Skill",
+      "description": "",
       "file": "skills/productivity/nl/caveman.md"
     }
   ],
