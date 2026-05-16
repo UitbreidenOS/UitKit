@@ -67,21 +67,40 @@ export default async function HomePage() {
 
       {/* Quick install */}
       <section className="border-b-2 border-black bg-black text-orange-100 py-10">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div className="max-w-7xl mx-auto px-4 flex flex-col gap-8">
+
+          {/* Guided setup */}
+          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
             <div>
-              <h2 className="text-xl font-black mb-1">Install in seconds</h2>
-              <p className="text-orange-200 text-sm">Add all skills to Claude Code with one command</p>
+              <div className="flex items-center gap-2 mb-1">
+                <span className="text-xs font-black px-2 py-0.5 bg-orange-500 text-black">NEW</span>
+                <h2 className="text-xl font-black">First time? Use guided setup</h2>
+              </div>
+              <p className="text-orange-200 text-sm">Interactive 5-step wizard — picks language, skills, agents, hooks, and rules</p>
+            </div>
+            <code className="neo-card bg-orange-950 border-orange-500 text-orange-300 px-4 py-3 font-mono text-sm w-full md:w-72 shrink-0">
+              npx claudient init
+            </code>
+          </div>
+
+          <div className="border-t border-orange-900" />
+
+          {/* Manual install */}
+          <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+            <div>
+              <h2 className="text-xl font-black mb-1">Or install directly</h2>
+              <p className="text-orange-200 text-sm">Add all skills, or pick a specific category</p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
-              <code className="neo-card bg-orange-950 border-orange-600 text-orange-100 px-4 py-3 font-mono text-sm flex-1 md:w-80">
+              <code className="neo-card bg-orange-950 border-orange-600 text-orange-100 px-4 py-3 font-mono text-sm md:w-72">
                 npx claudient add all
               </code>
-              <code className="neo-card bg-orange-950 border-orange-600 text-orange-100 px-4 py-3 font-mono text-sm flex-1 md:w-64">
+              <code className="neo-card bg-orange-950 border-orange-600 text-orange-100 px-4 py-3 font-mono text-sm md:w-64">
                 npx claudient add backend
               </code>
             </div>
           </div>
+
         </div>
       </section>
 
