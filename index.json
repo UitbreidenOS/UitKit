@@ -1,6 +1,6 @@
 {
-  "version": "1.4.0",
-  "generated": "2026-05-18T17:02:35.603Z",
+  "version": "1.5.0",
+  "generated": "2026-05-18T17:05:51.713Z",
   "skills": [
     {
       "id": "backend/dotnet/csharp",
@@ -171,6 +171,14 @@
       "file": "skills/backend/nodejs/fr/nextjs.md"
     },
     {
+      "id": "backend/nodejs/typescript-advanced",
+      "category": "backend",
+      "lang": "fr",
+      "title": "Typescript Advanced",
+      "description": "Advanced TypeScript: generics, conditional types, mapped types, template literals, utility types, type guards, discriminated unions at scale",
+      "file": "skills/backend/nodejs/fr/typescript-advanced.md"
+    },
+    {
       "id": "backend/nodejs/nestjs",
       "category": "backend",
       "lang": "en",
@@ -299,6 +307,14 @@
       "file": "skills/backend/python/nl/fastapi.md"
     },
     {
+      "id": "devops-infra/docker-compose",
+      "category": "devops-infra",
+      "lang": "de",
+      "title": "Docker Compose",
+      "description": "Docker Compose for local dev: multi-service stacks, volumes, networking, health checks, env vars, production-like local environments",
+      "file": "skills/devops-infra/de/docker-compose.md"
+    },
+    {
       "id": "devops-infra/docker",
       "category": "devops-infra",
       "lang": "de",
@@ -347,6 +363,14 @@
       "file": "skills/devops-infra/docker.md"
     },
     {
+      "id": "devops-infra/docker-compose",
+      "category": "devops-infra",
+      "lang": "es",
+      "title": "Docker Compose",
+      "description": "Docker Compose for local dev: multi-service stacks, volumes, networking, health checks, env vars, production-like local environments",
+      "file": "skills/devops-infra/es/docker-compose.md"
+    },
+    {
       "id": "devops-infra/docker",
       "category": "devops-infra",
       "lang": "es",
@@ -377,6 +401,14 @@
       "title": "Skill de Terraform",
       "description": "",
       "file": "skills/devops-infra/es/terraform.md"
+    },
+    {
+      "id": "devops-infra/docker-compose",
+      "category": "devops-infra",
+      "lang": "fr",
+      "title": "Docker Compose",
+      "description": "Docker Compose for local dev: multi-service stacks, volumes, networking, health checks, env vars, production-like local environments",
+      "file": "skills/devops-infra/fr/docker-compose.md"
     },
     {
       "id": "devops-infra/docker",
@@ -425,6 +457,14 @@
       "title": "Kubernetes",
       "description": "Kubernetes manifests, resource limits, health probes, secrets, RBAC, HPA, CrashLoopBackOff diagnosis",
       "file": "skills/devops-infra/kubernetes.md"
+    },
+    {
+      "id": "devops-infra/docker-compose",
+      "category": "devops-infra",
+      "lang": "nl",
+      "title": "Docker Compose",
+      "description": "Docker Compose for local dev: multi-service stacks, volumes, networking, health checks, env vars, production-like local environments",
+      "file": "skills/devops-infra/nl/docker-compose.md"
     },
     {
       "id": "devops-infra/docker",
@@ -761,6 +801,22 @@
       "title": "Supabase",
       "description": "Supabase: Row Level Security policies, auth integration, realtime subscriptions, Storage, Edge Functions, pgvector",
       "file": "skills/database/nl/supabase.md"
+    },
+    {
+      "id": "database/postgresql",
+      "category": "database",
+      "lang": "en",
+      "title": "Postgresql",
+      "description": "PostgreSQL backend patterns: full-text search, JSONB, arrays, pg_notify, PL/pgSQL functions, connection pooling with asyncpg and node-postgres",
+      "file": "skills/database/postgresql.md"
+    },
+    {
+      "id": "database/prisma",
+      "category": "database",
+      "lang": "en",
+      "title": "Prisma",
+      "description": "Prisma ORM: schema design, relations, migrations, nested writes, middleware, raw queries, type-safe database access",
+      "file": "skills/database/prisma.md"
     },
     {
       "id": "database/redis",
@@ -2452,7 +2508,7 @@
     }
   ],
   "summary": {
-    "skills": 39,
+    "skills": 41,
     "agents": 6,
     "hooks": 7,
     "rules": 8,
