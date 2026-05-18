@@ -1,6 +1,6 @@
 {
-  "version": "0.6.0",
-  "generated": "2026-05-18T16:36:28.262Z",
+  "version": "0.8.0",
+  "generated": "2026-05-18T16:41:24.690Z",
   "skills": [
     {
       "id": "backend/dotnet/csharp",
@@ -833,6 +833,14 @@
       "title": "Lean Claude",
       "description": "Activate token-efficient mode: caveman output, right model selection, MCP discipline, compaction strategy, cavecrew agents — all in one",
       "file": "skills/productivity/nl/lean-claude.md"
+    },
+    {
+      "id": "productivity/no-slop",
+      "category": "productivity",
+      "lang": "en",
+      "title": "No Slop",
+      "description": "Escape AI-generated aesthetics in UI/frontend: specific typography, color palettes, layouts, and design rules that avoid the generic 'AI look'",
+      "file": "skills/productivity/no-slop.md"
     }
   ],
   "agents": [
@@ -1745,6 +1753,12 @@
       "file": "guides/agent-orchestration.md"
     },
     {
+      "id": "claude-md-architecture",
+      "lang": "en",
+      "title": "CLAUDE.md Architecture Guide",
+      "file": "guides/claude-md-architecture.md"
+    },
+    {
       "id": "agent-orchestration",
       "lang": "de",
       "title": "Leitfaden zur Agentenorchestrierung",
@@ -1950,13 +1964,13 @@
     }
   ],
   "summary": {
-    "skills": 24,
+    "skills": 25,
     "agents": 6,
     "hooks": 7,
     "rules": 8,
     "workflows": 5,
     "prompts": 8,
-    "guides": 7,
+    "guides": 8,
     "languages": [
       "en",
       "fr",
