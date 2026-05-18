@@ -1,6 +1,6 @@
 {
-  "version": "1.3.0",
-  "generated": "2026-05-18T16:58:48.393Z",
+  "version": "1.4.0",
+  "generated": "2026-05-18T17:02:35.603Z",
   "skills": [
     {
       "id": "backend/dotnet/csharp",
@@ -211,6 +211,14 @@
       "file": "skills/backend/nodejs/react.md"
     },
     {
+      "id": "backend/nodejs/typescript-advanced",
+      "category": "backend",
+      "lang": "en",
+      "title": "Typescript Advanced",
+      "description": "Advanced TypeScript: generics, conditional types, mapped types, template literals, utility types, type guards, discriminated unions at scale",
+      "file": "skills/backend/nodejs/typescript-advanced.md"
+    },
+    {
       "id": "backend/python/django",
       "category": "backend",
       "lang": "de",
@@ -321,6 +329,14 @@
       "title": "Terraform Skill",
       "description": "",
       "file": "skills/devops-infra/de/terraform.md"
+    },
+    {
+      "id": "devops-infra/docker-compose",
+      "category": "devops-infra",
+      "lang": "en",
+      "title": "Docker Compose",
+      "description": "Docker Compose for local dev: multi-service stacks, volumes, networking, health checks, env vars, production-like local environments",
+      "file": "skills/devops-infra/docker-compose.md"
     },
     {
       "id": "devops-infra/docker",
@@ -651,12 +667,36 @@
       "file": "skills/database/de/neon.md"
     },
     {
+      "id": "database/supabase",
+      "category": "database",
+      "lang": "de",
+      "title": "Supabase",
+      "description": "Supabase: Row Level Security policies, auth integration, realtime subscriptions, Storage, Edge Functions, pgvector",
+      "file": "skills/database/de/supabase.md"
+    },
+    {
       "id": "database/graphql",
       "category": "database",
       "lang": "es",
       "title": "Skill de GraphQL",
       "description": "",
       "file": "skills/database/es/graphql.md"
+    },
+    {
+      "id": "database/neon",
+      "category": "database",
+      "lang": "es",
+      "title": "Neon",
+      "description": "Neon serverless PostgreSQL: connection pooling, database branching, pgvector for AI, autoscaling patterns, Vercel integration",
+      "file": "skills/database/es/neon.md"
+    },
+    {
+      "id": "database/supabase",
+      "category": "database",
+      "lang": "es",
+      "title": "Supabase",
+      "description": "Supabase: Row Level Security policies, auth integration, realtime subscriptions, Storage, Edge Functions, pgvector",
+      "file": "skills/database/es/supabase.md"
     },
     {
       "id": "database/graphql",
@@ -673,6 +713,14 @@
       "title": "Neon",
       "description": "Neon serverless PostgreSQL: connection pooling, database branching, pgvector for AI, autoscaling patterns, Vercel integration",
       "file": "skills/database/fr/neon.md"
+    },
+    {
+      "id": "database/supabase",
+      "category": "database",
+      "lang": "fr",
+      "title": "Supabase",
+      "description": "Supabase: Row Level Security policies, auth integration, realtime subscriptions, Storage, Edge Functions, pgvector",
+      "file": "skills/database/fr/supabase.md"
     },
     {
       "id": "database/graphql",
@@ -697,6 +745,22 @@
       "title": "GraphQL Skill",
       "description": "",
       "file": "skills/database/nl/graphql.md"
+    },
+    {
+      "id": "database/neon",
+      "category": "database",
+      "lang": "nl",
+      "title": "Neon",
+      "description": "Neon serverless PostgreSQL: connection pooling, database branching, pgvector for AI, autoscaling patterns, Vercel integration",
+      "file": "skills/database/nl/neon.md"
+    },
+    {
+      "id": "database/supabase",
+      "category": "database",
+      "lang": "nl",
+      "title": "Supabase",
+      "description": "Supabase: Row Level Security policies, auth integration, realtime subscriptions, Storage, Edge Functions, pgvector",
+      "file": "skills/database/nl/supabase.md"
     },
     {
       "id": "database/redis",
@@ -2388,7 +2452,7 @@
     }
   ],
   "summary": {
-    "skills": 37,
+    "skills": 39,
     "agents": 6,
     "hooks": 7,
     "rules": 8,
