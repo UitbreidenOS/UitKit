@@ -1,6 +1,6 @@
 {
-  "version": "0.9.0",
-  "generated": "2026-05-18T16:45:32.583Z",
+  "version": "1.0.0",
+  "generated": "2026-05-18T16:50:49.938Z",
   "skills": [
     {
       "id": "backend/dotnet/csharp",
@@ -579,6 +579,14 @@
       "file": "skills/data-ml/spark.md"
     },
     {
+      "id": "data-ml/sql",
+      "category": "data-ml",
+      "lang": "en",
+      "title": "Sql",
+      "description": "SQL query writing and optimisation: complex joins, window functions, CTEs, indexes, query plans, migration patterns",
+      "file": "skills/data-ml/sql.md"
+    },
+    {
       "id": "database/graphql",
       "category": "database",
       "lang": "de",
@@ -795,6 +803,38 @@
       "file": "skills/productivity/de/no-slop.md"
     },
     {
+      "id": "productivity/readme-generator",
+      "category": "productivity",
+      "lang": "de",
+      "title": "Readme Generator",
+      "description": "Generate complete README.md files: badges, install, usage, API reference, contributing guide, from code or description",
+      "file": "skills/productivity/de/readme-generator.md"
+    },
+    {
+      "id": "productivity/security-audit",
+      "category": "productivity",
+      "lang": "de",
+      "title": "Security Audit",
+      "description": "Security audit for code: OWASP Top 10, injection, auth flaws, secrets, dependency vulnerabilities — with severity and fix for each finding",
+      "file": "skills/productivity/de/security-audit.md"
+    },
+    {
+      "id": "productivity/test-generator",
+      "category": "productivity",
+      "lang": "de",
+      "title": "Test Generator",
+      "description": "Generate unit and integration tests for existing code: happy path, edge cases, error handling, mocks — for any language or framework",
+      "file": "skills/productivity/de/test-generator.md"
+    },
+    {
+      "id": "productivity/debug",
+      "category": "productivity",
+      "lang": "en",
+      "title": "Debug",
+      "description": "Systematic bug isolation: reproduce, hypothesise, narrow, fix, verify — for any language or error type",
+      "file": "skills/productivity/debug.md"
+    },
+    {
       "id": "productivity/env-doctor",
       "category": "productivity",
       "lang": "en",
@@ -843,6 +883,22 @@
       "file": "skills/productivity/es/no-slop.md"
     },
     {
+      "id": "productivity/readme-generator",
+      "category": "productivity",
+      "lang": "es",
+      "title": "Readme Generator",
+      "description": "Generate complete README.md files: badges, install, usage, API reference, contributing guide, from code or description",
+      "file": "skills/productivity/es/readme-generator.md"
+    },
+    {
+      "id": "productivity/test-generator",
+      "category": "productivity",
+      "lang": "es",
+      "title": "Test Generator",
+      "description": "Generate unit and integration tests for existing code: happy path, edge cases, error handling, mocks — for any language or framework",
+      "file": "skills/productivity/es/test-generator.md"
+    },
+    {
       "id": "productivity/batch",
       "category": "productivity",
       "lang": "fr",
@@ -881,6 +937,30 @@
       "title": "No Slop",
       "description": "Escape AI-generated aesthetics in UI/frontend: specific typography, color palettes, layouts, and design rules that avoid the generic 'AI look'",
       "file": "skills/productivity/fr/no-slop.md"
+    },
+    {
+      "id": "productivity/readme-generator",
+      "category": "productivity",
+      "lang": "fr",
+      "title": "Readme Generator",
+      "description": "Generate complete README.md files: badges, install, usage, API reference, contributing guide, from code or description",
+      "file": "skills/productivity/fr/readme-generator.md"
+    },
+    {
+      "id": "productivity/security-audit",
+      "category": "productivity",
+      "lang": "fr",
+      "title": "Security Audit",
+      "description": "Security audit for code: OWASP Top 10, injection, auth flaws, secrets, dependency vulnerabilities — with severity and fix for each finding",
+      "file": "skills/productivity/fr/security-audit.md"
+    },
+    {
+      "id": "productivity/test-generator",
+      "category": "productivity",
+      "lang": "fr",
+      "title": "Test Generator",
+      "description": "Generate unit and integration tests for existing code: happy path, edge cases, error handling, mocks — for any language or framework",
+      "file": "skills/productivity/fr/test-generator.md"
     },
     {
       "id": "productivity/lean-claude",
@@ -931,6 +1011,30 @@
       "file": "skills/productivity/nl/no-slop.md"
     },
     {
+      "id": "productivity/readme-generator",
+      "category": "productivity",
+      "lang": "nl",
+      "title": "Readme Generator",
+      "description": "Generate complete README.md files: badges, install, usage, API reference, contributing guide, from code or description",
+      "file": "skills/productivity/nl/readme-generator.md"
+    },
+    {
+      "id": "productivity/security-audit",
+      "category": "productivity",
+      "lang": "nl",
+      "title": "Security Audit",
+      "description": "Security audit for code: OWASP Top 10, injection, auth flaws, secrets, dependency vulnerabilities — with severity and fix for each finding",
+      "file": "skills/productivity/nl/security-audit.md"
+    },
+    {
+      "id": "productivity/test-generator",
+      "category": "productivity",
+      "lang": "nl",
+      "title": "Test Generator",
+      "description": "Generate unit and integration tests for existing code: happy path, edge cases, error handling, mocks — for any language or framework",
+      "file": "skills/productivity/nl/test-generator.md"
+    },
+    {
       "id": "productivity/no-slop",
       "category": "productivity",
       "lang": "en",
@@ -945,6 +1049,14 @@
       "title": "Readme Generator",
       "description": "Generate complete README.md files: badges, install, usage, API reference, contributing guide, from code or description",
       "file": "skills/productivity/readme-generator.md"
+    },
+    {
+      "id": "productivity/refactor",
+      "category": "productivity",
+      "lang": "en",
+      "title": "Refactor",
+      "description": "Safe code refactoring: extract function/class, rename, split files, simplify conditionals, remove duplication — with test coverage at every step",
+      "file": "skills/productivity/refactor.md"
     },
     {
       "id": "productivity/security-audit",
@@ -1885,6 +1997,12 @@
       "file": "guides/de/agent-orchestration.md"
     },
     {
+      "id": "claude-md-architecture",
+      "lang": "de",
+      "title": "CLAUDE.md-Architektur-Leitfaden",
+      "file": "guides/de/claude-md-architecture.md"
+    },
+    {
       "id": "getting-started",
       "lang": "de",
       "title": "Erste Schritte mit Claudient",
@@ -1927,6 +2045,12 @@
       "file": "guides/es/agent-orchestration.md"
     },
     {
+      "id": "claude-md-architecture",
+      "lang": "es",
+      "title": "Guía de arquitectura CLAUDE.md",
+      "file": "guides/es/claude-md-architecture.md"
+    },
+    {
       "id": "getting-started",
       "lang": "es",
       "title": "Primeros pasos con Claudient",
@@ -1967,6 +2091,12 @@
       "lang": "fr",
       "title": "Guide d'orchestration des agents",
       "file": "guides/fr/agent-orchestration.md"
+    },
+    {
+      "id": "claude-md-architecture",
+      "lang": "fr",
+      "title": "Guide d'architecture CLAUDE.md",
+      "file": "guides/fr/claude-md-architecture.md"
     },
     {
       "id": "getting-started",
@@ -2029,6 +2159,12 @@
       "file": "guides/nl/agent-orchestration.md"
     },
     {
+      "id": "claude-md-architecture",
+      "lang": "nl",
+      "title": "CLAUDE.md-architectuurgids",
+      "file": "guides/nl/claude-md-architecture.md"
+    },
+    {
       "id": "getting-started",
       "lang": "nl",
       "title": "Aan de slag met Claudient",
@@ -2084,7 +2220,7 @@
     }
   ],
   "summary": {
-    "skills": 28,
+    "skills": 31,
     "agents": 6,
     "hooks": 7,
     "rules": 8,
