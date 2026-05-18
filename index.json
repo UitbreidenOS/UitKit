@@ -1,6 +1,6 @@
 {
-  "version": "1.0.0",
-  "generated": "2026-05-18T16:50:49.938Z",
+  "version": "1.1.0",
+  "generated": "2026-05-18T16:52:34.496Z",
   "skills": [
     {
       "id": "backend/dotnet/csharp",
@@ -443,6 +443,14 @@
       "file": "skills/devops-infra/terraform.md"
     },
     {
+      "id": "data-ml/data-migration",
+      "category": "data-ml",
+      "lang": "en",
+      "title": "Data Migration",
+      "description": "Database migration patterns: zero-downtime schema changes, data backfills, Alembic, Prisma Migrate, Rails migrations",
+      "file": "skills/data-ml/data-migration.md"
+    },
+    {
       "id": "data-ml/dbt-data-pipelines",
       "category": "data-ml",
       "lang": "en",
@@ -763,6 +771,14 @@
       "file": "skills/productivity/caveman.md"
     },
     {
+      "id": "productivity/code-review",
+      "category": "productivity",
+      "lang": "en",
+      "title": "Code Review",
+      "description": "Structured code review: correctness, security, performance, maintainability — with severity and actionable feedback per finding",
+      "file": "skills/productivity/code-review.md"
+    },
+    {
       "id": "productivity/batch",
       "category": "productivity",
       "lang": "de",
@@ -809,6 +825,14 @@
       "title": "Readme Generator",
       "description": "Generate complete README.md files: badges, install, usage, API reference, contributing guide, from code or description",
       "file": "skills/productivity/de/readme-generator.md"
+    },
+    {
+      "id": "productivity/refactor",
+      "category": "productivity",
+      "lang": "de",
+      "title": "Refactor",
+      "description": "Safe code refactoring: extract function/class, rename, split files, simplify conditionals, remove duplication — with test coverage at every step",
+      "file": "skills/productivity/de/refactor.md"
     },
     {
       "id": "productivity/security-audit",
@@ -891,6 +915,14 @@
       "file": "skills/productivity/es/readme-generator.md"
     },
     {
+      "id": "productivity/security-audit",
+      "category": "productivity",
+      "lang": "es",
+      "title": "Security Audit",
+      "description": "Security audit for code: OWASP Top 10, injection, auth flaws, secrets, dependency vulnerabilities — with severity and fix for each finding",
+      "file": "skills/productivity/es/security-audit.md"
+    },
+    {
       "id": "productivity/test-generator",
       "category": "productivity",
       "lang": "es",
@@ -945,6 +977,14 @@
       "title": "Readme Generator",
       "description": "Generate complete README.md files: badges, install, usage, API reference, contributing guide, from code or description",
       "file": "skills/productivity/fr/readme-generator.md"
+    },
+    {
+      "id": "productivity/refactor",
+      "category": "productivity",
+      "lang": "fr",
+      "title": "Refactor",
+      "description": "Safe code refactoring: extract function/class, rename, split files, simplify conditionals, remove duplication — with test coverage at every step",
+      "file": "skills/productivity/fr/refactor.md"
     },
     {
       "id": "productivity/security-audit",
@@ -2220,7 +2260,7 @@
     }
   ],
   "summary": {
-    "skills": 31,
+    "skills": 33,
     "agents": 6,
     "hooks": 7,
     "rules": 8,
