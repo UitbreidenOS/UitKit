@@ -1,6 +1,6 @@
 {
-  "version": "2.0.0",
-  "generated": "2026-05-18T17:24:29.850Z",
+  "version": "2.1.0",
+  "generated": "2026-05-18T17:33:54.411Z",
   "skills": [
     {
       "id": "backend/dotnet/csharp",
@@ -131,6 +131,14 @@
       "file": "skills/backend/nodejs/better-auth.md"
     },
     {
+      "id": "backend/nodejs/better-auth",
+      "category": "backend",
+      "lang": "de",
+      "title": "Better Auth",
+      "description": "Better Auth: das Open-Source-Auth-Framework für Next.js/TypeScript — Session-Management, OAuth, 2FA, RBAC, Drizzle/Prisma-Adapter, keine Anbieter-Bindung",
+      "file": "skills/backend/nodejs/de/better-auth.md"
+    },
+    {
       "id": "backend/nodejs/nestjs",
       "category": "backend",
       "lang": "de",
@@ -171,6 +179,14 @@
       "file": "skills/backend/nodejs/de/vue.md"
     },
     {
+      "id": "backend/nodejs/better-auth",
+      "category": "backend",
+      "lang": "es",
+      "title": "Better Auth",
+      "description": "Better Auth: el framework de autenticación open-source para Next.js/TypeScript — gestión de sesiones, OAuth, 2FA, RBAC, adaptadores Drizzle/Prisma, sin dependencia de proveedor",
+      "file": "skills/backend/nodejs/es/better-auth.md"
+    },
+    {
       "id": "backend/nodejs/nestjs",
       "category": "backend",
       "lang": "es",
@@ -209,6 +225,14 @@
       "title": "Vue",
       "description": "Vue 3 patterns: Composition API, composables, Pinia state, Vue Router, async components, performance, TypeScript with Vue",
       "file": "skills/backend/nodejs/es/vue.md"
+    },
+    {
+      "id": "backend/nodejs/better-auth",
+      "category": "backend",
+      "lang": "fr",
+      "title": "Better Auth",
+      "description": "Better Auth: le framework d'authentification open-source pour Next.js/TypeScript — gestion de session, OAuth, 2FA, RBAC, adaptateurs Drizzle/Prisma, sans dépendance fournisseur",
+      "file": "skills/backend/nodejs/fr/better-auth.md"
     },
     {
       "id": "backend/nodejs/nestjs",
@@ -267,6 +291,14 @@
       "file": "skills/backend/nodejs/nextjs.md"
     },
     {
+      "id": "backend/nodejs/better-auth",
+      "category": "backend",
+      "lang": "nl",
+      "title": "Better Auth",
+      "description": "Better Auth: het open-source auth-framework voor Next.js/TypeScript — sessiebeheer, OAuth, 2FA, RBAC, Drizzle/Prisma-adapters, geen vendor lock-in",
+      "file": "skills/backend/nodejs/nl/better-auth.md"
+    },
+    {
       "id": "backend/nodejs/nestjs",
       "category": "backend",
       "lang": "nl",
@@ -313,6 +345,14 @@
       "title": "React",
       "description": "React patterns: hooks, context, performance optimisation, component composition, state management, common anti-patterns",
       "file": "skills/backend/nodejs/react.md"
+    },
+    {
+      "id": "backend/nodejs/shadcn",
+      "category": "backend",
+      "lang": "en",
+      "title": "Shadcn",
+      "description": "shadcn/ui: install components, customise variants, theming with CSS variables, compose compound components, extend with custom primitives",
+      "file": "skills/backend/nodejs/shadcn.md"
     },
     {
       "id": "backend/nodejs/typescript-advanced",
@@ -803,6 +843,14 @@
       "file": "skills/devops-infra/nl/terraform.md"
     },
     {
+      "id": "devops-infra/railway",
+      "category": "devops-infra",
+      "lang": "en",
+      "title": "Railway",
+      "description": "Railway deployment: Dockerfile deploys, managed Postgres/Redis, environment variables, PR preview environments, custom domains, CLI workflow",
+      "file": "skills/devops-infra/railway.md"
+    },
+    {
       "id": "devops-infra/terraform",
       "category": "devops-infra",
       "lang": "en",
@@ -995,6 +1043,14 @@
       "file": "skills/data-ml/sql.md"
     },
     {
+      "id": "database/drizzle",
+      "category": "database",
+      "lang": "de",
+      "title": "Drizzle",
+      "description": "Drizzle ORM: TypeScript-first Schema, Relationen, Migrationen, Query Builder, Neon/Supabase/PlanetScale-Integration — das KI-lesbare ORM",
+      "file": "skills/database/de/drizzle.md"
+    },
+    {
       "id": "database/graphql",
       "category": "database",
       "lang": "de",
@@ -1059,6 +1115,14 @@
       "file": "skills/database/drizzle.md"
     },
     {
+      "id": "database/drizzle",
+      "category": "database",
+      "lang": "es",
+      "title": "Drizzle",
+      "description": "Drizzle ORM: schema TypeScript-first, relaciones, migraciones, query builder, integración Neon/Supabase/PlanetScale — el ORM legible por IA",
+      "file": "skills/database/es/drizzle.md"
+    },
+    {
       "id": "database/graphql",
       "category": "database",
       "lang": "es",
@@ -1113,6 +1177,14 @@
       "title": "Supabase",
       "description": "Supabase: Row Level Security policies, auth integration, realtime subscriptions, Storage, Edge Functions, pgvector",
       "file": "skills/database/es/supabase.md"
+    },
+    {
+      "id": "database/drizzle",
+      "category": "database",
+      "lang": "fr",
+      "title": "Drizzle",
+      "description": "Drizzle ORM: schéma TypeScript-first, relations, migrations, query builder, intégration Neon/Supabase/PlanetScale — l'ORM lisible par l'IA",
+      "file": "skills/database/fr/drizzle.md"
     },
     {
       "id": "database/graphql",
@@ -1193,6 +1265,14 @@
       "title": "Neon",
       "description": "Neon serverless PostgreSQL: connection pooling, database branching, pgvector for AI, autoscaling patterns, Vercel integration",
       "file": "skills/database/neon.md"
+    },
+    {
+      "id": "database/drizzle",
+      "category": "database",
+      "lang": "nl",
+      "title": "Drizzle",
+      "description": "Drizzle ORM: TypeScript-first schema, relaties, migraties, query builder, Neon/Supabase/PlanetScale-integratie — de AI-leesbare ORM",
+      "file": "skills/database/nl/drizzle.md"
     },
     {
       "id": "database/graphql",
@@ -1323,6 +1403,14 @@
       "file": "skills/finance-payments/stripe.md"
     },
     {
+      "id": "finance-payments/webhooks",
+      "category": "finance-payments",
+      "lang": "en",
+      "title": "Webhooks",
+      "description": "Webhook security: HMAC-SHA256 signature verification, replay attack prevention, idempotency, Stripe + Svix + generic patterns",
+      "file": "skills/finance-payments/webhooks.md"
+    },
+    {
       "id": "ai-engineering/agent-construction",
       "category": "ai-engineering",
       "lang": "en",
@@ -1355,6 +1443,22 @@
       "file": "skills/ai-engineering/de/claude-api.md"
     },
     {
+      "id": "ai-engineering/mcp-server-builder",
+      "category": "ai-engineering",
+      "lang": "de",
+      "title": "Mcp Server Builder",
+      "description": "Benutzerdefinierte MCP-Server erstellen: Tools, Ressourcen und Prompts über stdio oder HTTP/SSE-Transport bereitstellen — proprietäre Daten mit Claude Code verbinden",
+      "file": "skills/ai-engineering/de/mcp-server-builder.md"
+    },
+    {
+      "id": "ai-engineering/vercel-ai-sdk",
+      "category": "ai-engineering",
+      "lang": "de",
+      "title": "Vercel Ai Sdk",
+      "description": "Vercel AI SDK: KI-Antworten an Next.js streamen, useChat/useCompletion-Hooks, Tool-Aufrufe, generative UI, Multi-Provider-Routing (Claude, OpenAI, Gemini)",
+      "file": "skills/ai-engineering/de/vercel-ai-sdk.md"
+    },
+    {
       "id": "ai-engineering/agent-construction",
       "category": "ai-engineering",
       "lang": "es",
@@ -1371,6 +1475,22 @@
       "file": "skills/ai-engineering/es/claude-api.md"
     },
     {
+      "id": "ai-engineering/mcp-server-builder",
+      "category": "ai-engineering",
+      "lang": "es",
+      "title": "Mcp Server Builder",
+      "description": "Construir servidores MCP personalizados: exponer herramientas, recursos y prompts mediante transporte stdio o HTTP/SSE — conectar datos propietarios a Claude Code",
+      "file": "skills/ai-engineering/es/mcp-server-builder.md"
+    },
+    {
+      "id": "ai-engineering/vercel-ai-sdk",
+      "category": "ai-engineering",
+      "lang": "es",
+      "title": "Vercel Ai Sdk",
+      "description": "Vercel AI SDK: transmisión de respuestas IA a Next.js, hooks useChat/useCompletion, llamadas a herramientas, UI generativa, enrutamiento multi-proveedor (Claude, OpenAI, Gemini)",
+      "file": "skills/ai-engineering/es/vercel-ai-sdk.md"
+    },
+    {
       "id": "ai-engineering/agent-construction",
       "category": "ai-engineering",
       "lang": "fr",
@@ -1385,6 +1505,22 @@
       "title": "Compétence API Claude",
       "description": "",
       "file": "skills/ai-engineering/fr/claude-api.md"
+    },
+    {
+      "id": "ai-engineering/mcp-server-builder",
+      "category": "ai-engineering",
+      "lang": "fr",
+      "title": "Mcp Server Builder",
+      "description": "Construire des serveurs MCP personnalisés : exposer des outils, ressources et prompts via transport stdio ou HTTP/SSE — connecter des données propriétaires à Claude Code",
+      "file": "skills/ai-engineering/fr/mcp-server-builder.md"
+    },
+    {
+      "id": "ai-engineering/vercel-ai-sdk",
+      "category": "ai-engineering",
+      "lang": "fr",
+      "title": "Vercel Ai Sdk",
+      "description": "Vercel AI SDK: diffusion de réponses IA vers Next.js, hooks useChat/useCompletion, appels d'outils, UI générative, routage multi-fournisseur (Claude, OpenAI, Gemini)",
+      "file": "skills/ai-engineering/fr/vercel-ai-sdk.md"
     },
     {
       "id": "ai-engineering/mcp-server-builder",
@@ -1409,6 +1545,22 @@
       "title": "Claude API Skill",
       "description": "",
       "file": "skills/ai-engineering/nl/claude-api.md"
+    },
+    {
+      "id": "ai-engineering/mcp-server-builder",
+      "category": "ai-engineering",
+      "lang": "nl",
+      "title": "Mcp Server Builder",
+      "description": "Aangepaste MCP-servers bouwen: tools, resources en prompts beschikbaar stellen via stdio of HTTP/SSE-transport — eigen data verbinden met Claude Code",
+      "file": "skills/ai-engineering/nl/mcp-server-builder.md"
+    },
+    {
+      "id": "ai-engineering/vercel-ai-sdk",
+      "category": "ai-engineering",
+      "lang": "nl",
+      "title": "Vercel Ai Sdk",
+      "description": "Vercel AI SDK: AI-antwoorden streamen naar Next.js, useChat/useCompletion-hooks, tool calls, generatieve UI, multi-provider routing (Claude, OpenAI, Gemini)",
+      "file": "skills/ai-engineering/nl/vercel-ai-sdk.md"
     },
     {
       "id": "ai-engineering/vercel-ai-sdk",
@@ -3012,7 +3164,7 @@
     }
   ],
   "summary": {
-    "skills": 53,
+    "skills": 56,
     "agents": 6,
     "hooks": 7,
     "rules": 8,
