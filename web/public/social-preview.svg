@@ -2,99 +2,85 @@
 
   <!-- Background -->
   <rect width="1280" height="640" fill="#f97316"/>
-
-  <!-- Black border frame -->
   <rect x="0" y="0" width="1280" height="640" fill="none" stroke="#0a0a0a" stroke-width="8"/>
 
-  <!-- Top-left decorative blocks -->
+  <!-- Corner decorations -->
   <rect x="40" y="40" width="28" height="28" fill="#0a0a0a"/>
   <rect x="76" y="40" width="28" height="28" fill="#0a0a0a"/>
   <rect x="40" y="76" width="28" height="28" fill="#0a0a0a"/>
-
-  <!-- Top-right decorative blocks -->
   <rect x="1176" y="40" width="28" height="28" fill="#0a0a0a"/>
   <rect x="1212" y="40" width="28" height="28" fill="#0a0a0a"/>
   <rect x="1212" y="76" width="28" height="28" fill="#0a0a0a"/>
-
-  <!-- Bottom-left decorative blocks -->
   <rect x="40" y="524" width="28" height="28" fill="#0a0a0a"/>
   <rect x="40" y="560" width="28" height="28" fill="#0a0a0a"/>
   <rect x="76" y="560" width="28" height="28" fill="#0a0a0a"/>
-
-  <!-- Bottom-right decorative blocks -->
   <rect x="1176" y="560" width="28" height="28" fill="#0a0a0a"/>
   <rect x="1212" y="524" width="28" height="28" fill="#0a0a0a"/>
   <rect x="1212" y="560" width="28" height="28" fill="#0a0a0a"/>
 
-  <!-- Main title: CLAUDIENT -->
-  <text x="640" y="220" text-anchor="middle" font-size="128" font-weight="900" fill="#0a0a0a" letter-spacing="-4">CLAUDIENT</text>
+  <!-- Main title -->
+  <text x="640" y="195" text-anchor="middle" font-size="118" font-weight="900" fill="#0a0a0a" letter-spacing="-3">CLAUDIENT</text>
 
   <!-- Subtitle -->
-  <text x="640" y="275" text-anchor="middle" font-size="28" font-weight="700" fill="#0a0a0a">63 Skills · Claude Code Knowledge System</text>
+  <text x="640" y="247" text-anchor="middle" font-size="26" font-weight="700" fill="#0a0a0a">80+ Skills · 13 Agents · Claude Code Knowledge System</text>
 
-  <!-- Category pills row -->
-  <g font-size="17" font-weight="800">
-    <!-- backend -->
-    <rect x="97" y="305" width="140" height="34" fill="#0a0a0a"/>
-    <text x="167" y="327" text-anchor="middle" fill="white">backend</text>
-    <!-- database -->
-    <rect x="249" y="305" width="148" height="34" fill="#0a0a0a"/>
-    <text x="323" y="327" text-anchor="middle" fill="white">database</text>
-    <!-- devops -->
-    <rect x="409" y="305" width="148" height="34" fill="#0a0a0a"/>
-    <text x="483" y="327" text-anchor="middle" fill="white">devops-infra</text>
-    <!-- ai-engineering -->
-    <rect x="569" y="305" width="185" height="34" fill="#0a0a0a"/>
-    <text x="661" y="327" text-anchor="middle" fill="white">ai-engineering</text>
-    <!-- git -->
-    <rect x="766" y="305" width="90" height="34" fill="#0a0a0a"/>
-    <text x="811" y="327" text-anchor="middle" fill="white">git</text>
-    <!-- productivity -->
-    <rect x="868" y="305" width="160" height="34" fill="#0a0a0a"/>
-    <text x="948" y="327" text-anchor="middle" fill="white">productivity</text>
-    <!-- data-ml -->
-    <rect x="1040" y="305" width="143" height="34" fill="#0a0a0a"/>
-    <text x="1111" y="327" text-anchor="middle" fill="white">data-ml</text>
+  <!-- Category pills -->
+  <g font-size="15" font-weight="800">
+    <rect x="78" y="272" width="148" height="30" fill="#0a0a0a"/>
+    <text x="152" y="292" text-anchor="middle" fill="white">small-business</text>
+    <rect x="238" y="272" width="100" height="30" fill="#0a0a0a"/>
+    <text x="288" y="292" text-anchor="middle" fill="white">backend</text>
+    <rect x="350" y="272" width="128" height="30" fill="#0a0a0a"/>
+    <text x="414" y="292" text-anchor="middle" fill="white">devops-infra</text>
+    <rect x="490" y="272" width="170" height="30" fill="#0a0a0a"/>
+    <text x="575" y="292" text-anchor="middle" fill="white">ai-engineering</text>
+    <rect x="672" y="272" width="76" height="30" fill="#0a0a0a"/>
+    <text x="710" y="292" text-anchor="middle" fill="white">gtm</text>
+    <rect x="760" y="272" width="110" height="30" fill="#0a0a0a"/>
+    <text x="815" y="292" text-anchor="middle" fill="white">marketing</text>
+    <rect x="882" y="272" width="90" height="30" fill="#0a0a0a"/>
+    <text x="927" y="292" text-anchor="middle" fill="white">finance</text>
+    <rect x="984" y="272" width="76" height="30" fill="#0a0a0a"/>
+    <text x="1022" y="292" text-anchor="middle" fill="white">legal</text>
+    <rect x="1072" y="272" width="130" height="30" fill="#0a0a0a"/>
+    <text x="1137" y="292" text-anchor="middle" fill="white">productivity</text>
   </g>
 
   <!-- npm install badge -->
-  <rect x="340" y="360" width="600" height="60" fill="#0a0a0a" rx="0"/>
-  <text x="640" y="398" text-anchor="middle" font-size="26" font-weight="700" fill="#f97316" font-family="'Courier New', monospace">npx claudient add all</text>
+  <rect x="330" y="322" width="620" height="58" fill="#0a0a0a"/>
+  <text x="640" y="358" text-anchor="middle" font-size="25" font-weight="700" fill="#f97316" font-family="'Courier New', monospace">npx claudient add all</text>
 
   <!-- Stats row -->
   <g font-size="22" font-weight="900" fill="#0a0a0a">
-    <!-- Skills -->
-    <rect x="108" y="444" width="190" height="62" fill="white" stroke="#0a0a0a" stroke-width="3"/>
-    <rect x="111" y="447" width="190" height="62" fill="white" stroke="#0a0a0a" stroke-width="3"/>
-    <text x="206" y="484" text-anchor="middle" font-size="24">63 Skills</text>
+    <rect x="90" y="402" width="196" height="60" fill="white" stroke="#0a0a0a" stroke-width="3"/>
+    <rect x="93" y="405" width="196" height="60" fill="white" stroke="#0a0a0a" stroke-width="3"/>
+    <text x="191" y="441" text-anchor="middle" font-size="23">80+ Skills</text>
 
-    <!-- Agents -->
-    <rect x="328" y="444" width="180" height="62" fill="white" stroke="#0a0a0a" stroke-width="3"/>
-    <rect x="331" y="447" width="180" height="62" fill="white" stroke="#0a0a0a" stroke-width="3"/>
-    <text x="421" y="484" text-anchor="middle" font-size="24">6 Agents</text>
+    <rect x="316" y="402" width="178" height="60" fill="white" stroke="#0a0a0a" stroke-width="3"/>
+    <rect x="319" y="405" width="178" height="60" fill="white" stroke="#0a0a0a" stroke-width="3"/>
+    <text x="408" y="441" text-anchor="middle" font-size="23">13 Agents</text>
 
-    <!-- Hooks -->
-    <rect x="538" y="444" width="165" height="62" fill="white" stroke="#0a0a0a" stroke-width="3"/>
-    <rect x="541" y="447" width="165" height="62" fill="white" stroke="#0a0a0a" stroke-width="3"/>
-    <text x="623" y="484" text-anchor="middle" font-size="24">7 Hooks</text>
+    <rect x="522" y="402" width="170" height="60" fill="white" stroke="#0a0a0a" stroke-width="3"/>
+    <rect x="525" y="405" width="170" height="60" fill="white" stroke="#0a0a0a" stroke-width="3"/>
+    <text x="610" y="441" text-anchor="middle" font-size="23">7 Hooks</text>
 
-    <!-- Languages -->
-    <rect x="733" y="444" width="210" height="62" fill="white" stroke="#0a0a0a" stroke-width="3"/>
-    <rect x="736" y="447" width="210" height="62" fill="white" stroke="#0a0a0a" stroke-width="3"/>
-    <text x="841" y="484" text-anchor="middle" font-size="24">5 Languages</text>
+    <rect x="720" y="402" width="210" height="60" fill="white" stroke="#0a0a0a" stroke-width="3"/>
+    <rect x="723" y="405" width="210" height="60" fill="white" stroke="#0a0a0a" stroke-width="3"/>
+    <text x="828" y="441" text-anchor="middle" font-size="23">5 Languages</text>
 
-    <!-- MIT -->
-    <rect x="973" y="444" width="200" height="62" fill="white" stroke="#0a0a0a" stroke-width="3"/>
-    <rect x="976" y="447" width="200" height="62" fill="white" stroke="#0a0a0a" stroke-width="3"/>
-    <text x="1076" y="484" text-anchor="middle" font-size="24">MIT · Free</text>
+    <rect x="958" y="402" width="232" height="60" fill="white" stroke="#0a0a0a" stroke-width="3"/>
+    <rect x="961" y="405" width="232" height="60" fill="white" stroke="#0a0a0a" stroke-width="3"/>
+    <text x="1077" y="441" text-anchor="middle" font-size="23">14 Categories</text>
   </g>
 
-  <!-- Stack highlight line -->
-  <text x="640" y="548" text-anchor="middle" font-size="18" font-weight="700" fill="#0a0a0a">
-    Drizzle · Better Auth · Vercel AI SDK · shadcn/ui · Railway · Supabase · Redis · MCP
-  </text>
+  <!-- Stack highlight -->
+  <text x="640" y="510" text-anchor="middle" font-size="17" font-weight="700" fill="#0a0a0a">Drizzle · Better Auth · Vercel AI SDK · LangGraph · shadcn/ui · Railway · HubSpot · Finance · Legal</text>
+
+  <!-- Small business highlight -->
+  <rect x="240" y="526" width="800" height="34" fill="#0a0a0a"/>
+  <text x="640" y="548" text-anchor="middle" font-size="16" font-weight="800" fill="#f97316">🏪 New: Claude for Small Business — 12 skills for operators, not developers</text>
 
   <!-- Bottom credit -->
-  <text x="640" y="590" text-anchor="middle" font-size="18" font-weight="700" fill="#0a0a0a" opacity="0.7">by uitbreiden.com · github.com/Claudients/Claudient</text>
+  <text x="640" y="592" text-anchor="middle" font-size="17" font-weight="700" fill="#0a0a0a" opacity="0.7">by uitbreiden.com · github.com/Claudient/Claudient</text>
 
 </svg>
