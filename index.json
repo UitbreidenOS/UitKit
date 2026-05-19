@@ -1,6 +1,6 @@
 {
   "version": "1.4.0",
-  "generated": "2026-05-18T17:49:17.239Z",
+  "generated": "2026-05-19T18:03:57.713Z",
   "skills": [
     {
       "id": "backend/dotnet/csharp",
@@ -187,6 +187,14 @@
       "file": "skills/backend/nodejs/de/vue.md"
     },
     {
+      "id": "backend/nodejs/wasp",
+      "category": "backend",
+      "lang": "de",
+      "title": "Wasp",
+      "description": "Wasp framework: declarative full-stack config (React + Node.js + Prisma in one .wasp file), Open SaaS boilerplate, AI-legible architecture",
+      "file": "skills/backend/nodejs/de/wasp.md"
+    },
+    {
       "id": "backend/nodejs/better-auth",
       "category": "backend",
       "lang": "es",
@@ -243,6 +251,14 @@
       "file": "skills/backend/nodejs/es/vue.md"
     },
     {
+      "id": "backend/nodejs/wasp",
+      "category": "backend",
+      "lang": "es",
+      "title": "Wasp",
+      "description": "Wasp framework: declarative full-stack config (React + Node.js + Prisma in one .wasp file), Open SaaS boilerplate, AI-legible architecture",
+      "file": "skills/backend/nodejs/es/wasp.md"
+    },
+    {
       "id": "backend/nodejs/better-auth",
       "category": "backend",
       "lang": "fr",
@@ -297,6 +313,14 @@
       "title": "Vue",
       "description": "Vue 3 patterns: Composition API, composables, Pinia state, Vue Router, async components, performance, TypeScript with Vue",
       "file": "skills/backend/nodejs/fr/vue.md"
+    },
+    {
+      "id": "backend/nodejs/wasp",
+      "category": "backend",
+      "lang": "fr",
+      "title": "Wasp",
+      "description": "Wasp framework: declarative full-stack config (React + Node.js + Prisma in one .wasp file), Open SaaS boilerplate, AI-legible architecture",
+      "file": "skills/backend/nodejs/fr/wasp.md"
     },
     {
       "id": "backend/nodejs/nestjs",
@@ -371,6 +395,14 @@
       "file": "skills/backend/nodejs/nl/vue.md"
     },
     {
+      "id": "backend/nodejs/wasp",
+      "category": "backend",
+      "lang": "nl",
+      "title": "Wasp",
+      "description": "Wasp framework: declarative full-stack config (React + Node.js + Prisma in one .wasp file), Open SaaS boilerplate, AI-legible architecture",
+      "file": "skills/backend/nodejs/nl/wasp.md"
+    },
+    {
       "id": "backend/nodejs/rbac",
       "category": "backend",
       "lang": "en",
@@ -393,6 +425,14 @@
       "title": "Shadcn",
       "description": "shadcn/ui: install components, customise variants, theming with CSS variables, compose compound components, extend with custom primitives",
       "file": "skills/backend/nodejs/shadcn.md"
+    },
+    {
+      "id": "backend/nodejs/trpc",
+      "category": "backend",
+      "lang": "en",
+      "title": "Trpc",
+      "description": "tRPC end-to-end type-safe APIs: T3 Stack setup, routers, procedures, Zod validation, React Query integration, middleware, subscriptions",
+      "file": "skills/backend/nodejs/trpc.md"
     },
     {
       "id": "backend/nodejs/typescript-advanced",
@@ -683,6 +723,14 @@
       "file": "skills/devops-infra/de/monorepo.md"
     },
     {
+      "id": "devops-infra/northflank",
+      "category": "devops-infra",
+      "lang": "de",
+      "title": "Northflank Skill",
+      "description": "",
+      "file": "skills/devops-infra/de/northflank.md"
+    },
+    {
       "id": "devops-infra/railway",
       "category": "devops-infra",
       "lang": "de",
@@ -763,6 +811,14 @@
       "file": "skills/devops-infra/es/monorepo.md"
     },
     {
+      "id": "devops-infra/northflank",
+      "category": "devops-infra",
+      "lang": "es",
+      "title": "Northflank Skill",
+      "description": "",
+      "file": "skills/devops-infra/es/northflank.md"
+    },
+    {
       "id": "devops-infra/railway",
       "category": "devops-infra",
       "lang": "es",
@@ -825,6 +881,14 @@
       "title": "Monorepo",
       "description": "Monorepo tooling: Turborepo, Nx, pnpm workspaces, shared packages, task pipelines, affected builds, CI optimisation",
       "file": "skills/devops-infra/fr/monorepo.md"
+    },
+    {
+      "id": "devops-infra/northflank",
+      "category": "devops-infra",
+      "lang": "fr",
+      "title": "Northflank Skill",
+      "description": "",
+      "file": "skills/devops-infra/fr/northflank.md"
     },
     {
       "id": "devops-infra/railway",
@@ -915,6 +979,14 @@
       "file": "skills/devops-infra/nl/monorepo.md"
     },
     {
+      "id": "devops-infra/northflank",
+      "category": "devops-infra",
+      "lang": "nl",
+      "title": "Northflank Skill",
+      "description": "",
+      "file": "skills/devops-infra/nl/northflank.md"
+    },
+    {
       "id": "devops-infra/railway",
       "category": "devops-infra",
       "lang": "nl",
@@ -945,6 +1017,14 @@
       "title": "Railway",
       "description": "Railway deployment: Dockerfile deploys, managed Postgres/Redis, environment variables, PR preview environments, custom domains, CLI workflow",
       "file": "skills/devops-infra/railway.md"
+    },
+    {
+      "id": "devops-infra/sentry",
+      "category": "devops-infra",
+      "lang": "en",
+      "title": "Sentry",
+      "description": "Sentry error monitoring: SDK setup, source maps, automated error triage with Claude, performance monitoring, MCP integration for agent-driven debugging",
+      "file": "skills/devops-infra/sentry.md"
     },
     {
       "id": "devops-infra/terraform",
@@ -1003,6 +1083,14 @@
       "file": "skills/data-ml/de/sql.md"
     },
     {
+      "id": "data-ml/synthetic-data",
+      "category": "data-ml",
+      "lang": "de",
+      "title": "Synthetic Data",
+      "description": "Synthetic data generation: realistic relational datasets for testing, seeding, and ML training — Faker, factory patterns, constraint-aware generation",
+      "file": "skills/data-ml/de/synthetic-data.md"
+    },
+    {
       "id": "data-ml/dbt-data-pipelines",
       "category": "data-ml",
       "lang": "es",
@@ -1035,6 +1123,14 @@
       "file": "skills/data-ml/es/sql.md"
     },
     {
+      "id": "data-ml/synthetic-data",
+      "category": "data-ml",
+      "lang": "es",
+      "title": "Synthetic Data",
+      "description": "Synthetic data generation: realistic relational datasets for testing, seeding, and ML training — Faker, factory patterns, constraint-aware generation",
+      "file": "skills/data-ml/es/synthetic-data.md"
+    },
+    {
       "id": "data-ml/dbt-data-pipelines",
       "category": "data-ml",
       "lang": "fr",
@@ -1065,6 +1161,14 @@
       "title": "Sql",
       "description": "SQL query writing and optimisation: complex joins, window functions, CTEs, indexes, query plans, migration patterns",
       "file": "skills/data-ml/fr/sql.md"
+    },
+    {
+      "id": "data-ml/synthetic-data",
+      "category": "data-ml",
+      "lang": "fr",
+      "title": "Synthetic Data",
+      "description": "Synthetic data generation: realistic relational datasets for testing, seeding, and ML training — Faker, factory patterns, constraint-aware generation",
+      "file": "skills/data-ml/fr/synthetic-data.md"
     },
     {
       "id": "data-ml/mlflow",
@@ -1105,6 +1209,14 @@
       "title": "Sql",
       "description": "SQL query writing and optimisation: complex joins, window functions, CTEs, indexes, query plans, migration patterns",
       "file": "skills/data-ml/nl/sql.md"
+    },
+    {
+      "id": "data-ml/synthetic-data",
+      "category": "data-ml",
+      "lang": "nl",
+      "title": "Synthetic Data",
+      "description": "Synthetic data generation: realistic relational datasets for testing, seeding, and ML training — Faker, factory patterns, constraint-aware generation",
+      "file": "skills/data-ml/nl/synthetic-data.md"
     },
     {
       "id": "data-ml/pandas-polars",
@@ -1619,6 +1731,14 @@
       "file": "skills/ai-engineering/es/claude-api.md"
     },
     {
+      "id": "ai-engineering/mastra",
+      "category": "ai-engineering",
+      "lang": "es",
+      "title": "Mastra",
+      "description": "Mastra AI: TypeScript agent framework — agents, workflows, tools, memory, RAG, evals — for building production-grade AI applications",
+      "file": "skills/ai-engineering/es/mastra.md"
+    },
+    {
       "id": "ai-engineering/mcp-server-builder",
       "category": "ai-engineering",
       "lang": "es",
@@ -1675,6 +1795,14 @@
       "file": "skills/ai-engineering/fr/vercel-ai-sdk.md"
     },
     {
+      "id": "ai-engineering/langgraph",
+      "category": "ai-engineering",
+      "lang": "en",
+      "title": "Langgraph",
+      "description": "LangGraph stateful agent framework: StateGraph, nodes, edges, conditional branching, persistence/checkpointing, human-in-the-loop, multi-agent subgraphs",
+      "file": "skills/ai-engineering/langgraph.md"
+    },
+    {
       "id": "ai-engineering/mastra",
       "category": "ai-engineering",
       "lang": "en",
@@ -1705,6 +1833,14 @@
       "title": "Claude API Skill",
       "description": "",
       "file": "skills/ai-engineering/nl/claude-api.md"
+    },
+    {
+      "id": "ai-engineering/mastra",
+      "category": "ai-engineering",
+      "lang": "nl",
+      "title": "Mastra",
+      "description": "Mastra AI: TypeScript agent framework — agents, workflows, tools, memory, RAG, evals — for building production-grade AI applications",
+      "file": "skills/ai-engineering/nl/mastra.md"
     },
     {
       "id": "ai-engineering/mcp-server-builder",
@@ -3332,7 +3468,7 @@
     }
   ],
   "summary": {
-    "skills": 63,
+    "skills": 66,
     "agents": 6,
     "hooks": 7,
     "rules": 8,
