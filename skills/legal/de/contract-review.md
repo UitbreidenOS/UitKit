@@ -1,50 +1,50 @@
 ---
 name: contract-review
-description: "AI contract review: risk flagging (GREEN/YELLOW/RED), NDA triage, vendor contract checks, indemnity and limitation analysis — Claude Legal Plugin patterns"
+description: "KI-Vertragsanalyse: Risikoflaggung (GREEN/YELLOW/RED), NDA-Triage, Vendorvertragsüberprüfung, Schadensersatz- und Haftungsbegrenzungsanalyse — Claude Legal Plugin Muster"
 ---
 
 > 🇩🇪 Deutsche Version. [Englische Version](../contract-review.md).
 
-# Vertragsüberprüfungs-Kompetenz
+# Skill zur Vertragsüberprüfung
 
-## Wann aktivieren
-- Einen Lieferantenvertrag, SaaS-Vereinbarung oder NDA auf rote Fahnen prüfen
-- Fehlende Klauseln identifizieren, die in einem Vertrag enthalten sein sollten
-- Vertragsbedingungen mit einem Satz akzeptabler Positionen vergleichen
-- Einen Stapel NDAs sortieren, um zu identifizieren, welche anwaltliche Aufmerksamkeit benötigen
-- Verstehen, was eine bestimmte Klausel in einfacher Sprache bedeutet
+## Wann zu aktivieren
+- Überprüfung eines Vendorvertrags, SaaS-Vereinbarung oder NDA auf rote Flaggen
+- Flaggung fehlender Klauseln, die in einen Vertrag gehören
+- Vergleich von Vertragsbedingungen mit einem Satz akzeptabler Positionen
+- Triage einer Reihe von NDAs, um zu ermitteln, welche Anwaltsaufmerksamkeit benötigen
+- Verständnis der Bedeutung einer bestimmten Klausel in einfacher Sprache
 
-## Wann NICHT verwenden
-- Jurisdiktionsspezifische Rechtsberatung — Claude identifiziert Probleme, ein Anwalt berät
-- Gerichtseinreichungen, Streitdokumente oder behördliche Einreichungen
-- Echtzeit-Rechtsentscheidungen — Claude unterstützt die menschliche Überprüfung, ersetzt sie nicht
+## Wann NICHT zu verwenden
+- Jurisdiktionsspezifische Rechtsberatung — Claude identifiziert Probleme, ein Anwalt gibt Rat
+- Gerichtseinreichungen, Litigationsdokumente oder behördliche Einreichungen
+- Echtzeit-Rechtsüberprüfungen — Claude unterstützt menschliche Überprüfung, ersetzt sie nicht
 
-## WICHTIG: KI-Grenzen bei Verträgen
+## WICHTIG: KI-Einschränkungen bei Verträgen
 
-Claude kann Muster erkennen, Probleme kennzeichnen und Klauseln erläutern. Er kann nicht: Rechtsberatung geben, jurisdiktionsspezifisches Recht interpretieren oder garantieren, dass er jedes Problem gefunden hat. Lassen Sie hochwertige Verträge immer von einem Anwalt prüfen.
+Claude kann Muster identifizieren, Probleme flaggen und Klauseln erklären. Es kann nicht: Rechtsberatung geben, jurisdiktionsspezifische Gesetze auslegen oder garantieren, dass alle Probleme erfasst wurden. Lassen Sie immer einen Anwalt hochwertige Verträge überprüfen.
 
 ## Anweisungen
 
-### Das Überprüfungsrahmenwerk (GRÜN / GELB / ROT)
+### Das Überprüfungsframework (GREEN / YELLOW / RED)
 
 ```typescript
 type RiskLevel = 'GREEN' | 'YELLOW' | 'RED'
 
 interface ContractIssue {
   clause:       string        // Der spezifische Klauseltext
-  section:      string        // Position im Dokument (z.B. "Abschnitt 8.2")
+  section:      string        // Wo im Dokument (z.B. "Abschnitt 8.2")
   risk:         RiskLevel
   issue:        string        // Was das Problem ist
   impact:       string        // Was passieren könnte
-  suggestion:   string        // Wie es zu beheben ist
+  suggestion:   string        // Wie man es beheben kann
 }
 
-// ROT    = blockierend — muss vor Unterzeichnung behoben werden
-// GELB   = verhandeln — zurückdrängen, aber kein Dealbreaker
-// GRÜN   = akzeptabel — Standard-Marktbedingungen
+// RED  = blockierend — muss vor Unterzeichnung behoben werden
+// YELLOW = verhandeln — zurückdrücken, aber kein Dealbreaker
+// GREEN = akzeptabel — Standard-Marktbedingungen
 ```
 
-### Einen Vertrag mit Claude überprüfen
+### Überprüfung eines Vertrags mit Claude
 
 ```typescript
 import { generateObject } from 'ai'
@@ -99,9 +99,9 @@ async function triageNDA(ndaText: string): Promise<NDATriage> {
     model: anthropic('claude-opus-4-7'),
     schema: z.object({
       ndaType:            z.enum(['mutual', 'one_way_us', 'one_way_them']),
-      term:               z.string(),          // "2 Jahre", "unbegrenzt"
-      scopeIssues:        z.array(z.string()), // zu breite Definitionen
-      exclusions:         z.array(z.string()), // was von der Vertraulichkeit ausgenommen ist
+      term:               z.string(),          // "2 years", "indefinite"
+      scopeIssues:        z.array(z.string()), // overly broad definitions
+      exclusions:         z.array(z.string()), // what's excluded from confidentiality
       redFlags:           z.array(z.string()),
       requiresLawyerReview: z.boolean(),
       summary:            z.string(),
@@ -116,47 +116,47 @@ ${ndaText}`,
 }
 ```
 
-### Häufige rote Fahnen zu überprüfen
+### Häufige rote Flaggen zum Überprüfen
 
 ```typescript
 const RED_FLAG_PATTERNS = [
   {
-    name: 'Unbegrenzte Freistellung',
+    name: 'Unbegrenzte Schadensersatzverpflichtung',
     check: (text: string) => /indemnif.*without.*limit|unlimited.*indemnif/i.test(text),
-    impact: 'Unbegrenzte finanzielle Exposition — Sie könnten weit mehr als den Vertragswert schulden',
+    impact: 'Unbegrenzte finanzielle Haftung — Sie könnten weit mehr schulden als der Vertragswert',
   },
   {
-    name: 'Keine Haftungsbeschränkung',
+    name: 'Keine Haftungsbegrenzung',
     check: (text: string) => !/(limitation|limit).*liability/i.test(text),
-    impact: 'Kein Haftungsdeckel — jeder Vertragsbruch könnte zu unbegrenzter Haftung führen',
+    impact: 'Keine Schadensersatzbegrenzung — jeder Verstoß könnte zu unbegrenzter Haftung führen',
   },
   {
-    name: 'Automatische Verlängerung ohne Benachrichtigung',
+    name: 'Automatische Verlängerung ohne Mitteilung',
     check: (text: string) => /auto.*renew.*without.*notice|renew.*unless.*cancel/i.test(text),
-    impact: 'Könnte unbewusst für eine weitere Laufzeit gebunden sein',
+    impact: 'Könnte für einen weiteren Zeitraum gesperrt werden, ohne es zu bemerken',
   },
   {
-    name: 'IP-Eigentum an Ihren Beiträgen',
+    name: 'IP-Eigentumsrecht über Ihre Eingaben',
     check: (text: string) => /intellectual property.*all.*work|assign.*all.*ip/i.test(text),
-    impact: 'Sie könnten das Eigentum an von Ihnen erstellten Materialien verlieren',
+    impact: 'Sie können das Eigentum an erstellten Materialien verlieren',
   },
   {
     name: 'Einseitige Änderung',
     check: (text: string) => /reserves.*right.*modify|may.*change.*terms.*without.*notice/i.test(text),
-    impact: 'Anbieter kann Bedingungen ohne Ihre Zustimmung ändern',
+    impact: 'Der Anbieter kann Bedingungen ohne Ihre Zustimmung ändern',
   },
   {
-    name: 'Geltendes Recht in ungünstiger Jurisdiktion',
+    name: 'Anwendbares Recht in ungünstiger Gerichtsbarkeit',
     check: (text: string, ourJurisdiction: string) => {
       const match = text.match(/governed by.*law.*of ([\w\s]+)/i)
       return match ? !match[1].includes(ourJurisdiction) : false
     },
-    impact: 'Streitigkeiten müssen nach ausländischem Recht beigelegt werden — teuer und unpraktisch',
+    impact: 'Streitigkeiten müssen unter fremdem Recht beigelegt werden — teuer und unbequem',
   },
 ]
 ```
 
-### Stapelverarbeitung von Verträgen
+### Batch-Vertragsverarbeitung
 
 ```typescript
 async function processContractBatch(contracts: ContractFile[]): Promise<BatchReport> {
@@ -182,7 +182,7 @@ async function processContractBatch(contracts: ContractFile[]): Promise<BatchRep
     })
   }
 
-  // Nach Risiko sortieren — Anwalt prüft höchste Risiken zuerst
+  // Nach Risiko sortieren — Anwalt überprüft zuerst höchstes Risiko
   return {
     results: results.sort((a, b) => a.risk === 'HIGH' ? -1 : 1),
     highRiskCount: results.filter(r => r.risk === 'HIGH').length,
@@ -190,7 +190,7 @@ async function processContractBatch(contracts: ContractFile[]): Promise<BatchRep
 }
 ```
 
-### Klauselerläuterung (in einfacher Sprache)
+### Klausel-Erklärung (einfache Sprache)
 
 ```typescript
 async function explainClause(clauseText: string): Promise<string> {
@@ -208,34 +208,34 @@ Explain in 2-3 sentences as if speaking to a business owner, not a lawyer.`,
 
 ## Beispiel
 
-**Benutzer:** Einen Anbieter-SaaS-Vertrag (PDF/Text) überprüfen, alle ROTEN Probleme, die behoben werden müssen, GELBE Probleme zur Verhandlung kennzeichnen und zusammenfassen, was fehlt — Ausgabe als strukturierter Bericht.
+**Benutzer:** Überprüfen Sie eine SaaS-Vereinbarung mit einem Anbieter (PDF/Text), flaggen Sie alle RED-Probleme, die wir beheben müssen, YELLOW-Probleme zum Verhandeln und fassen Sie zusammen, was fehlt — Ausgabe als strukturierter Bericht.
 
-**Erwartetes Ergebnis:**
+**Erwartete Ausgabe:**
 ```
-VERTRAGSÜBERPRÜFUNGSBERICHT
+VERTRAG ÜBERPRÜFUNGSBERICHT
 Gesamtrisiko: HOCH
 
-🔴 ROT (3 Probleme — vor Unterzeichnung beheben)
-  Abschnitt 12.1 — Unbegrenzte Freistellung
-  Klausel: "Customer shall indemnify Vendor for all claims, losses, and expenses..."
-  Problem: Kein Freistellungsdeckel — unbegrenzte finanzielle Exposition
-  Behebung: Hinzufügen "not to exceed the fees paid in the 12 months preceding the claim"
+🔴 RED (3 Probleme — müssen vor Unterzeichnung behoben werden)
+  Abschnitt 12.1 — Unbegrenzte Schadensersatzverpflichtung
+  Klausel: "Der Kunde entschädigt den Anbieter für alle Ansprüche, Verluste und Kosten..."
+  Problem: Keine Obergrenze für Schadensersatz — unbegrenzte finanzielle Haftung
+  Behebung: Hinzufügen von "nicht zu überschreiten die Gebühren, die in den 12 Monaten vor dem Anspruch gezahlt wurden"
 
-🟡 GELB (2 Probleme — verhandeln)
+🟡 YELLOW (2 Probleme — verhandeln)
   Abschnitt 8.3 — Automatische Verlängerung mit 60-Tage-Kündigungsfrist
   ...
 
-🟢 GRÜN (8 Klauseln — akzeptable Standardbedingungen)
+🟢 GREEN (8 Klauseln — akzeptable Standard-Bedingungen)
 
 FEHLENDE KLAUSELN:
-  - Kein Auftragsverarbeitungsvertrag (unter DSGVO erforderlich)
-  - Keine SLA für Uptime-Garantien
-  - Keine Datenlöschklausel bei Kündigung
+  - Keine Datenverarbeitungsvereinbarung (erforderlich unter DSGVO)
+  - Keine SLA für Verfügbarkeitszusagen
+  - Keine Datenlöschungsklausel bei Kündigung
 
-EMPFEHLUNG: Nicht unterzeichnen, bis ROTE Probleme behoben sind. Mit Änderungen zurücksenden.
+EMPFEHLUNG: Nicht unterzeichnen, bis RED-Probleme gelöst sind. Mit Änderungsversprechungen zurückgeben.
 ```
 
 ---
 
-> **Arbeiten Sie mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
+> **Arbeiten Sie mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
 > [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

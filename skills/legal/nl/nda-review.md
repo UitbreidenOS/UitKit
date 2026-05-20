@@ -1,27 +1,27 @@
 ---
 name: nda-review
-description: "NDA triage and review: classify type, flag playbook deviations (GREEN/YELLOW/RED), identify scope issues, missing exclusions, hidden obligations — attorney review gate"
+description: "NDA-selectie en -beoordeling: type classificeren, playbook-afwijkingen vlaggen (GREEN/YELLOW/RED), bereichsproblemen identificeren, ontbrekende uitsluitingen, verborgen verplichtingen — juridische beoordeling nodig"
 ---
 
 > 🇳🇱 Nederlandse versie. [Engelse versie](../nda-review.md).
 
-# Skill: NDA-beoordeling
+# NDA-beoordelingsfähigkeit
 
 ## Wanneer activeren
-- Het beoordelen van een geheimhoudingsovereenkomst (NDA) vóór ondertekening
-- Het triëren van een batch NDA's om te identificeren welke juridische aandacht vereisen
-- Begrijpen wat een specifieke NDA-clausule betekent in gewone taal
+- Beoordeling van een geheimhoudingsovereenkomst vóór ondertekening
+- Selectie van een batch NDA's om te identificeren welke juridische aandacht nodig hebben
+- Begrijpen wat een specifieke NDA-clausule in gewone taal betekent
 - Controleren of een NDA standaard uitsluitingen en beschermingen bevat
 - NDA-voorwaarden vergelijken met de standaard playbook-posities van uw bedrijf
 
 ## Wanneer NIET gebruiken
-- Ondertekenen namens uw organisatie — dat vereist een bevoegde ondertekenaar
-- NDA-voorwaarden interpreteren in een actief geschil — raadpleeg uw advocaat
+- Ondertekening namens uw organisatie — dat vereist een bevoegde ondertekenaar
+- Interpretatie van NDA-voorwaarden in een actief geschil — raadpleeg uw advocaat
 - Multilaterale NDA's met complexe grensoverschrijdende verplichtingen — vereist een specialist
 
 ## Belangrijke waarschuwing
 
-Claude kan problemen identificeren en clausules uitleggen. Het kan geen juridisch advies geven, jurisdictiespecifiek recht interpreteren, of garanderen dat het elk probleem heeft gevonden. **Laat een NDA door een advocaat beoordelen vóór ondertekening als de relatie wezenlijk is.**
+Claude kan problemen identificeren en clausules uitleggen. Het kan geen juridisch advies geven, jurisdictiespecifiek recht interpreteren of garanderen dat het alle problemen heeft gevonden. **Laat een advocaat elke NDA vóór ondertekening beoordelen als de relatie wezenlijk is.**
 
 ## Instructies
 
@@ -31,7 +31,7 @@ Claude kan problemen identificeren en clausules uitleggen. Het kan geen juridisc
 Beoordeel deze NDA en vertel mij:
 1. Is het wederzijds (beide partijen beschermd) of eenzijdig (slechts één partij)?
 2. Wie is de openbarende partij en wie is de ontvangende partij?
-3. Wat is de looptijd?
+3. Wat is de looptijd (duur)?
 4. Welk recht is van toepassing?
 
 NDA-tekst: [plakken]
@@ -52,7 +52,7 @@ Onze standaardposities:
 
 NDA-tekst: [plakken]
 
-Markeer elk probleem als GROEN (acceptabel), GEEL (onderhandelen), of ROOD (blokkerend).
+Markeer elk probleem als GROEN (acceptabel), GEEL (onderhandelen) of ROOD (blokkerend).
 ```
 
 ### Controle op standaarduitsluitingen
@@ -112,9 +112,9 @@ Formaat: Oorspronkelijke tekst → Voorgestelde herziening → Reden
 ```
 ROOD — Overmatig brede definitie van Vertrouwelijke Informatie
 Artikel 1: "Alle informatie die door de Openbarende Partij in welke vorm dan ook wordt verstrekt"
-Probleem: Geen markeringsvereiste en geen uitzondering voor mondelinge mededelingen.
+Probleem: Geen markeringsvereiste en geen uitzondering voor mondelinge mededelingen. 
           U kunt onbedoeld gebonden zijn aan alles dat in een vergadering is gezegd.
-Oplossing: Toevoegen "...op voorwaarde dat mondelinge mededelingen binnen 30 dagen na de
+Oplossing: Toevoegen "...op voorwaarde dat mondelinge mededelingen binnen 30 dagen na de 
      openbaarmaking schriftelijk als vertrouwelijk worden bevestigd."
 
 GEEL — Looptijd van 5 jaar overschrijdt standaard
@@ -124,7 +124,7 @@ Oplossing: Stel 2-3 jaar voor bij de meeste commerciële NDA's.
 
 ROOD — Uitsluiting van "onafhankelijke ontwikkeling" ontbreekt
 Artikel 2 bevat slechts 3 van de 4 standaarduitsluitingen — onafhankelijke ontwikkeling ontbreekt.
-Oplossing: Toevoegen: "(d) informatie die onafhankelijk is ontwikkeld door de Ontvangende Partij zonder
+Oplossing: Toevoegen: "(d) informatie die onafhankelijk is ontwikkeld door de Ontvangende Partij zonder 
      gebruik van of verwijzing naar de Vertrouwelijke Informatie van de Openbarende Partij."
 
 GROEN — Toepasselijk recht (Californië): acceptabel als u daar opereert.

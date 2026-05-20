@@ -1,50 +1,50 @@
 ---
 name: contract-review
-description: "AI contract review: risk flagging (GREEN/YELLOW/RED), NDA triage, vendor contract checks, indemnity and limitation analysis — Claude Legal Plugin patterns"
+description: "AI-contractbeoordeling: risicovlaggen (GREEN/YELLOW/RED), NDA-selectie, leveranciercontractcontrole, schadevergoeding en aansprakelijkheidsbeperkingsanalyse — Claude Legal Plugin-patronen"
 ---
 
 > 🇳🇱 Nederlandse versie. [Engelse versie](../contract-review.md).
 
-# Contractbeoordelingsvaardigheid
+# Skill voor Contractbeoordeling
 
 ## Wanneer activeren
-- Een leverancierscontract, SaaS-overeenkomst of NDA beoordelen op rode vlaggen
-- Ontbrekende clausules identificeren die in een contract zouden moeten staan
-- Contractvoorwaarden vergelijken met een reeks aanvaardbare posities
-- Een batch NDAs sorteren om te identificeren welke juridische aandacht nodig hebben
-- Begrijpen wat een specifieke clausule in gewone taal betekent
+- Beoordeling van een leveranciercontract, SaaS-overeenkomst of NDA op rode vlaggen
+- Vlaggen van ontbrekende clausules die in een contract horen
+- Vergelijking van contracttermijnen met een reeks aanvaardbare standpunten
+- Selectie van een batch NDA's om te identificeren welke juridische aandacht nodig hebben
+- Begrijpen wat een specifieke contractclausule in eenvoudig Nederlands betekent
 
-## Wanneer NIET gebruiken
-- Jurisdictiespecifiek juridisch advies — Claude identificeert problemen, een advocaat adviseert
-- Gerechtelijke stukken, processtukken of regelgevende ingedieningen
-- Realtime juridische beslissingen — Claude ondersteunt menselijke beoordeling, vervangt die niet
+## Wanneer NIET te gebruiken
+- Rechtshulp specifiek voor jurisdictie — Claude identificeert problemen, een advocaat geeft advies
+- Gerechtelijke indieningen, gerechtelijke documenten of regelgevingsinzendingen
+- Realtime juridische besluiten — Claude assisteert menselijke beoordeling, vervangt het niet
 
 ## BELANGRIJK: AI-beperkingen bij contracten
 
-Claude kan patronen identificeren, problemen markeren en clausules uitleggen. Het kan niet: juridisch advies geven, jurisdictiespecifiek recht interpreteren of garanderen dat elk probleem is gevonden. Laat contracten met hoge waarde altijd door een advocaat beoordelen.
+Claude kan patronen identificeren, problemen vlaggen en clausules uitleggen. Het kan niet: juridisch advies geven, rechtsnormen voor specifieke jurisdicties uitleggen, of garanderen dat alle problemen zijn opgemerkt. Laat altijd een advocaat hoog-waardige contracten beoordelen.
 
 ## Instructies
 
-### Het beoordelingskader (GROEN / GEEL / ROOD)
+### Het beoordelingskader (GREEN / YELLOW / RED)
 
 ```typescript
 type RiskLevel = 'GREEN' | 'YELLOW' | 'RED'
 
 interface ContractIssue {
   clause:       string        // De specifieke clausuletekst
-  section:      string        // Waar in het document (bijv. "Artikel 8.2")
+  section:      string        // Waar in het document (bijv. "Sectie 8.2")
   risk:         RiskLevel
   issue:        string        // Wat het probleem is
-  impact:       string        // Wat er zou kunnen gebeuren
+  impact:       string        // Wat zou kunnen gebeuren
   suggestion:   string        // Hoe het op te lossen
 }
 
-// ROOD   = blokkerend — moet worden opgelost vóór ondertekening
-// GEEL   = onderhandelen — terugduwen maar geen dealbreaker
-// GROEN  = aanvaardbaar — standaard marktvoorwaarden
+// RED  = blokkering — moet vóór ondertekening worden opgelost
+// YELLOW = onderhandelen — terugdrukken maar geen dealbreaker
+// GREEN = acceptabel — standaard marktvoorwaarden
 ```
 
-### Een contract beoordelen met Claude
+### Beoordeling van een contract met Claude
 
 ```typescript
 import { generateObject } from 'ai'
@@ -91,7 +91,7 @@ Flag all issues with GREEN/YELLOW/RED risk ratings. RED = blocking/unacceptable,
 }
 ```
 
-### NDA-triage
+### NDA-selectie
 
 ```typescript
 async function triageNDA(ndaText: string): Promise<NDATriage> {
@@ -99,9 +99,9 @@ async function triageNDA(ndaText: string): Promise<NDATriage> {
     model: anthropic('claude-opus-4-7'),
     schema: z.object({
       ndaType:            z.enum(['mutual', 'one_way_us', 'one_way_them']),
-      term:               z.string(),          // "2 jaar", "onbepaald"
-      scopeIssues:        z.array(z.string()), // te brede definities
-      exclusions:         z.array(z.string()), // wat is uitgesloten van vertrouwelijkheid
+      term:               z.string(),          // "2 years", "indefinite"
+      scopeIssues:        z.array(z.string()), // overly broad definitions
+      exclusions:         z.array(z.string()), // what's excluded from confidentiality
       redFlags:           z.array(z.string()),
       requiresLawyerReview: z.boolean(),
       summary:            z.string(),
@@ -121,29 +121,29 @@ ${ndaText}`,
 ```typescript
 const RED_FLAG_PATTERNS = [
   {
-    name: 'Ongelimiteerde vrijwaring',
+    name: 'Onbeperkte schadevergoeding',
     check: (text: string) => /indemnif.*without.*limit|unlimited.*indemnif/i.test(text),
-    impact: 'Onbeperkte financiële blootstelling — u kunt veel meer verschuldigd zijn dan de contractwaarde',
+    impact: 'Onbeperkte financiële blootstelling — u kunt veel meer schuldig zijn dan de contractwaarde',
   },
   {
-    name: 'Geen aansprakelijkheidsbeperking',
+    name: 'Geen aansprakelijkheidsbeperkingen',
     check: (text: string) => !/(limitation|limit).*liability/i.test(text),
-    impact: 'Geen maximumbedrag voor schade — elke contractbreuk kan leiden tot onbeperkte aansprakelijkheid',
+    impact: 'Geen plafond op schadevergoeding — elke schending kan leiden tot onbeperkte aansprakelijkheid',
   },
   {
     name: 'Automatische verlenging zonder kennisgeving',
     check: (text: string) => /auto.*renew.*without.*notice|renew.*unless.*cancel/i.test(text),
-    impact: 'Kan zonder het te merken gebonden zijn aan een andere termijn',
+    impact: 'Kan voor nog een termijn worden vergrendeld zonder het te merken',
   },
   {
-    name: 'IP-eigendom over uw bijdragen',
+    name: 'IP-eigendom over uw invoer',
     check: (text: string) => /intellectual property.*all.*work|assign.*all.*ip/i.test(text),
-    impact: 'U kunt het eigendom verliezen van materialen die u maakt',
+    impact: 'U kunt eigendom verliezen van materialen die u maakt',
   },
   {
     name: 'Eenzijdige wijziging',
     check: (text: string) => /reserves.*right.*modify|may.*change.*terms.*without.*notice/i.test(text),
-    impact: 'Leverancier kan voorwaarden wijzigen zonder uw toestemming',
+    impact: 'Leverancier kan voorwaarden zonder uw toestemming wijzigen',
   },
   {
     name: 'Toepasselijk recht in ongunstige jurisdictie',
@@ -151,7 +151,7 @@ const RED_FLAG_PATTERNS = [
       const match = text.match(/governed by.*law.*of ([\w\s]+)/i)
       return match ? !match[1].includes(ourJurisdiction) : false
     },
-    impact: 'Geschillen moeten worden beslecht onder buitenlands recht — duur en onpraktisch',
+    impact: 'Geschillen moeten onder vreemd recht worden opgelost — duur en onpraktisch',
   },
 ]
 ```
@@ -182,7 +182,7 @@ async function processContractBatch(contracts: ContractFile[]): Promise<BatchRep
     })
   }
 
-  // Sorteren op risico — advocaat beoordeelt hoogste risico's eerst
+  // Sorteren op risico — advocaat controleert eerst hoogste risico
   return {
     results: results.sort((a, b) => a.risk === 'HIGH' ? -1 : 1),
     highRiskCount: results.filter(r => r.risk === 'HIGH').length,
@@ -190,7 +190,7 @@ async function processContractBatch(contracts: ContractFile[]): Promise<BatchRep
 }
 ```
 
-### Clausule-uitleg (in gewone taal)
+### Clausuleverklaring (eenvoudige taal)
 
 ```typescript
 async function explainClause(clauseText: string): Promise<string> {
@@ -208,34 +208,34 @@ Explain in 2-3 sentences as if speaking to a business owner, not a lawyer.`,
 
 ## Voorbeeld
 
-**Gebruiker:** Een leveranciers-SaaS-overeenkomst (PDF/tekst) beoordelen, alle RODE problemen die moeten worden opgelost markeren, GELE problemen om over te onderhandelen, en samenvatten wat ontbreekt — uitvoer als gestructureerd rapport.
+**Gebruiker:** Controleer een SaaS-leveranciersakkoord (PDF/tekst), vlag alle RED-problemen die we moeten oplossen, YELLOW-problemen om over te onderhandelen, en samenvatting wat er ontbreekt — uitvoer als gestructureerd rapport.
 
 **Verwachte uitvoer:**
 ```
 CONTRACTBEOORDELINGSRAPPORT
-Algeheel risico: HOOG
+Algemeen risico: HOOG
 
-🔴 ROOD (3 problemen — oplossen vóór ondertekening)
-  Artikel 12.1 — Ongelimiteerde vrijwaring
-  Clausule: "Customer shall indemnify Vendor for all claims, losses, and expenses..."
-  Probleem: Geen vrijwaringsplafond — onbeperkte financiële blootstelling
-  Oplossing: Toevoegen "not to exceed the fees paid in the 12 months preceding the claim"
+🔴 RED (3 problemen — moeten vóór ondertekening worden opgelost)
+  Sectie 12.1 — Onbeperkte schadevergoeding
+  Clausule: "Klant zal Leverancier schadevergoeding betalen voor alle vorderingen, verliezen en kosten..."
+  Probleem: Geen plafond op schadevergoeding — onbeperkte financiële blootstelling
+  Oplossing: Voeg toe "niet te overschrijden de vergoedingen betaald in de 12 maanden voorafgaand aan de vordering"
 
-🟡 GEEL (2 problemen — onderhandelen)
-  Artikel 8.3 — Automatische verlenging met 60 dagen opzegtermijn
+🟡 YELLOW (2 problemen — onderhandelen)
+  Sectie 8.3 — Automatische verlenging met 60-daagse opzeggingseis
   ...
 
-🟢 GROEN (8 clausules — aanvaardbare standaardvoorwaarden)
+🟢 GREEN (8 clausules — acceptabele standaardvoorwaarden)
 
 ONTBREKENDE CLAUSULES:
-  - Geen gegevensverwerkingsovereenkomst (vereist onder AVG)
-  - Geen SLA voor beschikbaarheidsgaranties
-  - Geen clausule voor gegevensverwijdering bij beëindiging
+  - Geen gegevensverwerkingsovereenkomst (vereist onder GDPR)
+  - Geen SLA voor uptime-garanties
+  - Geen gegensdeletingclausule bij beëindiging
 
-AANBEVELING: Niet ondertekenen totdat RODE problemen zijn opgelost. Terugsturen met wijzigingen.
+AANBEVELING: Niet ondertekenen tot RED-problemen zijn opgelost. Met redlines terugsturen.
 ```
 
 ---
 
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
+> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — wij bouwen AI-producten en B2B-oplossingen met ontwikkelaargemeenschappen.
 > [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -1,6 +1,6 @@
 ---
 name: contract-review
-description: "AI contract review: risk flagging (GREEN/YELLOW/RED), NDA triage, vendor contract checks, indemnity and limitation analysis — Claude Legal Plugin patterns"
+description: "Revisión de contratos con IA: señalización de riesgos (GREEN/YELLOW/RED), selección de NDA, verificación de contratos con proveedores, análisis de indemnización y limitación de responsabilidad — patrones del complemento Claude Legal"
 ---
 
 > 🇪🇸 Versión en español. [Versión en inglés](../contract-review.md).
@@ -8,43 +8,43 @@ description: "AI contract review: risk flagging (GREEN/YELLOW/RED), NDA triage, 
 # Habilidad de Revisión de Contratos
 
 ## Cuándo activar
-- Revisar un contrato de proveedor, acuerdo SaaS o NDA en busca de señales de alerta
-- Identificar cláusulas faltantes que deberían estar en un contrato
+- Revisión de un contrato de proveedor, acuerdo SaaS o NDA en busca de banderas rojas
+- Señalizar cláusulas faltantes que deberían estar en un contrato
 - Comparar términos del contrato contra un conjunto de posiciones aceptables
-- Clasificar un lote de NDAs para identificar cuáles necesitan atención legal
+- Seleccionar un lote de NDA para identificar cuáles necesitan atención legal
 - Entender qué significa una cláusula específica en lenguaje simple
 
 ## Cuándo NO usar
-- Asesoramiento legal específico de jurisdicción — Claude identifica problemas, un abogado asesora
-- Presentaciones judiciales, documentos de litigación o presentaciones regulatorias
-- Decisiones legales en tiempo real — Claude asiste la revisión humana, no la reemplaza
+- Asesoramiento legal específico de jurisdicción — Claude identifica problemas, un abogado aconseja
+- Presentaciones judiciales, documentos de litigio o presentaciones regulatorias
+- Decisiones legales en tiempo real — Claude asiste a revisión humana, no la reemplaza
 
-## IMPORTANTE: Limitaciones de la IA en contratos
+## IMPORTANTE: Limitaciones de IA en contratos
 
-Claude puede identificar patrones, marcar problemas y explicar cláusulas. No puede: dar asesoramiento legal, interpretar el derecho específico de una jurisdicción, o garantizar que ha detectado todos los problemas. Siempre haga que un abogado revise los contratos de alto valor.
+Claude puede identificar patrones, señalar problemas y explicar cláusulas. No puede: dar asesoramiento legal, interpretar leyes específicas de jurisdicción o garantizar que ha detectado todos los problemas. Siempre haga que un abogado revise contratos de alto valor.
 
 ## Instrucciones
 
-### El marco de revisión (VERDE / AMARILLO / ROJO)
+### El marco de revisión (GREEN / YELLOW / RED)
 
 ```typescript
 type RiskLevel = 'GREEN' | 'YELLOW' | 'RED'
 
 interface ContractIssue {
-  clause:       string        // El texto específico de la cláusula
-  section:      string        // Dónde en el documento (ej. "Sección 8.2")
+  clause:       string        // El texto de cláusula específica
+  section:      string        // Dónde en el documento (p.ej. "Sección 8.2")
   risk:         RiskLevel
   issue:        string        // Cuál es el problema
-  impact:       string        // Qué podría ocurrir
+  impact:       string        // Qué podría suceder
   suggestion:   string        // Cómo solucionarlo
 }
 
-// ROJO    = bloqueante — debe solucionarse antes de firmar
-// AMARILLO = negociar — presionar pero no es un factor decisivo
-// VERDE   = aceptable — términos estándar del mercado
+// RED  = bloqueante — debe solucionarse antes de firmar
+// YELLOW = negociar — rechazar pero no es un factor decisivo
+// GREEN = aceptable — términos estándar del mercado
 ```
 
-### Revisar un contrato con Claude
+### Revisión de un contrato con Claude
 
 ```typescript
 import { generateObject } from 'ai'
@@ -91,7 +91,7 @@ Flag all issues with GREEN/YELLOW/RED risk ratings. RED = blocking/unacceptable,
 }
 ```
 
-### Clasificación de NDA
+### Selección de NDA
 
 ```typescript
 async function triageNDA(ndaText: string): Promise<NDATriage> {
@@ -99,9 +99,9 @@ async function triageNDA(ndaText: string): Promise<NDATriage> {
     model: anthropic('claude-opus-4-7'),
     schema: z.object({
       ndaType:            z.enum(['mutual', 'one_way_us', 'one_way_them']),
-      term:               z.string(),          // "2 años", "indefinido"
-      scopeIssues:        z.array(z.string()), // definiciones demasiado amplias
-      exclusions:         z.array(z.string()), // qué está excluido de la confidencialidad
+      term:               z.string(),          // "2 years", "indefinite"
+      scopeIssues:        z.array(z.string()), // overly broad definitions
+      exclusions:         z.array(z.string()), // what's excluded from confidentiality
       redFlags:           z.array(z.string()),
       requiresLawyerReview: z.boolean(),
       summary:            z.string(),
@@ -116,7 +116,7 @@ ${ndaText}`,
 }
 ```
 
-### Señales de alerta comunes a verificar
+### Banderas rojas comunes a verificar
 
 ```typescript
 const RED_FLAG_PATTERNS = [
@@ -128,17 +128,17 @@ const RED_FLAG_PATTERNS = [
   {
     name: 'Sin limitación de responsabilidad',
     check: (text: string) => !/(limitation|limit).*liability/i.test(text),
-    impact: 'Sin límite en daños — cualquier incumplimiento podría resultar en responsabilidad ilimitada',
+    impact: 'Sin tope en daños — cualquier incumplimiento podría resultar en responsabilidad ilimitada',
   },
   {
     name: 'Renovación automática sin aviso',
     check: (text: string) => /auto.*renew.*without.*notice|renew.*unless.*cancel/i.test(text),
-    impact: 'Podría quedar comprometido por otro período sin darse cuenta',
+    impact: 'Podría estar bloqueado por otro término sin darse cuenta',
   },
   {
-    name: 'Propiedad de IP sobre sus aportes',
+    name: 'Propiedad intelectual sobre sus datos',
     check: (text: string) => /intellectual property.*all.*work|assign.*all.*ip/i.test(text),
-    impact: 'Puede perder la propiedad de materiales que crea',
+    impact: 'Podría perder la propiedad de materiales que crea',
   },
   {
     name: 'Modificación unilateral',
@@ -151,12 +151,12 @@ const RED_FLAG_PATTERNS = [
       const match = text.match(/governed by.*law.*of ([\w\s]+)/i)
       return match ? !match[1].includes(ourJurisdiction) : false
     },
-    impact: 'Las disputas deben resolverse bajo ley extranjera — costoso e inconveniente',
+    impact: 'Las disputas deben resolverse bajo ley extranjera — caro e inconveniente',
   },
 ]
 ```
 
-### Procesamiento por lotes de contratos
+### Procesamiento de lotes de contratos
 
 ```typescript
 async function processContractBatch(contracts: ContractFile[]): Promise<BatchReport> {
@@ -182,7 +182,7 @@ async function processContractBatch(contracts: ContractFile[]): Promise<BatchRep
     })
   }
 
-  // Ordenar por riesgo — el abogado revisa los de mayor riesgo primero
+  // Ordenar por riesgo — abogado revisa riesgo más alto primero
   return {
     results: results.sort((a, b) => a.risk === 'HIGH' ? -1 : 1),
     highRiskCount: results.filter(r => r.risk === 'HIGH').length,
@@ -190,7 +190,7 @@ async function processContractBatch(contracts: ContractFile[]): Promise<BatchRep
 }
 ```
 
-### Explicación de cláusula (en lenguaje simple)
+### Explicación de cláusula (lenguaje simple)
 
 ```typescript
 async function explainClause(clauseText: string): Promise<string> {
@@ -208,31 +208,31 @@ Explain in 2-3 sentences as if speaking to a business owner, not a lawyer.`,
 
 ## Ejemplo
 
-**Usuario:** Revisar un acuerdo SaaS de proveedor (PDF/texto), marcar todos los problemas ROJOS que deben solucionarse, problemas AMARILLOS para negociar, y resumir qué falta — salida como informe estructurado.
+**Usuario:** Revise un acuerdo SaaS con proveedor (PDF/texto), señale todos los problemas RED que debemos solucionar, problemas YELLOW a negociar, y resuma lo que falta — salida como informe estructurado.
 
-**Resultado esperado:**
+**Salida esperada:**
 ```
 INFORME DE REVISIÓN DE CONTRATO
 Riesgo general: ALTO
 
-🔴 ROJO (3 problemas — solucionar antes de firmar)
+🔴 RED (3 problemas — deben solucionarse antes de firmar)
   Sección 12.1 — Indemnización sin límite
-  Cláusula: "Customer shall indemnify Vendor for all claims, losses, and expenses..."
-  Problema: Sin límite de indemnización — exposición financiera ilimitada
-  Solución: Agregar "not to exceed the fees paid in the 12 months preceding the claim"
+  Cláusula: "El cliente indemnizará al proveedor por todos los reclamos, pérdidas y gastos..."
+  Problema: Sin tope en indemnización — exposición financiera ilimitada
+  Solución: Agregue "no a exceder las tarifas pagadas en los 12 meses anteriores al reclamo"
 
-🟡 AMARILLO (2 problemas — negociar)
-  Sección 8.3 — Renovación automática con requisito de aviso de 60 días
+🟡 YELLOW (2 problemas — negociar)
+  Sección 8.3 — Renovación automática con requerimiento de aviso de 60 días
   ...
 
-🟢 VERDE (8 cláusulas — términos estándar aceptables)
+🟢 GREEN (8 cláusulas — términos estándar aceptables)
 
 CLÁUSULAS FALTANTES:
   - Sin acuerdo de procesamiento de datos (requerido bajo GDPR)
   - Sin SLA para garantías de tiempo de actividad
-  - Sin cláusula de eliminación de datos al terminar
+  - Sin cláusula de eliminación de datos al término
 
-RECOMENDACIÓN: No firmar hasta que se resuelvan los problemas ROJOS. Devolver con modificaciones resaltadas.
+RECOMENDACIÓN: No firme hasta resolver problemas RED. Devuelva con cambios solicitados.
 ```
 
 ---
