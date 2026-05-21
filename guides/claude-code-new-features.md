@@ -379,5 +379,37 @@ When a long task finishes or Claude needs your input, get a push notification on
 
 ---
 
+## Additional CLI Commands
+
+**`claude agents --json`** (v2.1.145+)
+Machine-readable session listing — prints all live sessions as a JSON array and exits:
+```bash
+claude agents --json | jq '.[] | select(.status == "running")'
+```
+Fields: `pid`, `cwd`, `kind`, `startedAt`, `sessionId`, `name`, `status`. Combine with `--cwd` to filter by directory.
+
+**`claude respawn`**
+Restart a session with the conversation history intact:
+```bash
+claude respawn <session-id>      # restart one session
+claude respawn --all             # restart all running sessions
+```
+
+**`claude daemon status`**
+Show the supervisor process state and worker count. Useful for diagnosing why sessions aren't starting.
+
+**`/scroll-speed`**
+Tune mouse wheel scroll speed in the CLI. `/scroll-speed 3` (default), `/scroll-speed 1` (slow), `/scroll-speed 10` (fast).
+
+**`/code-review` (renamed from `/simplify`)**
+As of v2.1.146, `/simplify` was renamed to `/code-review`. Old name still works as alias. Now accepts an optional effort level:
+```
+/code-review
+/code-review xhigh
+```
+Reviews current diffs for compile errors, logic errors, security vulnerabilities — not style or formatting.
+
+---
+
 > **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
 > [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

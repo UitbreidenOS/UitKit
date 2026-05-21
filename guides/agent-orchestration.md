@@ -225,6 +225,32 @@ Subagents communicate back to the parent in two ways:
 
 ---
 
+## 8. Background Session Isolation and Saga Pattern
+
+**`worktree.bgIsolation` setting**
+Background sessions normally move into a git worktree before editing files, preventing conflicts with your working copy. Disable this for repos where worktree creation is impractical:
+```json
+{
+  "worktree": {
+    "bgIsolation": "none"
+  }
+}
+```
+Set in `.claude/settings.json`. When disabled, background sessions edit the working copy directly — ensure no concurrent edits to the same files.
+
+**Multi-agent saga pattern**
+For distributed multi-step operations across agents, use the saga pattern: each step defines a compensating action. On failure at step N, execute compensating actions for steps N-1 down to 0 in reverse order.
+
+```
+Step 1: Create database record → Compensate: Delete record
+Step 2: Call payment API → Compensate: Issue refund
+Step 3: Send confirmation email → Compensate: Send cancellation email
+```
+
+Pass the compensation plan to each sub-agent so it knows how to roll back if it fails.
+
+---
+
 ## Work With Us
 
 Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products with developer communities and deliver B2B AI solutions. If you're designing multi-agent systems, autonomous workflows, or production-grade Claude Code orchestration — we've built this in production and can help you do the same.

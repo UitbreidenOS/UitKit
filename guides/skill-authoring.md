@@ -187,6 +187,27 @@ A skill full of general coding advice (use type hints, write tests, handle error
 
 ---
 
+## Advanced Frontmatter Fields
+
+**`when_to_use`** — appended to the description in the skill listing. Counts toward the 1,536-character cap. Use for more precise auto-invocation matching beyond the description.
+
+**`paths`** — array of glob patterns; skill auto-activates when Claude touches a matching file:
+```yaml
+paths:
+  - "**/*.test.ts"
+  - "**/*.spec.ts"
+```
+
+**`effort`** — sets default effort level for this skill: `low`, `medium`, `high`, `xhigh`
+
+**`shell`** — `powershell` for Windows-specific skills (changes how script blocks are interpreted)
+
+**Character budget:** The description field has a ~1,536-character cap for the auto-invocation listing. The full skill content (loaded on match) can be up to ~15,000 characters. Put activation keywords in description; put detailed instructions in the body.
+
+**Monorepo discovery:** Skills use `.claude/skills/` discovery — they do NOT walk up the directory tree like CLAUDE.md. In a monorepo, each sub-package needs its own `.claude/skills/` if package-specific skills are needed.
+
+---
+
 ## Work With Us
 
 Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products with developer communities and deliver B2B AI solutions. If you want help building production-grade Claude Code integrations, custom skill libraries, or AI-powered products — reach out.

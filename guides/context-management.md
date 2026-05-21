@@ -143,6 +143,22 @@ Longer context = higher cost per request. Strategies to reduce cost:
 - Avoid re-reading files that haven't changed
 - Use `CLAUDE.md` to front-load stable context cheaply
 
+## The 5-Option Decision Framework
+
+At every turn boundary, you have 5 options:
+
+| Option | When to use | Cost |
+|--------|------------|------|
+| **Continue** | On track, <200k tokens, no dead ends | Free |
+| **Rewind** (Esc+Esc) | Wrong path — keep file reads, drop failed attempts | Free |
+| **Directed compact** `/compact <hint>` | Mid-task, >200k tokens, want to preserve specific thread | ~50% token reduction |
+| **Fresh session** | Task complete, starting unrelated work, too many dead ends | Free |
+| **Subagent** | Bounded sub-task where intermediate output isn't needed in parent | Separate context |
+
+**Rewind vs Compact:** Rewind drops assistant turns but keeps the full context state — use when Claude went down a wrong path but you want to keep what it read. Compact compresses everything — use when context is long but the thread is still valid.
+
+**Context rot:** Quality degrades ~300-400k tokens on 1M model. Don't wait until 900k to compact.
+
 ---
 
 > **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.

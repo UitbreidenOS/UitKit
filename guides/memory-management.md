@@ -170,6 +170,24 @@ Automatic compaction fires when the context window fills (~95% capacity). By tha
 
 ---
 
+## Self-Updating CLAUDE.md
+
+**Pattern: self-updating CLAUDE.md on corrections**
+After every correction you make to Claude's behavior, end your message with:
+```
+Update your CLAUDE.md so you don't make that mistake again.
+```
+Over time, this builds a CLAUDE.md that reflects your exact preferences and the codebase's specific quirks. The error rate measurably drops as the file grows.
+
+**Pattern: notes directory**
+Have Claude maintain a `notes/` directory — one file per major task or feature, updated after every PR. Point CLAUDE.md at it:
+```
+Read notes/ for context on recent work in this repo.
+```
+This gives Claude a lightweight persistent memory without requiring a memory MCP server.
+
+---
+
 ## Quick Reference
 
 | Situation | Action |

@@ -3,13 +3,13 @@
 [![npm version](https://img.shields.io/npm/v/claudient?color=f97316&label=npm)](https://www.npmjs.com/package/claudient)
 [![npm downloads](https://img.shields.io/npm/dm/claudient?color=f97316)](https://www.npmjs.com/package/claudient)
 [![License: MIT](https://img.shields.io/badge/License-MIT-black.svg)](LICENSE)
-[![Skills](https://img.shields.io/badge/skills-160+-f97316)](#skills-by-category)
-[![Agents](https://img.shields.io/badge/agents-25-ec4899)](#agents)
+[![Skills](https://img.shields.io/badge/skills-220+-f97316)](#skills-by-category)
+[![Agents](https://img.shields.io/badge/agents-75+-ec4899)](#agents)
 [![Languages](https://img.shields.io/badge/languages-EN%20FR%20DE%20NL%20ES-3b82f6)](#translations)
 [![Reddit](https://img.shields.io/badge/Reddit-r%2Fuitbreiden-FF4500?logo=reddit&logoColor=white)](https://www.reddit.com/r/uitbreiden/)
 [![YouTube](https://img.shields.io/badge/YouTube-%40UITBREIDEN-FF0000?logo=youtube&logoColor=white)](https://www.youtube.com/@UITBREIDEN)
 
-> **The community knowledge system for Claude Code.** 160+ slash command skills, 25 advisor agents, hooks, rules, and orchestration protocols — for developers, vibe coders, GTM teams, legal, finance, and business owners.
+> **The community knowledge system for Claude Code.** 220+ slash command skills, 75+ agents, hooks, rules, workflows, and orchestration protocols — for developers, vibe coders, GTM teams, legal, finance, and business owners.
 
 ![Claudient Social Preview](web/public/social-preview.svg)
 
@@ -83,6 +83,29 @@ npx claudient list
 
 ---
 
+## 🔌 Top 100 MCP Servers for Indie Builders
+
+> **The fastest way to extend Claude Code.** MCP servers give Claude direct access to your tools — databases, GitHub, Figma, Stripe, Jira, Notion, and 95 more.
+
+**Start here — the indie builder stack:**
+
+| Server | What it does | Searches/mo |
+|--------|-------------|-------------|
+| [GitHub MCP](mcp/github.md) | Read PRs, create issues, search code, manage branches | 69K |
+| [Playwright MCP](mcp/playwright-mcp.md) | Browser automation — navigate, click, screenshot, scrape | 82K |
+| [Figma MCP](mcp/figma.md) | Read designs, extract tokens, generate components from specs | 74K |
+| [Atlassian MCP](mcp/atlassian.md) | Jira tickets, Confluence docs, sprint management | 40K |
+| [Memory MCP](mcp/memory.md) | Persistent knowledge graph across sessions | — |
+
+**→ [Full guide: Top 100 MCP Servers for Indie Builders](mcp/top-mcp-servers.md)** — installation configs, tier rankings, and curated bundles for every stack.
+
+```bash
+# Quick install — add GitHub + Memory + Playwright in one step
+npx claudient add mcp starter
+```
+
+---
+
 ## 🏪 Claude for Small Business
 
 > **Not a developer? Claudient works for you too.** Plain English skills, no terminal required.
@@ -106,7 +129,7 @@ npx claudient add skills small-business
 
 ---
 
-## 🤖 25 Advisor Agents
+## 🤖 75+ Agents
 
 Strategic thinking partners spawned with the `Agent` tool in Claude Code.
 
@@ -261,12 +284,12 @@ Read the [Orchestration Guide](guides/orchestration.md).
 
 | Type | Count | Description |
 |---|---|---|
-| **Skills** | **160+** | Slash commands for every major stack, workflow, and business domain |
-| **Agents** | **25** | C-suite advisors · role specialists · engineering core |
+| **Skills** | **220+** | Slash commands for every major stack, workflow, and business domain |
+| **Agents** | **75+** | C-suite advisors · role specialists · engineering core |
 | **Hooks** | 11 | Secret scanner, test runner, lint check, daily summary, cost tracker + more |
 | **Rules** | 12 | API design, error handling, database migrations, AI/LLM, performance, testing |
 | **Workflows** | 10 | Incident response, API design, database migration, security review, feature launch |
-| **Guides** | 15 | MCP integration, prompt injection defense, multi-agent patterns, deployment patterns + more |
+| **Guides** | **30+** | MCP integration, prompt injection defense, multi-agent patterns, deployment patterns + more |
 | **Prompts** | 14+ | Code reviewer, security auditor, product spec writer, startup advisor, data analyst |
 
 All skills available in **EN · FR · DE · NL · ES**

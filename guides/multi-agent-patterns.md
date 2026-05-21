@@ -210,6 +210,52 @@ try {
 - Use Opus for critical decisions, complex code review (high stakes only)
 - Run expensive agents only once — cache or store their outputs
 
+## Pattern 6: Fan-out / Fan-in
+
+Dispatch N independent agents in parallel, aggregate results:
+```python
+# Pseudocode — spawn all at once, collect results
+agents = [Agent(task=f"audit {service}") for service in services]
+results = await asyncio.gather(*agents)  # parallel
+summary = aggregate(results)
+```
+Use when: N independent tasks, no dependencies between them.
+
+## Pattern 7: Sequential Pipeline
+
+Output of agent A feeds into agent B:
+```
+Agent A: research → structured findings
+Agent B: takes findings → implementation plan
+Agent C: takes plan → code
+```
+Use when: later steps depend on earlier results.
+
+## Pattern 8: Specialist Routing
+
+Classify the task first, then route to the right specialist:
+```
+Classifier agent → security? → security-auditor agent
+                 → data?     → data-pipeline-architect
+                 → frontend? → senior-frontend agent
+```
+
+## Pattern 9: Validation Chain
+
+Implementation agent → reviewer agent → security agent, each gating the next.
+
+## Background Agent Isolation
+
+**`worktree.bgIsolation: "none"`**
+Background agents normally work in isolated git worktrees. Disable with `worktree.bgIsolation: "none"` in `.claude/settings.json` when git worktrees aren't practical for your repo structure.
+
+## Structured Communication Between Agents
+
+Always use JSON for agent-to-agent data. Pass minimal context — only what the receiving agent needs. Never pass full conversation history (token overhead). Use a structured schema:
+```json
+{"task": "...", "findings": [...], "next_action": "..."}
+```
+
 ---
 
 > **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.

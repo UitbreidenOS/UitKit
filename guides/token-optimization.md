@@ -183,6 +183,23 @@ multi-step sequences where fragment ambiguity risks misread.
 
 ---
 
+## 8. Cache TTL, Directed Compaction, and Context Rot
+
+**1-hour cache TTL**
+Set `ENABLE_PROMPT_CACHING_1H=1` in your environment to extend cache TTL from 5 minutes to 1 hour. Available for API key, Bedrock, Vertex, and Foundry users. Doubles the break-even point for caching but dramatically reduces cost for workflows where the same context is used over a longer working session.
+
+**Directed compaction**
+Pass a hint to `/compact` to control what gets preserved:
+```
+/compact focus on the auth refactor, drop the test debugging context
+```
+Without a hint, compact may discard context that matters. A specific hint preserves the most important thread.
+
+**Context rot threshold**
+On the 1M context model, context quality measurably degrades around 300-400k tokens. Don't assume the full 1M window is equally reliable — plan for a fresh session or directed compact before crossing ~300k tokens on complex tasks.
+
+---
+
 ## Quick Reference
 
 | Situation | Action |

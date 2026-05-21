@@ -139,6 +139,19 @@ Browse `agents/` to understand what's available. When you want Claude to delegat
 
 ---
 
+## Advanced Features
+
+**`/powerup` — interactive onboarding**
+New in v2.1.90: `/powerup` launches a 10-lesson interactive tour with animated demos covering: @-file references, plan mode, /rewind, tasks, CLAUDE.md, MCP, skills/hooks, subagents, session mobility (/teleport), and the effort dial. Run it once to discover features you might have missed.
+
+**Agent Teams (experimental)**
+Enable with `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1`. Requires tmux or iTerm2 for split-pane mode. Teams config lives in `~/.claude/teams/{team-name}/config.json`. Modes: in-process (default) or split-panes (visual).
+
+**Shared task lists across sessions**
+Set `CLAUDE_CODE_TASK_LIST_ID` to the same value in multiple terminal sessions — all sessions see task updates in real-time, enabling coordinated parallel workstreams from separate terminals.
+
+---
+
 ## Troubleshooting
 
 **Skill not showing up as a slash command**
