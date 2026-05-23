@@ -8,6 +8,8 @@
 [![Agents](https://img.shields.io/badge/agents-70+-ec4899)](#agents)
 [![MCP](https://img.shields.io/badge/MCP_configs-20+-8b5cf6)](#top-100-mcp-servers)
 [![Languages](https://img.shields.io/badge/languages-EN%20FR%20DE%20NL%20ES-3b82f6)](#translations)
+[![Reddit](https://img.shields.io/badge/Reddit-r%2Fuitbreiden-FF4500?logo=reddit&logoColor=white)](https://www.reddit.com/r/uitbreiden/)
+[![YouTube](https://img.shields.io/badge/YouTube-%40UITBREIDEN-FF0000?logo=youtube&logoColor=white)](https://www.youtube.com/@UITBREIDEN)
 
 **Stop explaining your stack to Claude every session.**
 
