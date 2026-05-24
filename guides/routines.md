@@ -183,5 +183,88 @@ Example: routine runs tests nightly, `Stop` hook sends results to Slack:
 
 ---
 
+## Programmatic Routine Management
+
+Claude Code now exposes three tools for managing routines from within a session — no need to edit settings.json manually:
+
+**CronCreate** — create a new routine from inside a Claude Code session:
+```
+CronCreate(
+  prompt: "Check all open PRs and write summary to .claude/pr-triage.md",
+  schedule: "0 8 * * 1-5",
+  name: "daily-pr-triage"           // optional
+)
+```
+Returns the created routine's ID. The routine is immediately active.
+
+**CronList** — list all routines configured for the current project:
+```
+CronList()
+```
+Returns array of routines with id, name, schedule, last run time, next run time, and enabled status.
+
+**CronDelete** — remove a routine by ID:
+```
+CronDelete(id: "routine-abc123")
+```
+
+**When this matters:**
+- Ask Claude to set up a routine mid-session: "Create a routine that runs my test suite every night at 11pm"
+- Claude can create routines as part of project setup workflows
+- Combine with `skill/productivity/autofix-pr.md` skill: Claude sets up the routine itself after you install the skill
+
+**Example — Claude sets up its own monitoring:**
+```
+User: "Set up a routine to audit our npm dependencies every Monday morning"
+Claude: [calls CronCreate with appropriate prompt and schedule "0 9 * * 1"]
+Claude: "Done — routine 'dep-audit' will run every Monday at 9am. Use CronList to verify."
+```
+
+**Session crons vs. persistent routines:** CronCreate creates persistent routines that survive session end. For within-session scheduling (fire once after a delay), use ScheduleWakeup instead.
+
+---
+
+## Inspecting Active Routines from Hooks
+
+The Stop hook payload now includes a `session_crons` field listing all routines that were active during the session. This lets your Stop hook log which routines are scheduled, or alert if a critical routine was deleted.
+
+Example Stop hook that logs active routines:
+```json
+{
+  "hooks": {
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/log-session-crons.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+```bash
+#!/usr/bin/env bash
+# log-session-crons.sh
+INPUT=$(cat)
+SESSION_CRONS=$(echo "$INPUT" | python3 -c "
+import json, sys
+data = json.load(sys.stdin)
+crons = data.get('session_crons', [])
+for c in crons:
+    print(f\"  {c.get('name','unnamed')} → {c.get('schedule','?')}\")
+")
+if [ -n "$SESSION_CRONS" ]; then
+  echo "[$(date -u +%Y-%m-%dT%H:%M:%SZ)] Active routines this session:" >> .claude/session.log
+  echo "$SESSION_CRONS" >> .claude/session.log
+fi
+```
+
+---
+
 > **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
 > [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)
