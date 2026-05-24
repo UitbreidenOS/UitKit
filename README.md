@@ -4,16 +4,16 @@
 [![npm downloads](https://img.shields.io/npm/dm/claudient?color=f97316)](https://www.npmjs.com/package/claudient)
 [![GitHub Stars](https://img.shields.io/github/stars/Claudient/Claudient?color=f97316&label=stars)](https://github.com/Claudient/Claudient)
 [![License: MIT](https://img.shields.io/badge/License-MIT-black.svg)](LICENSE)
-[![Skills](https://img.shields.io/badge/skills-250+-f97316)](#skills-by-category)
-[![Agents](https://img.shields.io/badge/agents-70+-ec4899)](#agents)
-[![MCP](https://img.shields.io/badge/MCP_configs-20+-8b5cf6)](#top-100-mcp-servers)
+[![Skills](https://img.shields.io/badge/skills-256+-f97316)](#skills-by-category)
+[![Agents](https://img.shields.io/badge/agents-77+-ec4899)](#agents)
+[![MCP](https://img.shields.io/badge/MCP_configs-25+-8b5cf6)](#top-100-mcp-servers)
 [![Languages](https://img.shields.io/badge/languages-EN%20FR%20DE%20NL%20ES-3b82f6)](#translations)
 [![Reddit](https://img.shields.io/badge/Reddit-r%2Fuitbreiden-FF4500?logo=reddit&logoColor=white)](https://www.reddit.com/r/uitbreiden/)
 [![YouTube](https://img.shields.io/badge/YouTube-%40UITBREIDEN-FF0000?logo=youtube&logoColor=white)](https://www.youtube.com/@UITBREIDEN)
 
 **Stop explaining your stack to Claude every session.**
 
-Claudient gives Claude Code instant domain expertise — 250+ skills that activate automatically, 70+ specialist agents, configs for the top 100 MCP servers, and hooks that automate your workflow. Install in 30 seconds, works with any Claude Code project.
+Claudient gives Claude Code instant domain expertise — 256+ skills that activate automatically, 77+ specialist agents, configs for the top 100 MCP servers, and hooks that automate your workflow. Install in 30 seconds, works with any Claude Code project.
 
 ```bash
 npx claudient add all
@@ -51,7 +51,7 @@ npx claudient add skills finance          # DCF, 3-statement model, pitch deck
 npx claudient add skills small-business   # Invoice chaser, cash flow, Shopify
 
 # Install agents
-npx claudient add agents                  # All 70+ specialist agents
+npx claudient add agents                  # All 77+ specialist agents
 
 # Install in your language
 npx claudient add all --lang fr           # French
@@ -130,7 +130,7 @@ npx claudient add skills small-business
 
 ---
 
-## 🤖 70+ Agents
+## 🤖 77+ Agents
 
 Specialist agents spawned with the `Agent` tool in Claude Code. Each has a specific model, tool restrictions, and trigger conditions.
 
@@ -166,7 +166,7 @@ npx claudient add agents
 
 ## 📦 Skills by Category
 
-**250+ skills · 15 categories · EN · FR · DE · NL · ES**
+**256+ skills · 15 categories · EN · FR · DE · NL · ES**
 
 | Category | Count | Top skills |
 |---|---|---|
@@ -212,7 +212,7 @@ Event-driven automation — runs outside Claude's context as real shell processe
 
 ## 📖 Guides & Workflows
 
-### Guides (35+)
+### Guides (45+)
 
 [Getting Started](guides/getting-started.md) · [Agent Frontmatter Reference](guides/agent-frontmatter.md) · [Skills Frontmatter Reference](guides/skills-frontmatter.md) · [Decision Framework](guides/decision-framework.md) · [Claude Managed Agents](guides/claude-managed-agents.md) · [Advanced Tool Use](guides/advanced-tool-use.md) · [Voice Dictation](guides/voice-dictation.md) · [Desktop App](guides/desktop-app.md) · [Opus 4.7 Migration](guides/opus-47-migration.md) · [Hooks Cookbook](guides/hooks-cookbook.md) · [Multi-Agent Patterns](guides/multi-agent-patterns.md) · [Subagent Patterns](guides/subagent-patterns.md) · [Context Management](guides/context-management.md) · [Token Cost Reduction](guides/token-cost-reduction.md) · [Notifications Setup](guides/notifications-setup.md) · [Plugin Authoring](guides/plugin-authoring.md) · [RIPER Framework](guides/riper-framework.md) · [RPI Workflow](guides/rpi-workflow.md) · [CLI Reference](guides/cli-reference.md) · [Settings Scope](guides/settings-scope.md) · [Why Use Claude Code](guides/why-use-claude-code.md) · [Routines](guides/routines.md) · [Computer Use](guides/computer-use.md) · [Ultraplan](guides/ultraplan.md) · [Auto Mode](guides/auto-mode.md) + 10 more
 
@@ -226,11 +226,11 @@ Event-driven automation — runs outside Claude's context as real shell processe
 
 | Type | Count |
 |---|---|
-| **Skills** | **250+** |
-| **Agents** | **70+** |
+| **Skills** | **256+** |
+| **Agents** | **77+** |
 | **Hooks** | 30+ |
-| **MCP config guides** | 20+ |
-| **Guides** | 35+ |
+| **MCP config guides** | 25+ |
+| **Guides** | 45+ |
 | **Workflows** | 20+ |
 | **Prompts** | 15+ |
 | **Rules** | 9 |
