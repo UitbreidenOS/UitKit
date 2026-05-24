@@ -19,7 +19,7 @@ Claudient gives Claude Code instant domain expertise — 256+ skills that activa
 npx claudient add all
 ```
 
-![Claudient Social Preview](web/public/social-preview.svg)
+![Claudient Social Preview](web/public/social-preview.png)
 
 ---
 
