@@ -203,6 +203,67 @@ This gives Claude a lightweight persistent memory without requiring a memory MCP
 
 ---
 
+## CLAUDE.md Size and Composition
+
+### Size constraints
+
+| Size | Status |
+|---|---|
+| <60 lines | Optimal |
+| 60–100 lines | Good |
+| 100–200 lines | Acceptable |
+| >200 lines | Refactor needed |
+
+The 200-line limit ensures reliable adherence. Instructions buried in a 400-line file get deprioritized — Claude doesn't refuse to read long files, it just weighs later content less heavily. If your CLAUDE.md exceeds 200 lines, move domain-specific rules to `.claude/rules/` with `paths:` frontmatter for lazy loading.
+
+### File organization (60-line template)
+
+```markdown
+Lines 1-10:   Role/purpose — who is Claude in this project context?
+Lines 11-25:  Critical rules — marked with IMPORTANT or in a ## Critical section
+Lines 26-50:  Domain-specific workflows — key patterns for this codebase
+Lines 51-60:  Reference links — point to rules/, guides/, or external docs
+```
+
+The first 25 lines get the most attention. Put your non-negotiables there — never at the bottom.
+
+### Lazy-loading with `.claude/rules/*.md`
+
+Rules files with `paths:` frontmatter only load when Claude touches matching files:
+
+```yaml
+---
+paths:
+  - "**/*.test.ts"
+  - "**/*.spec.ts"
+  - "tests/**"
+---
+# Testing Rules
+...only loaded when editing test files...
+```
+
+Without `paths:` frontmatter, rules files load every session (equivalent to CLAUDE.md). With `paths:`, they're invisible until relevant — keeping the base context lean.
+
+### Tagging critical items
+
+Mark time-sensitive or high-stakes instructions so they aren't deprioritized:
+
+```markdown
+<important if="feature-complete">
+Never ship without: passing tests, security review, updated changelog.
+</important>
+```
+
+Use `<important>` blocks sparingly. If everything is important, nothing is.
+
+### Self-updating pattern
+
+After any correction to Claude's behavior, end the message with: "Update CLAUDE.md so you don't make that mistake again."
+
+Over time this builds a CLAUDE.md that reflects your team's exact preferences — not generic best practices. The error rate measurably drops as the file grows, but keep trimming what becomes obvious. A rule Claude follows naturally doesn't need to be written down.
+
+---
+
 ## Work With Us
 
 Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products with developer communities and deliver B2B AI solutions. If you're building long-running AI workflows, autonomous agents, or need help designing memory architectures for production Claude Code deployments — we can help.

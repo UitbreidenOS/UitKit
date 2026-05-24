@@ -170,6 +170,55 @@ Set `CLAUDE_CODE_TASK_LIST_ID` to the same value in multiple terminal sessions �
 
 ---
 
+## Permission Optimization
+
+### Replace `--dangerously-skip-permissions` with wildcard allowlists
+
+`--dangerously-skip-permissions` bypasses ALL permission checks. Use targeted allowlists instead — they auto-approve specific safe operations while still asking for risky ones:
+
+```json
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(git status)",
+      "Bash(git add *)",
+      "Bash(git diff *)",
+      "Edit(docs/**)",
+      "Read(**)"
+    ],
+    "deny": []
+  }
+}
+```
+
+Pattern: `ToolName(glob-pattern)` — allows that tool only when the input matches the glob. Build your allowlist from the operations you approve every session and never worry about forgetting.
+
+### Auto mode for permission handling
+
+`/auto` (or `autoMode: true` in settings) uses a model-based classifier to auto-approve safe commands and pause on risky ones. Better than blanket skip because it still asks for destructive operations (file deletion, force push, env writes).
+
+Toggle with Shift+Tab to cycle between modes: default → auto → manual. Use auto for active development, manual for production deployments or security-sensitive work.
+
+### Sandbox mode
+
+Running Claude Code in sandbox mode (file + network isolation) reduces permission prompts by ~84%. The tradeoff: some operations (git push, external API calls) need sandbox deactivated.
+
+Recommended pattern:
+- Sandbox **on** during exploration, initial development, and research tasks
+- Sandbox **off** for deploy steps, external integrations, and repository operations
+
+Configure sandbox in `.claude/settings.json`:
+```json
+{
+  "sandbox": true
+}
+```
+
+Or launch with `--sandbox` for a single session without changing project config.
+
+---
+
 ## Work With Us
 
 Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products with developer communities and deliver B2B AI solutions. If you're building something serious with Claude Code and want expert help, a technical partner, or just want to be part of the community — come find us.

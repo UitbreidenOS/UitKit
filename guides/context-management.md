@@ -159,6 +159,52 @@ At every turn boundary, you have 5 options:
 
 **Context rot:** Quality degrades ~300-400k tokens on 1M model. Don't wait until 900k to compact.
 
+## Context Quality Benchmarks
+
+### Intelligence degradation thresholds
+
+Context quality measurably degrades as the window fills. Use these as action triggers, not hard limits:
+
+| Context used | Quality | Action |
+|-------------|---------|--------|
+| <30% | Full | Continue |
+| 30–40% | Good | Monitor; consider /compact before next complex task |
+| 40–60% | Degraded | Use directed `/compact <hint>` to preserve thread |
+| >60% | Significantly degraded | Compact or fresh session |
+| >300K tokens (1M model) | Unreliable | Compact or fresh session — empirical threshold |
+
+Expert teams maintain <30% context utilization for complex tasks. Beginners: stay under 40%.
+
+### Rewind beats correction
+
+When Claude goes down a wrong path, `/rewind` (Esc+Esc) is better than leaving the correction in context:
+
+```
+Wrong: Let Claude make an error → correct it → continue
+  Result: both the error and the correction stay in context; context becomes noisy
+
+Right: Let Claude make an error → /rewind to pre-error state → rephrase approach
+  Result: clean context; Claude reasons from a better starting point
+```
+
+Previous attempts should inform your *re-prompting strategy*, not clutter the current context.
+
+### Subagent context isolation
+
+For tool-heavy reconnaissance (reading 30 files, running 10 greps), offload to a subagent:
+
+```
+Main context doing reconnaissance:
+  Claude reads 50 files... [50 file reads in main context]
+  Context is now 40% full with intermediate data
+
+Subagent isolation:
+  Spawn subagent → reads 50 files → returns "Found 12 instances in auth.ts, db.ts, utils.ts; recommend X"
+  Main context receives conclusions only; stays clean
+```
+
+Use subagents when the intermediate output (file reads, search results) won't be needed again after the task completes.
+
 ---
 
 > **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.

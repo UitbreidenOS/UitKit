@@ -208,6 +208,53 @@ paths:
 
 ---
 
+## Trigger-Based Descriptions
+
+### Write descriptions as activation triggers, not summaries
+
+The model uses the description to decide when to activate the skill. The question it answers is "When should I fire?" — not "What does this do?"
+
+```
+❌ Wrong: "This skill helps with FastAPI development and covers routing, middleware, and testing."
+✅ Right: "Activate when building or debugging a FastAPI application, adding endpoints, configuring middleware, or setting up pytest for an async API."
+```
+
+Summaries describe content. Triggers describe conditions. Claude needs conditions.
+
+### Embed runtime injection via `!command` syntax
+
+Skill instructions can embed shell commands that execute at activation time and inject their output into context:
+
+```markdown
+Current branch: !git branch --show-current
+Recent changes: !git log --oneline -5
+Project type: !cat package.json | python3 -c "import sys,json; d=json.load(sys.stdin); print(d.get('name','unknown'))"
+```
+
+Use to: avoid hardcoded paths, inject dynamic context (current git state, env vars, project name), reduce prompt length. The skill stays accurate across projects without manual edits.
+
+### Document failure modes in the description
+
+Add a `Gotchas:` section to skill descriptions noting observed failure modes — patterns where Claude consistently gets it wrong without guidance:
+
+```
+Gotchas: Claude may confuse ESM and CommonJS module syntax — explicitly state which format when asking for imports. This skill does not handle monorepo workspace setups; use the monorepo skill instead.
+```
+
+Gotchas are one of the highest-ROI additions to a mature skill. They encode failures you've already paid for.
+
+### Skill character budget
+
+| Field | Limit |
+|---|---|
+| Description + `when_to_use` combined | 1,536 characters (hard cap) |
+| Full skill body (loaded on activation) | ~15,000 characters |
+| Optimal description length | 150–300 characters |
+
+150–300 characters is enough for precise matching and short enough to leave room for `when_to_use`. Descriptions that exceed this get truncated in the skill listing and may not match accurately.
+
+---
+
 ## Work With Us
 
 Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products with developer communities and deliver B2B AI solutions. If you want help building production-grade Claude Code integrations, custom skill libraries, or AI-powered products — reach out.
