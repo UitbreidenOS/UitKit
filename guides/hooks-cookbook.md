@@ -649,6 +649,166 @@ Register this script as a `Stop` hook with `matcher: ""` to run it on every sess
 
 ---
 
+## PostToolUse Output Replacement
+
+PostToolUse hooks can replace what Claude sees from ANY tool's output — not just MCP tools. This is one of the most impactful hook features for managing context budget, since tool results consume ~60% of context tokens in typical agentic sessions.
+
+**How it works:**
+The hook receives the tool output in stdin. It can return a modified version via `hookSpecificOutput.updatedToolOutput`. Claude sees the replaced output instead of the original. The tool has already executed — files written, commands run, network requests sent — so this only changes what enters Claude's context, not what happened.
+
+**Configuration:**
+```json
+{
+  "hooks": {
+    "PostToolUse": [{
+      "matcher": "Bash",
+      "hooks": [{
+        "type": "command",
+        "command": "python3 ~/.claude/hooks/compress-output.py"
+      }]
+    }]
+  }
+}
+```
+
+**Script example — compress verbose bash output:**
+```python
+#!/usr/bin/env python3
+"""Compress Bash tool output that exceeds a threshold."""
+import json, sys
+
+THRESHOLD = 10_000  # characters
+
+data = json.load(sys.stdin)
+output = data.get("tool_output", "")
+
+if len(output) > THRESHOLD:
+    # Keep first 2000 and last 2000 chars, summarize middle
+    compressed = (
+        output[:2000]
+        + f"\n\n... [{len(output) - 4000} characters truncated] ...\n\n"
+        + output[-2000:]
+    )
+    result = {
+        "hookSpecificOutput": {
+            "updatedToolOutput": compressed
+        }
+    }
+    print(json.dumps(result))
+else:
+    # Output unchanged — print nothing (no replacement)
+    pass
+```
+
+**Use cases:**
+- **Redact secrets:** scan output for API keys/tokens and replace with `[REDACTED]` before Claude sees them
+- **Normalize diffs:** strip noise from git diff output (timestamps, index lines)
+- **Compress verbose output:** truncate npm install logs, large query results, build output
+- **Context budget recovery:** tool results consume ~60% of tokens; replacing 50K chars with 500 chars reclaims massive context
+
+**Important:** the original output is captured in telemetry/analytics before the hook runs. The replacement only affects what Claude sees in its context window.
+
+**Available since:** v2.1.121+
+
+---
+
+## Agent Team Hook Events
+
+Three hook events specifically for Agent Teams. These fire during team coordination and let you enforce quality gates on task management.
+
+### TeammateIdle
+
+Fires when a teammate is about to go idle (stop working). Use to keep teammates productive.
+
+- **Exit 0:** allow the teammate to go idle
+- **Exit 2:** send feedback to the teammate and keep them working
+
+```json
+{
+  "hooks": {
+    "TeammateIdle": [{
+      "hooks": [{
+        "type": "command",
+        "command": "bash ~/.claude/hooks/check-remaining-tasks.sh"
+      }]
+    }]
+  }
+}
+```
+
+```bash
+#!/bin/bash
+# check-remaining-tasks.sh — keep teammate working if tasks remain
+PENDING=$(cat ~/.claude/tasks/*/tasks.json 2>/dev/null | python3 -c "
+import json,sys
+tasks = json.load(sys.stdin)
+pending = [t for t in tasks if t.get('status') == 'pending']
+print(len(pending))
+" 2>/dev/null || echo "0")
+
+if [ "$PENDING" -gt 0 ]; then
+  echo "There are $PENDING pending tasks. Pick up the next one."
+  exit 2  # keep working
+fi
+exit 0  # allow idle
+```
+
+### TaskCreated
+
+Fires when a task is being added to the shared task list. Use to enforce task quality standards.
+
+- **Exit 0:** allow task creation
+- **Exit 2:** prevent creation and send feedback
+
+```json
+{
+  "hooks": {
+    "TaskCreated": [{
+      "hooks": [{
+        "type": "command",
+        "command": "python3 ~/.claude/hooks/validate-task.py"
+      }]
+    }]
+  }
+}
+```
+
+Use case: reject tasks that are too vague (no acceptance criteria), too large (needs splitting), or duplicate existing tasks.
+
+### TaskCompleted
+
+Fires when a task is being marked as complete. Use as a quality gate.
+
+- **Exit 0:** allow completion
+- **Exit 2:** prevent completion and send feedback (teammate must address the issue)
+
+```json
+{
+  "hooks": {
+    "TaskCompleted": [{
+      "hooks": [{
+        "type": "command",
+        "command": "bash ~/.claude/hooks/verify-tests-pass.sh"
+      }]
+    }]
+  }
+}
+```
+
+```bash
+#!/bin/bash
+# verify-tests-pass.sh — block task completion if tests fail
+if ! npm test --silent 2>/dev/null; then
+  echo "Tests are failing. Fix test failures before marking this task complete."
+  exit 2  # block completion
+fi
+exit 0  # allow completion
+```
+
+**Note:** These hooks only fire when Agent Teams is enabled (`CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1`). They have no effect in regular single-session mode.
+
+---
+
 ## Work With Us
 
 Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products with developer communities and deliver B2B AI solutions. If you need custom hook systems, automated quality gates, or production-grade Claude Code automation for your team — we build this for clients.
