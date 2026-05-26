@@ -8,6 +8,7 @@ interface Props {
   description?: string;
   canonical?: string;
   jsonLd?: Record<string, unknown> | Record<string, unknown>[];
+  ogImage?: string;
 }
 
 const {
@@ -15,11 +16,33 @@ const {
   description = "The Claude Code knowledge base — 277+ skills, 95+ agents, 30+ hooks, 30+ MCP configs for Claude Code. Open source, multi-language, free to use.",
   canonical,
   jsonLd,
+  ogImage: ogImageProp,
 } = Astro.props;
 
 const siteUrl = "https://claudient.tools";
 const canonicalUrl = canonical ?? new URL(Astro.url.pathname, siteUrl).href;
-const ogImage = `${siteUrl}/og-default.png`;
+
+// Derive per-page SVG OG image from the canonical URL path.
+// Pattern: /{collection}/{...slug}/ → /og/{collection}/{...slug}.svg
+// Falls back to the static default for non-collection pages.
+const DETAIL_COLLECTIONS = new Set([
+  "skills", "agents", "hooks", "mcp", "workflows", "guides", "prompts", "rules",
+]);
+function deriveOgImage(url: string): string {
+  try {
+    const { pathname } = new URL(url);
+    const parts = pathname.replace(/^\/|\/$/g, "").split("/").filter(Boolean);
+    // Must have at least 2 segments: collection + slug
+    if (parts.length >= 2 && DETAIL_COLLECTIONS.has(parts[0])) {
+      return `${siteUrl}/og/${parts.join("/")}.svg`;
+    }
+  } catch {
+    // malformed URL — fall through to default
+  }
+  return `${siteUrl}/og-default.png`;
+}
+
+const ogImage = ogImageProp ?? deriveOgImage(canonicalUrl);
 ---
 
 <!doctype html>

@@ -343,3 +343,59 @@ hr {
 .prose > h1:first-child {
   display: none;
 }
+
+/* ---- Code block wrapper (copy button + language badge) ---- */
+
+.code-block-wrapper {
+  position: relative;
+}
+
+/* Ensure the pre inside the wrapper still scrolls horizontally */
+.code-block-wrapper pre {
+  overflow-x: auto;
+}
+
+/* Copy button */
+.code-copy-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  background-color: transparent;
+  color: var(--color-muted);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
+  padding: 0;
+  line-height: 1;
+}
+
+.code-copy-btn:hover {
+  background-color: var(--color-muted-bg);
+  border-color: var(--color-border);
+  color: var(--color-fg);
+}
+
+/* Language badge */
+.code-lang-badge {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.75rem;
+  font-size: 10px;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-subtle);
+  line-height: 28px;
+  pointer-events: none;
+  user-select: none;
+}

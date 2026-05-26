@@ -1,0 +1,135 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="Search | Claudient"
+  description="Search 277+ skills, 95+ agents, hooks, MCP configs, and guides in the Claudient knowledge base."
+>
+  <!-- Pagefind UI assets — only exist after `npm run build` -->
+  <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+  <script src="/pagefind/pagefind-ui.js" is:inline></script>
+
+  <style>
+    /* Pagefind CSS variable overrides to match site palette */
+    :root {
+      --pagefind-ui-primary: #ea580c;
+      --pagefind-ui-text: var(--color-fg, #1a1a1a);
+      --pagefind-ui-background: var(--color-bg, #ffffff);
+      --pagefind-ui-border: var(--color-border, #e5e7eb);
+      --pagefind-ui-border-radius: 0.5rem;
+      --pagefind-ui-font: inherit;
+      --pagefind-ui-scale: 1;
+    }
+
+    .search-hero {
+      padding: 4rem 0 2rem;
+      text-align: center;
+    }
+
+    .search-hero h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 0.75rem;
+      color: var(--color-fg);
+    }
+
+    .search-hero p {
+      font-size: 1.0625rem;
+      color: var(--color-muted);
+      margin-bottom: 2.5rem;
+    }
+
+    .search-box-wrap {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .search-hints {
+      margin-top: 1rem;
+      font-size: 0.875rem;
+      color: var(--color-subtle);
+    }
+
+    .search-hints span {
+      font-weight: 500;
+      color: var(--color-muted);
+    }
+
+    .hint-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+      margin-top: 0.625rem;
+    }
+
+    .hint-pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      background-color: var(--color-muted-bg);
+      color: var(--color-muted);
+      border: 1px solid var(--color-border);
+      cursor: pointer;
+      transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+      text-decoration: none;
+    }
+
+    .hint-pill:hover {
+      background-color: var(--color-accent-soft);
+      border-color: var(--color-accent);
+      color: var(--color-accent);
+    }
+
+    .search-results-wrap {
+      max-width: 600px;
+      margin: 2rem auto 4rem;
+    }
+  </style>
+
+  <section class="search-hero container-page">
+    <h1>Search Claudient</h1>
+    <p>Find skills, agents, hooks, MCP configs, and guides in the knowledge base.</p>
+
+    <div class="search-box-wrap">
+      <div id="search-page"></div>
+
+      <div class="search-hints" id="search-hints">
+        <span>Try:</span>
+        <div class="hint-pills">
+          <a class="hint-pill" href="/search/?q=invoice+chaser">invoice chaser</a>
+          <a class="hint-pill" href="/search/?q=hubspot">hubspot</a>
+          <a class="hint-pill" href="/search/?q=kubernetes">kubernetes</a>
+          <a class="hint-pill" href="/search/?q=claude+for+dental">claude for dental</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="search-results-wrap container-page"></div>
+</Layout>
+
+<script is:inline>
+  window.addEventListener("DOMContentLoaded", function () {
+    if (typeof PagefindUI === "undefined") return;
+
+    var pf = new PagefindUI({
+      element: "#search-page",
+      showImages: false,
+    });
+
+    var q = new URLSearchParams(location.search).get("q");
+    if (q) {
+      // Hide hint pills when a query is active
+      var hints = document.getElementById("search-hints");
+      if (hints) hints.style.display = "none";
+      pf.triggerSearch(q);
+    }
+  });
+</script>
