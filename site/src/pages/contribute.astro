@@ -1,0 +1,240 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="Contribute to Claudient — add a skill, agent, or hook"
+  description="Every Claudient skill lives in one markdown file. Learn how to write and submit a skill, agent, or hook via a standard GitHub PR."
+>
+  <!-- Hero -->
+  <section class="container-page py-20 md:py-28">
+    <div class="max-w-3xl">
+      <p class="pill mb-6">Open source · MIT</p>
+      <h1 class="text-4xl md:text-6xl font-semibold tracking-tight leading-[1.05]">
+        Add a skill. Get it in front of thousands.
+      </h1>
+      <p class="mt-6 text-lg md:text-xl max-w-2xl" style="color: var(--color-muted);">
+        Claudient is community-powered. Every skill is one markdown file. If it made
+        Claude Code meaningfully better for you, it belongs here.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row gap-3">
+        <a
+          href="https://github.com/Claudients/Claudient"
+          target="_blank"
+          rel="noopener"
+          class="btn-primary"
+        >
+          Fork on GitHub
+        </a>
+        <a href="/guides/skill-authoring/" class="btn-ghost">Skill authoring guide</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- What to contribute -->
+  <section
+    class="border-y"
+    style="background-color: var(--color-bg-elevated); border-color: var(--color-border);"
+  >
+    <div class="container-page py-16">
+      <h2 class="text-2xl font-semibold tracking-tight mb-8">What you can contribute</h2>
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        {[
+          { type: "Skill", path: "skills/<category>/", desc: "A slash command that activates domain-specific behavior in Claude Code." },
+          { type: "Agent", path: "agents/<category>/", desc: "A specialist subagent definition — model guidance, tool restrictions, trigger conditions." },
+          { type: "Hook", path: "hooks/<trigger>/", desc: "An event-driven automation that runs outside Claude's context as a real shell process." },
+          { type: "Rule", path: "rules/", desc: "An always-follow guideline that shapes Claude's behavior throughout a session." },
+          { type: "Workflow", path: "workflows/", desc: "An end-to-end multi-step process — how Claude should handle a complex task." },
+          { type: "Guide", path: "guides/", desc: "A deep-dive documentation piece on a Claude Code feature or pattern." },
+          { type: "Translation", path: "guides/<lang>/", desc: "A translated version of any existing English file (FR, DE, NL, ES)." },
+        ].map((item) => (
+          <div class="card p-5">
+            <div class="flex items-center justify-between mb-2">
+              <span class="font-semibold text-sm">{item.type}</span>
+              <code
+                class="text-xs font-mono px-2 py-0.5 rounded"
+                style="background-color: var(--color-muted-bg); color: var(--color-muted);"
+              >
+                {item.path}
+              </code>
+            </div>
+            <p class="text-sm" style="color: var(--color-muted);">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Skill format -->
+  <section class="container-page py-16">
+    <h2 class="text-2xl font-semibold tracking-tight mb-3">Skill file format</h2>
+    <p class="mb-8 text-sm max-w-2xl" style="color: var(--color-muted);">
+      Every file in <code class="text-xs px-1 py-0.5 rounded" style="background-color: var(--color-muted-bg);">skills/</code> must follow this four-section structure exactly.
+      Do not add sections beyond this without a clear reason.
+    </p>
+    <div
+      class="rounded-lg p-6"
+      style="background-color: var(--color-muted-bg); border: 1px solid var(--color-border);"
+    >
+      <pre class="font-mono text-sm leading-relaxed overflow-x-auto" style="background: none; border: none; margin: 0; padding: 0;"><code><span style="color: var(--color-accent);"># Skill Name</span>
+
+<span style="color: var(--color-accent);">## When to activate</span>
+[Specific trigger conditions — be precise, not generic]
+
+<span style="color: var(--color-accent);">## When NOT to use</span>
+[Anti-patterns — when this skill is the wrong tool]
+
+<span style="color: var(--color-accent);">## Instructions</span>
+[The actual skill content — patterns, prompts, steps]
+
+<span style="color: var(--color-accent);">## Example</span>
+[At least one concrete example showing the skill in use]</code></pre>
+    </div>
+  </section>
+
+  <!-- Agent format -->
+  <section
+    class="border-t"
+    style="border-color: var(--color-border); background-color: var(--color-bg-elevated);"
+  >
+    <div class="container-page py-16">
+      <h2 class="text-2xl font-semibold tracking-tight mb-3">Agent file format</h2>
+      <p class="mb-8 text-sm max-w-2xl" style="color: var(--color-muted);">
+        Every file in <code class="text-xs px-1 py-0.5 rounded" style="background-color: var(--color-muted-bg);">agents/</code> uses this structure.
+        Model guidance and a tool subset are required — "all tools" is not acceptable.
+      </p>
+      <div
+        class="rounded-lg p-6"
+        style="background-color: var(--color-muted-bg); border: 1px solid var(--color-border);"
+      >
+        <pre class="font-mono text-sm leading-relaxed overflow-x-auto" style="background: none; border: none; margin: 0; padding: 0;"><code><span style="color: var(--color-accent);"># Agent Name</span>
+
+<span style="color: var(--color-accent);">## Purpose</span>
+[One sentence — what domain or task this agent owns]
+
+<span style="color: var(--color-accent);">## Model guidance</span>
+[Haiku / Sonnet / Opus — and why]
+
+<span style="color: var(--color-accent);">## Tools</span>
+[Specific tool subset this agent should use — not all tools]
+
+<span style="color: var(--color-accent);">## When to delegate here</span>
+[Trigger conditions for spawning this agent]
+
+<span style="color: var(--color-accent);">## Example use case</span>
+[Concrete example]</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quality bar -->
+  <section class="container-page py-16">
+    <h2 class="text-2xl font-semibold tracking-tight mb-8">Quality bar</h2>
+    <div class="grid gap-8 md:grid-cols-2">
+      <div>
+        <h3 class="font-semibold mb-4">Skills</h3>
+        <ul class="space-y-2 text-sm" style="color: var(--color-muted);">
+          <li class="flex gap-2"><span style="color: var(--color-accent);">+</span> Clear "When to activate" with specific trigger conditions</li>
+          <li class="flex gap-2"><span style="color: var(--color-accent);">+</span> "When NOT to use" with at least one anti-pattern</li>
+          <li class="flex gap-2"><span style="color: var(--color-accent);">+</span> At least one concrete, runnable example</li>
+          <li class="flex gap-2"><span style="color: var(--color-accent);">+</span> References real Claude Code features — not generic LLM advice</li>
+          <li class="flex gap-2"><span style="color: var(--color-accent);">+</span> Tested in at least one real session</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-4">Agents</h3>
+        <ul class="space-y-2 text-sm" style="color: var(--color-muted);">
+          <li class="flex gap-2"><span style="color: var(--color-accent);">+</span> Specifies a tool subset (not all tools)</li>
+          <li class="flex gap-2"><span style="color: var(--color-accent);">+</span> Model guidance with reasoning (Haiku / Sonnet / Opus)</li>
+          <li class="flex gap-2"><span style="color: var(--color-accent);">+</span> Concrete example use case</li>
+        </ul>
+        <h3 class="font-semibold mt-8 mb-4">What gets rejected</h3>
+        <ul class="space-y-2 text-sm" style="color: var(--color-muted);">
+          <li class="flex gap-2"><span style="color: var(--color-subtle);">−</span> Duplicates an existing file without clear improvement</li>
+          <li class="flex gap-2"><span style="color: var(--color-subtle);">−</span> Placeholder or "coming soon" sections</li>
+          <li class="flex gap-2"><span style="color: var(--color-subtle);">−</span> Generic LLM advice instead of Claude Code specifics</li>
+          <li class="flex gap-2"><span style="color: var(--color-subtle);">−</span> Application code (this repo is docs and config only)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PR flow -->
+  <section
+    class="border-y"
+    style="background-color: var(--color-bg-elevated); border-color: var(--color-border);"
+  >
+    <div class="container-page py-16">
+      <h2 class="text-2xl font-semibold tracking-tight mb-8">Submitting a PR</h2>
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-5">
+        {[
+          { step: "1", title: "Fork and branch", desc: 'Fork the repo and create a branch: git checkout -b add/your-skill-name' },
+          { step: "2", title: "Add your file", desc: "One markdown file, correct subdirectory, correct format. Check README.md for the directory map." },
+          { step: "3", title: "Note translations", desc: "If you added a new English guide, note in the PR description which translations are needed (FR, DE, NL, ES)." },
+          { step: "4", title: "Open a PR", desc: 'Title like: "add: FastAPI skill" or "fix: token-optimization guide". No squash required.' },
+          { step: "5", title: "Fill the description", desc: "What it is, why it's useful, how you tested it. That's the full bar." },
+        ].map((item) => (
+          <div>
+            <div
+              class="inline-flex items-center justify-center w-9 h-9 rounded-md mb-4 text-sm font-semibold"
+              style="background-color: var(--color-accent-soft); color: var(--color-accent);"
+            >
+              {item.step}
+            </div>
+            <h3 class="font-semibold mb-2 text-sm">{item.title}</h3>
+            <p class="text-sm" style="color: var(--color-muted);">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Translations -->
+  <section class="container-page py-16">
+    <h2 class="text-2xl font-semibold tracking-tight mb-3">Translating existing content</h2>
+    <p class="mb-6 text-sm max-w-2xl" style="color: var(--color-muted);">
+      Translation PRs are welcome. Keep all code blocks, file paths, and technical
+      terms in English — only prose translates.
+    </p>
+    <div
+      class="rounded-lg p-6"
+      style="background-color: var(--color-muted-bg); border: 1px solid var(--color-border);"
+    >
+      <pre class="font-mono text-sm leading-relaxed overflow-x-auto" style="background: none; border: none; margin: 0; padding: 0;"><code><span style="color: var(--color-muted);"># Copy the English source</span>
+cp guides/getting-started.md guides/fr/getting-started.md
+
+<span style="color: var(--color-muted);"># PR title format</span>
+translate: getting-started guide (French)</code></pre>
+    </div>
+    <p class="mt-4 text-sm" style="color: var(--color-muted);">
+      Supported languages: English (primary) · French (<code class="text-xs px-1 py-0.5 rounded" style="background-color: var(--color-muted-bg);">fr/</code>) · German (<code class="text-xs px-1 py-0.5 rounded" style="background-color: var(--color-muted-bg);">de/</code>) · Dutch (<code class="text-xs px-1 py-0.5 rounded" style="background-color: var(--color-muted-bg);">nl/</code>) · Spanish (<code class="text-xs px-1 py-0.5 rounded" style="background-color: var(--color-muted-bg);">es/</code>)
+    </p>
+  </section>
+
+  <!-- CTA -->
+  <section
+    class="border-t"
+    style="border-color: var(--color-border); background-color: var(--color-bg-elevated);"
+  >
+    <div class="container-page py-16">
+      <div class="max-w-xl">
+        <h2 class="text-2xl font-semibold tracking-tight mb-3">Ready to contribute?</h2>
+        <p class="text-sm mb-6" style="color: var(--color-muted);">
+          Read the full skill authoring guide, then open a PR. Questions go in GitHub
+          Discussions — not issues.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3">
+          <a href="/guides/skill-authoring/" class="btn-primary">Skill authoring guide</a>
+          <a
+            href="https://github.com/Claudients/Claudient"
+            target="_blank"
+            rel="noopener"
+            class="btn-ghost"
+          >
+            Fork on GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

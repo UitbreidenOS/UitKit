@@ -1,0 +1,35 @@
+---
+import { getCollection, render } from "astro:content";
+import DocLayout from "../../layouts/DocLayout.astro";
+import { titleFromEntry, descriptionFromEntry } from "../../lib/content";
+
+export async function getStaticPaths() {
+  const entries = await getCollection("guides", ({ data }) => !data.draft);
+  return entries
+    .filter((entry) => entry.id.replace(/\.md$/, "").startsWith("claude-for-"))
+    .map((entry) => {
+      const rawSlug = entry.id.replace(/\.md$/, "");
+      const urlSlug = rawSlug.replace(/^claude-for-/, "");
+      return { params: { slug: urlSlug }, props: { entry } };
+    });
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const title = titleFromEntry(entry);
+const description = descriptionFromEntry(entry);
+---
+
+<DocLayout
+  title={title}
+  description={description}
+  collection="claude-for"
+  collectionLabel="Claude for Business"
+  breadcrumbs={[
+    { label: "Home", href: "/" },
+    { label: "Claude for Your Business", href: "/claude-for/" },
+    { label: title },
+  ]}
+>
+  <Content />
+</DocLayout>

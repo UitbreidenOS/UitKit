@@ -7,12 +7,14 @@ interface Props {
   title: string;
   description?: string;
   canonical?: string;
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
 }
 
 const {
   title,
   description = "The Claude Code knowledge base — 277+ skills, 95+ agents, 30+ hooks, 30+ MCP configs for Claude Code. Open source, multi-language, free to use.",
   canonical,
+  jsonLd,
 } = Astro.props;
 
 const siteUrl = "https://claudient.tools";
@@ -45,6 +47,10 @@ const ogImage = `${siteUrl}/og-default.png`;
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="theme-color" content="#fafaf9" />
+
+    {jsonLd && (
+      <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+    )}
   </head>
   <body class="min-h-screen flex flex-col">
     <Header />

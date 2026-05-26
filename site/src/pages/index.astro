@@ -1,56 +1,68 @@
 ---
+import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
+import { pathToParts, slugToTitle } from "../lib/content";
 
-const categories = [
-  {
-    name: "Backend",
-    count: "40+",
-    description: "Next.js, FastAPI, Hono, NestJS, Rust, Go, Rails, Laravel, Elixir",
-    href: "/skills/backend/",
-  },
-  {
-    name: "DevOps & Infra",
-    count: "20+",
-    description: "Kubernetes, Terraform, Docker, GitHub Actions, Sentry, OpenTelemetry",
-    href: "/skills/devops-infra/",
-  },
-  {
-    name: "AI Engineering",
-    count: "10+",
-    description: "Claude API, LangGraph, RAG, prompt caching, batch API, MCP builder",
-    href: "/skills/ai-engineering/",
-  },
-  {
-    name: "Small Business",
-    count: "30+",
-    description: "Invoice chasing, dental, salon, ecommerce, coaching, newsletter, podcasts",
-    href: "/skills/small-business/",
-  },
-  {
-    name: "GTM & RevOps",
-    count: "10+",
-    description: "HubSpot, SDR agent, lead enrichment, email automation, CRM hygiene",
-    href: "/skills/gtm/",
-  },
-  {
-    name: "Legal",
-    count: "15+",
-    description: "Contract review, NDA, GDPR, SOC 2, EU AI Act, IP clearance",
-    href: "/skills/legal/",
-  },
-  {
-    name: "Finance",
-    count: "10+",
-    description: "DCF, 3-statement model, IC memo, pitch deck, KYC, GL reconciliation",
-    href: "/skills/finance/",
-  },
-  {
-    name: "Data & ML",
-    count: "8+",
-    description: "dbt, Spark, Kafka, MLOps, NLP pipelines, Pandas/Polars, PyTorch",
-    href: "/skills/data-ml/",
-  },
-];
+// Live counts: pull every English content file from the repo at build time
+const [skills, agents, hooks, mcp, workflows, guides, prompts, rules] = await Promise.all([
+  getCollection("skills", ({ data }) => !data.draft),
+  getCollection("agents", ({ data }) => !data.draft),
+  getCollection("hooks", ({ data }) => !data.draft),
+  getCollection("mcp", ({ data }) => !data.draft),
+  getCollection("workflows", ({ data }) => !data.draft),
+  getCollection("guides", ({ data }) => !data.draft),
+  getCollection("prompts", ({ data }) => !data.draft),
+  getCollection("rules", ({ data }) => !data.draft),
+]);
+
+// Build category cards from real skill data — group by top-level folder
+const skillsByCategory = new Map<string, number>();
+for (const skill of skills) {
+  const { category } = pathToParts(skill.id);
+  skillsByCategory.set(category, (skillsByCategory.get(category) ?? 0) + 1);
+}
+
+// Hand-curated category descriptions; counts come from live data above.
+// Categories not in this map still render with a generic description.
+const categoryDescriptions: Record<string, string> = {
+  "backend": "Next.js, FastAPI, Hono, NestJS, Rust, Go, Rails, Laravel, Elixir",
+  "devops-infra": "Kubernetes, Terraform, Docker, GitHub Actions, Sentry, OpenTelemetry",
+  "ai-engineering": "Claude API, LangGraph, RAG, prompt caching, batch API, MCP builder",
+  "small-business": "Invoice chasing, dental, salon, ecommerce, coaching, newsletter, podcasts",
+  "gtm": "HubSpot, SDR agent, lead enrichment, email automation, CRM hygiene",
+  "legal": "Contract review, NDA, GDPR, SOC 2, EU AI Act, IP clearance",
+  "finance": "DCF, 3-statement model, IC memo, pitch deck, KYC, GL reconciliation",
+  "data-ml": "dbt, Spark, Kafka, MLOps, NLP pipelines, Pandas/Polars, PyTorch",
+  "database": "Drizzle, Prisma, PostgreSQL, Supabase, Neon, Redis, Elasticsearch",
+  "marketing": "SEO audit, AI SEO, programmatic SEO, paid ads, CRO, copywriting",
+  "product": "Product discovery, experiment designer, competitive teardown, roadmap",
+  "productivity": "Ship gate, PR review, ADR writer, tech debt tracker, context engineering",
+  "automation": "Playwright Pro, browser automation, Remotion, SaaS scaffolder, office docs",
+  "finance-payments": "Stripe, payment flows, subscriptions, refunds, webhooks",
+};
+
+const categories = [...skillsByCategory.entries()]
+  .map(([slug, count]) => ({
+    slug,
+    name: slugToTitle(slug),
+    count,
+    description: categoryDescriptions[slug] ?? `${count} skills in this category`,
+    href: `/skills/${slug}/`,
+  }))
+  .sort((a, b) => b.count - a.count)
+  .slice(0, 8);
+
+const stats = {
+  skills: skills.length,
+  agents: agents.length,
+  hooks: hooks.length,
+  mcp: mcp.length,
+  workflows: workflows.length,
+  guides: guides.length,
+  prompts: prompts.length,
+  rules: rules.length,
+};
+const totalItems = Object.values(stats).reduce((a, b) => a + b, 0);
 
 const claudeForVerticals = [
   { label: "Solopreneurs", href: "/claude-for/solopreneurs/" },
@@ -63,18 +75,18 @@ const claudeForVerticals = [
 
 <Layout
   title="Claudient — the Claude Code knowledge base"
-  description="277+ skills, 95+ agents, 30+ hooks, 30+ MCP configs for Claude Code. Install in 30 seconds. Open source. Available in 5 languages."
+  description={`${stats.skills} skills, ${stats.agents} agents, ${stats.hooks} hooks, ${stats.mcp} MCP configs for Claude Code. Install in 30 seconds. Open source, MIT licensed.`}
 >
   <!-- Hero -->
   <section class="container-page py-20 md:py-28">
     <div class="max-w-3xl">
-      <p class="pill mb-6">v1.8 · 277+ skills · MIT</p>
+      <p class="pill mb-6">{stats.skills} skills · {stats.agents} agents · MIT</p>
       <h1 class="text-4xl md:text-6xl font-semibold tracking-tight leading-[1.05]">
         Stop explaining your stack to Claude every session.
       </h1>
       <p class="mt-6 text-lg md:text-xl max-w-2xl" style="color: var(--color-muted);">
-        Claudient gives Claude Code instant domain expertise — skills that activate
-        automatically, specialist agents, hooks, and MCP configs. Install in 30
+        Claudient gives Claude Code instant domain expertise — {stats.skills} skills that activate
+        automatically, {stats.agents} specialist agents, hooks, and MCP configs. Install in 30
         seconds, works with any Claude Code project.
       </p>
 
@@ -86,6 +98,18 @@ const claudeForVerticals = [
           <span style="color: var(--color-subtle);">$</span>&nbsp;npx claudient add all
         </code>
         <a href="/install/" class="btn-primary">Get started</a>
+      </div>
+
+      <!-- Live stats bar -->
+      <div class="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-y-4 gap-x-8 text-sm" style="color: var(--color-muted);">
+        <div><a href="/skills/" class="hover:underline"><span class="font-semibold" style="color: var(--color-fg);">{stats.skills}</span> skills</a></div>
+        <div><a href="/agents/" class="hover:underline"><span class="font-semibold" style="color: var(--color-fg);">{stats.agents}</span> agents</a></div>
+        <div><a href="/hooks/" class="hover:underline"><span class="font-semibold" style="color: var(--color-fg);">{stats.hooks}</span> hooks</a></div>
+        <div><a href="/mcp/" class="hover:underline"><span class="font-semibold" style="color: var(--color-fg);">{stats.mcp}</span> MCP configs</a></div>
+        <div><a href="/workflows/" class="hover:underline"><span class="font-semibold" style="color: var(--color-fg);">{stats.workflows}</span> workflows</a></div>
+        <div><a href="/guides/" class="hover:underline"><span class="font-semibold" style="color: var(--color-fg);">{stats.guides}</span> guides</a></div>
+        <div><a href="/prompts/" class="hover:underline"><span class="font-semibold" style="color: var(--color-fg);">{stats.prompts}</span> prompts</a></div>
+        <div><a href="/rules/" class="hover:underline"><span class="font-semibold" style="color: var(--color-fg);">{stats.rules}</span> rules</a></div>
       </div>
     </div>
   </section>

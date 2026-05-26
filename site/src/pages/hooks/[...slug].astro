@@ -1,7 +1,8 @@
 ---
 import { getCollection, render } from "astro:content";
 import DocLayout from "../../layouts/DocLayout.astro";
-import { pathToParts, titleFromEntry, descriptionFromEntry } from "../../lib/content";
+import { pathToParts, titleFromEntry, descriptionFromEntry, urlForEntry } from "../../lib/content";
+import { buildJsonLd } from "../../lib/seo";
 
 export async function getStaticPaths() {
   const entries = await getCollection("hooks", ({ data }) => !data.draft);
@@ -16,6 +17,7 @@ const { Content } = await render(entry);
 const title = titleFromEntry(entry);
 const description = descriptionFromEntry(entry);
 const { category } = pathToParts(entry.id);
+const jsonLd = buildJsonLd({ collection: "hooks", title, description, url: urlForEntry("hooks", entry) });
 ---
 
 <DocLayout
@@ -24,6 +26,7 @@ const { category } = pathToParts(entry.id);
   collection="hooks"
   collectionLabel="Hook"
   category={category}
+  jsonLd={jsonLd}
 >
   <Content />
 </DocLayout>

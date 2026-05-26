@@ -1,0 +1,165 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="Install Claudient — get started in 30 seconds"
+  description="Install Claudient's 277+ skills, 95+ agents, hooks, and MCP configs into Claude Code with a single npx command. Per-domain and per-language installs supported."
+>
+  <!-- Hero -->
+  <section class="container-page py-20 md:py-28">
+    <div class="max-w-3xl">
+      <p class="pill mb-6">Quick Start</p>
+      <h1 class="text-4xl md:text-6xl font-semibold tracking-tight leading-[1.05]">
+        Install everything in 30 seconds.
+      </h1>
+      <p class="mt-6 text-lg md:text-xl max-w-2xl" style="color: var(--color-muted);">
+        One command pulls 277+ skills, 95+ agents, 30+ hooks, and 31 MCP configs
+        into your Claude Code environment. No config files to edit, no accounts to
+        create.
+      </p>
+
+      <div class="mt-8 flex flex-col sm:flex-row gap-3">
+        <code
+          class="inline-flex items-center px-4 py-3 rounded-md font-mono text-sm"
+          style="background-color: var(--color-bg-elevated); border: 1px solid var(--color-border);"
+        >
+          <span style="color: var(--color-subtle);">$</span>&nbsp;npx claudient add all
+        </code>
+        <a
+          href="https://www.npmjs.com/package/claudient"
+          target="_blank"
+          rel="noopener"
+          class="btn-ghost"
+        >
+          View on npm
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Install everything -->
+  <section class="container-page pb-16">
+    <h2 class="text-2xl font-semibold tracking-tight mb-6">Install everything</h2>
+    <div
+      class="rounded-lg p-6"
+      style="background-color: var(--color-muted-bg); border: 1px solid var(--color-border);"
+    >
+      <pre class="font-mono text-sm leading-relaxed overflow-x-auto" style="background: none; border: none; margin: 0; padding: 0;"><code><span style="color: var(--color-muted);"># Install all skills, agents, hooks, and MCP configs</span>
+npx claudient add all</code></pre>
+    </div>
+    <p class="mt-4 text-sm" style="color: var(--color-muted);">
+      Requires Node.js 18+ and an active Claude Code installation. The package is
+      published at{" "}
+      <a
+        href="https://www.npmjs.com/package/claudient"
+        target="_blank"
+        rel="noopener"
+        style="color: var(--color-accent);"
+      >npmjs.com/package/claudient</a>.
+    </p>
+  </section>
+
+  <!-- Install by domain -->
+  <section
+    class="border-y"
+    style="background-color: var(--color-bg-elevated); border-color: var(--color-border);"
+  >
+    <div class="container-page py-16">
+      <h2 class="text-2xl font-semibold tracking-tight mb-2">Install by domain</h2>
+      <p class="mb-8 text-sm" style="color: var(--color-muted);">
+        Only want skills for your stack? Install a single domain instead of everything.
+      </p>
+
+      <div class="grid gap-3 sm:grid-cols-2">
+        {[
+          { cmd: "npx claudient add skills backend", label: "Backend", desc: "80+ skills — Next.js, FastAPI, Go, Rust, Rails, Laravel, Elixir, and more" },
+          { cmd: "npx claudient add skills devops-infra", label: "DevOps & Infra", desc: "Kubernetes, Terraform, Docker, GitHub Actions, Sentry, OpenTelemetry" },
+          { cmd: "npx claudient add skills ai-engineering", label: "AI Engineering", desc: "RAG, LangGraph, Claude API, prompt caching, batch API, MCP builder" },
+          { cmd: "npx claudient add skills legal", label: "Legal", desc: "GDPR, SOC 2, contract review, NDA, EU AI Act, IP clearance" },
+          { cmd: "npx claudient add skills finance", label: "Finance", desc: "DCF, 3-statement model, IC memo, pitch deck, KYC, GL reconciliation" },
+          { cmd: "npx claudient add skills small-business", label: "Small Business", desc: "Invoice chaser, cash flow, Shopify, review response, 14 vertical skills" },
+          { cmd: "npx claudient add agents", label: "All agents", desc: "95+ specialist agents — C-suite advisors, engineers, domain experts" },
+        ].map((item) => (
+          <div class="card p-5">
+            <div class="flex items-center justify-between mb-2">
+              <span class="font-semibold text-sm">{item.label}</span>
+            </div>
+            <code
+              class="block text-xs font-mono mb-3 px-3 py-2 rounded"
+              style="background-color: var(--color-muted-bg); color: var(--color-fg);"
+            >
+              {item.cmd}
+            </code>
+            <p class="text-xs" style="color: var(--color-muted);">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Install by language -->
+  <section class="container-page py-16">
+    <h2 class="text-2xl font-semibold tracking-tight mb-2">Install in your language</h2>
+    <p class="mb-8 text-sm" style="color: var(--color-muted);">
+      Every skill, agent, guide, and workflow is available in five languages.
+      Append <code class="text-xs px-1 py-0.5 rounded" style="background-color: var(--color-muted-bg);">--lang</code> to any install command.
+    </p>
+
+    <div
+      class="rounded-lg p-6"
+      style="background-color: var(--color-muted-bg); border: 1px solid var(--color-border);"
+    >
+      <pre class="font-mono text-sm leading-relaxed overflow-x-auto" style="background: none; border: none; margin: 0; padding: 0;"><code>npx claudient add all --lang fr   <span style="color: var(--color-muted);"># French</span>
+npx claudient add all --lang de   <span style="color: var(--color-muted);"># German</span>
+npx claudient add all --lang nl   <span style="color: var(--color-muted);"># Dutch</span>
+npx claudient add all --lang es   <span style="color: var(--color-muted);"># Spanish</span></code></pre>
+    </div>
+
+    <p class="mt-4 text-sm" style="color: var(--color-muted);">
+      Hook scripts are English-only — shell is universal. All other content ships in all five languages.
+    </p>
+  </section>
+
+  <!-- Discover -->
+  <section
+    class="border-t"
+    style="border-color: var(--color-border); background-color: var(--color-bg-elevated);"
+  >
+    <div class="container-page py-16">
+      <h2 class="text-2xl font-semibold tracking-tight mb-2">Discover and search</h2>
+      <p class="mb-8 text-sm" style="color: var(--color-muted);">
+        Not sure what's available? Browse or search before committing to an install.
+      </p>
+      <div
+        class="rounded-lg p-6"
+        style="background-color: var(--color-muted-bg); border: 1px solid var(--color-border);"
+      >
+        <pre class="font-mono text-sm leading-relaxed overflow-x-auto" style="background: none; border: none; margin: 0; padding: 0;"><code>npx claudient search "circuit breaker"   <span style="color: var(--color-muted);"># Search by keyword</span>
+npx claudient list                        <span style="color: var(--color-muted);"># List everything available</span></code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="container-page py-20">
+    <div class="max-w-xl">
+      <h2 class="text-2xl font-semibold tracking-tight mb-3">Need help or want to contribute?</h2>
+      <p class="text-sm mb-6" style="color: var(--color-muted);">
+        Open an issue on GitHub if something breaks. Read the contribution guide if
+        you want to add a skill.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-3">
+        <a
+          href="https://github.com/Claudients/Claudient"
+          target="_blank"
+          rel="noopener"
+          class="btn-primary"
+        >
+          View on GitHub
+        </a>
+        <a href="/contribute/" class="btn-ghost">Contribute a skill</a>
+      </div>
+    </div>
+  </section>
+</Layout>

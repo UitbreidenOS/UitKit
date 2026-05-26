@@ -1,20 +1,24 @@
 ---
 import { getCollection, render } from "astro:content";
 import DocLayout from "../../layouts/DocLayout.astro";
-import { pathToParts, titleFromEntry, descriptionFromEntry } from "../../lib/content";
+import { pathToParts, titleFromEntry, descriptionFromEntry, urlForEntry } from "../../lib/content";
+import { buildJsonLd } from "../../lib/seo";
 
 export async function getStaticPaths() {
   const entries = await getCollection("guides", ({ data }) => !data.draft);
-  return entries.map((entry) => {
-    const { path } = pathToParts(entry.id);
-    return { params: { slug: path }, props: { entry } };
-  });
+  return entries
+    .filter((entry) => !entry.id.replace(/\.md$/, "").startsWith("claude-for-"))
+    .map((entry) => {
+      const { path } = pathToParts(entry.id);
+      return { params: { slug: path }, props: { entry } };
+    });
 }
 
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 const title = titleFromEntry(entry);
 const description = descriptionFromEntry(entry);
+const jsonLd = buildJsonLd({ collection: "guides", title, description, url: urlForEntry("guides", entry) });
 ---
 
 <DocLayout
@@ -22,6 +26,7 @@ const description = descriptionFromEntry(entry);
   description={description}
   collection="guides"
   collectionLabel="Guide"
+  jsonLd={jsonLd}
 >
   <Content />
 </DocLayout>

@@ -1,0 +1,233 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="About Claudient — community Claude Code knowledge base"
+  description="Claudient is an open-source community knowledge base for Claude Code. 277+ skills, 95+ agents, MIT licensed, backed by Uitbreiden. Not affiliated with Anthropic."
+>
+  <!-- Hero -->
+  <section class="container-page py-20 md:py-28">
+    <div class="max-w-3xl">
+      <p class="pill mb-6">MIT · Community · v1.8</p>
+      <h1 class="text-4xl md:text-6xl font-semibold tracking-tight leading-[1.05]">
+        Domain expertise for Claude Code, built by the community.
+      </h1>
+      <p class="mt-6 text-lg md:text-xl max-w-2xl" style="color: var(--color-muted);">
+        Claudient is a knowledge system — skills, agents, hooks, rules, workflows, and
+        prompts that give Claude Code instant domain expertise across stacks, industries,
+        and languages. Free to use, open to contributions, MIT licensed.
+      </p>
+    </div>
+  </section>
+
+  <!-- What it is -->
+  <section
+    class="border-y"
+    style="background-color: var(--color-bg-elevated); border-color: var(--color-border);"
+  >
+    <div class="container-page py-16">
+      <div class="grid gap-12 md:grid-cols-2">
+        <div>
+          <h2 class="text-2xl font-semibold tracking-tight mb-4">What Claudient is</h2>
+          <div class="prose text-sm">
+            <p>
+              Claude Code is a powerful coding assistant — but without context, it
+              doesn't know your stack, your industry, or your workflows. You end up
+              re-explaining the same things at the start of every session.
+            </p>
+            <p>
+              Claudient solves that. It's a community-maintained library of
+              drop-in knowledge files that activate automatically when they're
+              relevant: a FastAPI skill fires when you open a Python project, a
+              legal review agent activates when you ask about contracts, a
+              cash-flow skill activates when a small business owner asks about
+              QuickBooks.
+            </p>
+            <p>
+              The result: Claude knows your domain from the first message, without
+              you having to teach it every session.
+            </p>
+          </div>
+        </div>
+        <div>
+          <h2 class="text-2xl font-semibold tracking-tight mb-4">Who it's for</h2>
+          <ul class="space-y-4">
+            {[
+              { audience: "Developers and vibe coders", desc: "200+ framework and stack skills for backend, DevOps, AI engineering, data, and database work." },
+              { audience: "AI product builders", desc: "RAG, LangGraph, Claude API patterns with prompt caching, MCP server builder." },
+              { audience: "Small business owners", desc: "Plain-English skills for invoicing, cash flow, Shopify, SOPs, and 14 vertical industries. No terminal required." },
+              { audience: "GTM and RevOps teams", desc: "HubSpot MCP, SDR agent, lead enrichment, email automation, CRM hygiene." },
+              { audience: "Finance and legal professionals", desc: "DCF models, contract review, GDPR, SOC 2 — with mandatory human review gates built in." },
+            ].map((item) => (
+              <li class="flex gap-3">
+                <span
+                  class="mt-0.5 flex-shrink-0 w-5 h-5 rounded-full inline-flex items-center justify-center text-xs font-bold"
+                  style="background-color: var(--color-accent-soft); color: var(--color-accent);"
+                >
+                  →
+                </span>
+                <span class="text-sm">
+                  <strong>{item.audience}</strong>
+                  <span style="color: var(--color-muted);"> — {item.desc}</span>
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Relationship to Anthropic -->
+  <section class="container-page py-16">
+    <div class="max-w-2xl">
+      <h2 class="text-2xl font-semibold tracking-tight mb-4">Relationship to Anthropic and Claude Code</h2>
+      <div class="prose text-sm">
+        <p>
+          Claudient is a community project. It is not affiliated with, endorsed by,
+          or in any way connected to Anthropic. Claude and Claude Code are Anthropic
+          products.
+        </p>
+        <p>
+          Claudient extends Claude Code the same way any knowledge base or dotfile
+          extends a tool — by giving it more context. The skills, agents, and hooks
+          here are plain text files that Claude Code ingests. No modifications to
+          Claude itself, no API access beyond what you already have.
+        </p>
+        <p>
+          Anthropic launched an official{" "}
+          <strong>Claude for Small Business</strong> product layer in May 2026 with
+          15 workflows. Claudient extends that with 30+ additional skills covering
+          the long tail of verticals and operator workflows that the official product
+          doesn't yet address.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Open source -->
+  <section
+    class="border-y"
+    style="background-color: var(--color-bg-elevated); border-color: var(--color-border);"
+  >
+    <div class="container-page py-16">
+      <h2 class="text-2xl font-semibold tracking-tight mb-8">Open source, MIT licensed</h2>
+      <div class="grid gap-6 md:grid-cols-3">
+        {[
+          { title: "Free to use", desc: "Install, use, fork, and modify. The MIT license places no restrictions on personal or commercial use." },
+          { title: "Community-powered", desc: "Every skill lives in one markdown file. Anyone can contribute — and merged skills get featured in Most Popular." },
+          { title: "Five languages", desc: "All content ships in English, French, German, Dutch, and Spanish. Hook scripts are English-only — shell is universal." },
+        ].map((item) => (
+          <div class="card p-6">
+            <h3 class="font-semibold mb-2">{item.title}</h3>
+            <p class="text-sm" style="color: var(--color-muted);">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- By the numbers -->
+  <section class="container-page py-16">
+    <h2 class="text-2xl font-semibold tracking-tight mb-8">By the numbers</h2>
+    <div class="grid gap-4 sm:grid-cols-3 lg:grid-cols-5">
+      {[
+        { count: "277+", label: "Skills" },
+        { count: "95+", label: "Agents" },
+        { count: "30+", label: "Hooks" },
+        { count: "31+", label: "MCP configs" },
+        { count: "5", label: "Languages" },
+      ].map((stat) => (
+        <div
+          class="rounded-lg p-5 text-center"
+          style="background-color: var(--color-bg-elevated); border: 1px solid var(--color-border);"
+        >
+          <div
+            class="text-3xl font-semibold tracking-tight mb-1"
+            style="color: var(--color-accent);"
+          >
+            {stat.count}
+          </div>
+          <div class="text-sm" style="color: var(--color-muted);">{stat.label}</div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Backed by Uitbreiden -->
+  <section
+    class="border-y"
+    style="background-color: var(--color-bg-elevated); border-color: var(--color-border);"
+  >
+    <div class="container-page py-16">
+      <div class="max-w-2xl">
+        <h2 class="text-2xl font-semibold tracking-tight mb-4">Backed by Uitbreiden</h2>
+        <p class="text-sm mb-6" style="color: var(--color-muted);">
+          Claudient is maintained by{" "}
+          <a
+            href="https://uitbreiden.com/"
+            target="_blank"
+            rel="noopener"
+            style="color: var(--color-accent);"
+          >Uitbreiden</a> — a company that builds AI products and B2B tools with
+          developer communities. The repo is open source and community contributions
+          are the primary growth mechanism, but Uitbreiden maintains the core,
+          handles releases, and keeps the npm package live.
+        </p>
+        <p class="text-sm mb-8" style="color: var(--color-muted);">
+          If you want to go beyond contributing to the repo and actually build AI
+          products or B2B solutions with the team, reach out directly via the
+          Uitbreiden website.
+        </p>
+
+        <div class="flex flex-wrap gap-3">
+          <a
+            href="https://uitbreiden.com/"
+            target="_blank"
+            rel="noopener"
+            class="btn-primary"
+          >
+            uitbreiden.com
+          </a>
+          <a
+            href="https://www.reddit.com/r/uitbreiden/"
+            target="_blank"
+            rel="noopener"
+            class="btn-ghost"
+          >
+            Reddit — r/uitbreiden
+          </a>
+          <a
+            href="https://www.youtube.com/@UITBREIDEN"
+            target="_blank"
+            rel="noopener"
+            class="btn-ghost"
+          >
+            YouTube — @UITBREIDEN
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="container-page py-20">
+    <div class="max-w-xl">
+      <h2 class="text-2xl font-semibold tracking-tight mb-3">Get started now</h2>
+      <p class="text-sm mb-6" style="color: var(--color-muted);">
+        One command, 30 seconds, 277+ skills ready to go.
+      </p>
+      <div
+        class="flex items-center px-4 py-3 rounded-md font-mono text-sm mb-4 w-fit"
+        style="background-color: var(--color-bg-elevated); border: 1px solid var(--color-border);"
+      >
+        <span style="color: var(--color-subtle);">$</span>&nbsp;npx claudient add all
+      </div>
+      <div class="flex flex-col sm:flex-row gap-3">
+        <a href="/install/" class="btn-primary">Installation guide</a>
+        <a href="/contribute/" class="btn-ghost">Contribute a skill</a>
+      </div>
+    </div>
+  </section>
+</Layout>

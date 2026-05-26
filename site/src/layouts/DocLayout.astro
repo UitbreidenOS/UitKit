@@ -14,9 +14,10 @@ interface Props {
   collectionLabel: string;
   category?: string;
   breadcrumbs?: BreadcrumbItem[];
+  jsonLd?: Record<string, unknown>;
 }
 
-const { title, description, collection, collectionLabel, category, breadcrumbs } = Astro.props;
+const { title, description, collection, collectionLabel, category, breadcrumbs, jsonLd } = Astro.props;
 
 const crumbs: BreadcrumbItem[] = breadcrumbs ?? [
   { label: "Home", href: "/" },
@@ -28,7 +29,7 @@ const crumbs: BreadcrumbItem[] = breadcrumbs ?? [
 ];
 ---
 
-<Layout title={`${title} | Claudient`} description={description}>
+<Layout title={`${title} | Claudient`} description={description} jsonLd={jsonLd}>
   <article class="container-page py-10 md:py-14">
     <nav class="mb-6 text-sm flex items-center gap-2 flex-wrap" style="color: var(--color-muted);">
       {

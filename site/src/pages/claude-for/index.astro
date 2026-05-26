@@ -1,0 +1,50 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import { titleFromEntry, descriptionFromEntry } from "../../lib/content";
+
+const allGuides = await getCollection("guides", ({ data }) => !data.draft);
+const verticals = allGuides
+  .filter((e) => e.id.replace(/\.md$/, "").startsWith("claude-for-"))
+  .sort((a, b) => titleFromEntry(a).localeCompare(titleFromEntry(b)));
+---
+
+<Layout
+  title="Claude for Your Business | Claudient"
+  description="Plain-English workflows for small business owners and operators — solopreneurs, ecommerce, local services, coaches, consultants, and creators."
+>
+  <section class="container-page py-10 md:py-14">
+    <header class="mb-10 max-w-3xl">
+      <h1 class="text-3xl md:text-5xl font-semibold tracking-tight">Claude for Your Business</h1>
+      <p class="mt-3 text-lg" style="color: var(--color-muted);">
+        Plain-English workflows for small business owners and operators — no terminal required.
+        Built for the tools you already pay for: QuickBooks, HubSpot, Shopify, and the rest.
+      </p>
+      <p class="mt-2 text-sm" style="color: var(--color-subtle);">
+        {verticals.length} {verticals.length === 1 ? "guide" : "guides"}
+      </p>
+    </header>
+
+    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      {
+        verticals.map((entry) => {
+          const rawSlug = entry.id.replace(/\.md$/, "");
+          const urlSlug = rawSlug.replace(/^claude-for-/, "");
+          const desc = descriptionFromEntry(entry, 140);
+          return (
+            <a href={`/claude-for/${urlSlug}/`} class="card p-5 block group">
+              <h2 class="font-semibold text-base mb-2 group-hover:text-[var(--color-accent)] transition-colors">
+                {titleFromEntry(entry)}
+              </h2>
+              {desc && (
+                <p class="text-sm line-clamp-3" style="color: var(--color-muted);">
+                  {desc}
+                </p>
+              )}
+            </a>
+          );
+        })
+      }
+    </div>
+  </section>
+</Layout>
