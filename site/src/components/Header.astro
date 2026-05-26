@@ -8,12 +8,91 @@ const navItems = [
 ];
 ---
 
+<!-- Pagefind UI assets. These files only exist after `npm run build`. -->
+<!-- In `npm run dev`, the search widget will not load — that is expected behaviour with Pagefind. -->
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+<script src="/pagefind/pagefind-ui.js" is:inline></script>
+
+<!-- Dark-mode: runs before body paint to avoid FOUC. -->
+<script is:inline>
+  (function () {
+    var stored = localStorage.getItem("theme");
+    var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    if (stored === "dark" || (!stored && prefersDark)) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  })();
+</script>
+
+<style>
+  /* Pagefind CSS variable overrides to match site palette */
+  :root {
+    --pagefind-ui-primary: #ea580c;
+    --pagefind-ui-text: var(--color-fg, #1a1a1a);
+    --pagefind-ui-background: var(--color-bg, #ffffff);
+    --pagefind-ui-border: var(--color-border, #e5e7eb);
+    --pagefind-ui-border-radius: 0.5rem;
+    --pagefind-ui-font: inherit;
+    --pagefind-ui-scale: 0.85;
+  }
+
+  /* Search container — desktop inline, hidden on mobile */
+  #search-wrapper {
+    display: none;
+    width: 220px;
+  }
+  @media (min-width: 768px) {
+    #search-wrapper {
+      display: block;
+    }
+  }
+
+  /* Search modal backdrop */
+  #search-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 5rem;
+  }
+  #search-modal.open {
+    display: flex;
+  }
+  #search-modal-inner {
+    background: var(--color-bg, #fff);
+    border: 1px solid var(--color-border, #e5e7eb);
+    border-radius: 0.75rem;
+    padding: 1rem;
+    width: min(92vw, 480px);
+    max-height: 70vh;
+    overflow-y: auto;
+  }
+
+  /* Mobile nav panel */
+  #mobile-nav {
+    display: none;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.75rem 1rem 1rem;
+    border-top: 1px solid var(--color-border, #e5e7eb);
+  }
+  #mobile-nav[data-open="true"] {
+    display: flex;
+  }
+</style>
+
 <header
   class="sticky top-0 z-40 border-b backdrop-blur"
   style="background-color: color-mix(in srgb, var(--color-bg) 80%, transparent); border-color: var(--color-border);"
 >
-  <div class="container-page flex items-center justify-between h-16">
-    <a href="/" class="flex items-center gap-2 font-semibold text-lg tracking-tight">
+  <div class="container-page flex items-center justify-between h-16 gap-3">
+    <!-- Logo -->
+    <a href="/" class="flex items-center gap-2 font-semibold text-lg tracking-tight shrink-0">
       <span
         class="inline-flex items-center justify-center w-7 h-7 rounded-md text-white font-bold text-sm"
         style="background-color: var(--color-accent);"
@@ -23,6 +102,7 @@ const navItems = [
       <span>Claudient</span>
     </a>
 
+    <!-- Desktop nav -->
     <nav class="hidden md:flex items-center gap-1">
       {
         navItems.map((item) => (
@@ -37,7 +117,51 @@ const navItems = [
       }
     </nav>
 
-    <div class="flex items-center gap-2">
+    <!-- Desktop search (inline) -->
+    <div id="search-wrapper">
+      <div id="search-desktop"></div>
+    </div>
+
+    <!-- Right-side actions -->
+    <div class="flex items-center gap-2 shrink-0">
+      <!-- Mobile search trigger -->
+      <button
+        id="search-mobile-btn"
+        class="md:hidden btn-ghost p-1.5"
+        aria-label="Open search"
+        title="Search"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+      </button>
+
+      <!-- Dark mode toggle -->
+      <button
+        id="theme-toggle"
+        class="btn-ghost p-1.5"
+        aria-label="Toggle dark mode"
+        title="Toggle dark mode"
+      >
+        <!-- Sun icon (shown in dark mode) -->
+        <svg id="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:none">
+          <circle cx="12" cy="12" r="5"/>
+          <line x1="12" y1="1" x2="12" y2="3"/>
+          <line x1="12" y1="21" x2="12" y2="23"/>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+          <line x1="1" y1="12" x2="3" y2="12"/>
+          <line x1="21" y1="12" x2="23" y2="12"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+        <!-- Moon icon (shown in light mode) -->
+        <svg id="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+
       <a
         href="https://github.com/Claudient/Claudient"
         target="_blank"
@@ -50,6 +174,135 @@ const navItems = [
       <a href="/install/" class="btn-primary">
         Install
       </a>
+
+      <!-- Hamburger button (mobile only) -->
+      <button
+        id="hamburger-btn"
+        class="md:hidden btn-ghost p-1.5"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+      >
+        <!-- Hamburger bars -->
+        <svg id="icon-hamburger" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+        <!-- Close X -->
+        <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="display:none">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
     </div>
   </div>
+
+  <!-- Mobile nav panel (slides down below header bar) -->
+  <nav id="mobile-nav" aria-label="Mobile navigation">
+    {
+      navItems.map((item) => (
+        <a
+          href={item.href}
+          class="px-3 py-2 rounded-md text-sm font-medium hover:bg-[var(--color-bg-elevated)] transition-colors"
+          style="color: var(--color-fg);"
+        >
+          {item.label}
+        </a>
+      ))
+    }
+  </nav>
 </header>
+
+<!-- Mobile search modal -->
+<div id="search-modal" role="dialog" aria-modal="true" aria-label="Search">
+  <div id="search-modal-inner">
+    <div id="search-mobile"></div>
+  </div>
+</div>
+
+<script is:inline>
+  // ── Dark mode toggle ───────────────────────────────────────────────────────
+  (function () {
+    var btn = document.getElementById("theme-toggle");
+    var sun = document.getElementById("icon-sun");
+    var moon = document.getElementById("icon-moon");
+
+    function applyTheme(dark) {
+      if (dark) {
+        document.documentElement.classList.add("dark");
+        sun.style.display = "";
+        moon.style.display = "none";
+      } else {
+        document.documentElement.classList.remove("dark");
+        sun.style.display = "none";
+        moon.style.display = "";
+      }
+    }
+
+    // Sync icon with current state on load
+    applyTheme(document.documentElement.classList.contains("dark"));
+
+    btn.addEventListener("click", function () {
+      var isDark = document.documentElement.classList.contains("dark");
+      applyTheme(!isDark);
+      localStorage.setItem("theme", isDark ? "light" : "dark");
+    });
+  })();
+
+  // ── Mobile nav hamburger ───────────────────────────────────────────────────
+  (function () {
+    var hamburger = document.getElementById("hamburger-btn");
+    var mobileNav = document.getElementById("mobile-nav");
+    var iconHam = document.getElementById("icon-hamburger");
+    var iconClose = document.getElementById("icon-close");
+
+    hamburger.addEventListener("click", function () {
+      var isOpen = mobileNav.getAttribute("data-open") === "true";
+      if (isOpen) {
+        mobileNav.setAttribute("data-open", "false");
+        hamburger.setAttribute("aria-expanded", "false");
+        iconHam.style.display = "";
+        iconClose.style.display = "none";
+      } else {
+        mobileNav.setAttribute("data-open", "true");
+        hamburger.setAttribute("aria-expanded", "true");
+        iconHam.style.display = "none";
+        iconClose.style.display = "";
+      }
+    });
+  })();
+
+  // ── Mobile search modal ────────────────────────────────────────────────────
+  (function () {
+    var searchBtn = document.getElementById("search-mobile-btn");
+    var modal = document.getElementById("search-modal");
+
+    searchBtn.addEventListener("click", function () {
+      modal.classList.add("open");
+    });
+
+    // Close on backdrop click
+    modal.addEventListener("click", function (e) {
+      if (e.target === modal) {
+        modal.classList.remove("open");
+      }
+    });
+
+    // Close on Escape
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        modal.classList.remove("open");
+      }
+    });
+  })();
+
+  // ── Pagefind UI init ───────────────────────────────────────────────────────
+  // NOTE: Pagefind assets (/pagefind/pagefind-ui.js) only exist after `npm run build`.
+  // The search widget will silently fail in `npm run dev` — that is expected.
+  window.addEventListener("DOMContentLoaded", function () {
+    if (typeof PagefindUI !== "undefined") {
+      new PagefindUI({ element: "#search-desktop", showImages: false });
+      new PagefindUI({ element: "#search-mobile", showImages: false });
+    }
+  });
+</script>

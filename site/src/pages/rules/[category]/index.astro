@@ -1,0 +1,57 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../../layouts/Layout.astro";
+import { pathToParts, titleFromEntry, descriptionFromEntry, slugToTitle, urlForEntry } from "../../../lib/content";
+
+export async function getStaticPaths() {
+  const entries = await getCollection("rules", ({ data }) => !data.draft);
+  const cats = new Set<string>();
+  for (const e of entries) cats.add(pathToParts(e.id).category);
+  return [...cats].map((category) => ({
+    params: { category },
+    props: {
+      category,
+      entries: entries.filter((e) => pathToParts(e.id).category === category),
+    },
+  }));
+}
+
+const { category, entries } = Astro.props;
+const title = slugToTitle(category);
+---
+
+<Layout
+  title={`${title} rules | Claudient`}
+  description={`${entries.length} Claudient rules in ${title}.`}
+>
+  <section class="container-page py-10 md:py-14">
+    <nav class="mb-6 text-sm flex items-center gap-2" style="color: var(--color-muted);">
+      <a href="/" class="hover:underline">Home</a>
+      <span style="color: var(--color-subtle);">/</span>
+      <a href="/rules/" class="hover:underline">Rules</a>
+      <span style="color: var(--color-subtle);">/</span>
+      <span style="color: var(--color-fg);">{title}</span>
+    </nav>
+
+    <header class="mb-10 max-w-3xl">
+      <h1 class="text-3xl md:text-5xl font-semibold tracking-tight">{title}</h1>
+      <p class="mt-3" style="color: var(--color-muted);">
+        {entries.length} rules in {title.toLowerCase()}.
+      </p>
+    </header>
+
+    <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+      {entries.sort((a, b) => titleFromEntry(a).localeCompare(titleFromEntry(b))).map((entry) => {
+        const desc = descriptionFromEntry(entry, 110);
+        return (
+          <a href={urlForEntry("rules", entry)} class="card p-4 block group">
+            <h3 class="font-medium text-base mb-1 group-hover:text-[var(--color-accent)] transition-colors">
+              {titleFromEntry(entry)}
+            </h3>
+            {desc && <p class="text-sm" style="color: var(--color-muted);">{desc}</p>}
+          </a>
+        );
+      })}
+    </div>
+  </section>
+</Layout>

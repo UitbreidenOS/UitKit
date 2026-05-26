@@ -1,0 +1,70 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="Page Not Found — Claudient"
+  description="The page you were looking for doesn't exist. Find Claude Code skills, agents, hooks, and more on Claudient."
+>
+  <section class="container-page py-24 flex flex-col items-center text-center gap-6">
+    <div
+      class="inline-flex items-center justify-center w-16 h-16 rounded-2xl text-white font-bold text-2xl"
+      style="background-color: var(--color-accent);"
+    >
+      404
+    </div>
+
+    <h1 class="text-3xl font-bold tracking-tight" style="color: var(--color-fg);">
+      Page not found
+    </h1>
+
+    <p class="max-w-md text-base" style="color: var(--color-muted);">
+      That URL doesn't exist here. Try searching for what you need, or browse one of the sections below.
+    </p>
+
+    <form
+      method="GET"
+      action="/"
+      class="flex w-full max-w-sm gap-2"
+    >
+      <input
+        type="text"
+        name="q"
+        placeholder="Search skills, agents, hooks…"
+        class="flex-1 rounded-md border px-3 py-2 text-sm outline-none focus:ring-2"
+        style="border-color: var(--color-border); background: var(--color-surface); color: var(--color-fg);"
+      />
+      <button
+        type="submit"
+        class="rounded-md px-4 py-2 text-sm font-medium text-white"
+        style="background-color: var(--color-accent);"
+      >
+        Search
+      </button>
+    </form>
+
+    <nav class="flex flex-wrap gap-3 justify-center mt-4">
+      {[
+        { href: "/", label: "Home" },
+        { href: "/skills/", label: "Skills" },
+        { href: "/agents/", label: "Agents" },
+        { href: "/hooks/", label: "Hooks" },
+        { href: "/mcp/", label: "MCP" },
+        { href: "/guides/", label: "Guides" },
+        { href: "/workflows/", label: "Workflows" },
+      ].map(({ href, label }) => (
+        <a
+          href={href}
+          class="rounded-md border px-4 py-2 text-sm font-medium hover:underline"
+          style="border-color: var(--color-border); color: var(--color-fg);"
+        >
+          {label}
+        </a>
+      ))}
+    </nav>
+
+    <p class="mt-6 text-sm" style="color: var(--color-muted);">
+      Or run <code class="font-mono px-1 py-0.5 rounded text-xs" style="background: var(--color-surface); border: 1px solid var(--color-border);">npx claudient search</code> in your terminal to find what you need locally.
+    </p>
+  </section>
+</Layout>

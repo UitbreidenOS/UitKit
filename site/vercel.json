@@ -1,0 +1,9 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "trailingSlash": true,
+  "framework": "astro",
+  "redirects": [
+    { "source": "/index.html", "destination": "/", "permanent": true }
+  ]
+}

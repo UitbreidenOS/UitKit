@@ -1,7 +1,7 @@
 ---
 import { getCollection, render } from "astro:content";
 import DocLayout from "../../layouts/DocLayout.astro";
-import { pathToParts, titleFromEntry, descriptionFromEntry, urlForEntry } from "../../lib/content";
+import { pathToParts, titleFromEntry, descriptionFromEntry, urlForEntry, getRelatedEntries, readingTime, extractHeadings } from "../../lib/content";
 import { buildJsonLd } from "../../lib/seo";
 
 export async function getStaticPaths() {
@@ -13,10 +13,15 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
+const all = await getCollection("workflows", ({ data }) => !data.draft);
 const { Content } = await render(entry);
 const title = titleFromEntry(entry);
 const description = descriptionFromEntry(entry);
 const jsonLd = buildJsonLd({ collection: "workflows", title, description, url: urlForEntry("workflows", entry) });
+const body = (entry as { body?: string }).body ?? "";
+const readingMinutes = readingTime(body);
+const headings = extractHeadings(body);
+const related = getRelatedEntries(entry, all, "workflows");
 ---
 
 <DocLayout
@@ -25,6 +30,9 @@ const jsonLd = buildJsonLd({ collection: "workflows", title, description, url: u
   collection="workflows"
   collectionLabel="Workflow"
   jsonLd={jsonLd}
+  readingMinutes={readingMinutes}
+  headings={headings}
+  related={related}
 >
   <Content />
 </DocLayout>

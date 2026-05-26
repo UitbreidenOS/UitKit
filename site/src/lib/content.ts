@@ -124,3 +124,98 @@ export function urlForEntry(
   const { path } = pathToParts(entry.id);
   return `/${collection}/${path}/`;
 }
+
+// ---- Feature helpers ----
+
+export interface RelatedEntry {
+  title: string;
+  url: string;
+  description?: string;
+}
+
+/**
+ * Returns up to `max` related entries.
+ * First checks frontmatter `related: [slug, ...]` (slugs matched against entry.id
+ * without the .md extension). Falls back to same-category peers.
+ */
+export function getRelatedEntries(
+  entry: CollectionEntry<CollectionKey>,
+  allEntries: CollectionEntry<CollectionKey>[],
+  collection: string,
+  max = 3,
+): RelatedEntry[] {
+  const relatedSlugs: string[] | undefined = (entry.data as { related?: string[] }).related;
+
+  if (relatedSlugs && relatedSlugs.length > 0) {
+    const results: RelatedEntry[] = [];
+    for (const slug of relatedSlugs) {
+      const found = allEntries.find(
+        (e) => e.id.replace(/\.md$/, "") === slug || pathToParts(e.id).slug === slug,
+      );
+      if (found && found.id !== entry.id) {
+        results.push({
+          title: titleFromEntry(found),
+          url: urlForEntry(collection, found),
+          description: descriptionFromEntry(found),
+        });
+      }
+      if (results.length >= max) break;
+    }
+    if (results.length > 0) return results;
+  }
+
+  // Fallback: same category peers
+  const { category } = pathToParts(entry.id);
+  return allEntries
+    .filter((e) => e.id !== entry.id && pathToParts(e.id).category === category)
+    .slice(0, max)
+    .map((e) => ({
+      title: titleFromEntry(e),
+      url: urlForEntry(collection, e),
+      description: descriptionFromEntry(e),
+    }));
+}
+
+/**
+ * Estimates reading time in minutes at 200 words per minute.
+ */
+export function readingTime(body: string): number {
+  const words = body.split(/\s+/).filter(Boolean).length;
+  return Math.max(1, Math.round(words / 200));
+}
+
+export interface TocHeading {
+  depth: number;
+  text: string;
+  slug: string;
+}
+
+/**
+ * Extracts H2 and H3 headings from markdown body for table-of-contents use.
+ */
+export function extractHeadings(body: string): TocHeading[] {
+  const lines = body.split("\n");
+  const headings: TocHeading[] = [];
+  for (const line of lines) {
+    const m2 = line.match(/^##\s+(.+)$/);
+    const m3 = !m2 ? line.match(/^###\s+(.+)$/) : null;
+    const match = m2 ?? m3;
+    if (!match) continue;
+    const depth = m2 ? 2 : 3;
+    // strip markdown formatting: bold, italic, code, links
+    const text = match[1]
+      .replace(/\*\*(.+?)\*\*/g, "$1")
+      .replace(/\*(.+?)\*/g, "$1")
+      .replace(/`([^`]+)`/g, "$1")
+      .replace(/\[(.+?)\]\([^)]+\)/g, "$1")
+      .trim();
+    const slug = text
+      .toLowerCase()
+      .replace(/[^\w\s-]/g, "")
+      .replace(/\s+/g, "-")
+      .replace(/-+/g, "-")
+      .replace(/^-|-$/g, "");
+    headings.push({ depth, text, slug });
+  }
+  return headings;
+}
