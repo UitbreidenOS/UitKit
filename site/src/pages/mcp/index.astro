@@ -1,0 +1,19 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import CollectionIndex from "../../components/CollectionIndex.astro";
+
+const entries = await getCollection("mcp", ({ data }) => !data.draft);
+---
+
+<Layout
+  title="MCP servers | Claudient"
+  description="Curated Model Context Protocol server configurations for Claude Code. GitHub, Figma, Stripe, Notion, Linear, Playwright, and 25+ more."
+>
+  <CollectionIndex
+    title="MCP servers"
+    description="The fastest way to extend Claude Code. MCP servers give Claude direct access to your tools — GitHub, Figma, Stripe, Notion, Slack, and more."
+    entries={entries}
+    collection="mcp"
+  />
+</Layout>

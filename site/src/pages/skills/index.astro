@@ -1,0 +1,19 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import CollectionIndex from "../../components/CollectionIndex.astro";
+
+const entries = await getCollection("skills", ({ data }) => !data.draft);
+---
+
+<Layout
+  title="Skills | Claudient"
+  description="Every Claudient skill — drop-in domain expertise for Claude Code. Backend, AI engineering, small business, GTM, legal, finance, and more."
+>
+  <CollectionIndex
+    title="Skills"
+    description="Drop-in domain expertise for Claude Code. Each skill activates automatically based on what you're working on."
+    entries={entries}
+    collection="skills"
+  />
+</Layout>

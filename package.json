@@ -1,7 +1,7 @@
 {
   "name": "claudient",
-  "version": "1.8.0",
-  "description": "The Claude Code knowledge system — 262+ skills, 93+ agents, 31 MCP configs, guides, and workflows in 5 languages.",
+  "version": "1.9.0",
+  "description": "The Claude Code knowledge system — 277+ skills, 99+ agents, 63 guides, 31 MCP configs, and workflows in 5 languages. Includes the most complete community knowledge base for Claude for Small Business.",
   "keywords": [
     "claude-code",
     "claude",

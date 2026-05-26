@@ -1,0 +1,19 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import CollectionIndex from "../../components/CollectionIndex.astro";
+
+const entries = await getCollection("prompts", ({ data }) => !data.draft);
+---
+
+<Layout
+  title="Prompts | Claudient"
+  description="Reusable prompt templates for Claude Code — system prompts, project starters, task-specific prompts."
+>
+  <CollectionIndex
+    title="Prompts"
+    description="Reusable prompt templates — system prompts, project starters, task-specific kickoff prompts."
+    entries={entries}
+    collection="prompts"
+  />
+</Layout>

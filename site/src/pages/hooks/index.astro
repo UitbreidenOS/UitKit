@@ -1,0 +1,19 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import CollectionIndex from "../../components/CollectionIndex.astro";
+
+const entries = await getCollection("hooks", ({ data }) => !data.draft);
+---
+
+<Layout
+  title="Hooks | Claudient"
+  description="Event-driven Claude Code automation. Hooks run outside Claude's context as real shell processes — pre-tool-use, post-tool-use, lifecycle, and more."
+>
+  <CollectionIndex
+    title="Hooks"
+    description="Event-driven automation that runs outside Claude's context as real shell processes — pre-tool-use, post-tool-use, lifecycle, and notification events."
+    entries={entries}
+    collection="hooks"
+  />
+</Layout>

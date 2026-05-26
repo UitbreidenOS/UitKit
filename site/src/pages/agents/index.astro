@@ -1,0 +1,19 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import CollectionIndex from "../../components/CollectionIndex.astro";
+
+const entries = await getCollection("agents", ({ data }) => !data.draft);
+---
+
+<Layout
+  title="Agents | Claudient"
+  description="Specialist Claude Code agents — C-suite advisors, engineering specialists, domain experts. Each with specific model guidance and tool restrictions."
+>
+  <CollectionIndex
+    title="Agents"
+    description="Specialist agents you can spawn with the Agent tool in Claude Code. Each has a specific model, tool subset, and trigger conditions."
+    entries={entries}
+    collection="agents"
+  />
+</Layout>

@@ -1,0 +1,19 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import CollectionIndex from "../../components/CollectionIndex.astro";
+
+const entries = await getCollection("guides", ({ data }) => !data.draft);
+---
+
+<Layout
+  title="Guides | Claudient"
+  description="In-depth guides for Claude Code — getting started, agent frontmatter, hooks cookbook, token optimization, multi-agent patterns, and more."
+>
+  <CollectionIndex
+    title="Guides"
+    description="In-depth guides for Claude Code — the reference material for everything you build with the agent."
+    entries={entries}
+    collection="guides"
+  />
+</Layout>

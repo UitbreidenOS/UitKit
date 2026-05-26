@@ -1,42 +1,64 @@
 @import "tailwindcss";
 
-/* Claudient theme — warm neutrals + orange accent, modeled on openalternative.co */
+/*
+ * Claudient theme — palette matched to openalternative.co (May 2026).
+ * Their dominant aesthetic: pure-white background, cool neutral grays,
+ * monochromatic primary actions, warm coral used sparingly as accent.
+ * Values below mirror their compiled CSS custom properties exactly,
+ * with one deliberate divergence: we keep Claudient's orange brand color
+ * for primary CTAs instead of going pure monochromatic.
+ */
 @theme {
-  --color-bg: #fafaf9;
-  --color-bg-elevated: #ffffff;
-  --color-fg: #1c1917;
-  --color-muted: #78716c;
-  --color-subtle: #a8a29e;
-  --color-border: #e7e5e4;
-  --color-border-strong: #d6d3d1;
-  --color-accent: #f97316;
-  --color-accent-hover: #ea580c;
-  --color-accent-soft: #fff7ed;
+  /* surfaces */
+  --color-bg: #ffffff;
+  --color-bg-elevated: #fafafa;
+  --color-muted-bg: #f5f5f5;
 
+  /* text */
+  --color-fg: #1f1f1f;
+  --color-muted: #737373;
+  --color-subtle: #a1a1a1;
+
+  /* borders */
+  --color-border: #e0e0e0;
+  --color-border-strong: #d0d0d0;
+
+  /* brand accent (Claudient orange — slightly refined from #f97316 toward warmer #ea580c) */
+  --color-accent: #ea580c;
+  --color-accent-hover: #c2410c;
+  --color-accent-soft: #fff3eb;
+
+  /* fonts — match openalternative's system stack (no webfont download, instant load) */
   --font-sans:
-    "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
+    ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji";
   --font-mono:
-    ui-monospace, "SF Mono", "Cascadia Mono", "Roboto Mono", Menlo, Consolas,
-    monospace;
+    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
 
-  --radius-sm: 0.375rem;
-  --radius-md: 0.5rem;
-  --radius-lg: 0.75rem;
+  /* radii — match openalternative */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
 }
 
-/* Dark mode tokens — toggled via .dark class on <html> */
+/* Dark mode — matches openalternative.co's dark palette exactly */
 .dark {
-  --color-bg: #0c0a09;
-  --color-bg-elevated: #1c1917;
-  --color-fg: #fafaf9;
-  --color-muted: #a8a29e;
-  --color-subtle: #78716c;
-  --color-border: #292524;
-  --color-border-strong: #44403c;
+  --color-bg: #0d0d0d;
+  --color-bg-elevated: #141414;
+  --color-muted-bg: #1a1a1a;
+
+  --color-fg: #e5e5e5;
+  --color-muted: #999999;
+  --color-subtle: #666666;
+
+  --color-border: #262626;
+  --color-border-strong: #393939;
+
   --color-accent: #fb923c;
   --color-accent-hover: #f97316;
-  --color-accent-soft: #1c1917;
+  --color-accent-soft: #1a1a1a;
 }
 
 html {
@@ -53,13 +75,17 @@ body {
   color: var(--color-fg);
 }
 
-/* Selection */
 ::selection {
   background-color: var(--color-accent);
   color: white;
 }
 
-/* Reusable utilities */
+hr {
+  border-color: color-mix(in oklab, var(--color-fg) 10%, transparent);
+}
+
+/* ---- Reusable utilities ---- */
+
 .container-page {
   max-width: 72rem;
   margin-inline: auto;
@@ -80,8 +106,8 @@ body {
   border-radius: 9999px;
   font-size: 0.75rem;
   font-weight: 500;
-  background-color: var(--color-accent-soft);
-  color: var(--color-accent);
+  background-color: var(--color-muted-bg);
+  color: var(--color-muted);
   border: 1px solid var(--color-border);
 }
 
@@ -96,6 +122,7 @@ body {
   color: white;
   font-weight: 500;
   font-size: 0.9375rem;
+  letter-spacing: -0.005em;
   transition: background-color 0.15s ease;
 }
 
@@ -121,7 +148,7 @@ body {
 }
 
 .btn-ghost:hover {
-  background-color: var(--color-bg-elevated);
+  background-color: var(--color-muted-bg);
   border-color: var(--color-border-strong);
 }
 
@@ -131,10 +158,188 @@ body {
   border-radius: var(--radius-lg);
   transition:
     border-color 0.15s ease,
-    transform 0.15s ease;
+    background-color 0.15s ease;
 }
 
 .card:hover {
   border-color: var(--color-border-strong);
-  transform: translateY(-1px);
+  background-color: var(--color-bg);
+}
+
+/* ---- Markdown prose ---- */
+
+.prose {
+  max-width: 44rem;
+  color: var(--color-fg);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.prose > * + * {
+  margin-top: 1.25em;
+}
+
+.prose h1 {
+  font-size: 2.25rem;
+  line-height: 1.15;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-top: 1.5em;
+  margin-bottom: 0.4em;
+}
+
+.prose h2 {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  padding-top: 0.5em;
+  border-top: 1px solid var(--color-border);
+}
+
+.prose h3 {
+  font-size: 1.15rem;
+  line-height: 1.3;
+  font-weight: 600;
+  margin-top: 1.5em;
+  margin-bottom: 0.4em;
+}
+
+.prose h4,
+.prose h5,
+.prose h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1.25em;
+  margin-bottom: 0.25em;
+}
+
+.prose p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.prose a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  text-decoration-color: color-mix(in oklab, var(--color-accent) 40%, transparent);
+  transition: text-decoration-color 0.15s ease;
+}
+
+.prose a:hover {
+  text-decoration-color: var(--color-accent);
+}
+
+.prose strong {
+  font-weight: 600;
+  color: var(--color-fg);
+}
+
+.prose ul,
+.prose ol {
+  margin: 1em 0;
+  padding-left: 1.5em;
+}
+
+.prose ul {
+  list-style: disc;
+}
+
+.prose ol {
+  list-style: decimal;
+}
+
+.prose li {
+  margin: 0.5em 0;
+}
+
+.prose li > p {
+  margin: 0.5em 0;
+}
+
+.prose blockquote {
+  margin: 1.5em 0;
+  padding: 0.5em 1.25em;
+  border-left: 3px solid var(--color-border-strong);
+  color: var(--color-muted);
+  font-style: normal;
+}
+
+.prose blockquote p {
+  margin: 0.5em 0;
+}
+
+.prose code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  padding: 0.15em 0.35em;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-muted-bg);
+  color: var(--color-fg);
+}
+
+.prose pre {
+  margin: 1.25em 0;
+  padding: 1em 1.25em;
+  border-radius: var(--radius-md);
+  background-color: var(--color-muted-bg);
+  border: 1px solid var(--color-border);
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  line-height: 1.6;
+}
+
+.prose pre code {
+  padding: 0;
+  background-color: transparent;
+  border-radius: 0;
+  font-size: 1em;
+}
+
+.prose hr {
+  margin: 2.5em 0;
+  border: 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.prose table {
+  width: 100%;
+  margin: 1.5em 0;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+
+.prose th,
+.prose td {
+  text-align: left;
+  padding: 0.625em 0.875em;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.prose th {
+  font-weight: 600;
+  background-color: var(--color-muted-bg);
+}
+
+.prose img {
+  border-radius: var(--radius-md);
+  margin: 1.5em 0;
+}
+
+.prose :first-child {
+  margin-top: 0;
+}
+
+.prose :last-child {
+  margin-bottom: 0;
+}
+
+/* Hide first-child H1 in prose — the page header already shows the title */
+.prose > h1:first-child {
+  display: none;
 }

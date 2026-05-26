@@ -1,0 +1,19 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import CollectionIndex from "../../components/CollectionIndex.astro";
+
+const entries = await getCollection("workflows", ({ data }) => !data.draft);
+---
+
+<Layout
+  title="Workflows | Claudient"
+  description="End-to-end multi-step processes for Claude Code — RPI, RIPER, autonomous loops, worktree lifecycle, compound engineering, and more."
+>
+  <CollectionIndex
+    title="Workflows"
+    description="End-to-end multi-step processes that compose skills, agents, and hooks into proven engineering rhythms."
+    entries={entries}
+    collection="workflows"
+  />
+</Layout>

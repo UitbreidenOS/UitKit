@@ -1,0 +1,19 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import CollectionIndex from "../../components/CollectionIndex.astro";
+
+const entries = await getCollection("rules", ({ data }) => !data.draft);
+---
+
+<Layout
+  title="Rules | Claudient"
+  description="Always-follow Claude Code guidelines — coding style, git, security, testing, language-specific best practices."
+>
+  <CollectionIndex
+    title="Rules"
+    description="Always-follow Claude Code guidelines for projects — coding style, git, security, testing."
+    entries={entries}
+    collection="rules"
+  />
+</Layout>
