@@ -1,0 +1,321 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import { SUPPORTED_LOCALES } from "../../../lib/content";
+
+export async function getStaticPaths() {
+  const nonDefault = SUPPORTED_LOCALES.filter((l) => l !== "en");
+  return nonDefault.map((lang) => ({ params: { lang }, props: { lang } }));
+}
+
+const { lang } = Astro.props;
+
+const langNames: Record<string, string> = {
+  fr: "French",
+  de: "German",
+  nl: "Dutch",
+  es: "Spanish",
+};
+const langName = langNames[lang] ?? lang;
+---
+
+<Layout
+  title="Pricing — Claudient"
+  description="Claudient is free forever. 295+ skills, 99+ agents, 5 languages, one command. Pro and Enterprise plans for teams that need private collections, custom skill development, and SLA-backed support."
+  translatedLocales={[]}
+>
+  <!-- Translation notice -->
+  <div class="container-page pt-6">
+    <p class="text-sm" style="color: var(--color-muted);">
+      This page is not yet translated to {langName}. Content is shown in English.
+    </p>
+  </div>
+
+  <!-- Hero -->
+  <section class="container-page py-16 md:py-24">
+    <div class="max-w-3xl">
+      <p class="pill mb-6">Free forever · Open source · Community</p>
+      <h1 class="text-4xl md:text-6xl font-semibold tracking-tight leading-[1.05]">
+        Start free. Scale with your team.
+      </h1>
+      <p class="mt-6 text-lg md:text-xl max-w-2xl" style="color: var(--color-muted);">
+        The full Claudient knowledge base — 295+ skills, 99+ agents, hooks, MCP configs,
+        and 5 languages — is free and open source, forever. Pro and Enterprise plans exist
+        for teams that need private skill collections, custom development, and dedicated support.
+      </p>
+    </div>
+  </section>
+
+  <!-- Pricing tiers -->
+  <section
+    class="border-y"
+    style="background-color: var(--color-bg-elevated); border-color: var(--color-border);"
+  >
+    <div class="container-page py-16">
+      <div class="grid gap-6 md:grid-cols-3">
+
+        <!-- Free -->
+        <div class="card p-8 flex flex-col">
+          <div class="mb-6">
+            <p class="text-xs font-semibold uppercase tracking-widest mb-3" style="color: var(--color-accent);">Free</p>
+            <h2 class="text-2xl font-semibold tracking-tight mb-1">Free forever</h2>
+            <p class="text-sm" style="color: var(--color-muted);">
+              Everything in the open-source repo, no account required.
+            </p>
+          </div>
+
+          <ul class="space-y-3 mb-8 flex-1">
+            {[
+              "All 295+ skills across every domain",
+              "99+ pre-built agents",
+              "Hooks, MCP configs, rules, workflows, prompts",
+              "5 languages: EN, FR, DE, NL, ES",
+              "npm install in 30 seconds",
+              "AGPL-3.0 code license",
+              "CC-BY-SA-4.0 content license",
+              "Community contributions welcome",
+            ].map((item) => (
+              <li class="flex gap-3 text-sm">
+                <span
+                  class="mt-0.5 flex-shrink-0 w-4 h-4 rounded-full inline-flex items-center justify-center text-xs font-bold"
+                  style="background-color: var(--color-accent-soft); color: var(--color-accent);"
+                >
+                  ✓
+                </span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+
+          <div>
+            <div
+              class="flex items-center px-3 py-2 rounded-md font-mono text-sm mb-4"
+              style="background-color: var(--color-bg-elevated); border: 1px solid var(--color-border);"
+            >
+              <span style="color: var(--color-muted);">$</span>&nbsp;npx claudient add all
+            </div>
+            <a href={`/${lang}/install/`} class="btn-primary w-full text-center block">
+              Get started free
+            </a>
+          </div>
+        </div>
+
+        <!-- Pro -->
+        <div
+          class="card p-8 flex flex-col relative"
+          style="border-color: var(--color-accent);"
+        >
+          <div
+            class="absolute -top-3 left-8 px-3 py-1 rounded-full text-xs font-semibold"
+            style="background-color: var(--color-accent); color: #fff;"
+          >
+            Coming soon
+          </div>
+
+          <div class="mb-6">
+            <p class="text-xs font-semibold uppercase tracking-widest mb-3" style="color: var(--color-accent);">Pro</p>
+            <h2 class="text-2xl font-semibold tracking-tight mb-1">Pro</h2>
+            <p class="text-sm" style="color: var(--color-muted);">
+              For teams that need private skills and dedicated rollout support. Pricing on request.
+            </p>
+          </div>
+
+          <ul class="space-y-3 mb-8 flex-1">
+            {[
+              "Everything in Free",
+              "Private skill collections (not open-sourced)",
+              "Team onboarding and rollout support",
+              "Priority issue resolution",
+              "Custom skill development by Uitbreiden team",
+            ].map((item) => (
+              <li class="flex gap-3 text-sm">
+                <span
+                  class="mt-0.5 flex-shrink-0 w-4 h-4 rounded-full inline-flex items-center justify-center text-xs font-bold"
+                  style="background-color: var(--color-accent-soft); color: var(--color-accent);"
+                >
+                  ✓
+                </span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+
+          <div>
+            <a
+              href="mailto:hello@uitbreiden.com?subject=Claudient%20Pro"
+              class="btn-primary w-full text-center block"
+            >
+              Contact us
+            </a>
+          </div>
+        </div>
+
+        <!-- Enterprise -->
+        <div class="card p-8 flex flex-col">
+          <div class="mb-6">
+            <p class="text-xs font-semibold uppercase tracking-widest mb-3" style="color: var(--color-accent);">Enterprise</p>
+            <h2 class="text-2xl font-semibold tracking-tight mb-1">Enterprise</h2>
+            <p class="text-sm" style="color: var(--color-muted);">
+              For regulated industries and large teams that need SLA-backed service and compliance guidance.
+            </p>
+          </div>
+
+          <ul class="space-y-3 mb-8 flex-1">
+            {[
+              "Everything in Pro",
+              "SLA-backed support",
+              "GDPR-compliant deployment guidance",
+              "Custom MCP server development",
+              "Dedicated Uitbreiden contact",
+            ].map((item) => (
+              <li class="flex gap-3 text-sm">
+                <span
+                  class="mt-0.5 flex-shrink-0 w-4 h-4 rounded-full inline-flex items-center justify-center text-xs font-bold"
+                  style="background-color: var(--color-accent-soft); color: var(--color-accent);"
+                >
+                  ✓
+                </span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+
+          <div>
+            <a
+              href="mailto:hello@uitbreiden.com?subject=Claudient%20Enterprise"
+              class="btn-ghost w-full text-center block"
+            >
+              Contact us
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="container-page py-16">
+    <div class="max-w-2xl">
+      <h2 class="text-2xl font-semibold tracking-tight mb-10">Frequently asked questions</h2>
+
+      <div class="space-y-8">
+
+        <div>
+          <h3 class="font-semibold mb-2">Is it really free?</h3>
+          <p class="text-sm" style="color: var(--color-muted);">
+            Yes. The entire Claudient library — every skill, agent, hook, MCP config, guide,
+            workflow, and prompt — is available at no cost under open-source licenses. There is
+            no trial period, no credit card, and no feature gating. Run
+            <code class="px-1 py-0.5 rounded text-xs font-mono" style="background-color: var(--color-bg-elevated); border: 1px solid var(--color-border);">npx claudient add all</code>
+            and you have everything.
+          </p>
+        </div>
+
+        <div
+          class="border-t pt-8"
+          style="border-color: var(--color-border);"
+        >
+          <h3 class="font-semibold mb-2">Can I use this commercially?</h3>
+          <p class="text-sm" style="color: var(--color-muted);">
+            Yes. The content (skills, agents, guides, etc.) is licensed under CC-BY-SA-4.0,
+            which permits commercial use as long as you attribute Uitbreiden and share any
+            derivative content under the same license. The tooling and site code is AGPL-3.0:
+            free to use commercially, but if you run a modified version as a network service,
+            you must release your modifications. Using skills locally inside Claude Code — the
+            primary use case — carries no extra obligations.
+          </p>
+        </div>
+
+        <div
+          class="border-t pt-8"
+          style="border-color: var(--color-border);"
+        >
+          <h3 class="font-semibold mb-2">What is the practical difference between AGPL and CC-BY-SA for me?</h3>
+          <p class="text-sm" style="color: var(--color-muted);">
+            For most users there is no practical difference. If you install Claudient and use
+            it with your own Claude Code setup, both licenses are satisfied automatically.
+            The distinction matters only if you fork and redistribute: AGPL applies to the
+            Astro site and hook scripts (share source if you host publicly), while CC-BY-SA
+            applies to the markdown content files (attribute and share alike if you republish).
+            Neither license restricts private internal use or prevents you from writing skills
+            that are specific to your own organisation.
+          </p>
+        </div>
+
+        <div
+          class="border-t pt-8"
+          style="border-color: var(--color-border);"
+        >
+          <h3 class="font-semibold mb-2">Can Uitbreiden build custom skills for us?</h3>
+          <p class="text-sm" style="color: var(--color-muted);">
+            Yes. Custom skill development is available on the Pro and Enterprise plans.
+            Uitbreiden can build skills for proprietary workflows, internal tooling,
+            regulated industry requirements, or any domain not yet covered by the community
+            library. These private skills stay yours — they are not contributed back to the
+            open-source repo unless you choose to. Email
+            <a
+              href="mailto:hello@uitbreiden.com"
+              style="color: var(--color-accent);"
+            >hello@uitbreiden.com</a>
+            to discuss scope.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Community CTA -->
+  <section
+    class="border-y"
+    style="background-color: var(--color-bg-elevated); border-color: var(--color-border);"
+  >
+    <div class="container-page py-16">
+      <div class="max-w-2xl">
+        <h2 class="text-2xl font-semibold tracking-tight mb-3">Build it with the community</h2>
+        <p class="text-sm mb-8" style="color: var(--color-muted);">
+          Every skill lives in one markdown file. Contributing is fast, the bar is low,
+          and merged skills get featured across the site. If you have domain expertise
+          that Claude Code should have, write it down.
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <a href={`/${lang}/contribute/`} class="btn-primary">Contribute a skill</a>
+          <a
+            href="https://github.com/uitbreiden/claudient"
+            target="_blank"
+            rel="noopener"
+            class="btn-ghost"
+          >
+            GitHub repository
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="container-page py-20">
+    <div class="max-w-xl">
+      <h2 class="text-2xl font-semibold tracking-tight mb-3">Get started in 30 seconds</h2>
+      <p class="text-sm mb-6" style="color: var(--color-muted);">
+        One command installs every skill, agent, hook, and MCP config in the library.
+        No account. No setup beyond a Node.js environment.
+      </p>
+      <div
+        class="flex items-center px-4 py-3 rounded-md font-mono text-sm mb-6 w-fit"
+        style="background-color: var(--color-bg-elevated); border: 1px solid var(--color-border);"
+      >
+        <span style="color: var(--color-muted);">$</span>&nbsp;npx claudient add all
+      </div>
+      <div class="flex flex-col sm:flex-row gap-3">
+        <a href={`/${lang}/install/`} class="btn-primary">Installation guide</a>
+        <a
+          href="mailto:hello@uitbreiden.com?subject=Claudient%20Pro"
+          class="btn-ghost"
+        >
+          Talk to Uitbreiden
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
