@@ -56,6 +56,42 @@ npx claudient add all
 
 ---
 
+## 🎯 Profession Packs
+
+25 profession-specific packs — pre-wired skill stacks, agents, workflows, and daily routines for each role.
+
+| Profession | Install | Guide |
+|---|---|---|
+| SDR / Sales Rep | `npx claudient add skill gtm/sdr-research-brief` | [Guide](guides/for-sdr.md) |
+| Founder / CEO | `npx claudient add skill gtm/founder-operating-system` | [Guide](guides/for-founder.md) |
+| Product Manager | `npx claudient add skill product/product-discovery` | [Guide](guides/for-product-manager.md) |
+| DevOps / Platform Engineer | `npx claudient add skill devops-infra/kubernetes-architect` | [Guide](guides/for-devops-engineer.md) |
+| Content Marketer / SEO | `npx claudient add skill marketing/seo-audit` | [Guide](guides/for-content-marketer.md) |
+| Finance Analyst / CFO | `npx claudient add skill finance/dcf-model` | [Guide](guides/for-finance-analyst.md) |
+| Legal / Compliance Officer | `npx claudient add skill legal/contract-review` | [Guide](guides/for-legal-compliance.md) |
+| Growth Hacker / Performance Marketer | `npx claudient add skill marketing/paid-ads` | [Guide](guides/for-growth-marketer.md) |
+| Customer Success Manager | `npx claudient add skill gtm/customer-success` | [Guide](guides/for-customer-success.md) |
+| Recruiter / HR | `npx claudient add skill small-business/hiring-pipeline` | [Guide](guides/for-recruiter.md) |
+| UX Designer / Researcher | `npx claudient add skill product/ux-research` | [Guide](guides/for-ux-designer.md) |
+| Technical Writer | `npx claudient add skill productivity/adr-writer` | [Guide](guides/for-technical-writer.md) |
+| Account Executive | `npx claudient add skill gtm/deal-desk` | [Guide](guides/for-account-executive.md) |
+| Operations Manager / COO | `npx claudient add skill small-business/sop-writer` | [Guide](guides/for-operations-manager.md) |
+| Email Marketer | `npx claudient add skill gtm/email-automation` | [Guide](guides/for-email-marketer.md) |
+| E-commerce Operator | `npx claudient add skill small-business/ecommerce-seller` | [Guide](guides/for-ecommerce-operator.md) |
+| CTO / Tech Lead | `npx claudient add skill productivity/tech-debt-tracker` | [Guide](guides/for-cto.md) |
+| Real Estate Agent | `npx claudient add skill small-business/real-estate-listing` | [Guide](guides/for-real-estate-agent.md) |
+| Investor / VC Analyst | `npx claudient add skill finance/ic-memo` | [Guide](guides/for-investor.md) |
+| Data Analyst / BI Analyst | `npx claudient add skill data-ml/dbt` | [Guide](guides/for-data-analyst.md) |
+| Freelancer / Consultant | `npx claudient add skill small-business/freelancer-proposal` | [Guide](guides/for-freelancer.md) |
+| Executive Assistant / Chief of Staff | `npx claudient add skill productivity/meeting-to-action` | [Guide](guides/for-executive-assistant.md) |
+| Educator / Course Creator | `npx claudient add skill small-business/online-course-creator` | [Guide](guides/for-educator.md) |
+| Software Engineer | `npx claudient add skills backend` | uses existing skills — no dedicated guide yet |
+| Healthcare Admin | `npx claudient add skills small-business` | uses existing skills — no dedicated guide yet |
+
+Each pack includes: domain-specific slash commands, a curated agent roster, a daily workflow, a 30-day ramp plan, and tool integration configs.
+
+---
+
 ## ⚡ Quick Start
 
 ```bash
