@@ -21,6 +21,7 @@ const SKILL_CATEGORIES = [
   'finance-payments',
   'ai-engineering',
   'productivity',
+  'gtm',
 ]
 
 const SUPPORTED_LANGS = ['en', 'fr', 'de', 'nl', 'es']
@@ -52,9 +53,10 @@ Skill categories:
 Languages (--lang):
   en (default), fr, de, nl, es
 
-Structure names (50 available):
+Structure names (82 available):
   Professional workspaces: sdr-workspace, product-manager-workspace, devops-sre-workspace, founder-workspace ...
   Project templates: saas-web-app, rest-api-service, ai-agent-app, data-pipeline, monorepo ...
+  AI/GTM workspaces: autonomous-saas-core, llm-guardrail-proxy, hitl-agentic-workflow, devsecops-workspace ...
   Run: npx claudient list structures
 
 Examples:
