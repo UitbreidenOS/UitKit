@@ -11,6 +11,7 @@ const SKILLS_DEST = path.join(CLAUDE_DIR, 'skills')
 const AGENTS_DEST = path.join(CLAUDE_DIR, 'agents')
 const HOOKS_DEST = path.join(CLAUDE_DIR, 'hooks')
 const RULES_DEST = path.join(CLAUDE_DIR, 'rules')
+const STRUCTURES_SRC = path.join(REPO_ROOT, 'structures')
 
 const SKILL_CATEGORIES = [
   'backend',
@@ -30,17 +31,19 @@ claudient — Claude Code knowledge system
 
 Usage:
   npx claudient init                          Interactive first-run setup
-  npx claudient search <query>               Search skills by name or description
+  npx claudient search <query>               Search skills, agents, structures
   npx claudient add skills [category] [--lang <lang>]
   npx claudient add agents
   npx claudient add rules [--write]
   npx claudient add hooks
+  npx claudient add structure <name>         Copy a project structure to current dir
   npx claudient add all [--lang <lang>]
+  npx claudient scaffold <name>              Print scaffold commands for a structure
   npx claudient remove skills [category]
   npx claudient remove agents
   npx claudient remove rules
   npx claudient update
-  npx claudient list [skills|agents|rules|hooks]
+  npx claudient list [skills|agents|rules|hooks|structures]
   npx claudient help
 
 Skill categories:
@@ -49,17 +52,21 @@ Skill categories:
 Languages (--lang):
   en (default), fr, de, nl, es
 
+Structure names (50 available):
+  Professional workspaces: sdr-workspace, product-manager-workspace, devops-sre-workspace, founder-workspace ...
+  Project templates: saas-web-app, rest-api-service, ai-agent-app, data-pipeline, monorepo ...
+  Run: npx claudient list structures
+
 Examples:
+  npx claudient add structure saas-web-app
+  npx claudient add structure sdr-workspace
+  npx claudient scaffold saas-web-app
   npx claudient add skills
-  npx claudient add skills backend
   npx claudient add skills backend --lang fr
   npx claudient add agents
-  npx claudient add rules
-  npx claudient add hooks
   npx claudient add all --lang de
-  npx claudient remove skills backend
-  npx claudient update
-  npx claudient list agents
+  npx claudient list structures
+  npx claudient search data pipeline
 `)
 }
 
@@ -288,6 +295,161 @@ Or browse online: https://github.com/Claudient/Claudient/tree/main/hooks
 `)
 }
 
+function listStructures() {
+  const index = loadIndex()
+  const BOLD = '\x1b[1m'
+  const ORANGE = '\x1b[33m'
+  const DIM = '\x1b[2m'
+  const RESET = '\x1b[0m'
+
+  if (index && index.structures && index.structures.length) {
+    const workspaces = index.structures.filter(s => s.type === 'workspace')
+    const templates = index.structures.filter(s => s.type === 'template')
+
+    console.log(`\n${BOLD}Project Structures (${index.structures.length} total)${RESET}\n`)
+
+    console.log(`${BOLD}Professional Workspaces (${workspaces.length})${RESET}`)
+    console.log(`${DIM}Claude Code workspace setups for each professional role${RESET}\n`)
+    for (const s of workspaces) {
+      console.log(`  ${ORANGE}${s.id}${RESET}`)
+      if (s.tagline) console.log(`  ${DIM}${s.tagline.slice(0, 90)}${RESET}`)
+      console.log()
+    }
+
+    console.log(`${BOLD}Project Templates (${templates.length})${RESET}`)
+    console.log(`${DIM}Technical and business project scaffolds${RESET}\n`)
+    for (const s of templates) {
+      console.log(`  ${ORANGE}${s.id}${RESET}`)
+      if (s.tagline) console.log(`  ${DIM}${s.tagline.slice(0, 90)}${RESET}`)
+      console.log()
+    }
+
+    console.log(`Install a structure:  npx claudient add structure <name>`)
+    console.log(`Scaffold directories: npx claudient scaffold <name>`)
+    return
+  }
+
+  // Fallback: filesystem scan
+  if (!fs.existsSync(STRUCTURES_SRC)) {
+    console.log('No structures found. Update claudient: npx claudient update')
+    return
+  }
+  const files = fs.readdirSync(STRUCTURES_SRC).filter(f => f.endsWith('.md') && f !== 'README.md')
+  console.log(`\nProject Structures (${files.length}):\n`)
+  for (const f of files) console.log(`  ${f.replace('.md', '')}`)
+  console.log(`\nInstall: npx claudient add structure <name>`)
+}
+
+function addStructure(name) {
+  const BOLD = '\x1b[1m'
+  const GREEN = '\x1b[32m'
+  const ORANGE = '\x1b[33m'
+  const DIM = '\x1b[2m'
+  const RESET = '\x1b[0m'
+
+  if (!name) {
+    console.log('Usage: npx claudient add structure <name>')
+    console.log('       npx claudient list structures\n')
+    listStructures()
+    return
+  }
+
+  const srcFile = path.join(STRUCTURES_SRC, `${name}.md`)
+  if (!fs.existsSync(srcFile)) {
+    console.error(`\n${ORANGE}Structure not found: "${name}"${RESET}`)
+    console.error('Run: npx claudient list structures\n')
+    process.exit(1)
+  }
+
+  const destFile = path.join(process.cwd(), `${name}-structure.md`)
+  fs.copyFileSync(srcFile, destFile)
+
+  const content = fs.readFileSync(srcFile, 'utf-8')
+  const tagline = (content.match(/^>\s*(.+)$/m) || [])[1] || ''
+  const skillsMatch = content.match(/```bash\n([\s\S]*?npx claudient[\s\S]*?)```/)
+  const skills = skillsMatch ? skillsMatch[1].trim() : null
+
+  console.log(`\n${GREEN}${BOLD}✓ ${name}-structure.md${RESET}`)
+  if (tagline) console.log(`  ${DIM}${tagline}${RESET}`)
+  console.log(`\nSaved to: ${destFile}`)
+  console.log('\nNext steps:')
+  console.log(`  1. Read the structure: cat ${name}-structure.md`)
+  console.log(`  2. Scaffold the directories: npx claudient scaffold ${name}`)
+  if (skills) {
+    console.log('  3. Install skills:')
+    for (const line of skills.split('\n').filter(l => l.trim().startsWith('npx'))) {
+      console.log(`     ${line.trim()}`)
+    }
+  }
+  console.log(`  4. Copy the CLAUDE.md template into your project\n`)
+}
+
+function scaffoldStructure(name) {
+  const BOLD = '\x1b[1m'
+  const GREEN = '\x1b[32m'
+  const DIM = '\x1b[2m'
+  const RESET = '\x1b[0m'
+
+  if (!name) {
+    console.error('Usage: npx claudient scaffold <structure-name>')
+    console.error('       npx claudient list structures')
+    process.exit(1)
+  }
+
+  const srcFile = path.join(STRUCTURES_SRC, `${name}.md`)
+  if (!fs.existsSync(srcFile)) {
+    console.error(`Structure not found: "${name}". Run: npx claudient list structures`)
+    process.exit(1)
+  }
+
+  const content = fs.readFileSync(srcFile, 'utf-8')
+
+  // Extract the Quick scaffold bash block
+  const scaffoldSection = content.match(/## Quick scaffold\s*\n+```bash\n([\s\S]*?)```/)
+  if (!scaffoldSection) {
+    console.log(`No scaffold commands found in ${name}. Read the full structure:`)
+    console.log(`  npx claudient add structure ${name}`)
+    return
+  }
+
+  const commands = scaffoldSection[1].trim()
+  const title = (content.match(/^# (.+)$/m) || [])[1] || name
+
+  console.log(`\n${BOLD}Scaffold: ${title}${RESET}`)
+  console.log(`${DIM}Run these commands to create the project structure:${RESET}\n`)
+  console.log('─'.repeat(60))
+  console.log(commands)
+  console.log('─'.repeat(60))
+  console.log()
+
+  // Offer to run them
+  const readline = require('readline')
+  const rl = readline.createInterface({ input: process.stdin, output: process.stdout })
+  rl.question(`${GREEN}Run these commands now in the current directory? [y/N] ${RESET}`, (answer) => {
+    rl.close()
+    if (answer.toLowerCase() === 'y') {
+      console.log()
+      try {
+        // Run only mkdir and touch lines — skip comment lines and npx install lines
+        const safeLines = commands.split('\n').filter(l => {
+          const t = l.trim()
+          return t.startsWith('mkdir') || t.startsWith('touch') || t.startsWith('cd ')
+        })
+        for (const line of safeLines) {
+          console.log(`  $ ${line}`)
+          execSync(line, { stdio: 'inherit', cwd: process.cwd() })
+        }
+        console.log(`\n${GREEN}${BOLD}✓ Directory structure created.${RESET}`)
+        console.log(`Next: copy the CLAUDE.md template from ${name}-structure.md into your project.\n`)
+      } catch (err) {
+        console.error(`\nError running scaffold: ${err.message}`)
+      }
+    } else {
+      console.log('Scaffold commands printed above — run them manually when ready.\n')
+    }
+  })
+}
+
 function removeCommand(type, category) {
   checkClaudeInstalled()
   switch (type) {
@@ -487,7 +649,13 @@ function searchCommand(query) {
     h.title.toLowerCase().includes(q)
   )
 
-  const total = skillMatches.length + agentMatches.length + hookMatches.length
+  const structureMatches = (index.structures || []).filter(s =>
+    s.id.toLowerCase().includes(q) ||
+    s.title.toLowerCase().includes(q) ||
+    (s.tagline || '').toLowerCase().includes(q)
+  )
+
+  const total = skillMatches.length + agentMatches.length + hookMatches.length + structureMatches.length
 
   if (total === 0) {
     console.log(`No results for "${query}".`)
@@ -527,6 +695,16 @@ function searchCommand(query) {
     }
     console.log(`  Install: npx claudient add hooks`)
     console.log()
+  }
+
+  if (structureMatches.length) {
+    console.log(`${BOLD}Project Structures (${structureMatches.length})${RESET}`)
+    for (const s of structureMatches) {
+      console.log(`  ${ORANGE}${s.id}${RESET} — ${s.title}`)
+      if (s.tagline) console.log(`  ${DIM}${s.tagline.slice(0, 90)}${RESET}`)
+      console.log(`  Install: npx claudient add structure ${s.id}`)
+      console.log()
+    }
   }
 }
 
@@ -693,6 +871,7 @@ switch (command) {
         else addRules()
         break
       case 'hooks': addHooks(); break
+      case 'structure': addStructure(arg2); break
       case 'all':
         addSkills(null, lang)
         addAgents()
@@ -720,11 +899,15 @@ switch (command) {
     removeCommand(type, arg2)
     break
   }
+  case 'scaffold':
+    scaffoldStructure(positional[0])
+    break
   case 'update':
     updateCommand()
     break
   case 'list':
-    listCommand(positional[0])
+    if (positional[0] === 'structures') listStructures()
+    else listCommand(positional[0])
     break
   case 'search': {
     const query = positional.join(' ')

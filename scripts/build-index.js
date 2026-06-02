@@ -79,6 +79,7 @@ const index = {
   workflows: [],
   prompts: [],
   guides: [],
+  structures: [],
 }
 
 // Skills
@@ -149,6 +150,20 @@ for (const file of getFiles(path.join(ROOT, 'guides'))) {
   index.guides.push({ id: slug, lang, title: readTitle(file), file: rel })
 }
 
+// Structures
+for (const file of getFiles(path.join(ROOT, 'structures'))) {
+  const rel = relPath(file)
+  if (isTranslation(rel)) continue // English only for now
+  if (path.basename(file) === 'README.md') continue
+  const slug = path.basename(file, '.md')
+  const content = fs.readFileSync(file, 'utf-8')
+  // Extract the tagline (first blockquote line)
+  const tagline = (content.match(/^>\s*(.+)$/m) || [])[1] || ''
+  // Detect type: workspace or template
+  const type = slug.endsWith('-workspace') ? 'workspace' : 'template'
+  index.structures.push({ id: slug, type, title: readTitle(file), tagline, file: rel })
+}
+
 // Summary counts (English only)
 const en = (arr) => arr.filter(i => i.lang === 'en' || !i.lang)
 index.summary = {
@@ -159,9 +174,10 @@ index.summary = {
   workflows: en(index.workflows).length,
   prompts: en(index.prompts).length,
   guides: en(index.guides).length,
+  structures: index.structures.length,
   languages: ['en', ...LANGS],
 }
 
 const outPath = path.join(ROOT, 'index.json')
 fs.writeFileSync(outPath, JSON.stringify(index, null, 2) + '\n')
-console.log(`Generated index.json — ${index.summary.skills} skills, ${index.summary.agents} agents, ${index.summary.hooks} hooks`)
+console.log(`Generated index.json — ${index.summary.skills} skills, ${index.summary.agents} agents, ${index.summary.hooks} hooks, ${index.summary.structures} structures`)
