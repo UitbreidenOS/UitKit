@@ -1,0 +1,167 @@
+# Agente de Auditoría de Dependencias
+
+## Qué hace
+
+Se ejecuta semanalmente contra los manifiestos de dependencias del repositorio. Detecta dos categorías de problemas: vulnerabilidades de seguridad (CVEs reportados por la base de datos de avisos del ecosistema) y paquetes desactualizados (versiones mayores o menores por detrás de la versión estable actual). Produce un informe estructurado, luego abre un problema de GitHub resumiendo los hallazgos o abre un PR con actualizaciones seguras automatizadas aplicadas — configurable por política del repositorio.
+
+Soporta: npm/yarn/pnpm (`package.json`), Python (`requirements.txt`, `pyproject.toml`), Go (`go.mod`), y Ruby (`Gemfile`).
+
+## Desencadenador (programación / evento de GitHub / API)
+
+- Tipo: programación
+- Cron: `0 9 * * 1` (09:00 lunes, semanalmente)
+- Zona horaria: configurada en la configuración de rutina (p. ej., `UTC`)
+- También se puede activar a través de llamada API para auditorías bajo demanda (p. ej., después de que se publique un CVE)
+
+## Configuración
+
+1. Token de GitHub con permisos:
+   - Contenidos: lectura y escritura (para abrir PRs con correcciones)
+   - Problemas: lectura y escritura (para abrir problema de auditoría)
+   - Solicitudes de extracción: lectura y escritura
+2. Establecer variables de entorno:
+   ```
+   GITHUB_TOKEN=ghp_...
+   GITHUB_REPO=owner/repo
+   AUDIT_OUTPUT=issue          # "issue" o "pr" — dónde publicar los resultados
+   AUDIT_AUTO_FIX=patch-only   # "none", "patch-only", o "minor-and-patch"
+   AUDIT_SEVERITY_THRESHOLD=moderate  # "low", "moderate", "high", "critical"
+   ```
+3. La rutina ejecuta auditorías usando las herramientas nativas del ecosistema dentro de un entorno aislado — `npm audit`, `pip-audit`, `govulncheck`, `bundle audit`. Asegúrese de que estas estén disponibles en el entorno de ejecución de la rutina.
+4. Para registros privados, monte tokens de autenticación como secretos bajo `NPM_TOKEN`, `PIP_INDEX_URL`, etc.
+
+## El símbolo de rutina (el símbolo exacto que ejecuta el agente programado)
+
+```
+You are a dependency security and hygiene agent. Run a full audit of the repository's dependencies.
+
+Context:
+- Repo: $GITHUB_REPO
+- Date: $TODAY
+- Output mode: $AUDIT_OUTPUT (issue or pr)
+- Auto-fix scope: $AUDIT_AUTO_FIX
+- Minimum severity to report: $AUDIT_SEVERITY_THRESHOLD
+
+Steps:
+
+1. DETECT MANIFESTS — scan the repo root and one level of subdirectories for:
+   - package.json (npm/yarn/pnpm)
+   - requirements.txt, pyproject.toml, setup.cfg (Python)
+   - go.mod (Go)
+   - Gemfile (Ruby)
+   List every manifest found. If none found, exit with message "No dependency manifests detected."
+
+2. VULNERABILITY SCAN — for each manifest, run the appropriate audit tool:
+   - npm: `npm audit --json`
+   - Python: `pip-audit --output json`
+   - Go: `govulncheck -json ./...`
+   - Ruby: `bundle audit check --update`
+
+   Parse the JSON output. For each vulnerability, record:
+   - Package name and current version
+   - CVE ID(s)
+   - Severity (critical / high / moderate / low)
+   - Fixed-in version (if available)
+   - Whether a fix is available (boolean)
+
+   Filter to only include vulnerabilities at or above $AUDIT_SEVERITY_THRESHOLD.
+
+3. OUTDATED SCAN — for each manifest, check for outdated packages:
+   - npm: `npm outdated --json`
+   - Python: `pip list --outdated --format json`
+   - Go: `go list -u -m all` (parse for available upgrades)
+   - Ruby: `bundle outdated --parseable`
+
+   For each outdated package, record: name, current version, wanted version, latest version, update type (patch/minor/major).
+
+4. AUTO-FIX (if $AUDIT_AUTO_FIX is not "none"):
+   - patch-only: apply `npm audit fix` / `pip-audit --fix` for patch-level security fixes only
+   - minor-and-patch: additionally apply patch and minor non-breaking updates
+   Capture the list of packages actually changed. If any fix fails, note it and continue.
+   If fixes were applied, create a new branch named `deps/audit-{YYYY-MM-DD}` and commit the changed manifest and lockfiles with message: "chore: automated dependency updates {DATE}".
+
+5. COMPOSE REPORT — write a structured audit report in this format:
+
+---
+## Dependency Audit — {DATE}
+
+### Vulnerabilities ({N} found, {M} at or above threshold)
+
+| Package | Version | CVE | Severity | Fix available |
+|---------|---------|-----|----------|---------------|
+{one row per vulnerability at threshold or above}
+
+### Outdated packages ({N} total)
+
+**Major updates (breaking — manual review required)**
+{list: package current → latest}
+
+**Minor updates (backwards-compatible)**
+{list: package current → latest}
+
+**Patch updates**
+{list: package current → latest}
+
+### Auto-fix summary
+{If AUDIT_AUTO_FIX=none: "Auto-fix disabled. Apply fixes manually."}
+{Otherwise: list of packages updated, or "No automatic fixes applied (all require manual review)."}
+
+### Recommended actions
+{numbered list of concrete next steps, highest priority first}
+
+---
+*Generated by dependency-audit routine on {DATE}. Rerun via API to refresh.*
+
+6. OUTPUT:
+   - If $AUDIT_OUTPUT=issue: open a GitHub issue titled "Dependency Audit — {DATE}" with the report as the body. Apply labels: `dependencies`, `security` (if any vulnerabilities found).
+   - If $AUDIT_OUTPUT=pr AND auto-fixes were applied: open a PR from the `deps/audit-{DATE}` branch to the default branch. Title: "chore: dependency audit fixes — {DATE}". Body: the full report. Apply label: `dependencies`.
+   - If $AUDIT_OUTPUT=pr AND no auto-fixes were applied: fall back to opening an issue.
+
+7. Return: "Audit complete: {N} vulnerabilities, {M} outdated. Output: {issue/PR URL}."
+```
+
+## Resultados y notificaciones
+
+- Problema de GitHub o PR: informe de auditoría completo con tabla de vulnerabilidades y lista de paquetes desactualizados
+- Etiquetas aplicadas: `dependencies`, `security` (si se encuentran vulnerabilidades)
+- Rama creada (si la corrección automática está habilitada): `deps/audit-{YYYY-MM-DD}`
+- Registro: conteos de paquetes, conteos de vulnerabilidades por gravedad, estados de llamadas API
+- En cero hallazgos: aún abre un problema con "Sin vulnerabilidades encontradas. {N} paquetes actualizados." — proporciona un seguimiento de auditoría limpio
+- En fallo de herramienta (p. ej., `npm audit` sale con código no cero por razones no relacionadas): registre la salida sin procesar y continúe con los manifiestos restantes; tenga en cuenta el fallo en el informe
+
+## Ejecución de ejemplo
+
+**Desencadenador:** Lunes 2026-06-08 09:00 UTC (programación semanal)
+
+**Manifiestos encontrados:** `package.json` (raíz), `requirements.txt` (scripts/)
+
+**Resultados del escaneo de vulnerabilidades:**
+- `lodash@4.17.20` — CVE-2021-23337 — high — corregido en 4.17.21
+- `pillow@9.4.0` — CVE-2023-44271 — moderate — corregido en 10.0.1
+
+**Resultados del escaneo desactualizado:**
+- Mayor: `react 18.2.0 → 19.1.0`
+- Menor: `axios 1.6.0 → 1.9.0`, `boto3 1.26.0 → 1.35.0`
+- Parche: `eslint 8.57.0 → 8.57.1`, `lodash 4.17.20 → 4.17.21`
+
+**Corrección automática aplicada (solo parche):** `lodash` actualizado a `4.17.21` (corrección de seguridad)
+
+**Problema de GitHub abierto:** #401 "Auditoría de Dependencias — 2026-06-08"
+
+**Extracto del cuerpo del problema:**
+
+```
+## Auditoría de Dependencias — 2026-06-08
+
+### Vulnerabilidades (2 encontradas, 2 en o por encima del umbral)
+
+| Package | Version | CVE | Severity | Fix available |
+|---------|---------|-----|----------|---------------|
+| lodash | 4.17.20 | CVE-2021-23337 | high | Yes (4.17.21) — auto-applied |
+| pillow | 9.4.0 | CVE-2023-44271 | moderate | Yes (10.0.1) |
+
+### Acciones recomendadas
+1. Fusionar el PR de corrección automática para lodash (ya comprometido a deps/audit-2026-06-08)
+2. Actualizar pillow a 10.0.1 — probar rutas de procesamiento de imágenes antes de fusionar
+3. Planear migración de React 19 — revisar cambios importantes antes de programar
+```

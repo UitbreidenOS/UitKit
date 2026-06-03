@@ -1,6 +1,6 @@
 {
   "version": "1.10.0",
-  "generated": "2026-06-03T00:06:55.429Z",
+  "generated": "2026-06-03T00:29:17.796Z",
   "skills": [
     {
       "id": "ai-engineering/advanced-tool-use",
@@ -2885,10 +2885,138 @@
     {
       "id": "computer-use/legacy-app-automation",
       "category": "computer-use",
+      "lang": "de",
+      "title": "Legacy App Automation",
+      "description": "Automatisieren Sie Desktop- oder Legacy-Apps ohne API über Computer Use — langsame, verifizierte, sichere Interaktion mit Win32, VB6, Mainframe und dickschichtigen Client-Apps.",
+      "file": "skills/computer-use/de/legacy-app-automation.md"
+    },
+    {
+      "id": "computer-use/screenshot-verify",
+      "category": "computer-use",
+      "lang": "de",
+      "title": "Screenshot Verify",
+      "description": "Capture und überprüfen Sie, dass sich eine Codeänderung tatsächlich korrekt gerendert hat — die \"sehen Sie es funktionieren\"-Schleife nach einer Bearbeitung.",
+      "file": "skills/computer-use/de/screenshot-verify.md"
+    },
+    {
+      "id": "computer-use/ui-testing",
+      "category": "computer-use",
+      "lang": "de",
+      "title": "Ui Testing",
+      "description": "Native oder Web-UI steuern, um Benutzerflows end-to-end via Computernutzung zu testen — Screenshot machen, klicken, überprüfen und berichten.",
+      "file": "skills/computer-use/de/ui-testing.md"
+    },
+    {
+      "id": "computer-use/visual-qa",
+      "category": "computer-use",
+      "lang": "de",
+      "title": "Visual Qa",
+      "description": "Visuelle Regressions- und Layout-QA über Screenshots — Vergleichen Sie UI-Zustände, erkennen Sie CSS-Fehler und dokumentieren Sie visuelle Abweichungen.",
+      "file": "skills/computer-use/de/visual-qa.md"
+    },
+    {
+      "id": "computer-use/legacy-app-automation",
+      "category": "computer-use",
+      "lang": "es",
+      "title": "Legacy App Automation",
+      "description": "Automatiza aplicaciones de escritorio o heredadas sin API mediante la automatización por computadora — interacción lenta, verificada y segura con aplicaciones Win32, VB6, mainframe y de cliente pesado.",
+      "file": "skills/computer-use/es/legacy-app-automation.md"
+    },
+    {
+      "id": "computer-use/screenshot-verify",
+      "category": "computer-use",
+      "lang": "es",
+      "title": "Screenshot Verify",
+      "description": "Capturar y verificar que un cambio de código se ha renderizado correctamente — el ciclo \"verlo funcionar\" después de una edición.",
+      "file": "skills/computer-use/es/screenshot-verify.md"
+    },
+    {
+      "id": "computer-use/ui-testing",
+      "category": "computer-use",
+      "lang": "es",
+      "title": "Ui Testing",
+      "description": "Controla la interfaz de usuario nativa o web para probar flujos de usuario de extremo a extremo mediante el uso de la computadora — captura de pantalla, clic, afirmación e informe.",
+      "file": "skills/computer-use/es/ui-testing.md"
+    },
+    {
+      "id": "computer-use/visual-qa",
+      "category": "computer-use",
+      "lang": "es",
+      "title": "Visual Qa",
+      "description": "Control de calidad visual y de diseño mediante capturas de pantalla — comparar estados de interfaz, detectar roturas de CSS y documentar cambios visuales.",
+      "file": "skills/computer-use/es/visual-qa.md"
+    },
+    {
+      "id": "computer-use/legacy-app-automation",
+      "category": "computer-use",
+      "lang": "fr",
+      "title": "Legacy App Automation",
+      "description": "Automatiser les applications de bureau ou héritées sans API via l'utilisation de l'ordinateur — interaction lente, vérifiée et sécurisée avec les applications Win32, VB6, mainframe et clients lourds.",
+      "file": "skills/computer-use/fr/legacy-app-automation.md"
+    },
+    {
+      "id": "computer-use/screenshot-verify",
+      "category": "computer-use",
+      "lang": "fr",
+      "title": "Screenshot Verify",
+      "description": "Capturer et vérifier qu'une modification du code s'est réellement rendue visible — la boucle \"voir ça marcher\" après une édition.",
+      "file": "skills/computer-use/fr/screenshot-verify.md"
+    },
+    {
+      "id": "computer-use/ui-testing",
+      "category": "computer-use",
+      "lang": "fr",
+      "title": "Ui Testing",
+      "description": "Pilotez l'interface utilisateur native ou web pour tester les parcours utilisateur de bout en bout via la saisie informatique — capture d'écran, clic, assertion et rapport.",
+      "file": "skills/computer-use/fr/ui-testing.md"
+    },
+    {
+      "id": "computer-use/visual-qa",
+      "category": "computer-use",
+      "lang": "fr",
+      "title": "Visual Qa",
+      "description": "Assurance qualité visuelle et de mise en page via captures d'écran — comparer les états de l'interface utilisateur, détecter les ruptures CSS et documenter la dérive visuelle.",
+      "file": "skills/computer-use/fr/visual-qa.md"
+    },
+    {
+      "id": "computer-use/legacy-app-automation",
+      "category": "computer-use",
       "lang": "en",
       "title": "Legacy App Automation",
       "description": "Automate desktop or legacy apps with no API via computer use — slow, verified, safe interaction with Win32, VB6, mainframe, and thick-client apps.",
       "file": "skills/computer-use/legacy-app-automation.md"
+    },
+    {
+      "id": "computer-use/legacy-app-automation",
+      "category": "computer-use",
+      "lang": "nl",
+      "title": "Legacy App Automation",
+      "description": "Automatiseer desktop- of legacy-apps zonder API via computer use — langzame, geverifieerde, veilige interactie met Win32, VB6, mainframe en thick-client apps.",
+      "file": "skills/computer-use/nl/legacy-app-automation.md"
+    },
+    {
+      "id": "computer-use/screenshot-verify",
+      "category": "computer-use",
+      "lang": "nl",
+      "title": "Screenshot Verify",
+      "description": "Screenshot vastleggen en controleren dat een codewijziging correct is weergegeven — de \"zien dat het werkt\" lus na een bewerking.",
+      "file": "skills/computer-use/nl/screenshot-verify.md"
+    },
+    {
+      "id": "computer-use/ui-testing",
+      "category": "computer-use",
+      "lang": "nl",
+      "title": "Ui Testing",
+      "description": "Ondersteun native of web UI om gebruikersstromen end-to-end te testen via computergebruik — screenshot, klik, assertion en rapportage.",
+      "file": "skills/computer-use/nl/ui-testing.md"
+    },
+    {
+      "id": "computer-use/visual-qa",
+      "category": "computer-use",
+      "lang": "nl",
+      "title": "Visual Qa",
+      "description": "Visuele regressie en lay-out QA via schermafbeeldingen — vergelijk UI-staten, vang CSS-fouten en documenteer visuele verschuivingen.",
+      "file": "skills/computer-use/nl/visual-qa.md"
     },
     {
       "id": "computer-use/screenshot-verify",
@@ -17455,136 +17583,16 @@
       "file": "hooks/lifecycle/daily-summary.md"
     },
     {
-      "id": "lifecycle/bug-logger",
-      "category": "lifecycle",
-      "title": "Hook: Bug-Protokoll (Stop)",
-      "file": "hooks/lifecycle/de/bug-logger.md"
-    },
-    {
-      "id": "lifecycle/daily-summary",
-      "category": "lifecycle",
-      "title": "Hook: Tägliche Sitzungsübersicht",
-      "file": "hooks/lifecycle/de/daily-summary.md"
-    },
-    {
-      "id": "lifecycle/env-injector",
-      "category": "lifecycle",
-      "title": "Hook: Umgebungs-Injektor (Setup)",
-      "file": "hooks/lifecycle/de/env-injector.md"
-    },
-    {
-      "id": "lifecycle/session-retro",
-      "category": "lifecycle",
-      "title": "Hook: Sitzungs-Retrospektive (Stop)",
-      "file": "hooks/lifecycle/de/session-retro.md"
-    },
-    {
-      "id": "lifecycle/transcript-backup",
-      "category": "lifecycle",
-      "title": "Hook: Transkript-Sicherung (PreCompact)",
-      "file": "hooks/lifecycle/de/transcript-backup.md"
-    },
-    {
       "id": "lifecycle/env-injector",
       "category": "lifecycle",
       "title": "Hook: Environment Injector (Setup)",
       "file": "hooks/lifecycle/env-injector.md"
     },
     {
-      "id": "lifecycle/bug-logger",
-      "category": "lifecycle",
-      "title": "Hook: Registrador de bugs (Stop)",
-      "file": "hooks/lifecycle/es/bug-logger.md"
-    },
-    {
-      "id": "lifecycle/daily-summary",
-      "category": "lifecycle",
-      "title": "Hook: Resumen diario de sesiones",
-      "file": "hooks/lifecycle/es/daily-summary.md"
-    },
-    {
-      "id": "lifecycle/env-injector",
-      "category": "lifecycle",
-      "title": "Hook: Inyector de entorno (Setup)",
-      "file": "hooks/lifecycle/es/env-injector.md"
-    },
-    {
-      "id": "lifecycle/session-retro",
-      "category": "lifecycle",
-      "title": "Hook: Retrospectiva de sesión (Stop)",
-      "file": "hooks/lifecycle/es/session-retro.md"
-    },
-    {
-      "id": "lifecycle/transcript-backup",
-      "category": "lifecycle",
-      "title": "Hook: Copia de seguridad de transcripción (PreCompact)",
-      "file": "hooks/lifecycle/es/transcript-backup.md"
-    },
-    {
-      "id": "lifecycle/bug-logger",
-      "category": "lifecycle",
-      "title": "Hook : Enregistreur de bugs (Stop)",
-      "file": "hooks/lifecycle/fr/bug-logger.md"
-    },
-    {
-      "id": "lifecycle/daily-summary",
-      "category": "lifecycle",
-      "title": "Hook : Résumé des sessions quotidiennes",
-      "file": "hooks/lifecycle/fr/daily-summary.md"
-    },
-    {
-      "id": "lifecycle/env-injector",
-      "category": "lifecycle",
-      "title": "Hook : Injecteur d'environnement (Setup)",
-      "file": "hooks/lifecycle/fr/env-injector.md"
-    },
-    {
-      "id": "lifecycle/session-retro",
-      "category": "lifecycle",
-      "title": "Hook : Rétrospective de session (Stop)",
-      "file": "hooks/lifecycle/fr/session-retro.md"
-    },
-    {
-      "id": "lifecycle/transcript-backup",
-      "category": "lifecycle",
-      "title": "Hook : Sauvegarde des transcriptions (PreCompact)",
-      "file": "hooks/lifecycle/fr/transcript-backup.md"
-    },
-    {
       "id": "lifecycle/keepalive-poke",
       "category": "lifecycle",
       "title": "Keep-Alive Poke Hook",
       "file": "hooks/lifecycle/keepalive-poke.md"
-    },
-    {
-      "id": "lifecycle/bug-logger",
-      "category": "lifecycle",
-      "title": "Hook: Bug-logger (Stop)",
-      "file": "hooks/lifecycle/nl/bug-logger.md"
-    },
-    {
-      "id": "lifecycle/daily-summary",
-      "category": "lifecycle",
-      "title": "Hook: Dagelijks sessieoverzicht",
-      "file": "hooks/lifecycle/nl/daily-summary.md"
-    },
-    {
-      "id": "lifecycle/env-injector",
-      "category": "lifecycle",
-      "title": "Hook: Omgevings-injector (Setup)",
-      "file": "hooks/lifecycle/nl/env-injector.md"
-    },
-    {
-      "id": "lifecycle/session-retro",
-      "category": "lifecycle",
-      "title": "Hook: Sessie retrospectief (Stop)",
-      "file": "hooks/lifecycle/nl/session-retro.md"
-    },
-    {
-      "id": "lifecycle/transcript-backup",
-      "category": "lifecycle",
-      "title": "Hook: Transkriptback-up (PreCompact)",
-      "file": "hooks/lifecycle/nl/transcript-backup.md"
     },
     {
       "id": "lifecycle/plannotator",
@@ -17625,104 +17633,8 @@
     {
       "id": "notification/desktop-notify",
       "category": "notification",
-      "title": "Hook: Desktop-Benachrichtigung",
-      "file": "hooks/notification/de/desktop-notify.md"
-    },
-    {
-      "id": "notification/ntfy-push",
-      "category": "notification",
-      "title": "Hook: ntfy Mobile Push-Benachrichtigungen",
-      "file": "hooks/notification/de/ntfy-push.md"
-    },
-    {
-      "id": "notification/slack-notify",
-      "category": "notification",
-      "title": "Hook: Slack-Benachrichtigung",
-      "file": "hooks/notification/de/slack-notify.md"
-    },
-    {
-      "id": "notification/tts-announcer",
-      "category": "notification",
-      "title": "Hook: TTS-Sprach-Ansager",
-      "file": "hooks/notification/de/tts-announcer.md"
-    },
-    {
-      "id": "notification/desktop-notify",
-      "category": "notification",
       "title": "Hook: Desktop Notification",
       "file": "hooks/notification/desktop-notify.md"
-    },
-    {
-      "id": "notification/desktop-notify",
-      "category": "notification",
-      "title": "Hook: Notificación de Escritorio",
-      "file": "hooks/notification/es/desktop-notify.md"
-    },
-    {
-      "id": "notification/ntfy-push",
-      "category": "notification",
-      "title": "Hook: Notificaciones Push Móvil ntfy",
-      "file": "hooks/notification/es/ntfy-push.md"
-    },
-    {
-      "id": "notification/slack-notify",
-      "category": "notification",
-      "title": "Hook: Notificación Slack",
-      "file": "hooks/notification/es/slack-notify.md"
-    },
-    {
-      "id": "notification/tts-announcer",
-      "category": "notification",
-      "title": "Hook: Locutor de voz TTS",
-      "file": "hooks/notification/es/tts-announcer.md"
-    },
-    {
-      "id": "notification/desktop-notify",
-      "category": "notification",
-      "title": "Hook : Notification de Bureau",
-      "file": "hooks/notification/fr/desktop-notify.md"
-    },
-    {
-      "id": "notification/ntfy-push",
-      "category": "notification",
-      "title": "Hook : Notifications Push Mobile ntfy",
-      "file": "hooks/notification/fr/ntfy-push.md"
-    },
-    {
-      "id": "notification/slack-notify",
-      "category": "notification",
-      "title": "Hook : Notification Slack",
-      "file": "hooks/notification/fr/slack-notify.md"
-    },
-    {
-      "id": "notification/tts-announcer",
-      "category": "notification",
-      "title": "Hook : Annonceur vocal TTS",
-      "file": "hooks/notification/fr/tts-announcer.md"
-    },
-    {
-      "id": "notification/desktop-notify",
-      "category": "notification",
-      "title": "Hook: Desktopmelding",
-      "file": "hooks/notification/nl/desktop-notify.md"
-    },
-    {
-      "id": "notification/ntfy-push",
-      "category": "notification",
-      "title": "Hook: ntfy Mobile Push-meldingen",
-      "file": "hooks/notification/nl/ntfy-push.md"
-    },
-    {
-      "id": "notification/slack-notify",
-      "category": "notification",
-      "title": "Hook: Slack-melding",
-      "file": "hooks/notification/nl/slack-notify.md"
-    },
-    {
-      "id": "notification/tts-announcer",
-      "category": "notification",
-      "title": "Hook: TTS Stem-aankondiging",
-      "file": "hooks/notification/nl/tts-announcer.md"
     },
     {
       "id": "notification/ntfy-push",
@@ -17779,54 +17691,6 @@
       "file": "hooks/post-tool-use/auto-git-stage.md"
     },
     {
-      "id": "post-tool-use/auto-git-stage",
-      "category": "post-tool-use",
-      "title": "Hook: Auto Git-Staging",
-      "file": "hooks/post-tool-use/de/auto-git-stage.md"
-    },
-    {
-      "id": "post-tool-use/test-runner",
-      "category": "post-tool-use",
-      "title": "Hook: Auto Test-Läufer",
-      "file": "hooks/post-tool-use/de/test-runner.md"
-    },
-    {
-      "id": "post-tool-use/auto-git-stage",
-      "category": "post-tool-use",
-      "title": "Hook: Auto Git Stage",
-      "file": "hooks/post-tool-use/es/auto-git-stage.md"
-    },
-    {
-      "id": "post-tool-use/test-runner",
-      "category": "post-tool-use",
-      "title": "Hook: Ejecutor automático de pruebas",
-      "file": "hooks/post-tool-use/es/test-runner.md"
-    },
-    {
-      "id": "post-tool-use/auto-git-stage",
-      "category": "post-tool-use",
-      "title": "Hook : Mise en scène Git automatique",
-      "file": "hooks/post-tool-use/fr/auto-git-stage.md"
-    },
-    {
-      "id": "post-tool-use/test-runner",
-      "category": "post-tool-use",
-      "title": "Hook : Exécuteur de tests automatique",
-      "file": "hooks/post-tool-use/fr/test-runner.md"
-    },
-    {
-      "id": "post-tool-use/auto-git-stage",
-      "category": "post-tool-use",
-      "title": "Hook: Auto Git-staging",
-      "file": "hooks/post-tool-use/nl/auto-git-stage.md"
-    },
-    {
-      "id": "post-tool-use/test-runner",
-      "category": "post-tool-use",
-      "title": "Hook: Auto-testrunner",
-      "file": "hooks/post-tool-use/nl/test-runner.md"
-    },
-    {
       "id": "post-tool-use/output-size-warn",
       "category": "post-tool-use",
       "title": "Hook: Large Output Detector",
@@ -17869,60 +17733,6 @@
       "file": "hooks/pre-tool-use/block-dangerous.md"
     },
     {
-      "id": "pre-tool-use/auto-allow-readonly",
-      "category": "pre-tool-use",
-      "title": "Hook: Auto-Genehmigung Schreibgeschützter Operationen",
-      "file": "hooks/pre-tool-use/de/auto-allow-readonly.md"
-    },
-    {
-      "id": "pre-tool-use/lint-check",
-      "category": "pre-tool-use",
-      "title": "Hook: Lint-Überprüfung vor dem Schreiben",
-      "file": "hooks/pre-tool-use/de/lint-check.md"
-    },
-    {
-      "id": "pre-tool-use/secret-scanner",
-      "category": "pre-tool-use",
-      "title": "Hook: Geheimnisse Scanner",
-      "file": "hooks/pre-tool-use/de/secret-scanner.md"
-    },
-    {
-      "id": "pre-tool-use/auto-allow-readonly",
-      "category": "pre-tool-use",
-      "title": "Hook: Auto-aprobación de operaciones de solo lectura",
-      "file": "hooks/pre-tool-use/es/auto-allow-readonly.md"
-    },
-    {
-      "id": "pre-tool-use/lint-check",
-      "category": "pre-tool-use",
-      "title": "Hook: Comprobación Lint antes de escribir",
-      "file": "hooks/pre-tool-use/es/lint-check.md"
-    },
-    {
-      "id": "pre-tool-use/secret-scanner",
-      "category": "pre-tool-use",
-      "title": "Hook: Escáner de secretos",
-      "file": "hooks/pre-tool-use/es/secret-scanner.md"
-    },
-    {
-      "id": "pre-tool-use/auto-allow-readonly",
-      "category": "pre-tool-use",
-      "title": "Hook : Approbation automatique des opérations en lecture seule",
-      "file": "hooks/pre-tool-use/fr/auto-allow-readonly.md"
-    },
-    {
-      "id": "pre-tool-use/lint-check",
-      "category": "pre-tool-use",
-      "title": "Hook : Vérification Lint avant écriture",
-      "file": "hooks/pre-tool-use/fr/lint-check.md"
-    },
-    {
-      "id": "pre-tool-use/secret-scanner",
-      "category": "pre-tool-use",
-      "title": "Hook : Numériseur de secrets",
-      "file": "hooks/pre-tool-use/fr/secret-scanner.md"
-    },
-    {
       "id": "pre-tool-use/git-push-confirm",
       "category": "pre-tool-use",
       "title": "Hook: Git Push Confirmation",
@@ -17939,24 +17749,6 @@
       "category": "pre-tool-use",
       "title": "Hook: Lint Check Before Write",
       "file": "hooks/pre-tool-use/lint-check.md"
-    },
-    {
-      "id": "pre-tool-use/auto-allow-readonly",
-      "category": "pre-tool-use",
-      "title": "Hook: Auto-goedkeuring voor leesbewerkingen",
-      "file": "hooks/pre-tool-use/nl/auto-allow-readonly.md"
-    },
-    {
-      "id": "pre-tool-use/lint-check",
-      "category": "pre-tool-use",
-      "title": "Hook: Lint-controle voor schrijven",
-      "file": "hooks/pre-tool-use/nl/lint-check.md"
-    },
-    {
-      "id": "pre-tool-use/secret-scanner",
-      "category": "pre-tool-use",
-      "title": "Hook: Geheimen scanner",
-      "file": "hooks/pre-tool-use/nl/secret-scanner.md"
     },
     {
       "id": "pre-tool-use/secret-scanner",
@@ -20314,6 +20106,12 @@
       "file": "guides/de/agent-orchestration.md"
     },
     {
+      "id": "agent-sdk-pack",
+      "lang": "de",
+      "title": "Agent SDK Pack — Vollständiger Entwicklerleitfaden",
+      "file": "guides/de/agent-sdk-pack.md"
+    },
+    {
       "id": "agent-teams",
       "lang": "de",
       "title": "Agent Teams — Multi-Session-Koordination",
@@ -20864,6 +20662,12 @@
       "lang": "es",
       "title": "Guía de orquestación de agentes",
       "file": "guides/es/agent-orchestration.md"
+    },
+    {
+      "id": "agent-sdk-pack",
+      "lang": "es",
+      "title": "Agent SDK Pack — Guía completa para desarrolladores",
+      "file": "guides/es/agent-sdk-pack.md"
     },
     {
       "id": "agent-teams",
@@ -21556,6 +21360,12 @@
       "file": "guides/fr/agent-orchestration.md"
     },
     {
+      "id": "agent-sdk-pack",
+      "lang": "fr",
+      "title": "Agent SDK Pack — Guide complet pour développeurs",
+      "file": "guides/fr/agent-sdk-pack.md"
+    },
+    {
       "id": "agent-teams",
       "lang": "fr",
       "title": "Équipes d'agents — Coordination multi-sessions",
@@ -22136,6 +21946,12 @@
       "lang": "nl",
       "title": "Handleiding voor agentorkestratie",
       "file": "guides/nl/agent-orchestration.md"
+    },
+    {
+      "id": "agent-sdk-pack",
+      "lang": "nl",
+      "title": "Agent SDK Pack — Volledige Ontwikkelaarsgids",
+      "file": "guides/nl/agent-sdk-pack.md"
     },
     {
       "id": "agent-teams",
@@ -23687,7 +23503,7 @@
   "summary": {
     "skills": 381,
     "agents": 104,
-    "hooks": 96,
+    "hooks": 40,
     "rules": 12,
     "workflows": 45,
     "prompts": 31,

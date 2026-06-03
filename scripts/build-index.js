@@ -119,6 +119,7 @@ for (const file of getFiles(path.join(ROOT, 'agents'))) {
 // Hooks (md docs)
 for (const file of getFiles(path.join(ROOT, 'hooks'))) {
   const rel = relPath(file)
+  if (isTranslation(rel)) continue
   const cat = rel.split('/')[1]
   const slug = path.basename(file, '.md')
   index.hooks.push({ id: `${cat}/${slug}`, category: cat, title: readTitle(file), file: rel })
@@ -174,6 +175,7 @@ for (const file of getFiles(path.join(ROOT, 'structures'))) {
 // Output styles
 for (const file of getFiles(path.join(ROOT, 'output-styles'))) {
   const rel = relPath(file)
+  if (isTranslation(rel)) continue
   if (path.basename(file) === 'README.md') continue
   const fm = readFrontmatter(file)
   index.outputStyles.push({ id: path.basename(file, '.md'), title: fm.name || readTitle(file), description: fm.description || '', file: rel })
@@ -208,6 +210,7 @@ for (const file of getFiles(path.join(ROOT, 'settings-templates'), '.json')) {
 // Routines
 for (const file of getFiles(path.join(ROOT, 'routines'))) {
   const rel = relPath(file)
+  if (isTranslation(rel)) continue
   if (path.basename(file) === 'README.md') continue
   index.routines.push({ id: path.basename(file, '.md'), title: readTitle(file), file: rel })
 }
