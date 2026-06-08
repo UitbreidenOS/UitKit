@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "claudient-personas",
+  "displayName": "Claudient — Personas",
+  "version": "1.0.0",
+  "description": "10 operating personas for Claude: startup-cto, solo-founder, growth-marketer, indie-hacker, enterprise-architect, data-driven-pm, devrel-advocate, agency-operator, ai-product-builder, fractional-exec.",
+  "author": {
+    "name": "tushar2704",
+    "email": "ceo@uitbreiden.com",
+    "url": "https://uitbreiden.com"
+  },
+  "homepage": "https://github.com/Claudient/Claudient",
+  "repository": "https://github.com/Claudient/Claudient",
+  "license": "CC-BY-SA-4.0",
+  "keywords": [
+    "claudient",
+    "claude-code",
+    "personas",
+    "roles"
+  ],
+  "agents": [
+    "./agents/agency-operator.md",
+    "./agents/ai-product-builder.md",
+    "./agents/data-driven-pm.md",
+    "./agents/devrel-advocate.md",
+    "./agents/enterprise-architect.md",
+    "./agents/fractional-exec.md",
+    "./agents/growth-marketer.md",
+    "./agents/indie-hacker.md",
+    "./agents/solo-founder.md",
+    "./agents/startup-cto.md"
+  ]
+}

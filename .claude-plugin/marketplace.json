@@ -171,6 +171,26 @@
       }
     },
     {
+      "name": "claudient-commands",
+      "source": "./plugins/claudient-commands",
+      "description": "100+ slash commands across git, testing, refactor, docs, debug, devops, database, security, frontend, api, ai-engineering, and productivity.",
+      "category": "commands",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704"
+      }
+    },
+    {
+      "name": "claudient-personas",
+      "source": "./plugins/claudient-personas",
+      "description": "10 operating personas for Claude: startup-cto, solo-founder, growth-marketer, indie-hacker, enterprise-architect, data-driven-pm, devrel-advocate, agency-operator, ai-product-builder, fractional-exec.",
+      "category": "personas",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704"
+      }
+    },
+    {
       "name": "claudient-everything",
       "source": "./plugins/claudient-everything",
       "description": "Meta-bundle listing all Claudient domain plugins (377+ skills, 104 agents). Install individual plugins: claudient-ai-engineering, claudient-automation, claudient-backend, claudient-data-ml, claudient-database, claudient-devops-infra, claudient-finance, claudient-finance-payments, claudient-git, claudient-gtm, claudient-legal, claudient-marketing, claudient-product, claudient-productivity, claudient-sdr, claudient-small-business. See README.md for install commands.",

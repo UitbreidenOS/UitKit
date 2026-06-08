@@ -6,8 +6,9 @@
 [![License: AGPL-3.0](https://img.shields.io/badge/code-AGPL--3.0-3b82f6.svg)](LICENSE-CODE)
 [![Content License: CC-BY-SA-4.0](https://img.shields.io/badge/content-CC--BY--SA--4.0-ec4899.svg)](LICENSE-CONTENT)
 [![Skills](https://img.shields.io/badge/skills-380+-f97316)](#skills-by-category)
-[![Agents](https://img.shields.io/badge/agents-104+-ec4899)](#agents)
-[![Plugins](https://img.shields.io/badge/plugin_marketplace-17_plugins-22c55e)](#install-as-a-claude-code-plugin)
+[![Agents](https://img.shields.io/badge/agents-182+-ec4899)](#agents)
+[![Commands](https://img.shields.io/badge/commands-100+-a855f7)](#slash-commands)
+[![Plugins](https://img.shields.io/badge/plugin_marketplace-19_plugins-22c55e)](#install-as-a-claude-code-plugin)
 [![Claude for Small Business](https://img.shields.io/badge/small_business-30+_skills-06b6d4)](#-claude-for-small-business)
 [![MCP](https://img.shields.io/badge/MCP_configs-31+-8b5cf6)](#top-100-mcp-servers)
 [![Languages](https://img.shields.io/badge/languages-EN%20FR%20DE%20NL%20ES-3b82f6)](#translations)
@@ -16,7 +17,7 @@
 
 **Stop explaining your stack to Claude every session.**
 
-Claudient is the largest open-source knowledge base for **Claude Code** — 380+ skills, 104+ specialist agents, 157 MCP server configs, 89 guides, 96 hooks, 45 workflows, 82 project structures, plus output styles, themes, statuslines, keybindings, settings templates, routines, and an Agent SDK pack — all installable in 30 seconds. Skills activate automatically based on what you're working on. Agents spawn when their expertise is needed. Hooks run on the right events. Works with any Claude Code project, in 5 languages. Including the most complete community knowledge base for **Claude for Small Business** — 30+ vertical and operator skills for solopreneurs, ecommerce, local services, coaches, and creators.
+Claudient is the largest open-source knowledge base for **Claude Code** — 380+ skills, 182+ specialist agents, 100+ slash commands, 157 MCP server configs, 89 guides, 40 hooks, 45 workflows, 82 project structures, 10 personas, 32 rules, plus output styles, themes, statuslines, keybindings, settings templates, routines, and an Agent SDK pack — all installable in 30 seconds. Skills activate automatically based on what you're working on. Agents spawn when their expertise is needed. Hooks run on the right events. Works with any Claude Code project, in 5 languages. Including the most complete community knowledge base for **Claude for Small Business** — 30+ vertical and operator skills for solopreneurs, ecommerce, local services, coaches, and creators.
 
 ```bash
 # Install as a Claude Code plugin marketplace (recommended)
@@ -48,7 +49,7 @@ Claudient ships as a native Claude Code **plugin marketplace**. Add it once, the
 /plugin install claudient-everything@claudient
 ```
 
-**17 plugins, 380+ auto-invoking skills, 104 agents:**
+**19 plugins, 380+ auto-invoking skills, 182 agents, 100 slash commands:**
 
 | Plugin | Skills | Plugin | Skills |
 |---|---|---|---|
@@ -58,9 +59,9 @@ Claudient ships as a native Claude Code **plugin marketplace**. Add it once, the
 | `claudient-devops-infra` | 36 | `claudient-automation` | 14 |
 | `claudient-gtm` | 32 | `claudient-database` | 12 |
 | `claudient-marketing` | 22 | `claudient-git` | 3 |
-| `claudient-legal` | 21 | `claudient-finance-payments` | 2 |
-| `claudient-sdr` | 18 | `claudient-everything` | meta-bundle |
-| `claudient-ai-engineering` | 17 | | |
+| `claudient-legal` | 21 | `claudient-commands` | 100 commands |
+| `claudient-sdr` | 18 | `claudient-personas` | 10 personas |
+| `claudient-ai-engineering` | 17 | `claudient-everything` | meta-bundle |
 
 Every skill is validated with `claude plugin validate --strict`. Prefer npm? `npx claudient add all` still works.
 
@@ -72,6 +73,8 @@ Claudient covers every primitive Claude Code supports, not just skills:
 
 | Category | What's inside | Install |
 |---|---|---|
+| **Slash commands** | 100+ commands across 12 categories — git, testing, refactor, docs, debug, devops, database, security, frontend, api, ai-engineering, productivity | `claudient-commands` plugin or `commands/` dir |
+| **Personas** | 10 operating profiles — startup-cto, solo-founder, growth-marketer, indie-hacker, enterprise-architect, data-driven-pm, devrel-advocate, agency-operator, ai-product-builder, fractional-exec | `claudient-personas` plugin or `personas/` dir |
 | **Output styles** | 8 styles — concise, mentor, code-reviewer, architect, plain-operator, security-paranoid, diagram-first, tdd-enforcer | copy to `~/.claude/output-styles/` |
 | **Themes** | 10 themes — Dracula, Nord, Tokyo Night, Catppuccin, Gruvbox, Solarized, Monokai, Rosé Pine, + Claudient brand | copy to `~/.claude/themes/`, then `/theme` |
 | **Statuslines** | 6 scripts — minimal, full, cost-watch, context-budget, git-focused, rate-limit | point `settings.json` `statusLine` at them |
@@ -81,6 +84,31 @@ Claudient covers every primitive Claude Code supports, not just skills:
 | **Routines** | 4 scheduled cloud-agent templates — daily-standup, pr-triage, dependency-audit, incident-watch | see [`routines/`](routines/) |
 | **Computer-use skills** | 4 — ui-testing, visual-qa, legacy-app-automation, screenshot-verify | `/plugin install` or copy |
 | **Agent SDK pack** | Full guide + runnable Python & TypeScript starter agents | see [`examples/agent-sdk/`](examples/agent-sdk/) |
+
+---
+
+## Slash commands
+
+<a name="slash-commands"></a>
+
+100+ slash commands across 12 categories — invoke with `/command-name` in any Claude Code session:
+
+| Category | Commands |
+|---|---|
+| `git` | commit-msg, pr-description, changelog, rebase-helper, conflict-resolver, branch-cleanup, squash-guide, gitignore-gen, release-notes, blame-explain |
+| `testing` | write-tests, test-coverage, fix-failing-test, mock-gen, e2e-scaffold, test-plan, flaky-finder, assertion-improve, tdd-start, snapshot-review |
+| `refactor` | extract-function, simplify, remove-dead-code, split-file, dedupe, modernize-syntax, tighten-types, rename-symbol, reduce-complexity, inline |
+| `docs` | readme-gen, api-docs, docstring-add, architecture-doc, comment-explain, contributing-gen, adr-write, onboarding-doc |
+| `debug` | explain-error, add-logging, repro-steps, stacktrace-analyze, memory-leak, race-condition, bisect-helper, perf-profile |
+| `devops` | dockerfile-gen, compose-gen, k8s-manifest, ci-pipeline, terraform-module, helm-chart, github-action, env-audit, healthcheck, rollback-plan |
+| `database` | migration-gen, query-optimize, schema-review, index-advisor, seed-data, n-plus-one-finder, backup-plan, er-diagram |
+| `security` | security-scan, dep-audit, secret-scan, authz-review, input-validation, owasp-check, threat-model, cors-config |
+| `frontend` | component-gen, a11y-audit, responsive-fix, state-refactor, form-validation, lighthouse-pass, storybook-gen, css-cleanup |
+| `api` | endpoint-gen, openapi-spec, rate-limit, pagination, error-schema, webhook-handler, versioning-plan, sdk-gen |
+| `ai-engineering` | prompt-improve, eval-harness, rag-setup, token-optimize, mcp-server-gen, agent-scaffold |
+| `productivity` | standup-notes, meeting-summary, task-breakdown, decision-doc, weekly-review, email-draft |
+
+Install: `/plugin install claudient-commands@claudient` or copy [`commands/`](commands/) into `.claude/commands/`.
 
 ---
 

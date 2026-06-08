@@ -26,10 +26,18 @@
     "./skills/"
   ],
   "agents": [
+    "./agents/b2b-saas-advisor.md",
     "./agents/brand-system-builder.md",
+    "./agents/devtools-gtm-specialist.md",
     "./agents/ecommerce-specialist.md",
+    "./agents/edtech-specialist.md",
+    "./agents/insurtech-specialist.md",
+    "./agents/legaltech-specialist.md",
     "./agents/local-services-specialist.md",
+    "./agents/marketplace-architect.md",
     "./agents/performance-auditor.md",
+    "./agents/proptech-specialist.md",
+    "./agents/saas-pricing-strategist.md",
     "./agents/small-business-advisor.md",
     "./agents/vision-analyst.md"
   ]

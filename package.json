@@ -47,6 +47,8 @@
     "guides/",
     "structures/",
     "plugins/",
+    "commands/",
+    "personas/",
     "output-styles/",
     "statuslines/",
     "themes/",

@@ -87,6 +87,8 @@ const index = {
   settingsTemplates: [],
   routines: [],
   plugins: [],
+  commands: [],
+  personas: [],
 }
 
 // Skills
@@ -172,6 +174,26 @@ for (const file of getFiles(path.join(ROOT, 'structures'))) {
   index.structures.push({ id: slug, type, title: readTitle(file), tagline, file: rel })
 }
 
+// Commands
+for (const file of getFiles(path.join(ROOT, 'commands'))) {
+  const rel = relPath(file)
+  if (isTranslation(rel)) continue
+  const parts = rel.split('/')
+  const cat = parts[1]
+  const slug = path.basename(file, '.md')
+  const fm = readFrontmatter(file)
+  index.commands.push({ id: `${cat}/${slug}`, category: cat, title: readTitle(file), description: fm.description || '', file: rel })
+}
+
+// Personas
+for (const file of getFiles(path.join(ROOT, 'personas'))) {
+  const rel = relPath(file)
+  if (isTranslation(rel)) continue
+  if (path.basename(file) === 'README.md') continue
+  const fm = readFrontmatter(file)
+  index.personas.push({ id: path.basename(file, '.md'), title: readTitle(file), description: fm.description || '', file: rel })
+}
+
 // Output styles
 for (const file of getFiles(path.join(ROOT, 'output-styles'))) {
   const rel = relPath(file)
@@ -248,9 +270,11 @@ index.summary = {
   settingsTemplates: index.settingsTemplates.length,
   routines: index.routines.length,
   plugins: index.plugins.length,
+  commands: index.commands.length,
+  personas: index.personas.length,
   languages: ['en', ...LANGS],
 }
 
 const outPath = path.join(ROOT, 'index.json')
 fs.writeFileSync(outPath, JSON.stringify(index, null, 2) + '\n')
-console.log(`Generated index.json — ${index.summary.skills} skills, ${index.summary.agents} agents, ${index.summary.hooks} hooks, ${index.summary.structures} structures, ${index.summary.plugins} plugins, ${index.summary.themes} themes, ${index.summary.outputStyles} output-styles`)
+console.log(`Generated index.json — ${index.summary.skills} skills, ${index.summary.agents} agents, ${index.summary.hooks} hooks, ${index.summary.structures} structures, ${index.summary.plugins} plugins, ${index.summary.commands} commands, ${index.summary.personas} personas, ${index.summary.themes} themes, ${index.summary.outputStyles} output-styles`)

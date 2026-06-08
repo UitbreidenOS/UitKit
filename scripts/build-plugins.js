@@ -372,6 +372,96 @@ for (const category of SKILL_CATEGORIES) {
   })
 }
 
+// ---- claudient-commands plugin ----
+{
+  const cmdPluginDir = path.join(PLUGINS_DIR, 'claudient-commands')
+  const cmdPluginMetaDir = path.join(cmdPluginDir, '.claude-plugin')
+  const cmdCommandsDir = path.join(cmdPluginDir, 'commands')
+  ensureDir(cmdCommandsDir)
+  ensureDir(cmdPluginMetaDir)
+
+  // Copy all command files preserving category subdirs
+  const commandsSourceDir = path.join(ROOT, 'commands')
+  if (fs.existsSync(commandsSourceDir)) {
+    for (const cat of fs.readdirSync(commandsSourceDir, { withFileTypes: true })) {
+      if (!cat.isDirectory() || LANG_DIRS.has(cat.name)) continue
+      const catOutDir = path.join(cmdCommandsDir, cat.name)
+      ensureDir(catOutDir)
+      const catDir = path.join(commandsSourceDir, cat.name)
+      for (const f of fs.readdirSync(catDir).filter(n => n.endsWith('.md'))) {
+        fs.copyFileSync(path.join(catDir, f), path.join(catOutDir, f))
+      }
+    }
+  }
+
+  const cmdTotalFiles = collectSkillFiles(cmdCommandsDir).length
+  const cmdPluginJson = {
+    $schema: 'https://json.schemastore.org/claude-code-plugin-manifest.json',
+    name: 'claudient-commands',
+    displayName: 'Claudient — Slash Commands',
+    version: '1.0.0',
+    description: `${cmdTotalFiles}+ slash commands across git, testing, refactor, docs, debug, devops, database, security, frontend, api, ai-engineering, and productivity.`,
+    author: { name: 'tushar2704', email: 'ceo@uitbreiden.com', url: 'https://uitbreiden.com' },
+    homepage: 'https://github.com/Claudient/Claudient',
+    repository: 'https://github.com/Claudient/Claudient',
+    license: 'CC-BY-SA-4.0',
+    keywords: ['claudient', 'claude-code', 'commands', 'slash-commands'],
+    commands: ['./commands/'],
+  }
+  fs.writeFileSync(path.join(cmdPluginMetaDir, 'plugin.json'), JSON.stringify(cmdPluginJson, null, 2) + '\n')
+  buildStats.push({ plugin: 'claudient-commands', skills: 0, agents: 0, commands: cmdTotalFiles })
+  pluginSummaries.push({
+    name: 'claudient-commands',
+    source: './plugins/claudient-commands',
+    description: cmdPluginJson.description,
+    category: 'commands',
+    version: '1.0.0',
+    author: { name: 'tushar2704' },
+  })
+}
+
+// ---- claudient-personas plugin ----
+{
+  const pPluginDir = path.join(PLUGINS_DIR, 'claudient-personas')
+  const pPluginMetaDir = path.join(pPluginDir, '.claude-plugin')
+  const pAgentsDir = path.join(pPluginDir, 'agents')
+  ensureDir(pAgentsDir)
+  ensureDir(pPluginMetaDir)
+
+  const personasSourceDir = path.join(ROOT, 'personas')
+  const personaFiles = []
+  if (fs.existsSync(personasSourceDir)) {
+    for (const f of fs.readdirSync(personasSourceDir).filter(n => n.endsWith('.md'))) {
+      fs.copyFileSync(path.join(personasSourceDir, f), path.join(pAgentsDir, f))
+      personaFiles.push(`./agents/${f}`)
+    }
+  }
+
+  const pPluginJson = {
+    $schema: 'https://json.schemastore.org/claude-code-plugin-manifest.json',
+    name: 'claudient-personas',
+    displayName: 'Claudient — Personas',
+    version: '1.0.0',
+    description: `10 operating personas for Claude: startup-cto, solo-founder, growth-marketer, indie-hacker, enterprise-architect, data-driven-pm, devrel-advocate, agency-operator, ai-product-builder, fractional-exec.`,
+    author: { name: 'tushar2704', email: 'ceo@uitbreiden.com', url: 'https://uitbreiden.com' },
+    homepage: 'https://github.com/Claudient/Claudient',
+    repository: 'https://github.com/Claudient/Claudient',
+    license: 'CC-BY-SA-4.0',
+    keywords: ['claudient', 'claude-code', 'personas', 'roles'],
+    agents: personaFiles,
+  }
+  fs.writeFileSync(path.join(pPluginMetaDir, 'plugin.json'), JSON.stringify(pPluginJson, null, 2) + '\n')
+  buildStats.push({ plugin: 'claudient-personas', skills: 0, agents: personaFiles.length })
+  pluginSummaries.push({
+    name: 'claudient-personas',
+    source: './plugins/claudient-personas',
+    description: pPluginJson.description,
+    category: 'personas',
+    version: '1.0.0',
+    author: { name: 'tushar2704' },
+  })
+}
+
 // ---- claudient-everything meta-bundle ----
 // Strategy: list in marketplace.json as a top-level entry, no physical copy needed.
 // Users who want everything install individual domain plugins.

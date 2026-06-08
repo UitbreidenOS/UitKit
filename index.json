@@ -1,6 +1,6 @@
 {
   "version": "1.10.0",
-  "generated": "2026-06-03T00:29:17.796Z",
+  "generated": "2026-06-08T15:39:35.645Z",
   "skills": [
     {
       "id": "ai-engineering/advanced-tool-use",
@@ -15079,10 +15079,28 @@
       "file": "agents/roles/adr-writer.md"
     },
     {
+      "id": "roles/agent-architect",
+      "lang": "en",
+      "title": "Agent Architect",
+      "file": "agents/roles/agent-architect.md"
+    },
+    {
+      "id": "roles/ai-safety-engineer",
+      "lang": "en",
+      "title": "Ai Safety Engineer",
+      "file": "agents/roles/ai-safety-engineer.md"
+    },
+    {
       "id": "roles/ai-writing-auditor",
       "lang": "en",
       "title": "Ai Writing Auditor",
       "file": "agents/roles/ai-writing-auditor.md"
+    },
+    {
+      "id": "roles/analytics-engineer",
+      "lang": "en",
+      "title": "Analytics Engineer",
+      "file": "agents/roles/analytics-engineer.md"
     },
     {
       "id": "roles/angular-architect",
@@ -15097,6 +15115,30 @@
       "file": "agents/roles/api-designer.md"
     },
     {
+      "id": "roles/api-gateway-specialist",
+      "lang": "en",
+      "title": "Api Gateway Specialist",
+      "file": "agents/roles/api-gateway-specialist.md"
+    },
+    {
+      "id": "roles/appsec-engineer",
+      "lang": "en",
+      "title": "Appsec Engineer",
+      "file": "agents/roles/appsec-engineer.md"
+    },
+    {
+      "id": "roles/aws-solutions-architect",
+      "lang": "en",
+      "title": "Aws Solutions Architect",
+      "file": "agents/roles/aws-solutions-architect.md"
+    },
+    {
+      "id": "roles/azure-architect",
+      "lang": "en",
+      "title": "Azure Architect",
+      "file": "agents/roles/azure-architect.md"
+    },
+    {
       "id": "roles/blockchain-developer",
       "lang": "en",
       "title": "Blockchain Developer",
@@ -15107,6 +15149,12 @@
       "lang": "en",
       "title": "Build Engineer",
       "file": "agents/roles/build-engineer.md"
+    },
+    {
+      "id": "roles/cdc-specialist",
+      "lang": "en",
+      "title": "Cdc Specialist",
+      "file": "agents/roles/cdc-specialist.md"
     },
     {
       "id": "roles/changelog-narrator",
@@ -15127,6 +15175,24 @@
       "file": "agents/roles/cli-developer.md"
     },
     {
+      "id": "roles/clojure-engineer",
+      "lang": "en",
+      "title": "Clojure Engineer",
+      "file": "agents/roles/clojure-engineer.md"
+    },
+    {
+      "id": "roles/cloud-security-engineer",
+      "lang": "en",
+      "title": "Cloud Security Engineer",
+      "file": "agents/roles/cloud-security-engineer.md"
+    },
+    {
+      "id": "roles/code-quality-auditor",
+      "lang": "en",
+      "title": "Code Quality Auditor",
+      "file": "agents/roles/code-quality-auditor.md"
+    },
+    {
       "id": "roles/code-simplifier",
       "lang": "en",
       "title": "Code Simplifier",
@@ -15145,6 +15211,24 @@
       "file": "agents/roles/competitive-analyst.md"
     },
     {
+      "id": "roles/compliance-auditor",
+      "lang": "en",
+      "title": "Compliance Auditor",
+      "file": "agents/roles/compliance-auditor.md"
+    },
+    {
+      "id": "roles/computer-vision-engineer",
+      "lang": "en",
+      "title": "Computer Vision Engineer",
+      "file": "agents/roles/computer-vision-engineer.md"
+    },
+    {
+      "id": "roles/content-strategist",
+      "lang": "en",
+      "title": "Content Strategist",
+      "file": "agents/roles/content-strategist.md"
+    },
+    {
       "id": "roles/context-auditor",
       "lang": "en",
       "title": "Context Auditor",
@@ -15157,10 +15241,52 @@
       "file": "agents/roles/context-manager.md"
     },
     {
+      "id": "roles/cpp-engineer",
+      "lang": "en",
+      "title": "Cpp Engineer",
+      "file": "agents/roles/cpp-engineer.md"
+    },
+    {
+      "id": "roles/crypto-engineer",
+      "lang": "en",
+      "title": "Crypto Engineer",
+      "file": "agents/roles/crypto-engineer.md"
+    },
+    {
+      "id": "roles/css-architect",
+      "lang": "en",
+      "title": "Css Architect",
+      "file": "agents/roles/css-architect.md"
+    },
+    {
+      "id": "roles/customer-success-manager",
+      "lang": "en",
+      "title": "Customer Success Manager",
+      "file": "agents/roles/customer-success-manager.md"
+    },
+    {
       "id": "roles/data-pipeline-architect",
       "lang": "en",
       "title": "Data Pipeline Architect",
       "file": "agents/roles/data-pipeline-architect.md"
+    },
+    {
+      "id": "roles/data-scientist",
+      "lang": "en",
+      "title": "Data Scientist",
+      "file": "agents/roles/data-scientist.md"
+    },
+    {
+      "id": "roles/database-administrator",
+      "lang": "en",
+      "title": "Database Administrator",
+      "file": "agents/roles/database-administrator.md"
+    },
+    {
+      "id": "roles/dbt-specialist",
+      "lang": "en",
+      "title": "dbt Specialist",
+      "file": "agents/roles/dbt-specialist.md"
     },
     {
       "id": "roles/accessibility-tester",
@@ -15607,10 +15733,46 @@
       "file": "agents/roles/diagram-generator.md"
     },
     {
+      "id": "roles/documentation-engineer",
+      "lang": "en",
+      "title": "Documentation Engineer",
+      "file": "agents/roles/documentation-engineer.md"
+    },
+    {
+      "id": "roles/dotnet-architect",
+      "lang": "en",
+      "title": ".NET Architect",
+      "file": "agents/roles/dotnet-architect.md"
+    },
+    {
+      "id": "roles/dr-bcp-specialist",
+      "lang": "en",
+      "title": "Dr Bcp Specialist",
+      "file": "agents/roles/dr-bcp-specialist.md"
+    },
+    {
       "id": "roles/dx-optimizer",
       "lang": "en",
       "title": "Dx Optimizer",
       "file": "agents/roles/dx-optimizer.md"
+    },
+    {
+      "id": "roles/edge-computing-engineer",
+      "lang": "en",
+      "title": "Edge Computing Engineer",
+      "file": "agents/roles/edge-computing-engineer.md"
+    },
+    {
+      "id": "roles/elasticsearch-specialist",
+      "lang": "en",
+      "title": "Elasticsearch Specialist",
+      "file": "agents/roles/elasticsearch-specialist.md"
+    },
+    {
+      "id": "roles/electron-developer",
+      "lang": "en",
+      "title": "Electron Developer",
+      "file": "agents/roles/electron-developer.md"
     },
     {
       "id": "roles/elixir-expert",
@@ -16063,10 +16225,34 @@
       "file": "agents/roles/es/workflow-orchestrator.md"
     },
     {
+      "id": "roles/eval-engineer",
+      "lang": "en",
+      "title": "Eval Engineer",
+      "file": "agents/roles/eval-engineer.md"
+    },
+    {
       "id": "roles/expo-react-native",
       "lang": "en",
       "title": "Expo React Native",
       "file": "agents/roles/expo-react-native.md"
+    },
+    {
+      "id": "roles/feature-store-engineer",
+      "lang": "en",
+      "title": "Feature Store Engineer",
+      "file": "agents/roles/feature-store-engineer.md"
+    },
+    {
+      "id": "roles/fine-tuning-specialist",
+      "lang": "en",
+      "title": "Fine Tuning Specialist",
+      "file": "agents/roles/fine-tuning-specialist.md"
+    },
+    {
+      "id": "roles/finops-engineer",
+      "lang": "en",
+      "title": "Finops Engineer",
+      "file": "agents/roles/finops-engineer.md"
     },
     {
       "id": "roles/fintech-engineer",
@@ -16525,10 +16711,28 @@
       "file": "agents/roles/game-developer.md"
     },
     {
+      "id": "roles/gcp-architect",
+      "lang": "en",
+      "title": "Gcp Architect",
+      "file": "agents/roles/gcp-architect.md"
+    },
+    {
+      "id": "roles/go-engineer",
+      "lang": "en",
+      "title": "Go Engineer",
+      "file": "agents/roles/go-engineer.md"
+    },
+    {
       "id": "roles/graphql-architect",
       "lang": "en",
       "title": "Graphql Architect",
       "file": "agents/roles/graphql-architect.md"
+    },
+    {
+      "id": "roles/growth-engineer",
+      "lang": "en",
+      "title": "Growth Engineer",
+      "file": "agents/roles/growth-engineer.md"
     },
     {
       "id": "roles/healthcare-admin",
@@ -16543,10 +16747,22 @@
       "file": "agents/roles/hypothesis-tester.md"
     },
     {
+      "id": "roles/iam-specialist",
+      "lang": "en",
+      "title": "Iam Specialist",
+      "file": "agents/roles/iam-specialist.md"
+    },
+    {
       "id": "roles/incident-commander",
       "lang": "en",
       "title": "Incident Commander",
       "file": "agents/roles/incident-commander.md"
+    },
+    {
+      "id": "roles/incident-responder",
+      "lang": "en",
+      "title": "Incident Responder",
+      "file": "agents/roles/incident-responder.md"
     },
     {
       "id": "roles/iot-engineer",
@@ -16561,10 +16777,28 @@
       "file": "agents/roles/it-ops-orchestrator.md"
     },
     {
+      "id": "roles/java-architect",
+      "lang": "en",
+      "title": "Java Architect",
+      "file": "agents/roles/java-architect.md"
+    },
+    {
+      "id": "roles/kafka-specialist",
+      "lang": "en",
+      "title": "Kafka Specialist",
+      "file": "agents/roles/kafka-specialist.md"
+    },
+    {
       "id": "roles/knowledge-synthesizer",
       "lang": "en",
       "title": "Knowledge Synthesizer",
       "file": "agents/roles/knowledge-synthesizer.md"
+    },
+    {
+      "id": "roles/kotlin-engineer",
+      "lang": "en",
+      "title": "Kotlin Engineer",
+      "file": "agents/roles/kotlin-engineer.md"
     },
     {
       "id": "roles/kubernetes-architect",
@@ -16615,10 +16849,28 @@
       "file": "agents/roles/mcp-developer.md"
     },
     {
+      "id": "roles/message-queue-architect",
+      "lang": "en",
+      "title": "Message Queue Architect",
+      "file": "agents/roles/message-queue-architect.md"
+    },
+    {
+      "id": "roles/micro-frontend-architect",
+      "lang": "en",
+      "title": "Micro Frontend Architect",
+      "file": "agents/roles/micro-frontend-architect.md"
+    },
+    {
       "id": "roles/microservices-architect",
       "lang": "en",
       "title": "Microservices Architect",
       "file": "agents/roles/microservices-architect.md"
+    },
+    {
+      "id": "roles/ml-platform-engineer",
+      "lang": "en",
+      "title": "Ml Platform Engineer",
+      "file": "agents/roles/ml-platform-engineer.md"
     },
     {
       "id": "roles/mlops-engineer",
@@ -16639,10 +16891,22 @@
       "file": "agents/roles/multi-agent-coordinator.md"
     },
     {
+      "id": "roles/multimodal-engineer",
+      "lang": "en",
+      "title": "Multimodal Engineer",
+      "file": "agents/roles/multimodal-engineer.md"
+    },
+    {
       "id": "roles/network-engineer",
       "lang": "en",
       "title": "Network Engineer",
       "file": "agents/roles/network-engineer.md"
+    },
+    {
+      "id": "roles/nextjs-architect",
+      "lang": "en",
+      "title": "Nextjs Architect",
+      "file": "agents/roles/nextjs-architect.md"
     },
     {
       "id": "roles/accessibility-tester",
@@ -17083,6 +17347,18 @@
       "file": "agents/roles/nlp-engineer.md"
     },
     {
+      "id": "roles/observability-engineer",
+      "lang": "en",
+      "title": "Observability Engineer",
+      "file": "agents/roles/observability-engineer.md"
+    },
+    {
+      "id": "roles/partnerships-manager",
+      "lang": "en",
+      "title": "Partnerships Manager",
+      "file": "agents/roles/partnerships-manager.md"
+    },
+    {
       "id": "roles/penetration-tester",
       "lang": "en",
       "title": "Penetration Tester",
@@ -17095,10 +17371,22 @@
       "file": "agents/roles/performance-optimizer.md"
     },
     {
+      "id": "roles/performance-test-engineer",
+      "lang": "en",
+      "title": "Performance Test Engineer",
+      "file": "agents/roles/performance-test-engineer.md"
+    },
+    {
       "id": "roles/platform-engineer",
       "lang": "en",
       "title": "Platform Engineer",
       "file": "agents/roles/platform-engineer.md"
+    },
+    {
+      "id": "roles/postgres-specialist",
+      "lang": "en",
+      "title": "Postgres Specialist",
+      "file": "agents/roles/postgres-specialist.md"
     },
     {
       "id": "roles/powershell-expert",
@@ -17107,16 +17395,34 @@
       "file": "agents/roles/powershell-expert.md"
     },
     {
+      "id": "roles/product-marketer",
+      "lang": "en",
+      "title": "Product Marketer",
+      "file": "agents/roles/product-marketer.md"
+    },
+    {
       "id": "roles/prompt-optimizer",
       "lang": "en",
       "title": "Prompt Optimizer",
       "file": "agents/roles/prompt-optimizer.md"
     },
     {
+      "id": "roles/qa-automation-engineer",
+      "lang": "en",
+      "title": "Qa Automation Engineer",
+      "file": "agents/roles/qa-automation-engineer.md"
+    },
+    {
       "id": "roles/quant-analyst",
       "lang": "en",
       "title": "Quant Analyst",
       "file": "agents/roles/quant-analyst.md"
+    },
+    {
+      "id": "roles/rag-engineer",
+      "lang": "en",
+      "title": "Rag Engineer",
+      "file": "agents/roles/rag-engineer.md"
     },
     {
       "id": "roles/rails-expert",
@@ -17131,16 +17437,40 @@
       "file": "agents/roles/real-estate-specialist.md"
     },
     {
+      "id": "roles/recommendation-engineer",
+      "lang": "en",
+      "title": "Recommendation Engineer",
+      "file": "agents/roles/recommendation-engineer.md"
+    },
+    {
       "id": "roles/red-team",
       "lang": "en",
       "title": "Red Team",
       "file": "agents/roles/red-team.md"
     },
     {
+      "id": "roles/redis-specialist",
+      "lang": "en",
+      "title": "Redis Specialist",
+      "file": "agents/roles/redis-specialist.md"
+    },
+    {
+      "id": "roles/release-manager",
+      "lang": "en",
+      "title": "Release Manager",
+      "file": "agents/roles/release-manager.md"
+    },
+    {
       "id": "roles/restaurant-specialist",
       "lang": "en",
       "title": "Restaurant Specialist",
       "file": "agents/roles/restaurant-specialist.md"
+    },
+    {
+      "id": "roles/revenue-ops-analyst",
+      "lang": "en",
+      "title": "Revenue Ops Analyst",
+      "file": "agents/roles/revenue-ops-analyst.md"
     },
     {
       "id": "roles/rl-engineer",
@@ -17153,6 +17483,18 @@
       "lang": "en",
       "title": "Rust Engineer",
       "file": "agents/roles/rust-engineer.md"
+    },
+    {
+      "id": "roles/sales-engineer",
+      "lang": "en",
+      "title": "Sales Engineer",
+      "file": "agents/roles/sales-engineer.md"
+    },
+    {
+      "id": "roles/scala-engineer",
+      "lang": "en",
+      "title": "Scala Engineer",
+      "file": "agents/roles/scala-engineer.md"
     },
     {
       "id": "roles/scientific-researcher",
@@ -17185,10 +17527,46 @@
       "file": "agents/roles/senior-frontend.md"
     },
     {
+      "id": "roles/soc-analyst",
+      "lang": "en",
+      "title": "Soc Analyst",
+      "file": "agents/roles/soc-analyst.md"
+    },
+    {
+      "id": "roles/solidjs-engineer",
+      "lang": "en",
+      "title": "Solidjs Engineer",
+      "file": "agents/roles/solidjs-engineer.md"
+    },
+    {
+      "id": "roles/solutions-architect",
+      "lang": "en",
+      "title": "Solutions Architect",
+      "file": "agents/roles/solutions-architect.md"
+    },
+    {
       "id": "roles/sre-engineer",
       "lang": "en",
       "title": "Sre Engineer",
       "file": "agents/roles/sre-engineer.md"
+    },
+    {
+      "id": "roles/streaming-data-engineer",
+      "lang": "en",
+      "title": "Streaming Data Engineer",
+      "file": "agents/roles/streaming-data-engineer.md"
+    },
+    {
+      "id": "roles/supply-chain-security",
+      "lang": "en",
+      "title": "Supply Chain Security",
+      "file": "agents/roles/supply-chain-security.md"
+    },
+    {
+      "id": "roles/svelte-architect",
+      "lang": "en",
+      "title": "Svelte Architect",
+      "file": "agents/roles/svelte-architect.md"
     },
     {
       "id": "roles/swift-expert",
@@ -17197,16 +17575,52 @@
       "file": "agents/roles/swift-expert.md"
     },
     {
+      "id": "roles/terraform-specialist",
+      "lang": "en",
+      "title": "Terraform Specialist",
+      "file": "agents/roles/terraform-specialist.md"
+    },
+    {
+      "id": "roles/test-architect",
+      "lang": "en",
+      "title": "Test Architect",
+      "file": "agents/roles/test-architect.md"
+    },
+    {
       "id": "roles/trend-analyst",
       "lang": "en",
       "title": "Trend Analyst",
       "file": "agents/roles/trend-analyst.md"
     },
     {
+      "id": "roles/vector-search-engineer",
+      "lang": "en",
+      "title": "Vector Search Engineer",
+      "file": "agents/roles/vector-search-engineer.md"
+    },
+    {
+      "id": "roles/voice-ai-engineer",
+      "lang": "en",
+      "title": "Voice Ai Engineer",
+      "file": "agents/roles/voice-ai-engineer.md"
+    },
+    {
+      "id": "roles/vue-architect",
+      "lang": "en",
+      "title": "Vue Architect",
+      "file": "agents/roles/vue-architect.md"
+    },
+    {
       "id": "roles/watchdog",
       "lang": "en",
       "title": "Watchdog",
       "file": "agents/roles/watchdog.md"
+    },
+    {
+      "id": "roles/web-animations-engineer",
+      "lang": "en",
+      "title": "Web Animations Engineer",
+      "file": "agents/roles/web-animations-engineer.md"
     },
     {
       "id": "roles/websocket-engineer",
@@ -17231,6 +17645,12 @@
       "lang": "en",
       "title": "Workflow Orchestrator",
       "file": "agents/roles/workflow-orchestrator.md"
+    },
+    {
+      "id": "roles/zig-engineer",
+      "lang": "en",
+      "title": "Zig Engineer",
+      "file": "agents/roles/zig-engineer.md"
     },
     {
       "id": "sdr/sdr-copywriter",
@@ -17353,6 +17773,12 @@
       "file": "agents/sdr/sdr-researcher.md"
     },
     {
+      "id": "specialists/b2b-saas-advisor",
+      "lang": "en",
+      "title": "B2b Saas Advisor",
+      "file": "agents/specialists/b2b-saas-advisor.md"
+    },
+    {
       "id": "specialists/brand-system-builder",
       "lang": "en",
       "title": "Brand System Builder",
@@ -17395,10 +17821,22 @@
       "file": "agents/specialists/de/vision-analyst.md"
     },
     {
+      "id": "specialists/devtools-gtm-specialist",
+      "lang": "en",
+      "title": "Devtools Gtm Specialist",
+      "file": "agents/specialists/devtools-gtm-specialist.md"
+    },
+    {
       "id": "specialists/ecommerce-specialist",
       "lang": "en",
       "title": "Ecommerce Specialist",
       "file": "agents/specialists/ecommerce-specialist.md"
+    },
+    {
+      "id": "specialists/edtech-specialist",
+      "lang": "en",
+      "title": "Edtech Specialist",
+      "file": "agents/specialists/edtech-specialist.md"
     },
     {
       "id": "specialists/brand-system-builder",
@@ -17473,10 +17911,28 @@
       "file": "agents/specialists/fr/vision-analyst.md"
     },
     {
+      "id": "specialists/insurtech-specialist",
+      "lang": "en",
+      "title": "Insurtech Specialist",
+      "file": "agents/specialists/insurtech-specialist.md"
+    },
+    {
+      "id": "specialists/legaltech-specialist",
+      "lang": "en",
+      "title": "Legaltech Specialist",
+      "file": "agents/specialists/legaltech-specialist.md"
+    },
+    {
       "id": "specialists/local-services-specialist",
       "lang": "en",
       "title": "Local Services Specialist",
       "file": "agents/specialists/local-services-specialist.md"
+    },
+    {
+      "id": "specialists/marketplace-architect",
+      "lang": "en",
+      "title": "Marketplace Architect",
+      "file": "agents/specialists/marketplace-architect.md"
     },
     {
       "id": "specialists/brand-system-builder",
@@ -17519,6 +17975,18 @@
       "lang": "en",
       "title": "Performance Auditor",
       "file": "agents/specialists/performance-auditor.md"
+    },
+    {
+      "id": "specialists/proptech-specialist",
+      "lang": "en",
+      "title": "Proptech Specialist",
+      "file": "agents/specialists/proptech-specialist.md"
+    },
+    {
+      "id": "specialists/saas-pricing-strategist",
+      "lang": "en",
+      "title": "Saas Pricing Strategist",
+      "file": "agents/specialists/saas-pricing-strategist.md"
     },
     {
       "id": "specialists/small-business-advisor",
@@ -17777,6 +18245,18 @@
   ],
   "rules": [
     {
+      "id": "common/accessibility",
+      "lang": "en",
+      "title": "Accessibility Rules",
+      "file": "rules/common/accessibility.md"
+    },
+    {
+      "id": "common/agent-design",
+      "lang": "en",
+      "title": "Agent Design Rules",
+      "file": "rules/common/agent-design.md"
+    },
+    {
       "id": "common/ai-llm",
       "lang": "en",
       "title": "AI and LLM Rules",
@@ -17789,10 +18269,34 @@
       "file": "rules/common/api-design.md"
     },
     {
+      "id": "common/ci-cd",
+      "lang": "en",
+      "title": "CI/CD Rules",
+      "file": "rules/common/ci-cd.md"
+    },
+    {
+      "id": "common/code-review",
+      "lang": "en",
+      "title": "Code Review Rules",
+      "file": "rules/common/code-review.md"
+    },
+    {
       "id": "common/coding-style",
       "lang": "en",
       "title": "Coding Style Rules",
       "file": "rules/common/coding-style.md"
+    },
+    {
+      "id": "common/commit-conventions",
+      "lang": "en",
+      "title": "Commit Conventions Rules",
+      "file": "rules/common/commit-conventions.md"
+    },
+    {
+      "id": "common/data-privacy",
+      "lang": "en",
+      "title": "Data Privacy Rules",
+      "file": "rules/common/data-privacy.md"
     },
     {
       "id": "common/database-migrations",
@@ -17829,6 +18333,24 @@
       "lang": "de",
       "title": "Test-Regeln",
       "file": "rules/common/de/testing.md"
+    },
+    {
+      "id": "common/dependency-management",
+      "lang": "en",
+      "title": "Dependency Management Rules",
+      "file": "rules/common/dependency-management.md"
+    },
+    {
+      "id": "common/docker",
+      "lang": "en",
+      "title": "Docker Rules",
+      "file": "rules/common/docker.md"
+    },
+    {
+      "id": "common/documentation",
+      "lang": "en",
+      "title": "Documentation Rules",
+      "file": "rules/common/documentation.md"
     },
     {
       "id": "common/error-handling",
@@ -17897,10 +18419,34 @@
       "file": "rules/common/fr/testing.md"
     },
     {
+      "id": "common/frontend-performance",
+      "lang": "en",
+      "title": "Frontend Performance Rules",
+      "file": "rules/common/frontend-performance.md"
+    },
+    {
       "id": "common/git",
       "lang": "en",
       "title": "Git Rules",
       "file": "rules/common/git.md"
+    },
+    {
+      "id": "common/graphql",
+      "lang": "en",
+      "title": "GraphQL Rules",
+      "file": "rules/common/graphql.md"
+    },
+    {
+      "id": "common/kubernetes",
+      "lang": "en",
+      "title": "Kubernetes Rules",
+      "file": "rules/common/kubernetes.md"
+    },
+    {
+      "id": "common/logging",
+      "lang": "en",
+      "title": "Logging Rules",
+      "file": "rules/common/logging.md"
     },
     {
       "id": "common/coding-style",
@@ -17933,16 +18479,46 @@
       "file": "rules/common/nl/testing.md"
     },
     {
+      "id": "common/observability",
+      "lang": "en",
+      "title": "Observability Rules",
+      "file": "rules/common/observability.md"
+    },
+    {
       "id": "common/performance",
       "lang": "en",
       "title": "Performance Rules",
       "file": "rules/common/performance.md"
     },
     {
+      "id": "common/rest-api",
+      "lang": "en",
+      "title": "REST API Rules",
+      "file": "rules/common/rest-api.md"
+    },
+    {
+      "id": "common/secrets-management",
+      "lang": "en",
+      "title": "Secrets Management Rules",
+      "file": "rules/common/secrets-management.md"
+    },
+    {
       "id": "common/security",
       "lang": "en",
       "title": "Security Rules",
       "file": "rules/common/security.md"
+    },
+    {
+      "id": "common/sql",
+      "lang": "en",
+      "title": "SQL Rules",
+      "file": "rules/common/sql.md"
+    },
+    {
+      "id": "common/terraform",
+      "lang": "en",
+      "title": "Terraform Rules",
+      "file": "rules/common/terraform.md"
     },
     {
       "id": "common/testing",
@@ -18033,6 +18609,18 @@
       "lang": "en",
       "title": "Python Rules",
       "file": "rules/language-specific/python.md"
+    },
+    {
+      "id": "language-specific/react",
+      "lang": "en",
+      "title": "React Rules",
+      "file": "rules/language-specific/react.md"
+    },
+    {
+      "id": "language-specific/rust",
+      "lang": "en",
+      "title": "Rust Rules",
+      "file": "rules/language-specific/rust.md"
     },
     {
       "id": "language-specific/typescript",
@@ -23388,6 +23976,14 @@
       "file": "plugins/claudient-backend/.claude-plugin/plugin.json"
     },
     {
+      "id": "claudient-commands",
+      "displayName": "Claudient — Slash Commands",
+      "description": "100+ slash commands across git, testing, refactor, docs, debug, devops, database, security, frontend, api, ai-engineering, and productivity.",
+      "version": "1.0.0",
+      "skills": 0,
+      "file": "plugins/claudient-commands/.claude-plugin/plugin.json"
+    },
+    {
       "id": "claudient-data-ml",
       "displayName": "Claudient — Data & ML",
       "description": "Data pipelines, dbt, Apache Spark, Kafka, MLOps, MLflow, PyTorch, TensorFlow, NLP pipelines, pandas/polars, reinforcement learning, and synthetic data generation.",
@@ -23468,6 +24064,14 @@
       "file": "plugins/claudient-marketing/.claude-plugin/plugin.json"
     },
     {
+      "id": "claudient-personas",
+      "displayName": "Claudient — Personas",
+      "description": "10 operating personas for Claude: startup-cto, solo-founder, growth-marketer, indie-hacker, enterprise-architect, data-driven-pm, devrel-advocate, agency-operator, ai-product-builder, fractional-exec.",
+      "version": "1.0.0",
+      "skills": 0,
+      "file": "plugins/claudient-personas/.claude-plugin/plugin.json"
+    },
+    {
       "id": "claudient-product",
       "displayName": "Claudient — Product",
       "description": "Product discovery, roadmapping, PRD writing, competitive teardowns, UX research, product analytics, experiment design, and landing page generation.",
@@ -23500,11 +24104,775 @@
       "file": "plugins/claudient-small-business/.claude-plugin/plugin.json"
     }
   ],
+  "commands": [
+    {
+      "id": "ai-engineering/agent-scaffold",
+      "category": "ai-engineering",
+      "title": "agent-scaffold",
+      "description": "Scaffold a multi-step Claude agent with tool use, memory, and a defined stopping condition",
+      "file": "commands/ai-engineering/agent-scaffold.md"
+    },
+    {
+      "id": "ai-engineering/eval-harness",
+      "category": "ai-engineering",
+      "title": "eval-harness",
+      "description": "Generate a test harness to evaluate an LLM prompt or chain against a dataset",
+      "file": "commands/ai-engineering/eval-harness.md"
+    },
+    {
+      "id": "ai-engineering/mcp-server-gen",
+      "category": "ai-engineering",
+      "title": "mcp-server-gen",
+      "description": "Generate a fully wired MCP server exposing tools, resources, or prompts for a given domain",
+      "file": "commands/ai-engineering/mcp-server-gen.md"
+    },
+    {
+      "id": "ai-engineering/prompt-improve",
+      "category": "ai-engineering",
+      "title": "prompt-improve",
+      "description": "Critique and rewrite a prompt for clarity, specificity, and token efficiency",
+      "file": "commands/ai-engineering/prompt-improve.md"
+    },
+    {
+      "id": "ai-engineering/rag-setup",
+      "category": "ai-engineering",
+      "title": "rag-setup",
+      "description": "Scaffold a production-ready RAG pipeline for a given data source and stack",
+      "file": "commands/ai-engineering/rag-setup.md"
+    },
+    {
+      "id": "ai-engineering/token-optimize",
+      "category": "ai-engineering",
+      "title": "token-optimize",
+      "description": "Audit a prompt or LLM pipeline for token waste and apply targeted reductions",
+      "file": "commands/ai-engineering/token-optimize.md"
+    },
+    {
+      "id": "api/endpoint-gen",
+      "category": "api",
+      "title": "endpoint-gen",
+      "description": "Generate a fully typed REST endpoint with validation, error handling, and tests",
+      "file": "commands/api/endpoint-gen.md"
+    },
+    {
+      "id": "api/error-schema",
+      "category": "api",
+      "title": "error-schema",
+      "description": "Define and enforce a consistent error response schema across all API endpoints",
+      "file": "commands/api/error-schema.md"
+    },
+    {
+      "id": "api/openapi-spec",
+      "category": "api",
+      "title": "openapi-spec",
+      "description": "Generate or update an OpenAPI 3.1 spec from existing routes or a description",
+      "file": "commands/api/openapi-spec.md"
+    },
+    {
+      "id": "api/pagination",
+      "category": "api",
+      "title": "pagination",
+      "description": "Add cursor-based or offset pagination to a list endpoint with consistent response shape",
+      "file": "commands/api/pagination.md"
+    },
+    {
+      "id": "api/rate-limit",
+      "category": "api",
+      "title": "rate-limit",
+      "description": "Add rate limiting to API endpoints with configurable strategies and proper 429 responses",
+      "file": "commands/api/rate-limit.md"
+    },
+    {
+      "id": "api/sdk-gen",
+      "category": "api",
+      "title": "sdk-gen",
+      "description": "Generate a typed client SDK from an OpenAPI spec or existing API routes",
+      "file": "commands/api/sdk-gen.md"
+    },
+    {
+      "id": "api/versioning-plan",
+      "category": "api",
+      "title": "versioning-plan",
+      "description": "Audit the API and produce a versioning strategy with migration paths for breaking changes",
+      "file": "commands/api/versioning-plan.md"
+    },
+    {
+      "id": "api/webhook-handler",
+      "category": "api",
+      "title": "webhook-handler",
+      "description": "Implement a secure, idempotent webhook receiver with signature verification and retry tolerance",
+      "file": "commands/api/webhook-handler.md"
+    },
+    {
+      "id": "database/backup-plan",
+      "category": "database",
+      "title": "backup-plan",
+      "description": "Generate a database backup and recovery plan tailored to the project's stack and RTO/RPO requirements",
+      "file": "commands/database/backup-plan.md"
+    },
+    {
+      "id": "database/er-diagram",
+      "category": "database",
+      "title": "er-diagram",
+      "description": "Generate an ER diagram in Mermaid or PlantUML from the project's database schema",
+      "file": "commands/database/er-diagram.md"
+    },
+    {
+      "id": "database/index-advisor",
+      "category": "database",
+      "title": "index-advisor",
+      "description": "Recommend indexes for a table or query workload based on schema and access patterns",
+      "file": "commands/database/index-advisor.md"
+    },
+    {
+      "id": "database/migration-gen",
+      "category": "database",
+      "title": "migration-gen",
+      "description": "Generate a database migration file from a schema change description or diff",
+      "file": "commands/database/migration-gen.md"
+    },
+    {
+      "id": "database/n-plus-one-finder",
+      "category": "database",
+      "title": "n-plus-one-finder",
+      "description": "Detect N+1 query patterns in ORM code and produce batch-loading fixes",
+      "file": "commands/database/n-plus-one-finder.md"
+    },
+    {
+      "id": "database/query-optimize",
+      "category": "database",
+      "title": "query-optimize",
+      "description": "Analyze a slow or problematic SQL query and produce an optimized version with explanation",
+      "file": "commands/database/query-optimize.md"
+    },
+    {
+      "id": "database/schema-review",
+      "category": "database",
+      "title": "schema-review",
+      "description": "Review a database schema for design flaws, normalization issues, and production readiness",
+      "file": "commands/database/schema-review.md"
+    },
+    {
+      "id": "database/seed-data",
+      "category": "database",
+      "title": "seed-data",
+      "description": "Generate realistic seed data scripts for development or test environments",
+      "file": "commands/database/seed-data.md"
+    },
+    {
+      "id": "debug/add-logging",
+      "category": "debug",
+      "title": "add-logging",
+      "description": "Add structured logging to a file or function with appropriate log levels and context",
+      "file": "commands/debug/add-logging.md"
+    },
+    {
+      "id": "debug/bisect-helper",
+      "category": "debug",
+      "title": "bisect-helper",
+      "description": "Run a structured git bisect to find the commit that introduced a regression",
+      "file": "commands/debug/bisect-helper.md"
+    },
+    {
+      "id": "debug/explain-error",
+      "category": "debug",
+      "title": "explain-error",
+      "description": "Explain an error message or exception with root cause analysis and fix guidance",
+      "file": "commands/debug/explain-error.md"
+    },
+    {
+      "id": "debug/memory-leak",
+      "category": "debug",
+      "title": "memory-leak",
+      "description": "Diagnose and locate a memory leak given a symptoms description or code path",
+      "file": "commands/debug/memory-leak.md"
+    },
+    {
+      "id": "debug/perf-profile",
+      "category": "debug",
+      "title": "perf-profile",
+      "description": "Profile a slow code path and identify the top bottlenecks with actionable fixes",
+      "file": "commands/debug/perf-profile.md"
+    },
+    {
+      "id": "debug/race-condition",
+      "category": "debug",
+      "title": "race-condition",
+      "description": "Identify and fix a race condition in concurrent or async code",
+      "file": "commands/debug/race-condition.md"
+    },
+    {
+      "id": "debug/repro-steps",
+      "category": "debug",
+      "title": "repro-steps",
+      "description": "Generate a minimal reproduction case from a bug description or failing test",
+      "file": "commands/debug/repro-steps.md"
+    },
+    {
+      "id": "debug/stacktrace-analyze",
+      "category": "debug",
+      "title": "stacktrace-analyze",
+      "description": "Analyze a stack trace to identify root cause, call chain, and actionable fix",
+      "file": "commands/debug/stacktrace-analyze.md"
+    },
+    {
+      "id": "devops/ci-pipeline",
+      "category": "devops",
+      "title": "ci-pipeline",
+      "description": "Generate a CI pipeline configuration for the current project",
+      "file": "commands/devops/ci-pipeline.md"
+    },
+    {
+      "id": "devops/compose-gen",
+      "category": "devops",
+      "title": "compose-gen",
+      "description": "Generate a production-ready docker-compose.yml for the current project",
+      "file": "commands/devops/compose-gen.md"
+    },
+    {
+      "id": "devops/dockerfile-gen",
+      "category": "devops",
+      "title": "dockerfile-gen",
+      "description": "Generate a production-ready Dockerfile for the current project",
+      "file": "commands/devops/dockerfile-gen.md"
+    },
+    {
+      "id": "devops/env-audit",
+      "category": "devops",
+      "title": "env-audit",
+      "description": "Audit environment variable usage across the codebase for security and hygiene issues",
+      "file": "commands/devops/env-audit.md"
+    },
+    {
+      "id": "devops/github-action",
+      "category": "devops",
+      "title": "github-action",
+      "description": "Generate a GitHub Actions workflow for CI, CD, or automation tasks",
+      "file": "commands/devops/github-action.md"
+    },
+    {
+      "id": "devops/healthcheck",
+      "category": "devops",
+      "title": "healthcheck",
+      "description": "Add or audit health check endpoints and probe configurations for the current service",
+      "file": "commands/devops/healthcheck.md"
+    },
+    {
+      "id": "devops/helm-chart",
+      "category": "devops",
+      "title": "helm-chart",
+      "description": "Generate a Helm chart scaffold for the current application",
+      "file": "commands/devops/helm-chart.md"
+    },
+    {
+      "id": "devops/k8s-manifest",
+      "category": "devops",
+      "title": "k8s-manifest",
+      "description": "Generate production-ready Kubernetes manifests for the current application",
+      "file": "commands/devops/k8s-manifest.md"
+    },
+    {
+      "id": "devops/rollback-plan",
+      "category": "devops",
+      "title": "rollback-plan",
+      "description": "Generate a step-by-step rollback plan for the current deployment or recent change",
+      "file": "commands/devops/rollback-plan.md"
+    },
+    {
+      "id": "devops/terraform-module",
+      "category": "devops",
+      "title": "terraform-module",
+      "description": "Scaffold a reusable Terraform module for the described infrastructure component",
+      "file": "commands/devops/terraform-module.md"
+    },
+    {
+      "id": "docs/adr-write",
+      "category": "docs",
+      "title": "ADR-NNN: [Title — noun phrase describing the decision, not the problem]",
+      "description": "Draft an Architecture Decision Record for a specific technical decision",
+      "file": "commands/docs/adr-write.md"
+    },
+    {
+      "id": "docs/api-docs",
+      "category": "docs",
+      "title": "api-docs",
+      "description": "Generate reference API documentation for public-facing modules or endpoints",
+      "file": "commands/docs/api-docs.md"
+    },
+    {
+      "id": "docs/architecture-doc",
+      "category": "docs",
+      "title": "architecture-doc",
+      "description": "Generate a structured architecture document for a codebase or module",
+      "file": "commands/docs/architecture-doc.md"
+    },
+    {
+      "id": "docs/comment-explain",
+      "category": "docs",
+      "title": "comment-explain",
+      "description": "Add explanatory comments to complex or non-obvious code sections",
+      "file": "commands/docs/comment-explain.md"
+    },
+    {
+      "id": "docs/contributing-gen",
+      "category": "docs",
+      "title": "contributing-gen",
+      "description": "Generate a CONTRIBUTING.md tailored to this repository's actual workflow",
+      "file": "commands/docs/contributing-gen.md"
+    },
+    {
+      "id": "docs/docstring-add",
+      "category": "docs",
+      "title": "docstring-add",
+      "description": "Add or improve docstrings/JSDoc/type annotations on all public symbols in a file",
+      "file": "commands/docs/docstring-add.md"
+    },
+    {
+      "id": "docs/onboarding-doc",
+      "category": "docs",
+      "title": "onboarding-doc",
+      "description": "Generate a developer onboarding document for this codebase",
+      "file": "commands/docs/onboarding-doc.md"
+    },
+    {
+      "id": "docs/readme-gen",
+      "category": "docs",
+      "title": "readme-gen",
+      "description": "Generate a comprehensive README.md for the current project",
+      "file": "commands/docs/readme-gen.md"
+    },
+    {
+      "id": "frontend/a11y-audit",
+      "category": "frontend",
+      "title": "a11y-audit",
+      "description": "Audit a component or page for WCAG 2.1 AA violations and emit a prioritized fix list",
+      "file": "commands/frontend/a11y-audit.md"
+    },
+    {
+      "id": "frontend/component-gen",
+      "category": "frontend",
+      "title": "component-gen",
+      "description": "Generate a typed, accessible React component with props interface and basic tests",
+      "file": "commands/frontend/component-gen.md"
+    },
+    {
+      "id": "frontend/css-cleanup",
+      "category": "frontend",
+      "title": "css-cleanup",
+      "description": "Remove dead CSS, consolidate duplicates, enforce design tokens, and fix specificity issues",
+      "file": "commands/frontend/css-cleanup.md"
+    },
+    {
+      "id": "frontend/form-validation",
+      "category": "frontend",
+      "title": "form-validation",
+      "description": "Add or fix form validation with schema, error display, and accessible error messaging",
+      "file": "commands/frontend/form-validation.md"
+    },
+    {
+      "id": "frontend/lighthouse-pass",
+      "category": "frontend",
+      "title": "lighthouse-pass",
+      "description": "Audit code against Lighthouse performance, accessibility, and best-practices targets and apply fixes",
+      "file": "commands/frontend/lighthouse-pass.md"
+    },
+    {
+      "id": "frontend/responsive-fix",
+      "category": "frontend",
+      "title": "responsive-fix",
+      "description": "Identify and fix responsive layout breakages for a given file or component",
+      "file": "commands/frontend/responsive-fix.md"
+    },
+    {
+      "id": "frontend/state-refactor",
+      "category": "frontend",
+      "title": "state-refactor",
+      "description": "Refactor component state to reduce complexity, lift/colocate correctly, and eliminate prop drilling",
+      "file": "commands/frontend/state-refactor.md"
+    },
+    {
+      "id": "frontend/storybook-gen",
+      "category": "frontend",
+      "title": "storybook-gen",
+      "description": "Generate Storybook CSF3 stories for a component covering all meaningful variants and states",
+      "file": "commands/frontend/storybook-gen.md"
+    },
+    {
+      "id": "git/blame-explain",
+      "category": "git",
+      "title": "blame-explain",
+      "description": "Explain the history and intent behind a file or specific lines using git blame and log",
+      "file": "commands/git/blame-explain.md"
+    },
+    {
+      "id": "git/branch-cleanup",
+      "category": "git",
+      "title": "Local",
+      "description": "Identify and list stale local and remote branches safe to delete",
+      "file": "commands/git/branch-cleanup.md"
+    },
+    {
+      "id": "git/changelog",
+      "category": "git",
+      "title": "changelog",
+      "description": "Generate a changelog entry for commits since the last tag or a given ref",
+      "file": "commands/git/changelog.md"
+    },
+    {
+      "id": "git/commit-msg",
+      "category": "git",
+      "title": "commit-msg",
+      "description": "Generate a Conventional Commits-compliant commit message from staged changes",
+      "file": "commands/git/commit-msg.md"
+    },
+    {
+      "id": "git/conflict-resolver",
+      "category": "git",
+      "title": "conflict-resolver",
+      "description": "Explain and resolve merge conflicts in the current working tree",
+      "file": "commands/git/conflict-resolver.md"
+    },
+    {
+      "id": "git/gitignore-gen",
+      "category": "git",
+      "title": "=== <Stack> ===",
+      "description": "Generate or extend a .gitignore for the detected or specified project stack",
+      "file": "commands/git/gitignore-gen.md"
+    },
+    {
+      "id": "git/pr-description",
+      "category": "git",
+      "title": "pr-description",
+      "description": "Draft a pull request title and description from branch commits and diff",
+      "file": "commands/git/pr-description.md"
+    },
+    {
+      "id": "git/rebase-helper",
+      "category": "git",
+      "title": "rebase-helper",
+      "description": "Produce a safe, step-by-step rebase plan for the current branch onto a target",
+      "file": "commands/git/rebase-helper.md"
+    },
+    {
+      "id": "git/release-notes",
+      "category": "git",
+      "title": "release-notes",
+      "description": "Draft release notes from commits between two refs or since the last tag",
+      "file": "commands/git/release-notes.md"
+    },
+    {
+      "id": "git/squash-guide",
+      "category": "git",
+      "title": "squash-guide",
+      "description": "Plan and generate an interactive rebase squash script for the current branch",
+      "file": "commands/git/squash-guide.md"
+    },
+    {
+      "id": "productivity/decision-doc",
+      "category": "productivity",
+      "title": "decision-doc",
+      "description": "Draft an architectural or technical decision record (ADR) from a description",
+      "file": "commands/productivity/decision-doc.md"
+    },
+    {
+      "id": "productivity/email-draft",
+      "category": "productivity",
+      "title": "email-draft",
+      "description": "Draft a professional email from a topic, intent, and optional context",
+      "file": "commands/productivity/email-draft.md"
+    },
+    {
+      "id": "productivity/meeting-summary",
+      "category": "productivity",
+      "title": "meeting-summary",
+      "description": "Summarize raw meeting notes into decisions, actions, and open questions",
+      "file": "commands/productivity/meeting-summary.md"
+    },
+    {
+      "id": "productivity/standup-notes",
+      "category": "productivity",
+      "title": "standup-notes",
+      "description": "Generate a standup update from recent git activity or freeform notes",
+      "file": "commands/productivity/standup-notes.md"
+    },
+    {
+      "id": "productivity/task-breakdown",
+      "category": "productivity",
+      "title": "task-breakdown",
+      "description": "Break a goal or feature into scoped, sequenced tasks with effort estimates",
+      "file": "commands/productivity/task-breakdown.md"
+    },
+    {
+      "id": "productivity/weekly-review",
+      "category": "productivity",
+      "title": "weekly-review",
+      "description": "Produce a weekly review from git history, notes, or freeform input",
+      "file": "commands/productivity/weekly-review.md"
+    },
+    {
+      "id": "refactor/dedupe",
+      "category": "refactor",
+      "title": "dedupe",
+      "description": "Find and eliminate duplicated logic, data, or structure",
+      "file": "commands/refactor/dedupe.md"
+    },
+    {
+      "id": "refactor/extract-function",
+      "category": "refactor",
+      "title": "extract-function",
+      "description": "Extract a highlighted block or described logic into a named function with correct signature and call-site updates",
+      "file": "commands/refactor/extract-function.md"
+    },
+    {
+      "id": "refactor/inline",
+      "category": "refactor",
+      "title": "inline",
+      "description": "Inline a function, variable, or constant that adds indirection without value",
+      "file": "commands/refactor/inline.md"
+    },
+    {
+      "id": "refactor/modernize-syntax",
+      "category": "refactor",
+      "title": "modernize-syntax",
+      "description": "Update code to current language idioms without changing behavior",
+      "file": "commands/refactor/modernize-syntax.md"
+    },
+    {
+      "id": "refactor/reduce-complexity",
+      "category": "refactor",
+      "title": "reduce-complexity",
+      "description": "Lower cyclomatic complexity and nesting depth in a function or file",
+      "file": "commands/refactor/reduce-complexity.md"
+    },
+    {
+      "id": "refactor/remove-dead-code",
+      "category": "refactor",
+      "title": "remove-dead-code",
+      "description": "Identify and delete unreachable, unused, or obsolete code",
+      "file": "commands/refactor/remove-dead-code.md"
+    },
+    {
+      "id": "refactor/rename-symbol",
+      "category": "refactor",
+      "title": "rename-symbol",
+      "description": "Rename a symbol consistently across all files in scope",
+      "file": "commands/refactor/rename-symbol.md"
+    },
+    {
+      "id": "refactor/simplify",
+      "category": "refactor",
+      "title": "simplify",
+      "description": "Simplify overly complex expressions, conditions, and control flow without changing behavior",
+      "file": "commands/refactor/simplify.md"
+    },
+    {
+      "id": "refactor/split-file",
+      "category": "refactor",
+      "title": "split-file",
+      "description": "Split an oversized or mixed-concern file into focused modules",
+      "file": "commands/refactor/split-file.md"
+    },
+    {
+      "id": "refactor/tighten-types",
+      "category": "refactor",
+      "title": "tighten-types",
+      "description": "Strengthen weak or missing type annotations throughout a file",
+      "file": "commands/refactor/tighten-types.md"
+    },
+    {
+      "id": "security/authz-review",
+      "category": "security",
+      "title": "authz-review",
+      "description": "Review authorization logic for privilege escalation, broken access control, and IDOR flaws",
+      "file": "commands/security/authz-review.md"
+    },
+    {
+      "id": "security/cors-config",
+      "category": "security",
+      "title": "cors-config",
+      "description": "Audit CORS configuration for overly permissive origins, credential misuse, and preflight gaps",
+      "file": "commands/security/cors-config.md"
+    },
+    {
+      "id": "security/dep-audit",
+      "category": "security",
+      "title": "dep-audit",
+      "description": "Audit project dependencies for known CVEs and supply-chain risks",
+      "file": "commands/security/dep-audit.md"
+    },
+    {
+      "id": "security/input-validation",
+      "category": "security",
+      "title": "input-validation",
+      "description": "Audit input validation and sanitization across all trust boundaries",
+      "file": "commands/security/input-validation.md"
+    },
+    {
+      "id": "security/owasp-check",
+      "category": "security",
+      "title": "owasp-check",
+      "description": "Run a systematic OWASP Top 10 review against the codebase or a specific component",
+      "file": "commands/security/owasp-check.md"
+    },
+    {
+      "id": "security/secret-scan",
+      "category": "security",
+      "title": "secret-scan",
+      "description": "Scan the codebase for secrets, credentials, and sensitive values committed or hardcoded",
+      "file": "commands/security/secret-scan.md"
+    },
+    {
+      "id": "security/security-scan",
+      "category": "security",
+      "title": "security-scan",
+      "description": "Run a full static security scan on a file or directory and report exploitable vulnerabilities",
+      "file": "commands/security/security-scan.md"
+    },
+    {
+      "id": "security/threat-model",
+      "category": "security",
+      "title": "threat-model",
+      "description": "Produce a STRIDE threat model for a system component or the full application",
+      "file": "commands/security/threat-model.md"
+    },
+    {
+      "id": "testing/assertion-improve",
+      "category": "testing",
+      "title": "assertion-improve",
+      "description": "Strengthen weak or shallow assertions in existing tests",
+      "file": "commands/testing/assertion-improve.md"
+    },
+    {
+      "id": "testing/e2e-scaffold",
+      "category": "testing",
+      "title": "e2e-scaffold",
+      "description": "Scaffold end-to-end tests for a page, route, or user flow",
+      "file": "commands/testing/e2e-scaffold.md"
+    },
+    {
+      "id": "testing/fix-failing-test",
+      "category": "testing",
+      "title": "fix-failing-test",
+      "description": "Diagnose and fix a failing test, identifying root cause before patching",
+      "file": "commands/testing/fix-failing-test.md"
+    },
+    {
+      "id": "testing/flaky-finder",
+      "category": "testing",
+      "title": "flaky-finder",
+      "description": "Identify and fix sources of flakiness in existing tests",
+      "file": "commands/testing/flaky-finder.md"
+    },
+    {
+      "id": "testing/mock-gen",
+      "category": "testing",
+      "title": "mock-gen",
+      "description": "Generate type-safe mocks and stubs for a given module or interface",
+      "file": "commands/testing/mock-gen.md"
+    },
+    {
+      "id": "testing/snapshot-review",
+      "category": "testing",
+      "title": "snapshot-review",
+      "description": "Review outdated or bloated snapshots and decide update vs. rewrite",
+      "file": "commands/testing/snapshot-review.md"
+    },
+    {
+      "id": "testing/tdd-start",
+      "category": "testing",
+      "title": "tdd-start",
+      "description": "Bootstrap a TDD cycle — write failing tests first, then implement",
+      "file": "commands/testing/tdd-start.md"
+    },
+    {
+      "id": "testing/test-coverage",
+      "category": "testing",
+      "title": "test-coverage",
+      "description": "Analyze test coverage gaps and generate tests to close them",
+      "file": "commands/testing/test-coverage.md"
+    },
+    {
+      "id": "testing/test-plan",
+      "category": "testing",
+      "title": "test-plan",
+      "description": "Generate a structured test plan for a feature, module, or PR",
+      "file": "commands/testing/test-plan.md"
+    },
+    {
+      "id": "testing/write-tests",
+      "category": "testing",
+      "title": "write-tests",
+      "description": "Generate thorough unit tests for the specified file or function",
+      "file": "commands/testing/write-tests.md"
+    }
+  ],
+  "personas": [
+    {
+      "id": "agency-operator",
+      "title": "Agency Operator",
+      "description": "For agency owners and operators managing client delivery, margins, and team capacity",
+      "file": "personas/agency-operator.md"
+    },
+    {
+      "id": "ai-product-builder",
+      "title": "Ai Product Builder",
+      "description": "For builders shipping AI-native products — from prototype to production LLM features",
+      "file": "personas/ai-product-builder.md"
+    },
+    {
+      "id": "data-driven-pm",
+      "title": "Data Driven Pm",
+      "description": "For product managers who anchor decisions in metrics, user research, and structured frameworks",
+      "file": "personas/data-driven-pm.md"
+    },
+    {
+      "id": "devrel-advocate",
+      "title": "Devrel Advocate",
+      "description": "For developer relations professionals building community, content, and developer trust",
+      "file": "personas/devrel-advocate.md"
+    },
+    {
+      "id": "enterprise-architect",
+      "title": "Enterprise Architect",
+      "description": "For senior architects driving platform strategy and standards across large engineering orgs",
+      "file": "personas/enterprise-architect.md"
+    },
+    {
+      "id": "fractional-exec",
+      "title": "Fractional Exec",
+      "description": "For fractional CTOs, CMOs, and COOs advising multiple companies simultaneously",
+      "file": "personas/fractional-exec.md"
+    },
+    {
+      "id": "growth-marketer",
+      "title": "Growth Marketer",
+      "description": "For marketers running experiments, funnels, and campaigns with a data-first mindset",
+      "file": "personas/growth-marketer.md"
+    },
+    {
+      "id": "indie-hacker",
+      "title": "Indie Hacker",
+      "description": "For developers building small, profitable internet products on the side or full-time",
+      "file": "personas/indie-hacker.md"
+    },
+    {
+      "id": "solo-founder",
+      "title": "Solo Founder",
+      "description": "For single-person businesses building product, marketing, and ops without a team",
+      "file": "personas/solo-founder.md"
+    },
+    {
+      "id": "startup-cto",
+      "title": "Startup Cto",
+      "description": "For technical co-founders and early CTOs moving fast across the full stack",
+      "file": "personas/startup-cto.md"
+    }
+  ],
   "summary": {
     "skills": 381,
-    "agents": 104,
+    "agents": 182,
     "hooks": 40,
-    "rules": 12,
+    "rules": 32,
     "workflows": 45,
     "prompts": 31,
     "guides": 90,
@@ -23515,7 +24883,9 @@
     "keybindings": 4,
     "settingsTemplates": 5,
     "routines": 4,
-    "plugins": 17,
+    "plugins": 19,
+    "commands": 100,
+    "personas": 10,
     "languages": [
       "en",
       "fr",
