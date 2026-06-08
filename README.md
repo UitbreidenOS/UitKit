@@ -17,7 +17,7 @@
 
 **Stop explaining your stack to Claude every session.**
 
-Claudient is the largest open-source knowledge base for **Claude Code** — 380+ skills, 182+ specialist agents, 100+ slash commands, 157 MCP server configs, 89 guides, 40 hooks, 45 workflows, 82 project structures, 10 personas, 32 rules, plus output styles, themes, statuslines, keybindings, settings templates, routines, and an Agent SDK pack — all installable in 30 seconds. Skills activate automatically based on what you're working on. Agents spawn when their expertise is needed. Hooks run on the right events. Works with any Claude Code project, in 5 languages. Including the most complete community knowledge base for **Claude for Small Business** — 30+ vertical and operator skills for solopreneurs, ecommerce, local services, coaches, and creators.
+Claudient is the largest open-source knowledge base for **Claude Code** — 380+ skills, 182+ specialist agents, 100+ slash commands, 99+ guides, 40 hooks, 45 workflows, 82 project structures, 10 personas, 32 rules, 20 annotated CLAUDE.md examples, cross-harness adapters (Cursor/Windsurf/Codex/Gemini/Copilot), plus output styles, themes, statuslines, keybindings, settings templates, routines, and an Agent SDK pack — all installable in 30 seconds.
 
 ```bash
 # Install as a Claude Code plugin marketplace (recommended)
@@ -83,6 +83,8 @@ Claudient covers every primitive Claude Code supports, not just skills:
 | **Hooks** | 96 across all 2026 events — including new `http`, `prompt`, and `agent` hook types | see [`hooks/`](hooks/) |
 | **Routines** | 4 scheduled cloud-agent templates — daily-standup, pr-triage, dependency-audit, incident-watch | see [`routines/`](routines/) |
 | **Computer-use skills** | 4 — ui-testing, visual-qa, legacy-app-automation, screenshot-verify | `/plugin install` or copy |
+| **CLAUDE.md gallery** | 20 annotated real-world templates — Next.js SaaS, FastAPI, monorepo, CLI tool, dbt, mobile, OSS library, k8s, small business, legal, fintech, game dev, embedded, and more | see [`claude-md-examples/`](claude-md-examples/) |
+| **Cross-harness adapters** | Use Claudient in Cursor, Windsurf, Codex CLI, Gemini Code Assist, GitHub Copilot — adapter guides + install script | see [`compatibility/`](compatibility/) |
 | **Agent SDK pack** | Full guide + runnable Python & TypeScript starter agents | see [`examples/agent-sdk/`](examples/agent-sdk/) |
 
 ---

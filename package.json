@@ -46,6 +46,8 @@
     "mcp/",
     "guides/",
     "structures/",
+    "compatibility/",
+    "claude-md-examples/",
     "plugins/",
     "commands/",
     "personas/",
