@@ -4,6 +4,7 @@ const fs = require('fs')
 const path = require('path')
 const os = require('os')
 const { execSync } = require('child_process')
+const { recommend } = require('./recommend')
 
 const REPO_ROOT = path.resolve(__dirname, '..')
 const CLAUDE_DIR = path.join(os.homedir(), '.claude')
@@ -45,6 +46,7 @@ Usage:
   npx claudient remove agents
   npx claudient remove rules
   npx claudient update
+  npx claudient scan                          Scan project and recommend skills/hooks/MCP
   npx claudient list [skills|agents|rules|hooks|structures]
   npx claudient help
 
@@ -925,6 +927,10 @@ switch (command) {
   }
   case 'init':
     initCommand().catch(err => { console.error(err); process.exit(1) })
+    break
+  case 'recommend':
+  case 'scan':
+    recommend(positional[0] || '.')
     break
   case 'help':
   case '--help':
