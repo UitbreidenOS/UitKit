@@ -75,6 +75,8 @@
     "validate:frontmatter": "node scripts/validate-frontmatter.js",
     "validate:manifests": "node scripts/validate-manifests.js",
     "validate:freshness": "node scripts/check-freshness.js",
-    "backfill-dates": "node scripts/backfill-dates.js"
+    "validate:stacks": "node scripts/validate-stacks.js",
+    "backfill-dates": "node scripts/backfill-dates.js",
+    "dep-graph": "node scripts/dependency-graph.js"
   }
 }

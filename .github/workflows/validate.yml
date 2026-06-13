@@ -97,3 +97,16 @@ jobs:
 
       - name: Check skill/agent freshness
         run: node scripts/check-freshness.js --warn-only
+
+  stack-validation:
+    name: Workspace Stacks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Validate workspace stack completeness
+        run: node scripts/validate-stacks.js --warn-only
