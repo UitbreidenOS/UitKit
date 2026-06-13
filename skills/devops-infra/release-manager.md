@@ -1,6 +1,7 @@
 ---
 name: release-manager
 description: "Release management: semantic versioning, changelog generation from conventional commits, release readiness checklists, hotfix procedures, rollback plans, and release branch strategy"
+updated: 2026-06-13
 ---
 
 # Release Manager Skill

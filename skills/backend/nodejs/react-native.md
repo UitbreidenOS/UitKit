@@ -1,3 +1,8 @@
+---
+name: react-native
+updated: 2026-06-13
+---
+
 # React Native and Expo
 
 ## When to activate

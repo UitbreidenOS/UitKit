@@ -1,6 +1,7 @@
 ---
 name: tech-interview-kit
 description: "Technical interview kit: coding challenge design, system design prompts, evaluation rubric, debrief template"
+updated: 2026-06-13
 ---
 
 # Tech Interview Kit Skill

@@ -1,6 +1,7 @@
 ---
 name: schema-markup
 description: "Schema.org structured data: generate JSON-LD for rich results, validate markup, choose the right schema type, implement across common page types"
+updated: 2026-06-13
 ---
 
 # Schema Markup Skill

@@ -1,6 +1,7 @@
 ---
 name: embedded-systems
 description: "Embedded systems and firmware agent for bare metal C/C++, RTOS task design, HAL drivers, interrupt handling, and memory-constrained system development"
+updated: 2026-06-13
 ---
 
 # Embedded Systems

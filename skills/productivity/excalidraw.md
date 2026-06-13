@@ -1,6 +1,7 @@
 ---
 name: excalidraw
 description: "Excalidraw diagram generation: create architecture diagrams, flowcharts, system maps, and wireframes as Excalidraw JSON files — saveable, version-controllable, and editable in excalidraw.com"
+updated: 2026-06-13
 ---
 
 # Excalidraw Skill

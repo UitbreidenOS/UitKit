@@ -1,6 +1,7 @@
 ---
 name: flutter-expert
 description: "Flutter 3+ cross-platform development agent — widgets, Riverpod state management, platform channels, performance profiling, and app store deployment"
+updated: 2026-06-13
 ---
 
 # Flutter Expert

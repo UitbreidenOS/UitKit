@@ -1,6 +1,7 @@
 ---
 name: marketplace-architect
 description: Delegate when designing two-sided or multi-sided marketplaces, matching logic, trust systems, or supply/demand mechanics.
+updated: 2026-06-13
 ---
 
 # Marketplace Architect

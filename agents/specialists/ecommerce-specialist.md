@@ -1,3 +1,8 @@
+---
+name: ecommerce-specialist
+updated: 2026-06-13
+---
+
 # Ecommerce Specialist
 
 ## Purpose

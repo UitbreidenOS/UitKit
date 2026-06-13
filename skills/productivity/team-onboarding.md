@@ -1,3 +1,8 @@
+---
+name: team-onboarding
+updated: 2026-06-13
+---
+
 # Team Onboarding
 
 ## When to activate

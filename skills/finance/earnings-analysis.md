@@ -1,6 +1,7 @@
 ---
 name: earnings-analysis
 description: "Earnings review workflow: parse transcript + filings, update model estimates, flag guidance changes, draft morning note — equity research patterns"
+updated: 2026-06-13
 ---
 
 # Earnings Analysis Skill

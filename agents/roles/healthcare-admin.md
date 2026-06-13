@@ -1,6 +1,7 @@
 ---
 name: healthcare-admin
 description: "Healthcare IT agent for HIPAA compliance, HL7/FHIR integration, EHR workflows, clinical data pipelines, and revenue cycle automation"
+updated: 2026-06-13
 ---
 
 # Healthcare Admin

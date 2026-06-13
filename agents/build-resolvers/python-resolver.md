@@ -1,3 +1,8 @@
+---
+name: python-resolver
+updated: 2026-06-13
+---
+
 # Python Build Resolver Agent
 
 ## Purpose

@@ -1,6 +1,7 @@
 ---
 name: screenshot-verify
 description: Capture and verify that a code change actually rendered correctly — the "see it work" loop after an edit.
+updated: 2026-06-13
 ---
 
 # Screenshot Verify

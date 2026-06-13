@@ -1,3 +1,8 @@
+---
+name: angular
+updated: 2026-06-13
+---
+
 # Angular 17+
 
 ## When to activate

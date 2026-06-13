@@ -1,3 +1,8 @@
+---
+name: network-design
+updated: 2026-06-13
+---
+
 # Network Design
 
 ## When to activate

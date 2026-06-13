@@ -1,6 +1,7 @@
 ---
 name: windows-infra-admin
 description: "Windows Server and Active Directory administration — AD DS, Group Policy, DNS/DHCP, PowerShell automation, and enterprise Windows infrastructure"
+updated: 2026-06-13
 ---
 
 # Windows Infrastructure Administrator

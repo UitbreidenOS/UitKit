@@ -1,3 +1,8 @@
+---
+name: photography-studio
+updated: 2026-06-13
+---
+
 # Photography Studio
 
 ## When to activate

@@ -1,6 +1,7 @@
 ---
 name: swift-expert
 description: "Swift and Apple platform development agent — SwiftUI, async/await, Combine, Core Data, CloudKit, and App Store submission"
+updated: 2026-06-13
 ---
 
 # Swift Expert

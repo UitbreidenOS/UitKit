@@ -1,6 +1,7 @@
 ---
 name: legal-research
 description: "Legal research assistant: case law summaries, regulatory guidance, jurisdiction comparison"
+updated: 2026-06-13
 ---
 
 # Legal Research Skill

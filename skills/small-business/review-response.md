@@ -1,6 +1,7 @@
 ---
 name: review-response
 description: "Draft professional responses to Google, Yelp, and TripAdvisor reviews — positive, negative, and neutral — with consistent brand voice"
+updated: 2026-06-13
 ---
 
 # Review Response Skill

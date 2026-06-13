@@ -1,6 +1,7 @@
 ---
 name: firebase
 description: "Firebase: Firestore database, Authentication, Realtime Database, Cloud Functions, Firebase Storage, and security rules — for web and mobile apps"
+updated: 2026-06-13
 ---
 
 # Firebase Skill

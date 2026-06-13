@@ -1,3 +1,8 @@
+---
+name: company-intelligence
+updated: 2026-06-13
+---
+
 # Company Intelligence
 
 ## When to activate

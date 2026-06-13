@@ -1,6 +1,7 @@
 ---
 name: process-mapper
 description: "Map and document business processes: flowchart, RACI, bottleneck identification, improvement recommendations"
+updated: 2026-06-13
 ---
 
 # Process Mapper Skill

@@ -1,6 +1,7 @@
 ---
 name: edtech-specialist
 description: Delegate when building learning platforms, curriculum tooling, assessments, or education-sector B2B products.
+updated: 2026-06-13
 ---
 
 # Edtech Specialist

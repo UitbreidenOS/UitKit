@@ -1,6 +1,7 @@
 ---
 name: qbr-builder
 description: "Quarterly Business Review builder: customer health recap, ROI delivered, goals for next quarter, renewal and expansion discussion framework"
+updated: 2026-06-13
 ---
 
 # QBR Builder Skill

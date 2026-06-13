@@ -1,6 +1,7 @@
 ---
 name: weekly-pulse
 description: "Generate a weekly business health report: pull KPIs from multiple tools, spot trends, flag risks, and set priorities — for small business owners"
+updated: 2026-06-13
 ---
 
 # Weekly Pulse Skill

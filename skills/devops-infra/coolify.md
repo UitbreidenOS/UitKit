@@ -1,6 +1,7 @@
 ---
 name: coolify
 description: "Coolify self-hosted PaaS: deploy apps and databases on your own server, Docker/Git-based deploys, preview environments, wildcard SSL, free alternative to Heroku/Railway"
+updated: 2026-06-13
 ---
 
 # Coolify Skill

@@ -1,6 +1,7 @@
 ---
 name: freelancer-proposal
 description: "Freelancer toolkit: project proposals, pricing guidance, invoice follow-up sequences, plain-English project contracts, and client offboarding documents"
+updated: 2026-06-13
 ---
 
 # Freelancer Proposal

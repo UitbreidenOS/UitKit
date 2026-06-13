@@ -1,6 +1,7 @@
 ---
 name: secrets-management
 description: "Secrets management: HashiCorp Vault setup, AWS/Azure/GCP secret stores, secret rotation automation, Kubernetes secrets injection, CI/CD integration, and secret leak response"
+updated: 2026-06-13
 ---
 
 # Secrets Management Skill

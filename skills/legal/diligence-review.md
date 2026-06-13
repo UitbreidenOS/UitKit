@@ -1,6 +1,7 @@
 ---
 name: diligence-review
 description: "M&A due diligence: tabular review of contracts, IP, employment, litigation, and corporate documents — flag risks, identify missing items, and produce diligence summaries"
+updated: 2026-06-13
 ---
 
 # Diligence Review Skill

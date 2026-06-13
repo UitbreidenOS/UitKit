@@ -1,6 +1,7 @@
 ---
 name: elasticsearch-specialist
 description: Delegate here for Elasticsearch index design, mapping configuration, query DSL, aggregation pipelines, cluster sizing, and search relevance tuning.
+updated: 2026-06-13
 ---
 
 # Elasticsearch Specialist

@@ -1,6 +1,7 @@
 ---
 name: migration-architect
 description: "Zero-downtime migration planning: database schema migrations (expand-contract), infrastructure cutovers, service replacements — phased plans, rollback strategies, and validation gates"
+updated: 2026-06-13
 ---
 
 # Migration Architect Skill

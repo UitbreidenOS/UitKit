@@ -1,6 +1,7 @@
 ---
 name: deno
 description: "Deno 2 runtime: built-in TypeScript, permission model, deno.json config, npm compatibility, standard library, Deno KV, Deno Deploy edge runtime, Fresh framework islands architecture, and testing with Deno.test"
+updated: 2026-06-13
 ---
 
 # Deno 2 Skill

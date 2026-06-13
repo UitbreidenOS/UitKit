@@ -1,6 +1,7 @@
 ---
 name: revenue-ops-analyst
 description: Delegate here for CRM hygiene, pipeline reporting, attribution modeling, quota design, and RevOps process documentation.
+updated: 2026-06-13
 ---
 
 # Revenue Ops Analyst

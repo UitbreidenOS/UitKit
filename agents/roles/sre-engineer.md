@@ -1,6 +1,7 @@
 ---
 name: sre-engineer
 description: "SRE agent — SLO/SLI design, error budget management, reliability engineering, incident runbooks, toil reduction, and on-call tooling"
+updated: 2026-06-13
 ---
 
 # SRE Engineer

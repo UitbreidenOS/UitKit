@@ -84,3 +84,16 @@ jobs:
         run: node scripts/validate-manifests.js
         # TODO: Remove continue-on-error once plugin.json stubs are resolved
         continue-on-error: true
+
+  freshness-check:
+    name: Skill Freshness
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Check skill/agent freshness
+        run: node scripts/check-freshness.js --warn-only

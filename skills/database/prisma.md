@@ -1,6 +1,7 @@
 ---
 name: prisma
 description: "Prisma ORM: schema design, relations, migrations, nested writes, middleware, raw queries, type-safe database access"
+updated: 2026-06-13
 ---
 
 # Prisma Skill

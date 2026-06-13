@@ -1,3 +1,8 @@
+---
+name: build-optimization
+updated: 2026-06-13
+---
+
 # Build Optimization
 
 ## When to activate

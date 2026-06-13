@@ -1,6 +1,7 @@
 ---
 name: data-pipeline-architect
 description: "Data pipeline architecture — batch and streaming ETL/ELT, dbt model design, Spark, Kafka, data quality, medallion architecture"
+updated: 2026-06-13
 ---
 
 # Data Pipeline Architect

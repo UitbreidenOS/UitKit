@@ -1,6 +1,7 @@
 ---
 name: hono
 description: "Hono framework: build ultra-fast REST APIs and middleware for Cloudflare Workers, Bun, Deno, and Node.js — routing, validation with Zod, RPC client, and edge deployment patterns"
+updated: 2026-06-13
 ---
 
 # Hono Skill

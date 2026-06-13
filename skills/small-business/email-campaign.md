@@ -1,6 +1,7 @@
 ---
 name: email-campaign
 description: "Email marketing for small businesses: campaign structure, subject lines, copy variants by segment, A/B test setup, re-engagement sequences, and performance analysis"
+updated: 2026-06-13
 ---
 
 # Email Campaign

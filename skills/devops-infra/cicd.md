@@ -1,6 +1,7 @@
 ---
 name: cicd
 description: "CI/CD patterns: GitHub Actions workflows, secrets management, deployment gates, matrix builds, caching, reusable workflows, rollbacks"
+updated: 2026-06-13
 ---
 
 # CI/CD Skill

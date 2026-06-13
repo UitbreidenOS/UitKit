@@ -1,6 +1,7 @@
 ---
 name: turso
 description: "Turso: embedded SQLite for the edge — database setup, LibSQL client, schema design, multi-tenancy patterns, and deployment with Cloudflare Workers and Bun"
+updated: 2026-06-13
 ---
 
 # Turso Skill

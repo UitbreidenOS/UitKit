@@ -1,6 +1,7 @@
 ---
 name: product-marketer
 description: Delegate here for positioning, messaging frameworks, launch copy, and GTM narrative work.
+updated: 2026-06-13
 ---
 
 # Product Marketer

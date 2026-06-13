@@ -1,3 +1,8 @@
+---
+name: cmo-advisor
+updated: 2026-06-13
+---
+
 # CMO Advisor Agent
 
 ## Purpose

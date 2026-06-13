@@ -1,6 +1,7 @@
 ---
 name: hypothesis-tester
 description: "Hypothesis tester agent — investigate a single root-cause theory for a bug or system problem, confirm or rule it out with evidence, and report findings"
+updated: 2026-06-13
 ---
 
 # Hypothesis Tester Agent

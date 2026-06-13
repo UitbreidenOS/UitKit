@@ -1,6 +1,7 @@
 ---
 name: margin-analyzer
 description: "Compute gross margin by product line, customer segment, and channel; flag thin-margin items; find where you actually make money"
+updated: 2026-06-13
 ---
 
 # Margin Analyzer

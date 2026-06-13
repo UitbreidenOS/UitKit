@@ -1,3 +1,8 @@
+---
+name: local-services-specialist
+updated: 2026-06-13
+---
+
 # Local Services Specialist
 
 ## Purpose

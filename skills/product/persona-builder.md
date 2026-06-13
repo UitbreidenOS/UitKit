@@ -1,6 +1,7 @@
 ---
 name: persona-builder
 description: "User persona builder from research data: demographics, goals, pain points, behaviours, quotes"
+updated: 2026-06-13
 ---
 
 # Persona Builder Skill

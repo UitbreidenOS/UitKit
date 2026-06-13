@@ -1,6 +1,7 @@
 ---
 name: oncall-runbook
 description: "Generate on-call runbooks from incident history: common alerts, resolution steps, escalation paths"
+updated: 2026-06-13
 ---
 
 # On-Call Runbook Generator Skill

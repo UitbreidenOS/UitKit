@@ -1,6 +1,7 @@
 ---
 name: rust-engineer
 description: "Rust systems engineering agent — memory safety, ownership patterns, async/await, performance optimization, and production Rust codebases"
+updated: 2026-06-13
 ---
 
 # Rust Engineer

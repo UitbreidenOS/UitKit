@@ -1,6 +1,7 @@
 ---
 name: terraform-specialist
 description: "Terraform IaC — module design, state management, workspace strategy, CI/CD integration, and provider patterns"
+updated: 2026-06-13
 ---
 
 # Terraform Specialist

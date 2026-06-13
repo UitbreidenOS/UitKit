@@ -1,6 +1,7 @@
 ---
 name: ux-audit
 description: "UX audit against heuristics: identify usability issues, prioritise by impact, recommend fixes"
+updated: 2026-06-13
 ---
 
 # UX Audit Skill

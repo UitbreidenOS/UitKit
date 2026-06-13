@@ -1,6 +1,7 @@
 ---
 name: multi-agent-coordinator
 description: "Multi-agent orchestration agent — DAG-based task decomposition, parallel agent coordination, deadlock prevention, saga patterns, and cross-agent state management"
+updated: 2026-06-13
 ---
 
 # Multi-Agent Coordinator Agent

@@ -1,6 +1,7 @@
 ---
 name: quant-analyst
 description: "Quantitative finance agent for backtesting, options pricing, VaR, Monte Carlo simulation, and systematic trading strategy development"
+updated: 2026-06-13
 ---
 
 # Quant Analyst

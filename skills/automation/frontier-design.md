@@ -1,3 +1,8 @@
+---
+name: frontier-design
+updated: 2026-06-13
+---
+
 # Claude Design — Frontier Capabilities
 
 ## When to activate

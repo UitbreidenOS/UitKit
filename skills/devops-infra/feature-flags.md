@@ -1,6 +1,7 @@
 ---
 name: feature-flags
 description: "Feature flags: gradual rollouts, A/B testing, kill switches — LaunchDarkly, Unleash, Statsig, and home-built patterns with database or env vars"
+updated: 2026-06-13
 ---
 
 # Feature Flags Skill

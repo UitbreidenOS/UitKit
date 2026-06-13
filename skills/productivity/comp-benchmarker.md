@@ -1,6 +1,7 @@
 ---
 name: comp-benchmarker
 description: "Compensation benchmarking: market data analysis, salary band setting, equity guidelines, and offer letter generation for competitive hiring"
+updated: 2026-06-13
 ---
 
 # Comp Benchmarker Skill

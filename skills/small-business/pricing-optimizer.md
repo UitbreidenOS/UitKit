@@ -1,3 +1,8 @@
+---
+name: pricing-optimizer
+updated: 2026-06-13
+---
+
 # Pricing Optimizer
 
 ## When to activate

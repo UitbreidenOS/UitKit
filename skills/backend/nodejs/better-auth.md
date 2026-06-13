@@ -1,6 +1,7 @@
 ---
 name: better-auth
 description: "Better Auth: the open-source auth framework for Next.js/TypeScript — session management, OAuth, 2FA, RBAC, Drizzle/Prisma adapters, no vendor lock-in"
+updated: 2026-06-13
 ---
 
 # Better Auth Skill

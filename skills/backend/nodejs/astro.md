@@ -1,6 +1,7 @@
 ---
 name: astro
 description: "Astro framework: content-first sites, islands architecture, MDX collections, Cloudflare Workers/Pages deployment, View Transitions, SEO"
+updated: 2026-06-13
 ---
 
 # Astro Skill

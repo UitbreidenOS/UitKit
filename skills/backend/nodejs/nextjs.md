@@ -1,6 +1,7 @@
 ---
 name: nextjs
 description: "Next.js App Router patterns: Server Components, Server Actions, route handlers, middleware, parallel routes, ISR"
+updated: 2026-06-13
 ---
 
 # Next.js Skill

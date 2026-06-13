@@ -1,6 +1,7 @@
 ---
 name: soc2-compliance
 description: "SOC 2 compliance: Trust Service Criteria mapping, control matrix, gap analysis, evidence collection, Type I vs Type II readiness, and audit preparation for SaaS companies"
+updated: 2026-06-13
 ---
 
 # SOC 2 Compliance Skill

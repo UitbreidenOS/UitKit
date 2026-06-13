@@ -1,6 +1,7 @@
 ---
 name: customer-inquiry
 description: "Handle customer enquiries: FAQ response drafts, appointment booking messages, after-hours auto-replies, complaint escalation — for any service business"
+updated: 2026-06-13
 ---
 
 # Customer Inquiry Skill

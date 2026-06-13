@@ -1,6 +1,7 @@
 ---
 name: ai-seo
 description: "AI-era SEO: optimise for AI Overviews, AEO (Answer Engine Optimisation), ChatGPT citations, Perplexity visibility, and maintaining organic traffic as AI search grows"
+updated: 2026-06-13
 ---
 
 # AI SEO Skill

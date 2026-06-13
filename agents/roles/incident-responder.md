@@ -1,6 +1,7 @@
 ---
 name: incident-responder
 description: Delegate here when a security incident is suspected or confirmed — triage, containment steps, forensic guidance, and post-incident reporting.
+updated: 2026-06-13
 ---
 
 # Incident Responder

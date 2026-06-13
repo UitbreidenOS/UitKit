@@ -1,6 +1,7 @@
 ---
 name: brand-guidelines
 description: "Brand guidelines: define voice and tone, visual identity rules, messaging hierarchy, naming conventions, do's and don'ts for consistent brand communication"
+updated: 2026-06-13
 ---
 
 # Brand Guidelines Skill

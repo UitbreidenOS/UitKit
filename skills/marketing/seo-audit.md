@@ -1,6 +1,7 @@
 ---
 name: seo-audit
 description: "SEO audit: technical issues, on-page factors, backlink profile, Core Web Vitals, structured data, prioritised fix list with estimated traffic impact"
+updated: 2026-06-13
 ---
 
 # SEO Audit Skill

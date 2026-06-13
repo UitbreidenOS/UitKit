@@ -1,6 +1,7 @@
 ---
 name: champion-builder
 description: "Internal champion strategy: identify, enable, and mobilise the internal advocate who will push the deal through"
+updated: 2026-06-13
 ---
 
 # Champion Builder Skill

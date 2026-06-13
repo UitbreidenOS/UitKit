@@ -1,6 +1,7 @@
 ---
 name: gcp-architect
 description: "GCP architecture design: Cloud Run, GKE Autopilot, Cloud Functions, BigQuery, Terraform IaC, cost optimisation, IAM, and data pipeline patterns"
+updated: 2026-06-13
 ---
 
 # GCP Architect Skill

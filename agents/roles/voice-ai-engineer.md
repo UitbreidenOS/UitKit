@@ -1,6 +1,7 @@
 ---
 name: voice-ai-engineer
 description: Delegate when building voice interfaces, speech pipelines, or real-time audio AI systems.
+updated: 2026-06-13
 ---
 
 # Voice AI Engineer

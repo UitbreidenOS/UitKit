@@ -1,3 +1,8 @@
+---
+name: crewai
+updated: 2026-06-13
+---
+
 # CrewAI Multi-Agent Framework
 
 ## When to activate

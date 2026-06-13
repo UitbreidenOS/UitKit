@@ -1,6 +1,7 @@
 ---
 name: pricing-strategy
 description: "Pricing strategy: model analysis (value-based, cost-plus, competitive), tier design, freemium vs trial, price increase approach, willingness-to-pay research"
+updated: 2026-06-13
 ---
 
 # Pricing Strategy Skill

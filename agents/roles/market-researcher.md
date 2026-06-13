@@ -1,6 +1,7 @@
 ---
 name: market-researcher
 description: "Market research and analysis — TAM/SAM/SOM sizing, consumer research, segment analysis, pricing research, and market entry assessments"
+updated: 2026-06-13
 ---
 
 # Market Researcher

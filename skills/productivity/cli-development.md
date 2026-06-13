@@ -1,3 +1,8 @@
+---
+name: cli-development
+updated: 2026-06-13
+---
+
 # CLI Development
 
 ## When to activate

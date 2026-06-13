@@ -1,6 +1,7 @@
 ---
 name: electron-developer
 description: Delegate here for Electron app architecture, main/renderer process design, IPC security, auto-update, and native OS integration.
+updated: 2026-06-13
 ---
 
 # Electron Developer

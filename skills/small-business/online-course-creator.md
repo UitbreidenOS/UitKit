@@ -1,3 +1,8 @@
+---
+name: online-course-creator
+updated: 2026-06-13
+---
+
 # Online Course Creator
 
 ## When to activate

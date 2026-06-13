@@ -1,3 +1,8 @@
+---
+name: rust
+updated: 2026-06-13
+---
+
 # Rust Development
 
 ## When to activate

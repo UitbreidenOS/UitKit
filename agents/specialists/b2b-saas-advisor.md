@@ -1,6 +1,7 @@
 ---
 name: b2b-saas-advisor
 description: Delegate when making product, growth, or architecture decisions that require B2B SaaS domain experience.
+updated: 2026-06-13
 ---
 
 # B2B SaaS Advisor

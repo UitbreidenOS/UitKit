@@ -1,6 +1,7 @@
 ---
 name: payload-cms
 description: "Payload CMS: TypeScript-first headless CMS, collection schemas, access control, hooks, REST+GraphQL APIs, Next.js App Router integration"
+updated: 2026-06-13
 ---
 
 # Payload CMS Skill

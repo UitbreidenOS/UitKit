@@ -1,6 +1,7 @@
 ---
 name: ic-memo
 description: "Investment Committee memo: sections I-IX (executive summary through recommendation), deal terms, returns analysis, risk factors — PE and growth equity patterns"
+updated: 2026-06-13
 ---
 
 # IC Memo Skill

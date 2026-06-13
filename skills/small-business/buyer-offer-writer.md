@@ -1,6 +1,7 @@
 ---
 name: buyer-offer-writer
 description: "Buyer offer letter and personal cover letter: personalise to the seller's situation, highlight buyer strengths, write for competitive multi-offer scenarios and emotional sellers"
+updated: 2026-06-13
 ---
 
 # Buyer Offer Writer Skill

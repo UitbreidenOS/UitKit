@@ -1,6 +1,7 @@
 ---
 name: shopify-operations
 description: "Shopify store operations: product descriptions, inventory reorder alerts, demand forecasting, abandoned cart sequences, order status responses"
+updated: 2026-06-13
 ---
 
 # Shopify Operations Skill

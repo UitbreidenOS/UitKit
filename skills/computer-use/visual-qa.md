@@ -1,6 +1,7 @@
 ---
 name: visual-qa
 description: Visual regression and layout QA via screenshots — compare UI states, catch CSS breaks, and document visual drift.
+updated: 2026-06-13
 ---
 
 # Visual QA via Computer Use

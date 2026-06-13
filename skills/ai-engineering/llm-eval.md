@@ -1,6 +1,7 @@
 ---
 name: llm-eval
 description: "LLM evaluation: build evaluation datasets, choose metrics (RAGAS, G-Eval, LLM-as-judge), run automated evals, monitor production quality, and detect regressions"
+updated: 2026-06-13
 ---
 
 # LLM Eval Skill

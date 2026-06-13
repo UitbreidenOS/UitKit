@@ -1,6 +1,7 @@
 ---
 name: performance-optimizer
 description: "Application performance profiling and optimization — Core Web Vitals, API latency, database queries, memory leaks, bundle size"
+updated: 2026-06-13
 ---
 
 # Performance Optimizer

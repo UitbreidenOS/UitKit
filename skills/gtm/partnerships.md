@@ -1,6 +1,7 @@
 ---
 name: partnerships
 description: "Partnership strategy: partner tier classification (referral/reseller/OEM/strategic), 90-day joint GTM plans, revenue share modelling, and kill criteria for underperforming partnerships"
+updated: 2026-06-13
 ---
 
 # Partnerships Skill

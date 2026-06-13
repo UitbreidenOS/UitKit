@@ -1,6 +1,7 @@
 ---
 name: sdr-call-prep
 description: "Pre-call preparation for SDRs: account briefing, personalised talk tracks, objection responses, discovery questions, and call structure — generated in under 2 minutes"
+updated: 2026-06-13
 ---
 
 # SDR Call Prep Skill

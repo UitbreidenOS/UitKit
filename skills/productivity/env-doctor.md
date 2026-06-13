@@ -1,6 +1,7 @@
 ---
 name: env-doctor
 description: "Diagnose environment health: missing env vars, wrong runtime versions, broken deps, port conflicts, missing tools"
+updated: 2026-06-13
 ---
 
 # Env Doctor Skill

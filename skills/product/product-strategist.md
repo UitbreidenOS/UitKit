@@ -1,6 +1,7 @@
 ---
 name: product-strategist
 description: "Product strategy: OKR cascade generation, quarterly planning, product vision documents, competitive landscape analysis, and team scaling proposals for Head of Product"
+updated: 2026-06-13
 ---
 
 # Product Strategist Skill

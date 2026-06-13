@@ -1,6 +1,7 @@
 ---
 name: sop-writer
 description: "Write standard operating procedures for any business process — from onboarding staff to opening/closing routines to customer service scripts"
+updated: 2026-06-13
 ---
 
 # SOP Writer Skill

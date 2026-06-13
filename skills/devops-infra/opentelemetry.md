@@ -1,6 +1,7 @@
 ---
 name: opentelemetry
 description: "OpenTelemetry setup: traces, metrics, logs, GenAI semantic conventions for LLM calls, export to Honeycomb/Datadog/Grafana, sampling strategies"
+updated: 2026-06-13
 ---
 
 # OpenTelemetry Skill

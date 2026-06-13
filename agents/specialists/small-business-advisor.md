@@ -1,3 +1,8 @@
+---
+name: small-business-advisor
+updated: 2026-06-13
+---
+
 # Small Business Advisor
 
 ## Purpose

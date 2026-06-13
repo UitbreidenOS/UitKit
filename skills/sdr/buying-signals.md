@@ -1,3 +1,8 @@
+---
+name: buying-signals
+updated: 2026-06-13
+---
+
 # Buying Signals
 
 ## When to activate

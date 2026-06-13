@@ -1,3 +1,8 @@
+---
+name: email-metrics
+updated: 2026-06-13
+---
+
 # Email Metrics
 
 ## When to activate

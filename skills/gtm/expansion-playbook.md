@@ -1,6 +1,7 @@
 ---
 name: expansion-playbook
 description: "Expansion and upsell playbook: identify expansion signals, craft upsell narrative, handle pricing and upgrade conversations for CS-led revenue growth"
+updated: 2026-06-13
 ---
 
 # Expansion Playbook Skill

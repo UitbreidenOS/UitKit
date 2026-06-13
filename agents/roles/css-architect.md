@@ -1,6 +1,7 @@
 ---
 name: css-architect
 description: Delegate here for CSS architecture decisions, design token systems, Tailwind configuration, and scalable stylesheet organization.
+updated: 2026-06-13
 ---
 
 # CSS Architect

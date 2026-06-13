@@ -1,6 +1,7 @@
 ---
 name: performance-auditor
 description: "Web performance analysis — Core Web Vitals, Lighthouse audits, bundle size profiling, and load-time optimization"
+updated: 2026-06-13
 ---
 
 # Performance Auditor

@@ -1,6 +1,7 @@
 ---
 name: northflank
 description: "Northflank: managed databases, secret injection, preview environments per PR, multi-service deployment — optimal for agent-generated codebases"
+updated: 2026-06-13
 ---
 
 # Northflank Skill

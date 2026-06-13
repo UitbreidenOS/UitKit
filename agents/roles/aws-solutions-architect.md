@@ -1,6 +1,7 @@
 ---
 name: aws-solutions-architect
 description: "AWS architecture design — VPC, IAM, compute (ECS/EKS/Lambda), storage, networking, and Well-Architected review"
+updated: 2026-06-13
 ---
 
 # AWS Solutions Architect

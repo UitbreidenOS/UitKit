@@ -1,3 +1,8 @@
+---
+name: phoenix
+updated: 2026-06-13
+---
+
 # Elixir + Phoenix
 
 ## When to activate

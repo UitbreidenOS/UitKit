@@ -1,6 +1,7 @@
 ---
 name: mlflow
 description: "MLflow experiment tracking, model registry, artifact logging, model serving, multi-run comparison, sklearn/PyTorch integration"
+updated: 2026-06-13
 ---
 
 # MLflow Skill

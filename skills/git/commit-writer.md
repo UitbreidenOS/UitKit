@@ -1,6 +1,7 @@
 ---
 name: commit-writer
 description: "Write conventional commit messages from staged diff — type, scope, subject, body, breaking changes"
+updated: 2026-06-13
 ---
 
 # Commit Writer Skill

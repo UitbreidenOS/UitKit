@@ -1,6 +1,7 @@
 ---
 name: growth-engineer
 description: Delegate here for funnel instrumentation, activation experiments, and growth loop design.
+updated: 2026-06-13
 ---
 
 # Growth Engineer

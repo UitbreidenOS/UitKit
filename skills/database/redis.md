@@ -1,6 +1,7 @@
 ---
 name: redis
 description: "Redis patterns: caching, sessions, rate limiting, pub/sub, queues, distributed locks — with Python and Node.js examples"
+updated: 2026-06-13
 ---
 
 # Redis Skill

@@ -1,3 +1,8 @@
+---
+name: cto-advisor
+updated: 2026-06-13
+---
+
 # CTO Advisor Agent
 
 ## Purpose

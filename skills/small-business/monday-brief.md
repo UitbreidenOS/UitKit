@@ -1,3 +1,8 @@
+---
+name: monday-brief
+updated: 2026-06-13
+---
+
 # Monday Brief
 
 ## When to activate

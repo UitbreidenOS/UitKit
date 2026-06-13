@@ -1,6 +1,7 @@
 ---
 name: cro-advisor
 description: "Chief Revenue Officer advisor — revenue forecasting, sales model design, pipeline coverage, NRR/GRR analysis, quota setting, sales capacity planning, and pricing strategy for B2B SaaS"
+updated: 2026-06-13
 ---
 
 # Chief Revenue Officer Advisor

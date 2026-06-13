@@ -1,6 +1,7 @@
 ---
 name: adr-writer
 description: "Architecture Decision Record agent — captures architectural decisions from conversation context into structured ADR documents with context, decision, rationale, and consequences"
+updated: 2026-06-13
 ---
 
 # ADR Writer Agent

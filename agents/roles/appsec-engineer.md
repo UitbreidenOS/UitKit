@@ -1,6 +1,7 @@
 ---
 name: appsec-engineer
 description: Delegate here for application security reviews, SAST findings, OWASP threat modeling, and secure-by-default code patterns.
+updated: 2026-06-13
 ---
 
 # AppSec Engineer

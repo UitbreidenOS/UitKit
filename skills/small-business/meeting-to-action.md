@@ -1,3 +1,8 @@
+---
+name: meeting-to-action
+updated: 2026-06-13
+---
+
 # Meeting to Action
 
 ## When to activate

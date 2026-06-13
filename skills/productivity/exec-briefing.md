@@ -1,6 +1,7 @@
 ---
 name: exec-briefing
 description: "Executive briefing document: meeting context, attendee backgrounds, agenda, talking points, desired outcomes, and pre-read materials — so the exec walks in prepared"
+updated: 2026-06-13
 ---
 
 # Executive Briefing Skill

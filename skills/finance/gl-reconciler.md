@@ -1,6 +1,7 @@
 ---
 name: gl-reconciler
 description: "General ledger reconciliation: account reconciliation procedures, journal entry review, period-close checklist, variance analysis, and intercompany elimination — for finance teams and fund administrators"
+updated: 2026-06-13
 ---
 
 # GL Reconciler Skill

@@ -1,6 +1,7 @@
 ---
 name: code-simplifier
 description: "Pre-review code simplification agent — removes over-engineering, duplication, dead code, and unnecessary complexity before a human code review"
+updated: 2026-06-13
 ---
 
 # Code Simplifier Agent

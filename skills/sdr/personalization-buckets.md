@@ -1,3 +1,8 @@
+---
+name: personalization-buckets
+updated: 2026-06-13
+---
+
 # Personalization Buckets
 
 ## When to activate

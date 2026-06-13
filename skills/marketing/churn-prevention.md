@@ -1,6 +1,7 @@
 ---
 name: churn-prevention
 description: "Churn prevention: identify at-risk customers, intervention playbooks, save offer design, exit survey analysis, win-back campaigns"
+updated: 2026-06-13
 ---
 
 # Churn Prevention Skill

@@ -1,6 +1,7 @@
 ---
 name: deal-desk
 description: "Deal desk: structure enterprise deals, review contract terms, set discount approval thresholds, analyse deal economics, and create commercial policy — for B2B sales operations"
+updated: 2026-06-13
 ---
 
 # Deal Desk Skill

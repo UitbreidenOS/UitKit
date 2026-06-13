@@ -1,6 +1,7 @@
 ---
 name: compliance-tracker
 description: "Track regulatory obligations, deadlines, and evidence requirements across GDPR, SOC2, ISO27001"
+updated: 2026-06-13
 ---
 
 # Compliance Tracker Skill

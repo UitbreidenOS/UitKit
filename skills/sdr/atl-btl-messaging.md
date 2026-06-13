@@ -1,3 +1,8 @@
+---
+name: atl-btl-messaging
+updated: 2026-06-13
+---
+
 # ATL/BTL Messaging
 
 ## When to activate

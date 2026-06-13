@@ -1,6 +1,7 @@
 ---
 name: go-engineer
 description: Delegate here for Go services, idiomatic concurrency, CLI tools, or performance-critical backend work.
+updated: 2026-06-13
 ---
 
 # Go Engineer

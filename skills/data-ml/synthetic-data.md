@@ -1,6 +1,7 @@
 ---
 name: synthetic-data
 description: "Synthetic data generation: realistic relational datasets for testing, seeding, and ML training — Faker, factory patterns, constraint-aware generation"
+updated: 2026-06-13
 ---
 
 # Synthetic Data Skill

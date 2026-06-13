@@ -1,6 +1,7 @@
 ---
 name: zig-engineer
 description: Delegate here for Zig systems programming, manual memory management, C interop, or writing comptime-generic libraries.
+updated: 2026-06-13
 ---
 
 # Zig Engineer

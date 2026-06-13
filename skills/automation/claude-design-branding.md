@@ -1,3 +1,8 @@
+---
+name: claude-design-branding
+updated: 2026-06-13
+---
+
 # Claude Design Brand System Setup
 
 ## When to activate

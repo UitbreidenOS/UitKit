@@ -1,6 +1,7 @@
 ---
 name: crm-hygiene
 description: "CRM data hygiene: detect stale records, merge duplicates, fill missing fields, reassign ownership, run scheduled cleanup — HubSpot and Salesforce patterns"
+updated: 2026-06-13
 ---
 
 # CRM Hygiene Skill

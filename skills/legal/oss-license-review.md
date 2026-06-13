@@ -1,6 +1,7 @@
 ---
 name: oss-license-review
 description: "Open source license classification: permissive vs copyleft vs network copyleft, compatibility matrix, deployment model obligations, attribution and notice requirements"
+updated: 2026-06-13
 ---
 
 # OSS License Review Skill

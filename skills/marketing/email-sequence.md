@@ -1,6 +1,7 @@
 ---
 name: email-sequence
 description: "Marketing email sequences: welcome series, nurture campaigns, re-engagement flows, win-back sequences — subject lines, copy, send timing"
+updated: 2026-06-13
 ---
 
 # Email Sequence Skill

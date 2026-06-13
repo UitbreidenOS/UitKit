@@ -1,6 +1,7 @@
 ---
 name: no-slop
 description: "Escape AI-generated aesthetics in UI/frontend: specific typography, color palettes, layouts, and design rules that avoid the generic 'AI look'"
+updated: 2026-06-13
 ---
 
 # No-Slop Skill

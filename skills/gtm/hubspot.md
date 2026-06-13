@@ -1,6 +1,7 @@
 ---
 name: hubspot
 description: "HubSpot CRM automation: MCP server setup, contacts/deals/tickets via API, data enrichment pipelines, CRM workflows — the official Anthropic-HubSpot integration"
+updated: 2026-06-13
 ---
 
 # HubSpot Skill

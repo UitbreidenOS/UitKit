@@ -1,6 +1,7 @@
 ---
 name: fullstack-developer
 description: "Full-stack feature development — Next.js App Router, TypeScript, Drizzle ORM, tRPC, shadcn/ui, and Tailwind"
+updated: 2026-06-13
 ---
 
 # Fullstack Developer

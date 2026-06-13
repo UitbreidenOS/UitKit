@@ -1,6 +1,7 @@
 ---
 name: tech-debt-tracker
 description: "Technical debt management: catalogue, categorise, and prioritise tech debt — build a debt register, quantify impact, present to leadership, and create a paydown strategy"
+updated: 2026-06-13
 ---
 
 # Tech Debt Tracker Skill

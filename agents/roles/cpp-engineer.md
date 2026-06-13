@@ -1,6 +1,7 @@
 ---
 name: cpp-engineer
 description: Delegate here for modern C++ systems, performance-critical libraries, embedded targets, or unsafe memory management review.
+updated: 2026-06-13
 ---
 
 # C++ Engineer

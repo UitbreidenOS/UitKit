@@ -1,6 +1,7 @@
 ---
 name: valyu
 description: "Access paywalled research data via Valyu MCP: SEC EDGAR filings, PubMed papers, clinical trials, patents, financial reports."
+updated: 2026-06-13
 ---
 
 # Valyu Research API

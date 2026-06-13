@@ -1,6 +1,7 @@
 ---
 name: adr-writer
 description: "Write Architecture Decision Records in Nygard format. Triggers on architectural choices, approach comparisons, or undocumented past decisions."
+updated: 2026-06-13
 ---
 
 # ADR Writer

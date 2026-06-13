@@ -1,6 +1,7 @@
 ---
 name: customer-success
 description: "Customer success management: health scoring, churn prediction signals, expansion playbooks, QBR structure, onboarding plans, and customer lifecycle management for SaaS"
+updated: 2026-06-13
 ---
 
 # Customer Success Skill

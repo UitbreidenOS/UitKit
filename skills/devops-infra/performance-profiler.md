@@ -1,6 +1,7 @@
 ---
 name: performance-profiler
 description: "Application performance profiling: identify CPU hotspots, memory leaks, slow queries, N+1 problems — Node.js, Python, and database performance analysis"
+updated: 2026-06-13
 ---
 
 # Performance Profiler Skill

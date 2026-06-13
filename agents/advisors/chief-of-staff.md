@@ -1,6 +1,7 @@
 ---
 name: chief-of-staff
 description: "Chief of Staff advisor — operating rhythm design, CEO leverage, cross-functional coordination, OKR facilitation, and strategic initiative tracking"
+updated: 2026-06-13
 ---
 
 # Chief of Staff Advisor

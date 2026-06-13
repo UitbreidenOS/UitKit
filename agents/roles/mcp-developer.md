@@ -1,6 +1,7 @@
 ---
 name: mcp-developer
 description: "MCP server development agent — building Model Context Protocol servers and clients, tool definitions, JSON-RPC 2.0 transport, authentication, and MCP server deployment"
+updated: 2026-06-13
 ---
 
 # MCP Developer Agent

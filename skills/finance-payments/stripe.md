@@ -1,6 +1,7 @@
 ---
 name: stripe
 description: "Stripe Checkout, subscriptions, webhooks, customer portal, payment intents, test mode, idempotency"
+updated: 2026-06-13
 ---
 
 # Stripe Integration Skill

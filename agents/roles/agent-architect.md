@@ -1,6 +1,7 @@
 ---
 name: agent-architect
 description: Delegate when designing multi-agent systems, orchestration topologies, or agentic workflow patterns.
+updated: 2026-06-13
 ---
 
 # Agent Architect

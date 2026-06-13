@@ -1,6 +1,7 @@
 ---
 name: pitch-deck
 description: "Pitch deck writing: investor narrative, slide-by-slide structure, financial ask framing, market sizing (TAM/SAM/SOM), and traction slide best practices"
+updated: 2026-06-13
 ---
 
 # Pitch Deck Skill

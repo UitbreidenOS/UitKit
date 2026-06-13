@@ -1,6 +1,7 @@
 ---
 name: saas-pricing-strategist
 description: Delegate when designing SaaS pricing models, packaging tiers, billing architecture, or pricing page copy.
+updated: 2026-06-13
 ---
 
 # SaaS Pricing Strategist

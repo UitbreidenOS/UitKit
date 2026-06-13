@@ -1,3 +1,8 @@
+---
+name: cold-call-script
+updated: 2026-06-13
+---
+
 # Cold Call Script
 
 ## When to activate

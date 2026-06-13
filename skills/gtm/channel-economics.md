@@ -1,6 +1,7 @@
 ---
 name: channel-economics
 description: "Channel economics: compute fully-loaded cost-to-serve per channel, channel ROI (cash, LTV-adjusted, marginal), optimal direct vs. partner channel mix, and diminishing-returns analysis"
+updated: 2026-06-13
 ---
 
 # Channel Economics Skill

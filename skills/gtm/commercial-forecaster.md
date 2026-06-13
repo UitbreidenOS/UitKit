@@ -1,6 +1,7 @@
 ---
 name: commercial-forecaster
 description: "Commercial forecasting: build quarterly bookings forecasts with commit/best-case/pipe-only tiers, cohort ARR projections, per-stage funnel confidence scoring, and NRR/GRR analysis for board reporting"
+updated: 2026-06-13
 ---
 
 # Commercial Forecaster Skill

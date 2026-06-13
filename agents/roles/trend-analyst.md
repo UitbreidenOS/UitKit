@@ -1,6 +1,7 @@
 ---
 name: trend-analyst
 description: "Emerging trend detection and forecasting — technology trends, market signals, adoption curves, and strategic implications across 8 signal categories"
+updated: 2026-06-13
 ---
 
 # Trend Analyst

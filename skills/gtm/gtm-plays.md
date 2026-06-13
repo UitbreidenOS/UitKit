@@ -1,3 +1,8 @@
+---
+name: gtm-plays
+updated: 2026-06-13
+---
+
 # GTM Plays
 
 ## When to activate

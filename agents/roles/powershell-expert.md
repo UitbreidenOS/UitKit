@@ -1,6 +1,7 @@
 ---
 name: powershell-expert
 description: "PowerShell scripting and automation — advanced pipeline patterns, module development, DSC, cross-platform PS7, remoting, and enterprise automation"
+updated: 2026-06-13
 ---
 
 # PowerShell Expert

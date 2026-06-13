@@ -1,6 +1,7 @@
 ---
 name: customer-success-manager
 description: Delegate here for onboarding plans, QBR frameworks, health scoring, churn risk analysis, and renewal strategy.
+updated: 2026-06-13
 ---
 
 # Customer Success Manager

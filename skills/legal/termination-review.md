@@ -1,6 +1,7 @@
 ---
 name: termination-review
 description: "Employment termination risk review: red flag checklist, final pay timing, severance analysis, documentation gaps, protected class checks — before the decision is final"
+updated: 2026-06-13
 ---
 
 # Termination Review Skill

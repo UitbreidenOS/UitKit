@@ -1,6 +1,7 @@
 ---
 name: performance-test-engineer
 description: Delegate here to design load tests, identify bottlenecks, and produce perf baselines for APIs and services.
+updated: 2026-06-13
 ---
 
 # Performance Test Engineer

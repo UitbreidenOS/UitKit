@@ -1,3 +1,8 @@
+---
+name: mcp-client
+updated: 2026-06-13
+---
+
 # MCP Client
 
 ## When to activate

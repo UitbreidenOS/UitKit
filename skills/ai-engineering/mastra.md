@@ -1,6 +1,7 @@
 ---
 name: mastra
 description: "Mastra AI: TypeScript agent framework — agents, workflows, tools, memory, RAG, evals — for building production-grade AI applications"
+updated: 2026-06-13
 ---
 
 # Mastra Skill

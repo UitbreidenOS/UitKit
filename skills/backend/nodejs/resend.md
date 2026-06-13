@@ -1,6 +1,7 @@
 ---
 name: resend
 description: "Resend email API: transactional emails, React Email templates, email verification, password reset, notification emails, and webhook handling"
+updated: 2026-06-13
 ---
 
 # Resend Skill

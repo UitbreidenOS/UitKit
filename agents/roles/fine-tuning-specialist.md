@@ -1,6 +1,7 @@
 ---
 name: fine-tuning-specialist
 description: Delegate when preparing datasets, configuring training runs, or diagnosing fine-tuned model quality issues.
+updated: 2026-06-13
 ---
 
 # Fine-Tuning Specialist

@@ -1,3 +1,8 @@
+---
+name: context-engineering
+updated: 2026-06-13
+---
+
 # Context Engineering
 
 ## When to activate

@@ -1,6 +1,7 @@
 ---
 name: vue-architect
 description: Delegate here for Vue 3 architecture, Composition API patterns, Pinia state design, and Vue ecosystem decisions.
+updated: 2026-06-13
 ---
 
 # Vue Architect

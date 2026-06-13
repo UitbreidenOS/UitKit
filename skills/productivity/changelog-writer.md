@@ -1,6 +1,7 @@
 ---
 name: changelog-writer
 description: "User-facing changelog from git history or PRs: group by impact, plain language, links to docs"
+updated: 2026-06-13
 ---
 
 # Changelog Writer Skill

@@ -1,6 +1,7 @@
 ---
 name: argocd
 description: "ArgoCD GitOps: declarative continuous delivery for Kubernetes — Application setup, sync policies, automated rollouts, RBAC, notifications, and multi-cluster management"
+updated: 2026-06-13
 ---
 
 # ArgoCD Skill

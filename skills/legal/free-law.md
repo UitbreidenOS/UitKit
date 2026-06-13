@@ -1,3 +1,8 @@
+---
+name: free-law
+updated: 2026-06-13
+---
+
 # Free Law Project (CourtListener) — Free US Legal Research
 
 ## When to activate

@@ -1,6 +1,7 @@
 ---
 name: prompt-optimizer
 description: "Prompt engineering and optimization — rewrites prompts for reliability, token efficiency, structured output, and consistency"
+updated: 2026-06-13
 ---
 
 # Prompt Optimizer

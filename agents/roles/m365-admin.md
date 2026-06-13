@@ -1,6 +1,7 @@
 ---
 name: m365-admin
 description: "Microsoft 365 administration — Exchange Online, Teams, SharePoint, Intune MDM, Azure AD, and M365 security and compliance"
+updated: 2026-06-13
 ---
 
 # Microsoft 365 Administrator

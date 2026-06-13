@@ -1,6 +1,7 @@
 ---
 name: platform-engineer
 description: "Platform engineering agent — internal developer platforms, golden path templates, Backstage portals, self-service infrastructure, and developer experience at scale"
+updated: 2026-06-13
 ---
 
 # Platform Engineer

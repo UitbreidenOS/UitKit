@@ -1,6 +1,7 @@
 ---
 name: legal-advisor
 description: "Legal and compliance issue identification — contract clause analysis, regulatory assessment, IP review, employment guidance. Identifies issues only, never provides legal advice."
+updated: 2026-06-13
 ---
 
 # Legal Advisor

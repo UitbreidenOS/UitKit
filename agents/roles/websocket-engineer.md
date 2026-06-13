@@ -1,6 +1,7 @@
 ---
 name: websocket-engineer
 description: "WebSocket and real-time systems — Socket.io, native WebSocket, Redis scaling, auth, reconnection, and presence"
+updated: 2026-06-13
 ---
 
 # WebSocket Engineer

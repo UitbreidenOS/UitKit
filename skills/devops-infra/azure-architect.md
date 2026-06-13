@@ -1,6 +1,7 @@
 ---
 name: azure-architect
 description: "Azure architecture design: App Service, AKS, Azure Functions, Cosmos DB, Bicep IaC templates, cost optimisation, Entra ID integration, and migration patterns"
+updated: 2026-06-13
 ---
 
 # Azure Architect Skill

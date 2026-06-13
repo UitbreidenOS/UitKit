@@ -1,6 +1,7 @@
 ---
 name: qa-automation-engineer
 description: Delegate here to design, write, and maintain automated test suites across UI, API, and integration layers.
+updated: 2026-06-13
 ---
 
 # QA Automation Engineer

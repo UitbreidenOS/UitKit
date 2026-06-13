@@ -1,6 +1,7 @@
 ---
 name: ai-writing-auditor
 description: "AI writing detection and rewriting agent — identifies AI-pattern text in documentation, marketing copy, and user-facing content, rewrites to sound human"
+updated: 2026-06-13
 ---
 
 # AI Writing Auditor Agent

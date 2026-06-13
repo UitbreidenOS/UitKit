@@ -1,6 +1,7 @@
 ---
 name: content-strategy
 description: "Content strategy: content pillars, editorial calendar, distribution plan, repurposing system, SEO-content alignment — for blogs, newsletters, LinkedIn, YouTube"
+updated: 2026-06-13
 ---
 
 # Content Strategy Skill

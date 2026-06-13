@@ -1,6 +1,7 @@
 ---
 name: vendor-contract-review
 description: "Vendor contract review: identify risky clauses in SaaS, services, and procurement contracts — liability caps, indemnification, data processing, termination rights, and auto-renewal traps"
+updated: 2026-06-13
 ---
 
 # Vendor Contract Review Skill

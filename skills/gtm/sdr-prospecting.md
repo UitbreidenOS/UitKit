@@ -1,3 +1,8 @@
+---
+name: sdr-prospecting
+updated: 2026-06-13
+---
+
 # SDR Prospecting
 
 ## When to activate

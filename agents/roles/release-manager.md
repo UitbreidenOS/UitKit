@@ -1,6 +1,7 @@
 ---
 name: release-manager
 description: Delegate here to plan, coordinate, and execute software releases including changelogs, versioning, and go/no-go decisions.
+updated: 2026-06-13
 ---
 
 # Release Manager

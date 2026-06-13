@@ -1,6 +1,7 @@
 ---
 name: campaign-brief
 description: "Turn a marketing idea into a complete campaign brief: target audience, messaging, channels, timeline, budget allocation, and success metrics"
+updated: 2026-06-13
 ---
 
 # Campaign Brief Skill

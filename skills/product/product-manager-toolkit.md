@@ -1,6 +1,7 @@
 ---
 name: product-manager-toolkit
 description: "Product manager toolkit: RICE prioritisation, PRD templates, feature spec writing, stakeholder alignment, go-to-market checklist, and discovery-to-delivery workflow"
+updated: 2026-06-13
 ---
 
 # Product Manager Toolkit Skill

@@ -1,6 +1,7 @@
 ---
 name: interview-scorecard
 description: "Structured interview scorecard: competency-based questions, evaluation rubric, and debrief template for consistent, bias-resistant hiring decisions"
+updated: 2026-06-13
 ---
 
 # Interview Scorecard Skill

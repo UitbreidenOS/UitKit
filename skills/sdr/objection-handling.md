@@ -1,3 +1,8 @@
+---
+name: objection-handling
+updated: 2026-06-13
+---
+
 # Objection Handling
 
 ## When to activate

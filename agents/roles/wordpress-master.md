@@ -1,6 +1,7 @@
 ---
 name: wordpress-master
 description: "WordPress architecture and development — theme/plugin development, WooCommerce, headless WordPress, performance optimization, and multisite"
+updated: 2026-06-13
 ---
 
 # WordPress Master

@@ -1,6 +1,7 @@
 ---
 name: pulumi
 description: "Pulumi Infrastructure as Code: define cloud infrastructure in TypeScript, Python, or Go — AWS, GCP, Azure, Kubernetes — with full programming language power instead of YAML/HCL"
+updated: 2026-06-13
 ---
 
 # Pulumi Skill

@@ -1,6 +1,7 @@
 ---
 name: postgresql
 description: "PostgreSQL backend patterns: full-text search, JSONB, arrays, pg_notify, PL/pgSQL functions, connection pooling with asyncpg and node-postgres"
+updated: 2026-06-13
 ---
 
 # PostgreSQL Skill

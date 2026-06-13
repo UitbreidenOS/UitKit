@@ -1,3 +1,8 @@
+---
+name: security-reviewer
+updated: 2026-06-13
+---
+
 # Security Reviewer Agent
 
 ## Purpose

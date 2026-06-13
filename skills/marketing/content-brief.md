@@ -1,6 +1,7 @@
 ---
 name: content-brief
 description: "SEO-optimised content brief: keyword targeting, outline, competitor gaps, internal links, CTA"
+updated: 2026-06-13
 ---
 
 # Content Brief Skill

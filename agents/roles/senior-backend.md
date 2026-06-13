@@ -1,6 +1,7 @@
 ---
 name: senior-backend
 description: "Senior backend engineer agent — REST API design, database optimisation, authentication flows, microservice architecture, security hardening, and backend code review"
+updated: 2026-06-13
 ---
 
 # Senior Backend Engineer Agent

@@ -1,3 +1,8 @@
+---
+name: salon-spa-ops
+updated: 2026-06-13
+---
+
 # Salon and Spa Operations
 
 ## When to activate

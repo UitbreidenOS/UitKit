@@ -1,6 +1,7 @@
 ---
 name: chaos-engineer
 description: "Chaos engineering agent — failure injection design, blast radius control, game day orchestration, and resilience validation"
+updated: 2026-06-13
 ---
 
 # Chaos Engineer

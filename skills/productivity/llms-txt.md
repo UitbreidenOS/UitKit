@@ -1,6 +1,7 @@
 ---
 name: llms-txt
 description: "llms.txt standard: create AI-readable documentation indexes that reduce hallucinations by 60%+ vs context stuffing — for your own projects and libraries"
+updated: 2026-06-13
 ---
 
 # llms.txt Skill

@@ -1,3 +1,8 @@
+---
+name: lead-triager
+updated: 2026-06-13
+---
+
 # Lead Triager
 
 ## When to activate

@@ -1,6 +1,7 @@
 ---
 name: legacy-modernizer
 description: "Legacy code modernization — anti-pattern identification, safe refactoring, framework migration, and technical debt reduction"
+updated: 2026-06-13
 ---
 
 # Legacy Modernizer

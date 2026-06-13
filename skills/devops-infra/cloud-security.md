@@ -1,6 +1,7 @@
 ---
 name: cloud-security
 description: "Cloud security posture: IAM privilege escalation detection, S3 public exposure audit, security group review, IaC security scanning — AWS, Azure, and GCP misconfigurations"
+updated: 2026-06-13
 ---
 
 # Cloud Security Skill

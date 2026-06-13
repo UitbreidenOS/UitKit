@@ -1,6 +1,7 @@
 ---
 name: security-audit
 description: "Security audit for code: OWASP Top 10, injection, auth flaws, secrets, dependency vulnerabilities — with severity and fix for each finding"
+updated: 2026-06-13
 ---
 
 # Security Audit Skill

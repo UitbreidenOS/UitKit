@@ -1,6 +1,7 @@
 ---
 name: api-doc-writer
 description: "API documentation from OpenAPI spec or code: endpoints, parameters, examples, error codes, SDKs"
+updated: 2026-06-13
 ---
 
 # API Doc Writer Skill

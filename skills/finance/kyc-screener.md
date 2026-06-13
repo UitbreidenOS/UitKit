@@ -1,6 +1,7 @@
 ---
 name: kyc-screener
 description: "KYC/AML screening: document parsing, beneficial ownership extraction, rules-grid evaluation, PEP/sanctions checks, gap flagging and escalation routing"
+updated: 2026-06-13
 ---
 
 # KYC Screener Skill

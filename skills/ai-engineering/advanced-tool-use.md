@@ -1,3 +1,8 @@
+---
+name: advanced-tool-use
+updated: 2026-06-13
+---
+
 # Advanced Tool Use
 
 ## When to activate

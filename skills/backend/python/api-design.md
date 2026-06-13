@@ -1,6 +1,7 @@
 ---
 name: api-design
 description: "REST API design: resource naming, versioning, pagination, error responses, rate limiting headers, idempotency, OpenAPI documentation"
+updated: 2026-06-13
 ---
 
 # API Design Skill

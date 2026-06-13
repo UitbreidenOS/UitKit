@@ -1,6 +1,7 @@
 ---
 name: angular-architect
 description: "Angular 17+ enterprise architecture agent — standalone components, Signals, NgRx, RxJS operators, module federation, and large-scale patterns"
+updated: 2026-06-13
 ---
 
 # Angular Architect

@@ -1,3 +1,8 @@
+---
+name: sdr-copywriter
+updated: 2026-06-13
+---
+
 # SDR Copywriter
 
 ## Purpose

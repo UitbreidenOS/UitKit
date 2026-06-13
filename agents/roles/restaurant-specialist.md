@@ -1,3 +1,8 @@
+---
+name: restaurant-specialist
+updated: 2026-06-13
+---
+
 # Restaurant Specialist
 
 ## Purpose

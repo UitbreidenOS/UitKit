@@ -1,6 +1,7 @@
 ---
 name: mongodb
 description: "MongoDB patterns: schema design, aggregation pipeline, indexes, transactions, Atlas Search, Mongoose vs native driver"
+updated: 2026-06-13
 ---
 
 # MongoDB Skill

@@ -1,6 +1,7 @@
 ---
 name: dependency-auditor
 description: "Dependency auditing: identify outdated packages, CVE vulnerabilities, licence conflicts, and unused dependencies — npm, pip, cargo, and Go modules"
+updated: 2026-06-13
 ---
 
 # Dependency Auditor Skill

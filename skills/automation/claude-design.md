@@ -1,3 +1,8 @@
+---
+name: claude-design
+updated: 2026-06-13
+---
+
 # Claude Design Integration
 
 ## When to activate

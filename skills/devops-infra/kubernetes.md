@@ -1,6 +1,7 @@
 ---
 name: kubernetes
 description: "Kubernetes manifests, resource limits, health probes, secrets, RBAC, HPA, CrashLoopBackOff diagnosis"
+updated: 2026-06-13
 ---
 
 # Kubernetes Skill

@@ -1,3 +1,8 @@
+---
+name: enterprise-compliance
+updated: 2026-06-13
+---
+
 # Enterprise Claude Code Deployment — Compliance and Security
 
 ## When to activate

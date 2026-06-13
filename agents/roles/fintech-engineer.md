@@ -1,6 +1,7 @@
 ---
 name: fintech-engineer
 description: "Fintech and payment systems engineering agent for PCI DSS compliance, payment gateway integration, KYC/AML workflows, and financial ledger design"
+updated: 2026-06-13
 ---
 
 # Fintech Engineer

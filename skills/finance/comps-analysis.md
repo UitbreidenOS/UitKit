@@ -1,6 +1,7 @@
 ---
 name: comps-analysis
 description: "Trading and transaction comps: build a comparable company universe, spread EV/EBITDA and P/E multiples, apply to target, benchmark valuation"
+updated: 2026-06-13
 ---
 
 # Comps Analysis Skill

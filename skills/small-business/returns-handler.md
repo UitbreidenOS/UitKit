@@ -1,6 +1,7 @@
 ---
 name: returns-handler
 description: "Returns and refunds management: policy drafting, response templates, dispute resolution, trend analysis"
+updated: 2026-06-13
 ---
 
 # Returns Handler Skill

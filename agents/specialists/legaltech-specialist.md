@@ -1,6 +1,7 @@
 ---
 name: legaltech-specialist
 description: Delegate when building legal SaaS, contract tooling, compliance automation, or law firm tech products.
+updated: 2026-06-13
 ---
 
 # Legaltech Specialist

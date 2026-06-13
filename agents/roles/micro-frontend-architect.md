@@ -1,6 +1,7 @@
 ---
 name: micro-frontend-architect
 description: Delegate here for micro-frontend architecture decisions, Module Federation configuration, shell/remote design, and cross-team integration patterns.
+updated: 2026-06-13
 ---
 
 # Micro-Frontend Architect

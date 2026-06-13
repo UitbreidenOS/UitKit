@@ -1,6 +1,7 @@
 ---
 name: pandas-polars
 description: "Pandas and Polars data manipulation: filtering, groupby, joins, time series, performance optimization"
+updated: 2026-06-13
 ---
 
 # Pandas / Polars Skill

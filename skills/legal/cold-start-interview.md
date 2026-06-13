@@ -1,3 +1,8 @@
+---
+name: cold-start-interview
+updated: 2026-06-13
+---
+
 # Cold-Start Interview — Legal Plugin Setup
 
 ## When to activate

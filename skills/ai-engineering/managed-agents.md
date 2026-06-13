@@ -1,3 +1,8 @@
+---
+name: managed-agents
+updated: 2026-06-13
+---
+
 # Managed Agents
 
 ## When to activate

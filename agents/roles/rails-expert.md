@@ -1,6 +1,7 @@
 ---
 name: rails-expert
 description: "Ruby on Rails 7+ development agent — ActiveRecord, Hotwire, Sidekiq, API mode, authentication, and Kamal deployment"
+updated: 2026-06-13
 ---
 
 # Rails Expert

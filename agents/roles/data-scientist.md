@@ -1,6 +1,7 @@
 ---
 name: data-scientist
 description: Delegate when the task involves statistical analysis, ML model development, experiment design, or interpreting model outputs.
+updated: 2026-06-13
 ---
 
 # Data Scientist

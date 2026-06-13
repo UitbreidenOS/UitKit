@@ -1,6 +1,7 @@
 ---
 name: kubernetes-architect
 description: "Kubernetes architecture and operations — workloads, networking, storage, RBAC, HPA, and production hardening patterns"
+updated: 2026-06-13
 ---
 
 # Kubernetes Architect

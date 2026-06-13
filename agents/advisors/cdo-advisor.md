@@ -1,6 +1,7 @@
 ---
 name: cdo-advisor
 description: "Chief Data Officer advisor — AI training data rights, data architecture strategy (warehouse/lakehouse/mesh), customer data valuation for M&A, and data team org design"
+updated: 2026-06-13
 ---
 
 # Chief Data Officer Advisor

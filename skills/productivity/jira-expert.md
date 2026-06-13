@@ -1,6 +1,7 @@
 ---
 name: jira-expert
 description: "Jira project management: board setup, issue hierarchy, workflow design, JQL queries, sprint planning, reporting, and Jira best practices for engineering teams"
+updated: 2026-06-13
 ---
 
 # Jira Expert Skill

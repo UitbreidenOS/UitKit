@@ -1,6 +1,7 @@
 ---
 name: typescript-advanced
 description: "Advanced TypeScript: generics, conditional types, mapped types, template literals, utility types, type guards, discriminated unions at scale"
+updated: 2026-06-13
 ---
 
 # TypeScript Advanced Skill

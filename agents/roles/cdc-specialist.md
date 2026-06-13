@@ -1,6 +1,7 @@
 ---
 name: cdc-specialist
 description: Delegate here for Change Data Capture pipeline design, Debezium configuration, WAL-based streaming, event sourcing from databases, and CDC-to-Kafka integration.
+updated: 2026-06-13
 ---
 
 # CDC Specialist

@@ -1,6 +1,7 @@
 ---
 name: scala-engineer
 description: Delegate here for Scala 3 services, functional domain modeling, Akka/Pekko systems, or Spark data pipelines.
+updated: 2026-06-13
 ---
 
 # Scala Engineer

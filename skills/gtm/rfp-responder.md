@@ -1,6 +1,7 @@
 ---
 name: rfp-responder
 description: "RFP and security questionnaire response: analyse, score, and respond to enterprise RFPs, security questionnaires (SIG, CAIQ), and vendor assessments — efficiently and accurately"
+updated: 2026-06-13
 ---
 
 # RFP Responder Skill

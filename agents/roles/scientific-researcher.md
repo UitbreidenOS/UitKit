@@ -1,6 +1,7 @@
 ---
 name: scientific-researcher
 description: "Scientific literature research agent for systematic review, evidence synthesis, methodology critique, and structured research summaries with citations"
+updated: 2026-06-13
 ---
 
 # Scientific Researcher

@@ -1,6 +1,7 @@
 ---
 name: sveltekit
 description: "SvelteKit full-stack framework: file-based routing, server and universal load functions, form actions with progressive enhancement, hooks, route groups, adapters, and REST endpoints via +server.ts"
+updated: 2026-06-13
 ---
 
 # SvelteKit Skill

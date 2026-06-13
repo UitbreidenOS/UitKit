@@ -1,3 +1,8 @@
+---
+name: ptc
+updated: 2026-06-13
+---
+
 # Programmatic Tool Calling (PTC)
 
 ## When to activate

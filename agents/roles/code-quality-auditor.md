@@ -1,6 +1,7 @@
 ---
 name: code-quality-auditor
 description: Delegate here to audit code for correctness, maintainability, complexity, and adherence to team standards.
+updated: 2026-06-13
 ---
 
 # Code Quality Auditor

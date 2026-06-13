@@ -1,3 +1,8 @@
+---
+name: cold-outreach
+updated: 2026-06-13
+---
+
 # Cold Outreach
 
 ## When to activate

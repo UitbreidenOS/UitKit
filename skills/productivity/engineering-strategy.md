@@ -1,6 +1,7 @@
 ---
 name: engineering-strategy
 description: "Engineering strategy document: tech vision, build vs buy decisions, team topology, 12-month roadmap"
+updated: 2026-06-13
 ---
 
 # Engineering Strategy Skill

@@ -1,6 +1,7 @@
 ---
 name: terraform
 description: "Terraform modules, state management, workspaces, provider config, plan/apply workflow, remote backends"
+updated: 2026-06-13
 ---
 
 # Terraform Skill

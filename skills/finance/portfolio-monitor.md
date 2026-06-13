@@ -1,6 +1,7 @@
 ---
 name: portfolio-monitor
 description: "Portfolio company monitoring: synthesize board updates, track KPIs against plan, surface follow-on triggers and red flags, generate LP-ready portfolio summaries"
+updated: 2026-06-13
 ---
 
 # Portfolio Monitor Skill

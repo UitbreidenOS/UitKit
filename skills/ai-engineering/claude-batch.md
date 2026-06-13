@@ -1,3 +1,8 @@
+---
+name: claude-batch
+updated: 2026-06-13
+---
+
 # Claude Batch
 
 ## When to activate

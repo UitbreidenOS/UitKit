@@ -1,6 +1,7 @@
 ---
 name: message-queue-architect
 description: Delegate here for message queue selection, async workflow design, dead-letter handling, poison message patterns, and cross-system async integration architecture.
+updated: 2026-06-13
 ---
 
 # Message Queue Architect

@@ -1,6 +1,7 @@
 ---
 name: revenue-operations
 description: "Revenue operations: pipeline analysis, forecast accuracy, GTM metrics (CAC, LTV, NRR), sales process design, territory planning, and RevOps dashboard design"
+updated: 2026-06-13
 ---
 
 # Revenue Operations Skill

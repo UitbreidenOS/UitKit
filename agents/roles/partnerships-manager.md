@@ -1,6 +1,7 @@
 ---
 name: partnerships-manager
 description: Delegate here for partner program design, co-sell strategy, integration partnership scoping, and joint GTM planning.
+updated: 2026-06-13
 ---
 
 # Partnerships Manager

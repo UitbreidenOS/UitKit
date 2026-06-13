@@ -1,6 +1,7 @@
 ---
 name: contract-review
 description: "AI contract review: risk flagging (GREEN/YELLOW/RED), NDA triage, vendor contract checks, indemnity and limitation analysis — Claude Legal Plugin patterns"
+updated: 2026-06-13
 ---
 
 # Contract Review Skill

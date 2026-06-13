@@ -1,6 +1,7 @@
 ---
 name: email-deliverability
 description: "Email deliverability audit: SPF/DKIM/DMARC check, spam trigger analysis, list hygiene, warm-up strategy"
+updated: 2026-06-13
 ---
 
 # Email Deliverability Skill

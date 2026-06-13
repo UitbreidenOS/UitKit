@@ -1,6 +1,7 @@
 ---
 name: devtools-gtm-specialist
 description: Delegate when planning go-to-market strategy, developer acquisition, or community-led growth for developer tools.
+updated: 2026-06-13
 ---
 
 # Devtools GTM Specialist

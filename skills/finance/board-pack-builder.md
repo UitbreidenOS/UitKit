@@ -1,6 +1,7 @@
 ---
 name: board-pack-builder
 description: "Build a board pack: financials, KPI dashboard, strategic initiatives, risks, asks — from raw data"
+updated: 2026-06-13
 ---
 
 # Board Pack Builder Skill

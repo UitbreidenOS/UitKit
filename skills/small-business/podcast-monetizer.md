@@ -1,3 +1,8 @@
+---
+name: podcast-monetizer
+updated: 2026-06-13
+---
+
 # Podcast Monetizer
 
 ## When to activate

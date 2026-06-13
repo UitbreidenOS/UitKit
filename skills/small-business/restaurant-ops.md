@@ -1,6 +1,7 @@
 ---
 name: restaurant-ops
 description: "Restaurant operations: menu copy, food cost analysis, inventory forecasting, review responses, seasonal specials, hiring posts, and training documentation"
+updated: 2026-06-13
 ---
 
 # Restaurant Operations

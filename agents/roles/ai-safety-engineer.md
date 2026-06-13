@@ -1,6 +1,7 @@
 ---
 name: ai-safety-engineer
 description: Delegate when implementing guardrails, alignment checks, red-teaming, or safety evaluations for AI systems.
+updated: 2026-06-13
 ---
 
 # AI Safety Engineer

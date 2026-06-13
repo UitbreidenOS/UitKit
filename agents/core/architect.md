@@ -1,3 +1,8 @@
+---
+name: architect
+updated: 2026-06-13
+---
+
 # Architect Agent
 
 ## Purpose

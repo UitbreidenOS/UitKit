@@ -1,6 +1,7 @@
 ---
 name: test-architect
 description: Delegate here to design a testing strategy, select the right frameworks, and define coverage standards for a codebase or team.
+updated: 2026-06-13
 ---
 
 # Test Architect

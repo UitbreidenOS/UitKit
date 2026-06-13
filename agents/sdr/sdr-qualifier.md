@@ -1,3 +1,8 @@
+---
+name: sdr-qualifier
+updated: 2026-06-13
+---
+
 # SDR Qualifier
 
 ## Purpose

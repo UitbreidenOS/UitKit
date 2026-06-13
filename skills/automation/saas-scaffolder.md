@@ -1,6 +1,7 @@
 ---
 name: saas-scaffolder
 description: "SaaS project scaffolder: generate a complete production-ready SaaS codebase from a description — Next.js, auth, database, payments, email, and deployment configured"
+updated: 2026-06-13
 ---
 
 # SaaS Scaffolder Skill

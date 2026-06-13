@@ -1,6 +1,7 @@
 ---
 name: browser
 description: "Browser automation with Playwright: web scraping, UI testing, form filling, screenshot capture, PDF generation, session recording"
+updated: 2026-06-13
 ---
 
 # Browser Skill

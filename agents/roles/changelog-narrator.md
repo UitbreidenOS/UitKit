@@ -1,6 +1,7 @@
 ---
 name: changelog-narrator
 description: "Changelog narrator agent — transforms dry technical changelogs into customer-facing release notes that non-technical users understand and appreciate"
+updated: 2026-06-13
 ---
 
 # Changelog Narrator Agent

@@ -1,6 +1,7 @@
 ---
 name: soc-analyst
 description: Delegate here for alert triage, SIEM query writing, threat hunting, IOC analysis, and detection rule development.
+updated: 2026-06-13
 ---
 
 # SOC Analyst

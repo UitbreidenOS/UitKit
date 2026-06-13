@@ -1,6 +1,7 @@
 ---
 name: solutions-architect
 description: Delegate here for integration design, reference architectures, and technical scoping for enterprise deals.
+updated: 2026-06-13
 ---
 
 # Solutions Architect

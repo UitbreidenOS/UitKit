@@ -1,6 +1,7 @@
 ---
 name: postgres-specialist
 description: Delegate here for PostgreSQL-specific tuning, advanced features (JSONB, partitioning, CTEs, window functions), replication, and extension configuration.
+updated: 2026-06-13
 ---
 
 # Postgres Specialist

@@ -1,6 +1,7 @@
 ---
 name: lean-claude
 description: "Activate token-efficient mode: caveman output, right model selection, MCP discipline, compaction strategy, cavecrew agents — all in one"
+updated: 2026-06-13
 ---
 
 # Lean Claude Skill

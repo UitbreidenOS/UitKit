@@ -1,6 +1,7 @@
 ---
 name: dotnet-architect
 description: Delegate here for .NET 8/9 architecture, ASP.NET Core APIs, EF Core data layers, or Azure-hosted service design.
+updated: 2026-06-13
 ---
 
 # .NET Architect

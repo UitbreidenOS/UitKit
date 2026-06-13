@@ -1,6 +1,7 @@
 ---
 name: dsar-response
 description: "GDPR/CCPA data subject access request workflow: classify request, verify identity, walk systems, apply exemptions, draft acknowledgment and substantive response"
+updated: 2026-06-13
 ---
 
 # DSAR Response Skill

@@ -1,6 +1,7 @@
 ---
 name: brief-section-drafter
 description: "Litigation brief drafting: argument sections, statement of facts, standard of review, reply briefs — structured legal writing with citation placeholders and attorney review gates"
+updated: 2026-06-13
 ---
 
 # Brief Section Drafter Skill

@@ -1,3 +1,8 @@
+---
+name: terragrunt
+updated: 2026-06-13
+---
+
 # Terragrunt
 
 ## When to activate

@@ -1,6 +1,7 @@
 ---
 name: capacity-planner
 description: "Infrastructure capacity planning: forecast resource needs, cost projections, scaling recommendations"
+updated: 2026-06-13
 ---
 
 # Infrastructure Capacity Planner Skill

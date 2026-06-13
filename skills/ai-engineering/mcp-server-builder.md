@@ -1,6 +1,7 @@
 ---
 name: mcp-server-builder
 description: "Build custom MCP servers: expose tools, resources, and prompts via stdio or HTTP/SSE transport — connect proprietary data to Claude Code"
+updated: 2026-06-13
 ---
 
 # MCP Server Builder Skill

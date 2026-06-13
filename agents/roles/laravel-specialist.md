@@ -1,6 +1,7 @@
 ---
 name: laravel-specialist
 description: "Laravel 10/11 PHP development agent — Eloquent ORM, queues, Livewire, Sanctum auth, Horizon, Octane, and Pest testing"
+updated: 2026-06-13
 ---
 
 # Laravel Specialist

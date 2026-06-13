@@ -1,6 +1,7 @@
 ---
 name: nlp-engineer
 description: "NLP engineering agent — text processing pipelines, transformer fine-tuning, NER, text classification, multilingual models, and production NLP system design"
+updated: 2026-06-13
 ---
 
 # NLP Engineer Agent

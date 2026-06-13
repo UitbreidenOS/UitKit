@@ -1,3 +1,8 @@
+---
+name: laravel
+updated: 2026-06-13
+---
+
 # Laravel 11
 
 ## When to activate

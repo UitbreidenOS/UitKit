@@ -1,6 +1,7 @@
 ---
 name: context-auditor
 description: "Context auditor agent — reviews CLAUDE.md and project context files for quality, completeness, token efficiency, and drift from the actual codebase"
+updated: 2026-06-13
 ---
 
 # Context Auditor Agent

@@ -1,3 +1,8 @@
+---
+name: autofix-pr
+updated: 2026-06-13
+---
+
 # /autofix-pr — Automatic PR Fix Application
 
 ## When to activate

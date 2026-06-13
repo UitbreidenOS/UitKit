@@ -1,6 +1,7 @@
 ---
 name: vpe-advisor
 description: "VP of Engineering advisor — DORA delivery metrics, engineering hiring funnel, team structure design (squad/tribe/tech-lead triggers), and production discipline"
+updated: 2026-06-13
 ---
 
 # VP of Engineering Advisor

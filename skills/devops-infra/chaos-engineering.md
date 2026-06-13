@@ -1,6 +1,7 @@
 ---
 name: chaos-engineering
 description: "Chaos engineering: design failure injection experiments, identify blast radius, define steady state, use Chaos Monkey / Gremlin / Litmus — build resilience through controlled failures"
+updated: 2026-06-13
 ---
 
 # Chaos Engineering Skill

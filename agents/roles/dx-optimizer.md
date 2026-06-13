@@ -1,6 +1,7 @@
 ---
 name: dx-optimizer
 description: "Developer experience optimization agent — build time analysis, tooling audits, onboarding friction reduction, and DX metric tracking"
+updated: 2026-06-13
 ---
 
 # DX Optimizer Agent

@@ -1,6 +1,7 @@
 ---
 name: student-feedback-analyzer
 description: "Analyse student feedback and assessment results: identify patterns, surface knowledge gaps, evaluate teaching effectiveness, and generate improvement recommendations"
+updated: 2026-06-13
 ---
 
 # Student Feedback Analyzer Skill

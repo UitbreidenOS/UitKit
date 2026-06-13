@@ -1,6 +1,7 @@
 ---
 name: spec-driven-workflow
 description: "Spec-driven development: write the spec first, then tests, then implementation — reduces rework, clarifies requirements before coding, and produces better-documented systems"
+updated: 2026-06-13
 ---
 
 # Spec-Driven Workflow Skill

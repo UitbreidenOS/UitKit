@@ -1,6 +1,7 @@
 ---
 name: job-description
 description: "Write job descriptions, screen resumes, create interview questions, and draft offer letters — for small business owners hiring their first or next employee"
+updated: 2026-06-13
 ---
 
 # Job Description Skill

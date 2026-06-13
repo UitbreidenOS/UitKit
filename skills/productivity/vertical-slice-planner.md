@@ -1,3 +1,8 @@
+---
+name: vertical-slice-planner
+updated: 2026-06-13
+---
+
 # Vertical Slice Planner
 
 ## When to activate

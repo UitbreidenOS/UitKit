@@ -1,6 +1,7 @@
 ---
 name: sdr-lead-scorer
 description: "ICP fit + intent signal lead scoring for SDRs: score prospects 0-100 against your ideal customer profile, rank lists by priority, and explain the reasoning behind each score"
+updated: 2026-06-13
 ---
 
 # SDR Lead Scorer Skill

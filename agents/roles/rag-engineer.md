@@ -1,6 +1,7 @@
 ---
 name: rag-engineer
 description: Delegate when building, debugging, or optimizing retrieval-augmented generation pipelines.
+updated: 2026-06-13
 ---
 
 # RAG Engineer

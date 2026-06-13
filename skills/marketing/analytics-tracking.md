@@ -1,6 +1,7 @@
 ---
 name: analytics-tracking
 description: "Analytics implementation: GA4, Mixpanel, Amplitude, PostHog event tracking, funnel analysis, retention cohorts, and attribution modelling"
+updated: 2026-06-13
 ---
 
 # Analytics Tracking Skill

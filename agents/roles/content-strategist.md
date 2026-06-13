@@ -1,6 +1,7 @@
 ---
 name: content-strategist
 description: Delegate here for content strategy, editorial calendar planning, content audits, and distribution frameworks.
+updated: 2026-06-13
 ---
 
 # Content Strategist

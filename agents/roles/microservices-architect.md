@@ -1,6 +1,7 @@
 ---
 name: microservices-architect
 description: "Microservices architecture agent — service decomposition, communication patterns, data isolation, saga patterns, service mesh, and distributed systems design"
+updated: 2026-06-13
 ---
 
 # Microservices Architect Agent

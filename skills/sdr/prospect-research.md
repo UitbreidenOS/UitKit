@@ -1,3 +1,8 @@
+---
+name: prospect-research
+updated: 2026-06-13
+---
+
 # Prospect Research
 
 ## When to activate

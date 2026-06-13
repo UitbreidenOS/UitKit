@@ -1,3 +1,8 @@
+---
+name: reinforcement-learning
+updated: 2026-06-13
+---
+
 # Reinforcement Learning
 
 ## When to activate

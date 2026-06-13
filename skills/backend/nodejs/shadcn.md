@@ -1,6 +1,7 @@
 ---
 name: shadcn
 description: "shadcn/ui: install components, customise variants, theming with CSS variables, compose compound components, extend with custom primitives"
+updated: 2026-06-13
 ---
 
 # shadcn/ui Skill

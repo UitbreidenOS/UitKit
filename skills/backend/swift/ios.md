@@ -1,3 +1,8 @@
+---
+name: ios
+updated: 2026-06-13
+---
+
 # Swift + SwiftUI iOS Development
 
 ## When to activate

@@ -1,6 +1,7 @@
 ---
 name: social-media-manager
 description: "Social media management: content calendar planning, platform-specific copy, hashtag strategy, engagement scripts, analytics interpretation across LinkedIn/Instagram/X/TikTok"
+updated: 2026-06-13
 ---
 
 # Social Media Manager Skill

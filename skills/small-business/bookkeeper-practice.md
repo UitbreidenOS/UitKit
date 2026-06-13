@@ -1,3 +1,8 @@
+---
+name: bookkeeper-practice
+updated: 2026-06-13
+---
+
 # Bookkeeper Practice
 
 ## When to activate

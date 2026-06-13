@@ -1,3 +1,8 @@
+---
+name: graphql-client
+updated: 2026-06-13
+---
+
 # GraphQL Client Integration
 
 ## When to activate

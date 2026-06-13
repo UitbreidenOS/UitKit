@@ -1,6 +1,7 @@
 ---
 name: express
 description: "Express.js REST API: routing, middleware chains, error handling, validation with Zod, authentication with JWT, and production patterns for Node.js services"
+updated: 2026-06-13
 ---
 
 # Express Skill

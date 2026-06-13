@@ -1,6 +1,7 @@
 ---
 name: scope-of-work
 description: "Scope of work document: deliverables, timeline, responsibilities, exclusions, payment terms, and change order policy — protection against scope creep and misaligned expectations"
+updated: 2026-06-13
 ---
 
 # Scope of Work Skill

@@ -1,6 +1,7 @@
 ---
 name: sdr-reply-classifier
 description: "SDR inbox triage: classify reply intent (interested, not now, objection, referral, OOO), generate context-aware responses, update CRM, and notify Slack — sub-5-minute reply cadence"
+updated: 2026-06-13
 ---
 
 # SDR Reply Classifier Skill

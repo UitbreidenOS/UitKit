@@ -1,6 +1,7 @@
 ---
 name: codebase-orchestrator
 description: "Large codebase navigation and orchestration — maps repo topology, routes tasks to specialists, plans cross-cutting changes"
+updated: 2026-06-13
 ---
 
 # Codebase Orchestrator

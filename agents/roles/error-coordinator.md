@@ -1,6 +1,7 @@
 ---
 name: error-coordinator
 description: "Distributed error recovery agent — cascading failure prevention, circuit breakers, error budget enforcement, cross-service error correlation, and MTTR targeting"
+updated: 2026-06-13
 ---
 
 # Error Coordinator Agent

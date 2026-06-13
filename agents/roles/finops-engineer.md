@@ -1,6 +1,7 @@
 ---
 name: finops-engineer
 description: "Cloud cost optimisation — rightsizing, commitment planning, tagging governance, chargeback, and unit economics analysis"
+updated: 2026-06-13
 ---
 
 # FinOps Engineer

@@ -1,3 +1,8 @@
+---
+name: sdr-researcher
+updated: 2026-06-13
+---
+
 # SDR Researcher
 
 ## Purpose

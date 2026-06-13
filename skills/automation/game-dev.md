@@ -1,3 +1,8 @@
+---
+name: game-dev
+updated: 2026-06-13
+---
+
 # Game Development
 
 ## When to activate

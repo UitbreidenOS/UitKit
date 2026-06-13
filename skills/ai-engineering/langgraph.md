@@ -1,6 +1,7 @@
 ---
 name: langgraph
 description: "LangGraph stateful agent framework: StateGraph, nodes, edges, conditional branching, persistence/checkpointing, human-in-the-loop, multi-agent subgraphs"
+updated: 2026-06-13
 ---
 
 # LangGraph Skill

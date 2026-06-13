@@ -1,6 +1,7 @@
 ---
 name: eu-ai-act
 description: "EU AI Act (Regulation 2024/1689) compliance: risk tier classification (prohibited/high-risk/limited/minimal), conformity assessment routes, Annex IV documentation, and obligations by organisational role"
+updated: 2026-06-13
 ---
 
 # EU AI Act Skill

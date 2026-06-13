@@ -1,6 +1,7 @@
 ---
 name: trend-monitor
 description: "Trend monitoring and pulse research: track emerging topics, technology signals, competitive moves, and market shifts — structured research across Reddit, HN, news, and community sources"
+updated: 2026-06-13
 ---
 
 # Trend Monitor Skill

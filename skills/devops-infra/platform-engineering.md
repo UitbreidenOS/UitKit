@@ -1,3 +1,8 @@
+---
+name: platform-engineering
+updated: 2026-06-13
+---
+
 # Platform Engineering
 
 ## When to activate

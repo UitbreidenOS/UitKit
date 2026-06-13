@@ -1,6 +1,7 @@
 ---
 name: git-worktree
 description: "Git worktrees: work on multiple branches simultaneously without stashing — set up worktrees, manage parallel development, and use worktrees with Claude Code for isolated task execution"
+updated: 2026-06-13
 ---
 
 # Git Worktree Skill

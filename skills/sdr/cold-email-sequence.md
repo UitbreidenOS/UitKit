@@ -1,3 +1,8 @@
+---
+name: cold-email-sequence
+updated: 2026-06-13
+---
+
 # Cold Email Sequence
 
 ## When to activate

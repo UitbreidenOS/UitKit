@@ -1,3 +1,8 @@
+---
+name: voice-input
+updated: 2026-06-13
+---
+
 # Voice Input
 
 ## When to activate

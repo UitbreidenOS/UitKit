@@ -1,3 +1,8 @@
+---
+name: qualification-meddpicc
+updated: 2026-06-13
+---
+
 # MEDDPICC Qualification
 
 ## When to activate

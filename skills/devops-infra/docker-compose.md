@@ -1,6 +1,7 @@
 ---
 name: docker-compose
 description: "Docker Compose for local dev: multi-service stacks, volumes, networking, health checks, env vars, production-like local environments"
+updated: 2026-06-13
 ---
 
 # Docker Compose Skill

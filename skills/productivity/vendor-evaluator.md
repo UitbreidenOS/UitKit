@@ -1,6 +1,7 @@
 ---
 name: vendor-evaluator
 description: "Vendor evaluation framework: RFI/RFP template, scoring rubric, comparison matrix, recommendation memo"
+updated: 2026-06-13
 ---
 
 # Vendor Evaluator Skill

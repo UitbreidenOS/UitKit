@@ -1,6 +1,7 @@
 ---
 name: ui-testing
 description: Drive native or web UI to test user flows end-to-end via computer use — screenshot, click, assert, and report.
+updated: 2026-06-13
 ---
 
 # UI Testing via Computer Use

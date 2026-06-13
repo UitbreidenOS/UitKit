@@ -1,6 +1,7 @@
 ---
 name: customer-feedback-synthesizer
 description: "Turn 50-200+ reviews, survey responses, or support tickets into ranked pain points, feature requests, sentiment trends, and a concrete action plan"
+updated: 2026-06-13
 ---
 
 # Customer Feedback Synthesizer

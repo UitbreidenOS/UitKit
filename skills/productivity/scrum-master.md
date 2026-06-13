@@ -1,6 +1,7 @@
 ---
 name: scrum-master
 description: "Scrum facilitation: sprint ceremonies, retrospective formats, removing blockers, velocity coaching, scaling scrum across multiple teams — practical Scrum Master patterns"
+updated: 2026-06-13
 ---
 
 # Scrum Master Skill

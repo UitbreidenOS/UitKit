@@ -1,6 +1,7 @@
 ---
 name: python-async
 description: "Python asyncio patterns: async/await, concurrent tasks, aiohttp, timeouts, queues, background tasks, common pitfalls"
+updated: 2026-06-13
 ---
 
 # Python Async Skill

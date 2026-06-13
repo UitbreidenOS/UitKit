@@ -1,6 +1,7 @@
 ---
 name: stakeholder-report
 description: "Weekly and monthly stakeholder data report: headline metrics, trends, root cause analysis, action items — structured for executive and cross-functional audiences"
+updated: 2026-06-13
 ---
 
 # Stakeholder Report Skill

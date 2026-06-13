@@ -1,3 +1,8 @@
+---
+name: linkedin-outreach
+updated: 2026-06-13
+---
+
 # LinkedIn Outreach
 
 ## When to activate

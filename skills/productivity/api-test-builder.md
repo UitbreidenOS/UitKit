@@ -1,6 +1,7 @@
 ---
 name: api-test-builder
 description: "Generate comprehensive API test suites from route definitions: auth coverage, input validation, error codes, pagination, and rate limiting — for Next.js, Express, FastAPI, and Django"
+updated: 2026-06-13
 ---
 
 # API Test Builder Skill

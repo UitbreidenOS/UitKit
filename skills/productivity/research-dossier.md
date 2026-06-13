@@ -1,6 +1,7 @@
 ---
 name: research-dossier
 description: "Decision-grade entity research: build a comprehensive dossier on a company, person, market, or technology — structured for strategic decisions, not just background reading"
+updated: 2026-06-13
 ---
 
 # Research Dossier Skill

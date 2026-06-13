@@ -1,3 +1,8 @@
+---
+name: payroll-planner
+updated: 2026-06-13
+---
+
 # Payroll Planner
 
 ## When to activate

@@ -1,6 +1,7 @@
 ---
 name: remotion
 description: "Remotion video generation: create product demo videos, animated release notes, and explainer videos as React components — render to MP4/GIF programmatically"
+updated: 2026-06-13
 ---
 
 # Remotion Skill

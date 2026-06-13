@@ -1,3 +1,8 @@
+---
+name: goal-command
+updated: 2026-06-13
+---
+
 # /goal — Autonomous Task Completion
 
 ## When to activate

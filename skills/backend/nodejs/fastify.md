@@ -1,6 +1,7 @@
 ---
 name: fastify
 description: "Fastify REST API: schema-first validation, plugin architecture, hooks lifecycle, TypeScript, Pino logging, JWT auth, Swagger, and production patterns for high-throughput Node.js services"
+updated: 2026-06-13
 ---
 
 # Fastify Skill

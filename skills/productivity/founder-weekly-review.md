@@ -1,6 +1,7 @@
 ---
 name: founder-weekly-review
 description: "Weekly founder review: company health, OKR check, team pulse, priorities for next week"
+updated: 2026-06-13
 ---
 
 # Founder Weekly Review Skill

@@ -1,6 +1,7 @@
 ---
 name: github-actions
 description: "GitHub Actions workflows, job matrices, caching, secrets, reusable workflows, deployment environments"
+updated: 2026-06-13
 ---
 
 # GitHub Actions Skill

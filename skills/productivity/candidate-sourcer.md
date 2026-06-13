@@ -1,6 +1,7 @@
 ---
 name: candidate-sourcer
 description: "Passive candidate sourcing: LinkedIn search strings, Boolean search, outreach message sequences, and pipeline tracking for recruiters"
+updated: 2026-06-13
 ---
 
 # Candidate Sourcer Skill

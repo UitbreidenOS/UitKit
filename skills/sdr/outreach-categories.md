@@ -1,3 +1,8 @@
+---
+name: outreach-categories
+updated: 2026-06-13
+---
+
 # Outreach Categories
 
 ## When to activate

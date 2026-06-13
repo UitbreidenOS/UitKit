@@ -1,6 +1,7 @@
 ---
 name: cloud-security-engineer
 description: Delegate here for AWS/GCP/Azure security posture review, misconfiguration detection, and cloud-native hardening guidance.
+updated: 2026-06-13
 ---
 
 # Cloud Security Engineer

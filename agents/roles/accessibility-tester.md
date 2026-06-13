@@ -1,6 +1,7 @@
 ---
 name: accessibility-tester
 description: "Accessibility testing agent — WCAG 2.1 AA compliance, ARIA review, keyboard navigation, screen reader compatibility, and accessible component patterns"
+updated: 2026-06-13
 ---
 
 # Accessibility Tester

@@ -1,6 +1,7 @@
 ---
 name: docker
 description: "Dockerfile best practices, multi-stage builds, Compose services, networking, volumes, build caching"
+updated: 2026-06-13
 ---
 
 # Docker Skill

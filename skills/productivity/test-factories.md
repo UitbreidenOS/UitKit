@@ -1,6 +1,7 @@
 ---
 name: test-factories
 description: "Test factories and fixtures: factory_boy (Python), Fishery/faker-js (TypeScript), seeding test databases, avoiding test data duplication"
+updated: 2026-06-13
 ---
 
 # Test Factories Skill

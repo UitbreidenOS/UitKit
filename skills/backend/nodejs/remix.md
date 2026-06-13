@@ -1,6 +1,7 @@
 ---
 name: remix
 description: "Remix full-stack React: file-based routing, loaders, actions, progressive enhancement, session management, resource routes, error boundaries, and production deployment patterns"
+updated: 2026-06-13
 ---
 
 # Remix Skill

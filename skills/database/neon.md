@@ -1,6 +1,7 @@
 ---
 name: neon
 description: "Neon serverless PostgreSQL: connection pooling, database branching, pgvector for AI, autoscaling patterns, Vercel integration"
+updated: 2026-06-13
 ---
 
 # Neon Skill

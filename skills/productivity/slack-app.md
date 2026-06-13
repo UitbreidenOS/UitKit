@@ -1,3 +1,8 @@
+---
+name: slack-app
+updated: 2026-06-13
+---
+
 # Slack App
 
 ## When to activate

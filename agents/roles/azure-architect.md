@@ -1,6 +1,7 @@
 ---
 name: azure-architect
 description: "Azure architecture design — landing zones, RBAC, AKS, App Service, Azure SQL, and CAF/WAF alignment"
+updated: 2026-06-13
 ---
 
 # Azure Architect

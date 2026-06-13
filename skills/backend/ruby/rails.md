@@ -1,3 +1,8 @@
+---
+name: rails
+updated: 2026-06-13
+---
+
 # Ruby on Rails 7+
 
 ## When to activate

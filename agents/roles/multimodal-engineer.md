@@ -1,6 +1,7 @@
 ---
 name: multimodal-engineer
 description: Delegate when building systems that reason across text, images, audio, video, or structured data simultaneously.
+updated: 2026-06-13
 ---
 
 # Multimodal Engineer

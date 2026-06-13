@@ -1,6 +1,7 @@
 ---
 name: clojure-engineer
 description: Delegate here for Clojure/ClojureScript services, REPL-driven development, Ring/Pedestal APIs, or Datomic data modeling.
+updated: 2026-06-13
 ---
 
 # Clojure Engineer

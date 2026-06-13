@@ -1,6 +1,7 @@
 ---
 name: api-gateway-specialist
 description: Delegate here for API gateway configuration, rate limiting, auth flows, request routing, load balancing, and gateway-layer observability.
+updated: 2026-06-13
 ---
 
 # API Gateway Specialist

@@ -1,6 +1,7 @@
 ---
 name: dbt
 description: "dbt models, sources, tests, macros, incremental models, documentation, CI integration, Jinja patterns"
+updated: 2026-06-13
 ---
 
 # dbt Data Pipelines Skill

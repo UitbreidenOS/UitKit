@@ -1,6 +1,7 @@
 ---
 name: lesson-planner
 description: "Lesson plan builder: learning objectives, content outline, activities, assessments, materials list, and differentiation strategies — for K-12, higher ed, and corporate training"
+updated: 2026-06-13
 ---
 
 # Lesson Planner Skill

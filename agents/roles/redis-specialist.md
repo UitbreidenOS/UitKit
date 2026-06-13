@@ -1,6 +1,7 @@
 ---
 name: redis-specialist
 description: Delegate here for Redis data modeling, caching strategy, pub/sub, Lua scripting, cluster configuration, and eviction policy decisions.
+updated: 2026-06-13
 ---
 
 # Redis Specialist

@@ -1,6 +1,7 @@
 ---
 name: competitive-teardown
 description: "Competitive analysis: structured teardown of competitor products, positioning, pricing, and go-to-market — identify gaps, differentiation levers, and strategic positioning"
+updated: 2026-06-13
 ---
 
 # Competitive Teardown Skill

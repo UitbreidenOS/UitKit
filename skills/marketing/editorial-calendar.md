@@ -1,6 +1,7 @@
 ---
 name: editorial-calendar
 description: "Monthly editorial calendar: topic clusters, publish schedule, content mix, distribution plan"
+updated: 2026-06-13
 ---
 
 # Editorial Calendar Skill

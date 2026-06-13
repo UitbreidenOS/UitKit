@@ -1,6 +1,7 @@
 ---
 name: competitor-monitor
 description: "Weekly competitive intelligence: track competitor pricing, positioning changes, news, and job postings as signals — synthesized into a 1-page digest"
+updated: 2026-06-13
 ---
 
 # Competitor Monitor

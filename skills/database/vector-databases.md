@@ -1,3 +1,8 @@
+---
+name: vector-databases
+updated: 2026-06-13
+---
+
 # Vector Databases
 
 ## When to activate

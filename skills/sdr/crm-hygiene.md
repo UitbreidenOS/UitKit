@@ -1,3 +1,8 @@
+---
+name: crm-hygiene
+updated: 2026-06-13
+---
+
 # CRM Hygiene
 
 ## When to activate

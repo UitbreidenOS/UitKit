@@ -1,6 +1,7 @@
 ---
 name: paid-ads
 description: "Paid advertising strategy and execution: Google Ads, Meta Ads, LinkedIn Ads — campaign structure, targeting, bidding, creative testing, ROAS optimisation"
+updated: 2026-06-13
 ---
 
 # Paid Ads Skill

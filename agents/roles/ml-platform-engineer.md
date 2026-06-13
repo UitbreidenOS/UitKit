@@ -1,6 +1,7 @@
 ---
 name: ml-platform-engineer
 description: Delegate when the task involves ML infrastructure — training pipelines, model serving, experiment tracking, CI/CD for ML, or MLOps platform design.
+updated: 2026-06-13
 ---
 
 # ML Platform Engineer

@@ -1,3 +1,8 @@
+---
+name: icp-scoring
+updated: 2026-06-13
+---
+
 # ICP Scoring
 
 ## When to activate

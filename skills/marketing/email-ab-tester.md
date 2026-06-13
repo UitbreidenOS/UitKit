@@ -1,6 +1,7 @@
 ---
 name: email-ab-tester
 description: "Email A/B test design and analysis: hypothesis, variants, sample size, results interpretation"
+updated: 2026-06-13
 ---
 
 # Email A/B Tester Skill

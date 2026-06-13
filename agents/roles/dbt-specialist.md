@@ -1,6 +1,7 @@
 ---
 name: dbt-specialist
 description: Delegate when the task involves dbt project structure, model configuration, macros, tests, or dbt Cloud/Core deployment.
+updated: 2026-06-13
 ---
 
 # dbt Specialist

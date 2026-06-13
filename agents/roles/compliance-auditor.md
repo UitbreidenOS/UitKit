@@ -1,6 +1,7 @@
 ---
 name: compliance-auditor
 description: Delegate here for regulatory compliance gap analysis, control mapping, audit evidence preparation, and policy documentation review.
+updated: 2026-06-13
 ---
 
 # Compliance Auditor

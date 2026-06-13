@@ -1,6 +1,7 @@
 ---
 name: vector-search-engineer
 description: Delegate when the task involves vector databases, embedding pipelines, semantic search, or approximate nearest neighbor retrieval.
+updated: 2026-06-13
 ---
 
 # Vector Search Engineer

@@ -1,6 +1,7 @@
 ---
 name: dashboard-narrator
 description: "Translate dashboard data and charts into plain-English narrative: key insights, anomalies, recommendations — written for non-technical stakeholders who don't read charts"
+updated: 2026-06-13
 ---
 
 # Dashboard Narrator Skill

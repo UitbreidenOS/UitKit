@@ -1,6 +1,7 @@
 ---
 name: deal-review
 description: "Deal review prep: MEDDPICC scoring, risk flags, competitive positioning, next steps, forecast category"
+updated: 2026-06-13
 ---
 
 # Deal Review Skill

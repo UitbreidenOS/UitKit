@@ -1,6 +1,7 @@
 ---
 name: railway
 description: "Railway deployment: Dockerfile deploys, managed Postgres/Redis, environment variables, PR preview environments, custom domains, CLI workflow"
+updated: 2026-06-13
 ---
 
 # Railway Skill

@@ -1,6 +1,7 @@
 ---
 name: pr-description
 description: "Write pull request descriptions: summary, motivation, changes, testing steps, screenshots placeholder"
+updated: 2026-06-13
 ---
 
 # PR Description Skill

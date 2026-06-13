@@ -1,6 +1,7 @@
 ---
 name: workflow-orchestrator
 description: "Workflow orchestration agent — design and execute complex multi-step workflows with parallel branches, conditional logic, error handling, and human-in-the-loop checkpoints"
+updated: 2026-06-13
 ---
 
 # Workflow Orchestrator Agent

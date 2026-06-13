@@ -1,6 +1,7 @@
 ---
 name: env-secrets-manager
 description: "Environment variable and secrets hygiene: audit .env files for committed secrets, validate .env.example completeness, detect secret leaks in git history, and harden local dev security"
+updated: 2026-06-13
 ---
 
 # Env & Secrets Manager Skill

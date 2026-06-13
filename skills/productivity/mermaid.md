@@ -1,6 +1,7 @@
 ---
 name: mermaid
 description: "Mermaid diagram generation: flowcharts, sequence diagrams, ER diagrams, state machines, and Gantt charts — native in GitHub, Notion, and most docs tools"
+updated: 2026-06-13
 ---
 
 # Mermaid Skill

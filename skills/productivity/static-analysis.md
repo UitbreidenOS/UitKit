@@ -1,3 +1,8 @@
+---
+name: static-analysis
+updated: 2026-06-13
+---
+
 # Static Analysis
 
 ## When to activate

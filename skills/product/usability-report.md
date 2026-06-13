@@ -1,6 +1,7 @@
 ---
 name: usability-report
 description: "Usability test report: session summaries, severity ratings, findings, prioritised recommendations"
+updated: 2026-06-13
 ---
 
 # Usability Report Skill

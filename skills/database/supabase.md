@@ -1,6 +1,7 @@
 ---
 name: supabase
 description: "Supabase: Row Level Security policies, auth integration, realtime subscriptions, Storage, Edge Functions, pgvector"
+updated: 2026-06-13
 ---
 
 # Supabase Skill

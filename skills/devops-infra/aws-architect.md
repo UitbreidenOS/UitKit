@@ -1,6 +1,7 @@
 ---
 name: aws-architect
 description: "AWS architecture design: serverless, three-tier, event-driven, and container patterns — CloudFormation/Terraform IaC, cost optimisation, IAM best practices, and startup-to-scale patterns"
+updated: 2026-06-13
 ---
 
 # AWS Architect Skill

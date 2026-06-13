@@ -1,6 +1,7 @@
 ---
 name: 3-statement-model
 description: "Three-statement financial model: income statement, balance sheet, cash flow statement — build integrated models, link statements, project financials, and stress-test assumptions"
+updated: 2026-06-13
 ---
 
 # 3-Statement Model Skill

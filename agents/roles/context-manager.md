@@ -1,6 +1,7 @@
 ---
 name: context-manager
 description: "Claude Code context optimization — audits CLAUDE.md and active rules for token bloat, redundancy, and outdated content"
+updated: 2026-06-13
 ---
 
 # Context Manager

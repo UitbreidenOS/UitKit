@@ -1,6 +1,7 @@
 ---
 name: onboarding-cro
 description: "User onboarding optimisation: activation flows, aha-moment identification, empty states, email sequences, in-app checklists — reduce time-to-value and improve trial conversion"
+updated: 2026-06-13
 ---
 
 # Onboarding CRO Skill

@@ -1,6 +1,7 @@
 ---
 name: codebase-onboarding
 description: "Codebase onboarding: generate architecture overviews, create onboarding checklists, document service boundaries, write getting-started guides for new engineers"
+updated: 2026-06-13
 ---
 
 # Codebase Onboarding Skill

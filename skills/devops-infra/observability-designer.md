@@ -1,6 +1,7 @@
 ---
 name: observability-designer
 description: "Observability strategy: design the three pillars (logs, metrics, traces), instrument services, choose tooling, define alerting philosophy, and move from reactive to proactive monitoring"
+updated: 2026-06-13
 ---
 
 # Observability Designer Skill

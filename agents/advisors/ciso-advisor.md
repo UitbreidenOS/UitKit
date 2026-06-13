@@ -1,6 +1,7 @@
 ---
 name: ciso-advisor
 description: "Chief Information Security Officer advisor — security programme design, risk prioritisation, board-level security reporting, vendor security assessment, and security hiring"
+updated: 2026-06-13
 ---
 
 # CISO Advisor

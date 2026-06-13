@@ -1,3 +1,8 @@
+---
+name: powershell
+updated: 2026-06-13
+---
+
 # PowerShell Scripting
 
 ## When to activate

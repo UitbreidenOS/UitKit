@@ -1,3 +1,8 @@
+---
+name: messaging-frameworks
+updated: 2026-06-13
+---
+
 # Messaging Frameworks
 
 ## When to activate

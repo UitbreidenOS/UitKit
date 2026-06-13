@@ -1,3 +1,8 @@
+---
+name: gl-break-tracer
+updated: 2026-06-13
+---
+
 # GL Break Tracer
 
 ## When to activate

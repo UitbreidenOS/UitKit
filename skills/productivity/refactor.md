@@ -1,6 +1,7 @@
 ---
 name: refactor
 description: "Safe code refactoring: extract function/class, rename, split files, simplify conditionals, remove duplication — with test coverage at every step"
+updated: 2026-06-13
 ---
 
 # Refactor Skill

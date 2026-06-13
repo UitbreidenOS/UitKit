@@ -1,6 +1,7 @@
 ---
 name: iam-specialist
 description: Delegate here for identity and access management design, role/policy auditing, SSO integration, and zero-trust access modeling.
+updated: 2026-06-13
 ---
 
 # IAM Specialist

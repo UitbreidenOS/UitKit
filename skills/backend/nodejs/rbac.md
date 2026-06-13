@@ -1,6 +1,7 @@
 ---
 name: rbac
 description: "RBAC multi-tenant patterns: role tables, permission checks, row-level scoping, organization isolation, middleware guards for Next.js and Express/FastAPI"
+updated: 2026-06-13
 ---
 
 # RBAC Multi-Tenant Skill

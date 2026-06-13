@@ -1,6 +1,7 @@
 ---
 name: sentry
 description: "Sentry error monitoring: SDK setup, source maps, automated error triage with Claude, performance monitoring, MCP integration for agent-driven debugging"
+updated: 2026-06-13
 ---
 
 # Sentry Skill

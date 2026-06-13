@@ -1,6 +1,7 @@
 ---
 name: ai-impact-assessment
 description: "AI Impact Assessment (AIA): EU AI Act classification, risk track, use case triage, policy consistency, vendor AI review — for legal and compliance teams"
+updated: 2026-06-13
 ---
 
 # AI Impact Assessment Skill

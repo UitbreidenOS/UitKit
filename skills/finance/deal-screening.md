@@ -1,6 +1,7 @@
 ---
 name: deal-screening
 description: "Private equity deal screening: market size, competitive moat, management quality, financial profile, mandate fit — first-pass evaluation before deep diligence"
+updated: 2026-06-13
 ---
 
 # Deal Screening Skill

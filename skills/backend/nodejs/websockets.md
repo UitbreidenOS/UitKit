@@ -1,3 +1,8 @@
+---
+name: websockets
+updated: 2026-06-13
+---
+
 # WebSockets and Socket.io
 
 ## When to activate

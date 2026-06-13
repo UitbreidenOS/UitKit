@@ -1,3 +1,8 @@
+---
+name: personalization
+updated: 2026-06-13
+---
+
 # Personalization
 
 ## When to activate

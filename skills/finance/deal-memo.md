@@ -1,6 +1,7 @@
 ---
 name: deal-memo
 description: "Investment deal memo: market thesis, company analysis, financial projections, risk factors, and recommendation — for VC, growth equity, and early-stage investments"
+updated: 2026-06-13
 ---
 
 # Deal Memo Skill

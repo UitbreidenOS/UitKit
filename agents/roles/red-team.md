@@ -1,6 +1,7 @@
 ---
 name: red-team
 description: "Authorized red team agent — adversary simulation, MITRE ATT&CK kill-chain planning, attack path analysis, choke point identification, and engagement scoping for authorized security testing"
+updated: 2026-06-13
 ---
 
 # Red Team Agent

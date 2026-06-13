@@ -1,6 +1,7 @@
 ---
 name: agents-md
 description: "Generate AGENTS.md for cross-agent portability (Claude Code, Cursor, Codex, Gemini CLI). Tool-agnostic repo context document, distinct from CLAUDE.md."
+updated: 2026-06-13
 ---
 
 # AGENTS.md Writer

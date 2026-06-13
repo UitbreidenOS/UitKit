@@ -1,6 +1,7 @@
 ---
 name: data-migration
 description: "Database migration patterns: zero-downtime schema changes, data backfills, Alembic, Prisma Migrate, Rails migrations"
+updated: 2026-06-13
 ---
 
 # Data Migration Skill

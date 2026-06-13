@@ -1,6 +1,7 @@
 ---
 name: knowledge-synthesizer
 description: "Multi-source research synthesis — aggregates sources, resolves contradictions, produces structured briefings with confidence levels"
+updated: 2026-06-13
 ---
 
 # Knowledge Synthesizer

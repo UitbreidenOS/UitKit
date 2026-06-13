@@ -1,6 +1,7 @@
 ---
 name: cco-advisor
 description: "Chief Customer Officer advisor — customer lifecycle strategy, retention decomposition, CS coverage model, customer segmentation, and voice-of-customer programme design"
+updated: 2026-06-13
 ---
 
 # Chief Customer Officer Advisor

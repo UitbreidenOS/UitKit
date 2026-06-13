@@ -1,3 +1,8 @@
+---
+name: kafka
+updated: 2026-06-13
+---
+
 # Kafka and Event Streaming
 
 ## When to activate

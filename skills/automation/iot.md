@@ -1,3 +1,8 @@
+---
+name: iot
+updated: 2026-06-13
+---
+
 # IoT Development
 
 ## When to activate

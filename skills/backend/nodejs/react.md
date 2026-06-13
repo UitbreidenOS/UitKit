@@ -1,6 +1,7 @@
 ---
 name: react
 description: "React patterns: hooks, context, performance optimisation, component composition, state management, common anti-patterns"
+updated: 2026-06-13
 ---
 
 # React Skill

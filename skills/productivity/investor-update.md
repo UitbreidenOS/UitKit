@@ -1,6 +1,7 @@
 ---
 name: investor-update
 description: "Monthly investor update email: MRR, burn, highlights, lowlights, ask — done in 10 minutes"
+updated: 2026-06-13
 ---
 
 # Investor Update Skill

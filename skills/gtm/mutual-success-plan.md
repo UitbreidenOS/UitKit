@@ -1,6 +1,7 @@
 ---
 name: mutual-success-plan
 description: "Mutual success plan / close plan: align buyer and seller on milestones, stakeholders, timeline, success criteria"
+updated: 2026-06-13
 ---
 
 # Mutual Success Plan Skill

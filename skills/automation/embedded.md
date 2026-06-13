@@ -1,3 +1,8 @@
+---
+name: embedded
+updated: 2026-06-13
+---
+
 # Embedded Systems
 
 ## When to activate

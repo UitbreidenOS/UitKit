@@ -1,3 +1,8 @@
+---
+name: nlp-pipelines
+updated: 2026-06-13
+---
+
 # NLP Pipelines
 
 ## When to activate

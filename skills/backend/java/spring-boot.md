@@ -1,6 +1,7 @@
 ---
 name: spring-boot
 description: "Spring Boot REST API, JPA repositories, Spring Security JWT, @WebMvcTest, @SpringBootTest, Spring Cloud"
+updated: 2026-06-13
 ---
 
 # Spring Boot Skill

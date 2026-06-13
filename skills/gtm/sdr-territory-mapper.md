@@ -1,6 +1,7 @@
 ---
 name: sdr-territory-mapper
 description: "SDR territory analysis: map account coverage, identify whitespace, prioritise by ICP density and trigger signal concentration, build territory plans and coverage reports"
+updated: 2026-06-13
 ---
 
 # SDR Territory Mapper Skill

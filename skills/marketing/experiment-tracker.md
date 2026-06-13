@@ -1,6 +1,7 @@
 ---
 name: experiment-tracker
 description: "A/B test tracker: hypothesis writing, sample size calculator, results analysis, and statistical significance interpretation for growth experiments"
+updated: 2026-06-13
 ---
 
 # Experiment Tracker Skill

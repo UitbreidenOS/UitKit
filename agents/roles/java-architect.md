@@ -1,6 +1,7 @@
 ---
 name: java-architect
 description: Delegate here for enterprise Java architecture, Spring Boot services, JVM tuning, or large-scale refactors.
+updated: 2026-06-13
 ---
 
 # Java Architect

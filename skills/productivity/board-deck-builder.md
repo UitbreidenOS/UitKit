@@ -1,6 +1,7 @@
 ---
 name: board-deck-builder
 description: "Build board and investor update decks: executive summary, metrics dashboard, financial update, narrative framework, bad news delivery — quarterly, monthly, and fundraising formats"
+updated: 2026-06-13
 ---
 
 # Board Deck Builder Skill

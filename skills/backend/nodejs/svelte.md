@@ -1,6 +1,7 @@
 ---
 name: svelte
 description: "SvelteKit: file-based routing, server/client load functions, form actions, stores, Cloudflare Workers deployment, component patterns"
+updated: 2026-06-13
 ---
 
 # SvelteKit Skill

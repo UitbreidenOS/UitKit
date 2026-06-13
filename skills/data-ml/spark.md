@@ -1,6 +1,7 @@
 ---
 name: spark
 description: "Apache Spark DataFrames, Spark SQL, PySpark transformations, partitioning, UDFs, Structured Streaming, Delta Lake"
+updated: 2026-06-13
 ---
 
 # Apache Spark Skill

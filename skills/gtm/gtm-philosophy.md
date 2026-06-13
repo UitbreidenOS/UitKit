@@ -1,3 +1,8 @@
+---
+name: gtm-philosophy
+updated: 2026-06-13
+---
+
 # GTM Philosophy
 
 ## When to activate

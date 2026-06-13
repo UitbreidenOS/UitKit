@@ -1,6 +1,7 @@
 ---
 name: nextjs-architect
 description: Delegate here for Next.js App Router architecture, RSC/client boundaries, data fetching strategy, and deployment decisions.
+updated: 2026-06-13
 ---
 
 # Next.js Architect

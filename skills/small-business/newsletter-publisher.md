@@ -1,3 +1,8 @@
+---
+name: newsletter-publisher
+updated: 2026-06-13
+---
+
 # Newsletter Publisher
 
 ## When to activate

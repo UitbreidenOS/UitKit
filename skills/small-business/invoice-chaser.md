@@ -1,6 +1,7 @@
 ---
 name: invoice-chaser
 description: "Automate accounts receivable: draft overdue reminders, escalation sequences, late payment risk flags — for QuickBooks, Stripe, or any invoicing tool"
+updated: 2026-06-13
 ---
 
 # Invoice Chaser Skill

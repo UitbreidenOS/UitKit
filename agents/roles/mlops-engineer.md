@@ -1,6 +1,7 @@
 ---
 name: mlops-engineer
 description: "MLOps agent — ML pipeline CI/CD, model registry, experiment tracking, serving infrastructure, and model monitoring"
+updated: 2026-06-13
 ---
 
 # MLOps Engineer

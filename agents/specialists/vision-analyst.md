@@ -1,6 +1,7 @@
 ---
 name: vision-analyst
 description: "Multi-modal analysis — screenshots, UI accessibility review, diagram-to-code conversion, OCR, and image QA"
+updated: 2026-06-13
 ---
 
 # Vision Analyst

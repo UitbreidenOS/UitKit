@@ -1,6 +1,7 @@
 ---
 name: product-discovery
 description: "Product discovery: customer interviews, problem validation, opportunity scoring, Jobs-to-be-Done framework, defining what to build next and why"
+updated: 2026-06-13
 ---
 
 # Product Discovery Skill

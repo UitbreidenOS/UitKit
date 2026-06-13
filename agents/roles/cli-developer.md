@@ -1,6 +1,7 @@
 ---
 name: cli-developer
 description: "CLI tool development agent for argument parsing, interactive prompts, terminal UI, distribution via npm/Homebrew/binary, and cross-platform CLI patterns"
+updated: 2026-06-13
 ---
 
 # CLI Developer

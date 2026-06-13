@@ -1,6 +1,7 @@
 ---
 name: web-animations-engineer
 description: Delegate here for Web Animations API, CSS animation systems, GSAP orchestration, and motion design implementation.
+updated: 2026-06-13
 ---
 
 # Web Animations Engineer

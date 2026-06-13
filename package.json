@@ -73,6 +73,8 @@
     "add-frontmatter": "node scripts/add-frontmatter.js",
     "validate": "node scripts/validate-frontmatter.js && node scripts/validate-manifests.js",
     "validate:frontmatter": "node scripts/validate-frontmatter.js",
-    "validate:manifests": "node scripts/validate-manifests.js"
+    "validate:manifests": "node scripts/validate-manifests.js",
+    "validate:freshness": "node scripts/check-freshness.js",
+    "backfill-dates": "node scripts/backfill-dates.js"
   }
 }

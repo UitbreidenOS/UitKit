@@ -1,6 +1,7 @@
 ---
 name: rag-architect
 description: "RAG system design: chunking strategies, embedding model selection, vector store choice, retrieval patterns, reranking, evaluation — production-grade retrieval-augmented generation"
+updated: 2026-06-13
 ---
 
 # RAG Architect Skill

@@ -1,6 +1,7 @@
 ---
 name: supply-chain-security
 description: Delegate here for dependency auditing, SBOM generation guidance, CI/CD pipeline integrity review, and third-party risk assessment.
+updated: 2026-06-13
 ---
 
 # Supply Chain Security

@@ -1,6 +1,7 @@
 ---
 name: kafka-specialist
 description: Delegate here for Kafka topic design, producer/consumer configuration, partition strategy, consumer group lag, and stream processing patterns.
+updated: 2026-06-13
 ---
 
 # Kafka Specialist

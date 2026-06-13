@@ -1,6 +1,7 @@
 ---
 name: drizzle
 description: "Drizzle ORM: TypeScript-first schema, relations, migrations, query builder, Neon/Supabase/PlanetScale integration — the AI-legible ORM"
+updated: 2026-06-13
 ---
 
 # Drizzle ORM Skill

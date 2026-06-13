@@ -1,3 +1,8 @@
+---
+name: cold-email
+updated: 2026-06-13
+---
+
 # Cold Email
 
 ## When to activate

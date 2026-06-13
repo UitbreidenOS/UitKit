@@ -1,6 +1,7 @@
 ---
 name: analytics-engineer
 description: Delegate when the task involves building or maintaining analytics pipelines, data modeling, SQL transformations, or BI-layer data contracts.
+updated: 2026-06-13
 ---
 
 # Analytics Engineer

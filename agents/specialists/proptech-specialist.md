@@ -1,6 +1,7 @@
 ---
 name: proptech-specialist
 description: Delegate when building real estate SaaS, property management platforms, listing tools, or construction tech products.
+updated: 2026-06-13
 ---
 
 # Proptech Specialist

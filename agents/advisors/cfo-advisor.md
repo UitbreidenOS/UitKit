@@ -1,3 +1,8 @@
+---
+name: cfo-advisor
+updated: 2026-06-13
+---
+
 # CFO Advisor Agent
 
 ## Purpose

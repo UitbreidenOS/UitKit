@@ -1,3 +1,8 @@
+---
+name: trigger-finder
+updated: 2026-06-13
+---
+
 # Trigger Finder
 
 ## When to activate

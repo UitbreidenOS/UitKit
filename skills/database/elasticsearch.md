@@ -1,3 +1,8 @@
+---
+name: elasticsearch
+updated: 2026-06-13
+---
+
 # Elasticsearch
 
 ## When to activate

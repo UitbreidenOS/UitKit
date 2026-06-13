@@ -1,6 +1,7 @@
 ---
 name: sdr-objection-handler
 description: "Dynamic objection response generator for SDRs: context-aware rebuttals for price, competitor, timing, relevance, and gatekeeper objections — voice and email variants"
+updated: 2026-06-13
 ---
 
 # SDR Objection Handler Skill

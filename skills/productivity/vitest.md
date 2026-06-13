@@ -1,6 +1,7 @@
 ---
 name: vitest
 description: "Vitest testing framework: unit tests, integration tests, mocking, coverage, snapshot testing, and CI setup for Vite and Node.js projects"
+updated: 2026-06-13
 ---
 
 # Vitest Skill

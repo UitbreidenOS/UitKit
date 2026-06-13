@@ -1,6 +1,7 @@
 ---
 name: product-listing-optimizer
 description: "Optimise product listings for SEO and conversion: title, bullets, description, A+ content, images brief"
+updated: 2026-06-13
 ---
 
 # Product Listing Optimizer Skill

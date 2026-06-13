@@ -1,6 +1,7 @@
 ---
 name: wasp
 description: "Wasp framework: declarative full-stack config (React + Node.js + Prisma in one .wasp file), Open SaaS boilerplate, AI-legible architecture"
+updated: 2026-06-13
 ---
 
 # Wasp Skill

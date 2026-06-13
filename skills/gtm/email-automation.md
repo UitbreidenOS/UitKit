@@ -1,6 +1,7 @@
 ---
 name: email-automation
 description: "Multi-step outreach email sequences: personalised touchpoints, reply detection routing, follow-up cadence, meeting booking integration, deliverability patterns"
+updated: 2026-06-13
 ---
 
 # Email Automation Skill

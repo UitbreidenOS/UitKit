@@ -1,6 +1,7 @@
 ---
 name: readme-generator
 description: "Generate complete README.md files: badges, install, usage, API reference, contributing guide, from code or description"
+updated: 2026-06-13
 ---
 
 # README Generator Skill

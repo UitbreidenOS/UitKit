@@ -1,6 +1,7 @@
 ---
 name: nestjs
 description: "NestJS modules, controllers, services, guards, interceptors, TypeORM, CQRS, microservices, Jest testing"
+updated: 2026-06-13
 ---
 
 # NestJS Skill

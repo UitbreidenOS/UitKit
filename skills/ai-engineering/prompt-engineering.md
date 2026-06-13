@@ -1,6 +1,7 @@
 ---
 name: prompt-engineering
 description: "Prompt engineering for production: few-shot prompting, chain-of-thought, system prompt design, output formatting, temperature settings, and evaluation — for Claude and other LLMs"
+updated: 2026-06-13
 ---
 
 # Prompt Engineering Skill

@@ -1,6 +1,7 @@
 ---
 name: vue
 description: "Vue 3 patterns: Composition API, composables, Pinia state, Vue Router, async components, performance, TypeScript with Vue"
+updated: 2026-06-13
 ---
 
 # Vue Skill

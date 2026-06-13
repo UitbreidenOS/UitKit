@@ -1,6 +1,7 @@
 ---
 name: budget-vs-actual
 description: "Budget vs actuals analysis: variance explanation, trend identification, reforecast recommendations"
+updated: 2026-06-13
 ---
 
 # Budget vs Actual Skill

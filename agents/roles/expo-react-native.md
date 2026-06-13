@@ -1,6 +1,7 @@
 ---
 name: expo-react-native
 description: "Expo and React Native development agent — managed/bare workflow, EAS Build, native modules, React Navigation, and OTA updates"
+updated: 2026-06-13
 ---
 
 # Expo React Native

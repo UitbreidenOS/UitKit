@@ -1,6 +1,7 @@
 ---
 name: observability-engineer
 description: "Observability design — metrics, logs, traces, SLOs, alerting, and OpenTelemetry instrumentation across distributed systems"
+updated: 2026-06-13
 ---
 
 # Observability Engineer

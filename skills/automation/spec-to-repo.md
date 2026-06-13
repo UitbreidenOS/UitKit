@@ -1,6 +1,7 @@
 ---
 name: spec-to-repo
 description: "Spec to repo: turn a product specification, PRD, or feature description into a complete working repository with code, tests, CI, and documentation"
+updated: 2026-06-13
 ---
 
 # Spec to Repo Skill

@@ -1,3 +1,8 @@
+---
+name: agent-sdk
+updated: 2026-06-13
+---
+
 # Claude Agent SDK
 
 ## When to activate

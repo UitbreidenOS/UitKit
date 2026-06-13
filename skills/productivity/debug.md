@@ -1,6 +1,7 @@
 ---
 name: debug
 description: "Systematic bug isolation: reproduce, hypothesise, narrow, fix, verify — for any language or error type"
+updated: 2026-06-13
 ---
 
 # Debug Skill

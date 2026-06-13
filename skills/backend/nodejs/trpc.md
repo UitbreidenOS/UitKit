@@ -1,6 +1,7 @@
 ---
 name: trpc
 description: "tRPC end-to-end type-safe APIs: T3 Stack setup, routers, procedures, Zod validation, React Query integration, middleware, subscriptions"
+updated: 2026-06-13
 ---
 
 # tRPC Skill

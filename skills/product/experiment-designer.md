@@ -1,6 +1,7 @@
 ---
 name: experiment-designer
 description: "A/B test and experiment design: hypothesis writing, sample size calculation, statistical significance, experiment tracking, avoiding common pitfalls, and interpreting results"
+updated: 2026-06-13
 ---
 
 # Experiment Designer Skill

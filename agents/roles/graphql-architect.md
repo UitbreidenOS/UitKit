@@ -1,6 +1,7 @@
 ---
 name: graphql-architect
 description: "GraphQL schema design, resolver architecture, federation, N+1 performance, and client integration patterns"
+updated: 2026-06-13
 ---
 
 # GraphQL Architect

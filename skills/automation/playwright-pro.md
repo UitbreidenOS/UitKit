@@ -1,6 +1,7 @@
 ---
 name: playwright-pro
 description: "Playwright E2E testing: page object model, fixture setup, network interception, visual regression, CI integration, and debugging flaky tests — production-grade browser automation"
+updated: 2026-06-13
 ---
 
 # Playwright Pro Skill

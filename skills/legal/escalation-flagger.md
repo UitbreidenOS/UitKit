@@ -1,3 +1,8 @@
+---
+name: escalation-flagger
+updated: 2026-06-13
+---
+
 # Escalation Flagger
 
 ## When to activate

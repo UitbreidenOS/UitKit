@@ -1,3 +1,8 @@
+---
+name: cpo-advisor
+updated: 2026-06-13
+---
+
 # CPO Advisor Agent
 
 ## Purpose

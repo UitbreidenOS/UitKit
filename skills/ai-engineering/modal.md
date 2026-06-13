@@ -1,3 +1,8 @@
+---
+name: modal
+updated: 2026-06-13
+---
+
 # Modal
 
 ## When to activate

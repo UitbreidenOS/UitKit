@@ -1,6 +1,7 @@
 ---
 name: elixir-expert
 description: "Elixir and Phoenix development agent — OTP supervision trees, GenServer, LiveView, Ecto, and fault-tolerant distributed systems"
+updated: 2026-06-13
 ---
 
 # Elixir Expert

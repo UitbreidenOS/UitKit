@@ -1,6 +1,7 @@
 ---
 name: doc-site-builder
 description: "Documentation site architecture: information hierarchy, nav structure, content templates, search strategy"
+updated: 2026-06-13
 ---
 
 # Doc Site Builder Skill

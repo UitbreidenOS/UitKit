@@ -1,3 +1,8 @@
+---
+name: claude-design-tokens
+updated: 2026-06-13
+---
+
 # Claude Design Token Management
 
 ## When to activate

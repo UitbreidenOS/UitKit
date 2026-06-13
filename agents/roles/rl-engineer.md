@@ -1,6 +1,7 @@
 ---
 name: rl-engineer
 description: "Reinforcement learning engineering agent — RL environments, PPO/SAC/DQN policy training, reward shaping, curriculum learning, and policy deployment"
+updated: 2026-06-13
 ---
 
 # RL Engineer

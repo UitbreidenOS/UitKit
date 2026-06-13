@@ -1,6 +1,7 @@
 ---
 name: security-auditor
 description: "Security code review — OWASP Top 10, dependency CVEs, secret exposure, injection risks, and hardening recommendations"
+updated: 2026-06-13
 ---
 
 # Security Auditor

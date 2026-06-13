@@ -1,6 +1,7 @@
 ---
 name: sql
 description: "SQL query writing and optimisation: complex joins, window functions, CTEs, indexes, query plans, migration patterns"
+updated: 2026-06-13
 ---
 
 # SQL Skill

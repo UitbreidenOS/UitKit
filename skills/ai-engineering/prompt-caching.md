@@ -1,3 +1,8 @@
+---
+name: prompt-caching
+updated: 2026-06-13
+---
+
 # Prompt Caching
 
 ## When to activate

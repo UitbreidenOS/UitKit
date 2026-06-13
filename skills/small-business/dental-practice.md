@@ -1,3 +1,8 @@
+---
+name: dental-practice
+updated: 2026-06-13
+---
+
 # Dental Practice
 
 ## When to activate

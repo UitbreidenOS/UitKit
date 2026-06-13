@@ -1,6 +1,7 @@
 ---
 name: cma-report
 description: "Comparative Market Analysis report: comps selection, value range, pricing strategy, seller presentation narrative — turn raw sold data into a persuasive CMA package"
+updated: 2026-06-13
 ---
 
 # CMA Report Skill

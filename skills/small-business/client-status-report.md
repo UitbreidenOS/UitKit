@@ -1,6 +1,7 @@
 ---
 name: client-status-report
 description: "Weekly client status report: progress vs. plan, work completed, blockers, decisions needed, next week preview — builds trust and eliminates check-in calls"
+updated: 2026-06-13
 ---
 
 # Client Status Report Skill

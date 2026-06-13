@@ -1,3 +1,8 @@
+---
+name: ai-writing-detection
+updated: 2026-06-13
+---
+
 # AI Writing Detection
 
 ## When to activate

@@ -1,6 +1,7 @@
 ---
 name: feature-store-engineer
 description: Delegate when the task involves feature store design, feature serving infrastructure, training-serving skew, or ML feature pipelines.
+updated: 2026-06-13
 ---
 
 # Feature Store Engineer

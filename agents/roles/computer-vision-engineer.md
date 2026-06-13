@@ -1,6 +1,7 @@
 ---
 name: computer-vision-engineer
 description: Delegate when building image/video understanding, object detection, OCR, or visual AI pipelines.
+updated: 2026-06-13
 ---
 
 # Computer Vision Engineer

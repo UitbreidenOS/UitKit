@@ -1,6 +1,7 @@
 ---
 name: pytest
 description: "pytest deep dive: fixtures, parametrize, markers, mocking, async tests, coverage, conftest patterns, and CI integration"
+updated: 2026-06-13
 ---
 
 # pytest Skill

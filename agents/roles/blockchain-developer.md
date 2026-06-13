@@ -1,6 +1,7 @@
 ---
 name: blockchain-developer
 description: "Blockchain and Web3 development agent for Solidity smart contracts, DeFi protocols, NFT standards, gas optimization, and security auditing"
+updated: 2026-06-13
 ---
 
 # Blockchain Developer

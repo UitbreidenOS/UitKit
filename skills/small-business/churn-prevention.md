@@ -1,3 +1,8 @@
+---
+name: churn-prevention
+updated: 2026-06-13
+---
+
 # Churn Prevention
 
 ## When to activate

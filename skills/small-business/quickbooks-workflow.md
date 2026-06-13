@@ -1,6 +1,7 @@
 ---
 name: quickbooks-workflow
 description: "QuickBooks month-end close, bank reconciliation, expense categorisation, discrepancy detection, and financial report summaries for small business owners"
+updated: 2026-06-13
 ---
 
 # QuickBooks Workflow Skill

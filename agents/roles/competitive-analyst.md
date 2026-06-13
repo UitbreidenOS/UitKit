@@ -1,6 +1,7 @@
 ---
 name: competitive-analyst
 description: "Competitive intelligence agent — competitor profiling, SWOT analysis, market positioning, pricing benchmarks, and strategic differentiation analysis"
+updated: 2026-06-13
 ---
 
 # Competitive Analyst Agent

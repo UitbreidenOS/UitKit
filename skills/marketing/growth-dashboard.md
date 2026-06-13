@@ -1,6 +1,7 @@
 ---
 name: growth-dashboard
 description: "Weekly growth dashboard: acquisition, activation, retention, revenue, referral metrics with trend analysis and commentary for growth teams"
+updated: 2026-06-13
 ---
 
 # Growth Dashboard Skill

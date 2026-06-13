@@ -1,6 +1,7 @@
 ---
 name: solidjs-engineer
 description: Delegate here for SolidJS fine-grained reactivity, signal design, SolidStart routing, and Solid-idiomatic patterns.
+updated: 2026-06-13
 ---
 
 # SolidJS Engineer

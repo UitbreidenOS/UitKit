@@ -1,6 +1,7 @@
 ---
 name: dr-bcp-specialist
 description: "Disaster Recovery and Business Continuity — RTO/RPO design, backup strategy, failover architecture, and runbook authoring"
+updated: 2026-06-13
 ---
 
 # DR / BCP Specialist

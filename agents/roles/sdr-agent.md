@@ -1,6 +1,7 @@
 ---
 name: sdr-agent
 description: "Autonomous SDR agent: full sales development lifecycle — research, personalised outreach, reply triage, call prep, CRM updates, and pipeline reporting — with human-in-loop approval gates"
+updated: 2026-06-13
 ---
 
 # SDR Agent

@@ -1,3 +1,8 @@
+---
+name: flutter
+updated: 2026-06-13
+---
+
 # Flutter 3+
 
 ## When to activate

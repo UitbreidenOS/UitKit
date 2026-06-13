@@ -1,6 +1,7 @@
 ---
 name: penetration-tester
 description: "Authorized penetration testing agent — OWASP Top 10, API security, cloud misconfiguration, and vulnerability reporting for explicitly authorized targets"
+updated: 2026-06-13
 ---
 
 # Penetration Tester

@@ -1,6 +1,7 @@
 ---
 name: stakeholder-comms
 description: "Stakeholder communication drafts: company announcements, sensitive updates, all-hands prep, board communications, and crisis messaging — for EAs and Chiefs of Staff supporting executives"
+updated: 2026-06-13
 ---
 
 # Stakeholder Communications Skill

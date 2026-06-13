@@ -1,6 +1,7 @@
 ---
 name: helm
 description: "Helm chart authoring and management: write charts from scratch, template best practices, values overrides, chart testing with helm-unittest, and Helmfile for multi-chart deployments"
+updated: 2026-06-13
 ---
 
 # Helm Skill

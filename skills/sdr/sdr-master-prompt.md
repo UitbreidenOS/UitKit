@@ -1,3 +1,8 @@
+---
+name: sdr-master-prompt
+updated: 2026-06-13
+---
+
 # SDR Master Prompt
 
 ## When to activate

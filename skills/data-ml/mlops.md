@@ -1,3 +1,8 @@
+---
+name: mlops
+updated: 2026-06-13
+---
+
 # MLOps
 
 ## When to activate

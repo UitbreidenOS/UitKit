@@ -1,3 +1,8 @@
+---
+name: general-counsel
+updated: 2026-06-13
+---
+
 # General Counsel Advisor Agent
 
 ## Purpose

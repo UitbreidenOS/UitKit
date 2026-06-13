@@ -1,6 +1,7 @@
 ---
 name: bun
 description: "Bun runtime: build fast Node.js-compatible APIs with Bun's built-in server, bundler, test runner, and package manager — Elysia framework, SQLite, and edge-optimised patterns"
+updated: 2026-06-13
 ---
 
 # Bun Skill

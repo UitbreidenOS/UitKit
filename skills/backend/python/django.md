@@ -1,6 +1,7 @@
 ---
 name: django
 description: "Django project layout, ORM models, migrations, DRF serializers, viewsets, Celery tasks, admin customization"
+updated: 2026-06-13
 ---
 
 # Django Skill

@@ -1,6 +1,7 @@
 ---
 name: lit-review
 description: "Academic literature review: systematic search strategy, paper screening, synthesis frameworks, citation management, and producing a structured review section or summary"
+updated: 2026-06-13
 ---
 
 # Lit Review Skill

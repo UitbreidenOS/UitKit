@@ -1,6 +1,7 @@
 ---
 name: svelte-architect
 description: Delegate here for Svelte 5 / SvelteKit architecture, rune-based reactivity, and Svelte-idiomatic component design.
+updated: 2026-06-13
 ---
 
 # Svelte Architect

@@ -1,6 +1,7 @@
 ---
 name: documentation-engineer
 description: Delegate here to write, audit, or restructure technical documentation — API references, guides, runbooks, and READMEs.
+updated: 2026-06-13
 ---
 
 # Documentation Engineer

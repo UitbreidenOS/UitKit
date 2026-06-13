@@ -1,6 +1,7 @@
 ---
 name: it-ops-orchestrator
 description: "IT operations orchestration — routes and decomposes cross-domain IT tasks spanning Windows, Azure, M365, PowerShell, and enterprise infrastructure"
+updated: 2026-06-13
 ---
 
 # IT Operations Orchestrator

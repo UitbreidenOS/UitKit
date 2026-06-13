@@ -1,6 +1,7 @@
 ---
 name: sales-engineer
 description: Delegate here for technical discovery, demo scripting, POC scoping, and RFP responses.
+updated: 2026-06-13
 ---
 
 # Sales Engineer

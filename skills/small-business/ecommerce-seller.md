@@ -1,3 +1,8 @@
+---
+name: ecommerce-seller
+updated: 2026-06-13
+---
+
 # Ecommerce Seller
 
 ## When to activate

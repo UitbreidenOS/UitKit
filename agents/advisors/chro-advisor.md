@@ -1,6 +1,7 @@
 ---
 name: chro-advisor
 description: "Chief Human Resources Officer advisor — hiring strategy, compensation design, performance management, culture, organisational design, and people operations for startups and scale-ups"
+updated: 2026-06-13
 ---
 
 # CHRO Advisor

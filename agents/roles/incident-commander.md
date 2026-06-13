@@ -1,6 +1,7 @@
 ---
 name: incident-commander
 description: "Incident command agent for managing technology outages — severity classification, stakeholder communication, timeline reconstruction, post-incident review, and runbook generation"
+updated: 2026-06-13
 ---
 
 # Incident Commander Agent

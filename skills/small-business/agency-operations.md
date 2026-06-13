@@ -1,3 +1,8 @@
+---
+name: agency-operations
+updated: 2026-06-13
+---
+
 # Agency Operations
 
 ## When to activate

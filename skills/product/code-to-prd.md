@@ -1,6 +1,7 @@
 ---
 name: code-to-prd
 description: "Reverse-engineer a PRD from existing code — extract what was built, infer the product decisions made, and generate a proper product requirements document for documentation or handoff"
+updated: 2026-06-13
 ---
 
 # Code to PRD Skill

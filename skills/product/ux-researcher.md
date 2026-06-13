@@ -1,6 +1,7 @@
 ---
 name: ux-researcher
 description: "UX research: user persona generation, journey mapping, usability test planning, research synthesis — translate user data into actionable design and product decisions"
+updated: 2026-06-13
 ---
 
 # UX Researcher Skill

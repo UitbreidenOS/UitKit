@@ -1,6 +1,7 @@
 ---
 name: referral-program
 description: "Referral program design: incentive structure, referral mechanics, tracking setup, email/in-app prompts, fraud prevention — for SaaS, ecommerce, and consumer products"
+updated: 2026-06-13
 ---
 
 # Referral Program Skill

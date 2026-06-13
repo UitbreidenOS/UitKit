@@ -1,6 +1,7 @@
 ---
 name: dcf-model
 description: "DCF valuation: gather inputs from filings, build WACC, project FCF, terminal value, sensitivity table — patterns from Anthropic financial-services"
+updated: 2026-06-13
 ---
 
 # DCF Model Skill

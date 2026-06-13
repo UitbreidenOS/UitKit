@@ -1,6 +1,7 @@
 ---
 name: sdr-call-analysis
 description: "Post-call transcript analysis for SDRs: extract outcome, next steps, objections raised, coaching feedback, and auto-draft CRM notes + follow-up email from a call recording or transcript"
+updated: 2026-06-13
 ---
 
 # SDR Call Analysis Skill

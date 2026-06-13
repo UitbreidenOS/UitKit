@@ -1,6 +1,7 @@
 ---
 name: api-designer
 description: "API design agent — REST and GraphQL architecture, endpoint design, schema definition, versioning strategy, documentation, and contract-first development"
+updated: 2026-06-13
 ---
 
 # API Designer Agent

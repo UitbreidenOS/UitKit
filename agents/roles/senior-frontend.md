@@ -1,6 +1,7 @@
 ---
 name: senior-frontend
 description: "Senior frontend engineer agent — React/Next.js architecture, performance optimisation, accessibility, bundle analysis, component design, and frontend code review"
+updated: 2026-06-13
 ---
 
 # Senior Frontend Engineer Agent

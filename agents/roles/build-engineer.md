@@ -1,6 +1,7 @@
 ---
 name: build-engineer
 description: "Build system optimization agent for Webpack/Vite/Turbo/esbuild configuration, bundle analysis, CI cache optimization, and monorepo build orchestration"
+updated: 2026-06-13
 ---
 
 # Build Engineer

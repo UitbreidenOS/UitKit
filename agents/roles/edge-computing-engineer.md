@@ -1,6 +1,7 @@
 ---
 name: edge-computing-engineer
 description: "Edge computing architecture — CDN logic, Cloudflare Workers/Durable Objects, edge caching, IoT edge, and latency-optimised deployments"
+updated: 2026-06-13
 ---
 
 # Edge Computing Engineer

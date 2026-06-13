@@ -1,3 +1,8 @@
+---
+name: cursor-tandem
+updated: 2026-06-13
+---
+
 # Cursor + Claude Code Tandem Workflow
 
 ## When to activate

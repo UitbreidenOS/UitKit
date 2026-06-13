@@ -1,6 +1,7 @@
 ---
 name: landing-page-generator
 description: "Generate high-converting landing pages as Next.js/React TSX components with Tailwind CSS — hero sections, pricing tables, feature grids, FAQ, testimonials, and SEO metadata"
+updated: 2026-06-13
 ---
 
 # Landing Page Generator Skill

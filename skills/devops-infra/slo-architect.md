@@ -1,6 +1,7 @@
 ---
 name: slo-architect
 description: "SLO design: define SLIs, set reliability targets, calculate error budgets, design alerting policies, build runbooks — Google SRE methodology"
+updated: 2026-06-13
 ---
 
 # SLO Architect Skill

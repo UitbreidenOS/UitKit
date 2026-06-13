@@ -1,6 +1,7 @@
 ---
 name: health-score-analyzer
 description: "Customer health score analysis: usage signals, relationship signals, commercial signals, churn risk rating, and recommended CS intervention for each account"
+updated: 2026-06-13
 ---
 
 # Health Score Analyzer Skill

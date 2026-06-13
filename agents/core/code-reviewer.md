@@ -1,3 +1,8 @@
+---
+name: code-reviewer
+updated: 2026-06-13
+---
+
 # Code Reviewer Agent
 
 ## Purpose

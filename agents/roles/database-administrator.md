@@ -1,6 +1,7 @@
 ---
 name: database-administrator
 description: Delegate here for database schema design, migration planning, indexing strategy, query optimization, and multi-DB operational concerns.
+updated: 2026-06-13
 ---
 
 # Database Administrator

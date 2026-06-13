@@ -1,3 +1,8 @@
+---
+name: blockchain
+updated: 2026-06-13
+---
+
 # Blockchain and Smart Contracts
 
 ## When to activate

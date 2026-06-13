@@ -1,6 +1,7 @@
 ---
 name: ship-gate
 description: "Pre-production audit: scan your codebase for security, database, code quality, AI/LLM, dependency, and observability issues before shipping — blocks deploy until critical items pass"
+updated: 2026-06-13
 ---
 
 # Ship Gate Skill

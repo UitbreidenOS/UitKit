@@ -1,6 +1,7 @@
 ---
 name: graphql
 description: "GraphQL schema design, resolvers, mutations, subscriptions, DataLoader, Prisma integration, N+1 prevention"
+updated: 2026-06-13
 ---
 
 # GraphQL Skill

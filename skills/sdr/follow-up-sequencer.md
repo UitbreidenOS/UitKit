@@ -1,3 +1,8 @@
+---
+name: follow-up-sequencer
+updated: 2026-06-13
+---
+
 # Follow-Up Sequencer
 
 ## When to activate

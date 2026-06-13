@@ -1,3 +1,8 @@
+---
+name: coo-advisor
+updated: 2026-06-13
+---
+
 # COO Advisor Agent
 
 ## Purpose

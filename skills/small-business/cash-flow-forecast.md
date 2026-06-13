@@ -1,6 +1,7 @@
 ---
 name: cash-flow-forecast
 description: "30-90 day cash flow forecasting for small businesses: model income and expenses, identify shortfalls, payroll runway, and early warning triggers"
+updated: 2026-06-13
 ---
 
 # Cash Flow Forecast Skill

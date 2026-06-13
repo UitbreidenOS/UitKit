@@ -1,3 +1,8 @@
+---
+name: kyc-rules-evaluator
+updated: 2026-06-13
+---
+
 # KYC Rules Evaluator
 
 ## When to activate

@@ -1,6 +1,7 @@
 ---
 name: sdr-research-brief
 description: "30-second account dossier for SDRs: company snapshot, recent triggers, buying signals, stakeholder map, and personalised outreach angle — from a URL or company name"
+updated: 2026-06-13
 ---
 
 # SDR Research Brief Skill

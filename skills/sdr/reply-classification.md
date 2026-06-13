@@ -1,3 +1,8 @@
+---
+name: reply-classification
+updated: 2026-06-13
+---
+
 # Reply Classification
 
 ## When to activate

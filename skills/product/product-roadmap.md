@@ -1,6 +1,7 @@
 ---
 name: product-roadmap
 description: "Product roadmap building: prioritisation frameworks (RICE, MoSCoW, opportunity scoring), roadmap formats, OKR alignment, stakeholder communication, and quarterly planning"
+updated: 2026-06-13
 ---
 
 # Product Roadmap Skill

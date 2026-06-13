@@ -1,6 +1,7 @@
 ---
 name: pm-sprint-review
 description: "Sprint review: velocity, shipped vs planned, blockers, learnings, next sprint priorities"
+updated: 2026-06-13
 ---
 
 # PM Sprint Review Skill

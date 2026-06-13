@@ -1,6 +1,7 @@
 ---
 name: office-docs
 description: "Generate PPTX presentations, DOCX reports, and XLSX spreadsheets from structured data — using python-pptx, python-docx, and openpyxl without requiring Microsoft Office"
+updated: 2026-06-13
 ---
 
 # Office Docs Skill

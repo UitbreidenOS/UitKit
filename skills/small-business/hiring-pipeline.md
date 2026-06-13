@@ -1,3 +1,8 @@
+---
+name: hiring-pipeline
+updated: 2026-06-13
+---
+
 # Hiring Pipeline
 
 ## When to activate

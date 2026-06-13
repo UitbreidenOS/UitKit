@@ -1,6 +1,7 @@
 ---
 name: gcp-architect
 description: "GCP architecture design — VPC, IAM, GKE, Cloud Run, BigQuery, Pub/Sub, and Google Cloud best practices"
+updated: 2026-06-13
 ---
 
 # GCP Architect

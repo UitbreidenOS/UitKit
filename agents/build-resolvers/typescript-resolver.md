@@ -1,3 +1,8 @@
+---
+name: typescript-resolver
+updated: 2026-06-13
+---
+
 # TypeScript Build Resolver Agent
 
 ## Purpose

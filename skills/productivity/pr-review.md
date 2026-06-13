@@ -1,6 +1,7 @@
 ---
 name: pr-review
 description: "Structured pull request review: blast radius analysis, security scan, breaking change detection, test coverage delta, and prioritised findings — for GitHub PRs and GitLab MRs"
+updated: 2026-06-13
 ---
 
 # PR Review Skill

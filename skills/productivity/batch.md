@@ -1,6 +1,7 @@
 ---
 name: batch
 description: "Parallel agent orchestration: decompose large tasks into independent units, spawn background agents in worktrees, each opens a PR"
+updated: 2026-06-13
 ---
 
 # Batch Skill

@@ -1,3 +1,8 @@
+---
+name: btw-side-question
+updated: 2026-06-13
+---
+
 # /btw — Side Questions Without Breaking Flow
 
 ## When to activate

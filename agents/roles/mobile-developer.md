@@ -1,6 +1,7 @@
 ---
 name: mobile-developer
 description: "Mobile development agent — React Native, Expo, Flutter, and cross-platform patterns for iOS and Android apps"
+updated: 2026-06-13
 ---
 
 # Mobile Developer Agent

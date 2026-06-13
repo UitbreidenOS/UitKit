@@ -1,6 +1,7 @@
 ---
 name: ip-clearance
 description: "IP clearance: trademark availability search, freedom-to-operate analysis for patents, open source licence compliance, and brand name risk assessment before launch"
+updated: 2026-06-13
 ---
 
 # IP Clearance Skill

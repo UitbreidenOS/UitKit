@@ -1,6 +1,7 @@
 ---
 name: monorepo
 description: "Monorepo tooling: Turborepo, Nx, pnpm workspaces, shared packages, task pipelines, affected builds, CI optimisation"
+updated: 2026-06-13
 ---
 
 # Monorepo Skill

@@ -1,6 +1,7 @@
 ---
 name: page-cro
 description: "Landing page conversion rate optimisation: above-the-fold audit, CTA analysis, trust signals, A/B test hypotheses, heatmap interpretation"
+updated: 2026-06-13
 ---
 
 # Page CRO Skill

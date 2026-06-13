@@ -1,6 +1,7 @@
 ---
 name: runbook-generator
 description: "Generate runbooks for incidents, deployments, and operational tasks — step-by-step procedures with decision trees, rollback steps, and escalation paths"
+updated: 2026-06-13
 ---
 
 # Runbook Generator Skill

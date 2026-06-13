@@ -1,6 +1,7 @@
 ---
 name: streaming-data-engineer
 description: Delegate when the task involves real-time data pipelines, event streaming systems, Kafka, Flink, or stream processing architecture.
+updated: 2026-06-13
 ---
 
 # Streaming Data Engineer

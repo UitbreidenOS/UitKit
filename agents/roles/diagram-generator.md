@@ -1,6 +1,7 @@
 ---
 name: diagram-generator
 description: "Diagram generation agent — converts code, architecture descriptions, and data models into Mermaid diagrams, ASCII art, and Excalidraw-compatible JSON"
+updated: 2026-06-13
 ---
 
 # Diagram Generator Agent

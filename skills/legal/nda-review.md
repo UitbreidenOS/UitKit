@@ -1,6 +1,7 @@
 ---
 name: nda-review
 description: "NDA triage and review: classify type, flag playbook deviations (GREEN/YELLOW/RED), identify scope issues, missing exclusions, hidden obligations — attorney review gate"
+updated: 2026-06-13
 ---
 
 # NDA Review Skill

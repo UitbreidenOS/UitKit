@@ -1,6 +1,7 @@
 ---
 name: insurtech-specialist
 description: Delegate when building insurance SaaS, underwriting tools, claims automation, or embedded insurance products.
+updated: 2026-06-13
 ---
 
 # Insurtech Specialist

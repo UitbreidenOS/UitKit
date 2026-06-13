@@ -1,3 +1,8 @@
+---
+name: sdr-prospector
+updated: 2026-06-13
+---
+
 # SDR Prospector
 
 ## Purpose

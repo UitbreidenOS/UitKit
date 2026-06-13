@@ -1,6 +1,7 @@
 ---
 name: watchdog
 description: "Watchdog agent — monitors and validates outputs from other agents for quality regressions, hallucinations, broken patterns, and spec compliance"
+updated: 2026-06-13
 ---
 
 # Watchdog Agent

@@ -1,3 +1,8 @@
+---
+name: fitness-gym-ops
+updated: 2026-06-13
+---
+
 # Fitness Gym Operations
 
 ## When to activate

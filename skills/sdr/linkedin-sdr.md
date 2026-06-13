@@ -1,3 +1,8 @@
+---
+name: linkedin-sdr
+updated: 2026-06-13
+---
+
 # LinkedIn SDR
 
 ## When to activate

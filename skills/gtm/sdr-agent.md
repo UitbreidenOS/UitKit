@@ -1,6 +1,7 @@
 ---
 name: sdr-agent
 description: "AI SDR agent patterns: prospect research, personalised outreach, multi-step sequences, reply handling, meeting booking — with safety limits"
+updated: 2026-06-13
 ---
 
 # SDR Agent Skill

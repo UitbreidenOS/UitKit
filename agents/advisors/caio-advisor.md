@@ -1,6 +1,7 @@
 ---
 name: caio-advisor
 description: "Chief AI Officer advisor — model build-vs-buy decisions, AI regulatory risk classification (EU AI Act + NIST AI RMF), API-to-self-hosted cost economics, and AI team org evolution"
+updated: 2026-06-13
 ---
 
 # Chief AI Officer Advisor

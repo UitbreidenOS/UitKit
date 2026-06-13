@@ -1,6 +1,7 @@
 ---
 name: content-repurposer
 description: "Turn one piece of content into many: blog → social posts + email newsletter + ad copy + video script — for small business owners without a content team"
+updated: 2026-06-13
 ---
 
 # Content Repurposer Skill

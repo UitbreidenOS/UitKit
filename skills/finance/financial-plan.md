@@ -1,6 +1,7 @@
 ---
 name: financial-plan
 description: "Wealth management financial planning: cash flow analysis, retirement projections, education funding, estate checklist — for individuals and families"
+updated: 2026-06-13
 ---
 
 # Financial Plan Skill

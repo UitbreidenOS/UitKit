@@ -1,6 +1,7 @@
 ---
 name: data-quality-checker
 description: "Data quality audit: identify nulls, duplicates, outliers, schema drift, and type mismatches — generate a data health report and remediation SQL"
+updated: 2026-06-13
 ---
 
 # Data Quality Checker Skill

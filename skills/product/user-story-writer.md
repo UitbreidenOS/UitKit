@@ -1,6 +1,7 @@
 ---
 name: user-story-writer
 description: "Convert rough feature ideas into well-structured user stories with acceptance criteria and edge cases"
+updated: 2026-06-13
 ---
 
 # User Story Writer Skill

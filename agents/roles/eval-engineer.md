@@ -1,6 +1,7 @@
 ---
 name: eval-engineer
 description: Delegate when designing, implementing, or analyzing LLM evaluation frameworks and benchmark suites.
+updated: 2026-06-13
 ---
 
 # Eval Engineer

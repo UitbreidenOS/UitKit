@@ -1,6 +1,7 @@
 ---
 name: webhooks
 description: "Webhook security: HMAC-SHA256 signature verification, replay attack prevention, idempotency, Stripe + Svix + generic patterns"
+updated: 2026-06-13
 ---
 
 # Webhook Security Skill

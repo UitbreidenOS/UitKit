@@ -1,6 +1,7 @@
 ---
 name: iot-engineer
 description: "IoT system design agent for MQTT/CoAP protocols, AWS IoT Core/Azure IoT Hub, edge computing, OTA updates, and device fleet management"
+updated: 2026-06-13
 ---
 
 # IoT Engineer

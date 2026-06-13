@@ -1,3 +1,8 @@
+---
+name: planner
+updated: 2026-06-13
+---
+
 # Planner Agent
 
 ## Purpose

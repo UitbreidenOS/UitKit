@@ -1,6 +1,7 @@
 ---
 name: confluence-expert
 description: "Confluence documentation: space architecture, page templates, macros, search optimisation, team handbook structure, and keeping docs from going stale"
+updated: 2026-06-13
 ---
 
 # Confluence Expert Skill

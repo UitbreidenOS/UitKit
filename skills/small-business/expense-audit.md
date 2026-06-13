@@ -1,6 +1,7 @@
 ---
 name: expense-audit
 description: "Audit business expenses: find subscription creep, duplicate vendors, unused tools, misclassified costs — turn QuickBooks or bank exports into actionable savings"
+updated: 2026-06-13
 ---
 
 # Expense Audit Skill

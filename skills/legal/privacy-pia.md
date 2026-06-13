@@ -1,6 +1,7 @@
 ---
 name: privacy-pia
 description: "Privacy Impact Assessment (PIA/DPIA): processing activity intake, lawful basis check, DPIA necessity test, risk register, DPO handoff — GDPR Article 35 workflow"
+updated: 2026-06-13
 ---
 
 # Privacy PIA Skill

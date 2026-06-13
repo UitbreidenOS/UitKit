@@ -1,3 +1,8 @@
+---
+name: brand-system-builder
+updated: 2026-06-13
+---
+
 # Brand System Builder
 
 ## Purpose

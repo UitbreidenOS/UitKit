@@ -1,3 +1,8 @@
+---
+name: contractor-trades
+updated: 2026-06-13
+---
+
 # Contractor and Trades Operations
 
 ## When to activate

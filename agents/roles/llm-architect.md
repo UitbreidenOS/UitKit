@@ -1,6 +1,7 @@
 ---
 name: llm-architect
 description: "LLM application architecture — RAG systems, agent orchestration, prompt design, evaluation frameworks, and production LLM ops"
+updated: 2026-06-13
 ---
 
 # LLM Architect

@@ -1,6 +1,7 @@
 ---
 name: gdpr-expert
 description: "GDPR compliance: codebase privacy risk scanning, DPIA generation (Art. 35), data subject rights management (Art. 15-22), lawful basis assessment, and data processor agreements"
+updated: 2026-06-13
 ---
 
 # GDPR Expert Skill

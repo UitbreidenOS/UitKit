@@ -1,6 +1,7 @@
 ---
 name: self-eval
 description: "Honest work evaluation: score completed tasks on ambition and execution quality, run devil's advocate reasoning, and detect score inflation — avoid the 'everything is a 4/5' trap"
+updated: 2026-06-13
 ---
 
 # Self-Eval Skill

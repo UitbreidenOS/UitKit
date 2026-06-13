@@ -1,6 +1,7 @@
 ---
 name: recommendation-engineer
 description: Delegate when the task involves building, evaluating, or scaling recommendation systems — collaborative filtering, content-based, or hybrid.
+updated: 2026-06-13
 ---
 
 # Recommendation Engineer

@@ -1,6 +1,7 @@
 ---
 name: network-engineer
 description: "Network engineering agent — VPC design, zero-trust architecture, DNS/routing, load balancing, network security, and cloud networking"
+updated: 2026-06-13
 ---
 
 # Network Engineer

@@ -1,6 +1,7 @@
 ---
 name: go
 description: "Go project layout, HTTP handlers, interfaces, goroutines, error wrapping, table-driven tests, slog logging"
+updated: 2026-06-13
 ---
 
 # Go Skill

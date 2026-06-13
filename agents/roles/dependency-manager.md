@@ -1,6 +1,7 @@
 ---
 name: dependency-manager
 description: "Dependency audit, update, and conflict resolution — keeps packages current, resolves version conflicts, manages breaking changes"
+updated: 2026-06-13
 ---
 
 # Dependency Manager

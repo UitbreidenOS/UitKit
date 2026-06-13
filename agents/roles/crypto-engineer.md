@@ -1,6 +1,7 @@
 ---
 name: crypto-engineer
 description: Delegate here for cryptographic implementation review, algorithm selection, key management design, and PKI architecture.
+updated: 2026-06-13
 ---
 
 # Crypto Engineer

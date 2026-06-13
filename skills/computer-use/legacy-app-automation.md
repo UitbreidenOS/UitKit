@@ -1,6 +1,7 @@
 ---
 name: legacy-app-automation
 description: Automate desktop or legacy apps with no API via computer use — slow, verified, safe interaction with Win32, VB6, mainframe, and thick-client apps.
+updated: 2026-06-13
 ---
 
 # Legacy App Automation via Computer Use

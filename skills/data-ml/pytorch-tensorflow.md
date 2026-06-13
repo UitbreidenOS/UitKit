@@ -1,6 +1,7 @@
 ---
 name: pytorch-tensorflow
 description: "PyTorch and TensorFlow model training, data loaders, GPU setup, checkpointing, inference optimization"
+updated: 2026-06-13
 ---
 
 # PyTorch / TensorFlow Skill

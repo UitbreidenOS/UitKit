@@ -1,6 +1,7 @@
 ---
 name: test-generator
 description: "Generate unit and integration tests for existing code: happy path, edge cases, error handling, mocks — for any language or framework"
+updated: 2026-06-13
 ---
 
 # Test Generator Skill

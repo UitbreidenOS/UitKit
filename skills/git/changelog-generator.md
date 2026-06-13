@@ -1,6 +1,7 @@
 ---
 name: changelog-generator
 description: "Generate Keep a Changelog entries from git log, commit history, or PR list — grouped by type with semver guidance"
+updated: 2026-06-13
 ---
 
 # Changelog Generator Skill

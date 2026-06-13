@@ -1,6 +1,7 @@
 ---
 name: real-estate-listing
 description: "Real estate agent toolkit: MLS listing descriptions, CMA summaries, showing follow-up emails, buyer nurture sequences, and social media posts — all Fair Housing compliant"
+updated: 2026-06-13
 ---
 
 # Real Estate Listing

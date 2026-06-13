@@ -1,6 +1,7 @@
 ---
 name: product-analytics
 description: "Product analytics: define metrics frameworks, build dashboards, analyse feature adoption, measure activation and retention, interpret data to make product decisions"
+updated: 2026-06-13
 ---
 
 # Product Analytics Skill

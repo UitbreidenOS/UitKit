@@ -1,6 +1,7 @@
 ---
 name: game-developer
 description: "Game development agent for Unity and Unreal Engine architecture, ECS patterns, multiplayer networking, shader development, and 60fps performance optimization"
+updated: 2026-06-13
 ---
 
 # Game Developer

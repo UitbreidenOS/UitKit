@@ -1,3 +1,8 @@
+---
+name: month-end-close
+updated: 2026-06-13
+---
+
 # Month-End Close
 
 ## When to activate

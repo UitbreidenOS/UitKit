@@ -1,6 +1,7 @@
 ---
 name: lead-enrichment
 description: "Lead enrichment pipelines: web scraping to structured prospect profiles, company intelligence signals, CRM population — Firecrawl, Clearbit, Apollo patterns"
+updated: 2026-06-13
 ---
 
 # Lead Enrichment Skill

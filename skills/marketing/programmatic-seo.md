@@ -1,6 +1,7 @@
 ---
 name: programmatic-seo
 description: "Programmatic SEO: build landing page templates at scale, identify data sources, design URL structures, avoid thin content penalties"
+updated: 2026-06-13
 ---
 
 # Programmatic SEO Skill

@@ -1,6 +1,7 @@
 ---
 name: kotlin-engineer
 description: Delegate here for Kotlin backend services, Android development, coroutines architecture, or Kotlin Multiplatform work.
+updated: 2026-06-13
 ---
 
 # Kotlin Engineer

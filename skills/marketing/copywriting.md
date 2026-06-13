@@ -1,6 +1,7 @@
 ---
 name: copywriting
 description: "Conversion copywriting: landing pages, email subject lines, ad copy, product descriptions, value propositions — frameworks like PAS, AIDA, and Jobs-to-be-Done"
+updated: 2026-06-13
 ---
 
 # Copywriting Skill

@@ -1,3 +1,8 @@
+---
+name: thomson-reuters
+updated: 2026-06-13
+---
+
 # Thomson Reuters Legal Research via MCP
 
 ## When to activate

@@ -1,3 +1,8 @@
+---
+name: real-estate-specialist
+updated: 2026-06-13
+---
+
 # Real Estate Specialist
 
 ## Purpose

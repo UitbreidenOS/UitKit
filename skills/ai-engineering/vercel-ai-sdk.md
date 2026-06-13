@@ -1,6 +1,7 @@
 ---
 name: vercel-ai-sdk
 description: "Vercel AI SDK: streaming AI responses to Next.js, useChat/useCompletion hooks, tool calls, generative UI, multi-provider routing (Claude, OpenAI, Gemini)"
+updated: 2026-06-13
 ---
 
 # Vercel AI SDK Skill

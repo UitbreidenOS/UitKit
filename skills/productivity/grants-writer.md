@@ -1,6 +1,7 @@
 ---
 name: grants-writer
 description: "Grant proposal writing: research grants, innovation grants, government funding, and charitable foundation applications — structure, narrative, budget justification, and evaluation criteria"
+updated: 2026-06-13
 ---
 
 # Grants Writer Skill

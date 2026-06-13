@@ -1,6 +1,7 @@
 ---
 name: code-review
 description: "Structured code review: correctness, security, performance, maintainability — with severity and actionable feedback per finding"
+updated: 2026-06-13
 ---
 
 # Code Review Skill
