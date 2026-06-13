@@ -206,5 +206,3 @@ HIGH_VALUE_THRESHOLD=100000 # $ amount to flag high-value risks
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient)

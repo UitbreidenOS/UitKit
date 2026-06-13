@@ -72,6 +72,3 @@ Zusammenfassung jeder Entscheidung zurück.
 Claude fragt CourtListener via MCP ab, gibt eine Liste übereinstimmender Meinungen mit Zitationen und Entscheidungszusammenfassungen zurück, merkt welche Fälle Cert-Petitionen ausstehend haben, und hängt die zwingende Forschungswarnung an.
 
 ---
-
-> **Arbeiten Sie mit uns :** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwicklergemeinschaften.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

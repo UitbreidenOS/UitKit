@@ -97,6 +97,3 @@ Setze das Token als `FIGMA_API_TOKEN` im Konfig-Block oben. Committe es nicht in
 **Visual-Diff-Workflow:** Mache einen Screenshot der implementierten Komponente mit Playwright MCP, hole dann die Figma-Spezifikation mit diesem Server. Bitte Claude, die beiden nebeneinander zu vergleichen und Unterschiede aufzulisten.
 
 ---
-
-> **Zusammenarbeit mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen AI-Produkte und B2B-Lösungen mit Developer-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

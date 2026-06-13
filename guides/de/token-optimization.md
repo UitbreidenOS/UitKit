@@ -150,7 +150,3 @@ Siehe `hooks/lifecycle/cost-tracker.sh` für eine fertige Implementierung.
 ---
 
 ## Arbeiten Sie mit uns
-
-Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte mit Entwickler-Communities und liefern B2B-KI-Lösungen. Wenn Sie KI-Kosten in großem Maßstab reduzieren, Claude Code-Tooling für Ihr Team aufbauen oder B2B-KI-Produkte liefern möchten — lassen Sie uns sprechen.
-
-**[uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)**

@@ -201,6 +201,3 @@ Amplification payante (si budget):
 3. "Guide du gestionnaire d'ingénierie pour la planification de sprint" (pilier 2, cadre)
 
 ---
-
-> **Travaillez avec nous:** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits d'IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

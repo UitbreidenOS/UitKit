@@ -375,6 +375,3 @@ Cuando la persona que "simplemente sabe cómo funciona" se va, no tienes ningún
 - [Primeros pasos con Claude Code](./getting-started.md)
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — creamos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

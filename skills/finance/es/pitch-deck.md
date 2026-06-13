@@ -232,6 +232,3 @@ $80K ARR con crecimiento MoM de 15% nos lleva a $600K ARR en 14 meses orgánicam
 « Estamos recaudando $2M para contratar 2 ingenieros y nuestro primer AE. La ingeniería nos permite cubrir el flujo de trabajo completo de revisión de contratos — no solo NDA. El AE toma lo que hemos probado con socios de diseño y lo convierte en un movimiento repetible. Alcanzamos $600K ARR en 18 meses, que es el umbral de Serie A para esta categoría. »
 
 ---
-
-> **Trabajar con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

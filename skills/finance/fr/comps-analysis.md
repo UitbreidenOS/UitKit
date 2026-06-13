@@ -139,6 +139,3 @@ Cours actuel de l'action : $19,81 → situé près du milieu de fourchette toute
 **Univers de comparables attendu :** 6-8 entreprises B2B SaaS de milieu de marché à l'échelle ARR et profil de croissance similaires. Tableau de multiples avec EV/ARR (LTM + NTM), EV/Profit brut, P/E NTM le cas échéant. Fourchette de valorisation implicite. Note sur la prime que les comparables méritent étant donné le NRR de 110%.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

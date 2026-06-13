@@ -72,6 +72,3 @@ van elke uitkomst.
 Claude vraagt CourtListener via MCP aan, retourneert een lijst van overeenkomende uitspraken met citaten en samenvattingen van uitkomsten, merkt welke zaken cert-verzoeken in behandeling hebben, en voegt de verplichte onderzoekswaarschuwing in.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

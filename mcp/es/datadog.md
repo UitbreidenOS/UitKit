@@ -105,6 +105,3 @@ Permisos mínimos para la clave de aplicación: `metrics_read`, `logs_read`, `mo
 Todas las llamadas MCP consumen cuota de API de Datadog. Las consultas de métricas y búsquedas de registro cuentan contra los límites de velocidad de API de tu plan. Evita ejecutar consultas automatizadas de alta frecuencia (p. ej., a través de hooks) sin revisar los límites de tu plan — Datadog aplica límites por segundo y por hora a nivel de organización.
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

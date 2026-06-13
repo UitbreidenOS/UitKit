@@ -255,6 +255,3 @@ Houd elke definitie onder 80 woorden. Schrijf voor een niet-technisch leidinggev
 **Verwachte uitvoer:** Volledig maandelijks rapport dat opent met "Oktober was een recordmaand voor nieuwe business die gedeeltelijk werd gecompenseerd door onze grootste klantverliesgebeurtenis tot nu toe." Omzetsectie toont $2,1M vs. $2,0M plan. Grondoorzaak verloop: het vertrek van de enterprise-klant dreef de NRR-daling van 112% naar 108% — een structurele, geen trendgebeurtenis. Record nieuwe logo's is een echt signaal. Actietabel: post-mortem op verlopen account (VP Customer Success, 7 nov), ICP-verfijning om klanten met soortgelijk risicoprofiel uit te sluiten (VP Product + VP Sales, 14 nov). Bewakingslijst: enterprise-verlengingspipeline voor K4.
 
 ---
-
-> **Werk met ons samen:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

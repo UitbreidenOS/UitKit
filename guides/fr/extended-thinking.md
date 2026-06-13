@@ -438,6 +438,3 @@ Utilisez ceci avant d'activer le mode réflexion. Si moins de 3 éléments s'app
 **Activer la réflexion sur des endpoints streaming avec budgets de latence serrés.** Le mode réflexion retarde le premier token de texte de la durée complète de la phase de réflexion. Si votre UI montre un indicateur de dactylographie et les utilisateurs s'attendent à une réponse dans 1–2 secondes, cela paraîtra cassé. Soit masquez la phase de réflexion derrière un état de chargement délibéré soit désactivez la réflexion sur cet endpoint.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -363,6 +363,3 @@ Générez : proposition d'ordre du jour du conseil, structure initiale du tablea
 | Enseignements des appels de référence | % de deals où les appels clients ont changé votre avis |
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous créons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

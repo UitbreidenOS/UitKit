@@ -90,5 +90,5 @@ Read, Edit, Write, WebSearch, Bash
 
 ---
 
-🔗 **[Uitbreiden — construir productos de IA y herramientas B2B con comunidades de desarrolladores.](https://uitbreiden.com/)**
+
 📺 **[Suscríbete a nuestro canal de YouTube para análisis más profundos](https://www.youtube.com/channel/UCcvK8pHyqeR7Q_0lYkuHlUg)**

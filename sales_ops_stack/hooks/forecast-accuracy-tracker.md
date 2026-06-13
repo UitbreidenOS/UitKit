@@ -227,5 +227,3 @@ As data accumulates, refine the forecast model:
 | Months 7–12 | ±5% | Mature model; adjust only for major changes |
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient)

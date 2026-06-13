@@ -37,6 +37,3 @@ Todos los archivos React (`*.tsx`, `*.jsx`) en cualquier proyecto.
 
 
 ---
-
-> **Trabaja con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

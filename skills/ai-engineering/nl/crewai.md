@@ -89,6 +89,3 @@ Wanneer rollen natuurlijk op het probleem passen, wanneer je een werkend prototy
 Content-pipeline voor een developer blog: een `ResearchAgent` verzamelt technische feiten over een nieuwe bibliotheek, een `WriterAgent` ontwerpt het artikel, een `ReviewerAgent` controleert op nauwkeurigheid en toon. Sequentieel proces, Claude Sonnet op alle drie agents, voltooid in minder dan 50 coderegels.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

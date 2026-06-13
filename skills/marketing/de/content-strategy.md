@@ -201,6 +201,3 @@ Bezahlte Verstärkung (falls Budget):
 3. "Der Engineering Manager's Guide to Sprint Planning" (Säule 2, Rahmen)
 
 ---
-
-> **Zusammenarbeit mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir bauen KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

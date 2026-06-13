@@ -151,6 +151,3 @@ Actividad reciente: Presentó una queja interna sobre un colega hace 3 meses
 **No despida hasta que el asesoramiento legal haya revisado esta situación.**
 
 ---
-
-> **Trabaje con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

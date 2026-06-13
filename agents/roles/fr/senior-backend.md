@@ -210,6 +210,3 @@ const results = await db.query(
 Amélioration attendue après l'index pg_trgm: la recherche passe de ~800ms (scan seq) à ~15-30ms.
 
 ---
-
-> **Travail avec nous:** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

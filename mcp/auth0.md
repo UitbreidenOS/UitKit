@@ -105,6 +105,3 @@ Grant only the scopes you need. Avoid `read:client_keys` — it exposes client s
 Auth0 Management API calls are included in all Auth0 plans — there are no per-call fees. However, free plans cap at 1,000 active users and enforce Management API rate limits. Production tenants on paid plans have higher rate limits and user capacity. Check your plan's Management API quota under **Settings → Tenant Settings** in the Auth0 Dashboard.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

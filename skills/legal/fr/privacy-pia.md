@@ -90,6 +90,3 @@ Documenter la base légale et pourquoi elle s'applique.
 **Recommandation DPO :** DPIA obligatoire avant lancement. Consulter ICO si risque résiduel reste élevé après mitigation.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

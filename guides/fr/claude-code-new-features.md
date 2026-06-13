@@ -410,6 +410,3 @@ Ajuster la vitesse de défilement à la molette de la souris dans la CLI. `/scro
 Examine les diffs actuels pour les erreurs de compilation, erreurs de logique, vulnérabilités de sécurité — pas de style ou de formatage.
 
 ---
-
-> **Travaillez avec nous:** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

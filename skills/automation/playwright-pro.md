@@ -386,6 +386,3 @@ await page.route('/api/shipping-rates', route => route.fulfill({
 Mock the API for your checkout tests — removes the timing dependency completely and makes tests 3x faster.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

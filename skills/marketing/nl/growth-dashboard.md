@@ -291,6 +291,3 @@ Verwachte impact: [X meer klanten/maand bij huidige conversieratio's]
 - Churn: bel de 2 churned klanten deze week; begrijp of het product, prijs of concurrent is
 
 ---
-
-> **Werk met ons samen:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — wij bouwen AI-producten en B2B-oplossingen met ontwikkelaarscommunities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

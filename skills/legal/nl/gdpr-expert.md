@@ -279,6 +279,3 @@ Verantwoordelijken (uw B2B-klanten) zijn verantwoordelijk voor DPIA — maar ze 
 3. 🟡 Transparantie — eindgebruikers weten waarschijnlijk niet dat gedrag wordt gescored. Uw klanten (verantwoordelijken) moeten hun vertellen.
 
 ---
-
-> **Met ons werken:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met developersgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

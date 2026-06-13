@@ -82,6 +82,3 @@ Warum schlug der Build vor 20 Minuten fehl? Zeige mir die kompletten Logs.
 - Preview-Deployments (von PRs) und Production-Deployments sind separat — spezifiziere die Ziel-Umgebung beim Ausführen von Umgebungs-Variablen-Operationen.
 
 ---
-
-> **Zusammenarbeit mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen AI-Produkte und B2B-Lösungen mit Developer-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

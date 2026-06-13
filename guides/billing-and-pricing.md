@@ -139,6 +139,3 @@ If you have a Max subscription, your Agent SDK credit pool is pre-paid. Running 
 For API key users, the Anthropic Console (console.anthropic.com) provides per-day token usage broken down by model and a spend graph for the billing period.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

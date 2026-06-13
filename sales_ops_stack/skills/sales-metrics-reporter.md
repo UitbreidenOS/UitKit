@@ -289,5 +289,3 @@ Closed/Won: [X] deals | $[X]M
 [Detailed table: one row per rep with all tracked metrics]
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient)

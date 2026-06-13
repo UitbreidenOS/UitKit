@@ -163,7 +163,3 @@ Les projets complexes bénéficient d'un `CONTEXT.md` — un glossaire des terme
 ---
 
 ## Travaillez avec nous
-
-Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA avec des communautés de développeurs et livrons des solutions IA B2B. Si vous construisez des workflows IA de longue durée, des agents autonomes, ou avez besoin d'aide pour concevoir des architectures mémoire pour des déploiements Claude Code en production — nous pouvons aider.
-
-**[uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)**

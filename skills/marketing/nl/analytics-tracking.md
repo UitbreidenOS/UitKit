@@ -230,6 +230,3 @@ In PostHog: Insights → Funnels → voeg deze 5 stappen in volgorde toe. Stel c
 **Eerste experiment:** Voeg een "quick start" checklist in de lege dashboard staat met 3 taken toe. Elke task voltooid event = tracked. Lege staat is de #1 hefboom bij stap 2→3.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

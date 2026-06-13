@@ -147,5 +147,3 @@ Have it return a structured CRITICAL/SUGGESTED/NITPICK report.
 See `agents/core/code-reviewer.md` for the full agent definition.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities. [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -291,6 +291,3 @@ Projizierte Auswirkung: [X mehr Kunden/Monat bei aktuellen Conversion-Raten]
 - Abwanderung: Die 2 abgewanderten Kunden diese Woche anrufen; verstehen ob Produkt, Preis oder Wettbewerber
 
 ---
-
-> **Mit uns arbeiten:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

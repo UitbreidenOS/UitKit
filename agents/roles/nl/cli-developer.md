@@ -163,6 +163,3 @@ Node.js CLI-hulpmiddel met Commander.js en npm-publicatie:
 6. Publiceer: `package.json` met `bin`-veld; `prepublishOnly` voert `tsc` uit; `npm publish --access=public`
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -295,6 +295,3 @@ Build these once using Claude, then reuse and edit:
 **Invoice follow-up sequence** — 3 email templates: 7-day reminder, 21-day firm follow-up, 45-day final notice.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

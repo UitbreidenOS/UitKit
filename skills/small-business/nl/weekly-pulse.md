@@ -154,6 +154,3 @@ De inkomsten bereikten deze week $12.400 — 27% boven vorige week en 72% boven 
 3. Vervolgpaging op de referral die net geland is om het project te beginnen
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

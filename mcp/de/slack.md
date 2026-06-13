@@ -112,6 +112,3 @@ tief fokussiert — welche Entscheidungen wurden getroffen und was muss ich wiss
 **Thread Timestamps sind präzise:** `reply_to_thread` braucht den exakten `ts` (Timestamp)-Wert der Parent-Nachricht, der wie `1716300000.000100` aussieht. Hole ihn aus `get_channel_history`-Ausgabe, bevor du antwortest.
 
 ---
-
-> **Zusammenarbeit mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen AI-Produkte und B2B-Lösungen mit Developer-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

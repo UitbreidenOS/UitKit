@@ -60,6 +60,3 @@ Natural language works. The condition should be observable and unambiguous:
 Claude runs `tsc --noEmit`, reads the error list, fixes each error, runs again, sees remaining errors, fixes those, runs again — loop continues until zero errors. Then stops and reports: "Resolved 14 TypeScript errors across 6 files. `tsc --noEmit` exits clean."
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

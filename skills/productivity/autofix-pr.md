@@ -50,6 +50,3 @@ Each auto-applied fix appears as a commit in the PR timeline with a note indicat
 PR has 12 review comments. 9 are: "use `const` instead of `let`", "add missing semicolon on line 47", "variable name should be `userId` not `user_id`", "remove unused import". Claude auto-applies all 9, commits them as a single tidy-up commit, and surfaces the remaining 3 architectural comments for manual review: "The following 3 comments require your input before I can apply them."
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

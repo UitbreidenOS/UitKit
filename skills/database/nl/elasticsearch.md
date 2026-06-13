@@ -392,6 +392,3 @@ Ontwerp een productcatalogusindex met full-text search, facetfiltering op catego
 Deze query: matched zoektekst met versterkt naamveld, filtert op in-stock audioproducten in prijs-/ratingbereik, verdubbelt score voor aanbevolen-getagde producten, en retourneert categorie-/prijs-/ratingaggregaties voor het facetpaneel naast resultaten.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

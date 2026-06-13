@@ -175,5 +175,3 @@ Si gasta 6+ horas por semana en las actividades que Claude cubre — facturació
 - [SEO Strategy for Small Business Content](claude-small-business-seo-strategy.md) — cómo se construye este contenido
 
 ---
-
-> **Claudient** es respaldado por [Uitbreiden](https://uitbreiden.com/) — construcción de productos de IA y soluciones B2B con comunidades de desarrolladores.

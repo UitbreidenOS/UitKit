@@ -233,6 +233,3 @@ $80K ARR at 15% MoM growth puts us at $600K ARR in 14 months organically. This c
 "We're raising $2M to hire 2 engineers and our first AE. The engineering lets us cover the full contract review workflow — not just NDAs. The AE takes what we've proven with design partners and turns it into a repeatable motion. We hit $600K ARR in 18 months, which is the Series A threshold for this category."
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

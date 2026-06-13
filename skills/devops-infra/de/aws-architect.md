@@ -296,6 +296,3 @@ React (S3 + CloudFront) → API Gateway (HTTP API) → Lambda → DynamoDB
 **IaC-Empfehlung:** AWS SAM für diesen Stack. Ein `template.yaml` stellt alles bereit. Fügen Sie `samconfig.toml` für Umgebungstrennung (Dev/Prod) hinzu.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

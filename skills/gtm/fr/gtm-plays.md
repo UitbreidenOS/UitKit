@@ -353,5 +353,5 @@ Jour 5–30 après l'annonce. Laissez le bruit initial de l'annonce se calmer, p
 
 ---
 
-🔗 **[Uitbreiden — building AI products and B2B tools with developer communities.](https://uitbreiden.com/)**
+
 📺 **[Subscribe to our YouTube Channel for more deep dives](https://www.youtube.com/channel/UCcvK8pHyqeR7Q_0lYkuHlUg)**

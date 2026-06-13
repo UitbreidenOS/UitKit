@@ -97,6 +97,3 @@ Set the token as `FIGMA_API_TOKEN` in the config block above. Do not commit it t
 **Visual diff workflow:** Take a screenshot of the implemented component with Playwright MCP, then fetch the Figma spec with this server. Ask Claude to compare the two side by side and list differences.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -44,6 +44,3 @@ Sollte ich das Roadmap hinzufügen?
 Agent probes: sind das Eure Target Customers, was genau brauchen sie, wie viele würden wirklich benutzen, was Implementation Cost, gibt Light-Weight Alternativen, gibt Framework für Entscheidung — sagen Sie nicht einfach ja weil 3 Personen fragten.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/).
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

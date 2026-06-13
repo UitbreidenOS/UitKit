@@ -261,6 +261,3 @@ aws cloudtrail describe-trails --query 'trailList[*].[Name,S3BucketName,IsMultiR
 Fix root access keys and internet SSH first — these are the two most commonly exploited misconfigs.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

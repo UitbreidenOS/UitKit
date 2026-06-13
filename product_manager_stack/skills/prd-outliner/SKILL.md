@@ -74,5 +74,3 @@ Do not use for bug fixes or minor refinements — those don't need a full PRD. D
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudients/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

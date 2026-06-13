@@ -94,6 +94,3 @@ Priorice las mejoras por: (1) puntuación de impacto relativa al esfuerzo, (2) a
 Diseñe un conjunto de políticas de Acceso Condicional para una empresa de 200 personas. Requisitos: MFA para todo acceso a aplicaciones en la nube, bloquear protocolos de autenticación heredados, requerir dispositivo conforme para acceso a SharePoint y Exchange, excluir dos cuentas de cortafuegos de todas las políticas y configurar alerta de auditoría en inicio de sesión de cortafuegos. Entregar: lista de políticas, parámetros de configuración para cada una y PowerShell para implementar a través de Microsoft Graph.
 
 ---
-
-> **Trabaje con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

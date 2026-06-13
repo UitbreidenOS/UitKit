@@ -43,6 +43,3 @@ Alle Pull-Request-Reviews — Verhalten von Autor und Reviewer.
 
 
 ---
-
-> **Arbeite mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen AI-Produkte und B2B-Lösungen mit Entwicklergemeinschaften.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

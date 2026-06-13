@@ -414,6 +414,3 @@ Après avoir lu le fichier composant, l'audit produit un rapport de conclusions 
 - Correction : à l'ouverture, déplacer le focus vers `<h2>` à l'intérieur de la modale (ou le premier élément focalisable) — les lecteurs d'écran annoncent automatiquement le titre
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

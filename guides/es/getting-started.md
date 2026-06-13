@@ -14,7 +14,7 @@ Esta guía te lleva de cero a un entorno Claude Code funcional con tu primera sk
 ## Paso 1 — Clonar Claudient
 
 ```bash
-git clone https://github.com/Claudient/Claudient.git ~/Claudient
+
 ```
 
 Ahora tienes la biblioteca completa localmente. Nada se ejecuta automáticamente — tú eliges lo que necesitas.
@@ -158,7 +158,3 @@ Navega por `agents/` para entender qué está disponible. Cuando quieras que Cla
 ---
 
 ## Trabaja con nosotros
-
-Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA con comunidades de desarrolladores y entregamos soluciones de IA B2B. Si estás construyendo algo serio con Claude Code y quieres ayuda experta, un socio técnico, o simplemente formar parte de la comunidad — ven a buscarnos.
-
-**[uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)**

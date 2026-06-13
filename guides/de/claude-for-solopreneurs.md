@@ -175,5 +175,3 @@ Wenn Sie 6+ Stunden pro Woche auf den Aktivitäten verbringen, die Claude deckt 
 - [SEO Strategy for Small Business Content](claude-small-business-seo-strategy.md) — wie dieser Inhalt gebaut wird
 
 ---
-
-> **Claudient** wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — Bau von KI-Produkten und B2B-Lösungen mit Entwickler-Communities.

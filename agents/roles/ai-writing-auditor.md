@@ -242,6 +242,3 @@ themselves.
 **Summary:** 3 P0 (must fix), 3 P1 (recommend fix), 1 P2 (consider fixing). Total: 7 flagged passages across 130 lines.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

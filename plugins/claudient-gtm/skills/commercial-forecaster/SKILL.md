@@ -191,6 +191,3 @@ Pipe only: $1.6M — full pipeline × historical win rates by stage
 5. NRR: 108% consolidated; [note if cohort analysis shows any deterioration]
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

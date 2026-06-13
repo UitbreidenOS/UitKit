@@ -215,6 +215,3 @@ Why 4 weeks, not 20 days:
 **One watch-out:** If your 500 visitors/day figure includes mobile and desktop users, segment the results by device. Checkout flows behave very differently on mobile vs. desktop — a winning result overall could be masking a regression on one platform.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

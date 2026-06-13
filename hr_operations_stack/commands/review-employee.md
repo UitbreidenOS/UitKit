@@ -99,5 +99,3 @@ Before finalizing rating:
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [claudecode.ai](https://claudecode.ai/)

@@ -358,6 +358,3 @@ print(df.nunique().sort_values())          # Kardinaliteit — laag = waarschijn
 **Verwachte uitvoer:** Python-auditscript gevuld voor die tabel. SQL-queries voor: controle op dubbele order_id (primaire sleutel), uitschietcontrole voor price (negatieve prijzen, prijzen > $10K), kwantiteitscontrole (nul of negatief), toekomstige datums in created_at, afzonderlijke waarden in statuskolom (markeer onverwachte waarden), referentiële integriteit van user_id ten opzichte van een gebruikerstabel. Na uitvoering: sjabloon gegevensgezondheidsrapport. Drie toe te voegen dbt-tests: unique/not_null op order_id, accepted_values op status, relationships op user_id. Commentaar: als uitschieters voor price worden gevonden, zou dat de hogere omzet kunnen verklaren — onderzoekt of de piek echt is of een gegevensprobleem.
 
 ---
-
-> **Werk met ons samen:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

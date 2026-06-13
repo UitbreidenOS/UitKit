@@ -193,6 +193,3 @@ Testen Sie für indirekte Injection mit Dokumenten enthaltend:
 - Anomale Verhaltensmuster verfolgen (ungewöhnliche Abfragemuster, unerwartete Aktionen)
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen AI-Produkte und B2B-Lösungen mit Entwicklergemeinschaften.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

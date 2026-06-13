@@ -166,5 +166,3 @@ Oui, avec une haute confiance. À cette gamme de revenus, l'opérateur dépense 
 - Tous les skills pertinents ecommerce dans [skills/small-business/](../skills/small-business/)
 
 ---
-
-> **Claudient** est soutenu par [Uitbreiden](https://uitbreiden.com/) — construisant des produits IA et des solutions B2B avec les communautés de développeurs.

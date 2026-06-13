@@ -217,6 +217,3 @@ Spezifische Aktion: „Neues Element, das während des Sprints hinzugefügt wird
 Hören Sie auf, Start/Stop/Continue zu verwenden. Wechseln Sie zu einer Timeline-Retro — gehen Sie den letzten Sprint Tag für Tag zurück. Dies zwingt spezifische Beispiele anstelle von allgemeinen Beschwerden, und spezifische Beispiele haben spezifische Ursachen.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird unterstützt durch [Uitbreiden](https://uitbreiden.com/) — wir bauen KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

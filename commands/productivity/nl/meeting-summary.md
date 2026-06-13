@@ -1,29 +1,29 @@
 ---
-description: Vat onbewerkte notitieboeken in beslissingen, acties en openstaande vragen samen
-argument-hint: "[raw notes or transcript]"
+description: Ruwe aantekeningen van bijeenkomsten samenvatten in besluiten, acties en openstaande vragen
+argument-hint: "[ruwe aantekeningen of transcript]"
 ---
-Vat de volgende notitieboeken van de vergadering samen in een gestructureerd document: $ARGUMENTS
+Vat de volgende aantekeningen van de bijeenkomst samen in een gestructureerd document: $ARGUMENTS
 
-Maak precies vier secties aan:
+Produceer precies vier secties:
 
 **Context** (2–4 zinnen)
-Wie waren aanwezig, waar ging de vergadering over, wat was de aanleiding. Leid af uit de notitieboeken als dit niet expliciet vermeld is.
+Wie waren aanwezig, waar ging de bijeenkomst over, wat heeft het veroorzaakt. Afleiden uit aantekeningen als niet expliciet vermeld.
 
-**Genomen beslissingen**
-Lijst met opsommingstekens. Elk bullet is een concrete beslissing, geen onderwerp dat ter sprake kwam. Laat alles achterwege wat wel besproken maar niet opgelost is. Als er geen beslissingen zijn genomen, schrijf dan "Geen."
+**Genomen Besluiten**
+Bullet point lijst. Elk punt is een concreet besluit, niet een besproken onderwerp. Laat alles weg wat werd besproken maar niet opgelost. Als er nul besluiten zijn genomen, schrijf "Geen."
 
-**Actiepunten**
-Lijst met opsommingstekens. Format: `[Eigenaar] — Actie — Vervaldatum (indien vermeld)`. Als geen eigenaar expliciet is, schrijf `[TBD]`. Als geen vervaldatum, laat dit achterwege.
+**Actiepoints**
+Bullet point lijst. Format: `[Verantwoordelijke] — Actie — Uiterlijke datum (indien vermeld)`. Als geen verantwoordelijke expliciet is benoemd, schrijf `[TBD]`. Als geen deadline, laat dit weg.
 
-**Openstaande vragen**
-Lijst met onopgeloste vragen of punten die expliciet uitgesteld zijn. Laat deze sectie weg als er geen zijn.
+**Openstaande Vragen**
+Bullet point lijst van onopgeloste vragen of items die expliciet zijn uitgesteld. Laat deze sectie weg als er geen zijn.
 
 Regels:
-- Voeg geen commentaar toe — blijf feitelijk aan het bronmateriaal.
-- Verzin geen eigenaren, beslissingen of deadlines die niet in de notitieboeken staan.
-- Als de notitieboeken te summier zijn voor een nuttige samenvatting, zeg dit en geef aan wat ontbreekt.
-- Combineer dubbele of redundante punten.
-- Houd de totale output onder 400 woorden tenzij de vergadering ongebruikelijk complex was.
-- Gebruik gewone Markdown — geen HTML, geen tabellen tenzij de actiepunten te veel zijn om lineair te lezen.
+- Voeg geen persoonlijke mening toe — blijf feitelijk volgens het bronmateriaal.
+- Verzin geen verantwoordelijken, besluiten of deadlines die niet in de aantekeningen voorkomen.
+- Als de aantekeningen te spaarzaam zijn om een nuttige samenvatting op te stellen, meld dit en lijst op wat ontbreekt.
+- Combineer dubbele of redundante items.
+- Houd de totale output onder de 400 woorden tenzij de bijeenkomst ongebruikelijk complex was.
+- Gebruik gewone Markdown — geen HTML, geen tabellen tenzij de actiepoints te veel zijn om lineair te lezen.
 
-Voer alleen de samenvatting uit. Geen inleiding.
+Geef alleen de samenvatting uit. Geen inleiding.

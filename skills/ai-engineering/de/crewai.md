@@ -89,6 +89,3 @@ Wenn Rollen natürlich auf das Problem passen, wenn Sie einen funktionierenden P
 Content-Pipeline für einen Entwickler-Blog: ein `ResearchAgent` sammelt technische Fakten über eine neue Bibliothek, ein `WriterAgent` entwirft den Artikel, ein `ReviewerAgent` prüft Genauigkeit und Ton. Sequenzieller Prozess, Claude Sonnet auf allen drei Agenten, in unter 50 Codezeilen erledigt.
 
 ---
-
-> **Arbeiten Sie mit uns :** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwicklergemeinschaften.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

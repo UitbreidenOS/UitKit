@@ -116,5 +116,3 @@ Once configured, MCP servers are automatically available to Claude when running 
 MCP servers are optional—all skills work without them, but you'll have more powerful analysis with real-time data.
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [Product Operations Stack](https://github.com/Claudient/Claudient)

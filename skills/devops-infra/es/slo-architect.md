@@ -167,6 +167,3 @@ Alerta de tasa de quemadura: si la disponibilidad cae por debajo del 99,5% duran
 Mire el rendimiento real vs SLO. Si nunca usó el presupuesto, el objetivo puede ser demasiado holgado. Si está constantemente por encima, el objetivo necesita ajuste o inversión.
 
 ---
-
-> **Trabaje con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -108,6 +108,3 @@ Siempre usa claves de modo de prueba (`sk_test_`) en desarrollo y archivos de co
 **Los campos de metadatos son consultables:** Si tu aplicación escribe metadatos estructurados en clientes o suscripciones (p. ej., `plan_tier`, `internal_user_id`), esos campos se pueden filtrar en `list_customers` y `list_subscriptions` — útil para consultas dirigidas.
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

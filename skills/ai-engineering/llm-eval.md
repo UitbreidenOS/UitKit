@@ -325,6 +325,3 @@ Monthly: pull 20 new real queries from production logs, add to golden set.
 **Total setup time:** 4-6 hours to build the golden set. 2 hours to add CI gate. Pays off the first time it catches a regression.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

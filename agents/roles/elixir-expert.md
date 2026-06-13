@@ -500,6 +500,3 @@ LiveView: `ChatLive` mounts with PubSub subscription when connected. `handle_eve
 Ecto.Multi: `Orders.create_order/3` runs insert order → insert items → charge payment → update order status → decrement inventory as a single transaction. `{:error, :payment, reason, _changes}` rolls back all DB changes when the payment gateway rejects.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

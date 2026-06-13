@@ -427,6 +427,3 @@ Rédiger la réécriture de l'e-mail le moins performant.
 | Taux de succès des tests A/B | 30-50 % | — | < 20 % (hypothèses trop prudentes) |
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous créons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

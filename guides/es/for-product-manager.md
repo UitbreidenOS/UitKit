@@ -326,6 +326,3 @@ El verificador de calidad de criterios de aceptación en `/user-story-writer` se
 - [Agente asesor de CPO](../agents/advisors/cpo-advisor.md)
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

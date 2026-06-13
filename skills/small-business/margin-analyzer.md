@@ -110,6 +110,3 @@ Claude flags: White-label diffusers are above the 20% floor but well below your 
 Recommendation: Shift paid ad spend to handmade candles (highest margin %) and digital guides (highest margin %, no fulfillment). Review diffuser pricing — a $7 price increase brings margin to 37% and is unlikely to reduce volume significantly given your current price position.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

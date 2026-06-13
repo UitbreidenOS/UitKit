@@ -322,6 +322,3 @@ Wenn ein Exec oder AE teilgenommen hat, eine 3-Zeilen-interne Zusammenfassung se
 | Identifizierte Expansionsmöglichkeiten | ≥ 1 pro GRÜNEM Account | - | Keine erkundet |
 
 ---
-
-> **Arbeite mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

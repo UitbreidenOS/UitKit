@@ -241,6 +241,3 @@ themselves.
 **Zusammenfassung:** 3 P0 (muss beheben), 3 P1 (Behebung empfohlen), 1 P2 (Überprüfung erwägen). Gesamt: 7 gekennzeichnete Abschnitte über 130 Zeilen.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

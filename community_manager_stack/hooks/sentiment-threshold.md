@@ -127,5 +127,3 @@ exit 0
 | -0.6 to -0.3 | <0.3 | ALLOW — Valid criticism, no tone issue |
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [claude.com/claude-code](https://claude.com/claude-code)

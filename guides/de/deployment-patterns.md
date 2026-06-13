@@ -207,6 +207,3 @@ const isEnabled = await client.isFeatureEnabled('new-checkout', userId)
 **Standardempfehlung:** Rolling Deploy + Feature Flags. Rolling für Infrastruktur; Flags für Produktänderungen.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen AI-Produkte und B2B-Lösungen mit Entwicklergemeinschaften.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

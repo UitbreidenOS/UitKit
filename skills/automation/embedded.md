@@ -260,6 +260,3 @@ Design FreeRTOS firmware for STM32F4 reading temperature/pressure from BMP388 vi
 5. **Watchdog task** (priority 5): waits on event group bits set by sensor and UART tasks each cycle. If both bits are not set within 2s, the IWDG resets the device. Stack high water mark checked in debug builds and logged over UART at boot.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

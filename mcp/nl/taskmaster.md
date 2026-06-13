@@ -102,6 +102,3 @@ hoe je het kunt verminderen voordat we beginnen.
 **Geblokkeerde taken moeten expliciet worden ontgrendeld:** Als een taak is gemarkeerd `blocked`, brengt Task Master deze niet naar oppervlakte via `next_task` tot de status wordt bijgewerkt. Wanneer een blocker is opgelost, stel je de geblokkeerde taak terug op `pending` en voeg je een notitie toe waarin je uitlegt wat is veranderd.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

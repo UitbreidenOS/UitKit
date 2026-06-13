@@ -14,7 +14,7 @@ Deze gids brengt u in minder dan 10 minuten van nul naar een werkende Claude Cod
 ## Stap 1 — Claudient klonen
 
 ```bash
-git clone https://github.com/Claudient/Claudient.git ~/Claudient
+
 ```
 
 U heeft nu de volledige bibliotheek lokaal. Er wordt niets automatisch uitgevoerd — u kiest wat u nodig heeft.
@@ -158,7 +158,3 @@ Blader door `agents/` om te begrijpen wat beschikbaar is. Wanneer u wilt dat Cla
 ---
 
 ## Werk met ons samen
-
-Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten met ontwikkelaarsgemeenschappen en leveren B2B AI-oplossingen. Als u iets serieus bouwt met Claude Code en deskundige hulp, een technische partner, of gewoon deel wilt uitmaken van de gemeenschap — kom ons vinden.
-
-**[uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)**

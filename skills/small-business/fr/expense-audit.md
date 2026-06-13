@@ -118,6 +118,3 @@ FreshBooks : 17 $ (ancien compte, ne l'utilise pas)
 - **Total des économies immédiates : 46-80 $/mois**
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

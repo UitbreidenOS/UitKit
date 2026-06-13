@@ -141,6 +141,3 @@ Esto significa que la voz no evita el flujo normal de sesión de Claude Code. Lo
 - El dictado de varios hablantes no es compatible — el modelo asume un solo hablante.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

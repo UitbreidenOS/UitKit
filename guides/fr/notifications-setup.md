@@ -321,6 +321,3 @@ curl -X POST -H 'Content-type: application/json' \
 Lancez une courte session Claude de 2 minutes avec vos hooks actifs et confirmez qu'au moins une notification se déclenche avant de laisser une session de plusieurs heures sans surveillance.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

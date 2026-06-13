@@ -285,6 +285,3 @@ Ich werde diese in Ihrem Namen mit angemessenen Annahmen bewerten — Sie müsse
 **Warum benutzerdefinierte Webhooks niedrig wertet:** Hohe Auswirkungen pro Benutzer, aber nur Power-Benutzer brauchen sie. Die 80 Benutzer, die sie brauchen, sind wahrscheinlich laut, repräsentieren aber einen kleinen Teil Ihres Wachstumshebels.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir bauen KI-Produkte und B2B-Lösungen mit Entwicklergemeinschaften.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

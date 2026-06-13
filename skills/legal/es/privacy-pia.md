@@ -157,6 +157,3 @@ Incluya:
 **Recomendación de DPO:** DPIA obligatoria antes del lanzamiento. Consulte DPA si el riesgo residual después de mitigación permanece alto.
 
 ---
-
-> **Trabaje con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

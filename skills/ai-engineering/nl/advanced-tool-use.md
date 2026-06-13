@@ -172,6 +172,3 @@ Met deferred loading (`ENABLE_TOOL_SEARCH=auto:10`): alleen top 10 meest waarsch
 Toevoegen van `input_examples` aan 10 altijd geladen tools verhoogt parameter nauwkeurigheid van 72% naar 90% op tools die het meeste uitmaken.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

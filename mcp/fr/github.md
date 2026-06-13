@@ -101,6 +101,3 @@ la version lodash 4.17.20 ou antérieure et listez les référentiels affectés.
 **Qualité du corps de la PR :** Lors de l'utilisation de `create_pull_request`, donnez à Claude le diff et le contexte du problème et demandez-lui de rédiger le corps de la PR. Le résultat sera plus utile qu'un placeholder rempli de modèle.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

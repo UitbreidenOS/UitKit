@@ -261,6 +261,3 @@ unset WHATSAPP_GATE_ENABLED
 The hook is entirely passive when `WHATSAPP_GATE_ENABLED` is not set, so it is safe to leave the `settings.json` entry in place permanently.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

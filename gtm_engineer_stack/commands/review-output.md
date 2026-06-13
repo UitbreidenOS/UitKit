@@ -38,5 +38,3 @@ If user approves fixes:
 - Strategy documents or planning notes
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

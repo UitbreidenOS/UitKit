@@ -68,6 +68,3 @@ Devuelve citas Bluebook para cada caso.
 Claude consulta Westlaw a través del MCP de TR, devuelve un análisis estructurado de división de circuitos con citas, señala áreas de desacuerdo continuo y añade la advertencia obligatoria de investigación.
 
 ---
-
-> **Trabaje con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

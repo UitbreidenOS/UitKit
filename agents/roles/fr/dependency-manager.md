@@ -80,6 +80,3 @@ Règles :
 - Surveillance du lag : alerter lorsque le lag des consommateurs dépasse un seuil — la croissance du lag signifie que les consommateurs ne peuvent pas suivre les producteurs
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

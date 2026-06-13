@@ -104,6 +104,3 @@ Da CLAUDE.md `@LESSONS.md` referenziert, liest Claude die vollständige Lektions
 - **Sofort schreiben.** Lektionen, die zum Zeitpunkt der Korrektur geschrieben werden, sind genauer als retrospektive Zusammenfassungen.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

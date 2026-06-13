@@ -325,6 +325,3 @@ Use a simple Kanban for your pipeline: Prospect → Proposal Sent → Negotiatin
 - [Freelancer weekly workflow](../workflows/freelancer-weekly.md)
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

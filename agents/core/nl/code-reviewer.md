@@ -26,6 +26,3 @@ Beoordeelt Diff of Set van Gewijzigde Files voor Correctheid, Onderhoudbaarheid,
 - Alleen Style Feedback
 
 ---
-
-> **Werk Met Ons:** Claudient Wordt Ondersteund door [Uitbreiden](https://uitbreiden.com/).
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

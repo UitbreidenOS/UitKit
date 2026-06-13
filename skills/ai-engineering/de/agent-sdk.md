@@ -78,6 +78,3 @@ for await (const message of query({ prompt: "Review this PR diff", options })) {
 Eine Code-Review-Pipeline in CI: Bei jedem PR Open-Event ruft ein GitHub Actions Job das Agent SDK mit dem PR Diff als Prompt auf. Der Agent überprüft den Diff, ruft interne Tools auf, um die Test-Coverage-Datenbank zu prüfen, und postet einen strukturierten Review-Kommentar zurück auf den PR via GitHub API. Das `--bare`-Flag hält Cold-Start-Zeit unter 2 Sekunden.
 
 ---
-
-> **Arbeiten Sie mit uns :** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwicklergemeinschaften.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

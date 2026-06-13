@@ -172,5 +172,3 @@ mcp__discord__create_poll({
 4. Log decision to session-log.md
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [claude.com/claude-code](https://claude.com/claude-code)

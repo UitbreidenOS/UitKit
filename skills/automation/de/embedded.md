@@ -255,6 +255,3 @@ Design von FreeRTOS-Firmware für STM32F4, die Temperatur/Druck von BMP388 über
 5. **Watchdog-Task** (Priorität 5): wartet auf Event-Group-Bits, die von Sensor- und UART-Tasks in jedem Zyklus gesetzt werden. Wenn beide Bits nicht innerhalb von 2s gesetzt sind, setzt IWDG das Gerät zurück. Stack-High-Water-Mark wird in Debug-Builds überprüft und bei Boot über UART geprotokolliert.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

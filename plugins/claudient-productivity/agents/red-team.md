@@ -191,6 +191,3 @@ Phase 5 — Reporting (Days 13-14):
 **Highest-value choke points to test:** external web app authentication, internal network segmentation between DMZ and payment systems, detection capability for credential dumping.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

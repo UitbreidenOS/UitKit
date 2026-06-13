@@ -157,6 +157,3 @@ Prévient de re-débattre les questions réglées. Invaluable pendant board revi
 En 6 mois, le PDG devrait avoir 2 heures de réunions en moins par jour et être moins un goulot d'étranglement sur les décisions cross-fonctionnelles — pas parce qu'ils sont moins impliqués, mais parce que le système fonctionne sans eux.
 
 ---
-
-> **Travaillez avec nous:** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

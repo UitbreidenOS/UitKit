@@ -285,6 +285,3 @@ I'll score these on your behalf with reasonable assumptions — you need to vali
 **Why custom webhooks scores low:** High impact per user, but only power users need it. The 80 users who need it are likely vocal but represent a small share of your growth leverage.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

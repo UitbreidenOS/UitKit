@@ -436,6 +436,3 @@ Nutze dies, bevor du Thinking-Modus aktivierst. Wenn weniger als 3 Elemente zutr
 **Thinking auf Streaming-Endpoints mit Tight Latency-Budgets aktivieren.** Thinking-Modus verzögert das erste Text-Token um die volle Dauer der Thinking-Phase. Wenn deine UI eine Typing-Anzeige zeigt und Nutzer innerhalb von 1–2 Sekunden eine Antwort erwarten, wird dies sich broken anfühlen. Entweder verstecke die Thinking-Phase hinter einem absichtlichen Laden-State oder deaktiviere Thinking auf dem Endpoint.
 
 ---
-
-> **Arbeite mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen AI-Produkte und B2B-Lösungen mit Developer Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

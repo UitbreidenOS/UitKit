@@ -140,6 +140,3 @@ Rollback procedure: [steps]
 Onboard a new employee across all systems. Input: name, department, manager, start date, role, office location. Output: decomposed task list with domain ownership, sequenced runbook with rollback steps for each phase, PowerShell sketch for AD account creation handed off to `powershell-expert`, M365 configuration handed off to `m365-admin`, and a verification checklist the IT technician completes on day one.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -123,6 +123,3 @@ Die 3 Negativ erhalten jeweils eine spezifische, direkte Antwort:
 Die 9 Positiv erhalten jeweils eine andere Antwort, jeder spiegelt etwas Spezifisches wider, das der Rezensent erwähnt hat — das Tiramisu, ein bestimmter Kellner, eine Geburtstagsfeier. Keine wiederholt die gleiche Eröffnungszeile.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

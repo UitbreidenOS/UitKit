@@ -292,6 +292,3 @@ met 95% statistische betrouwbaarheid en 80% vermogen.
 Als "See Pricing" wint op klikken maar trial-aanmeldingen niet stijgen, zijn gebruikers nieuwsgieriger maar niet meer gecommitteerd. Dat is een prijsduidelijkheidsprobleem, geen CTA-probleem — de volgende test is de prijspagina zelf.
 
 ---
-
-> **Werk met ons samen:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — wij bouwen AI-producten en B2B-oplossingen met ontwikkelaarscommunities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

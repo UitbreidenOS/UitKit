@@ -200,6 +200,3 @@ Under 100 words. Professional and warm.
 **Resultado esperado:** Una carta personal de 280 palabras de Sarah y Tom que abre con un detalle específico sobre el jardín ("los canteros elevados a lo largo de la cerca sur"), menciona sus carreras como algo que los vincula a la comunidad, expresa la intención de quedarse y mantener el carácter de la propiedad, y cierra con calidez. Sin mención de hijos, religión u origen nacional. Carta de presentación del agente por separado — resume la oferta de $715K, 20% de entrada, convencional con Chase, cobertura de brecha de tasación hasta $20K, cierre flexible, y posiciona la oferta como de bajo riesgo para los vendedores.
 
 ---
-
-> **Trabaja con nosotros:** Claudient cuenta con el respaldo de [Uitbreiden](https://uitbreiden.com/) — desarrollamos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

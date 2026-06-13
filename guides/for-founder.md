@@ -346,6 +346,3 @@ Your operating model should be a live document. Use `/financial-plan` monthly. K
 - [CEO advisor agent](../agents/advisors/ceo-advisor.md)
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

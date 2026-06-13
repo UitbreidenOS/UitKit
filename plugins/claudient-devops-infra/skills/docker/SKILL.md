@@ -132,5 +132,3 @@ volumes:
 - `.dockerignore` covering `__pycache__`, `.env`, `.git`, `*.pyc`
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities. Containerizing AI workloads or building cloud-native systems? [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

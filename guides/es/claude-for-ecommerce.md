@@ -166,5 +166,3 @@ Sí, con alto grado de confianza. En ese rango de ingresos, el operador típicam
 - Todas las habilidades relevantes de comercio electrónico en [skills/small-business/](../skills/small-business/)
 
 ---
-
-> **Claudient** es respaldado por [Uitbreiden](https://uitbreiden.com/) — construcción de productos de IA y soluciones B2B con comunidades de desarrolladores.

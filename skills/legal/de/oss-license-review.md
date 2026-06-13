@@ -134,6 +134,3 @@ AGPL v3 Abschnitt 13 erweitert GPL-Copyleft auf Netzwerknutzung: "Wenn Sie das P
 **Sofortmaßnahme:** Stoppen Sie die Verbreitung des aktuellen Produkts, bis Sie eine Lösung haben. [VERIFY] Auslegung mit einem IP-Anwalt.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwicklergemeinschaften.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

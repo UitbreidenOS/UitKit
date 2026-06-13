@@ -105,6 +105,3 @@ Mindest-Permissions für Application-Key: `metrics_read`, `logs_read`, `monitors
 Alle MCP-Calls konsumieren Datadog API-Quote. Metrics-Queries und Log-Searches zählen gegen deinen Plan's API-Rate-Limits. Vermeide High-Frequency-Automatisiert Queries (z.B. via Hooks), ohne dein Plan's Limits zu reviewed — Datadog erzwingt Per-Second und Per-Hour API-Caps auf Org-Level.
 
 ---
-
-> **Arbeite mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen AI-Produkte und B2B-Lösungen mit Developer Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

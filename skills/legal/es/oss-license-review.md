@@ -134,6 +134,3 @@ La sección 13 de AGPL v3 extiende el copyleft de GPL al uso de red: "si modific
 **Acción inmediata:** Deje de distribuir el producto actual hasta que tenga una resolución. [VERIFY] interpretación con un abogado de propiedad intelectual.
 
 ---
-
-> **Trabaje con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

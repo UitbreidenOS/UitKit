@@ -206,6 +206,3 @@ Don't build yet. "Engineers don't update tickets" is a symptom with at least 3 d
 Run 5 interviews. You'll know which hypothesis is true — and probably save 2-3 months building the wrong thing.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

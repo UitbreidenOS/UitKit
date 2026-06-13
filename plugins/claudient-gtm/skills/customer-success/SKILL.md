@@ -243,6 +243,3 @@ With no formal CS data yet, build from what you have — product logs + CRM + su
 3. Set a rule: no account goes > 45 days without a touchpoint
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -252,7 +252,7 @@ Le plan, calibré à environ un lot shipping par semaine.
 **Semaine 4 — Distribution**
 - Lancements Reddit sur r/ClaudeAI, r/Entrepreneur, r/sweatystartup (échelonnés).
 - PRs awesome-list (5 minimum).
-- Un long-form blog post sur uitbreiden.com en lien de retour.
+
 
 **Semaine 5+ — Composé**
 - Un vertical nouveau par semaine.
@@ -267,7 +267,7 @@ Les métriques qui comptent, en ordre :
 1. **GitHub stars** — proxy pour découverte organique. Cible : +200 dans les 30 jours suivant le lancement petite-entreprise.
 2. **npm install count pour `claudient add skills small-business`** — proxy pour adoption réelle.
 3. **Trafic GitHub pour `/skills/small-business/`** — proxy pour performance SEO.
-4. **Backlinks externes** — mesurés via GitHub mention API et Google search pour `link:github.com/Claudient/Claudient`.
+
 5. **Recherche de marque** — "claudient small business" apparaissant dans autocomplete Google ou recherches connexes.
 
 Évitez d'optimiser pour : compte de fichier total, compte de ligne, ou quoi que ce soit qui incitera le filler.
@@ -317,5 +317,3 @@ La stratégie est un document vivant. Les mises à jour vers ce fichier sont enc
 - Tous les skills sous [skills/small-business/](../skills/small-business/) — la longue traîne supportrice
 
 ---
-
-> **Claudient** est soutenu par [Uitbreiden](https://uitbreiden.com/) — construisant des produits IA et des solutions B2B avec les communautés de développeurs.

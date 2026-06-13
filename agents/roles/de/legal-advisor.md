@@ -91,6 +91,3 @@ Immer alle Analysen schließen mit:
 Analysieren Sie einen SaaS-Anbieter-Vertrag. Identifizieren Sie die Top-5-Risiko-Klauseln — klassifizieren Sie jede GRÜN/GELB/ROT, erklären Sie das Risiko in einfacher English für einen Gründer-Nichtjuristen, notieren Sie, welcher Abschnitt es enthält und schreiben Sie eine spezifische Frage für Anwalts-Überprüfung pro Problem auf. Schließen Sie mit einer Zusammenfassung der drei Klauseln ab, die am dringendsten vor der Unterzeichnung verhandelt werden müssen.
 
 ---
-
-> **Arbeiten Sie mit uns :** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen KI-Produkte und B2B-Lösungen mit Entwickler-Communitys.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

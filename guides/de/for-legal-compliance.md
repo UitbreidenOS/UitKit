@@ -367,6 +367,3 @@ Nutze Claude, um Rechtsmemos auch für schnelle Beratungsfragen zu entwerfen. Ei
 - [DSAR-Antwort-Skill](../skills/legal/dsar-response.md)
 
 ---
-
-> **Arbeite mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

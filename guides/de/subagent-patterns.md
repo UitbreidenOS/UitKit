@@ -234,6 +234,3 @@ Nachdem alle abgeschlossen sind, vergleichen Sie Findings und geben Sie die wahr
 - Verwenden Sie Opus für: High-Stakes Entscheidungen, komplexe Architektur-Analyse — nicht für unterstützende Rollen
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen AI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

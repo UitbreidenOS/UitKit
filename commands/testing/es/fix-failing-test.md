@@ -1,29 +1,29 @@
 ---
-description: Diagnosticar y corregir una prueba fallida, identificando la causa raíz antes de parchear
-argument-hint: "[test-name-or-file]"
+description: Diagnosticar y reparar una prueba fallida, identificar la causa raíz antes de aplicar parche
+argument-hint: "[nombre-prueba-o-archivo]"
 ---
-Corregir la prueba fallida: $ARGUMENTS
+Reparar la prueba fallida: $ARGUMENTS
 
-No toques la prueba ni la implementación hasta que hayas diagnosticado la causa raíz.
+No toque la prueba ni la implementación hasta que haya diagnosticado la causa raíz.
 
-Paso 1 — Ejecuta la prueba fallida de forma aislada y captura el resultado de error completo incluyendo el rastreo de pila.
+Paso 1 — Ejecutar la prueba fallida de forma aislada y capturar el resultado completo del error incluyendo el seguimiento de pila.
 
-Paso 2 — Clasifica el fallo:
-- Fallo de aserción: el comportamiento del código cambió o la aserción fue incorrecta desde el principio
-- Problema de configuración/desmontaje: estado compartido filtrándose entre pruebas, restablecimiento de simulación faltante, orden incorrecto
-- Problema de entorno: variable de entorno faltante, directorio de trabajo incorrecto, DB/servicio no inicializado
+Paso 2 — Clasificar el fallo:
+- Fallo de aserción: el comportamiento del código cambió o la aserción fue incorrecta desde el inicio
+- Problema de configuración/desmontaje: estado compartido filtrando entre pruebas, reinicio de mock faltante, orden incorrecto
+- Problema de entorno: variable de entorno faltante, directorio de trabajo incorrecto, base de datos/servicio no inicializado
 - Error de tipo o importación: firma cambió, ruta del módulo incorrecta, dependencia faltante
-- Problema de sincronización/asincronía: promesa no resuelta, falta await, condición de carrera
+- Problema de tiempo/asincronía: promesa sin resolver, await faltante, condición de carrera
 
-Paso 3 — Rastrea el fallo hasta su origen. Lee la implementación siendo probada. Lee cualquier simulación o accesorio involucrado. Entiende qué pretendía verificar la prueba originalmente.
+Paso 3 — Rastrear el fallo hasta su origen. Lea la implementación que se está probando. Lea cualquier mock o fixture involucrado. Comprenda qué era lo que la prueba originalmente intentaba verificar.
 
-Paso 4 — Determina quién es el responsable:
-- Si la implementación tiene un error real introducido por un cambio reciente, corrige la implementación y mantén la prueba.
-- Si la prueba estaba afirmando comportamiento incorrecto desde el inicio, corrige la prueba.
-- Si la prueba está afirmando algo que ahora es intencionalmente diferente (especificación cambió), actualiza la prueba y anota el cambio de especificación.
+Paso 4 — Determinar quién tiene la culpa:
+- Si la implementación tiene un error real introducido por un cambio reciente, reparar la implementación y mantener la prueba.
+- Si la prueba estaba asertando comportamiento incorrecto desde el inicio, reparar la prueba.
+- Si la prueba está asertando algo que ahora es intencionalmente diferente (la especificación cambió), actualizar la prueba y notar el cambio de especificación.
 
-Paso 5 — Aplica la corrección mínima. No refactorices el código circundante. No cambies aserciones no relacionadas.
+Paso 5 — Aplicar la corrección mínima. No refactorice código circundante. No cambie aserciones no relacionadas.
 
-Paso 6 — Ejecuta el conjunto de pruebas completo para el módulo afectado para confirmar que no se han introducido regresiones.
+Paso 6 — Ejecutar el conjunto completo de pruebas del módulo afectado para confirmar que no se introdujeron regresiones.
 
-Informe: clasificación de causa raíz, qué cambiaste y por qué.
+Informe: clasificación de la causa raíz, qué cambió y por qué.

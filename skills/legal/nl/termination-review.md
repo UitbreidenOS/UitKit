@@ -151,6 +151,3 @@ Recente activiteit: Heeft 3 maanden geleden een interne klacht over een collega 
 **Ontslaa niet voordat juridisch advies deze situatie heeft beoordeeld.**
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

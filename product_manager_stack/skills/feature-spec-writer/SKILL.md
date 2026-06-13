@@ -113,5 +113,3 @@ CREATE INDEX idx_field1 ON [table](field1);
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudients/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

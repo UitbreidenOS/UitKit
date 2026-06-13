@@ -124,6 +124,3 @@ Générez un appel d'outil Agent pour une sous-tâche limitée. Le subagent s'ex
 - Quand le hint devrait être si détaillé que l'écriture prend plus de temps que d'informer une session fraîche
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

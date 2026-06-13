@@ -175,5 +175,3 @@ If you spend 6+ hours per week on the activities Claude covers — invoicing, le
 - [SEO Strategy for Small Business Content](claude-small-business-seo-strategy.md) — how this content is built
 
 ---
-
-> **Claudient** is backed by [Uitbreiden](https://uitbreiden.com/) — building AI products and B2B solutions with developer communities.

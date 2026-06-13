@@ -286,6 +286,3 @@ Ontwerp IoT architecture voor 1.000 industriële temperature sensors:
 5. **Monitoring**: CloudWatch dashboard toont message ingestion rate, shadow sync latency, en OTA job execution status per stage.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

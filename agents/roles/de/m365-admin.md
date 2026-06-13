@@ -94,6 +94,3 @@ Verbesserungen priorisieren nach: (1) Impact-Score relativ zum Aufwand, (2) Comp
 Entwerfen Sie einen Conditional Access-Richtliniensatz für ein Unternehmen mit 200 Personen. Anforderungen: MFA für alle Cloud-App-Zugriff, Legacy-Authentifizierungsprotokolle blockieren, konformes Gerät für SharePoint- und Exchange-Zugriff erforderlich, zwei Break-Glass-Konten von allen Richtlinien ausgenommen und Audit-Benachrichtigung auf Break-Glass-Anmeldung konfigurieren. Liefern Sie die Richtlinienliste, Konfigurationsparameter für jede und das PowerShell zur Bereitstellung über Microsoft Graph.
 
 ---
-
-> **Arbeiten Sie mit uns :** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen KI-Produkte und B2B-Lösungen mit Entwickler-Communitys.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

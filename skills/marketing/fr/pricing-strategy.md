@@ -163,6 +163,3 @@ La tarification plate à $29 est la simplicité de stade précoce classique — 
 **Impact projeté :** Si 20% des clients existants passent à Team ($79) et 5% à Business ($199), le revenu mensuel augmente ~35% avec même nombre de clients.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -1,12 +1,12 @@
 ---
-description: Definieer en zet een consistent foutresponsieschema af voor alle API-endpoints
+description: Definieer en dwing een consistent error response schema af voor alle API endpoints
 argument-hint: "[scope: file, router, or 'all']"
 ---
-Controleer en zet een consistent foutresponsieschema af voor: $ARGUMENTS
+Audit en dwing een consistent error response schema af voor: $ARGUMENTS
 
-Scope standaard naar de gehele API als $ARGUMENTS leeg is of "all".
+Scope wordt standaard ingesteld op de gehele API als $ARGUMENTS leeg is of "all".
 
-Doelfoutschema (RFC 9457 / Problem Details for HTTP APIs):
+Doelschema voor fouten (RFC 9457 / Problem Details for HTTP APIs):
 ```json
 {
   "type": "https://example.com/errors/validation-failed",
@@ -18,24 +18,24 @@ Doelfoutschema (RFC 9457 / Problem Details for HTTP APIs):
 }
 ```
 
-Gebruik dit schema tenzij het project al een gevestigd foutformat heeft — als dat het geval is, standaardiseer in plaats daarvan naar dat.
+Gebruik dit schema tenzij het project al een vastgesteld error format heeft — als dat het geval is, standardiseer naar dat formaat in plaats daarvan.
 
 Stappen:
-1. Scan alle foutretournerende codepaden: geworpen uitzonderingen, foutmiddleware, catchblokken, validatiehandlers
-2. Identificeer inconsistenties: blote strings, inconsistente sleutels (`message` vs `error` vs `detail`), ontbrekende statuscodes, gemengde vormen
-3. Definieer een enkel fouttype/interface/klasse op de projectroot (`ApiError` of equivalent)
-4. Vervang alle ad-hoc foutresponsen met gestructureerde constructie van dat type
-5. Centraliseer alle foutserialisatie op één plek (foutmiddleware / exceptionhandler) — niet verspreid over controllers
+1. Scan alle error-returnerende codepaths: gooi exceptions, error middleware, catch blokken, validation handlers
+2. Identificeer inconsistenties: bare strings, inconsistente sleutels (`message` vs `error` vs `detail`), ontbrekende status codes, gemengde vormen
+3. Definieer een enkel error type/interface/class aan de projectwortel (`ApiError` of gelijkwaardig)
+4. Vervang elke ad-hoc error response met gestructureerde constructie van dat type
+5. Centraliseer alle error serialisatie op één plaats (error middleware / exception handler) — niet verspreid over controllers
 6. Zorg ervoor dat validatiefouten per-veld fouten opsommen:
    ```json
    "errors": [{ "field": "email", "message": "Invalid format" }]
    ```
-7. Strip stack traces uit productieresponsen — log ze aan serverzijde, stuur nooit naar client
-8. Kaart interne fouttypen toe aan HTTP-statuscodes in één opzoektabel — geen statuscode-literals buiten die kaart
-9. Voeg een `trace_id` toe die gecorreleerd is met uw loggingsysteem als er één in gebruik is
+7. Strip stack traces uit productieresponses — log ze aan de serverzijde, nooit verzenden naar client
+8. Map interne error types naar HTTP status codes in één lookup table — geen status code literals buiten die map
+9. Voeg een `trace_id` toe gecorreleerd met uw loggingsysteem als er één in gebruik is
 
 Output:
-- De fouttype-definitie
-- De gecentraliseerde fouthandler
-- Lijst van alle gewijzigde bestanden
-- Eventuele foutresponsen die niet konden worden gestandaardiseerd (met reden)
+- De error type definitie
+- De gecentraliseerde error handler
+- Lijst van alle bestanden gewijzigd
+- Eventuele error responses die niet kunnen worden gestandaardiseerd (met reden)

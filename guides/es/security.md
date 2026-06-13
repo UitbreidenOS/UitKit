@@ -174,7 +174,3 @@ Para tareas de alta sensibilidad, ejecuta Claude en un entorno aislado:
 ---
 
 ## Trabaja con nosotros
-
-Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA con comunidades de desarrolladores y entregamos soluciones de IA B2B. Si necesitas ayuda para asegurar despliegues de Claude Code a escala, construir flujos de trabajo de IA conformes o auditar tu cadena de herramientas de IA — podemos ayudar.
-
-**[uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)**

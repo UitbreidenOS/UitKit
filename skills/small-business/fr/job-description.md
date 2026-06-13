@@ -113,6 +113,3 @@ Ton : professionnel mais amical — nous sommes une petite équipe, pas d'entrep
 **Claude écrit une offre d'emploi complète** avec : titre clair (« Coordonnateur Client »), paragraphe d'introduction attrayant sur l'entreprise, aperçu de rôle en anglais courant, liste des responsabilités (8-10 points), exigences divisées en incontournables/appréciables, ce qu'ils aimeront du rôle, fourchette salariale et instruction d'application directe.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

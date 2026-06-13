@@ -489,6 +489,3 @@ aws ec2 describe-network-interfaces \
 5. **VPC Flow Logs**: enabled to S3 with Athena table definition for querying rejected traffic — included as part of the security baseline
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -121,6 +121,3 @@ Une portée projet bien structurée ressemble à :
 **En supposant que les compétences remontent l'arborescence.** Elles ne le font pas. Les fichiers CLAUDE.md remontent ; les compétences ne le font pas. Une compétence dans `/workspace/project/.claude/skills/` n'est pas visible quand Claude travaille dans `/workspace/project/packages/api/`. Chaque sous-paquet a besoin de son propre `.claude/skills/` pour les compétences spécifiques à un paquet.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

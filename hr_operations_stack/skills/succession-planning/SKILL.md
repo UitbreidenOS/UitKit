@@ -94,5 +94,3 @@ For each ready-soon or high-potential candidate:
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [claudecode.ai](https://claudecode.ai/)

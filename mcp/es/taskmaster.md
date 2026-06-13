@@ -102,6 +102,3 @@ cómo reducirla antes de que comencemos.
 **Las tareas bloqueadas necesitan desbloqueo explícito:** Si una tarea está marcada como `blocked`, Task Master no la mostrará a través de `next_task` hasta que su estado se actualice. Cuando se resuelva un bloqueador, establece la tarea bloqueada de vuelta a `pending` y agrega una nota explicando qué cambió.
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

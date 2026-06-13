@@ -437,6 +437,3 @@ Usa esto antes de habilitar el modo de pensamiento. Si se aplican menos de 3 ele
 **Habilitación de pensamiento en puntos finales de transmisión con presupuestos de latencia estrictos.** El modo de pensamiento retrasa el primer token de texto por la duración completa de la fase de pensamiento. Si tu interfaz muestra un indicador de escritura y los usuarios esperan una respuesta dentro de 1–2 segundos, esto se sentirá roto. Oculta la fase de pensamiento detrás de un estado de carga deliberado o desactiva el pensamiento en ese punto final.
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

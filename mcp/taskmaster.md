@@ -102,6 +102,3 @@ how to reduce it before we start.
 **Blocked tasks need explicit unblocking:** If a task is marked `blocked`, Task Master won't surface it via `next_task` until its status is updated. When a blocker is resolved, set the blocked task back to `pending` and add a note explaining what changed.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -110,5 +110,3 @@ Si tu CRM es HubSpot en su lugar:
 - Ver `hubspot.md` en este directorio
 
 ---
-
-Construido con [Claudient](https://github.com/Claudient/Claudient)

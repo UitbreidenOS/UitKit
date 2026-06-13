@@ -232,6 +232,3 @@ Upmarket gaan is verleidelijk omdat ACV omhooggaat. Het is risicovol omdat:
 **Mijn aanbeveling:** Ga eerst naar mid-market (50-500 werknemers), niet enterprise (500+). Het is dichterbij wat u hebt, vereist minder productinvestering en ontriskeert de leercurve voordat u $100K+ deals met complexe procuring op u neemt.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

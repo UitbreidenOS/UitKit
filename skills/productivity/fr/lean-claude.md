@@ -170,6 +170,3 @@ Vous donne un journal en continu des tokens d'entrée/sortie + coût estimé par
 | Décision d'architecture / sécurité | Escaladez vers Opus — ça vaut le coût |
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits AI et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -281,6 +281,3 @@ Ungefähre Kosten bei Mai 2026 Pricing. Prüfen Sie Anthropics Pricing-Seite fü
 Die Anwendung aller Low-Complexity-Strategien zusammen erreicht typischerweise 30–50% gesamte Kostenreduktion ohne die Qualität der Ergebnisse zu ändern.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen AI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

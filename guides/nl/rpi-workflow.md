@@ -209,6 +209,3 @@ Besluiten die de scoop of design wijzigen, moeten worden teruggemarkeerd naar de
 De kernregel blijft hetzelfde in beide gevallen: geen fasen overslaan en geen implementatie zonder ondertekend plan. Solo-ontwikkeling is geen reden om onderzoek over te slaan — het is de primaire reden om ernstiger erover te zijn.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

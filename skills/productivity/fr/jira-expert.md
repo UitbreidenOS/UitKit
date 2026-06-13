@@ -261,6 +261,3 @@ Si le volume de bugs augmente, la baisse de vélocité est causée par du travai
 Ajouter un gadget « Cycle Time » à votre tableau. Si le temps de cycle augmente (les histoires prennent plus de temps à compléter), le problème est la limite WIP — trop de choses en cours à la fois.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

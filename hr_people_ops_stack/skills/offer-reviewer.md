@@ -274,5 +274,3 @@ All dimensions PASS. Offer is market-competitive, legally sound, and thoughtfull
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

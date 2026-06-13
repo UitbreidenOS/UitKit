@@ -414,6 +414,3 @@ Después de leer el archivo del componente, la auditoría produce un informe de 
 - Corrección: al abrir, mueve enfoque a `<h2>` dentro del modal (o primer elemento enfocable) — los lectores de pantalla anuncian el encabezado automáticamente
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

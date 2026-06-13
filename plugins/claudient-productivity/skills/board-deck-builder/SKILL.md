@@ -208,6 +208,3 @@ This is a mixed-narrative quarter: beat on ARR, concern on NRR, team risk to dis
 "Two senior engineers resigned in Q3 — [Name 1], our founding infrastructure lead, and [Name 2], a senior backend engineer. [Name 1]'s responsibilities transferred to [Name 3]; we've posted the infrastructure role and have two strong candidates in final stage. [Name 2]'s work continues with [team/contractor]. We do not anticipate product delays from these departures."
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

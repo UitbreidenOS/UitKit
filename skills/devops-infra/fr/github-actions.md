@@ -175,5 +175,3 @@ jobs:
 - Pas de secrets codés en dur — OIDC pour l'auth au registre
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs. Vous construisez de la CI/CD pour des produits IA ou des déploiements cloud ? [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

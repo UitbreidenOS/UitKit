@@ -810,7 +810,3 @@ exit 0  # allow completion
 ---
 
 ## Work With Us
-
-Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products with developer communities and deliver B2B AI solutions. If you need custom hook systems, automated quality gates, or production-grade Claude Code automation for your team — we build this for clients.
-
-**[uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)**

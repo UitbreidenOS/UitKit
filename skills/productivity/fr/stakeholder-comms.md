@@ -285,6 +285,3 @@ Draft talking points for managers who will receive questions from their teams.
 **Résultat attendu :** Trois documents. Email à tous les employés : commence par « nous fermons le bureau de Londres » en première phrase, explique le raisonnement (efficacité des coûts, équipe travaillant déjà à distance avec succès), indique la date d'effet, décrit ce que cela signifie pour les 12 concernés (package de rupture conventionnelle volontaire ou arrangements formels de télétravail), et ce qui change pour tous les autres (rien — activité normale). Points de discussion pour le responsable de Londres : quoi dire si les membres de l'équipe demandent « pourquoi maintenant », comment gérer les réactions émotionnelles, à quoi ressemble le processus de rupture conventionnelle volontaire. Note directe aux 12 concernés : ton plus chaleureux, précis sur leurs options, précis sur le package d'accompagnement, exprime une réelle gratitude, cite le contact RH pour les questions.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous développons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

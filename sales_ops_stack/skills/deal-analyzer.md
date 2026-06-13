@@ -227,5 +227,3 @@ If >$100K and advancing to Negotiation:
 - Complexity: [Aligned / Higher / Lower]
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient)

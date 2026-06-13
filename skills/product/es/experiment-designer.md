@@ -215,6 +215,3 @@ Por qué 4 semanas, no 20 días:
 **Una precaución:** Si su cifra de 500 visitantes/día incluye usuarios móviles y de escritorio, segmente los resultados por dispositivo. Los flujos de pago se comportan muy diferente en móvil vs. escritorio — un resultado ganador general podría estar enmascarando una regresión en una plataforma.
 
 ---
-
-> **Trabaja con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

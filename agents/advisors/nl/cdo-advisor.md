@@ -23,6 +23,3 @@ Sonnet — Strategisch Reasoning, Regelgeving Nuance en Build-vs-Buy Analyse Ver
 - Klant Data Provence Beoordelen
 
 ---
-
-> **Werk Met Ons:** Claudient Wordt Ondersteund door [Uitbreiden](https://uitbreiden.com/).
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

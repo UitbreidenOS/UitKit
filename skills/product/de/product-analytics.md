@@ -229,6 +229,3 @@ Segmentieren nach: Solo-Anmeldungen vs. Team-Anmeldungen. Wenn Solo-Anmeldungen 
 - Niedrige Aktivierung + niedrige Bindung nach Aktivierung → tiefere Entdeckung notwendig
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir bauen KI-Produkte und B2B-Lösungen mit Entwicklergemeinschaften.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

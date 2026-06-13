@@ -92,6 +92,3 @@ Für Read-only-Analytics und Reporting, lass `write_products` aus der Scope-List
 - Für große Produkt-Kataloge, filtere `list_products` nach `status=active` und `vendor`, um Ergebnis-Sätze handhabbar zu halten, bevor du Operationen verkettestt.
 
 ---
-
-> **Zusammenarbeit mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen AI-Produkte und B2B-Lösungen mit Developer-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

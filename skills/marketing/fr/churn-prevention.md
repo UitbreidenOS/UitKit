@@ -153,6 +153,3 @@ Cause première : Échec d'activation, pas échec de produit. "Ne l'utilisant pa
 **Impact projeté :** Ces 3 changements pourraient réduire le segment "ne l'utilisant pas assez" de 42% de moitié = ~1,6% réduction du taux de churn mensuel total.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

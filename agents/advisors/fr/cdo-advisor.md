@@ -126,6 +126,3 @@ L'interprétation des données d'entraînement dépend de si clients s'attendrai
 **Si entraînement sur données EU:** Article 6 du RGPD base légale requise. Les "intérêts légitimes" peuvent fonctionner pour amélioration interne mais pas pour entraînement d'un modèle fondamental que vous licenserez à d'autres.
 
 ---
-
-> **Travaillez avec nous:** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -124,6 +124,3 @@ Genereer een Agent-hulpprogrammaoproep voor een beperkte deeltaak. De subagent w
 - Wanneer de hint zo gedetailleerd moet zijn dat schrijven langer duurt dan een nieuwe sessie informeren
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — wij bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

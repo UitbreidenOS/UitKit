@@ -218,6 +218,3 @@ Claude Code gère la couche API pour vous. Il n'y a pas de modifications incompa
 Ce qui peut nécessiter un ajustement est votre style d'invite. L'interprétation plus littérale d'Opus 4.7 et l'utilisation des outils plus conservatrice peuvent affecter les sessions multi-étapes complexes. Si les sessions de Claude Code deviennent moins autonomes après la mise à jour du modèle, ajoutez des instructions explicites à votre CLAUDE.md : spécifiez quels outils doivent être utilisés de manière proactive, définissez ce que « minutieux » signifie pour votre base de code, et supprimez toutes les instructions permanentes ambiguës qui dépendaient du modèle pour déduire l'intention.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

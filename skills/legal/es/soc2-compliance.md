@@ -84,6 +84,3 @@ Resultado: registro de brechas con clasificación de prioridades y estimaciones 
 [Continuing with remaining sections in Spanish, matching structure...]
 
 ---
-
-> **Trabaje con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

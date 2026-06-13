@@ -122,5 +122,3 @@ Not for bulk scoring >100 members without aggregation. Not without baseline memb
 **Recommended Action:** Invite to speaker series on [topic]; offer peer mentor opportunity.
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [claude.com/claude-code](https://claude.com/claude-code)

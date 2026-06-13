@@ -236,6 +236,3 @@ Success criteria: No checkout failures; p99 recovers within 60s of Redis restart
 **Bevinding:** de toepassing heeft geen terugval logica — het werpt 500 fouten in plaats van terug te vallen op de database. Het mentale model was fout. Kaartje geopend voor het implementeren van terugval. Hypothese gepland om opnieuw uit te voeren na correcties.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

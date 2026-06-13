@@ -169,6 +169,3 @@ Lequel de ceux-ci a le plus changé ? Cela vous dit où vous concentrer.
 **Ceci n'est PAS:** un problème de vente. Ajouter plus de nouveaux logos alors que NRR est 97% accélère vers un mur. Réparer la rétention d'abord.
 
 ---
-
-> **Travaillez avec nous:** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

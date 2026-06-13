@@ -209,6 +209,3 @@ Entscheidungen, die den Scope oder Design ändern, sollten zu Überprüfung zum 
 Die Kernregel bleibt in beiden Fällen gleich: Keine überspringenden Phasen und keine Implementierung ohne unterzeichneten Plan. Solo-Entwicklung ist nicht ein Grund, Research zu überspringen — es ist der Primärgrund, mehr diszipliniert darüber zu sein.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen AI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

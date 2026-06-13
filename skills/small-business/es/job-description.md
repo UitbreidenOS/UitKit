@@ -113,6 +113,3 @@ Tono: profesional pero amable — somos un equipo pequeño, no corporativo
 **Claude redacta una publicación de trabajo completa** con: título claro (« Coordinador de Cliente »), párrafo introductorio convincente sobre la empresa, descripción general del puesto en inglés claro, lista de responsabilidades (8-10 puntos), requisitos divididos en imprescindibles/agradables, lo que les encantará del puesto, rango salarial e instrucciones directas de solicitud.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

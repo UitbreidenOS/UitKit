@@ -131,6 +131,3 @@ Phase plan (output of Phase 0):
 User approves plan. Claude executes Phase 1. User reviews template, says "proceed". Claude executes Phase 2. During Phase 2, Claude notices the email service needs an API key that isn't in the config — it stops and flags this rather than adding the config key unilaterally. User adds the key, says "proceed". Phase 3 completes. Integration check passes.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

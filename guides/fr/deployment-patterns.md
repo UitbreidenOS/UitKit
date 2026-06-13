@@ -207,6 +207,3 @@ const isEnabled = await client.isFeatureEnabled('new-checkout', userId)
 **Recommandation par défaut :** Déploiement progressif + indicateurs de fonctionnalité. Roulant pour l'infrastructure ; indicateurs pour les changements de produit.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -541,6 +541,3 @@ Claude nimmt den Screenshot, analysiert ihn und bestätigt die Reparatur oder it
 | Mehrere UI-States | Sende alle Screenshots in einem Turn; fordere Claude, sie zu vergleichen |
 
 ---
-
-> **Arbeite mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen AI-Produkte und B2B-Lösungen mit Developer Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

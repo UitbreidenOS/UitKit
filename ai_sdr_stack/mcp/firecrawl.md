@@ -38,5 +38,3 @@ SDR prospecting depends on current company data: team pages (who was just hired)
 - For active SDR prospecting (10 accounts/day): Starter tier is sufficient
 
 ---
-
-Built with [Claudient](https://github.com/Claudients/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

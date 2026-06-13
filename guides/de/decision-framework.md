@@ -179,6 +179,3 @@ Das Verständnis der Startup-Kosten hilft zu entscheiden, ob eine Fertigkeit agg
 Fertigkeiten verursachen kleine, aber konstante Startup-Kosten für jede Sitzung. Wenn Sie 40 Fertigkeiten mit 100-Token-Beschreibungen haben, das sind 4.000 Token Overhead vor der ersten Benutzer-Nachricht. Auditieren Sie die Fertigkeits-Beschreibungen und halten Sie sie eng. Agenten und Schrägstrich-Befehle kosten nichts bis zur expliziten Verwendung.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen KI-Produkte und B2B-Lösungen mit Entwicklergemeinschaften.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

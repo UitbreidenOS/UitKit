@@ -291,6 +291,3 @@ do not affect the working tree.
 **`description` es el campo más importante después de `name`.** El enrutador lo utiliza para decidir cuándo delegar aquí. Una descripción vaga o genérica causa enrutamiento incorrecto — ya sea que el agente se active cuando no debería, o nunca se seleccione. Escriba la descripción como una condición de activación explícita, no un resumen de capacidad.
 
 ---
-
-> **Trabaje con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

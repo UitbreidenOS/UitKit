@@ -210,6 +210,3 @@ const results = await db.query(
 Verwachte verbetering na pg_trgm-index: zoekopdracht gaat van ~800ms (seq scan) naar ~15-30ms.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) – we bouwen AI-producten en B2B-oplossingen met developer-communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

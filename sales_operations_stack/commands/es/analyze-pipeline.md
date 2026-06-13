@@ -37,5 +37,3 @@ Salida:
 Próximo paso: Revisar acuerdos en riesgo; programar revisiones de acuerdos con representantes afectados.
 
 ---
-
-Construido con [Claudient](https://github.com/Claudient/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

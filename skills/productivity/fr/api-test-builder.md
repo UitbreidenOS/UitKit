@@ -274,6 +274,3 @@ export default { test: { environment: 'node' } }
 Écrivez des tests d'authentification aujourd'hui. Écrivez des tests de validation de point de terminaison d'écriture demain. Les 8 autres points de terminaison peuvent attendre après le lancement — mais ces 4 ne peuvent pas.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -36,5 +36,3 @@ Kopieer de relevante secties naar de `CLAUDE.md` van je project.
 - Prestatietests horen in CI thuis — regressie die codereview passeert maar het prestatiebudget misloopt moet automatisch worden gevangen
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen. [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

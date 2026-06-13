@@ -315,6 +315,3 @@ const { id, email } = result.rows[0]
 **Step 3 — Improve your error handler** to log the route path and user ID with every error (see global error handler above) — this makes the next 500 error take 30 seconds to diagnose instead of 30 minutes.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

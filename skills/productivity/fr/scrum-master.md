@@ -217,6 +217,3 @@ Action spécifique : « Nouvel élément ajouté en cours de sprint nécessite l
 Arrêtez d'utiliser Commencer/Arrêter/Continuer. Passer à une rétrospective de chronologie — revenir à travers le dernier sprint jour après jour. Cela force les exemples spécifiques plutôt que les plaintes génériques, et les exemples spécifiques ont des causes spécifiques.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

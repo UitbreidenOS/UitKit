@@ -347,6 +347,3 @@ await server.connect(transport)
 - `settings.json` snippet to register as `linear` MCP server with `LINEAR_API_KEY` env var
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

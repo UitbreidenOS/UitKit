@@ -69,6 +69,3 @@ Clasificar:
 **Borrador de respuesta:** Confirma las categorías de datos encontradas, confirma eliminación de datos de marketing, explica retención de 7 años de registros de pago con base legal, incluye derecho de queja ante ICO.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

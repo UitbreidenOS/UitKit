@@ -236,6 +236,3 @@ Critères de succès : Aucun échec de paiement; p99 récupère dans les 60s de 
 **Constatation :** l'application n'a pas de logique de basculement — elle lance des erreurs 500 plutôt que de basculer vers la base de données. Le modèle mental était faux. Un ticket a été ouvert pour implémenter le basculement. L'hypothèse est programmée pour être re-lancée après correction.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -417,5 +417,5 @@ Twee kritieke bevindingen vóór menselijke beoordeling opgemerkt. U lost beide 
 
 ---
 
-🔗 **[Uitbreiden — AI-producten en B2B-tools bouwen met ontwikkelaarsgemeenschappen.](https://uitbreiden.com/)**
+
 📺 **[Abonneer u op ons YouTube-kanaal voor meer diepgaande analyses](https://www.youtube.com/channel/UCcvK8pHyqeR7Q_0lYkuHlUg)**

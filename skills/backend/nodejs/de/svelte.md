@@ -251,6 +251,3 @@ export const handle: Handle = async ({ event, resolve }) => {
 - `src/routes/+layout.svelte` — Navigation mit `$page.data.user`-Prüfung
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwicklergemeinschaften.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

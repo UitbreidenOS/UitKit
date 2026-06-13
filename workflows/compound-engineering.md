@@ -104,6 +104,3 @@ Because CLAUDE.md references `@LESSONS.md`, Claude reads the full lessons log be
 - **Write immediately.** Lessons written at the moment of correction are more accurate than retrospective summaries.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

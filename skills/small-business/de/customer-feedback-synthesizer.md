@@ -103,6 +103,3 @@ Aktionen der Dringlichkeitsmatrix:
 Gesamtzeit: weniger als 2 Minuten, um von rohem Einfügen zu diesem Ergebnis zu gelangen.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

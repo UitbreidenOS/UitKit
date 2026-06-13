@@ -286,6 +286,3 @@ Draft talking points for managers who will receive questions from their teams.
 **Expected output:** Three documents. All-employee email: leads with "we're closing the London office" in sentence one, explains the rationale (cost efficiency, team already working remotely successfully), states effective date, describes what this means for the 12 affected (voluntary redundancy package or formal remote arrangements), and what changes for everyone else (nothing — business as usual). London manager talking points: what to say if team members ask "why now," how to handle emotional reactions, what the voluntary redundancy process looks like. Direct note to the 12 affected: warmer tone, specific about their options, specific about the support package, expresses genuine appreciation, names the HR contact for questions.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

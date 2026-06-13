@@ -126,5 +126,3 @@ Jede Ressource immer mit `Environment` und `ManagedBy = "terraform"` taggen.
 - Passwort über `aws_secretsmanager_secret`-Referenz, niemals hartcodiert
 
 ---
-
-> **Mit uns arbeiten:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen KI-Produkte und B2B-Lösungen mit Entwickler-Communities. Cloud-Infrastruktur oder IaC-Pipelines aufbauen? [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

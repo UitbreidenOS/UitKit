@@ -151,6 +151,3 @@ Signalez toute section où vous besoin plus d'information pour compléter avec p
 **Résultat attendu :** Les 9 sections avec marqueurs `[VERIFY]` appropriés sur tous les chiffres. Résumé exécutif avec cibles MOIC/IRR. Thèse d'investissement axée sur tailwinds HR tech, growth produit-led, et chemin vers profitabilité. Analyse rendements avec cas base 5 ans (3x MOIC, 25% IRR) et tableau sensibilité. Section risque couvrant churn SaaS, menaces concurrentives et dépendance direction.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

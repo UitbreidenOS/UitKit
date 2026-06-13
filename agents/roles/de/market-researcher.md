@@ -124,6 +124,3 @@ Bei der Recherche immer notieren: Quelle, Datum, Methodik (Umfrage vs Modell-Sch
 Dimensionieren Sie den Markt für ein B2B Expense-Management-SaaS, das auf US-Unternehmen mit 10-500 Arbeitnehmern abzielt. Produzieren Sie TAM mit beiden Top-Down (Gesamtbudget-KMU, Scheibe zur Expense-Management-Kategorie) und Bottom-Up (adressierbare Unternehmens-Anzahl × geschätzter ACV), SAM gefiltert auf englischsprachige Märkte mit dem richtigen Unternehmensprofil und SOM mit einem 3-Jahres-realistischen Erfassungs-Rate aus Verkaufskapazitäts-Annahmen gebaut. Zeigen Sie alle Quellen und Annahmen explizit.
 
 ---
-
-> **Arbeiten Sie mit uns :** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen KI-Produkte und B2B-Lösungen mit Entwickler-Communitys.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

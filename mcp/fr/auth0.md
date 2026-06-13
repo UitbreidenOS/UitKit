@@ -105,6 +105,3 @@ Accordez seulement les scopes que vous avez besoin. Évitez `read:client_keys` �
 Les appels d'API Management Auth0 sont inclus dans tous les plans Auth0 — il n'y a pas de frais par-appel. Cependant, les plans gratuits coiffent à 1,000 utilisateurs actifs et imposent les limites de taux d'API Management. Les tenants en production sur les plans payants ont des limites de taux plus élevées et la capacité d'utilisateurs. Vérifiez le quota d'API Management de votre plan sous **Settings → Tenant Settings** dans le Auth0 Dashboard.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons les produits IA et les solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -250,6 +250,3 @@ If users reach the timeline with no dependencies set, there's no cue that the fe
 Run a 15-minute follow-up session with 3 users: show them where the dependency feature is, ask them to use it, observe — is the interaction itself clear once found?
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

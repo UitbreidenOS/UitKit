@@ -172,6 +172,3 @@ WACC=10,5% 17,0$  18,0$   19,0$   20,1$   21,6$
 - Ausgabe klar mit `[VERIFY]` markiert und wichtige Annahmen offengelegt
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwicklergemeinschaften.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

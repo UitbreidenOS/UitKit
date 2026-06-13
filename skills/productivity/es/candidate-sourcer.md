@@ -292,6 +292,3 @@ Estamos escalando el crecimiento en [tu empresa] — [propuesta de empresa en un
 - Contratar 1 en 6-8 semanas desde el inicio de la búsqueda activa
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

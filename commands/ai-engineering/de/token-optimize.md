@@ -1,55 +1,55 @@
 ---
-description: Überprüfe einen Prompt oder eine LLM-Pipeline auf Token-Verschwendung und wende gezielte Reduktionen an
-argument-hint: "[prompt file, chain file, or code path]"
+description: Audit eines Prompts oder einer LLM-Pipeline auf Token-Verschwendung und Anwendung gezielter Reduzierungen
+argument-hint: "[Prompt-Datei, Chain-Datei oder Code-Pfad]"
 ---
-Überprüfe den Prompt oder die Pipeline unter $ARGUMENTS auf Token-Ineffizienz und erstelle eine optimierte Version.
+Audit des Prompts oder der Pipeline unter $ARGUMENTS auf Token-Ineffizienz und Erstellung einer optimierten Version.
 
-Lese alle bereitgestellten Dateipfade. Wenn das Argument ein Verzeichnis ist, scanne nach `.py`, `.ts`, `.md` Dateien, die Prompt-Strings oder LLM-Aufrufe enthalten.
+Lese alle bereitgestellten Dateipfade. Wenn das Argument ein Verzeichnis ist, scanne nach `.py`, `.ts`, `.md` Dateien mit Prompt-Strings oder LLM-Aufrufen.
 
 **Audit-Dimensionen — überprüfe jede:**
 
-**1. Prompt-Verbosität**
-- Füllphrasen, die Token ohne zusätzliche Einschränkungen hinzufügen ("As an AI language model", "Of course!", "Certainly")
-- Wiederholte Anweisungen, die sowohl in System- als auch in Benutzernachrichten vorkommen
+**1. Prompt-Weitschweifigkeit**
+- Füllwörter, die Token hinzufügen, ohne Einschränkungen hinzuzufügen ("Als KI-Sprachmodell", "Natürlich!", "Sicherlich")
+- Wiederholte Anweisungen, die sowohl in System- als auch in Benutzermeldung vorkommen
 - Redundante Beispiele, die identische Fälle abdecken
-- Prosa-Anweisungen, die als Aufzählungsliste mit der Hälfte der Token dargestellt werden könnten
+- Prosa-Anweisungen, die als Aufzählungsliste mit halben Token sein könnten
 
 **2. Context-Window-Missbrauch**
-- Vollständiges Dokument übergeben, wenn nur ein Abschnitt erforderlich ist — mit geschätztem Einsparungspotenzial kennzeichnen
-- Chat-Verlauf wörtlich eingefügt, wenn eine Zusammenfassung ausreichen würde
-- Duplizierter Inhalt: derselbe Text, der zweimal unter verschiedenen Schlüsseln eingefügt ist
+- Vollständiges Dokument übergeben, obwohl nur ein Abschnitt benötigt wird — mit geschätzten Einsparungen kennzeichnen
+- Chat-Verlauf wörtlich enthalten, wenn eine Zusammenfassung ausreichen würde
+- Duplizierter Inhalt: gleicher Text unter verschiedenen Schlüsseln enthalten
 
 **3. Caching-Möglichkeiten**
-- Statische Prompt-Segmente identifizieren (Systemprompt, statischer Kontext, Few-Shot-Beispiele), die `cache_control: {"type": "ephemeral"}` in der Anthropic API verwenden sollten
-- Kennzeichnen, wenn das Cache-geeignete Segment < 1024 Token ist (unter der minimalen Cache-Schwelle — kein Nutzen)
-- Die umstrukturierte Nachrichtenarray mit korrekt platzierten Cache-Blöcken anzeigen
+- Identifiziere statische Prompt-Segmente (System-Prompt, statischer Kontext, Few-Shot-Beispiele), die `cache_control: {"type": "ephemeral"}` in der Anthropic API verwenden sollten
+- Kennzeichne, wenn das Cache-berechtigte Segment < 1024 Token ist (unter dem minimalen Cache-Schwellenwert — kein Vorteil)
+- Zeige das umstrukturierte Message-Array mit korrekt platzierten Cache-Blöcken
 
-**4. Ausgabelänge**
-- Ist `max_tokens` festgelegt? Falls nicht, als unbegrenztes Kostenrisiko kennzeichnen
-- Verlangt der Prompt nach Erklärung, wenn nur strukturierte Daten erforderlich sind?
-- Würde ein kürzeres Ausgabeformat (JSON vs. Prosa, nur Code vs. Code+Erklärung) die Generierungskosten senken?
+**4. Output-Länge**
+- Ist `max_tokens` gesetzt? Falls nicht, kennzeichne als unbegrenztes Kostenrisiko
+- Fragt der Prompt nach Erklärung, wenn nur strukturierte Daten benötigt werden?
+- Würde ein kürzeres Output-Format (JSON vs. Prosa, nur Code vs. Code+Erklärung) die Generierungskosten reduzieren?
 
-**5. Model-Tier-Passung**
-- Verwendet die Aufgabe `claude-sonnet-4-6` oder `claude-opus-4-7` für Arbeiten, die `claude-haiku-4-5-20251001` mit 10x niedrigeren Kosten bewältigen kann?
-- Klassifiziere Aufgabenkomplexität: einfache Extraktion/Klassifizierung → Haiku; Reasoning/Generierung → Sonnet; komplexe Multi-Step → Opus
+**5. Modell-Tier-Passung**
+- Nutzt die Aufgabe `claude-sonnet-4-6` oder `claude-opus-4-7` für Arbeit, die `claude-haiku-4-5-20251001` zu 10x niedrigeren Kosten handhaben kann?
+- Klassifiziere Aufgabenkomplexität: einfache Extraktion/Klassifizierung → Haiku; Reasoning/Generierung → Sonnet; komplexe Multi-Schritt → Opus
 
-**Ausgabeformat:**
+**Output-Format:**
 
 ```
-## Token audit summary
-| Issue | Location | Est. token impact | Priority |
-|-------|----------|-------------------|----------|
-| ...   | ...      | ...               | H/M/L    |
+## Token-Audit-Zusammenfassung
+| Problem | Ort | Geschätzte Token-Auswirkung | Priorität |
+|---------|-----|---------------------------|-----------|
+| ...     | ... | ...                       | H/M/L     |
 
-## Optimized prompt / chain
-<full rewritten version with changes applied>
+## Optimierter Prompt / Chain
+<vollständig neu geschriebene Version mit angewendeten Änderungen>
 
-## Caching configuration
-<message array snippet showing cache_control placement, if applicable>
+## Caching-Konfiguration
+<Message-Array-Snippet mit cache_control-Platzierung, falls zutreffend>
 
-## Estimated savings
-Before: ~N tokens/call  →  After: ~M tokens/call  (~X% reduction)
-At 1000 calls/day on [model]: $Y/month savings
+## Geschätzte Einsparungen
+Vorher: ~N Token/Aufruf  →  Nachher: ~M Token/Aufruf  (~X% Reduktion)
+Bei 1000 Aufrufen/Tag auf [Modell]: $Y/Monat Einsparungen
 ```
 
-Wende alle Fixes mit hoher Priorität direkt in der Ausgabe an. Erkläre Elemente mit mittlerer/niedriger Priorität, wende sie aber nicht ohne Rückfrage an.
+Wende alle hochprioratären Fixes direkt im Output an. Erkläre mittlere/niedrige Priorität-Elemente, wende sie aber nicht ohne Rückfrage an.

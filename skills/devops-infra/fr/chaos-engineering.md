@@ -74,6 +74,3 @@ Analyse des consommateurs directs, indirects, impact externe. Chemin de récupé
 Agenda de game day pour [équipe], préparation, exercices d'exécution, débrief.
 
 ---
-
-> **Travailler avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/).
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

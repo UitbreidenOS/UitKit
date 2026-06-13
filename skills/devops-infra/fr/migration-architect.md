@@ -220,6 +220,3 @@ DROP INDEX idx_orders_user_id;
 **Garantie sans temps d'arrêt :** Chaque étape est un déploiement rétrocompatible. Rétablissement à n'importe quelle étape avant Phase 5 = basculer le déploiement. Après Phase 5 = avant-seulement.
 
 ---
-
-> **Travailler avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

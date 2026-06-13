@@ -481,6 +481,3 @@ Deno.test('POST /items creates and GET retrieves', async () => {
 Deploy: `deployctl deploy --project=my-inventory src/main.ts` — globally distributed in seconds, KV replicated automatically.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

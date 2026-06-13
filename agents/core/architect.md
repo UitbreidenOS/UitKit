@@ -65,5 +65,3 @@ End with: your recommendation, one-sentence rationale, and what to record in an 
 - Risk flagged: SQS FIFO queues have 3k msg/sec limit — verify this doesn't become a ceiling.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities. [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

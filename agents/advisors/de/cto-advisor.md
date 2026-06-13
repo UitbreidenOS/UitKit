@@ -44,6 +44,3 @@ Sollten wir zu Microservices breaken oder Monolith bleiben?
 Agent evaluiert: Team Size relativ zu Microservices Komplexität, ob aktuale Pain Points das Change brauchen, Deployment und Observability Overhead, gibt direkte Empfehlung — wahrscheinlich: bleiben Monolith, fix spezifische Bottlenecks, revisit bei $10M ARR und 25+ Engineers.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/).
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

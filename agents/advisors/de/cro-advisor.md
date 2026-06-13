@@ -107,6 +107,3 @@ Kohort von Early Growth Phase (12-18 Monate ago) renewet jetzt — und sie churn
 **Was das ist NICHT:** Sales Problem.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/).
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

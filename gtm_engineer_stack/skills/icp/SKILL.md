@@ -95,5 +95,3 @@ DECISION: Stop — fails on size, industry, and tech stack. Not an ICP prospect.
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

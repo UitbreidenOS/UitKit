@@ -176,6 +176,3 @@ Set up: when does my RAG fail and how do I know?
 **Expected accuracy:** Hybrid + reranking typically reaches 75-85% answer accuracy on internal knowledge bases. Pure semantic without reranking: ~55-65%.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -271,6 +271,3 @@ Keep it under 200 words. Professional, not defensive.
 **Resultado esperado:** Un informe completo de CMA con la tabla de comparables mostrando ajustes (+$8K por el baño adicional del Comp 2, -$10K por el menor tamaño del Comp 3), rango de valor ajustado de $608K–$628K, precio de listado recomendado de $618K, una narrativa de 3 párrafos para el vendedor explicando el mercado equilibrado y cómo la cocina renovada justifica el extremo superior del rango, y un disparador de reducción de precio en el Día 14 / $599K si no hay ofertas.
 
 ---
-
-> **Trabaja con nosotros:** Claudient cuenta con el respaldo de [Uitbreiden](https://uitbreiden.com/) — desarrollamos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

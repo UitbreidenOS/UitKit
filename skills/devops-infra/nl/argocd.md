@@ -296,6 +296,3 @@ git commit → git push → ArgoCD detecteert verandering → deployed automatis
 ArgoCD pollt je repo standaard elke 3 minuten. Voor instant sync, configureer een GitHub webhook die naar je ArgoCD instance wijst.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met developer-gemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

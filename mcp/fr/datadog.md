@@ -105,6 +105,3 @@ Permissions minimales pour la clé d'application : `metrics_read`, `logs_read`, 
 Tous les appels MCP consomment le quota d'API Datadog. Les requêtes de métrique et les recherches de log comptent contre les limites de tarif d'API de votre plan. Évitez les requêtes automatisées haute-fréquence (par ex., via des hooks) sans examiner les limites de votre plan — Datadog impose les plafonds par-seconde et par-heure d'API au niveau de l'organisation.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons les produits IA et les solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -95,6 +95,3 @@ Si vous posiez la même question en tant que message normal, cela :
 Pour les recherches pures sans effet aval, `/btw` est le bon outil.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

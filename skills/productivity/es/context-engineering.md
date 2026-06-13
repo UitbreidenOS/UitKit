@@ -96,6 +96,3 @@ El bug se introdujo en el commit abc123. Enfoca en la ruta de validación de tok
 La segunda versión le da a Claude los archivos correctos, el modo de fallo, la ubicación sospechosa y un ancla de tiempo — sin tokens desperdiciados en código no relacionado.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

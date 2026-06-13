@@ -257,6 +257,3 @@ def forecast_capacity(metric_df, horizon_days=90):
 4. **Toil audit:** identifies manual deployment approval (→ automate with deploy gate in CI), log cleanup (→ S3 lifecycle policy), and manual scaling during traffic spikes (→ HPA with custom metrics)
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

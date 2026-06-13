@@ -145,6 +145,3 @@ Una aplicación que se conecta a tres servidores MCP (sistema de archivos, GitHu
 7. Al apagarse, cerrar los tres transportes limpiamente
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

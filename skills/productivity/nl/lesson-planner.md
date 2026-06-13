@@ -316,6 +316,3 @@ Aan het einde van deze les kunnen studenten:
 **Verwachte uitvoer:** Drie leerdoelen met toepassen/berekenen-niveau Bloom's werkwoorden. Lesstructuur: 10-minuten haak (waarom eenheidseconomie bedrijven heeft gedood die je hebt gehoord), 20-minuten directe instructie over CAC/LTV/terugverdientijd met formules, 30-minuten workshop waarbij elke oprichter hun eigen metrieke berekent met een verstrekt sjabloon, 15-minuten paard-deel en debrief ("wat heb je ontdekt over jouw eigen bedrijf?"), 10-minuten uitgangsticket (bereken een gegeven scenario + beantwoord "wat vertelt dit je over bedrijfsgezondheid?"). Uitbreiding voor oprichters wier cijfers er al goed uitzien: bereken gevoeligheidsanalyse — wat gebeurt er met LTV/CAC als churn met 10% daalt?
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

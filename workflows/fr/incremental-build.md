@@ -131,6 +131,3 @@ Plan de phase (résultat de la Phase 0) :
 L'utilisateur approuve le plan. Claude exécute la Phase 1. L'utilisateur révise le modèle, dit "procéder". Claude exécute la Phase 2. Au cours de la Phase 2, Claude remarque que le service d'email a besoin d'une clé d'API qui n'est pas dans la configuration — il s'arrête et l'indique plutôt que d'ajouter la clé de configuration unilatéralement. L'utilisateur ajoute la clé, dit "procéder". La Phase 3 se termine. La vérification d'intégration passe.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -154,6 +154,3 @@ Revenue hit $12,400 this week — 27% above last week and 72% above the same wee
 3. Follow up on the referral that just landed to start the project
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

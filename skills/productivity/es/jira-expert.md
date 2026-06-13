@@ -261,6 +261,3 @@ Si el volumen de errores está aumentando, la caída de velocidad es causada por
 Agrega un gadget "Cycle Time" a tu tablero. Si el tiempo de ciclo aumenta (las historias toman más tiempo en completarse), el problema es el límite WIP — demasiadas cosas en progreso a la vez.
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -96,6 +96,3 @@ Die Integration sieht nur Seiten, die explizit mit ihr geteilt sind. Eine Parent
 **Verwende Search zum Bootstrapping:** Wenn du keine IDs hast, starte immer mit `search` mit einem beschreibenden Titel. Es gibt Seiten-IDs und Datenbank-IDs zurück, die du in nachfolgenden Aufrufen verwenden kannst.
 
 ---
-
-> **Zusammenarbeit mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen AI-Produkte und B2B-Lösungen mit Developer-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

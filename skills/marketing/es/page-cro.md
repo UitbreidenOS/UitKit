@@ -138,6 +138,3 @@ Problemas clave por prioridad:
 **Top prueba A/B para ejecutar primero:** Cambiar texto de CTA de "Empezar" a "Comenzar prueba gratuita — Sin tarjeta de crédito" → aumento estimado de 20-35% basado en datos SaaS similares.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

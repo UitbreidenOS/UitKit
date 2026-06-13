@@ -228,6 +228,3 @@ Por qué no negociable: Si está sujeto a GDPR o CCPA, está legalmente obligado
 **Lo que dejar ir:** Créditos SLA, cláusulas de PI (suponiendo sin desarrollo personalizado) y ley aplicable son prioridad más baja en este nivel de gasto.
 
 ---
-
-> **Trabaje con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

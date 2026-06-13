@@ -92,6 +92,3 @@ Para análisis y reportes de solo lectura, omite `write_products` de la lista de
 - Para catálogos de productos grandes, filtra `list_products` por `status=active` y `vendor` para mantener conjuntos de resultados manejables antes de encadenar operaciones.
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

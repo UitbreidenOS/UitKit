@@ -269,6 +269,3 @@ Not formal. Not a form letter. Should sound like a professional colleague who re
 **Expected output:** A professional status report email with "Week 3 — Green" headline, three completed items listed specifically (keyword workbook, brand voice workshop, Q3 editorial calendar draft), one explicit blocker (product roadmap), one decision needed (calendar approval by Wednesday), and next week preview (brief writing for the first 4 content pieces, assuming approval received). Email wrapper: "Week 3 is done — Green across the board..." under 4 sentences, with the report attached or inline.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

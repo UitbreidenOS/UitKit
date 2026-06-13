@@ -310,6 +310,3 @@ For project-level rules, Continue supports `@Rules` blocks in `.continue/rules.m
 The four-section structure was designed to be self-contained. A well-written Claudient skill should require fewer than 10 minutes to port to any of these tools.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -175,5 +175,3 @@ Als u 6+ uur per week aan de activiteiten besteedt die Claude dekt — factureri
 - [SEO Strategy for Small Business Content](claude-small-business-seo-strategy.md) — hoe deze inhoud wordt gemaakt
 
 ---
-
-> **Claudient** wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — het bouwen van AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.

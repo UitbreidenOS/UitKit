@@ -91,6 +91,3 @@ Configuration WorkstationBaseline {
 Entwerfen Sie eine OU-Struktur für ein Unternehmen mit 500 Personen über drei Standorte. Erstellen Sie GPOs für Workstation-Lockdown (Bildschirmsperre, USB-Speicher deaktivieren, Windows Defender-Baseline). Schreiben Sie PowerShell-Skripte, um Benutzer-Onboarding (AD-Konto erstellen, zu Gruppen hinzufügen, Manager einrichten, Mailbox über Remote Exchange-Sitzung aktivieren) und Offboarding (Konto deaktivieren, Gruppenmitgliedschaften entfernen, in deaktivierte OU verschieben, Zertifikate widerrufen, Mailbox archivieren) zu automatisieren.
 
 ---
-
-> **Arbeiten Sie mit uns :** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen KI-Produkte und B2B-Lösungen mit Entwickler-Communitys.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

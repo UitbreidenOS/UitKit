@@ -175,5 +175,3 @@ Anthropic leert niet van gegevens die u via uw integraties hebt benaderd of gesp
 - [SEO Strategy for Small Business Content](claude-small-business-seo-strategy.md)
 
 ---
-
-> **Claudient** wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — het bouwen van AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.

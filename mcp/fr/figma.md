@@ -97,6 +97,3 @@ Définissez le token en tant que `FIGMA_API_TOKEN` dans le bloc de configuration
 **Flux de travail de comparaison visuelle :** Prenez une capture d'écran du composant implémenté avec Playwright MCP, puis récupérez la spécification Figma avec ce serveur. Demandez à Claude de comparer les deux côte à côte et de lister les différences.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

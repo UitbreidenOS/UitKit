@@ -101,6 +101,3 @@ lodash version 4.17.20 or earlier and list the affected repositories.
 **PR body quality:** When using `create_pull_request`, give Claude the diff and the issue context and ask it to draft the PR body. The result will be more useful than a template-filled placeholder.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

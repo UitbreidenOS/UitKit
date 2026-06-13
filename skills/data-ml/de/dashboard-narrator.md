@@ -207,6 +207,3 @@ Falls ein Punkt nicht erfüllt ist, die betreffenden Abschnitte neu schreiben.
 **Erwartete Ausgabe:** Einleitender Urteilssatz („Das Umsatzwachstum beschleunigt sich, aber Konversions- und Bindungssignale erfordern Aufmerksamkeit"). Erfolge: starkes Umsatzwachstum, positiver WAU-Trend. Bedenken: Der Konversionsratenrückgang fällt mit dem Dienstag-Launch zusammen — das neue Feature könnte den Anmeldeprozess stören; der Fluktuationsanstieg ist früh, aber ein 3-Monats-Trend zu beobachten. Empfehlung: A/B-Test des neuen Onboarding-Flows gegenüber der vorherigen Version; Fluktuations-Kohortenanalyse einplanen, um festzustellen, ob ein bestimmtes Segment die 1,8 %-Rate treibt. Beobachtungsliste: Konversionsrate und Fluktuation für die nächsten 2 Wochen.
 
 ---
-
-> **Arbeite mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir bauen KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

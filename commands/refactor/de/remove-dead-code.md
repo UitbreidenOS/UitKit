@@ -1,29 +1,29 @@
 ---
-description: Identifizieren und Löschen von unerreichbarem, unbenutztem oder veraltetes Code
-argument-hint: "[file or directory]"
+description: Unerreichbaren, ungenutzten oder veralteten Code identifizieren und löschen
+argument-hint: "[Datei oder Verzeichnis]"
 ---
-Führen Sie einen Dead-Code-Entfernungspass auf $ARGUMENTS durch.
+Führe einen Dead-Code-Entfernungs-Durchgang auf $ARGUMENTS durch.
 
-1. Lesen Sie jede Datei im Scope. Erstellen Sie eine mentale Karte von:
+1. Lese jede Datei im Geltungsbereich. Erstelle eine mentale Karte von:
    - Exportierten vs. internen Symbolen
-   - Funktionen, Variablen, Typen, Konstanten, Importe, die deklariert, aber nie referenziert werden
-   - Branches, die nie erreicht werden können (z.B. Code nach unconditional return, Bedingungen, die aufgrund konstanter Werte immer true/false sind)
-   - Feature Flags oder Umgebungsvariablenschutzvorrichtungen, die dauerhaft an oder aus sind, gegeben den aktuellen Zustand der Codebasis
-   - Kommentierte Code-Blöcke — entfernen Sie diese, es sei denn, sie enthalten einen datierten Rationale-Kommentar
+   - Funktionen, Variablen, Typen, Konstanten, Imports, die deklariert, aber nie referenziert werden
+   - Branches, die nie erreicht werden können (z.B. Code nach bedingungslosem Return, Bedingungen, die aufgrund von Constantwerten immer wahr/falsch sind)
+   - Feature Flags oder Umgebungsvariablen-Guards, die dauerhaft ein oder aus sind, je nach aktuellem Zustand der Codebasis
+   - Auskommentierte Code-Blöcke — entferne sie, es sei denn, sie enthalten einen Kommentar mit Datumsbezug
 
-2. Für jedes tote Symbol oder Block, das gefunden wurde:
-   - Bestätigen Sie, dass es nicht über dynamische Zuordnung, Reflection, stringbasierte Suche oder einen externen Anrufer außerhalb des gescannten Scope referenziert wird. Im Zweifelsfall sagen Sie dies und überspringen Sie.
-   - Löschen Sie die Deklaration und alle damit verbundenen lokalen Gerüste (zugehörige Typ-Aliase, Hilfsvariablen, die nur von ihr verwendet werden, Re-Exporte, die nur ihr Exposé sind).
+2. Für jedes tote Symbol oder jeden toten Block, der gefunden wird:
+   - Bestätige, dass es nicht über dynamisches Dispatching, Reflection, stringbasierte Lookups oder einen externen Aufrufer außerhalb des gescannten Bereichs referenziert wird. Falls unsicher, gib das an und überspringe es.
+   - Lösche die Deklaration und alle zugehörige lokale Gerüste (zugehörige Type Aliases, Hilfsvariablen, die nur von ihr verwendet werden, Re-Exports, die nur sie freilegen).
 
-3. Entfernen Sie nach jeder Löschung alle Importe oder Requires, die jetzt unbenutz sind.
+3. Nach jeder Löschung entferne alle Imports oder Requires, die nun ungenutzt sind.
 
-4. Formatieren, benennen oder strukturieren Sie nichts anderes um. Nur Dead-Code-Entfernung.
+4. Formatiere, benenne oder strukturiere nichts anderes um. Nur Dead-Code-Entfernung.
 
-5. Geben Sie eine Liste jedes entfernten Elements aus: Symbolname, Datei, Zeilenbereich und Grund (unbenutz / unerreichbar / ersetzt).
+5. Gib eine Liste aller entfernten Elemente aus: Symbolname, Datei, Zeilenbereich und Grund (ungenutzt / unerreichbar / überholt).
 
-6. Wenn ein Symbol tot aussieht, aber einen Kommentar für zukünftige Verwendung hat oder Teil eines öffentlichen API-Vertrags ist (z.B. aus einer Bibliotheks-Index-Datei exportiert), kennzeichnen Sie ihn statt ihn zu löschen.
+6. Falls ein Symbol tot zu sein scheint, aber einen Kommentar zur zukünftigen Verwendung enthält oder Teil eines öffentlichen API-Vertrags ist (z.B. aus einer Index-Datei einer Bibliothek exportiert), markiere es statt es zu löschen.
 
-Constraints:
-- Entfernen Sie keinen Code nur, weil er redundant aussieht — er muss nachweislich nicht referenziert oder erreichbar sein.
-- Berühren Sie Test-Dateien nicht, es sei denn, das Argument schließt sie explizit ein.
-- Wenn eine Entfernung das beobachtbare Verhalten ändern würde (z.B. ein Effekt-vollständiger Import), kennzeichnen Sie es und löschen Sie es nicht.
+Einschränkungen:
+- Entferne Code nicht nur, weil er redundant aussieht — er muss nachweislich unreferenziert oder unerreichbar sein.
+- Berühre Test-Dateien nicht, es sei denn, das Argument schließt sie explizit ein.
+- Falls die Entfernung beobachtbares Verhalten ändern würde (z.B. ein Import mit Nebenwirkungen), markiere es und lösche es nicht.

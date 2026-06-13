@@ -55,6 +55,3 @@ Natuurlijke taal werkt. De voorwaarde moet waarneembaar en ondubbelzinnig zijn :
 Claude voert `tsc --noEmit` uit, leest de foutlijst, beheert elke fout, voert opnieuw uit, ziet resterende fouten, beheert deze, voert opnieuw uit — lus gaat door totdat nul fouten. Stopt dan en rapporteert: "Opgelost 14 TypeScript-fouten over 6 bestanden. `tsc --noEmit` sluit schoon af."
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -96,6 +96,3 @@ De integratie ziet alleen pagina's die expliciet ermee worden gedeeld. Delen van
 **Gebruik search om bootstrap:** Wanneer je geen ID's hebt, start je altijd met `search` met een beschrijvende titel. Het retourneert pagina-ID's en database-ID's die je in volgende aanroepen kunt gebruiken.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -1,6 +1,6 @@
 ---
 description: Générer des scripts de données d'amorce réalistes pour les environnements de développement ou de test
-argument-hint: "[table name(s), schema file, or description]"
+argument-hint: "[nom(s) de table, fichier de schéma, ou description]"
 ---
 Générer les données d'amorce pour : $ARGUMENTS
 

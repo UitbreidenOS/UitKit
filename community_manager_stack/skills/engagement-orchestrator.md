@@ -178,5 +178,3 @@ Just wanted to surface: the team's been asking for exactly the lessons you learn
 **If churn confirmed (unfollowed all channels, deleted account, etc.):** Log departure; request feedback if possible; update cohort analysis.
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [claude.com/claude-code](https://claude.com/claude-code)

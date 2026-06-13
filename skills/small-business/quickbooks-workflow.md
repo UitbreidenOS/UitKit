@@ -118,6 +118,3 @@ What should I look at first?
 Analysis of your margin (8%), comparison to typical benchmarks for your business type, flags the "Misc" category as worth reviewing for misclassifications, notes the marketing spend is high relative to revenue and asks what ROI you're seeing, suggests running a year-over-year comparison.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

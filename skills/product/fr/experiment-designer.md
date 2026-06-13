@@ -215,6 +215,3 @@ Pourquoi 4 semaines, pas 20 jours :
 **Une mise en garde :** Si votre chiffre de 500 visiteurs/jour comprend les utilisateurs mobiles et de bureau, segmentez les résultats par appareil. Les flux de paiement se comportent très différemment sur mobile par rapport au bureau — un résultat gagnant global pourrait masquer une régression sur une plate-forme.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

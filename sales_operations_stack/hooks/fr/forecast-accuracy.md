@@ -67,5 +67,3 @@ exit 0
 1. Enregistrez le script dans `.claude/hooks/forecast-accuracy.sh` et exécutez `chmod +x`
 2. Ajoutez l'entrée settings.json
 3. Le script s'exécute automatiquement lors de la génération du rapport de prévisions
-
-Construit avec [Claudient](https://github.com/Claudient/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

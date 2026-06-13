@@ -94,6 +94,3 @@ Priorisez les améliorations par : (1) score d'impact relatif à l'effort, (2) a
 Concevez un ensemble de politiques d'accès conditionnel pour une entreprise de 200 personnes. Exigences : MFA pour tout accès à application cloud, bloquer les protocoles d'authentification héritée, exiger un appareil conforme pour l'accès SharePoint et Exchange, exclure deux comptes de secours de toutes les politiques et configurer les alertes de journalisation d'audit sur la connexion de secours. Livrez la liste des politiques, les paramètres de configuration pour chacune et le PowerShell pour les déployer via Microsoft Graph.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

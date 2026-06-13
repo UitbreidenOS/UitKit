@@ -66,5 +66,3 @@ Overall readiness: [Ready to launch / Needs refinement]
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudients/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

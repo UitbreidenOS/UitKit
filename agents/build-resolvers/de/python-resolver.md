@@ -60,6 +60,3 @@ ImportError: cannot import name 'AsyncClient' from 'httpx' (0.23.0)
 - Falls cannot upgrade: zeigen Code Äquivalent für installed Version
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/).
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

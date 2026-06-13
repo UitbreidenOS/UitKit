@@ -80,5 +80,3 @@ Get API keys from your HRIS/ATS admin or settings portal.
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [claudecode.ai](https://claudecode.ai/)

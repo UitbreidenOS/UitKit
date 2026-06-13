@@ -174,6 +174,3 @@ Configurar MLflow tracking para modelo de clasificación binaria con flujo de tr
 4. En gate pass, transicionar a `Production` con `archive_existing_versions=True`.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

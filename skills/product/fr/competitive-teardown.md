@@ -223,6 +223,3 @@ Ceci est la chose que Notion ne peut structurellement pas offrir, encadrée comm
 **Verdict :** Inquiétez-vous de Notion prenant le segment PME que vous alliez acquérir. Ne vous inquiétez pas de Notion prenant vos clients existants d'entreprise ou de mid-market qui ont besoin de profondeur.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous créons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

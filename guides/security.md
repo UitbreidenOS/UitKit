@@ -223,7 +223,3 @@ For high-sensitivity tasks (security reviews, working with production credential
 ---
 
 ## Work With Us
-
-Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products with developer communities and deliver B2B AI solutions. If you need help securing Claude Code deployments at scale, building compliant AI workflows, or auditing your AI toolchain — we can help.
-
-**[uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)**

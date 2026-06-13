@@ -358,6 +358,3 @@ print(df.nunique().sort_values())          # Cardinalité — faible = probablem
 **Résultat attendu :** Script d'audit Python rempli pour cette table. Requêtes SQL pour : vérification des doublons sur order_id (clé primaire), vérification des valeurs aberrantes de prix (prix négatifs, prix > 10 K$), vérification des quantités (zéro ou négatif), dates futures dans created_at, valeurs distinctes de la colonne status (signaler les valeurs inattendues), intégrité référentielle sur user_id par rapport à une table users. Après exécution : modèle de rapport de santé des données. Trois tests dbt à ajouter : unique/not_null sur order_id, accepted_values sur status, relationships sur user_id. Commentaire : si des valeurs aberrantes de prix sont trouvées, cela expliquerait les revenus élevés — investiguer si le pic est réel ou un problème de qualité des données.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

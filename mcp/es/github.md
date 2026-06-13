@@ -102,6 +102,3 @@ de lodash versión 4.17.20 o anterior y lista los repositorios afectados.
 **Calidad del cuerpo de PR:** Cuando uses `create_pull_request`, dale a Claude el diff y el contexto del problema e pidele que redacte el cuerpo del PR. El resultado será más útil que un placeholder rellenado con plantilla.
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

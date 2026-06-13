@@ -128,6 +128,3 @@ Netwerktypen: subdomein (`site1.corp.com`) vereist wildcard-DNS; submap (`corp.c
 Bouw een WooCommerce-winkel met aangepast « Subscription Box »-producttype, checkout-aanpassingshooks die een geschenkinformatieveld toevoegen, Redis-object-caching via `wp-redis` en een headless Next.js-storefront die WPGraphQL consumeert. Levering: de producttype-klasse, checkout-hook-implementatie, Redis-configuratie en de Next.js GraphQL-querylaag met ISR-pagina-generatie.
 
 ---
-
-> **Werk met ons mee:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

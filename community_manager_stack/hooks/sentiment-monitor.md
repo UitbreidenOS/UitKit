@@ -115,5 +115,3 @@ exit 0
 - Monthly review: are alerts actionable or too noisy?
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · Community Builder Edition

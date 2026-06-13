@@ -177,6 +177,3 @@ With deferred loading (`ENABLE_TOOL_SEARCH=auto:10`): only the 10 most likely to
 Adding `input_examples` to the 10 always-loaded tools raises parameter accuracy from 72% to 90% on the tools that matter most.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -120,6 +120,3 @@ intitulée « Notes de version — Sprint 42 ».
 **Ne pas commiter les identifiants :** Gardez `ATLASSIAN_API_TOKEN` dans votre `~/.claude.json` global, pas un `.claude/mcp.json` au niveau du projet qui pourrait être commité au contrôle de version.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -180,5 +180,3 @@ Refine your search query:
 - **Too little:** Broaden the query or use different keywords
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [Newsletter Writer Stack](./README.md)

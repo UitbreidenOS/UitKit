@@ -227,5 +227,3 @@ echo "**Replies:** [Number of direct responses]" >> session-log.md
 - **Measure progress:** Look back at logs from a month ago—are you drafting faster? Getting fewer revision requests?
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [Newsletter Writer Stack](./README.md)

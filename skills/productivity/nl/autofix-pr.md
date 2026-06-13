@@ -45,6 +45,3 @@ Elke automatisch toegepaste fix verschijnt als commit in PR-timeline met notitie
 PR heeft 12 review-opmerkingen. 9 zijn: "gebruik `const` in plaats van `let`", "voeg ontbrekende puntkomma's toe op regel 47", "variabelenaam moet `userId` zijn niet `user_id`", "verwijder ongebruikte import". Claude past automatisch alle 9 toe, committed ze als één opschoon-commit, en toont de resterende 3 architectonische opmerkingen ter handmatige beoordeling: "De volgende 3 opmerkingen vereisen uw inbreng voordat ik ze kan toepassen."
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

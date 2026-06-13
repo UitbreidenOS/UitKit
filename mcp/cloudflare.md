@@ -125,6 +125,3 @@ A single token can carry multiple permission sets — you do not need one token 
 - The `dns` module is the fastest way to manage DNS changes programmatically — changes propagate within seconds on Cloudflare-managed zones.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

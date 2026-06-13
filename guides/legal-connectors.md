@@ -843,6 +843,3 @@ Before deploying any MCP server, confirm:
 5. **Cross-matter contamination** — When running Claude across multiple matters in the same session, verify that iManage or NetDocuments search results do not surface documents from matters the user is not cleared to access. Configure MCP server scope at the matter level, not at the user level, where the DMS supports it.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

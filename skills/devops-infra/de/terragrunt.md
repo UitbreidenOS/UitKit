@@ -255,6 +255,3 @@ Richten Sie eine 3-Umgebungs-Terragrunt-Struktur (dev/staging/prod) für AWS VPC
 5. GitHub Actions Pipeline fördert dev → staging → prod mit manuellen Genehmigungsgattern bei jeder Stufe.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir erstellen KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

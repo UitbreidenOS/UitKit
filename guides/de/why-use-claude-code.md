@@ -76,6 +76,3 @@ Ein Projekt, das sich auf Prompts verlässt, verschlechtert sich mit der Zeit. W
 Die Investition in Harnisch-Konfiguration zahlt sich auf jeder zukünftigen Sitzung aus. Die Investition in einen langen Systemprompt zahlt sich nur auf dem aktuellen aus.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

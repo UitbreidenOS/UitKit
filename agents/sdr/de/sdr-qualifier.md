@@ -73,5 +73,5 @@ DEAL-RISIKO: Geringes technisches Fit-Risiko; hohes Prozessrisiko (5 Unbekannte 
 
 ---
 
-🔗 **[Uitbreiden — building AI products and B2B tools with developer communities.](https://uitbreiden.com/)**
+
 📺 **[Subscribe to our YouTube Channel for more deep dives](https://www.youtube.com/channel/UCcvK8pHyqeR7Q_0lYkuHlUg)**

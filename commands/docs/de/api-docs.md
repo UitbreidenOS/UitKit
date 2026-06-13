@@ -1,49 +1,49 @@
 ---
-description: Generieren Sie Referenz-API-Dokumentation für öffentliche Module oder Endpunkte
-argument-hint: "[file-or-directory]"
+description: Generiere Referenz-API-Dokumentation für öffentliche Module oder Endpunkte
+argument-hint: "[Datei-oder-Verzeichnis]"
 ---
-Generieren Sie vollständige API-Referenzdokumentation für: $ARGUMENTS
+Generiere vollständige API-Referenzdokumentation für: $ARGUMENTS
 
-Falls kein Argument angegeben wird, scannen Sie das Repository auf öffentliche API-Oberflächen — exportierte Module, REST/GraphQL-Endpunkte, CLI-Schnittstellen — und dokumentieren Sie alle davon.
+Falls kein Argument angegeben wird, scanne das Repository auf öffentliche API-Oberflächen — exportierte Module, REST/GraphQL-Endpunkte, CLI-Schnittstellen — und dokumentiere alle davon.
 
 Prozess:
-1. Identifizieren Sie die API-Oberfläche:
-   - Für Bibliotheken: exportierte Funktionen, Klassen, Typen (Quellcode lesen + Index-/Barrel-Dateien).
-   - Für HTTP-APIs: Route-Definitionen (Express, FastAPI, Django, Rails, etc.).
-   - Für CLIs: Argument-Parser (argparse, click, cobra, yargs, etc.).
-2. Für jedes öffentliche Symbol/Endpunkt extrahieren Sie: Name, Signatur/Route+Methode, Parameter mit Typen, Rückgabetyp, Beschreibung aus vorhandenen Docstrings/Kommentaren (falls vorhanden), Fehlerbedingungen.
-3. Notieren Sie alle Authentifizierungs-, Rate-Limiting- oder Versionierungsschemata, die im Code vorhanden sind.
+1. Identifiziere die API-Oberfläche:
+   - Für Bibliotheken: exportierte Funktionen, Klassen, Typen (lese Quellcode + beliebige Index/Barrel-Dateien).
+   - Für HTTP-APIs: Route-Definitionen (Express, FastAPI, Django, Rails, usw.).
+   - Für CLIs: Argument-Parser (argparse, click, cobra, yargs, usw.).
+2. Für jedes öffentliche Symbol/jeden Endpunkt extrahiere: Name, Signatur/Route+Methode, Parameter mit Typen, Rückgabetyp, Beschreibung aus vorhandenen Docstrings/Kommentaren (falls vorhanden), Fehlerbedingungen.
+3. Beachte beliebige Authentifizierungs-, Rate-Limiting- oder Versionierungsschemata, die im Code vorhanden sind.
 
 Ausgabeformat — Markdown-Referenzdokument:
 
-## API Reference
+## API-Referenz
 
-Für jeden Module / Namespace / Route-Gruppe:
+Für jedes Modul / jeden Namespace / jede Route-Gruppe:
 
 ### `<SymbolName>` / `<METHOD /path>`
 
-**Description:** Was es macht (abgeleitet aus der Implementierung, falls kein Docstring vorhanden ist).
+**Beschreibung:** Was es tut (hergeleitet aus der Implementierung, falls kein Docstring vorhanden ist).
 
-**Parameters / Request:**
-| Name | Type | Required | Description |
+**Parameter / Anfrage:**
+| Name | Typ | Erforderlich | Beschreibung |
 |------|------|----------|-------------|
 | ...  | ...  | ...      | ...         |
 
-**Returns / Response:** Typ und Form, oder HTTP-Statuscodes mit Körperform.
+**Rückgabe / Antwort:** Typ und Form, oder HTTP-Statuscodes mit Body-Form.
 
-**Errors:** Listet bekannte Fehlerbedingungen und deren Codes/Typen auf.
+**Fehler:** Liste bekannte Fehlerbedingungen und ihre Codes/Typen auf.
 
-**Example:**
+**Beispiel:**
 ```<lang>
-// minimal working example
+// minimales funktionierendes Beispiel
 ```
 
 Regeln:
-- Dokumentieren Sie nur das, was tatsächlich im Code vorhanden ist — erfinden Sie keine Parameter.
-- Falls der Typ eines Parameters mehrdeutig ist, geben Sie den abgeleiteten Typ an und kennzeichnen Sie ihn mit `<!-- verify -->`.
-- Für HTTP-APIs zeigen Sie curl-Beispiele.
-- Für Bibliotheksfunktionen zeigen Sie die Host-Sprache.
-- Gruppieren Sie nach logischem Namespace / Ressource / Modul — alphabetisch innerhalb jeder Gruppe.
-- Falls das Ziel ein Verzeichnis ist, rekurrieren Sie in alle Quelldateien.
+- Dokumentiere nur das, was tatsächlich im Code vorhanden ist — erfinde keine Parameter.
+- Falls der Typ eines Parameters mehrdeutig ist, gib den abgeleiteten Typ an und markiere ihn mit `<!-- verify -->`.
+- Für HTTP-APIs zeige curl-Beispiele.
+- Für Bibliotheksfunktionen zeige die Host-Sprache.
+- Gruppiere nach logischem Namespace / Ressource / Modul — alphabetisch innerhalb jeder Gruppe.
+- Falls das Ziel ein Verzeichnis ist, durchsuche alle Quelldateien rekursiv.
 
-Schreiben Sie die Ausgabe nach `docs/api-reference.md` (erstellen Sie `docs/`, falls nicht vorhanden), oder nach $ARGUMENTS, falls es auf `.md` endet. Bestätigen Sie den geschriebenen Pfad.
+Schreibe die Ausgabe zu `docs/api-reference.md` (erstelle `docs/` falls nicht vorhanden), oder zu $ARGUMENTS, falls es auf `.md` endet. Bestätige den geschriebenen Pfad.

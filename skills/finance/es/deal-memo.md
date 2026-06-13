@@ -296,6 +296,3 @@ Write a crisp recommendation section (150 words max). State your view clearly. A
 **Resultado esperado:** Un deal memo completo que cubra mercado (legaltech $X0B, momento de disrupción de IA), equipo (excelente adecuación de dominio/técnica, falta líder de ventas empresariales), economía unitaria (solicitud de verificación de LTV/CAC), panorama competitivo (Harvey, Ironclad, Kira como comparables), factores de riesgo (concentración de clientes en pilotos, regulación sobre IA en asesoría legal, GTM de ventas empresariales), y una sección de recomendación que tome posición o pase con razones claras. Todas las cifras financieras proporcionadas por el fundador marcadas como [UNVERIFIED].
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

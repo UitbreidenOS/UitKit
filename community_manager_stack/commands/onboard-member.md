@@ -124,5 +124,3 @@ Ready to send, or would you like me to adjust the tone/channels?
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [claude.com/claude-code](https://claude.com/claude-code)

@@ -41,5 +41,3 @@ Copia las secciones relevantes en el `CLAUDE.md` de tu proyecto.
 - Limpia después de cada prueba — trunca las tablas, reinicia los mocks, elimina los archivos creados
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores. [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

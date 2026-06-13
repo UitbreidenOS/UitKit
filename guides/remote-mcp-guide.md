@@ -954,7 +954,3 @@ The proxy aggregates all upstream tools — Claude Code sees one server with man
 ---
 
 ## Work With Us
-
-Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products with developer communities and deliver B2B AI solutions. If you need custom MCP infrastructure, multi-tenant MCP proxies, or production-grade remote MCP deployments for your team — we build this for clients.
-
-**[uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)**

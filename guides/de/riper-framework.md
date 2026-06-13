@@ -264,6 +264,3 @@ Architektur-Abweichungen: eskalieren. Das ist ein Signal, dass Execute improvier
 RIPER hat Overhead. Der Overhead zahlt sich selbst bei komplexer Arbeit aus; er zahlt sich nicht bei kleiner Arbeit aus. Die Faustregel: Wenn Sie die vollständige Implementierung in Ihrem Kopf halten können, ohne sie aufzuschreiben, ist RIPER Overkill.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen AI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

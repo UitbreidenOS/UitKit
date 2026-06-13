@@ -44,5 +44,3 @@ Relevante Abschnitte in die `CLAUDE.md` des Projekts kopieren.
 - `git stash drop` — verwirft gespeicherte Änderungen dauerhaft
 
 ---
-
-> **Mit uns arbeiten:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen KI-Produkte und B2B-Lösungen mit Entwickler-Communities. [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

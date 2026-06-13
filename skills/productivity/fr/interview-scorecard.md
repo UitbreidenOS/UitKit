@@ -259,6 +259,3 @@ Signal d'alarme : Se plaint que « le Produit n'écoute jamais le CS ». Ne déc
 **Seuil global : moyenne de 3,0+ pour recruter à ce niveau.**
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous développons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

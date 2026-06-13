@@ -168,7 +168,3 @@ Elke sub-agent moet een expliciete scopelimiet hebben.
 ---
 
 ## Werk met ons samen
-
-Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten met ontwikkelaarsgemeenschappen en leveren B2B AI-oplossingen. Als u multi-agent systemen, autonome workflows of productie-kwaliteit Claude Code orkestratie ontwerpt — we hebben dit in productie gebouwd en kunnen u helpen.
-
-**[uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)**

@@ -81,6 +81,3 @@ Los tokens a nivel de organización (para organizaciones multi-proyecto) funcion
 - Canaliza la salida de `get_issue` a una solicitud de corrección de código — Claude tiene el contexto completo necesario para escribir un parche dirigido.
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

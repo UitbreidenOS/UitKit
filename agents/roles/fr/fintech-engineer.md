@@ -102,6 +102,3 @@ Concevoir un service de traitement des paiements :
 6. Le travail de surveillance AML exécute des vérifications de vélocité toutes les heures et examine les nouvelles contreparties par rapport à la liste OFAC
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

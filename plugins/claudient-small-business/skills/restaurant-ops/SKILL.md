@@ -123,6 +123,3 @@ The 3 negatives each get a specific, direct reply:
 The 9 positives each get a different response, each reflecting something specific that reviewer mentioned — the tiramisu, a particular server, a birthday dinner. None repeat the same opening line.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

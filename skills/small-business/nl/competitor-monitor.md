@@ -128,6 +128,3 @@ Wat het signaleert: De prijsdaling van Concurrent A weerspiegelt waarschijnlijk 
 Aanbevolen actie: Werk uw sales one-pager bij om een vergelijking van responstijden toe te voegen. Als een prospect de nieuwe prijs van $49 van Concurrent A aanhaalt, gebruik dit script: « Hun Starter-abonnement op $49 omvat [X beperking]. Ons basisplan op $89 omvat [Y en Z] en een bediend onboarding-gesprek — de meeste klanten heffen dit $40-verschil in de eerste week in. »
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

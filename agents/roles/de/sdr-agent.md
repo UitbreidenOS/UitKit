@@ -216,6 +216,3 @@ const SDR_CHANNELS = {
 **Ergebnis:** SDR startete 10 personalisierte Outreach-Kampagnen in 30 Minuten statt 3 Stunden.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen KI-Produkte und B2B-Lösungen mit Developer-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

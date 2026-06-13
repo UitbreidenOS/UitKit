@@ -366,5 +366,3 @@ Not for interview process — use interview-architect. Not for offer negotiation
 - Onboarding completion; mentored new hire or paid it forward
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [claude.com/claude-code](https://claude.com/claude-code)

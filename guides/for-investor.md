@@ -288,6 +288,3 @@ Claude's risk section is structured to force balanced analysis. IC members who r
 - [Deal screening workflow](../workflows/deal-screening.md)
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

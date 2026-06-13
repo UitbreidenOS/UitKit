@@ -336,6 +336,3 @@ Name: [your name], [your company]
 **Resultado esperado:** SOW completo con la Sección 2 que incluye: taller de descubrimiento (1 sesión, 90 min), mapeo de flujo de usuario (3 flujos), wireframes (8 pantallas), maquetas de alta fidelidad en Figma (8 pantallas, escritorio + móvil). Exclusiones de la Sección 3: redacción de contenido y textos UX, documentación de entrega al equipo de desarrollo, pruebas de usabilidad, implementación. Responsabilidades del cliente en la Sección 4: acceso a 3 usuarios actuales para una llamada de descubrimiento de 30 minutos, pautas de marca existentes dentro de 2 días hábiles. Política de revisiones: 2 rondas en wireframes, 2 rondas en alta fidelidad. Pago: $3,250 al firmar, $3,250 en la entrega final de Figma. Tarifa de orden de cambio: $150/hora.
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

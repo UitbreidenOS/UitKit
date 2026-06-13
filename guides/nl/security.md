@@ -174,7 +174,3 @@ Voor zeer gevoelige taken voert u Claude uit in een geïsoleerde omgeving:
 ---
 
 ## Werk met ons samen
-
-Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten met ontwikkelaarsgemeenschappen en leveren B2B AI-oplossingen. Als u hulp nodig heeft bij het beveiligen van Claude Code-implementaties op schaal, het bouwen van conforme AI-workflows of het auditeren van uw AI-toolchain — wij kunnen helpen.
-
-**[uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)**

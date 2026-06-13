@@ -117,6 +117,3 @@ Waar moet ik eerst naar kijken?
 Analyse van uw marge (8%), vergelijking met typische benchmarks voor uw bedrijfstype, markeer de categorie "Overig" als een kijkje waard voor misclassificaties, opmerking dat marketinguitgaven hoog zijn in verhouding tot omzet en vraagt welk rendement u ziet, stelt voor een jaaropeenvolging uit te voeren.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

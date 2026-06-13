@@ -95,6 +95,3 @@ Revisión estructurada de la evidencia para una intervención terapéutica:
 6. Brechas de investigación: no estudios en poblaciones > 65, no comparación cara-a-cara con terapias de segunda línea, no datos de resultado a largo plazo (> 12 meses)
 
 ---
-
-> **Trabaja con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

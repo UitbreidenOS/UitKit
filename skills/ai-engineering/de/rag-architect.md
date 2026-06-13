@@ -177,6 +177,3 @@ Einrichten: wann scheitert mein RAG und wie erkenne ich das?
 **Erwartete Genauigkeit:** Hybrid + Reranking erreichen typischerweise 75-85% Antwortgenauigkeit auf internen Wissensdatenbanken. Rein semantisch ohne Reranking: ~55-65%.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwicklergemeinschaften.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

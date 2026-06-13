@@ -179,6 +179,3 @@ Comprendre le coût de démarrage aide à décider si utiliser une compétence a
 Les compétences entraînent un petit coût de démarrage constant pour chaque session. Si vous avez 40 compétences avec des descriptions de 100 tokens, c'est 4 000 tokens de surcharge avant le premier message utilisateur. Auditez les descriptions de votre compétence et gardez-les serrées. Les agents et les commandes slash ne coûtent rien jusqu'à leur utilisation explicite.
 
 ---
-
-> **Travaillez avec nous:** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

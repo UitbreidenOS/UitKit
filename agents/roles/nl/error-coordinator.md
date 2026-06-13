@@ -418,6 +418,3 @@ De eerste fout in trace-uitvoer is waar mislukking ontstaan. Alles daarna is pro
 4. Inzetting die regressie introduceerde — controleer inzetgeschiedenis voor uur voor incident
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

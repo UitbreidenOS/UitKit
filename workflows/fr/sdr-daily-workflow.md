@@ -464,6 +464,6 @@ PRIORITÉS DE DEMAIN (Mardi 3 juin)
 
 ---
 
-🔗 **[Uitbreiden — créer des produits IA et des outils B2B avec des communautés de développeurs.](https://uitbreiden.com/)**
+
 
 📺 **[S'abonner à notre chaîne YouTube pour d'autres plongées approfondies](https://www.youtube.com/channel/UCcvK8pHyqeR7Q_0lYkuHlUg)**

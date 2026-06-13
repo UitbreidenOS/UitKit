@@ -128,6 +128,3 @@ Types de réseau : sous-domaine (`site1.corp.com`) nécessite DNS wildcard ; sou
 Construire une boutique WooCommerce avec un type de produit personnalisé « Subscription Box », crochets de personnalisation de paiement qui ajoutent un champ de message cadeau, mise en cache d'objet Redis via `wp-redis`, et une vitrine Next.js headless consommant WPGraphQL. Livrer la classe de type de produit, l'implémentation du crochet de paiement, la configuration Redis et la couche de requête GraphQL Next.js avec la génération de page ISR.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

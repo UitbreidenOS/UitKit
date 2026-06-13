@@ -353,6 +353,3 @@ if ($critical) {
 Ejecutar: `.\disk-audit.ps1 -Servers web01, web02, db01 -ThresholdPercent 80`
 
 ---
-
-> **Trabaje con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

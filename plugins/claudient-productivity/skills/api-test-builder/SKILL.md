@@ -274,6 +274,3 @@ export default { test: { environment: 'node' } }
 Write auth tests today. Write write-endpoint validation tests tomorrow. The other 8 endpoints can wait until after launch — but these 4 cannot.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

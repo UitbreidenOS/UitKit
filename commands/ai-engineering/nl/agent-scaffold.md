@@ -1,29 +1,29 @@
 ---
-description: Een multi-stap Claude-agent schetsen met tool-gebruik, geheugen en een gedefinieerde stoppingvoorwaarde
-argument-hint: "[agent goal or task description]"
+description: Scaffold een multi-stap Claude agent met tool use, memory, en een gedefinieerde stoppingvoorwaarde
+argument-hint: "[agent doel of taakbeschrijving]"
 ---
-Maak een productie Claude-agent die het volgende bereikt: $ARGUMENTS
+Scaffold een productie Claude agent die dit bereikt: $ARGUMENTS
 
 **Stap 1 — Agent design spec**
 
-Voordat u code schrijft, definieert u:
+Voor het schrijven van code, definieer:
 
-- **Doel** — de uiteindelijke succesvoowaarde (geen proces, een toestand)
-- **Invoer** — wat de agent bij start ontvangt (strings, bestandspaden, gestructureerde gegevens)
-- **Uitvoer** — wat het produceert als het klaar is (geschreven bestanden, API-aanroepen, gestructureerd resultaat teruggegeven)
-- **Benodigde tools** — soem op elke tool: naam, doel, invoerschema, terugkeervormen
-- **Geheugenmodel** — kies één:
-  - Stateless (context-venster alleen, geschikt voor <20 tool-aanroepen)
+- **Doel** — de terminal success condition (niet een proces, een toestand)
+- **Invoer** — wat de agent ontvangt bij lancering (strings, bestandspaden, gestructureerde data)
+- **Uitvoer** — wat het produceert wanneer klaar (bestanden geschreven, API-aanroepen gedaan, gestructureerd resultaat geretourneerd)
+- **Benodigde tools** — arceer elke tool: naam, doel, input schema, return shape
+- **Memory model** — kies één:
+  - Stateless (context window alleen, geschikt voor <20 tool calls)
   - Summary memory (comprimeer geschiedenis met Haiku na elke N stappen)
-  - External memory (schrijf belangrijke feiten naar een scratchpad-bestand of key-value-opslag)
-- **Stoppingvoorwaarden** — wat triggert de agent om uiteindelijke uitvoer terug te geven versus doorgaan:
-  - Succes: doeltoestand bereikt
-  - Mislukking: foutentelling overschreden, tegenstrijdige toestand gedetecteerd
-  - Plafond: max_iterations bereikt (altijd opnemen)
+  - External memory (schrijf belangrijke feiten naar een scratchpad bestand of key-value store)
+- **Stoppingvoorwaarden** — wat triggert de agent om einduitvoer terug te geven vs. doorgaan met loopen:
+  - Success: doelstaat bereikt
+  - Failure: foutenteller overschreden, contradictoire toestand gedetecteerd
+  - Ceiling: max_iterations bereikt (altijd opnemen)
 
-**Stap 2 — Agent genereren**
+**Stap 2 — Genereer de agent**
 
-Schrijf `agent.py` met behulp van de Anthropic Python SDK. Vereisten:
+Schrijf `agent.py` met de Anthropic Python SDK. Vereisten:
 
 - Model: `claude-sonnet-4-6` (configureerbaar via `AGENT_MODEL` omgevingsvariabele)
 - Implementeer de agentic loop:
@@ -38,22 +38,22 @@ Schrijf `agent.py` met behulp van de Anthropic Python SDK. Vereisten:
           done = True
   ```
 - Definieer elke tool als een dict met `name`, `description`, `input_schema` (JSON Schema)
-- Tool dispatch: een `dispatch(tool_name, tool_input)` functie die routeert naar Python callables
-- Gebruik `cache_control: {"type": "ephemeral"}` op het systeempromptbericht
-- Gestructureerde uiteindelijke uitvoer: agent retourneert een getypte dataclass, niet ruwe tekst
-- Log elke iteratie: tool aangeroepen, invoersamenvattinng, resultaatsamenvat (niet volledige inhoud)
+- Tool dispatch: een `dispatch(tool_name, tool_input)` functie die naar Python callables routet
+- Gebruik `cache_control: {"type": "ephemeral"}` op het systeem prompt bericht
+- Gestructureerde einduitvoer: agent retourneert een getypte dataclass, niet raw text
+- Log elke iteratie: tool aangeroepen, input samenvatting, resultaat samenvatting (niet volledige inhoud)
 
-**Stap 3 — Foutafhandeling**
+**Stap 3 — Error handling**
 
-- Wikkel elke tool-aanroep in try/except; retourneer `{"error": str(e)}` als tool-resultaat — verhoog nooit in de loop
-- Bij overschrijding van `max_iterations`: retourneer partiële resultaten met een `status: "incomplete"` vlag
-- Bij API-fouten (`anthropic.APIStatusError`): opnieuw proberen tot 3 keer met exponentiële terugschakeling
+- Wrap elke tool call in try/except; return `{"error": str(e)}` als tool resultaat — nooit raise in de loop
+- Bij `max_iterations` overschreden: return partiële resultaten met een `status: "incomplete"` vlag
+- Bij API fouten (`anthropic.APIStatusError`): retry tot 3 keer met exponentiële backoff
 
-**Stap 4 — CLI-beginpunt**
+**Stap 4 — CLI entrypoint**
 
-Blootstellen via `argparse`:
-- `--goal` (of positioneel): override de hardcoded doelstelling
+Expose via `argparse`:
+- `--goal` (of positional): overschrijf het hardcoded doel
 - `--max-iterations`: standaard 25
-- `--dry-run`: druk het plan af (systeemprompt + tools) zonder uit te voeren
+- `--dry-run`: print het plan (systeem prompt + tools) zonder uit te voeren
 
-**Uitvoer:** `agent.py` met alle tools geïmplementeerd, geen stubs. Voeg een gebruiksvoorbeeld op in een commentaarvak boven in het bestand.
+**Uitvoer:** `agent.py` met alle tools geïmplementeerd, geen stubs. Voeg een gebruiksvoorbeeld in een commentaarblok bovenaan het bestand toe.

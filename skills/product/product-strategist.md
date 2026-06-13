@@ -233,6 +233,3 @@ Moving upmarket is seductive because ACV goes up. It's risky because:
 **My recommendation:** Move to mid-market (50-500 employees) first, not enterprise (500+). It's closer to what you have, requires less product investment, and de-risks the learning curve before you take on $100K+ deals with complex procurement.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

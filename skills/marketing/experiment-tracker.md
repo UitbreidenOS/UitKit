@@ -293,6 +293,3 @@ with 95% statistical confidence and 80% power.
 If "See Pricing" wins on clicks but trial signups don't increase, users are more curious but not more committed. That's a pricing clarity problem, not a CTA problem — next test is the pricing page itself.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

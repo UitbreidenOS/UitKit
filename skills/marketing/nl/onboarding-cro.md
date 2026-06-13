@@ -204,6 +204,3 @@ Kopie voor elk checklist-item (taaktitel + 1-regel beschrijving).
 Verwacht resultaat: verhoog activering van 31% naar 50% → geschatte verbetering van trial-naar-betaald conversie van 18% naar ~28%.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

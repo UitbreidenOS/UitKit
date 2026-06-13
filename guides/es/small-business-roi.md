@@ -372,6 +372,3 @@ Repase esto al final de sus primeros 30 días para evaluar si ha establecido la 
 Si obtiene 8-10 en esta lista de verificación después de 30 días, el mes dos será materialmente más fácil y los ahorros de tiempo se compondrán. Si obtiene menos de 7, identifique los elementos que omitió y complételos durante la semana cinco antes de agregar nuevos flujos de trabajo.
 
 ---
-
-> **Claudient** está respaldado por [Uitbreiden](https://uitbreiden.com/) — construcción de productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

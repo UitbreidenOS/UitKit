@@ -1,29 +1,29 @@
 ---
-description: Fassen Sie rohe Besprechungsnotizen in Entscheidungen, Maßnahmen und offene Fragen zusammen
-argument-hint: "[raw notes or transcript]"
+description: Fasse Rohnotizen aus Besprechungen in Entscheidungen, Aufgaben und offene Fragen zusammen
+argument-hint: "[Rohnotizen oder Transkript]"
 ---
-Fassen Sie die folgenden Besprechungsnotizen in einem strukturierten Dokument zusammen: $ARGUMENTS
+Fasse die folgenden Besprechungsnotizen in ein strukturiertes Dokument zusammen: $ARGUMENTS
 
-Erstellen Sie genau vier Abschnitte:
+Erstelle exakt vier Abschnitte:
 
 **Kontext** (2–4 Sätze)
-Wer war anwesend, worum ging es in der Besprechung, was hat sie ausgelöst. Leiten Sie aus den Notizen ab, falls nicht explizit angegeben.
+Wer hat teilgenommen, worum ging es in der Besprechung, was hat sie ausgelöst. Leite aus den Notizen ab, falls nicht explizit angegeben.
 
 **Getroffene Entscheidungen**
-Aufzählung. Jeder Punkt ist eine konkrete Entscheidung, nicht ein besprochenes Thema. Lassen Sie alles weg, das besprochen wurde, aber nicht gelöst wurde. Wenn keine Entscheidungen getroffen wurden, schreiben Sie „Keine".
+Aufzählung. Jeder Punkt ist eine konkrete Entscheidung, nicht ein besprochenes Thema. Lass alles aus, das diskutiert, aber nicht gelöst wurde. Falls keine Entscheidungen getroffen wurden, schreib „Keine".
 
-**Maßnahmenpunkte**
-Aufzählung. Format: `[Verantwortlich] — Maßnahme — Fälligkeitsdatum (falls erwähnt)`. Wenn kein Verantwortlicher explizit genannt ist, schreiben Sie `[TBD]`. Wenn kein Fälligkeitsdatum, lassen Sie es weg.
+**Aufgabenpunkte**
+Aufzählung. Format: `[Verantwortliche Person] — Aufgabe — Fälligkeitsdatum (falls angegeben)`. Falls kein Verantwortlicher explizit genannt ist, schreib `[TBD]`. Falls kein Fälligkeitsdatum, lass es weg.
 
 **Offene Fragen**
-Aufzählung ungelöster Fragen oder Punkte, die ausdrücklich aufgeschoben wurden. Falls keine, lassen Sie den Abschnitt weg.
+Aufzählung ungelöster Fragen oder Punkte, die explizit aufgeschoben wurden. Falls keine, lass den Abschnitt weg.
 
 Regeln:
-- Editorialismus vermeiden — bleiben Sie faktisch zum Quellmaterial.
-- Erfinden Sie keine Verantwortlichen, Entscheidungen oder Fristen, die nicht in den Notizen vorhanden sind.
-- Wenn die Notizen zu spärlich sind, um eine nützliche Zusammenfassung zu erstellen, sagen Sie das und listen Sie auf, was fehlt.
-- Vereinigen Sie doppelte oder redundante Punkte.
-- Halten Sie die Gesamtausgabe unter 400 Wörtern, es sei denn, die Besprechung war ungewöhnlich komplex.
-- Verwenden Sie einfaches Markdown — kein HTML, keine Tabellen, es sei denn, die Maßnahmenpunkte sind zu viele, um linear gelesen zu werden.
+- Editiere nicht — bleib sachlich beim Quellenmaterial.
+- Erfinde keine Verantwortlichen, Entscheidungen oder Fristen, die nicht in den Notizen vorhanden sind.
+- Falls die Notizen zu spärlich sind, um eine aussagekräftige Zusammenfassung zu erstellen, sage das und liste auf, was fehlt.
+- Fasse doppelte oder redundante Punkte zusammen.
+- Halte die Gesamtausgabe unter 400 Wörtern, es sei denn, die Besprechung war ungewöhnlich komplex.
+- Verwende einfaches Markdown — kein HTML, keine Tabellen, es sei denn, die Aufgabenpunkte sind zu zahlreich zum linearen Lesen.
 
-Geben Sie nur die Zusammenfassung aus. Keine Einleitung.
+Gebe nur die Zusammenfassung aus. Keine Einleitung.

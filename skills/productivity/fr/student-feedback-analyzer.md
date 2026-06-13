@@ -299,6 +299,3 @@ Generate a structured course improvement report:
 **Résultat attendu :** Résumé — le contenu était très pertinent mais le rythme était le point faible évident. Points forts : l'étude de cas et la discussion en petits groupes. Principales critiques : densité du contenu par rapport au temps (40 % des répondants), pratique insuffisante (25 %). Recommandations actionnables : supprimer 20 % du contenu pour laisser de l'espace (la note de pertinence montre que le bon contenu est là — le problème est le volume), ajouter un deuxième scénario pratique pour remplacer une partie du temps de cours magistral, diviser la matinée en deux blocs plus courts avec une pause. Un insight : le problème de rythme et le désir de plus de pratique sont le même problème — quand le planning est trop serré, la pratique est supprimée. Résoudre l'un résout l'autre.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous développons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

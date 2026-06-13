@@ -226,5 +226,3 @@ Status: **Yellow** — Slight increase; monitor for bottleneck in Proposal stage
 **Next Review:** 2026-06-17
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

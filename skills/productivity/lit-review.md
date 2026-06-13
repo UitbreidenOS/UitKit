@@ -232,6 +232,3 @@ Write the literature review section for my included papers and themes.
 Note: I'm synthesising across papers by finding, not by paper — this is the key structural shift.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

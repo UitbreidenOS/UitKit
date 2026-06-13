@@ -241,6 +241,3 @@ git branch -d hotfix/prod-bug
 El enfoque worktree es estrictamente mejor que el almacenamiento temporal para situaciones complejas — los conflictos de stash pop son un riesgo real; los worktrees no tienen ninguno.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

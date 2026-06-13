@@ -338,5 +338,3 @@ Be seen by their team and leadership as data-driven, collaborative, and receptiv
 - Need for integration with customer data platforms (Segment, Intercom)
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [Product Operations Stack](https://github.com/Claudient/Claudient)

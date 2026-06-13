@@ -119,6 +119,3 @@ Fix: add alt="Visa credit card" or aria-label to the <img>
 Orchestrator writes the report to `qa/accessibility-checkout.md` and surfaces the two FAIL items as blocking issues.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -72,6 +72,3 @@ d'une phrase de chaque conclusion.
 Claude interroge CourtListener via MCP, retourne une liste d'opinions correspondantes avec citations et résumés de conclusions, note quels cas ont des pétitions de certiorari en attente, et ajoute l'avertissement de recherche obligatoire.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

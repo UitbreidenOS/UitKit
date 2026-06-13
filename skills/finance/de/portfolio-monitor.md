@@ -263,6 +263,3 @@ Generate an action plan with 30/60/90 day milestones.
 **Erwartete Ausgabe:** Portfolio-Gesundheits-Dashboard mit Unternehmen A als Grün (über Plan, potenzieller Follow-on-Auslöser), Unternehmen B als Rot (verfehlter Plan + Burn-Problem = Intervention erforderlich — konkrete Maßnahmen: Bridge-Analyse, Burn-Reduktionsoptionen, Gründergespräch), Unternehmen C als Gelb (Enterprise-Gewinn ist positiv, aber CTO-Abgang ist eine 60-Tage-Uhr für die Produktkontinuität — Vorstandsagenda: Interim-CTO-Plan, Gründerbindung). LP-Framing für das Quartal: ausgewogen, führt mit dem Gewinn von Unternehmen A, adressiert B und C mit konkreten ergriffenen Maßnahmen.
 
 ---
-
-> **Arbeite mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

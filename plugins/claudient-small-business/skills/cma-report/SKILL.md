@@ -271,6 +271,3 @@ Keep it under 200 words. Professional, not defensive.
 **Expected output:** A full CMA report with the comp table showing adjustments (+$8K for the larger bath on Comp 2, -$10K for smaller size on Comp 3), adjusted value range of $608K–$628K, recommended list price of $618K, a 3-paragraph seller narrative explaining the balanced market and how the updated kitchen justifies the upper end of range, and a price reduction trigger at Day 14 / $599K if no offers.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

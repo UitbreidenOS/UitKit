@@ -146,6 +146,3 @@ Erstelle eine neue Bestellung.
 - `/skills/productivity/api-test-builder` — Test-Suites aus Spezifikationen generieren
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwicklergemeinden.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -126,6 +126,3 @@ Reduce compilación CI de monorepo Vite de 8 minutos a menos de 2 minutos:
 6. Resultado: aciertos de caché restauran chunks vendor en 15s; solo paquetes cambiados se reconstruyen; tiempo total CI cae de 8 min a 90s
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

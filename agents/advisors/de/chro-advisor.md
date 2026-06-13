@@ -129,6 +129,3 @@ Kein Levelling System und keine klaren Promotion Kriterien. Engineers treffen L3
 4. Quarterly Career Conversations starten
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/).
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

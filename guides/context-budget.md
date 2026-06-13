@@ -391,6 +391,3 @@ Extend this pattern to include open tasks (from a task file), architectural deci
 - [ ] `/usage` checked at session start to confirm baseline overhead is acceptable
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

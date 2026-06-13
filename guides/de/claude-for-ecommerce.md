@@ -166,5 +166,3 @@ Ja, mit hoher Zuversicht. Bei dieser Umsatzspanne verbringt der Operator normale
 - Alle E-Commerce-relevanten Skills in [skills/small-business/](../skills/small-business/)
 
 ---
-
-> **Claudient** wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — Bau von KI-Produkten und B2B-Lösungen mit Entwickler-Communities.

@@ -129,6 +129,3 @@ Altijd gegevensbeperkingen aangeven: marktonderzoeken hebben methodologie-bias, 
 Analyseer trend voor « AI-agenten in enterprise-workflows ». Markeer alle 8 signaalcategorieën met bewijs, classificeer rijpheidsfase, schat S-curve-positie, prognose mainstream-adopti-tijdlijn (jaren van nu), identificeer top-3-versnellers en remmers, trek analogie naar vorige technologie-overgang (met voorzichtigheden) en geef strategische aanbeveling voor B2B-SaaS-bedrijf beslist of agent-features in hun product in 2026 bouwen.
 
 ---
-
-> **Werk met ons mee:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

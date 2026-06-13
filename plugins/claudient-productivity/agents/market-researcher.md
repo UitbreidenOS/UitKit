@@ -124,6 +124,3 @@ When searching, always note: source, date, methodology (survey vs model estimate
 Size the market for a B2B expense management SaaS targeting US companies with 10-500 employees. Produce TAM using both top-down (total SMB software spend, sliced to expense management category) and bottom-up (addressable company count × estimated ACV), SAM filtered to English-speaking markets with the right company profile, and SOM with a 3-year realistic capture rate built from sales capacity assumptions. Show all sources and assumptions explicitly.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

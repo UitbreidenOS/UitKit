@@ -150,6 +150,3 @@ Flag any sections where you need more information to complete accurately.
 **Expected output:** All 9 sections with appropriate placeholder `[VERIFY]` markers on all financials. Executive summary with MOIC/IRR targets. Investment thesis focused on HR tech tailwinds, product-led growth, and path to profitability. Returns analysis with 5-year base case (3x MOIC, 25% IRR) and sensitivity table. Risk section covering SaaS churn, competitive threats, and management dependency.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

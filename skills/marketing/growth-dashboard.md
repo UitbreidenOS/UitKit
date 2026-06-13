@@ -292,6 +292,3 @@ Projected impact: [X more customers/month at current conversion rates]
 - Churn: call the 2 churned customers this week; understand if product, price, or competitor
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

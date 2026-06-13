@@ -138,6 +138,3 @@ Cadencia de revisión: [mensual / trimestral]
 6. Acepta la realidad de cero clics: optimiza para conciencia de marca y clics en el fondo del embudo, no tráfico medio
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

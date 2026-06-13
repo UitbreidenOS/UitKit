@@ -146,6 +146,3 @@ ENTRÉE/SORTIE : 10x ARR est le taux du marché pour SaaS à cette croissance ; 
 5. Quel est votre taux de rétention nette des revenus et votre chiffre d'affaires ?
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

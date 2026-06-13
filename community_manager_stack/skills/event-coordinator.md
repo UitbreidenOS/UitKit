@@ -175,5 +175,3 @@ Thanks for attending! Help us improve future events with 2 minutes of feedback.
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · Community Builder Edition

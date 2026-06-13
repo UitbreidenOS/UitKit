@@ -388,5 +388,3 @@ Return offboarding plan in this format:
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

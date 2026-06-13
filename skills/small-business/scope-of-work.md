@@ -337,6 +337,3 @@ Name: [your name], [your company]
 **Expected output:** Full SOW with Section 2 listing: discovery workshop (1 session, 90 min), user flow mapping (3 flows), wireframes (8 screens), high-fidelity Figma mockups (8 screens, desktop + mobile). Section 3 exclusions: copywriting and UX copy, development handoff documentation, usability testing, implementation. Section 4 client responsibilities: access to 3 current users for a 30-minute discovery call, existing brand guidelines within 2 business days. Revision policy: 2 rounds on wireframes, 2 rounds on high-fidelity. Payment: $3,250 on signing, $3,250 on final Figma delivery. Change order rate: $150/hour.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

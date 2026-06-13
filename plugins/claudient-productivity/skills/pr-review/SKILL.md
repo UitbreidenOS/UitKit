@@ -259,6 +259,3 @@ Generate the report for the PR I provide.
 Good instinct to use a dedicated search endpoint instead of extending the existing `/users` list endpoint. The structure is correct — just needs the two blocking fixes.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

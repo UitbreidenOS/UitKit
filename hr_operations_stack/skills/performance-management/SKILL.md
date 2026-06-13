@@ -78,5 +78,3 @@ Example: "Improve onboarding NPS from 7.2 to 8.5 by Q4 2026 through documentatio
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [claudecode.ai](https://claudecode.ai/)

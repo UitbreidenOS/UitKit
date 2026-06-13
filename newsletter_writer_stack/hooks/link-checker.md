@@ -178,5 +178,3 @@ HTTP_STATUS_SUCCESS="^[23][0-9]{2}$"  # Accept 200–299 status codes
 - Subscribers respond better to 2–3 high-value links than 5+ scattered links.
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [Newsletter Writer Stack](./README.md)

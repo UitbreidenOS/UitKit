@@ -200,6 +200,3 @@ Under 100 words. Professional and warm.
 **Erwartete Ausgabe:** Ein 280-Wörter persönlicher Brief von Sarah und Tom, der mit einem spezifischen Detail über den Garten beginnt („die Hochbeete entlang des Südzauns"), ihre Berufe als etwas erwähnt, das sie mit der Gemeinschaft verbindet, ihre Absicht zum Bleiben und zur Erhaltung des Charakters des Hauses zum Ausdruck bringt und warmherzig schließt. Keine Erwähnung von Kindern, Religion oder nationaler Herkunft. Makler-Anschreiben separat — fasst das $715K-Angebot zusammen, 20% Anzahlung, Conventional mit Chase, Gutachten-Lückendeckung bis $20K, flexibles Closing und positioniert das Angebot als risikoarm für die Verkäufer.
 
 ---
-
-> **Arbeite mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

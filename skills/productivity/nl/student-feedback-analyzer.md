@@ -299,6 +299,3 @@ Genereer een gestructureerd cursusverbeteringsrapport:
 **Verwachte uitvoer:** Samenvatting — de inhoud was zeer relevant maar het tempo was de duidelijke zwakheid. Sterkste elementen: de casestudy en kleine groepsdiscussie. Top kritieken: inhoudsdikte ten opzichte van tijd (40% van de respondenten), onvoldoende oefening (25%). Uitvoerbare aanbevelingen: 20% van de inhoud inkorten om ademruimte te laten (de relevantiebeoordeling toont dat de juiste inhoud er is — het probleem is volume), een tweede oefenscenario toevoegen ter vervanging van wat college-tijd, de ochtend opsplitsen in twee kortere blokken met een pauze. Eén inzicht: het tempoprobleem en de wens voor meer oefening zijn hetzelfde probleem — wanneer de planning te krap is, wordt oefening ingekort. Het ene oplossen lost het andere op.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

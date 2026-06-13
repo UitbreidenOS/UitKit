@@ -142,5 +142,3 @@ After initial response:
 - [ ] Public debrief (if applicable): Share learnings, changes, commitments.
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · Community Builder Edition

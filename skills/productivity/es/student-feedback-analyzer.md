@@ -299,6 +299,3 @@ Generate a structured course improvement report:
 **Resultado esperado:** Resumen — el contenido era muy relevante pero el ritmo fue la debilidad clara. Elementos más fuertes: el estudio de caso y la discusión en grupos pequeños. Críticas principales: densidad de contenido relativa al tiempo (40% de los encuestados), práctica insuficiente (25%). Recomendaciones accionables: reducir el 20% del contenido para dejar margen de respiración (la calificación de relevancia muestra que el contenido correcto está ahí — el problema es el volumen), agregar un segundo escenario de práctica para reemplazar parte del tiempo de conferencia, dividir la mañana en dos bloques más cortos con un descanso. Un hallazgo: el problema del ritmo y el deseo de más práctica son el mismo problema — cuando el calendario está muy apretado, la práctica se elimina. Resolver uno resuelve ambos.
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -118,6 +118,3 @@ Tâche : Extraire un module d'authentification utilisateur d'un monolithe Node.j
 6. Drapeaux de risque : le middleware de session est importé dans 14 fichiers de routes — rayon de blast élevé, nécessite une suite de tests d'intégration avant suppression
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

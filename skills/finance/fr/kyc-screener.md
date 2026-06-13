@@ -169,6 +169,3 @@ Décision routage :
 **Routage :** Due Diligence Renforcée requise avant onboarding. Officier conformité senior et MLRO approuvez requis. [VERIFY] toutes découvertes.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

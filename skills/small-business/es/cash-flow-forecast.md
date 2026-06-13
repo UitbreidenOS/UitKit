@@ -126,6 +126,3 @@ Variable: pago de proveedor $1.200 vencimiento 15
 - Recomendación: Persiga activamente la factura de $3.200. No cuente aún con la cotización de $8.000 en la planificación.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

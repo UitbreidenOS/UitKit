@@ -201,6 +201,3 @@ export async function middleware(request: NextRequest) {
 - Kill switch Redis: `KILL_SWITCH_AI_SEARCH=true` deshabilita independientemente del rollout
 
 ---
-
-> **Trabaje con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

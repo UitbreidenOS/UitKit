@@ -37,6 +37,3 @@ Alle Kubernetes-Manifeste (`*.yaml` in `k8s/`, `manifests/`, `helm/`), Helm-Char
 
 
 ---
-
-> **Arbeiten Sie mit uns zusammen:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir entwickeln AI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

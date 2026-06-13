@@ -129,6 +129,3 @@ What it signals: Competitor A's price drop likely reflects pressure on their ent
 Recommended action: Update your sales one-pager to add a response time comparison. If a prospect cites Competitor A's new $49 price, use this script: "Their Starter plan at $49 includes [X limitation]. Our base plan at $89 includes [Y and Z] and a dedicated onboarding call — most customers recover that $40 difference in the first week."
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -68,5 +68,3 @@ tickets into 5 categories. Return only: ticket_id, category.
 **Referencia:** [github.com/JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) — la implementación caveman de referencia. Claudient hace referencia a este trabajo; no se duplica aquí.
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores. [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

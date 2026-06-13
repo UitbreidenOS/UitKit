@@ -372,6 +372,3 @@ Gehen Sie dies am Ende Ihrer ersten 30 Tage durch, um zu evaluieren, ob Sie die 
 Wenn Sie 8-10 auf dieser Checkliste nach 30 Tagen bewerten, wird Monat zwei matrial einfacher sein und die Zeiteinsparungen werden sich zusammensetzen. Wenn Sie unter 7 bewerten, identifizieren Sie die Elemente, die Sie übersprungen haben und vervollständigen Sie sie während Woche fünf bevor Sie irgendwelche neuen Workflows hinzufügen.
 
 ---
-
-> **Claudient** wird unterstützt durch [Uitbreiden](https://uitbreiden.com/) — Konstruktion von KI-Produkten und B2B-Lösungen mit Entwickler-Gemeinschaften.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

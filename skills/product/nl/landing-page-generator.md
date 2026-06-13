@@ -49,6 +49,3 @@ Doel: LCP < 1s, CLS < 0.1, Mobiel-eerst responsief.
 [Verdere secties volgen hetzelfde patroon als de Franse versie met technische details in het Nederlands]
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaargemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

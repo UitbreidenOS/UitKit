@@ -125,6 +125,3 @@ Ein einzelnes Token kann mehrere Berechtigungssätze tragen — du brauchst nich
 - Das `dns`-Modul ist der schnellste Weg, um DNS-Änderungen programmgesteuert zu verwalten — Änderungen propagieren innerhalb von Sekunden auf Cloudflare-verwalteten Zones.
 
 ---
-
-> **Zusammenarbeit mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen AI-Produkte und B2B-Lösungen mit Developer-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

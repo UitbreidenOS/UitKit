@@ -271,6 +271,3 @@ Diseñe red AWS para una aplicación de e-commerce de 3 niveles:
 5. Service mesh Istio con mTLS aplicado en todas las tareas de ECS. VirtualService configurada para implementaciones canary con split de tráfico del 10%.
 
 ---
-
-> **Trabaje con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

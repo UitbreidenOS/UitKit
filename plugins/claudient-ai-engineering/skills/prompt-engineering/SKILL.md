@@ -292,6 +292,3 @@ Never say "I think" or "I believe" — if you're not certain, say you don't know
 Pass the actual product documentation in the context (or via RAG). The model can't "know" something it wasn't told. A system prompt that says "you know X" without providing X just encourages hallucination.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

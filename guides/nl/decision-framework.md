@@ -179,6 +179,3 @@ Het begrijpen van opstartkost helpt bepalen of een vaardigheid agressief of spaa
 Vaardigheden kosten kleine maar constante opstarkosten voor elke sessie. Als u 40 vaardigheden met 100-tokenomschrijvingen hebt, is dat 4.000 token overhead vóór het eerste gebruikersbericht. Controleer uw vaardigheidsbeschrijvingen en houd ze strak. Agenten en schuine opmerking commando's kosten niets tot expliciete gebruik.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

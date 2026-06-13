@@ -152,6 +152,3 @@ Recomendación de prueba A/B: « 25% de descuento en vestidos de verano — este
 Resultados después de ejecutar la campaña: tasa de apertura del 31% en Correo 1, tasa de clic del 8,2%, $4.100 en ingresos rastreados a la campaña. Las campañas anteriores promediaron 19% de apertura y 4,1% de clic. Análisis de Claude: la línea de asunto con encuadre de beneficio superó la versión directa por 4 puntos porcentuales en la tasa de apertura — usa encuadre de beneficio como predeterminado para campañas promocionales en adelante.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

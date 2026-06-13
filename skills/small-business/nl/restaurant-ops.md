@@ -123,6 +123,3 @@ De 3 negatief krijgen elk een specifiek, direct antwoord:
 De 9 positief krijgen elk een ander antwoord, elk weerspiegelend iets specifiek dat de recensent noemde — de tiramisu, een bepaalde serveerstster, een verjaardagsdiner. Geen herhaalt dezelfde openingsregel.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -219,6 +219,3 @@ else { $credentialStore = "$HOME/.local/share/myapp" }  # Linux
 Écrire un module PowerShell pour la gestion des ressources Azure : fonctions pour lister les ressources par balise, créer des ressources balisées, mettre à jour les balises en masse sur un groupe de ressources et supprimer les ressources obsolètes. Inclure un manifeste de module, des tests Pester pour chaque fonction publique avec les applets de commande Az simulées, la gestion des chemins multiplateforme et une intégration SecretManagement pour stocker les informations d'identification du principal du service.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

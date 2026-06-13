@@ -51,5 +51,3 @@ The command returns a research brief containing:
 - **Run before drafting:** Never draft without research. It informs hook, tone, and CTA.
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [Newsletter Writer Stack](./README.md)

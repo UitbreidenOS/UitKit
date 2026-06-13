@@ -108,6 +108,3 @@ Elk live artifact heeft een deelknop. Als u erop klikt, genereert dit een openba
 - Google Sheets-gegevensbron vereist dat de Google Drive-connector in Cowork is gemachtigd
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

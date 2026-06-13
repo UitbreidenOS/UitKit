@@ -179,6 +179,3 @@ Les équipes procurement entreprise ont questionnaires de sécurité standard (s
 Le deal est gagnable sans SOC 2 complété, mais pas sans preuve d'un programme en mouvement.
 
 ---
-
-> **Travaillez avec nous:** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

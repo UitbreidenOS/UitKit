@@ -177,7 +177,7 @@ Questions? Contact [recruiter email or HR contact]
 
 ---
 
-Built with [Claudient](https://github.com/Claudient/Claudient) · [claude.com/claude-code](https://claude.com/claude-code)
+
 ```
 
 ---
@@ -232,5 +232,3 @@ Before publishing, verify:
 *(Too vague, age-coded, biased, and unrealistic expectations.)*
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [claude.com/claude-code](https://claude.com/claude-code)

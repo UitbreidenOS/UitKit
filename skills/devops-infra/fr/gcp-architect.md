@@ -283,6 +283,3 @@ Cloud CDN + Cloud Load Balancing
 - GCP : ~$400-600/mois (Cloud Run scale à zéro + Cloud SQL + utilisation BigQuery)
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

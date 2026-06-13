@@ -144,6 +144,3 @@ Längerer Kontext = höhere Kosten pro Anfrage. Strategien zur Kostenreduzierung
 - Verwenden Sie `CLAUDE.md`, um stabilen Kontext billig vorzuladen
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen AI-Produkte und B2B-Lösungen mit Entwicklergemeinschaften.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

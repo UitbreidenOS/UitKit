@@ -139,6 +139,3 @@ Huidge aandelenkoers: $19,81 → zit dicht bij midden over alle methoden
 **Verwacht comps-universum:** 6-8 mid-market B2B SaaS-bedrijven op vergelijkbare ARR-schaal en groeiprofiel. Multiples-tabel met EV/ARR (LTM + NTM), EV/Bruto winst, NTM P/E indien van toepassing. Geïmpliceerde waarderingsbereik. Opmerking over premie welke comps verdienen gegeven 110% NRR.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -152,6 +152,3 @@ A/B-testaanbeveling: « 25% korting op zomerjurken — dit weekend alleen » ver
 Resultaten na het uitvoeren van de campagne: 31% openingsgraad op e-mail 1, 8,2% klikgraad, $4.100 in getraceerde inkomsten naar campagne. Vorige campagnes gemiddeld 19% open en 4,1% klik. Claude-analyse: de onderwerprijel met voordeel framing overtrof de directe versie met 4 procentpunten in openingsgraad — gebruik voordeel framing als standaard voor promotiecampagnes vooruit.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

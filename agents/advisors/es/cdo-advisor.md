@@ -16,6 +16,3 @@ Sonnet — Razonamiento Estratégico, Matiz Regulatorio y Análisis Build-vs-Buy
 - WebSearch (Orientación Regulatoria, Comparables de Mercado)
 
 ---
-
-> **Trabaje Con Nosotros:** Claudient es Respaldado por [Uitbreiden](https://uitbreiden.com/).
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

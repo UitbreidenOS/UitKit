@@ -28,7 +28,7 @@ Set `PUPPETEER_HEADLESS` to `false` to watch the browser as it runs.
 
 ```
 # Screenshot any page
-"Take a screenshot of https://uitbreiden.com and describe what you see"
+
 
 # Scrape structured data
 "Go to [URL] and extract all product names and prices into a JSON list"

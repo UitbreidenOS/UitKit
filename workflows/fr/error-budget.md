@@ -208,6 +208,3 @@ Ticket: LIN-2847
 **Sans ce workflow :** les ingénieurs continueraient à fusionner le travail de fonctionnalité sans savoir que 71 % du budget de fiabilité du mois a été consommé un seul après-midi.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

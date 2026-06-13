@@ -336,6 +336,3 @@ Name: [your name], [your company]
 **Erwartete Ausgabe:** Vollständige Leistungsbeschreibung mit Abschnitt 2, der auflistet: Discovery-Workshop (1 Sitzung, 90 Min.), User-Flow-Mapping (3 Flows), Wireframes (8 Screens), hochauflösende Figma-Mockups (8 Screens, Desktop + Mobil). Ausschlüsse in Abschnitt 3: Texterstellung und UX-Copy, Entwickler-Übergabedokumentation, Usability-Tests, Implementierung. Kundenverantwortlichkeiten in Abschnitt 4: Zugang zu 3 aktuellen Nutzern für einen 30-minütigen Discovery-Call, bestehende Markenrichtlinien innerhalb von 2 Werktagen. Überarbeitungsrichtlinie: 2 Runden bei Wireframes, 2 Runden bei hochauflösenden Designs. Zahlung: 3.250 $ bei Unterzeichnung, 3.250 $ bei endgültiger Figma-Lieferung. Änderungsauftrag-Rate: 150 $/Stunde.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

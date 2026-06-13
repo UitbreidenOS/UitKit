@@ -172,6 +172,3 @@ Mit Deferred Loading (`ENABLE_TOOL_SEARCH=auto:10`): Nur die 10 wahrscheinlichst
 Das Hinzufügen von `input_examples` zu den 10 Always-Loaded-Tools erhöht die Parameter-Genauigkeit von 72% auf 90% bei den Tools, die am meisten Sinn machen.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -322,6 +322,3 @@ If an exec or AE joined, send them a 3-line internal summary:
 | Expansion opportunities identified | ≥ 1 per GREEN account | - | None explored |
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -263,6 +263,3 @@ Genereer een actieplan met mijlpalen voor 30/60/90 dagen.
 **Verwachte uitvoer:** Portfoliogezondheids-dashboard met Bedrijf A als Groen (voor op plan, potentiële vervolgstrigger), Bedrijf B als Rood (gemist plan + verbrandingsprobleem = interventie nodig — specifieke acties: bruganalyse, verbrandingsreductieopties, oprichtersgesprek), Bedrijf C als Geel (enterprise-winst is positief maar CTO-vertrek is een 60-daagse klok op productcontinuiteit — boardagenda: interim CTO-plan, behoud oprichter). LP-framing voor het kwartaal: evenwichtig, leidt met Bedrijf A-winst, behandelt B en C met specifieke ondernomen acties.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — wij bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

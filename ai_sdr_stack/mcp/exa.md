@@ -46,5 +46,3 @@ Trigger-based outreach lives or dies on signal freshness. Exa finds funding roun
 - For active prospecting (15 accounts/day, 3 searches each): ~1,350/month → Basic plan recommended
 
 ---
-
-Built with [Claudient](https://github.com/Claudients/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

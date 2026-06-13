@@ -1,6 +1,6 @@
 ---
 description: Fortalecer anotaciones de tipo débiles o faltantes en todo un archivo
-argument-hint: "[file]"
+argument-hint: "[archivo]"
 ---
 Ajusta los tipos en $ARGUMENTS.
 

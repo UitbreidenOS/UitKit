@@ -321,6 +321,3 @@ Aplicar con las reglas de límites de módulo de Nx o ESLint `import/no-restrict
 - `turbo.json` — `build` depende de `^build` para que auth se construya antes que los consumidores
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

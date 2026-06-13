@@ -241,6 +241,3 @@ themselves.
 **Résumé :** 3 P0 (doit corriger), 3 P1 (recommander la correction), 1 P2 (considérer la correction). Total : 7 passages signalés sur 130 lignes.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

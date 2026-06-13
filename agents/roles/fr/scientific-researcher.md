@@ -95,6 +95,3 @@ Structured review données probantes intervention thérapeutique:
 6. Research gaps: no studies populations > 65, no head-to-head comparison second-line therapies, no long-term (> 12 month) outcome data
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

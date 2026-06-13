@@ -82,6 +82,3 @@ Pourquoi la construction a-t-elle échoué il y a 20 minutes ? Montrez-moi les j
 - Les déploiements d'aperçu (à partir de PRs) et les déploiements en production sont séparés — spécifiez l'environnement cible lors de l'exécution des opérations de variables d'environnement.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

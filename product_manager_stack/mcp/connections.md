@@ -44,5 +44,3 @@ If you don't have MCP servers, the skills degrade gracefully:
 MCP significantly improves competitive intelligence quality. Recommended for major feature decisions.
 
 ---
-
-Built with [Claudient](https://github.com/Claudients/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

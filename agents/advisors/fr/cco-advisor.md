@@ -176,6 +176,3 @@ Chaque CSM a 66 comptes. À ce volume, ils font uniquement du travail réactif �
 Probablement une combinaison de lacunes d'onboarding (vérifier: churn dans les mois 0-6) et couverture insuffisante pour un compte client qui a grandi au-delà de la capacité de 3 CSMs.
 
 ---
-
-> **Travaillez avec nous:** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits d'IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

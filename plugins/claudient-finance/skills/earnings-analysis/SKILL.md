@@ -149,6 +149,3 @@ Full-year raised: midpoint $575M vs. prior $557M = $18M raise (+3.2%)
 **Morning note lead:** "[Company] delivered a clean Q2 beat of $5M (3.6%) on the top line with 112% NRR signalling healthy expansion. Management raised full-year guidance by $18M at the midpoint — a credible raise given the Q2 beat. Maintain Buy, raising PT to $X on higher FY estimates."
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

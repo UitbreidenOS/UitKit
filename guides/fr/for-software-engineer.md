@@ -344,6 +344,3 @@ Ce sont des résultats observés auprès d'équipes d'ingénierie utilisant la s
 - [Compétence constructeur de serveur MCP](../skills/ai-engineering/mcp-server-builder.md)
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

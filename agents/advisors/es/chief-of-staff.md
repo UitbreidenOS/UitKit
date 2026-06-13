@@ -157,6 +157,3 @@ Previene relitigar preguntas resueltas. Invaluable durante revisiones de junta.
 En 6 meses, el CEO debe tener 2 horas menos de reuniones por día y ser menos un cuello de botella en decisiones interfuncionales — no porque estén menos involucrados, sino porque el sistema funciona sin ellos.
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

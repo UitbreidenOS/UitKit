@@ -213,6 +213,3 @@ DROP INDEX idx_orders_user_id;
 **Zero-Downtime-Garantie:** Jeder Schritt ist ein rückwärtskompatibles Deployment. Rollback bei jedem Schritt vor Phase 5 = Deployment wechseln. Nach Phase 5 = nur-vorwärts.
 
 ---
-
-> **Mit uns arbeiten:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen KI-Produkte und B2B-Lösungen mit Entwicklergemeinschaften.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

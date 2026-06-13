@@ -358,6 +358,3 @@ print(df.nunique().sort_values())          # Cardinality — low = likely catego
 **Expected output:** Python audit script populated for that table. SQL queries for: duplicate order_id check (primary key), price outlier check (negative prices, prices > $10K), quantity check (zero or negative), future dates in created_at, status column distinct values (flag unexpected values), referential integrity on user_id against a users table. After running: data health report template. Three dbt tests to add: unique/not_null on order_id, accepted_values on status, relationships on user_id. Commentary: if price outliers are found, that would explain elevated revenue — investigates whether the spike is real or a data issue.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

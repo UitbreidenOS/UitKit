@@ -55,6 +55,3 @@ Le langage naturel fonctionne. La condition devrait être observable et non ambi
 Claude exécute `tsc --noEmit`, lit la liste des erreurs, corrige chaque erreur, exécute à nouveau, voit les erreurs restantes, corrige celles-ci, exécute à nouveau — la boucle continue jusqu'à zéro erreurs. Puis s'arrête et rapporte : "Résolu 14 erreurs TypeScript sur 6 fichiers. `tsc --noEmit` quitte proprement."
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -321,6 +321,3 @@ Afdwingen met Nx's modulegrensregels of ESLint `import/no-restricted-paths`.
 - `turbo.json` — `build` is afhankelijk van `^build` zodat auth voor de gebruikers wordt gebouwd
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — wij bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

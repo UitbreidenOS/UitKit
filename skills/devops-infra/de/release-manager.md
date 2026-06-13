@@ -289,6 +289,3 @@ Richten Sie die empfohlene Strategie für mein Team mit Git-Befehlen und CI/CD-I
 - [ ] Rollback-Plan: können Sie die alten Endpoints wieder aktivieren, wenn Migrations-Akzeptanz zu niedrig ist?
 
 ---
-
-> **Mit uns arbeiten:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen KI-Produkte und B2B-Lösungen mit Entwicklergemeinschaften.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

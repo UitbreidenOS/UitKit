@@ -34,5 +34,3 @@ Copy the relevant sections into your project's `CLAUDE.md`.
 - Performance tests belong in CI — regression that passes code review but fails perf budget must be caught automatically
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities. [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

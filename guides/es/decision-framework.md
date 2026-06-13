@@ -179,6 +179,3 @@ Comprender el costo de inicio lo ayuda a decidir si usar una habilidad agresivam
 Las habilidades incurren en un costo de inicio pequeño pero constante para cada sesión. Si tiene 40 habilidades con descripciones de 100 tokens, eso es 4.000 tokens de sobrecarga antes del primer mensaje del usuario. Audite sus descripciones de habilidad y manténgalas apretadas. Los agentes y comandos de barra diagonal no cuesta nada hasta su uso explícito.
 
 ---
-
-> **Trabaje con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

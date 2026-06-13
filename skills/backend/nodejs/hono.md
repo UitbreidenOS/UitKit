@@ -387,6 +387,3 @@ database_id = "..."
 **Performance:** Hono on Workers cold-starts in ~1ms vs 100-300ms for a container. At Cloudflare's edge (300+ locations), your API is always within ~20ms of any user globally. Perfect for a SaaS product with international users.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

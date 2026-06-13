@@ -128,6 +128,3 @@ Lo que señala: La caída de precio del competidor A probablemente refleje presi
 Acción recomendada: Actualiza tu one-pager de ventas para agregar una comparación de tiempo de respuesta. Si un prospecto cita el nuevo precio de $49 del competidor A, usa este script: « Su plan Starter a $49 incluye [limitación X]. Nuestro plan base a $89 incluye [Y y Z] y una llamada de incorporación dedicada — la mayoría de los clientes recuperan esa diferencia de $40 en la primera semana. »
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

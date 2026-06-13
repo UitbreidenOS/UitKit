@@ -15,6 +15,3 @@ Sonnet 4.6. Vision-Capable en Cost-Effective.
 Read, WebFetch, Write
 
 ---
-
-> **Werk Met Ons:** Claudient Wordt Ondersteund door [Uitbreiden](https://uitbreiden.com/).
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

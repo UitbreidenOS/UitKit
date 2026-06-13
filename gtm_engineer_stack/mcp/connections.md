@@ -52,4 +52,3 @@ If you don't have MCP servers, the skills degrade gracefully:
 - post-call-processor: manual CRM updates only
 
 ---
-Built with [Claudient](https://github.com/Claudients/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

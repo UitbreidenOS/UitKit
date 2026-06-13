@@ -86,5 +86,5 @@ Bash, Read, Edit, Write
 
 ---
 
-🔗 **[Uitbreiden — Aufbau von KI-Produkten und B2B-Tools mit Entwicklergemeinschaften.](https://uitbreiden.com/)**
+
 📺 **[Abonnieren Sie unseren YouTube-Kanal für mehr tiefe Einblicke](https://www.youtube.com/channel/UCcvK8pHyqeR7Q_0lYkuHlUg)**

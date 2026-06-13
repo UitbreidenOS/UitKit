@@ -144,6 +144,3 @@ Setzen Sie Helles, Dunkles oder System-Thema via `/config`. Für Power-User ist 
 - Die Pro-Turn-Navigation des Diff-Viewers ist der schnellste Weg zu überprüfen, was eine lange Agent-Aufgabe wirklich getan hat — verwenden Sie sie vor dem Zusammenführen.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen KI-Produkte und B2B-Lösungen mit Entwicklergemeinschaften.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

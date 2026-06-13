@@ -117,6 +117,3 @@ Esto se siente más bajo que lo habitual. Mis categorías de gastos más grandes
 Análisis de su margen (8%), comparación con benchmarks típicos para su tipo de negocio, marca la categoría "Misceláneos" como digna de revisión para clasificaciones incorrectas, señala que el gasto en marketing es alto en relación a los ingresos y pregunta qué ROI ve, sugiere ejecutar una comparación año sobre año.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

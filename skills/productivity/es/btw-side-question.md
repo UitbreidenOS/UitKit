@@ -90,6 +90,3 @@ Si hicieras la misma pregunta como un mensaje normal, estaría:
 Para búsquedas puras sin efecto descendente, `/btw` es la herramienta correcta.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

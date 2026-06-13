@@ -117,6 +117,3 @@ Aucune clé API requise. Le navigateur s'exécute localement sur votre machine. 
 **Flux multi-étapes :** Enchaînez les outils naturellement en une seule invite. Claude séquencera `navigate → wait → type → click → screenshot` dans le bon ordre sans que vous spécifiiez chaque étape séparément.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

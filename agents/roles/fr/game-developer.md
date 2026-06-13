@@ -104,6 +104,3 @@ ECS-based movement system 10,000 entités simultanées Unity DOTS:
 5. Ajouter tracking `ISystem.OnUpdate` overhead — confirmer système déclenche pas changements structuraux (pas `EntityCommandBuffer` flushes per frame)
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

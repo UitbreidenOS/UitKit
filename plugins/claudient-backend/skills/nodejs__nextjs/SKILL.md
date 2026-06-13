@@ -221,5 +221,3 @@ export default function Error({ error, reset }: { error: Error; reset: () => voi
 - `lib/actions/post.ts` — `createPost` Server Action with Zod validation + `revalidatePath('/blog')`
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities. [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

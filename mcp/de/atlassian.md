@@ -118,6 +118,3 @@ und erstelle eine neue Confluence-Seite im Engineering-Space mit dem Titel "Rele
 **Keine Credentials committen:** Behalte `ATLASSIAN_API_TOKEN` in deiner globalen `~/.claude.json`, nicht in einer Projekt-Level `.claude/mcp.json`, die in Version Control committet werden könnte.
 
 ---
-
-> **Zusammenarbeit mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen AI-Produkte und B2B-Lösungen mit Developer-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

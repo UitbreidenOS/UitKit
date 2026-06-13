@@ -1,24 +1,24 @@
 ---
-description: Generar una actualización de standup a partir de actividad git reciente o notas libres
-argument-hint: "[context or notes]"
+description: Genera una actualización de standup a partir de la actividad reciente de git o notas libres
+argument-hint: "[contexto o notas]"
 ---
-Generar una actualización de standup concisa basada en: $ARGUMENTS
+Genera una actualización de standup concisa basada en: $ARGUMENTS
 
-Si $ARGUMENTS está vacío, inspeccionar el registro de git de las últimas 24 horas (`git log --since="24 hours ago" --oneline --author=$(git config user.email)`) y derivar ayer/hoy a partir de los commits. Si el repositorio tiene cambios preparados o sin preparar, notar qué está en progreso.
+Si $ARGUMENTS está vacío, inspecciona el git log de las últimas 24 horas (`git log --since="24 hours ago" --oneline --author=$(git config user.email)`) y deriva ayer/hoy a partir de los commits. Si el repositorio tiene cambios staged o unstaged, nota qué está en progreso.
 
-Estructurar la salida como tres secciones simples — sin encabezados, sin viñetas a menos que sea natural:
+Estructura la salida como tres secciones simples — sin encabezados, sin bullets a menos que sean naturales:
 
-Yesterday: qué se completó o se avanzó significativamente.
-Today: qué está planeado o en progreso activo.
-Blockers: cualquier cosa que bloquee el progreso. Si no hay ninguna, omitir esta línea completamente.
+Ayer: qué fue completado o avanzó significativamente.
+Hoy: qué está planeado o activamente en progreso.
+Bloqueadores: cualquier cosa que bloquee el progreso. Si no hay ninguno, omite esta línea completamente.
 
-Rules:
-- Mantener cada sección a máximo 1–3 oraciones.
-- Escribir en primera persona, tiempo pasado/presente.
-- Eliminar detalles de implementación — escribir al nivel de tarea/característica, no nombres de funciones.
-- No mencionar rutas de archivo, números de línea o SHAs de commits.
-- No agregar amabilidades, despedidas o frases relleno como "Espero que todos estén bien."
-- Si $ARGUMENTS contiene notas explícitas, preferirlas sobre el historial de git.
-- Si el historial de git es ambiguo (commits de fusión, solo tareas), hacer una pregunta aclaratoria antes de generar.
+Reglas:
+- Mantén cada sección a un máximo de 1–3 oraciones.
+- Escribe en primera persona, tiempo pasado/presente.
+- Elimina detalles de implementación — escribe al nivel de tarea/feature, no nombres de funciones.
+- No menciones rutas de archivos, números de línea o SHAs de commits.
+- No añadas cortesías, despedidas o frases de relleno como "Espero que todos estén bien".
+- Si $ARGUMENTS contiene notas explícitas, prefierelas sobre el historial de git.
+- Si el historial de git es ambiguo (merge commits, solo chores), haz una pregunta aclaratoria antes de generar.
 
-Salida solo el texto del standup. Sin preámbulo, sin envoltura "Aquí está tu standup:".
+Genera solo el texto del standup. Sin preámbulo, sin envoltorio "Aquí está tu standup:".

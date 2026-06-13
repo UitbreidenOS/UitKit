@@ -177,6 +177,3 @@ Each CSM has 66 accounts. At this volume, they're doing reactive work only — n
 Probably a combination of onboarding gaps (check: churn in months 0-6) and insufficient coverage for a customer count that's grown beyond 3 CSMs' capacity.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

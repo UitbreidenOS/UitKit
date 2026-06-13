@@ -177,6 +177,3 @@ Instellen: wanneer mislukt mijn RAG en hoe weet ik dat?
 **Verwachte nauwkeurigheid:** Hybride + reranking bereiken typisch 75-85% antwoordnauwkeurigheid op interne kennisdatabases. Puur semantisch zonder reranking: ~55-65%.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

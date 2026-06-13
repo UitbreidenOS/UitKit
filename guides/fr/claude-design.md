@@ -118,6 +118,3 @@ Chaque instruction produit une nouvelle version ; les versions précédentes son
 - Les conceptions complexes avec de nombreux composants personnalisés peuvent nécessiter un affinement de prompt important
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -1,30 +1,30 @@
 ---
-description: Analyseer testdekkingsgaten en genereer tests om deze te sluiten
-argument-hint: "[file-or-directory]"
+description: Testdekkingsgaten analyseren en tests genereren om deze op te lossen
+argument-hint: "[bestand-of-map]"
 ---
-Analyseer en verbeter testdekking voor: $ARGUMENTS
+Testdekking analyseren en verbeteren voor: $ARGUMENTS
 
-Stap 1 — Meet huidige dekking.
-Voer het dekkingshulpmiddel van het project uit (Jest --coverage, pytest --cov, go test -cover, enz.) beperkt tot $ARGUMENTS. Parseer de uitvoer en identificeer:
+Stap 1 — Huidige dekking meten.
+Voer het dekkingsprogramma van het project uit (Jest --coverage, pytest --cov, go test -cover, enz.) scoped op $ARGUMENTS. Parseer de uitvoer en identificeer:
 - Regels/takken met nul dekking
-- Functies die volledig ongetest zijn
+- Functies die helemaal niet zijn getest
 - Takken (if/else, switch, ternair) waarbij slechts één pad wordt uitgevoerd
 
-Stap 2 — Prioriteer gaten op basis van risico.
-Rangschik ongedekte code op:
+Stap 2 — Prioriteer gaten op risico.
+Classificeer ongedekte code op volgorde van:
 1. Zakelijk kritieke paden (betaling, authenticatie, gegevensmutatie)
 2. Foutafhandeling en fallback-takken
 3. Complexe voorwaardelijke logica (cyclomatische complexiteit > 3)
-4. Openbare API-oppervlak versus interne helpers
+4. Openbare API-oppervlak vs. interne hulpfuncties
 
-Stap 3 — Schrijf voor elk gat met hoge prioriteit een gerichte test.
-- Noem de test naar het exacte scenario dat het dekt ("throws AuthError when token is expired")
+Stap 3 — Schrijf voor elk belangrijk gat een gerichte test.
+- Noem de test naar het exacte scenario dat deze omvat ("throws AuthError when token is expired")
 - Houd setup minimaal — alleen wat nodig is om de ongedekte tak te bereiken
-- Bevestig het specifieke gedrag, niet alleen dat geen uitzondering is geworpen
+- Assert het specifieke gedrag, niet alleen dat er geen uitzondering werd gegooid
 
 Stap 4 — Voer dekking opnieuw uit na het toevoegen van tests en bevestig dat het gat is gesloten. Rapporteer:
-- Dekking daarvoor: X%
-- Dekking daarna: Y%
-- Resterende gaten en waarom het aanvaardbaar is deze te laten staan (bijv. dode code, platformspecifieke takken)
+- Dekking voor: X%
+- Dekking na: Y%
+- Resterende gaten en waarom het aanvaardbaar is om deze achter te laten (bijv. dode code, platformspecifieke takken)
 
-Genereer geen tests die dekkingsstatistieken opvullen zonder werkelijk gedrag te bevestigen (bijv. een functie aanroepen en `toBeTruthy()` bevestigen). Kwaliteit boven kwantiteit.
+Genereer geen tests die dekkingswaarden opblazen zonder reëel gedrag te assert (bijv. een functie aanroepen en assert `toBeTruthy()`). Kwaliteit boven kwantiteit.

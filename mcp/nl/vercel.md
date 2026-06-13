@@ -82,6 +82,3 @@ Waarom is de build 20 minuten geleden mislukt? Toon me de volledige logboeken.
 - Preview-implementaties (van PR's) en production-implementaties zijn apart — geef de doel-omgeving op bij het uitvoeren van env-var-bewerkingen.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -366,6 +366,3 @@ jobs:
 Esto garantiza la coherencia sin necesidad de una revisión de la guía de estilo para cada PR.
 
 ---
-
-> **Trabaja con nosotros:** Claudient cuenta con el respaldo de [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

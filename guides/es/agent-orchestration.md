@@ -168,7 +168,3 @@ Cada sub-agente debe tener un límite de alcance explícito.
 ---
 
 ## Trabaja con nosotros
-
-Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA con comunidades de desarrolladores y entregamos soluciones de IA B2B. Si estás diseñando sistemas multi-agente, workflows autónomos u orquestación de Claude Code de grado producción — lo hemos construido en producción y podemos ayudarte.
-
-**[uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)**

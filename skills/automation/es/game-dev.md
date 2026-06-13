@@ -255,6 +255,3 @@ Diseño de un sistema de movimiento ECS en Unity DOTS para 5,000 entidades simul
 5. Cablear un puente MonoBehaviour delgado que lea recuento de entidades ECS para el HUD y pase posición del jugador a un sistema de objetivo ECS vía `SystemAPI.SetSingleton`.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

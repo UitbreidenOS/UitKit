@@ -291,6 +291,3 @@ Impacto proyectado: [X más clientes/mes a las tasas de conversión actuales]
 - Bajas: llamar a los 2 clientes que se fueron esta semana; entender si es producto, precio o competidor
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

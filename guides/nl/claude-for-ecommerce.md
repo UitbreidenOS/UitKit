@@ -166,5 +166,3 @@ Ja, met hoog vertrouwen. Bij deze inkomstenreeks besteedt de operator meestal 15
 - Alle ecommerce-relevante vaardigheden in [skills/small-business/](../skills/small-business/)
 
 ---
-
-> **Claudient** wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — het bouwen van AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.

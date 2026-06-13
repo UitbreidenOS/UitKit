@@ -191,5 +191,3 @@ Log each forecast variance to improve model over time:
 - Sales team: Weekly actual vs. forecast tracking (not full forecast)
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient)

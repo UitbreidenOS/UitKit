@@ -58,5 +58,3 @@ Une fois le squelette en cours d'exécution :
 3. Ajouter la première fonctionnalité métier en utilisant le workflow de développement de fonctionnalité
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs. [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

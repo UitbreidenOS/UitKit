@@ -25,6 +25,3 @@ description: "SvelteKit full-stack framework: file-based routing, server en univ
 Zie SvelteKit documentatie voor complete implementatie voorbeelden en patterns.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI producten en B2B oplossingen met developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -163,6 +163,3 @@ La fijación de precios plana de $29 es la simplicidad clásica de etapa tempran
 **Impacto proyectado:** Si el 20% de los clientes existentes se actualizan a Equipo ($79) y el 5% a Empresarial ($199), los ingresos mensuales aumentan ~35% con el mismo número de clientes.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

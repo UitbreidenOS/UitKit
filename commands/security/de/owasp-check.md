@@ -1,69 +1,69 @@
 ---
-description: Führen Sie eine systematische OWASP Top 10 Überprüfung gegen die Codebase oder eine bestimmte Komponente durch
-argument-hint: "[component or file]"
+description: Führen Sie eine systematische OWASP Top 10-Überprüfung gegen die Codebasis oder eine spezifische Komponente durch
+argument-hint: "[Komponente oder Datei]"
 ---
-Führen Sie eine strukturierte OWASP Top 10 (2021) Überprüfung von `$ARGUMENTS` (Standard: gesamte Codebase) durch. Bestimmen Sie für jede Kategorie die Anwendbarkeit, lokalisieren Sie relevanten Code und melden Sie Ergebnisse mit Schweregrad und Behebungsleitlinien.
+Führen Sie eine strukturierte OWASP Top 10 (2021)-Überprüfung von `$ARGUMENTS` (Standard: gesamte Codebasis) durch. Bestimmen Sie für jede Kategorie die Anwendbarkeit, lokalisieren Sie relevanten Code und melden Sie Findings mit Schweregrad und Reparaturanleitungen.
 
-Gehen Sie jede Kategorie der Reihe nach durch:
+Gehen Sie nacheinander durch jede Kategorie:
 
-**A01 — Broken Access Control**
-- Werden Autorisierungsprüfungen konsistent auf alle Routen und Code-Pfade zur gleichen Ressource angewendet?
-- Sind IDOR-Anfälligkeiten vorhanden (Objekt-Suchen ohne Eigentumsverifizierung)?
+**A01 — Defekte Zugriffskontrolle**
+- Werden Autorisierungsprüfungen konsistent über alle Routen und Codepfade zur gleichen Ressource angewendet?
+- Sind IDOR-Anfälligkeiten vorhanden (Objektsuchen ohne Eigentümerverifizierung)?
 - Können Benutzer auf Daten anderer Benutzer zugreifen, indem sie IDs oder Parameter manipulieren?
 
-**A02 — Cryptographic Failures**
-- Werden sensible Daten (PII, Zahlungsinformationen, Anmeldeinformationen) über unverschlüsselte Kanäle übertragen?
+**A02 — Kryptografische Fehler**
+- Werden sensible Daten (PII, Zahlungsinformationen, Anmeldedaten) über unverschlüsselte Kanäle übertragen?
 - Werden schwache Algorithmen verwendet (MD5, SHA1 für Passwörter, DES/RC4 für Verschlüsselung)?
-- Werden Geheimnisse im Code, in Config-Dateien oder umgebungsbelasteten Orten gespeichert?
-- Wird die TLS-Zertifikatvalidierung irgendwo deaktiviert?
+- Werden Geheimnisse im Code, in Konfigurationsdateien oder an umgebungsexponierten Orten gespeichert?
+- Sind TLS-Zertifikatsvalidierungen irgendwo deaktiviert?
 
 **A03 — Injection**
-- SQL-, NoSQL-, OS-Befehls-, LDAP-, XPath-Injektions-Vektoren — werden Abfragen parametrisiert?
-- Wird Benutzereingabe jemals in Abfragezeichenketten oder Shell-Befehle interpoliert?
+- SQL-, NoSQL-, OS-Befehls-, LDAP-, XPath-Injection-Vektoren — sind Abfragen parametrisiert?
+- Wird Benutzereingabe jemals in Abfragezeichenfolgen oder Shell-Befehle interpoliert?
 
-**A04 — Insecure Design**
-- Sind Ratenbegrenzungen bei Auth-Endpoints fehlend (Brute-Force, Credential Stuffing)?
-- Gibt es fehlende Eingabevalidierung auf der Domain-Modell-Ebene?
-- Werden Sicherheitsanforderungen dokumentiert und getestet, oder völlig ignoriert?
+**A04 — Unsicheres Design**
+- Fehlen Ratenbegrenzungen auf Auth-Endpunkten (Brute-Force, Credential Stuffing)?
+- Gibt es einen Mangel an Eingabevalidierung auf der Domain-Model-Ebene?
+- Sind Sicherheitsanforderungen dokumentiert und getestet oder völlig fehlend?
 
-**A05 — Security Misconfiguration**
-- Sind Standardanmeldeinformationen, Ports oder Admin-Interfaces aktiviert gelassen?
-- Werden detaillierte Fehlermeldungen oder Stack-Traces an Clients offengelegt?
-- Sind unnötige Features, Endpoints oder Services aktiviert?
+**A05 — Sicherheitskonfigurationsfehler**
+- Sind Standardanmeldedaten, Ports oder Admin-Schnittstellen aktiviert?
+- Sind ausführliche Fehlermeldungen oder Stack-Traces für Clients verfügbar gemacht?
+- Sind unnötige Funktionen, Endpunkte oder Dienste aktiviert?
 - Sind HTTP-Sicherheits-Header gesetzt (CSP, HSTS, X-Frame-Options, X-Content-Type-Options)?
 
-**A06 — Vulnerable and Outdated Components**
-- Sind Abhängigkeiten auf Versionen mit bekannten CVEs gepinnt?
-- Gibt es nicht gepatchte Betriebssystem- oder Runtime-Komponenten in Dockerfile oder Deployment-Configs?
+**A06 — Anfällige und veraltete Komponenten**
+- Sind Abhängigkeiten an Versionen mit bekannten CVEs festgelegt?
+- Gibt es nicht gepatchte OS- oder Runtime-Komponenten in Dockerfile oder Deployment-Konfigurationen?
 
-**A07 — Identification and Authentication Failures**
+**A07 — Authentifizierungs- und Identifizierungsfehler**
 - Werden Passwörter mit einem starken adaptiven Hash gespeichert (bcrypt, argon2, scrypt)?
-- Sind Session-Token ausreichend zufällig und werden bei Abmeldung ungültig?
+- Sind Session-Token ausreichend zufällig und werden bei Abmeldung invalidiert?
 - Ist MFA für privilegierte Konten verfügbar?
-- Sind Account-Enumeration-Vektoren vorhanden (unterschiedliche Antworten für gültige vs. ungültige Benutzernamen)?
+- Sind Kontenaufzählungsvektoren vorhanden (unterschiedliche Antworten für gültige vs ungültige Benutzernamen)?
 
-**A08 — Software and Data Integrity Failures**
-- Sind CI/CD-Pipelines gegen bösartige Commits oder Dependency-Substitution geschützt?
-- Werden Deserialisierungsvorgänge bei nicht vertrauenswürdigen Daten ohne Typ-Validierung durchgeführt?
+**A08 — Software- und Datenintegritätsfehler**
+- Sind CI/CD-Pipelines gegen böswillige Commits oder Abhängigkeitssubstitution geschützt?
+- Werden Deserialisierungsvorgänge für nicht vertrauenswürdige Daten ohne Typvalidierung durchgeführt?
 
-**A09 — Security Logging and Monitoring Failures**
+**A09 — Fehler bei Sicherheitsprotokollierung und -überwachung**
 - Werden Authentifizierungsfehler, Zugriffskontrollverletzungen und Eingabevalidierungsfehler protokolliert?
-- Werden Logs an Orten gespeichert, wo ein Angreifer, der die App kompromittiert, sie nicht löschen kann?
-- Enthalten Log-Einträge genügend Kontext (Benutzer, IP, Zeitstempel, Aktion), um Vorfälle zu untersuchen?
+- Werden Protokolle an einem Ort gespeichert, an dem ein Angreifer, der die App kompromittiert, sie nicht löschen kann?
+- Enthalten Protokolleinträge ausreichend Kontext (Benutzer, IP, Zeitstempel, Aktion), um Vorfälle zu untersuchen?
 
 **A10 — Server-Side Request Forgery (SSRF)**
-- Ruft die Anwendung URLs auf oder macht ausgehende Anfragen basierend auf vom Benutzer bereitgestelltem Input?
-- Wird das Ziel gegen eine Allowlist von Domains/IPs validiert?
-- Können interne Metadaten-Endpoints (169.254.169.254, localhost) über SSRF erreicht werden?
+- Ruft die Anwendung URLs auf oder stellt ausgehende Anfragen auf Basis von benutzerseitig bereitgestellter Eingabe?
+- Wird das Ziel gegen eine Whitelist von Domänen/IPs validiert?
+- Können interne Metadaten-Endpunkte (169.254.169.254, localhost) über SSRF erreicht werden?
 
-**Output format**:
+**Ausgabeformat**:
 ```
-## OWASP Top 10 Review
+## OWASP Top 10-Überprüfung
 
-### [A0X] Category Name — PASS / FINDING / NOT APPLICABLE
-Finding: [file:line] description
-Severity: Critical / High / Medium / Low
-Fix: specific remediation
+### [A0X] Kategoriename — BESTANDEN / FINDING / NICHT ANWENDBAR
+Finding: [Datei:Zeile] Beschreibung
+Schweregrad: Kritisch / Hoch / Mittel / Niedrig
+Behebung: spezifische Abhilfe
 ```
 
-Fassen Sie zusammen mit einer Risikotabelle am Ende: Kategorie, Status, Findinganzahl, höchster Schweregrad.
+Fassen Sie mit einer Risikotabelle am Ende zusammen: Kategorie, Status, Finding-Anzahl, höchster Schweregrad.

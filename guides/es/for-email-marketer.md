@@ -374,6 +374,3 @@ Esta es la forma más rápida de arruinar la capacidad de entrega. Los suscripto
 - [Agente asesor CMO](../agents/advisors/cmo-advisor.md)
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

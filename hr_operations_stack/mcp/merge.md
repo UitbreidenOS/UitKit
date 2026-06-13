@@ -60,5 +60,3 @@ Get your API key at [merge.dev](https://merge.dev/). Free tier supports up to 5,
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [claudecode.ai](https://claudecode.ai/)

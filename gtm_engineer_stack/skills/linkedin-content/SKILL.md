@@ -100,5 +100,3 @@ Most teams broaden the ABM list, soften the first message, and diffuse ownership
 Link in the comments for the templates.
 
 ---
-
-Built with [Claudient](https://github.com/Claudients/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

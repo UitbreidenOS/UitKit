@@ -91,6 +91,3 @@ Configuration WorkstationBaseline {
 Concevoir une structure OU pour une entreprise de 500 personnes répartie sur trois emplacements. Créer des GPO pour verrouillage des postes de travail (verrou d'écran, désactivation du stockage USB, ligne de base Windows Defender). Écrire des scripts PowerShell pour automatiser l'intégration des utilisateurs (créer un compte AD, ajouter aux groupes, définir le gestionnaire, activer la boîte aux lettres via une session Exchange distante) et le départ (désactiver le compte, supprimer les appartenances aux groupes, déplacer vers l'OU Désactivé, révoquer les certificats, archiver la boîte aux lettres).
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

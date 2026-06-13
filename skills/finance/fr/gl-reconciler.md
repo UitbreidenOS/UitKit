@@ -289,6 +289,3 @@ Générer le modèle de rapprochement interentreprises pour ma structure d'entit
 4. Culture « correct dès la première fois » : le contrôleur examine pendant le mois, pas seulement à la clôture
 
 ---
-
-> **Travailler avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

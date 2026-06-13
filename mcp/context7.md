@@ -78,6 +78,3 @@ The pattern to make it reliable: mention Context7 and the specific feature expli
 Context7 covers 1000+ libraries. For anything not indexed, it falls back to fetching the official documentation URL. Either way, Claude is working from current source material rather than a training snapshot.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

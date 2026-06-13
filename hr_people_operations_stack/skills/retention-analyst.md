@@ -324,5 +324,3 @@ Score 8–10 = Engage stay interview immediately
 - [ ] Follow-up retention analysis (next quarter)
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [claude.com/claude-code](https://claude.com/claude-code)

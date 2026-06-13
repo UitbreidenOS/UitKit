@@ -280,6 +280,3 @@ Configura un recordatorio semanal → `/cold-outreach` → toque mensual a la es
 - [Habilidad de contacto en frío](../skills/small-business/cold-outreach.md)
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

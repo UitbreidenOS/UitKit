@@ -123,6 +123,3 @@ Las 3 negativas obtienen cada una una respuesta específica y directa:
 Las 9 positivas obtienen cada una una respuesta diferente, cada una reflejando algo específico que el crítico mencionó — el tiramisú, un mesero en particular, una cena de cumpleaños. Ninguna repite la misma línea de apertura.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

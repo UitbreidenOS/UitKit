@@ -220,6 +220,3 @@ If marketing adds 8-12 seats at your standard rate, that's $18-27K additional AR
 **Do not:** send a pricing proposal before the joint session. The session is the discovery call for the expansion.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

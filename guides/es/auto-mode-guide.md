@@ -501,5 +501,5 @@ Busca entradas `[blocked]` con la salida del clasificador adjunta. Esto te da la
 
 ---
 
-🔗 **[Uitbreiden — construyendo productos de IA y herramientas B2B con comunidades de desarrolladores.](https://uitbreiden.com/)**
+
 📺 **[Suscribirse a nuestro Canal de YouTube para más análisis profundos](https://www.youtube.com/channel/UCcvK8pHyqeR7Q_0lYkuHlUg)**

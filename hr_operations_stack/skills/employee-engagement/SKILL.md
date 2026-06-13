@@ -63,5 +63,3 @@ Not for performance improvement plans (use performance-reviewer). Not for compen
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [claudecode.ai](https://claudecode.ai/)

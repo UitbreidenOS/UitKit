@@ -366,6 +366,3 @@ jobs:
 Dies erzwingt Konsistenz, ohne bei jedem PR ein Style-Guide-Review zu benötigen.
 
 ---
-
-> **Arbeite mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

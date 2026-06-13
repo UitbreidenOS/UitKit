@@ -89,6 +89,3 @@ La compétence mène l'entretien en quatre catégories comme une conversation st
 Puis confirme : « Profil complet. Les compétences Contract Reviewer, Escalation Flagger et Redline Negotiator utiliseront désormais ce profil pour tous les examens. »
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

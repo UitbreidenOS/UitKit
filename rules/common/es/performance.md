@@ -36,5 +36,3 @@ Copia las secciones relevantes en el `CLAUDE.md` de tu proyecto.
 - Las pruebas de rendimiento pertenecen al CI — las regresiones que pasan la revisión de código pero fallan el presupuesto de rendimiento deben detectarse automáticamente
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores. [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

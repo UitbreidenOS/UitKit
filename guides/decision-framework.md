@@ -179,6 +179,3 @@ Understanding startup cost helps you decide whether to use a skill aggressively 
 Skills incur a small but constant startup cost for every session. If you have 40 skills with 100-token descriptions, that is 4,000 tokens of overhead before the first user message. Audit your skill descriptions and keep them tight. Agents and slash commands cost nothing until explicitly used.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

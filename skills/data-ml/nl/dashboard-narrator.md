@@ -207,6 +207,3 @@ Als een item faalt, herschrijf die secties.
 **Verwachte uitvoer:** Openingsoordeel ("Omzetgroei versnelt maar conversie- en retentiesignalen vereisen aandacht"). Winsten: omzetgroei sterk, WAU-trend positief. Zorgen: daling conversieratio valt samen met dinsdaglancering — nieuwe functie kan de aanmeldingsstroom verstoren; verhoogd verloop is vroeg maar een 3-maandstrend om te volgen. Aanbeveling: A/B-test de nieuwe onboarding-flow versus de vorige versie; plan verloopcohorte-analyse om te identificeren of een specifiek segment de 1,8% aanstuurt. Bewakingslijst: conversieratio en verloop voor de komende 2 weken.
 
 ---
-
-> **Werk met ons samen:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -1,34 +1,34 @@
 ---
-description: Gesundheitsprobe-Endpunkte und Sondenkonfigurationen für den aktuellen Service hinzufügen oder prüfen
-argument-hint: "[service name or file path]"
+description: Health-Check-Endpunkte und Probe-Konfigurationen für den aktuellen Service hinzufügen oder prüfen
+argument-hint: "[Service-Name oder Dateipfad]"
 ---
-Gesundheitsprobe-Abdeckung hinzufügen oder prüfen für: $ARGUMENTS
+Health-Check-Abdeckung prüfen und hinzufügen für: $ARGUMENTS
 
-Überprüfen Sie das Projekt, um das Framework, den Servertyp und vorhandene Gesundheitsprobe-Implementierungen zu identifizieren.
+Projekt inspizieren, um Framework, Server-Typ und vorhandene Health-Check-Implementierungen zu identifizieren.
 
-**Falls keine Gesundheits-Endpunkte vorhanden sind — implementieren Sie diese:**
+**Falls keine Health-Endpunkte vorhanden — implementieren:**
 
-Generieren Sie den minimalen Code zum Hinzufügen von:
-1. `GET /healthz` (Lebensfähigkeit) — gibt `200 OK` mit `{"status":"ok"}` zurück, wenn der Prozess aktiv ist; keine Abhängigkeitsprüfungen
-2. `GET /readyz` (Bereitschaft) — gibt `200 OK` nur zurück, wenn alle kritischen Abhängigkeiten (DB, Cache, nachgelagerte Dienste) erreichbar sind; gibt `503` mit einem JSON-Text zurück, der auflistet, welche Prüfungen fehlgeschlagen sind
-3. `GET /metrics` — Prometheus-kompatible Darstellung, falls das Framework dies unterstützt (andernfalls notieren Sie, was erforderlich ist)
+Minimalen Code generieren, um hinzuzufügen:
+1. `GET /healthz` (Liveness) — gibt `200 OK` mit `{"status":"ok"}` zurück, wenn der Prozess läuft; keine Abhängigkeitsprüfungen
+2. `GET /readyz` (Readiness) — gibt `200 OK` nur zurück, wenn alle kritischen Abhängigkeiten (DB, Cache, Downstream-Services) erreichbar sind; gibt `503` mit JSON-Body zurück, der auflistet, welche Prüfungen fehlgeschlagen sind
+3. `GET /metrics` — Prometheus-kompatible Exposition, falls das Framework dies unterstützt (andernfalls notieren, was erforderlich ist)
 
 Implementierungsregeln:
-- Beide Endpunkte müssen unter normaler Last in weniger als 100 ms antworten
-- `/readyz` Abhängigkeitsprüfungen müssen Timeouts haben (Standard 2 Sekunden pro Prüfung) — blockieren Sie niemals auf unbestimmte Zeit
-- Authentifizierung nicht auf `/healthz` oder `/readyz` erforderlich — Sonden müssen nicht authentifiziert sein
-- Fehler auf WARN-Ebene protokollieren, nicht ERROR — Sondenausfälle sind Operationssignale, keine Anwendungsfehler
-- Für `/readyz` DB-Prüfung: Verwenden Sie eine einfache Abfrage (`SELECT 1`), keine Schemaintrospection
+- Beide Endpunkte müssen unter normaler Last in unter 100ms antworten
+- `/readyz` Abhängigkeitsprüfungen müssen Timeouts haben (Standard 2s pro Prüfung) — niemals unendlich blockieren
+- Authentifizierung auf `/healthz` oder `/readyz` nicht erforderlich — Probes müssen unauthentifiziert sein
+- Fehler auf WARN-Stufe protokollieren, nicht ERROR — Probe-Fehler sind Betriebssignale, keine Anwendungsfehler
+- Für `/readyz` DB-Prüfung: leichte Abfrage (`SELECT 1`) verwenden, nicht Schema-Introspektion
 
-**Falls Gesundheits-Endpunkte bereits vorhanden sind — prüfen Sie diese:**
+**Falls Health-Endpunkte bereits vorhanden — prüfen:**
 
-Überprüfen Sie auf:
-- Vermischung von Lebensfähigkeit und Bereitschaft (eine Lebensfähigkeitssonde, die die Datenbank prüft, startet Pods bei DB-Ausfällen neu — falsch)
-- Fehlendes Timeout bei Abhängigkeitsprüfungen
-- Endpunkte, die 200 mit einem Fehlerkörper zurückgeben (bricht alle Sonden)
-- Sondenkonfigurationen in Kubernetes/Compose, die zu aggressiv sind (`failureThreshold: 1`) oder zu tolerant (kein `initialDelaySeconds`)
+Überprüfen auf:
+- Vermischung von Liveness und Readiness (Liveness-Probe, die DB prüft, führt zu Pod-Neustart bei DB-Ausfall — falsch)
+- Fehlende Timeouts bei Abhängigkeitsprüfungen
+- Endpunkte, die 200 mit Fehlerbody zurückgeben (bricht alle Probes)
+- Probe-Konfigurationen in Kubernetes/Compose, die zu aggressiv sind (`failureThreshold: 1`) oder zu lenient (kein `initialDelaySeconds`)
 
-**Geben Sie in allen Fällen die entsprechende Sondenkonfiguration für jedes im Projekt gefundene Bereitstellungsziel aus:**
+**In allen Fällen die entsprechende Probe-Konfiguration für jedes im Projekt gefundene Deployment-Ziel ausgeben:**
 
 Kubernetes:
 ```yaml
@@ -55,4 +55,4 @@ healthcheck:
   start_period: 10s
 ```
 
-Markieren Sie alles, was zu falsch-positiven Neustarts oder stillen Bereitschaftsfehlern führen würde.
+Kennzeichne alles, das falsch-positive Neuerstarts oder stille Readiness-Fehler verursachen würde.

@@ -139,6 +139,3 @@ Si vous avez un abonnement Max, votre pool de crédits Agent SDK est prépayé. 
 Pour les utilisateurs de clés API, la Console Anthropic (console.anthropic.com) fournit l'utilisation des jetons par jour ventilée par modèle et un graphique de dépenses pour la période de facturation.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -79,5 +79,3 @@ DECISION: Proceed to research — strong fit. Fresh Series B capital signals act
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudients/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

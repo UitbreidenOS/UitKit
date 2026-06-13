@@ -111,6 +111,3 @@ print("\n".join(signatures))
 Una pasada de inferencia. Solo las firmas extraídas (no contenidos completos de archivos) entran en contexto. Reducción de tokens: 37% en este flujo de trabajo.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

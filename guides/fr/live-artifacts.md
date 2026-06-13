@@ -108,6 +108,3 @@ Chaque artefact en direct a un bouton de partage. En cliquant dessus, une URL pu
 - La source de données Google Sheets nécessite que le connecteur Google Drive soit autorisé dans Cowork
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

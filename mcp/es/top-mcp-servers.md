@@ -1121,6 +1121,3 @@ Añadir a SaaS independiente: `playwright`, `sentry`, `linear`, `slack`, `sequen
 - Para bases de datos de producción: crea un usuario MCP dedicado de solo lectura
 
 ---
-
-> **Trabaja con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

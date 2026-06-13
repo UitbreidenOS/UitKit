@@ -20,6 +20,3 @@ description: "Remix full-stack React: file-based routing, loaders, actions, prog
 Zie Remix documentatie voor complete implementatie voorbeelden en patterns.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI producten en B2B oplossingen met developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

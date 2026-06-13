@@ -112,6 +112,3 @@ gewerkt — welke beslissingen zijn genomen en wat moet ik weten?
 **Thread-tijdstempels zijn nauwkeurig:** `reply_to_thread` vereist de exacte `ts`-waarde (timestamp) van het bovenliggende bericht, die eruitziet als `1716300000.000100`. Haal het op uit `get_channel_history`-uitvoer voordat je antwoord geeft.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

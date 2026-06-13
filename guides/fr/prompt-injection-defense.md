@@ -193,6 +193,3 @@ Pour l'injection indirecte, testez avec des documents contenant :
 - Suivre les motifs de comportement anormal (motifs de requête inusités, actions inattendues)
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -320,6 +320,3 @@ At the end of a research sprint, you should have:
 - Full report: 4 hours maximum. Use `/usability-report` to hit this. If it takes longer, the report is too long.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

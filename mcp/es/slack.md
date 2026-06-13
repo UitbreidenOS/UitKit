@@ -112,6 +112,3 @@ durante 6 horas — ¿qué decisiones se tomaron y qué necesito saber?
 **Las marcas de tiempo de hilos son precisas:** `reply_to_thread` requiere el valor exacto de `ts` (marca de tiempo) del mensaje padre, que se parece a `1716300000.000100`. Obtenlo de la salida de `get_channel_history` antes de responder.
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

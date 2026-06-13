@@ -255,6 +255,3 @@ Ontwerp ECS movement system in Unity DOTS voor 5.000 gelijktijdige entities op 6
 5. Wire thin MonoBehaviour bridge dat ECS entity count voor HUD leest en player position naar ECS targeting system passed via `SystemAPI.SetSingleton`.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

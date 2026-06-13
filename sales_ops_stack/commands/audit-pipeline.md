@@ -115,5 +115,3 @@ Pipeline: $[X]M | Weighted: $[X]M | Forecast Accuracy: [+/-X%] | Status: [Green/
 - `/plan-territory` — Optimize rep workload if imbalance identified in audit
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient)

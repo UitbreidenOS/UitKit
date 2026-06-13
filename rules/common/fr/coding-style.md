@@ -43,5 +43,3 @@ Copiez les sections pertinentes dans le `CLAUDE.md` de votre projet.
 - Grouper les imports : packages externes d'abord, puis modules internes, puis imports relatifs
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs. [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -255,6 +255,3 @@ Mettez en place une structure Terragrunt à 3 environnements (dev/staging/prod) 
 5. Le pipeline GitHub Actions promeut dev → staging → prod avec des portes d'approbation manuelles à chaque étape.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

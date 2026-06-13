@@ -285,6 +285,3 @@ Ik zal deze namens jou scoren met redelijke aannames — je moet de nummers vali
 **Waarom aangepaste webhooks laag scoort:** Hoge impact per gebruiker, maar alleen power users hebben het nodig. De 80 gebruikers die het nodig hebben, zijn waarschijnlijk luid, maar vertegenwoordigen een klein deel van uw groeihendel.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaar community's.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

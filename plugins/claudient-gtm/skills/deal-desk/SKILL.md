@@ -213,6 +213,3 @@ Approve with two conditions: (1) payment terms negotiated to net 30 or 60 (not 9
 HUMAN APPROVAL REQUIRED. Do not send revised terms without CRO signature on the deal summary.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

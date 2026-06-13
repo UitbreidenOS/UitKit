@@ -174,7 +174,3 @@ Für hochsensible Aufgaben führen Sie Claude in einer isolierten Umgebung aus:
 ---
 
 ## Arbeiten Sie mit uns
-
-Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte mit Entwickler-Communities und liefern B2B-KI-Lösungen. Wenn Sie Hilfe bei der Absicherung von Claude Code-Deployments in großem Maßstab, beim Aufbau konformer KI-Workflows oder bei der Prüfung Ihrer KI-Toolchain benötigen — wir können helfen.
-
-**[uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)**

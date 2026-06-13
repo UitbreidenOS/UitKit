@@ -954,7 +954,3 @@ El proxy agrega todas las herramientas ascendentes — Claude Code ve un servido
 ---
 
 ## Trabaja Con Nosotros
-
-Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA con comunidades de desarrolladores y entregamos soluciones B2B de IA. Si necesitas infraestructura MCP personalizada, proxies MCP multi-inquilino o implementaciones MCP remotas de grado de producción para tu equipo — construimos esto para clientes.
-
-**[uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)**

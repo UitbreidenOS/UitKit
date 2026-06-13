@@ -419,6 +419,3 @@ Custom extensions that early adopters built within the first 90 days include: cu
 The pre-built 15 workflows are the on-ramp. Claude Projects are the freeway.
 
 ---
-
-> **Claudient** is backed by [Uitbreiden](https://uitbreiden.com/) — building AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

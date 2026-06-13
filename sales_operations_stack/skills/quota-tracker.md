@@ -227,5 +227,3 @@ Standout practices:
 - **June 30:** Final quarter-end push. Deploy retention incentive or emergency pricing for at-risk deals.
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient)

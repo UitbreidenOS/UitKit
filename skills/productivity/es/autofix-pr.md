@@ -45,6 +45,3 @@ Cada fix aplicado automáticamente aparece como un commit en la cronología de P
 PR tiene 12 comentarios de revisión. 9 son: "usa `const` en lugar de `let`", "añade punto y coma faltante en línea 47", "el nombre de variable debe ser `userId` no `user_id`", "elimina importación no utilizada". Claude aplica automáticamente todos los 9, los commitea como un único commit de limpieza, y destaca los 3 comentarios arquitectónicos restantes para revisión manual: "Los siguientes 3 comentarios requieren tu entrada antes de poder aplicarlos."
 
 ---
-
-> **Trabaje con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

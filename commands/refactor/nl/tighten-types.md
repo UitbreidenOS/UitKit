@@ -1,30 +1,30 @@
 ---
-description: Versterk zwakke of ontbrekende type-annotaties in een bestand
+description: Versterk zwakke of ontbrekende typeannotaties in een bestand
 argument-hint: "[file]"
 ---
-Versterk de types in $ARGUMENTS.
+Zet de types in $ARGUMENTS strakker.
 
-1. Lees het bestand. Identificeer elke locatie waar types zwakker zijn dan ze zouden moeten zijn:
-   - `any` in TypeScript — vervang met het nauwste correcte type, union, of generic
-   - Niet-getypeerde functieparameters of retourwaarden
-   - Overly broad types (`object`, `Record<string, any>`, `dict`, `interface{}`) waar een concrete shape bekend is
-   - Optional (`T | undefined`, `T | None`) gebruikt waar de waarde altijd aanwezig is
-   - Niet-optional gebruikt waar de waarde legaal afwezig kan zijn — voeg de optional toe en handle het op call sites
+1. Lees het bestand. Identificeer elke locatie waar types zwakker zijn dan zou moeten:
+   - `any` in TypeScript — vervang met het nauwste correcte type, union, of generiek
+   - Ongetypeerde functieparameters of retourwaarden
+   - Veel te brede types (`object`, `Record<string, any>`, `dict`, `interface{}`) waar een concrete vorm bekend is
+   - Optioneel (`T | undefined`, `T | None`) gebruikt waar de waarde altijd aanwezig is
+   - Niet-optioneel gebruikt waar de waarde legitiem afwezig kan zijn — voeg het optioneel toe en verwerk het op call sites
    - Enums of union types die bare `string` of `number` literals kunnen vervangen
-   - `as` casts / type assertions die kunnen worden vervangen met proper type narrowing of guards
+   - `as` casts / type assertions die kunnen worden vervangen met juiste type narrowing of guards
 
-2. Voor elk zwak type gevonden:
-   - Leid het correcte type af van gebruik, omringende context, en bestaande documentatie
-   - Pas het nauwere type toe op de declaration site
-   - Fix eventuele downstream type errors die de versteviging blootlegt — laat niet-gebroken call sites niet staan
-   - Als versteviging een nieuwe type alias of interface vereist, definieer dit dicht bij de bovenkant van het bestand (of in een bestaand types-bestand als het project er een heeft)
+2. Voor elk zwak type dat is gevonden:
+   - Beredeneer het correcte type vanuit gebruik, omringende context, en bestaande documentatie
+   - Pas het strakker type toe op de declaratieplaats
+   - Repareer downstream type-fouten die het strakker trekken blootlegt — laat geen verbroken call sites achter
+   - Als strakker trekken een nieuw type alias of interface vereist, definieer het dicht bij de bovenkant van het bestand (of in een bestaand types-bestand als het project er een heeft)
 
-3. Wijzig het runtime-gedrag niet. Alleen type-wijzigingen.
+3. Verander niet het runtime gedrag. Alleen type-wijzigingen.
 
-4. Voeg geen types toe alleen om types toe te voegen — als het type van een lokale variabele duidelijk is van een letterlijke toewijzing en de taal het correct afleidt, laat inference achterwege.
+4. Voeg types niet zomaar toe — als het type van een lokale variabele duidelijk is van een letterlijke toewijzing en de taal zet het correct af, laat inferentie met rust.
 
-5. Als het retourtype van een functie momenteel wordt afgeleid en de afleideding is correct en stabiel, laat het achterwege. Annoteer alleen waar het afgeleide type overly broad is of waarschijnlijk zal drijven.
+5. Als het retourtype van een functie momenteel is afgeleid en de inferentie is correct en stabiel, laat het staan. Annoteer alleen waar het afgeleide type veel te breed is of waarschijnlijk afwijkt.
 
-6. Na alle wijzigingen, verifieer conceptueel dat het bestand zou doorstaan de type checker van het project (`tsc --noEmit`, `mypy`, `cargo check`, etc.). Als je niet kunt verifiëren, markeer elke wijziging die een type error kan introduceren.
+6. Na alle wijzigingen, controleer of het bestand conceptueel de type checker van het project zou passeren (`tsc --noEmit`, `mypy`, `cargo check`, enz.). Als u niet kunt verifiëren, vlag wijzigingen die een type-fout kunnen introduceren.
 
-7. Output: lijst van elk type versterkt, origineel type, nieuw type, en locatie.
+7. Output: lijst van elk type dat is strakgetrokken, origineel type, nieuw type, en locatie.

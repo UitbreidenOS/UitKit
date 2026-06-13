@@ -202,6 +202,3 @@ These disputes are not merely semantic — they go to the heart of whether [Defe
 *Attorney review required before filing. All [CITATION PLACEHOLDER] markers must be replaced with verified citations. All [Record at ___] markers require verified page/line numbers from the record.*
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

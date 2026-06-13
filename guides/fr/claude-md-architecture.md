@@ -233,6 +233,3 @@ Use the shared UserRepository from @/shared/db instead.
 **Revue trimestrielle :** lisez l'intégralité du fichier, supprimez tout ce qui est obsolète, ajoutez tout ce qui revient régulièrement dans vos sessions récentes.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

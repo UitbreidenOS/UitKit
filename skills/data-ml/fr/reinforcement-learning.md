@@ -199,6 +199,3 @@ python train.py --total-timesteps 2000000 --n-envs 8 --tensorboard-log ./tb_logs
 Endpoint d'inférence de production charge `policy.onnx` au démarrage et retourne des actions d'ordre discrètes en moins de 5ms p99.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

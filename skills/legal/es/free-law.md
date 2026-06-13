@@ -72,6 +72,3 @@ de una oración de cada conclusión.
 Claude consulta CourtListener a través de MCP, devuelve una lista de opiniones coincidentes con citas y resúmenes de conclusiones, observa qué casos tienen peticiones de certificación pendientes e incluye la advertencia obligatoria de investigación.
 
 ---
-
-> **Trabaje con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

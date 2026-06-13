@@ -1,52 +1,52 @@
 ---
-description: Générer un harnais de test pour évaluer une invite LLM ou une chaîne par rapport à un ensemble de données
-argument-hint: "[prompt file or description of the task being evaluated]"
+description: Générer un cadre de test pour évaluer un prompt ou une chaîne LLM par rapport à un ensemble de données
+argument-hint: "[fichier prompt ou description de la tâche à évaluer]"
 ---
-Vous construisez un harnais d'évaluation LLM pour la tâche décrite dans $ARGUMENTS.
+Vous construisez un cadre d'évaluation LLM pour la tâche décrite dans $ARGUMENTS.
 
-Lisez tous les chemins de fichier fournis. Si une description brute est donnée, déduisez la tâche.
+Lisez tous les chemins de fichiers fournis. Si une simple description est donnée, déduisez la tâche.
 
 **Étape 1 — Identifier les exigences d'évaluation**
 
 Déterminez :
-- Type de tâche : classification, extraction, génération, RAG, utilisation d'outils, multi-tours, ou autre
-- Ce que « correct » signifie : correspondance exacte, correspondance sémantique, score rubrique, validation de schéma structuré, ou validation humaine
+- Type de tâche : classification, extraction, génération, RAG, utilisation d'outils, multi-tour, ou autre
+- À quoi ressemble « correct » : correspondance exacte, correspondance sémantique, score de rubrique, validation de schéma structuré, ou intervention humaine
 - Modes de défaillance à détecter : hallucination, refus, violation de format, latence, dépassement de tokens
 
 **Étape 2 — Concevoir le schéma de l'ensemble de données de test**
 
-Générez un schéma JSONL pour les cas de test. Chaque enregistrement doit inclure :
+Produisez un schéma JSONL pour les cas de test. Chaque enregistrement doit inclure :
 - `id` : chaîne unique
-- `input` : le message utilisateur ou le contexte d'invite complet (incluez l'invite système si pertinent)
-- `expected` : vérité terrain ou rubrique (adaptez la forme au type de tâche)
-- `tags` : tableau de chaînes pour le filtrage (par ex. `["edge-case", "language:fr"]`)
+- `input` : le message utilisateur ou le contexte du prompt complet (incluez le prompt système si pertinent)
+- `expected` : vérité fondamentale ou rubrique (adaptez la forme au type de tâche)
+- `tags` : tableau de chaînes pour filtrer (par exemple `["edge-case", "language:fr"]`)
 
-Montrez 3–5 enregistrements d'exemple représentatifs couvrant : chemin heureux, cas limite, entrée adversariale.
+Montrez 3–5 enregistrements d'exemple représentatifs couvrant : cas nominal, cas limite, entrée adversariale.
 
-**Étape 3 — Générer le script du harnais**
+**Étape 3 — Générer le script du cadre**
 
-Écrivez un script Python autonome utilisant le SDK Anthropic (paquet `anthropic`). Exigences :
-- Charger les cas de test à partir de `evals.jsonl`
+Écrivez un script Python autonome utilisant le SDK Anthropic (package `anthropic`). Exigences :
+- Charger les cas de test depuis `evals.jsonl`
 - Appeler le modèle pour chaque cas (par défaut : `claude-sonnet-4-6`, remplaçable via `--model`)
-- Noter chaque résultat en utilisant l'évaluateur approprié :
+- Évaluer chaque résultat en utilisant l'évaluateur approprié :
   - Correspondance exacte/regex pour les sorties structurées
-  - Similitude cosinus d'intégration pour les tâches sémantiques (utilisez `sentence-transformers` si disponible, sinon ignorez)
-  - Notation rubrique LLM-as-judge pour la génération ouverte (autonome, utilisez `claude-haiku-4-5-20251001`)
-- Générer un JSONL de résultats et un tableau récapitulatif sur stdout
-- Supporter le drapeau `--sample N` pour exécuter sur N cas aléatoires
-- Utiliser `asyncio` + `AsyncAnthropic` pour une exécution parallèle avec une limite de concurrence configurable
+  - Similarité cosinus d'intégration pour les tâches sémantiques (utilisez `sentence-transformers` si disponible, sinon ignorez)
+  - Notation de rubrique par LLM-as-judge pour la génération en boucle ouverte (autonome, utilisez `claude-haiku-4-5-20251001`)
+- Produire un JSONL de résultats et un tableau récapitulatif sur stdout
+- Supporter le flag `--sample N` pour exécuter sur N cas aléatoires
+- Utiliser `asyncio` + `AsyncAnthropic` pour exécution parallèle avec une limite de concurrence configurable
 
-**Étape 4 — Snippet d'intégration CI**
+**Étape 4 — Extrait d'intégration CI**
 
 Montrez une étape GitHub Actions qui :
-- Exécute le harnais sur chaque PR
-- Échoue la vérification si le taux de réussite chute en dessous d'un seuil configurable (par défaut 90%)
-- Publie un commentaire récapitulatif avec des ventilations par étiquette
+- Exécute le cadre sur chaque PR
+- Échoue la vérification si le taux de réussite tombe en dessous d'un seuil configurable (90% par défaut)
+- Poste un commentaire récapitulatif avec ventilations par étiquette
 
 **Format de sortie :**
-1. Schéma d'ensemble de données + enregistrements d'exemple (JSONL)
-2. Harnais Python complet (`eval_harness.py`)
-3. Snippet YAML GitHub Actions
-4. Bloc d'utilisation README d'une seule ligne
+1. Schéma de l'ensemble de données + enregistrements d'exemple (JSONL)
+2. Cadre Python complet (`eval_harness.py`)
+3. Extrait YAML GitHub Actions
+4. Bloc `README` d'utilisation en une ligne
 
-Pas de commentaires d'espace réservé. Chaque fonction doit être implémentée.
+Pas de commentaires de substitution. Chaque fonction doit être implémentée.

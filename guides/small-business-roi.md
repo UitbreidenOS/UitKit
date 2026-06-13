@@ -372,6 +372,3 @@ Run through this at the end of your first 30 days to assess whether you have set
 If you score 8-10 on this checklist after 30 days, month two will be materially easier and the time savings will compound. If you score under 7, identify the items you skipped and complete them in week five before adding any new workflows.
 
 ---
-
-> **Claudient** is backed by [Uitbreiden](https://uitbreiden.com/) — building AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

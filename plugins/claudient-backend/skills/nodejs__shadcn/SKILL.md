@@ -289,6 +289,3 @@ const columns: ColumnDef<User>[] = [
 - `components/theme-toggle.tsx` — Button toggling dark/light via next-themes
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

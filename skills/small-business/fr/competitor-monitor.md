@@ -128,6 +128,3 @@ Ce qu'il signale : La baisse de prix du concurrent A reflète probablement la pr
 Action recommandée : Mettez à jour votre feuille de vente unique pour ajouter une comparaison des temps de réponse. Si un prospect cite le nouveau prix $49 du concurrent A, utilisez ce script : « Leur plan de démarrage à $49 inclut [X limitation]. Notre plan de base à $89 comprend [Y et Z] et un appel d'intégration dédié — la plupart des clients récupèrent cette différence de $40 dans la première semaine. »
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

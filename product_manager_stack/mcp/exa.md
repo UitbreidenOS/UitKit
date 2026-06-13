@@ -46,5 +46,3 @@ Product decisions must account for competitive moves happening right now. Exa fi
 - For quarterly competitive intelligence (20–30 searches per quarter): Free tier is sufficient
 
 ---
-
-Built with [Claudient](https://github.com/Claudients/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

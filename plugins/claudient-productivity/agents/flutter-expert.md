@@ -435,6 +435,3 @@ Riverpod wiring: `cameraNotifierProvider` calls `CameraChannel.capturePhoto()` i
 Platform channel: Dart calls `capturePhoto` method, iOS uses `AVCaptureSession`, Android uses `CameraX`. Both sides return the saved file path or throw a `PlatformException` on permission denial, which the notifier maps to an `AsyncError` state.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -264,6 +264,3 @@ Architectuurafwijkingen: escaleer. Dit is een signaal dat Execute geïmproviseer
 RIPER heeft overhead. De overhead betaalt zich terug op complexe werk; het betaalt zich niet terug op klein werk. De vuistregel: als u de volledige implementatie in uw hoofd kunt houden zonder dit op te schrijven, RIPER is overkill.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

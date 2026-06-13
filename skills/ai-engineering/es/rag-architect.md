@@ -177,6 +177,3 @@ Configurar: ¿cuándo falla mi RAG y cómo lo sé?
 **Precisión esperada:** Híbrido + reranking típicamente alcanzan 75-85% precisión de respuesta en bases de conocimiento internas. Solo semántico sin reranking: ~55-65%.
 
 ---
-
-> **Trabaje con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

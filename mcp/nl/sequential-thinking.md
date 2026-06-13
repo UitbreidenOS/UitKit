@@ -97,6 +97,3 @@ Geen verificatie vereist. Sequentieel denken is een lokaal proces — het draait
 **Geen vervanging voor domeinkennis:** Sequentieel denken verbetert de structuur en volledigheid van redenering. Het voegt geen informatie toe die Claude niet heeft. Als het probleem actuele externe gegevens vereist, koppel het aan websearch of retrieval-tools.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

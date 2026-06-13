@@ -227,6 +227,3 @@ Als 5% van je gebruikersbasis 1 persoon verwijst en 40% van die conversies → k
 4. Meet deelnamesnelheid wekelijks; itereer de prikkel als < 5% deelneemt
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -236,6 +236,3 @@ Your users are likely asking "does your tool work with Bun?" If your tool doesn'
 **What would change this assessment to "act now":** If Vercel, Cloudflare, or AWS announced first-class Bun support in their runtime infrastructure. That would accelerate enterprise adoption from years to months.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

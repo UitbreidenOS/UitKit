@@ -256,6 +256,3 @@ Le marché des PM à Londres est tendu, en particulier pour les ICs seniors avec
 S'ils ont une offre Amazon/Google avec des RSUs, vous ne pouvez pas rivaliser sur le cash. Concurrencez sur : la portée (ils posséderont un domaine produit complet, pas une fonctionnalité), la vitesse (ils livreront en semaines pas en trimestres), et le potentiel (les actions peuvent valoir des multiples d'un RSU coté).
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

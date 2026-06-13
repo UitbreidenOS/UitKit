@@ -541,6 +541,3 @@ Claude prend le screenshot, l'analyse, et confirme le fix ou itère.
 | États d'UI multiples | Envoyez tous les screenshots dans un tour; demandez à Claude de comparer à travers eux |
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons les produits IA et les solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

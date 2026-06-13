@@ -316,6 +316,3 @@ By the end of this lesson, students will be able to:
 **Résultat attendu :** Trois objectifs d'apprentissage utilisant des verbes de Bloom de niveau appliquer/calculer. Structure du cours : 10 minutes d'accroche (pourquoi l'économie unitaire a coulé des entreprises que vous connaissez), 20 minutes d'instruction directe sur le CAC/LTV/délai de remboursement avec les formules, 30 minutes d'atelier où chaque fondateur calcule ses propres métriques en utilisant un modèle fourni, 15 minutes de partage en binôme et de débriefing (« qu'avez-vous découvert sur votre propre activité ? »), 10 minutes de ticket de sortie (calculer un scénario donné + répondre à « qu'est-ce que cela vous dit sur la santé de l'entreprise ? »). Extension pour les fondateurs dont les chiffres semblent déjà solides : calculer une analyse de sensibilité — que se passe-t-il avec la LTV/CAC si le churn diminue de 10 % ?
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous développons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

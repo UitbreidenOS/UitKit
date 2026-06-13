@@ -144,6 +144,3 @@ Establezca tema Claro, Oscuro o Sistema a través de `/config`. Para usuarios av
 - La navegación por turno del visor de diferencia es la forma más rápida de revisar lo que una tarea de agente largo realmente hizo — úsela antes de fusionar.
 
 ---
-
-> **Trabaje con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

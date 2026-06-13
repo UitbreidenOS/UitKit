@@ -153,5 +153,3 @@ from orders
 - `models/marts/finance/schema.yml` — `unique` + `not_null` en `charge_id`, test de relación en `customer_id`
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores. ¿Construyendo pipelines de datos para IA o productos de analítica? [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

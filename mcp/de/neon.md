@@ -78,6 +78,3 @@ Lösche den feature-auth-Branch — Migration ist gemergt
 - Der Free-Tier enthält 10 Branches pro Projekt — mehr als genug für aktive Entwicklung.
 
 ---
-
-> **Zusammenarbeit mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen AI-Produkte und B2B-Lösungen mit Developer-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

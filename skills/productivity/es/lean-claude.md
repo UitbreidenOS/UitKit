@@ -170,6 +170,3 @@ Le proporciona un registro continuo de tokens de entrada/salida + costo estimado
 | Decisión de arquitectura / seguridad | Escalar a Opus — vale la pena el costo |
 
 ---
-
-> **Trabaje con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de AI y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -370,6 +370,3 @@ type Post = Database['public']['Tables']['posts']['Row']
 - `components/upload.tsx` — carga de archivos a la carpeta del usuario con recuperación de URL firmada
 
 ---
-
-> **Trabaje con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

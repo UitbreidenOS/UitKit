@@ -316,6 +316,3 @@ By the end of this lesson, students will be able to:
 **Erwartete Ausgabe:** Drei Lernziele mit Bloom'schen Verben auf Anwenden/Berechnen-Niveau. Lektionsstruktur: 10-minütiger Hook (warum Unit Economics Unternehmen zerstört hat, die Sie kennen), 20-minütiger Direktunterricht über CAC/LTV/Payback mit Formeln, 30-minütiger Workshop, in dem jeder Gründer seine eigenen Kennzahlen anhand einer Vorlage berechnet, 15-minütiger Peer-Share und Debrief („Was haben Sie über Ihr eigenes Unternehmen herausgefunden?"), 10-minütiges Exit Ticket (ein gegebenes Szenario berechnen + beantworten „Was sagt Ihnen das über die Unternehmensgesundheit?"). Erweiterung für Gründer, deren Zahlen bereits gut aussehen: Sensitivitätsanalyse berechnen — Was passiert mit LTV/CAC, wenn Churn um 10 % sinkt?
 
 ---
-
-> **Mit uns arbeiten:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

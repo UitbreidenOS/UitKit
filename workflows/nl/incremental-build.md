@@ -131,6 +131,3 @@ Faseplan (uitvoer van Fase 0):
 Gebruiker keurt plan goed. Claude voert Fase 1 uit. Gebruiker herzie sjabloon, zegt "doorgaan". Claude voert Fase 2 uit. Tijdens Fase 2 merkt Claude op dat de e-mailservice een API-sleutel nodig heeft die niet in config zit — het stopt en meldt dit in plaats van eenzijdig de configsleutel toe te voegen. Gebruiker voegt sleutel toe, zegt "doorgaan". Fase 3 voltooid. Integratiecontrole geslaagd.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — wij bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

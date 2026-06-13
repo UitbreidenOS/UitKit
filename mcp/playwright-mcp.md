@@ -117,6 +117,3 @@ No API key required. The browser runs locally on your machine. For sites that re
 **Multi-step flows:** Chain tools naturally in a single prompt. Claude will sequence `navigate → wait → type → click → screenshot` in the right order without you specifying each step separately.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

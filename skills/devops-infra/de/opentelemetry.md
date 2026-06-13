@@ -253,6 +253,3 @@ SQLAlchemyInstrumentor().instrument(engine=engine)
 - Umgebungsvariablen: `OTEL_EXPORTER_OTLP_ENDPOINT`, `HONEYCOMB_API_KEY`
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwicklergemeinschaften.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

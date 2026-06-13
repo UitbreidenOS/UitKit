@@ -234,6 +234,3 @@ After all complete, compare findings and return the most likely root cause with 
 - Opus gebruiken voor: transacties met hoog inzet, complexe architectuuranalyse — niet voor ondersteunende rollen
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

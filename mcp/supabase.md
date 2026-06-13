@@ -191,6 +191,3 @@ The service role key bypasses Row-Level Security entirely. Treat it as a root cr
 - Rotate the service role key immediately if it is ever exposed in a public repository.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

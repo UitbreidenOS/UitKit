@@ -99,6 +99,3 @@ Firmware FreeRTOS STM32 SPI sensor via DMA:
 5. Watchdog : `HAL_IWDG_Refresh` appelé dedicated watchdog task monitor tous autres tasks via heartbeat flags — si task misses heartbeat, watchdog fires reset system
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

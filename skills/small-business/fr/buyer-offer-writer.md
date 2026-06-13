@@ -200,6 +200,3 @@ Under 100 words. Professional and warm.
 **Résultat attendu :** Une lettre personnelle de 280 mots de Sarah et Tom qui s'ouvre sur un détail spécifique concernant le jardin (« les plates-bandes surélevées le long de la clôture sud »), mentionne leurs carrières comme quelque chose qui les lie à la communauté, exprime leur intention de rester et de préserver le caractère de la maison, et se termine chaleureusement. Aucune mention d'enfants, de religion ou d'origine nationale. Lettre de couverture de l'agent séparément — résume l'offre de 715 000 $, 20 % d'apport, prêt conventionnel avec Chase, couverture de l'écart d'évaluation jusqu'à 20 000 $, date de clôture flexible, et positionne l'offre comme peu risquée pour les vendeurs.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -296,6 +296,3 @@ Schrijf een bondige aanbevelingssectie (max. 150 woorden). Verwoord je standpunt
 **Verwachte uitvoer:** Een volledige deal-memo met markt (juridische tech $X0B, timing AI-verstoring), team (uitstekende domein/technische fit, ontbrekende enterprise-verkoopmanager), eenheidseconomie (vraag om LTV/CAC-verificatie), concurrentielandschap (Harvey, Ironclad, Kira als comps), risicofactoren (klantenconcentratie in pilots, regelgevend rondom AI in juridisch advies, enterprise-verkoop GTM) en een aanbevelingssectie die duidelijk instapt of passeert met heldere motivatie. Alle door oprichter aangeleverde financiële cijfers gemarkeerd [NIET-GEVERIFIEERD].
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — wij bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -302,6 +302,3 @@ Claude Code zwingt Sie dazu, einen Trigger zu recherchieren, bevor ein Entwurf e
 - [Vollständige Einwandbehandlungs-Bibliothek](../skills/gtm/sdr-objection-handler.md)
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

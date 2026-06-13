@@ -97,6 +97,3 @@ No authentication required. Sequential Thinking is a local process — it runs e
 **Not a substitute for domain knowledge:** Sequential Thinking improves the structure and completeness of reasoning. It doesn't add information Claude doesn't have. If the problem requires current external data, pair it with web search or retrieval tools.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

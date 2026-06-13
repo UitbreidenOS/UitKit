@@ -279,6 +279,3 @@ Les responsables (vos clients B2B) sont responsables de la DPIA — mais ils aur
 3. 🟡 Transparence — les utilisateurs finaux ne savent probablement pas que leur comportement est noté. Vos clients (responsables) doivent le leur dire.
 
 ---
-
-> **Travailler avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -108,6 +108,3 @@ Verwende immer Test-Mode-Keys (`sk_test_`) in Development und lokaler Konfigurat
 **Metadata-Felder sind abfragbar:** Wenn deine Anwendung strukturierte Metadata zu Kunden oder Subscriptions schreibt (z.B. `plan_tier`, `internal_user_id`), sind jene Felder in `list_customers` und `list_subscriptions` filterbar — nützlich für gezielte Abfragen.
 
 ---
-
-> **Zusammenarbeit mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen AI-Produkte und B2B-Lösungen mit Developer-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -168,5 +168,3 @@ Each session entry includes:
 5. **Keep metrics:** Trend session-to-session engagement and growth.
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [claude.com/claude-code](https://claude.com/claude-code)

@@ -125,6 +125,3 @@ Un seul token peut porter plusieurs ensembles de permissions — vous n'avez pas
 - Le module `dns` est le moyen le plus rapide de gérer les modifications DNS par programme — les modifications se propagent en quelques secondes sur les zones gérées par Cloudflare.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

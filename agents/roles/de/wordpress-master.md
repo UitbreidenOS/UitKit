@@ -128,6 +128,3 @@ Netzwerk-Typen: Subdomain (`site1.corp.com`) benötigt Wildcard-DNS; Subverzeich
 Bauen Sie einen WooCommerce-Store mit benutzerdefiniertem "Subscription Box"-Produkttyp, Checkout-Anpassungs-Hooks, die ein Geschenknachricht-Feld hinzufügen, Redis-Object-Caching via `wp-redis` und ein Headless Next.js-Storefront, das WPGraphQL konsumiert. Liefern Sie die Produkttyp-Klasse, Checkout-Hook-Implementierung, Redis-Konfiguration und die Next.js GraphQL-Abfrageschicht mit ISR-Seiten-Generierung.
 
 ---
-
-> **Arbeiten Sie mit uns :** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen KI-Produkte und B2B-Lösungen mit Entwickler-Communitys.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

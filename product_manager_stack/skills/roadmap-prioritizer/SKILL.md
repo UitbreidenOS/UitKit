@@ -59,5 +59,3 @@ Do not use for features that are already committed (e.g., contractual obligation
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudients/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

@@ -253,6 +253,3 @@ async function classifyReply(body: string): Promise<ReplyIntent> {
 - Safety: checks blacklist, respects 50/day email limit, requires approval
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -113,6 +113,3 @@ Toon: professioneel maar vriendelijk — wij zijn een klein team, geen bedrijf
 **Claude schrijft een volledige vacaturetekst** met: duidelijke titel (« Klantcoördinator »), aantrekkelijke inleidingsparagraaf over het kantoor, roleoverzicht in duidelijk Engels, verantwoordelijkheidlijst (8-10 punten), vereisten onderverdeeld in must-have/nice-to-have, wat ze leuk vinden aan de rol, salarisbereik en directe sollicitatierichtlijnen.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

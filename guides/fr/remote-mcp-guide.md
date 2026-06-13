@@ -954,7 +954,3 @@ Le proxy agrège tous les outils upstream — Claude Code voit un serveur avec d
 ---
 
 ## Travaillez avec nous
-
-Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons l'infrastructure MCP personnalisée, les proxies MCP multi-tenant, ou les déploiements MCP distants de niveau production pour votre team.
-
-**[uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)**

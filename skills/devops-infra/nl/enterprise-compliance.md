@@ -78,6 +78,3 @@ Bedrijf financiële diensten inzetten naar 50 ingenieurs:
 - Geen direct Anthropic API-toegang — al verkeer wordt gerouteerd via private Bedrock-eindpunt
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -68,6 +68,3 @@ Retournez les citations Bluebook pour chaque cas.
 Claude interroge Westlaw via le MCP TR, retourne une analyse structurée des scissions de circuits avec citations, signale les domaines de désaccord continu, et ajoute l'avertissement de recherche obligatoire.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

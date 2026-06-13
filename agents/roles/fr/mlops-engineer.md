@@ -420,6 +420,3 @@ jobs:
 5. **Module de surveillance de la dérive** (`src/monitoring.py`) avec test KS par fonctionnalité, suivi de la dérive conceptuelle et config de seuil d'alerte
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

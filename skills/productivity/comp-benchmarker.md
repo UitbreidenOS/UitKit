@@ -257,6 +257,3 @@ London PM market is tight, particularly for senior ICs with B2B SaaS experience.
 If they have an Amazon/Google offer with RSUs, you cannot match on cash. Compete on: scope (they'll own a full product area, not a feature), speed (they'll ship in weeks not quarters), and upside (equity can be worth multiples of a public RSU).
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

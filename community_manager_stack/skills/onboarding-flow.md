@@ -136,5 +136,3 @@ Start by introducing yourself in **#introductions** — tell us your biggest eng
 Looking forward to connecting.
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [claude.com/claude-code](https://claude.com/claude-code)

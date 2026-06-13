@@ -256,6 +256,3 @@ def forecast_capacity(metric_df, horizon_days=90):
 4. **Rompslomp audit:** identificeert handmatige implementatiegoedkeuring (→ automatiseren met deploy gate in CI), log-opschoning (→ S3 lifecycle-beleid), en handmatig schalen tijdens verkeerspieken (→ HPA met aangepaste metriek)
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

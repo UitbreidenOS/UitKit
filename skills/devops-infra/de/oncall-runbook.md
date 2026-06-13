@@ -304,6 +304,3 @@ Eigentümer: #platform-eng | On-Call: PagerDuty-Rotation "billing-oncall"
 ```
 
 ---
-
-> **Arbeite mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir bauen KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

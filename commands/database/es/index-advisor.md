@@ -1,6 +1,6 @@
 ---
 description: Recomienda índices para una tabla o carga de trabajo de consultas en función del esquema y patrones de acceso
-argument-hint: "[table name, query, or schema file]"
+argument-hint: "[nombre de tabla, consulta, o archivo de esquema]"
 ---
 Analiza el esquema de base de datos y patrones de acceso para: $ARGUMENTS
 

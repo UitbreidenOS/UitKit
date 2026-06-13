@@ -98,6 +98,3 @@ Hallazgos de Auditoría:
 Salida: CLAUDE.md recortado a menos de 180 líneas preservando toda orientación única y accionable. Cada eliminación se explica para que el desarrollador pueda estar en desacuerdo antes de aceptar.
 
 ---
-
-> **Trabaje con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

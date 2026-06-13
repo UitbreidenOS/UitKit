@@ -169,5 +169,3 @@ This feels directly relevant to the roadmap challenges coming up in our #product
 **Discussion:** What's your roadmap horizon? How do you balance long-term vision with quarterly execution?
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [claude.com/claude-code](https://claude.com/claude-code)

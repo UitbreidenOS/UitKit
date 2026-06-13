@@ -264,6 +264,3 @@ Generate an action plan with 30/60/90 day milestones.
 **Expected output:** Portfolio health dashboard with Company A as Green (ahead of plan, potential follow-on trigger), Company B as Red (missed plan + burn issue = intervention needed — specific actions: bridge analysis, burn reduction options, founder conversation), Company C as Yellow (enterprise win is positive but CTO departure is a 60-day clock on product continuity — board agenda: interim CTO plan, founder retention). LP framing for the quarter: balanced, leads with Company A win, addresses B and C with specific actions taken.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

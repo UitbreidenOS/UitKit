@@ -139,6 +139,3 @@ Rollback-Verfahren: [Schritte]
 Integrieren Sie einen neuen Arbeitnehmer über alle Systeme. Eingabe: Name, Abteilung, Manager, Start-Datum, Rolle, Bürplatz-Ort. Ausgabe: zerlegte Aufgaben-Liste mit Domain-Besitz, sequenziertes Runbook mit Rollback-Schritten für jede Phase, PowerShell-Skizze für AD-Kontoerstellung an `powershell-expert` übergeben, M365-Konfiguration an `m365-admin` übergeben und eine Verifizierungs-Checkliste, die der IT-Techniker am ersten Tag ausfüllt.
 
 ---
-
-> **Arbeiten Sie mit uns :** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen KI-Produkte und B2B-Lösungen mit Entwickler-Communitys.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

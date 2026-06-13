@@ -34,6 +34,3 @@ Een golden path is een opinioned, pre-geconfigureerde route door het platform. H
 [Rest of content follows same translation pattern - sections on Golden Path Templates, Backstage Setup, Platform Abstractions, Self-Service Terraform Modules, Documentation Philosophy, DORA Metrics Tracking, and Example use case]
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -292,6 +292,3 @@ Würde ein 20-minütiger Anruf Sinn ergeben, um zu sehen, ob es hier etwas gibt?
 - In 6-8 Wochen ab Beginn des aktiven Sourcings 1 einstellen
 
 ---
-
-> **Arbeite mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

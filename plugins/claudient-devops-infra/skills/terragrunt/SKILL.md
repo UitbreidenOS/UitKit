@@ -260,6 +260,3 @@ Set up a 3-environment (dev/staging/prod) Terragrunt structure for AWS VPC + ECS
 5. GitHub Actions pipeline promotes dev → staging → prod with manual approval gates at each stage.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

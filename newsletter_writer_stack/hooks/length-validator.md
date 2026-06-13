@@ -187,5 +187,3 @@ PREVIEW_MAX=80
 - **Re-run after edits:** If you trim the preview text, re-run length validator to confirm new count
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [Newsletter Writer Stack](./README.md)

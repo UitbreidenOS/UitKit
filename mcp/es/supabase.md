@@ -191,6 +191,3 @@ La clave de rol de servicio omite Row-Level Security por completo. Trátela como
 - Rote la clave de rol de servicio inmediatamente si alguna vez se expone en un repositorio público.
 
 ---
-
-> **Trabaje con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

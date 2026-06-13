@@ -201,6 +201,3 @@ Diese Streitigkeiten sind nicht bloß semantisch — sie gehen zum Herzen der Fr
 *Anwaltsüberprüfung vor Einreichung erforderlich. Alle [ZITIERPLATZHALTER]-Marker müssen durch verifizierte Zitate ersetzt werden. Alle [Akte bei ___]-Marker erfordern verifizierte Seitenzahl/Zeilennummern aus der Akte.*
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen AI-Produkte und B2B-Lösungen mit Entwicklergemeinschaften.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

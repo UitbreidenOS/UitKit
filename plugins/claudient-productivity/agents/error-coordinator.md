@@ -418,6 +418,3 @@ The first error in the trace output is where the failure originated. Everything 
 4. Deployment that introduced a regression — check deploy history for the hour before the incident
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

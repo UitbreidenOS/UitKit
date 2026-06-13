@@ -39,23 +39,23 @@ Verwende DREAD-lite-Bewertung für jeden Fund:
 **Schritt 4 — Ausgabe**
 
 ```
-## Threat Model: [Component/System]
+## Bedrohungsmodell: [Komponente/System]
 
-### System Overview
-[Data flow summary from Step 1]
+### Systemübersicht
+[Datenflusszusammenfassung aus Schritt 1]
 
-### Threats
+### Bedrohungen
 
-#### [STRIDE category] — [Threat title]
-Component: [entry point, data flow, or store]
-Description: what the attacker does and achieves
-DREAD score: D=N R=N E=N → Total=N (Severity)
-Mitigations:
-  - [current control, if any]
-  - [recommended control]
+#### [STRIDE-Kategorie] — [Bedrohungstitel]
+Komponente: [Eingangspunkt, Datenfluss oder Speicher]
+Beschreibung: Was der Angreifer tut und erreicht
+DREAD-Score: D=N R=N E=N → Gesamt=N (Schweregrad)
+Mitigationen:
+  - [vorhandene Kontrolle, falls vorhanden]
+  - [empfohlene Kontrolle]
 
-### Risk Summary Table
-| # | Threat | Severity | Mitigated? |
+### Risikozusammenfassungstabelle
+| # | Bedrohung | Schweregrad | Mitigiert? |
 ```
 
 **Schritt 5 — Priorisierte Empfehlungen**

@@ -97,6 +97,3 @@ Sin autenticación requerida. El Pensamiento Secuencial es un proceso local — 
 **No es un sustituto del conocimiento de dominio:** El Pensamiento Secuencial mejora la estructura e integridad del razonamiento. No añade información que Claude no tiene. Si el problema requiere datos externos actuales, emparéjalo con búsqueda web o herramientas de recuperación.
 
 ---
-
-> **Trabaja con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

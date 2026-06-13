@@ -175,5 +175,3 @@ Anthropic ne s'entraîne pas sur les données accédées via vos intégrations o
 - [SEO Strategy for Small Business Content](claude-small-business-seo-strategy.md)
 
 ---
-
-> **Claudient** est soutenu par [Uitbreiden](https://uitbreiden.com/) — construisant des produits IA et des solutions B2B avec les communautés de développeurs.

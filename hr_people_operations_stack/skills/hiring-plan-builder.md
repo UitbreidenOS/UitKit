@@ -177,5 +177,3 @@ Execute in order:
 - [ ] Quarterly review and reforecasting (actual attrition, hiring velocity vs. plan)
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [claude.com/claude-code](https://claude.com/claude-code)

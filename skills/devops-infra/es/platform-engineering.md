@@ -208,6 +208,3 @@ Diseñe una plantilla de ruta dorada para un nuevo microservicio de Python:
 5. Un equipo crea un nuevo servicio haciendo clic en "Crear" en Backstage, rellenando nombre y propietario — está ejecutándose en producción dentro de 30 minutos sin tocar ningún código de infraestructura.
 
 ---
-
-> **Trabaje con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

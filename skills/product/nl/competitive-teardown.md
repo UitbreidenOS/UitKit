@@ -223,6 +223,3 @@ Dit is het wat Notion structureel niet kan aanbieden, geframed als voordeel (gee
 **Verdict:** Maak u zorgen over Notion die het SMB-segment neemt dat u wilde verwerven. Maak u geen zorgen over Notion die uw bestaande enterprise- of mid-market-klanten neemt die diepte nodig hebben.
 
 ---
-
-> **Werk met ons:** Claudient wordt gesteund door [Uitbreiden](https://uitbreiden.com/) — wij bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -63,5 +63,3 @@ Status: ALL PENDING HUMAN APPROVAL
 > If developer onboarding becomes a priority later, I'm easy to find. Either way, good luck with the API launch.
 
 ---
-
-Built with [Claudient](https://github.com/Claudients/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

@@ -81,6 +81,3 @@ Organisatie-niveau-tokens (voor multi-project-orgs) werken op dezelfde manier �
 - Pipe `get_issue`-uitvoer in een code-fix-verzoek — Claude heeft de volledige context die nodig is om een gerichte patch te schrijven.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

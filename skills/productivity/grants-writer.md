@@ -246,6 +246,3 @@ The proposed research addresses a significant and growing public health challeng
 *Approximately 275 words — adjust to fit NSF's page limits.*
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

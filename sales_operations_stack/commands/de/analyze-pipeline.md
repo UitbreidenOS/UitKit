@@ -38,5 +38,3 @@ Ausgabe:
 Nächster Schritt: Gefährdete Deals überprüfen; Deal-Reviews mit betroffenen Reps planen.
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

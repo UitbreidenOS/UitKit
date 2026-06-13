@@ -158,6 +158,3 @@ Configurer : quand mon RAG échoue-t-il et comment le saurai-je ?
 **Précision attendue :** Hybride + reranking atteint généralement 75-85% d'exactitude de réponse sur les bases de connaissances internes. Sémantique pur sans reranking : ~55-65%.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

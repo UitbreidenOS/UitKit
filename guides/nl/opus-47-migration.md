@@ -218,6 +218,3 @@ Claude Code beheert de API-laag voor u. Er zijn geen API-level breaking changes 
 Wat mogelijk aanpassing vereist, is uw prompt-stijl. Opus 4.7's meer letterlijke interpretatie en meer conservatieve tool-gebruik kunnen complexe multi-stap sessies beïnvloeden. Als Claude Code-sessies minder autonoom worden na de model-update, voegt u expliciete instructies toe aan uw CLAUDE.md: geef aan welke tools proactief moeten worden gebruikt, definieer wat "grondige" betekent voor uw codebase, en verwijder alle ambigue staande instructies die erop vertrouwden dat het model intentie zou afleiden.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

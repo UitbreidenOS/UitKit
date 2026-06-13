@@ -38,5 +38,3 @@ Ausgabe:
 Nächster Schritt: Besprechen Sie den Neuausrichtungsplan mit dem VP Vertrieb; Implementierung Woche vom {date}.
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

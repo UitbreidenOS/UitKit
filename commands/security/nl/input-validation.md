@@ -1,55 +1,55 @@
 ---
-description: Controleer inputvalidatie en sanitatie over alle vertrouwensgrenzen
-argument-hint: "[file, route, or module]"
+description: Controleer inputvalidatie en sanitisatie over alle vertrouwensgrenzen
+argument-hint: "[bestand, route, of module]"
 ---
-Controleer inputvalidatie en sanitatie in `$ARGUMENTS` (standaard: alle request handlers en data-invoerpunten) op injectievulnerabiliteiten, type-verwarring en ontbrekende grenshandhaving.
+Controleer inputvalidatie en sanitisatie in `$ARGUMENTS` (standaard: alle requesthandlers en gegevensinvoerpunten) op injectiekwetsbaarheden, typeverwarring en ontbrekende grenzenhandhaving.
 
-**1. Plaats alle vertrouwensgrenzen**
+**1. Vind alle vertrouwensgrenzen**
 
-Vind elke plaats waar externe gegevens in de toepassing binnenkomen:
-- HTTP request handlers (body, query params, path params, headers, cookies)
-- Bestand uploads en multipart form data
-- WebSocket message handlers
-- Background job payloads (queues, cron inputs)
-- Externe API-reacties die als vertrouwd worden behandeld
-- Omgevingsvariabelen die in code logica worden gebruikt
+Vind elke plaats waar externe gegevens in de applicatie binnenkomen:
+- HTTP-requesthandlers (body, queryparameters, padparameters, headers, cookies)
+- Bestandsuploads en multipart-formuliergegevens
+- WebSocket-messagehandlers
+- Achtergrondtaakpayloads (wachtrijen, cron-invoer)
+- Externe API-antwoorden behandeld als vertrouwd
+- Omgevingsvariabelen gebruikt in codielogica
 
-**2. SQL injection**
+**2. SQL-injectie**
 
-- Vind alle database queries. Zijn ze geparametriseerd/prepared statements, of string-geconcateneerd?
-- Controleer ORM-gebruik — zijn er raw query escape hatches (`.raw()`, `query()`, `execute()`) met niet-gesaniteerde input?
-- Zoek naar second-order injection: gebruikersinvoer opgeslagen in DB en later gebruikt in een raw query.
+- Vind alle databasequery's. Zijn ze geparametriseerd/voorbereide instructies, of met tekenreeks samengevoegd?
+- Controleer ORM-gebruik — zijn er raw query escape hatches (`.raw()`, `query()`, `execute()`) met ongereinigde invoer?
+- Kijk naar second-order injectie: gebruikersinvoer opgeslagen in DB en later gebruikt in een raw query.
 
-**3. Command injection**
+**3. Commando-injectie**
 
-- Vind alle uses van `exec`, `spawn`, `system`, `popen`, `subprocess`, `child_process`, `os.system` en equivalenten.
-- Wordt gebruiker-geleverde input geïnterpoleerd in shell commando's? Zelfs met escaping, geef de voorkeur aan argument arrays boven shell strings.
+- Vind alle toepassingen van `exec`, `spawn`, `system`, `popen`, `subprocess`, `child_process`, `os.system` en equivalenten.
+- Is door gebruiker geleverde invoer geïnterpoleerd in shell-commando's? Zelfs met escaping, de voorkeur geven aan argumentarrays boven shelltekenreeksen.
 
-**4. Template injection (SSTI)**
+**4. Sjabloon-injectie (SSTI)**
 
-- Identificeer server-side template engines in gebruik (Jinja2, Twig, Handlebars, Pebble, Velocity).
-- Worden gebruiker-controlled data weergegeven in template expressions (`{{ }}`, `<%= %>`)?
+- Identificeer server-side sjabloonengines in gebruik (Jinja2, Twig, Handlebars, Pebble, Velocity).
+- Worden door gebruiker beheerde gegevens weergegeven binnen sjabloonexpressies (`{{ }}`, `<%= %>`)?
 
-**5. Path traversal**
+**5. Padverstuiving**
 
-- Vind alle bestand lees-/schrijfbewerkingen met gebruiker-geleverde bestandsnamen of paden.
-- Wordt het opgeloste pad gevalideerd tegen een toegestane basisdirectory (bijv. `os.path.abspath` + prefix check)?
+- Vind alle bestandslees-/schrijfbewerkingen met door gebruiker geleverde bestandsnamen of paden.
+- Wordt het opgeloste pad gevalideerd tegen een toegestane basismap (bijv. `os.path.abspath` + prefixcontrole)?
 
-**6. Type en schema validatie**
+**6. Type- en schemavalidatie**
 
-- Wordt elk inkomend object gevalideerd tegen een strikte schema voordat het wordt gebruikt?
-- Zijn numerieke invoeren grenzen-gecontroleerd? Worden enums gevalideerd tegen een allowlist?
-- Is er prototype pollution risico (Node.js `Object.assign`, `merge` met niet-vertrouwde input)?
+- Wordt elk binnenkomend object gevalideerd tegen een strikt schema vóór gebruik?
+- Worden numerieke invoeren grenzen gecontroleerd? Worden enums gevalideerd tegen een allowlist?
+- Is er prototypepollutierisico (Node.js `Object.assign`, `merge` met onvertrouwde invoer)?
 
-**7. Output**
+**7. Uitvoer**
 
 Voor elke bevinding:
 ```
-[SEVERITY] [file:line] — vulnerability type
-Input source: where the untrusted data originates
-Sink: where it's used unsafely
-PoC: minimal payload or request that demonstrates the issue
-Fix: specific remediation (parameterize, allowlist, validate schema, etc.)
+[ERNST] [bestand:regel] — kwetsbaarheidstype
+Invoerbron: waar de onvertrouwde gegevens vandaan komen
+Sink: waar het onveilig wordt gebruikt
+PoC: minimale payload of request die het probleem aantoont
+Fix: specifieke remedie (parametriseren, allowlist, schema valideren, enz.)
 ```
 
-Probeer bevindingen niet uit te buiten — beschrijf alleen de aanvalsvector en oplossing.
+Probeer bevindingen niet uit te buiten — beschrijf alleen de aanvalsvector en fix.

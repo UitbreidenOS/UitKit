@@ -247,6 +247,3 @@ Stage 2 audit (implementation check, ~3-5 days): auditor tests whether controls 
 - Internal time: CISO/IT lead approximately 30% time for 6 months
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

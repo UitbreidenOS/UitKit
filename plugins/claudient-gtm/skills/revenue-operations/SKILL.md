@@ -243,6 +243,3 @@ Your existing base grows revenue without any new sales. At $3M ARR with 104% NRR
 Before adding any sales headcount: hire 1 CS lead focused entirely on churn reduction. One CSM preventing 3 churns/quarter pays back in 2 months vs. 28 months for a new AE.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

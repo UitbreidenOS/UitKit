@@ -90,6 +90,3 @@ Systeemgebruikertokens verlopen niet op een 60-daagse cyclus zoals gebruikerstok
 - Om overuitgaven tijdens testen te voorkomen, stel je `status=PAUSED` in bij het maken van campagnes via MCP — schakel ze handmatig in na beoordeling van de setup.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

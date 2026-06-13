@@ -92,6 +92,3 @@ Gebruik **macro-F1** voor imbalanced datasets (meeste NLP classification tasks).
 Prefer XLM-R (`xlm-roberta-base` or `xlm-roberta-large`) over mBERT voor meeste multilingual taken. XLM-R was trained op meer data, gebruikt SentencePiece BPE.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

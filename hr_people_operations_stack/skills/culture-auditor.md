@@ -407,5 +407,3 @@ Measure on 1–5 scale (strongly disagree to strongly agree):
 - Overall eNPS trend?
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [claude.com/claude-code](https://claude.com/claude-code)

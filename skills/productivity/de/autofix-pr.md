@@ -45,6 +45,3 @@ Jeder automatisch angewendete Fix erscheint als Commit in der PR-Timeline mit ei
 PR hat 12 Review-Kommentare. 9 sind: "verwende `const` statt `let`", "füge fehlende Semikolons auf Zeile 47 hinzu", "Variablenname sollte `userId` sein, nicht `user_id`", "entferne ungenutzte Importe". Claude wendet automatisch alle 9 an, committed sie als einen einzigen Aufräum-Commit, und zeigt die verbleibenden 3 architektonischen Kommentare zur manuellen Überprüfung: "Die folgenden 3 Kommentare erfordern deine Eingabe, bevor ich sie anwenden kann."
 
 ---
-
-> **Arbeiten Sie mit uns :** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwicklergemeinschaften.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

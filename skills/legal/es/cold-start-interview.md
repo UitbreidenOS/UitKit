@@ -89,6 +89,3 @@ La habilidad realiza la entrevista de cuatro categorías como una conversación 
 Luego confirma : « Perfil completo. Las habilidades de Contract Reviewer, Escalation Flagger y Redline Negotiator ahora usarán este perfil para todas las revisiones. »
 
 ---
-
-> **Trabaje con nosotros :** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

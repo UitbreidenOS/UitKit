@@ -238,5 +238,3 @@ Save as `enablement/playbook-[segment].md`
 - **Rep Productivity:** Deals closed per rep monthly (compare before/after enablement)
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient)

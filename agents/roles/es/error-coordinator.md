@@ -418,6 +418,3 @@ El primer error en la salida de trace es donde el fallo originó. Todo después 
 4. Despliegue que introdujo una regresión — verifica historial de despliegue por la hora antes del incidente
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

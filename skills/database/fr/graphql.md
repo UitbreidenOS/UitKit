@@ -177,5 +177,3 @@ const resolvers = {
 - Vérification d'auth : seuls les utilisateurs authentifiés peuvent voir leurs propres commandes
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs. Vous construisez des APIs GraphQL ou des couches de données alimentées par l'IA ? [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

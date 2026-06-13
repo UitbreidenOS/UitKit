@@ -196,6 +196,3 @@ Onboarding-Redesign (3w) dritte — strategischste Aktivierungsverbesserung.
 Bulk Export — auf Q4 verschieben, wenn nicht Vertrieb über dies verliert.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir bauen KI-Produkte und B2B-Lösungen mit Entwicklergemeinschaften.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

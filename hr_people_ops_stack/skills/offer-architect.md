@@ -231,5 +231,3 @@ This offer is valid for 5 business days (through June 20, 2026). Please confirm 
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

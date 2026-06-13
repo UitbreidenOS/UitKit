@@ -170,6 +170,3 @@ Le point de terminaison API `POST /api/reports/generate` prend 2s p99, la cible 
 6. Découverte bonus : EXPLAIN ANALYZE révèle un index manquant sur `orders.userId` — ajouter l'index, p99 baisse à 80ms
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

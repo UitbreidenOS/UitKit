@@ -232,6 +232,3 @@ $80K ARR avec une croissance MoM de 15% nous met à $600K ARR en 14 mois organiq
 « Nous levons $2M pour embaucher 2 ingénieurs et notre premier AE. L'ingénierie nous permet de couvrir le flux complet d'examen des contrats — pas seulement les NDA. L'AE prend ce que nous avons prouvé avec les partenaires de conception et le transforme en mouvement répétable. Nous atteignons $600K ARR en 18 mois, ce qui est le seuil Série A pour cette catégorie. »
 
 ---
-
-> **Travailler avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

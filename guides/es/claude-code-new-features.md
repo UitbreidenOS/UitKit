@@ -410,6 +410,3 @@ A partir de v2.1.146, `/simplify` fue renombrado a `/code-review`. El nombre ant
 Revisa diffs actuales para errores de compilación, errores lógicos, vulnerabilidades de seguridad — no estilos o formato.
 
 ---
-
-> **Trabaje con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

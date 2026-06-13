@@ -340,6 +340,3 @@ def predict(req: PredictRequest):
 **Expected results:** 82–87% F1 macro on the held-out test set. ONNX INT8 latency: ~12ms vs ~45ms for PyTorch on CPU.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

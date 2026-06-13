@@ -279,6 +279,3 @@ Los responsables (sus clientes B2B) son responsables de la EIPD — pero necesit
 3. 🟡 Transparencia — los usuarios finales probablemente no saben que su comportamiento está siendo puntuado. Sus clientes (responsables) deben decírselo.
 
 ---
-
-> **Trabajar con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

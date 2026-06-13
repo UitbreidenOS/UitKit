@@ -191,6 +191,3 @@ Fase 5 — Generación de informes (Días 13-14):
 **Puntos de estrangulamiento de mayor valor para probar:** autenticación de aplicación web externa, segmentación de red interna entre DMZ y sistemas de pago, capacidad de detección para dumping de credenciales.
 
 ---
-
-> **Trabaje con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) – construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -124,6 +124,3 @@ Genere una llamada de herramienta de Agente para una subtarea limitada. El subag
 - Cuando el hint tendría que ser tan detallado que escribirlo toma más tiempo que informar una nueva sesión
 
 ---
-
-> **Trabaje con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

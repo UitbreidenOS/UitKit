@@ -325,6 +325,3 @@ Claude verifica la claridad y los problemas de tono, pero tú conoces a tu ejecu
 - [Habilidad constructor de presentaciones para el consejo](../skills/productivity/board-deck-builder.md)
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

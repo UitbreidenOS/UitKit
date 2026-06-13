@@ -124,6 +124,3 @@ Bij zoeken altijd noteer: bron, datum, methodologie (onderzoek vs model-schattin
 Dimensioneer markt voor B2B expense-management-SaaS gericht op US-bedrijven met 10-500 werknemers. Produceer TAM met beide top-down (totale KMU-software-uitgaven, gesneden naar expense-management-categorie) en bottom-up (adresseerbare bedrijfsaantal × geschatte ACV), SAM gefilterd op Engelssprekende markten met juist bedrijfsprofiel en SOM met 3-jaar realistisch capture-percentage gebouwd uit verkoopscapaciteit-aannames. Toon alle bronnen en aannames expliciet.
 
 ---
-
-> **Werk met ons mee:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

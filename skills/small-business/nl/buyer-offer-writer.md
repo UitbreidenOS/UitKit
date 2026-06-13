@@ -200,6 +200,3 @@ Under 100 words. Professional and warm.
 **Verwachte uitvoer:** Een persoonlijke brief van 280 woorden van Sarah en Tom die begint met een specifiek detail over de tuin ("de verhoogde bedden langs het zuidelijke hek"), hun carriere vermeldt als iets dat hen aan de gemeenschap bindt, de intentie uitdrukt om te blijven en het karakter van de woning te behouden, en afsluit met warmte. Geen vermelding van kinderen, religie of nationale herkomst. Begeleidende brief voor de makelaar afzonderlijk — samenvattend het bod van €715K, 20% aanbetaling, conventioneel bij Chase, dekking van taxatietekort tot €20K, flexibele sluitingsdatum, en het bod positionerend als laagrisico voor de verkopers.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — wij bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

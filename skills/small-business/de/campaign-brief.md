@@ -125,6 +125,3 @@ Ziel: 10 neue Buchungen in 3 Wochen.
 **Erfolgskennzahlen:** 10 Buchungen = $X Umsatz zu Ihrem Durchschnittspreis. Verfolgen, von welchem Kanal jede Buchung kommt.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

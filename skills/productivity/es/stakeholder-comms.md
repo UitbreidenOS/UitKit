@@ -285,6 +285,3 @@ Draft talking points for managers who will receive questions from their teams.
 **Resultado esperado:** Tres documentos. Correo para todos los empleados: comienza con "estamos cerrando la oficina de Londres" en la primera oración, explica la justificación (eficiencia de costes, el equipo ya trabaja en remoto con éxito), indica la fecha de efecto, describe qué significa esto para los 12 afectados (paquete de baja voluntaria o acuerdos de trabajo en remoto formal) y qué cambia para todos los demás (nada — el negocio continúa con normalidad). Puntos de conversación para el gerente de Londres: qué decir si los miembros del equipo preguntan "¿por qué ahora?", cómo manejar las reacciones emocionales, cómo funciona el proceso de baja voluntaria. Nota directa a los 12 afectados: tono más cálido, específico sobre sus opciones, específico sobre el paquete de apoyo, expresa agradecimiento genuino, menciona el contacto de recursos humanos para preguntas.
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -291,6 +291,3 @@ do not affect the working tree.
 **`description` is het belangrijkste veld na `name`.** De router gebruikt het om te bepalen wanneer hier moet worden gedelegeerd. Een vage of generieke beschrijving veroorzaakt routeringsfouten — ofwel wordt de agent geactiveerd wanneer hij dat niet zou moeten, ofwel wordt hij nooit geselecteerd. Schrijf de beschrijving als een expliciete triggervoorwaarde, niet als een capaciteitssamenvatting.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaargemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

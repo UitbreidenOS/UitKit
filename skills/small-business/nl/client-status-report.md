@@ -268,6 +268,3 @@ Not formal. Not a form letter. Should sound like a professional colleague who re
 **Verwachte uitvoer:** Een professioneel statusrapport-e-mail met de kop "Week 3 — Groen", drie voltooide items specifiek opgesomd (zoekwoordenwerkboek, merkstembrandworkshop, concept redactionele kalender Q3), één expliciete blokkade (productroadmap), één benodigde beslissing (kalendergoedkeuring voor woensdag), en vooruitblik op volgende week (briefschrijven voor de eerste 4 contentstukken, mits goedkeuring ontvangen). E-mailomhulsel: "Week 3 is klaar — alles groen..." in minder dan 4 zinnen, met het rapport bijgevoegd of inline.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — wij bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

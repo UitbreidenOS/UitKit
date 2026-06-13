@@ -104,6 +104,3 @@ Plateforme : LinkedIn + Instagram.
 - Script 60 secondes : « Si vous êtes propriétaire d'une entreprise locale et que vous perdez des clients, voici ce qui se passe probablement... »
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

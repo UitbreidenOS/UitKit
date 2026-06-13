@@ -82,6 +82,3 @@ Lista todos los dominios personalizados conectados al proyecto storefront
 - Los despliegues de vista previa (de PRs) y los despliegues de producción son separados — especifica el entorno objetivo cuando ejecutes operaciones de env var.
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -104,6 +104,3 @@ Debido a que CLAUDE.md hace referencia a `@LESSONS.md`, Claude lee el registro d
 - **Escribe inmediatamente.** Las lecciones escritas en el momento de la corrección son más precisas que los resúmenes retrospectivos.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

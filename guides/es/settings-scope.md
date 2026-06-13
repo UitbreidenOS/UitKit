@@ -121,6 +121,3 @@ Un alcance de proyecto bien estructurado se ve así:
 **Asumir que las habilidades suben en el árbol.** No lo hacen. Los archivos CLAUDE.md suben; las habilidades no. Una habilidad en `/workspace/project/.claude/skills/` no es visible cuando Claude trabaja en `/workspace/project/packages/api/`. Cada subpaquete necesita su propio `.claude/skills/` para habilidades específicas del paquete.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

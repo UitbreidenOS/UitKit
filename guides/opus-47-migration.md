@@ -218,6 +218,3 @@ Claude Code manages the API layer for you. There are no API-level breaking chang
 What may require adjustment is your prompting style. Opus 4.7's more literal interpretation and more conservative tool use can affect complex multi-step sessions. If Claude Code sessions become less autonomous after the model update, add explicit instructions to your CLAUDE.md: specify which tools should be used proactively, define what "thorough" means for your codebase, and remove any ambiguous standing instructions that relied on the model inferring intent.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

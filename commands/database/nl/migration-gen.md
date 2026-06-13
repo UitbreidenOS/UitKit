@@ -1,23 +1,23 @@
 ---
-description: Genereer een databasemigratiebestand op basis van een schemaverschilbeschrijving of diff
-argument-hint: "[description of schema change]"
+description: Genereer een databasemigratie-bestand op basis van een schemaveranderingsbeschrijving of diff
+argument-hint: "[beschrijving van schemaverandering]"
 ---
-Je genereert een databasemigratie. De gebruiker heeft het volgende verstrekt: $ARGUMENTS
+Je genereert een databasemigratie. De gebruiker heeft het volgende gegeven: $ARGUMENTS
 
-Bepaal het doelmigratieframework uit het project (Alembic, Flyway, Liquibase, Django migrations, Rails ActiveRecord, Prisma, Knex, TypeORM, Sequelize, of raw SQL). Controleer indien nodig config-bestanden of bestaande migratiebestanden in de repo voordat u vragen stelt.
+Bepaal het doelmigratieframework op basis van het project (Alembic, Flyway, Liquibase, Django migrations, Rails ActiveRecord, Prisma, Knex, TypeORM, Sequelize of ruwe SQL). Controleer, als het onduidelijk is, eerst configuratiebestanden of bestaande migratiebestanden in de repository voordat je iets vraagt.
 
 Stappen:
-1. Onderzoek bestaande migraties om de naamgevingsconventie, tijdstempelindeling en bestandsstructuur te bepalen.
-2. Bepaal de huidige schemastatus aan de hand van bestaande migraties of schemabestanden.
+1. Bekijk bestaande migraties om de naamgevingsconventie, timestampindeling en bestandsstructuur te bepalen.
+2. Identificeer de huidige schemastatus uit bestaande migraties of schemabestanden.
 3. Genereer de migratie met:
-   - Een `up`-pad (voorwaartse migratie) dat waar mogelijk idempotent is (gebruik IF NOT EXISTS, IF EXISTS guards).
-   - Een `down`-pad (terugkeren) dat het `up`-pad volledig omkeert.
+   - Een `up`-pad (verdergaande migratie) dat waar mogelijk idempotent is (gebruik IF NOT EXISTS, IF EXISTS guards).
+   - Een `down`-pad (terugdraaien) dat het `up`-pad volledig omkeert.
    - Expliciete transactiegrenzen als het framework transactionele DDL ondersteunt.
-   - Kolombeperkingen (NOT NULL, DEFAULT, CHECK) die overeenkomen met wat is aangevraagd.
-   - Index-aanmaak naast eventuele nieuwe foreign keys.
-4. Als de wijziging het hernoemen van een kolom of tabel omvat, genereer een tweetrapts migratie: add new, backfill, drop old — tenzij de gebruiker expliciet een eenstaps hernoaming aanvraagt.
-5. Markeer eventuele destructieve bewerkingen (DROP COLUMN, DROP TABLE, type narrowing) met een opmerking blok dat begint met `-- DESTRUCTIVE:` en beveel een overeenkomende implementatiestrategie aan (feature flag, dual-write, enzovoort).
-6. Geef de inhoud van het migratiebestand uit met de juiste bestandsnaam volgens bestaande conventies.
-7. Markeer voor grote tabellen bewerkingen die ACCESS EXCLUSIVE locks vereisen (ALTER TABLE op PostgreSQL) en stel CONCURRENTLY alternatieven voor waar beschikbaar.
+   - Kolomconstraints (NOT NULL, DEFAULT, CHECK) die aansluiten bij wat werd aangevraagd.
+   - Indexcreatie naast eventuele nieuwe buitenlandse sleutels.
+4. Als de wijziging het hernoemen van een kolom of tabel betreft, genereer een tweeledige migratie: voeg toe, vul opnieuw in, verwijder oud — tenzij de gebruiker expliciet een eenstapsmigratiehernoemen aanvraagt.
+5. Markeer alle destructieve bewerkingen (DROP COLUMN, DROP TABLE, typeversmalling) met een commentaarblok dat begint met `-- DESTRUCTIVE:` en beveel een corresponderende implementatiestrategie aan (feature flag, dual-write, enz.).
+6. Voer de migratiebestandscontent uit met de juiste bestandsnaam volgens bestaande conventies.
+7. Voor grote tabellen, markeer bewerkingen die ACCESS EXCLUSIVE-sloten vereisen (ALTER TABLE op PostgreSQL) en stel CONCURRENTLY-alternatieven voor waar beschikbaar.
 
-Genereer geen ORM-modelwijzigingen tenzij hierom wordt gevraagd. Focus uitsluitend op het migratieproject.
+Genereer geen ORM-modelwijzigingen tenzij er om gevraagd wordt. Concentreer je uitsluitend op het migratieartifact.

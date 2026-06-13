@@ -124,6 +124,3 @@ Generieren Sie einen Agent-Tool-Aufruf für eine begrenzte Unteraufgabe. Der Sub
 - Wenn der Hint so detailliert sein müsste, dass das Schreiben länger dauert als das Informieren einer neuen Sitzung
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -139,6 +139,3 @@ Rollback-procedure: [stappen]
 Integreer een nieuwe werknemer over alle systemen. Invoer: naam, afdeling, manager, startdatum, rol, kantoorlocatie. Uitvoer: ontleerde taaklijst met domain-eigendom, gesequentialiseerd runbook met rollback-stappen voor elke fase, PowerShell-schets voor AD-accountcreatie overgedragen aan `powershell-expert`, M365-configuratie overgedragen aan `m365-admin` en verificatie-checklist die IT-technicus op dag één invult.
 
 ---
-
-> **Werk met ons mee:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

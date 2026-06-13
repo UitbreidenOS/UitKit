@@ -302,6 +302,3 @@ Claude Code forces you to research a trigger before drafting. No trigger = no em
 - [Objection handling full library](../skills/gtm/sdr-objection-handler.md)
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

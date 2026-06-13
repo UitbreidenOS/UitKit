@@ -261,6 +261,3 @@ If bug volume is rising, velocity drop is caused by unplanned work, not planning
 Add a "Cycle Time" gadget to your board. If cycle time is increasing (stories take longer to complete), the problem is WIP limit — too many things in progress at once.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

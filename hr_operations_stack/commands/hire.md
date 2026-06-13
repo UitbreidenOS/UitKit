@@ -75,5 +75,3 @@ Ready to post? Confirm:
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [claudecode.ai](https://claudecode.ai/)

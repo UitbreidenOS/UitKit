@@ -1,42 +1,42 @@
 ---
-description: Genereer een minimale reproduceerbare testcase op basis van een bugbeschrijving of falende test
-argument-hint: "[bug description or test name]"
+description: Een minimale reproduceerbare zaak genereren op basis van een bugbeschrijving of falende test
+argument-hint: "[bugbeschrijving of testnaam]"
 ---
-Given: $ARGUMENTS
+Gegeven: $ARGUMENTS
 
-Je taak is het produceren van een minimale, zelfstandige reproduceerbare testcase voor deze bug.
+Je taak is om een minimale, zelfstandige reproduceerbare zaak voor deze bug te produceren.
 
 Stappen:
 
-1. Identificeer het foutoppervlak — is dit een unit-, integratie- of runtime-fout? Welke laag is hier eigenaar van?
+1. Identificeer het faaloppervlak — is dit een unit-, integratie- of runtime-fout? Welke laag is eigenaar ervan?
 
-2. Strip de reproduceerbare testcase tot zijn kleinste vorm:
-   - Verwijder alle ongerelateerde setup, fixtures en gegevens
-   - Elimineer netwerk-/bestandssysteemaanroepen waar mogelijk — mock of stub ze
-   - De reproduceerbare testcase moet deterministisch falen, niet flaky
+2. Strip de reproductie tot zijn kleinste vorm:
+   - Verwijder alle niet-gerelateerde setup, fixtures en gegevens
+   - Elimineer netwerk-/filesystemaanroepen waar mogelijk — mock of stub deze
+   - De repro moet deterministisch falen, niet willekeurig
 
 3. Vermeld de exacte vereiste omgevingsvoorwaarden:
-   - Runtime-versie, OS-beperkingen indien relevant
+   - Runtimeversie, OS-beperkingen indien relevant
    - Vereiste omgevingsvariabelen of configuratiewaarden
-   - Eventuele seedgegevens of voorcondities
+   - Eventuele zaadgegevens of voorwaarden
 
-4. Schrijf de reproduceerbare testcase als uitvoerbare code (test of script). Inclusief:
+4. Schrijf de repro als uitvoerbare code (test of script). Voeg toe:
    - Imports en setup
-   - De minimale aanroepvolgorde die de bug triggert
-   - Een assertion of foutuitdruk die duidelijk aangeeft dat er een fout is opgetreden
+   - De minimale oproepvolgorde die de bug triggert
+   - Een assertion of foutafdruk die duidelijk aangeeft dat het mislukt
 
 5. Voeg een commentaarblok toe aan de bovenkant:
    ```
-   // BUG: <one-line description>
-   // EXPECTED: <what should happen>
-   // ACTUAL: <what actually happens>
-   // SCOPE: <smallest known unit that reproduces it>
+   // BUG: <eenregelbeschrijving>
+   // EXPECTED: <wat zou moeten gebeuren>
+   // ACTUAL: <wat gebeurt er eigenlijk>
+   // SCOPE: <kleinste bekende eenheid die het reproduceert>
    ```
 
-6. Als de bug niet-deterministisch is, documenteer dan de waargenomen frequentie en alle voorwaarden
-   die de reproduceerbaarheid vergroten (bijv. gelijktijdigheid, gegevensgrootte, timing).
+6. Als de bug niet-deterministisch is, documenteer de waargenomen frequentie en eventuele voorwaarden
+   die reproduceerbaarheid vergroten (bijv. gelijktijdigheid, gegevensgrootte, timing).
 
-7. Verifieer dat de reproduceerbare testcase daadwerkelijk faalt voordat je deze presenteert. Als je deze kunt uitvoeren, doe dit dan.
+7. Verifieer dat de repro werkelijk mislukt voordat je deze presenteert. Als je het kunt uitvoeren, doe dit dan.
 
-Output: the repro file contents ready to paste into a new file, followed by a one-sentence
-summary of the root failure mechanism if you can identify it from the repro alone.
+Output: de inhoud van het reproductiebestand klaar om in een nieuw bestand in te plakken, gevolgd door een eenregelige
+samenvatting van het onderliggende faalmechanisme als je dit alleen uit de repro kunt identificeren.

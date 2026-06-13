@@ -88,5 +88,3 @@ Moderation: No issues
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [claude.com/claude-code](https://claude.com/claude-code)

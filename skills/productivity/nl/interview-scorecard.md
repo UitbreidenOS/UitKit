@@ -259,6 +259,3 @@ Rode vlag: Klaagt dat "Product nooit naar CS luistert." Beschrijft hun eigen rol
 **Algehele drempel: 3,0+ gemiddeld om aan te nemen op dit niveau.**
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

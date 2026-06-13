@@ -287,6 +287,3 @@ export const InvoicingDemo: React.FC = () => {
 Render: `npx remotion render InvoicingDemo demo.mp4 --fps=30`
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

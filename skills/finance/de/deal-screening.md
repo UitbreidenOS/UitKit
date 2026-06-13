@@ -146,6 +146,3 @@ EINTRITT/AUSSTIEG: 10x ARR ist Marktrate für SaaS bei diesem Wachstum; strategi
 5. Wie hoch ist Ihre Net Revenue Retention und Churn Rate?
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

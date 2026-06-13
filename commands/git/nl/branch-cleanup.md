@@ -1,11 +1,11 @@
 ---
-description: Identificeer en vermeld verouderde lokale en externe branches die veilig kunnen worden verwijderd
+description: Identificeer en vermeld lokale en externe branches die veilig kunnen worden verwijderd
 argument-hint: "[remote]"
 ---
-Bepaal de standaard externe opslagplaats. Gebruik $ARGUMENTS als dit is opgegeven, anders detecteer van `git remote show` of val terug op `origin`.
+Bepaal de standaard remote. Gebruik $ARGUMENTS als deze is opgegeven, detecteer anders via `git remote show` of val terug op `origin`.
 
 Voer de volgende opdrachten uit en leg hun uitvoer vast:
-- `git branch -vv` — lokale branches met upstream-trackinginformatie
+- `git branch -vv` — lokale branches met upstream tracking-informatie
 - `git branch -r` — externe branches
 - `git log --oneline -1 HEAD` — bevestig HEAD-status
 - `git for-each-ref --format='%(refname:short) %(upstream:track) %(committerdate:relative) %(subject)' refs/heads` — branch-metagegevens
@@ -13,29 +13,29 @@ Voer de volgende opdrachten uit en leg hun uitvoer vast:
 Classificeer elke lokale branch in een van deze categorieën:
 
 **Veilig om te verwijderen:**
-- Branch die upstream volgt waar upstream `[gone]` is (externe branch verwijderd)
-- Volledig samengevoegd in de standaardbranch (`git branch --merged <default>`)
-- Laatste commit ouder dan 90 dagen zonder gekoppelde open PR
+- Tracking branch waarbij upstream `[gone]` is (externe branch verwijderd)
+- Volledig samengevoegd in de standaard branch (`git branch --merged <default>`)
+- Laatste commit ouder dan 90 dagen met geen geassocieerde open PR
 
-**Mogelijk verouderd — eerst controleren:**
+**Mogelijk verouderd — controleer eerst:**
 - Laatste commit tussen 30–90 dagen geleden
-- Niet samengevoegd, geen upstream-tracking ingesteld
-- Naam komt overeen met een patroon dat een kortlopende branch suggereert (`fix/`, `hotfix/`, `wip/`, `tmp/`, `test-`)
+- Niet samengevoegd, geen upstream tracking ingesteld
+- Naam komt overeen met een patroon dat een kortstondige branch suggereert (`fix/`, `hotfix/`, `wip/`, `tmp/`, `test-`)
 
 **Behouden:**
-- Huidige HEAD-branch
+- Huidige HEAD branch
 - `main`, `master`, `develop`, `staging`, `release/*` standaard
-- Elke branch met commits die niet bereikbaar zijn vanuit de standaardbranch en waarvan de laatste commit binnen 30 dagen ligt
+- Elke branch met commits die niet bereikbaar zijn vanaf de standaard branch en waarvan de laatste commit binnen 30 dagen is
 
 Voer drie secties uit met branchnaam, datum van laatste commit en reden voor classificatie.
 
-Druk vervolgens de exacte opdrachten af om de veilige branches te verwijderen:
+Print vervolgens de exacte opdrachten om de veilige branches te verwijderen:
 ```
-# Local
+# Lokaal
 git branch -d <branch> ...
 
-# Remote (if applicable)
+# Extern (indien van toepassing)
 git push <remote> --delete <branch> ...
 ```
 
-Gebruik `-d` (veilig verwijderen), niet `-D`, tenzij de branch al is bevestigd samengevoegd. Voer geen verwijderopdrachten uit — druk ze alleen af zodat de gebruiker ze kan controleren en uitvoeren.
+Gebruik `-d` (veilig verwijderen), niet `-D`, tenzij de branch al is bevestigd samengevoegd. Voer geen verwijderopdrachten uit — print ze alleen zodat de gebruiker ze kan controleren en uitvoeren.

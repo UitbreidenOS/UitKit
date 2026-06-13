@@ -373,6 +373,3 @@ Verwandte Lekture: Link zu /seo-audit, /editorial-calendar
 ```
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird unterstuetzt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte und B2B-Losungen mit Entwicklergemeinschaften.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

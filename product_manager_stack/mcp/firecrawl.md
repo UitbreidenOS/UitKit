@@ -38,5 +38,3 @@ Product prioritization depends on knowing what competitors do. Most competitor f
 - For quarterly competitive analysis (5–10 competitors, 3–5 pages each): Free tier is sufficient
 
 ---
-
-Built with [Claudient](https://github.com/Claudients/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

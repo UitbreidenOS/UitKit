@@ -94,6 +94,3 @@ When roles map naturally to the problem, when you need a working prototype in un
 Content pipeline for a developer blog: a `ResearchAgent` gathers technical facts about a new library, a `WriterAgent` drafts the article, a `ReviewerAgent` checks for accuracy and tone. Sequential process, Claude Sonnet on all three agents, done in under 50 lines of code.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

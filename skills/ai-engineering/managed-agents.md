@@ -143,6 +143,3 @@ A product that lets users submit research tasks asynchronously via a web form:
 The entire agent run — web searches, data extraction, synthesis — happens in Anthropic's cloud with no infrastructure management.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

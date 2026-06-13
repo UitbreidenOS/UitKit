@@ -709,7 +709,3 @@ Una lista de verificación de endurecimiento para Claude Code en entornos de equ
 ---
 
 ## Trabaje con nosotros
-
-Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA con comunidades de desarrolladores y entregamos soluciones de IA B2B. Si necesita ayuda para asegurar implementaciones de Claude Code a escala, construir flujos de trabajo de IA compatibles o auditar su cadena de herramientas de IA — podemos ayudar.
-
-**[uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)**

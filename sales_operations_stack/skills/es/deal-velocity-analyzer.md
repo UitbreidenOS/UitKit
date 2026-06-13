@@ -61,5 +61,3 @@ No para asesoramiento de acuerdos individuales (usar deal-risk-analyzer). No par
 Actual: {D} días vs. benchmark: {D} días | Tendencia: {+/- %}  
 Estado: {Verde/Amarillo/Rojo}
 ```
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

@@ -91,6 +91,3 @@ Configuration WorkstationBaseline {
 Diseñe una estructura de OU para una empresa de 500 personas en tres ubicaciones. Cree GPO para bloqueo de estación de trabajo (bloqueo de pantalla, deshabilitar almacenamiento USB, línea base de Windows Defender). Escriba scripts PowerShell para automatizar la incorporación de usuarios (crear cuenta de AD, agregar a grupos, establecer gerente, habilitar buzón de correo a través de sesión de Exchange remota) y la salida (deshabilitar cuenta, eliminar pertenencias a grupos, mover a OU deshabilitada, revocar certificados, archivar buzón de correo).
 
 ---
-
-> **Trabaje con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

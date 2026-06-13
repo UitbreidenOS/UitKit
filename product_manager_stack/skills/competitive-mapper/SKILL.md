@@ -60,5 +60,3 @@ Do not use for minor features or bug fixes. Do use for any feature where you're 
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudients/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

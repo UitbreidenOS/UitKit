@@ -504,6 +504,3 @@ Queues: `SendOrderConfirmationEmail` job implements `ShouldQueue` with 3 retries
 Tests: Pest feature tests cover auth flows (login, logout, invalid credentials), product CRUD (unauthenticated → 401, missing fields → 422, valid create → 201), and pagination. Factories use states (`published`, `draft`, `out_of_stock`). Coverage target: 80% via `php artisan test --coverage --min=80`.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

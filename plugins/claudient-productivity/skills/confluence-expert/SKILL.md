@@ -315,6 +315,3 @@ Build a space home page with:
 Every runbook update is part of the post-incident checklist. If an engineer follows a runbook and it's wrong, they update it before the incident is closed. No exceptions. This single rule prevents >80% of future staleness.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

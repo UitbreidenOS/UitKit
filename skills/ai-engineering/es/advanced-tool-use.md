@@ -172,6 +172,3 @@ Con carga diferida (`ENABLE_TOOL_SEARCH=auto:10`): solo las 10 herramientas más
 Agregar `input_examples` a las 10 herramientas siempre cargadas aumenta la precisión de parámetros del 72% al 90% en las herramientas que importan más.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

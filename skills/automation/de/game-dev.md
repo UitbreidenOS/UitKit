@@ -255,6 +255,3 @@ Design eines ECS-Bewegungssystems in Unity DOTS für 5.000 gleichzeitige Entitie
 5. Verbinden Sie eine dünne MonoBehaviour-Brücke, die die ECS-Entity-Zahl für die HUD liest und die Player-Position an ein ECS-Targeting-System über `SystemAPI.SetSingleton` übergibt.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

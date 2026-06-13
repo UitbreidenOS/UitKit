@@ -206,6 +206,3 @@ No construya aún. „Los ingenieros no actualizan los tickets" es un síntoma c
 Realice 5 entrevistas. Sabrá cuál hipótesis es verdadera — y probablemente ahorrará 2-3 meses construyendo lo incorrecto.
 
 ---
-
-> **Trabaje con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — creamos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

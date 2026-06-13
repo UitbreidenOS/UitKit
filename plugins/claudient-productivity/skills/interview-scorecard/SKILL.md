@@ -259,6 +259,3 @@ Red flag: Complains that "Product never listens to CS." Doesn't describe their o
 **Overall bar: 3.0+ average to hire at this level.**
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

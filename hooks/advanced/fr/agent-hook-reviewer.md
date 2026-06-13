@@ -112,5 +112,5 @@ Le sous-agent est généré de manière asynchrone après `Stop`. Il s'exécute 
 
 ---
 
-🔗 **[Uitbreiden — building AI products and B2B tools with developer communities.](https://uitbreiden.com/)**
+
 📺 **[Subscribe to our YouTube Channel for more deep dives](https://www.youtube.com/channel/UCcvK8pHyqeR7Q_0lYkuHlUg)**

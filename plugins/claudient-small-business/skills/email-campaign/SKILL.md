@@ -152,6 +152,3 @@ A/B test recommendation: "25% off summer dresses — this weekend only" versus "
 Results after running the campaign: 31% open rate on Email 1, 8.2% click rate, $4,100 in revenue tracked to the campaign. Previous campaigns averaged 19% open and 4.1% click. Claude analysis: the benefit-framing subject line outperformed the direct version by 4 percentage points in open rate — use benefit framing as the default for promotional campaigns going forward.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

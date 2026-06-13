@@ -109,6 +109,3 @@ Claude indica: Los difusores de marca blanca están por encima del piso de 20% p
 Recomendación: Desplaza gasto en anuncios pagados a velas hechas a mano (margen % más alto) y guías numéricas (margen % más alto, sin cumplimiento). Revisa fijación de precios de difusores — un aumento de precio de $7 lleva el margen a 37% e improbablemente reducirá volumen significativamente dada tu posición de precio actual.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

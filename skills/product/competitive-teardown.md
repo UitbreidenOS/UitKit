@@ -224,6 +224,3 @@ This is the thing Notion structurally cannot offer, framed as a benefit (not a c
 **Verdict:** Worry about Notion taking the SMB segment you were going to acquire. Don't worry about them taking your existing enterprise or mid-market customers who need depth.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

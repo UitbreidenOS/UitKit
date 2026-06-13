@@ -196,6 +196,3 @@ db.query(query, [email]);
 **VERDICT: 🔴 NE PAS DÉPLOYER. Corrigez d'abord les 2 éléments critiques. ETA: ~30 minutes.**
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

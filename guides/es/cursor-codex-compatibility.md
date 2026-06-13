@@ -310,6 +310,3 @@ Para reglas a nivel de proyecto, Continue soporta bloques `@Rules` en `.continue
 La estructura de cuatro secciones fue diseñada para ser autónoma. Un skill de Claudient bien escrito debe requerir menos de 10 minutos para portarse a cualquiera de estas herramientas.
 
 ---
-
-> **Trabaje con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

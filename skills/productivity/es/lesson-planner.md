@@ -316,6 +316,3 @@ By the end of this lesson, students will be able to:
 **Resultado esperado:** Tres objetivos de aprendizaje usando verbos de Bloom al nivel de aplicación/cálculo. Estructura de la lección: 10 minutos de enganche (por qué la economía unitaria hundió empresas que conoces), 20 minutos de instrucción directa sobre CAC/LTV/recuperación con fórmulas, 30 minutos de taller donde cada fundador calcula sus propias métricas usando una plantilla proporcionada, 15 minutos de intercambio por parejas y debate ("¿qué descubriste sobre tu propio negocio?"), 10 minutos de ticket de salida (calcular un escenario dado + responder "¿qué te dice esto sobre la salud del negocio?"). Extensión para fundadores cuyos números ya se ven sólidos: calcular análisis de sensibilidad — ¿qué pasa con el LTV/CAC si la deserción cae un 10%?
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

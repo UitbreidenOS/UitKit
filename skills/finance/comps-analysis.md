@@ -138,6 +138,3 @@ Current stock price: $19.81 → sits near mid-range across methodologies
 **Expected comps universe:** 6-8 mid-market B2B SaaS companies at similar ARR scale and growth profile. Multiples table with EV/ARR (LTM + NTM), EV/Gross Profit, NTM P/E where applicable. Implied valuation range. Note on premium comps deserve given 110% NRR.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

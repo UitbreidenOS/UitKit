@@ -21,6 +21,3 @@ Read, Write, WebSearch (voor Markt/Competitie Context)
 - Moeilijke Gesprekken met Co-Founder, Investor of Sleutel Klant Voorbereiding
 
 ---
-
-> **Werk Met Ons:** Claudient Wordt Ondersteund door [Uitbreiden](https://uitbreiden.com/).
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

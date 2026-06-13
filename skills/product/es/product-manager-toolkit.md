@@ -285,6 +285,3 @@ Voy a puntuar estos en su nombre con suposiciones razonables — necesita valida
 **Por qué los webhooks personalizados son bajos:** Alto impacto por usuario, pero solo los usuarios avanzados lo necesitan. Los 80 usuarios que lo necesitan probablemente son ruidosos pero representan una pequeña parte de su apalancamiento de crecimiento.
 
 ---
-
-> **Trabaja con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

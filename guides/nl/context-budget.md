@@ -391,6 +391,3 @@ Breid dit patroon uit om open taken op te nemen (uit een taak bestand), architec
 - [ ] `/usage` gechecked op sessie start om te bevestigen baseline overhead acceptabel is
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI producten en B2B oplossingen met developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

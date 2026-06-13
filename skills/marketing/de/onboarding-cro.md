@@ -204,6 +204,3 @@ Exemplar für jedes Checklisten-Element (Aufgabentitel + 1-Zeilen-Beschreibung).
 Erwartetes Ergebnis: Aktivierung von 31% auf 50% erhöhen → geschätzte Trial-zu-Zahlung-Verbesserung von 18% auf ~28%.
 
 ---
-
-> **Zusammenarbeit mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir bauen KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

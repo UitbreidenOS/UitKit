@@ -392,6 +392,3 @@ Diseña un índice de catálogo de productos con búsqueda de texto completo, fi
 Esta consulta: coincide con el texto de búsqueda con el campo de nombre impulsado, filtra productos de audio en stock en el rango precio/calificación, duplica la puntuación para productos etiquetados como destacados, y devuelve agregaciones de categoría/precio/calificación para el panel de facetas junto con los resultados.
 
 ---
-
-> **Trabaja con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

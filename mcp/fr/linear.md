@@ -96,6 +96,3 @@ Pour les déploiements en équipe où plusieurs personnes ont besoin d'accès, c
 **Création en masse avec prudence :** La création de nombreux problèmes en une session est rapide, mais Linear envoie des notifications pour chacun. Avertissez l'équipe ou utilisez une clé API de compte de service pour les opérations en masse.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -204,6 +204,3 @@ Copie pour chaque élément de liste de contrôle (titre de tâche + description
 Résultat attendu: élever l'activation de 31% à 50% → amélioration estimée de conversion d'essai à payant de 18% à environ 28%.
 
 ---
-
-> **Travaillez avec nous:** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits d'IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -232,6 +232,3 @@ Moverse al mercado empresarial es seductor porque ACV sube. Es arriesgado porque
 **Mi recomendación:** Muévete a mid-market (50-500 empleados) primero, no empresa (500+). Está más cerca de lo que tienes, requiere menos inversión de producto, y reduce riesgo de la curva de aprendizaje antes de asumir tratos de $100K+ con adquisición compleja.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

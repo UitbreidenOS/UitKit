@@ -1,47 +1,45 @@
-# Session Log
+# Session Log — Sales Operations Stack
 
-_Auto-updated by session-summary hook on Stop._
-
----
-
-## Current Session
-
-_This section is live — updated as the session runs._
-
-**Date:** [filled by hook]
-
-**Actions Taken:** [list]
-
-**Key Decisions:** [list]
-
-**Next Steps:** [list]
+> Auto-updated activity log for pipeline reviews, territory analyses, forecasts, quota tracking, and operational decisions. Indexed by date for historical reference.
 
 ---
 
-## History
+## How to Use This Log
 
-### [YYYY-MM-DD] Session Template
+**Auto-logging:** Key actions are logged automatically when you run commands (`/analyze-pipeline`, `/optimize-territory`, `/build-forecast`).
 
-**Actions Taken:**
-- Pipeline Review: [Scope] — [Key findings]
-- Deal Deep Dive: [Deal name] — [Risk score + recommendation]
-- Territory Analysis: [Scope] — [Key changes recommended]
+**Manual entries:** Add observations, decisions, or follow-ups manually in the format below.
 
-**Key Decisions:**
-- [Decision]: [Rationale]. Approved by: [Name].
-- [Decision]: [Rationale]. Approved by: [Name].
+**Search:** Use Ctrl+F to find reps, accounts, or decisions by name or date.
 
-**Approvals Logged:**
-- Approval 1: [Deal/action] — [Authority]. Date: [Date].
-- Approval 2: [Deal/action] — [Authority]. Date: [Date].
-
-**Next Steps:**
-- [ ] [Action] — Owner: [Name]. Deadline: [Date].
-- [ ] [Action] — Owner: [Name]. Deadline: [Date].
-
-**Notes:**
-[Any additional context or follow-up items]
+**Archive:** At month-end, this file becomes your audit trail for compliance and decision documentation.
 
 ---
 
-_Template — copy this block for each session_
+## Log Format
+
+```
+## [YYYY-MM-DD HH:MM]
+
+**Action:** [Analyzed Pipeline / Optimized Territory / Built Forecast / Reviewed Quota / Closed Deal]
+**Metric:** [Pipeline health / Territory fairness / Forecast accuracy / Quota achievement / Cycle time]
+**Key Finding:** [Top insight or alert]
+**Status:** [COMPLETE / IN PROGRESS / BLOCKED]
+**Notes:** [Next steps, escalations, or follow-up required]
+```
+
+---
+
+## Recent Activity
+
+## [2026-06-12 09:30]
+
+**Action:** Analyzed Pipeline  
+**Metric:** Pipeline health  
+**Key Finding:** Overall status YELLOW. Pipeline coverage 3.8:1 (healthy). Forecast accuracy 92% vs. submitted 95% (conservative estimate). 7 at-risk deals (aged >30 days in stage or <50% probability).  
+**Status:** COMPLETE  
+**Notes:** Escalate Acme deal (OPP-2847, Negotiation, 38 days) to VP Sales; needs exec sponsor unblock. Pull forward TechFlow decision (OPP-2903, Proposal, 28 days); confirm close date in writing or move to July. Monitor quota pacing; team trending -14% below pro-rata. Weekly pipeline reviews resume every Monday 9am.
+
+---
+
+Built with [Claudient](https://github.com/Claudient/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

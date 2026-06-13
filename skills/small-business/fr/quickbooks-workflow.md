@@ -117,6 +117,3 @@ Que dois-je regarder en premier ?
 Analyse de votre marge (8%), comparaison aux critères de référence typiques pour votre type d'entreprise, signale la catégorie "Divers" comme valant la peine d'être examinée pour les mauvaises classications, note que la dépense marketing est élevée par rapport aux revenus et demande quel ROI vous voyez, suggère d'exécuter une comparaison année sur année.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

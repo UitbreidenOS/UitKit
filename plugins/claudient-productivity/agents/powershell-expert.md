@@ -219,6 +219,3 @@ else { $credentialStore = "$HOME/.local/share/myapp" }  # Linux
 Write a PowerShell module for Azure resource management: functions for listing resources by tag, creating tagged resources, bulk-updating tags across a resource group, and removing stale resources. Include a module manifest, Pester tests for each public function with mocked Az cmdlets, cross-platform path handling, and a SecretManagement integration for storing the service principal credential.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

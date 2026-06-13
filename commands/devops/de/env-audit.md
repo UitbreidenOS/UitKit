@@ -1,39 +1,39 @@
 ---
-description: Prüfung der Umgebungsvariablennutzung im Codebase auf Sicherheits- und Hygienefragen
-argument-hint: "[path or file glob to scan]"
+description: Umgebungsvariablennutzung in der Codebase auf Sicherheits- und Hygiene-Probleme überprüfen
+argument-hint: "[Pfad oder Datei-Glob zum Scannen]"
 ---
-Prüfung der Umgebungsvariablennutzung in: $ARGUMENTS (Standard: ganzes Projekt)
+Umgebungsvariablennutzung überprüfen in: $ARGUMENTS (Standard: gesamtes Projekt)
 
-Alle Quellcode-Dateien, Konfigurationsdateien, Dockerfiles, Compose-Dateien, CI/CD-Definitionen und Deployment-Manifeste scannen.
+Alle Quelldateien, Konfigurationsdateien, Dockerfiles, Compose-Dateien, CI/CD-Definitionen und Deployment-Manifeste scannen.
 
-Ergebnisse in diese Kategorien einordnen:
+Erkenntnisse in diesen Kategorien melden:
 
-**1. Gefährdete Secrets**
-- Hardcodierte Anmeldedaten, Tokens, API-Schlüssel oder Passwörter in Dateien, die von git verfolgt werden
-- `.env`-Dateien, die nicht in .gitignore eingetragen sind
-- Secrets, die direkt in Shell-`run:`-Schritte in CI interpoliert werden (Injektionsrisiko)
-- Docker-`ARG`/`ENV`-Anweisungen, die Secrets in Image-Schichten einbetten
+**1. Secrets gefährdet**
+- Hardcodierte Anmeldedaten, Token, API-Schlüssel oder Passwörter in einer von Git verfolgten Datei
+- `.env`-Dateien, die nicht in .gitignore enthalten sind
+- Secrets, die direkt in Shell `run:`-Schritte in CI interpoliert werden (Injektionsrisiko)
+- Docker `ARG`/`ENV`-Anweisungen, die Secrets in Image-Layer einbetten
 
 **2. Fehlende Variablen**
 - Variablen, auf die im Code verwiesen wird (process.env.X, os.environ["X"], os.Getenv("X"), etc.), die keinen entsprechenden Eintrag in `.env.example`, `docker-compose.yml`, Kubernetes Secret/ConfigMap oder dokumentierten Standardwerten haben
-- Erforderliche Variablen ohne Fallback, die einen Laufzeit-Panic/Crash verursachen würden, wenn nicht gesetzt
+- Erforderliche Variablen ohne Fallback, die zu Runtime Panic/Crash führen würden, wenn sie nicht gesetzt sind
 
 **3. Ungenutzte Variablen**
-- Variablen, die in `.env`, `.env.example`, Compose oder Manifesten deklariert sind, aber niemals im Code gelesen werden
+- Variablen, die in `.env`, `.env.example`, Compose oder Manifesten deklariert sind, aber nie im Code gelesen werden
 
 **4. Inkonsistenzen**
-- Variablennamen, die sich zwischen Umgebungen unterscheiden (z.B. `DATABASE_URL` in Compose vs `DB_URL` in K8s)
+- Variablennamen, die zwischen Umgebungen unterschiedlich sind (z.B. `DATABASE_URL` in Compose vs `DB_URL` in K8s)
 - Variablen mit Standardwerten in einer Umgebung, aber erforderlich in einer anderen
-- Doppelte Deklarationen über mehrere Dateien hinweg mit möglicherweise unterschiedlichen Werten
+- Duplizierte Deklarationen über mehrere Dateien hinweg mit möglicherweise unterschiedlichen Werten
 
 **5. Hygiene**
-- Nicht-standardisierte Benennung (sollte `SCREAMING_SNAKE_CASE` sein)
-- Variablen, die sensitive Daten enthalten, aber nicht als `sensitive` in Terraform oder `type: kubernetes.io/Opaque` in K8s Secrets markiert sind
+- Nicht-Standard-Namensgebung (sollte `SCREAMING_SNAKE_CASE` sein)
+- Variablen, die vertrauliche Daten enthalten, aber nicht als `sensitive` in Terraform oder `type: kubernetes.io/Opaque` in K8s Secrets markiert sind
 - `.env`-Dateien mit echten Werten committed
 
 Ausgabeformat:
-- Ergebnisse nach obigen Kategorien gruppieren
-- Für jeden Fund: Dateipfad + Zeilennummer, Schweregrad (`critical` / `warning` / `info`) und einzeilige Behebung
-- Mit einer Zusammenfassung der Anzahl pro Schweregrad und priorisierter Reparaturliste (zuerst Critical-Elemente) abschließen
+- Erkenntnisse nach obigen Kategorien gruppieren
+- Für jede Erkenntnis: Dateipfad + Zeilennummer, Schweregrad (`critical` / `warning` / `info`) und einzeilige Behebung
+- Mit Zusammenfassungsanzahl pro Schweregrad und priorisierter Fixliste (kritische Elemente zuerst) enden
 
-Dateiinhalte nicht wörtlich ausdrucken — Positionen zitieren und nur die relevante Zeile anführen.
+Dateiinhalte nicht wörtlich ausgeben — Positionen zitieren und nur die relevante Zeile anführen.

@@ -45,6 +45,3 @@ Chaque correctif auto-appliqué apparaît comme un commit dans la chronologie PR
 PR a 12 commentaires d'examen. 9 sont : "utiliser `const` au lieu de `let`", "ajouter un point-virgule manquant à la ligne 47", "le nom de variable doit être `userId` pas `user_id`", "supprimer l'import non utilisé". Claude applique automatiquement les 9, les commit comme un unique commit de nettoyage, et surface les 3 commentaires architecturaux restants pour examen manuel : "Les 3 commentaires suivants nécessitent votre apport avant que je puisse les appliquer."
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -177,9 +177,9 @@ Una skill llena de consejos de codificación generales (usar anotaciones de tipo
 
 ## Trabaja con nosotros
 
-Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA con comunidades de desarrolladores y entregamos soluciones de IA B2B. Si quieres ayuda para construir integraciones de Claude Code de grado producción, bibliotecas de skills personalizadas o productos impulsados por IA — contáctanos.
 
-**[uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)**
+
+
 
 ---
 

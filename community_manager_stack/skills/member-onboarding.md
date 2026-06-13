@@ -160,5 +160,3 @@ Mentor role:
 - Optional: invite to private mentor channel with other new members
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · Community Builder Edition

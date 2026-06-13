@@ -269,5 +269,3 @@ Overall Health: 78/100 (GREEN - THRIVING)
 **Top Priority:** Launch monthly AMA series (high demand signal) + create #product-feedback channel (request from 3+ members).
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [claude.com/claude-code](https://claude.com/claude-code)

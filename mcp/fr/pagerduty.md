@@ -112,6 +112,3 @@ Les opérations d'accusé de réception et de résolution requièrent que `PD_US
 Le MCP PagerDuty utilise l'API REST v2 de PagerDuty, qui est inclus dans tous les plans payants. Il n'y a pas de frais par-appel. Les limites de taux sont imposées à 960 requêtes/minute par token d'API pour la plupart des endpoints — bien au-dessus de l'utilisation interactive, mais pertinent pour les workflows automatisés.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons les produits IA et les solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

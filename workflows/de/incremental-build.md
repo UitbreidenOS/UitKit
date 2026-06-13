@@ -131,6 +131,3 @@ Phasenplan (Ausgabe von Phase 0):
 Benutzer genehmigt Plan. Claude führt Phase 1 aus. Benutzer überprüft Vorlage, sagt "fortfahren". Claude führt Phase 2 aus. Während Phase 2 bemerkt Claude, dass der E-Mail-Service einen API-Schlüssel benötigt, der nicht in der Konfiguration vorhanden ist — es stoppt und meldet dies, anstatt den Konfigurationsschlüssel einseitig hinzuzufügen. Benutzer fügt den Schlüssel hinzu, sagt "fortfahren". Phase 3 wird abgeschlossen. Integrationsprüfung besteht.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

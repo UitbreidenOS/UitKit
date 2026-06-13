@@ -142,6 +142,3 @@ Not included: custom illustrations, blog or content management system, Google Ad
 Timeline: 4 weeks from signed agreement and deposit receipt.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

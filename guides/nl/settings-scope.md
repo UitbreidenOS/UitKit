@@ -121,6 +121,3 @@ Een goed gestructureerd projectbereik ziet er als volgt uit:
 **Aanname dat vaardigheden omhoog in de boom lopen.** Dat doen ze niet. CLAUDE.md-bestanden lopen omhoog; vaardigheden niet. Een vaardigheid in `/workspace/project/.claude/skills/` is niet zichtbaar wanneer Claude in `/workspace/project/packages/api/` werkt. Elk sub-pakket heeft zijn eigen `.claude/skills/` nodig voor pakketspecifieke vaardigheden.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

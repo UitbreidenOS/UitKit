@@ -419,6 +419,3 @@ Las extensiones personalizadas que los adoptadores tempranos construyeron en los
 Los 15 flujos de trabajo preconstruidos son la rampa de acceso. Claude Projects es la autopista.
 
 ---
-
-> **Claudient** está respaldado por [Uitbreiden](https://uitbreiden.com/) — construcción de productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

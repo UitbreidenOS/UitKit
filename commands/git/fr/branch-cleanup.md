@@ -1,35 +1,35 @@
 ---
-description: Identifier et lister les branches locales et distantes obsolètes qu'il est sûr de supprimer
+description: Identifier et lister les branches locales et distantes obsolètes pouvant être supprimées sans risque
 argument-hint: "[remote]"
 ---
-Déterminez la télécommande par défaut. Utilisez $ARGUMENTS s'il est fourni, sinon détectez via `git remote show` ou utilisez `origin` comme valeur par défaut.
+Déterminer le dépôt distant par défaut. Utiliser $ARGUMENTS s'il est fourni, sinon détecter via `git remote show` ou revenir à `origin`.
 
-Exécutez les commandes suivantes et capturez leur résultat :
-- `git branch -vv` — branches locales avec informations de suivi de branche amont
+Exécuter les commandes suivantes et capturer leur sortie :
+- `git branch -vv` — branches locales avec informations de suivi en amont
 - `git branch -r` — branches distantes
-- `git log --oneline -1 HEAD` — confirmer l'état de HEAD
-- `git for-each-ref --format='%(refname:short) %(upstream:track) %(committerdate:relative) %(subject)' refs/heads` — métadonnées de branche
+- `git log --oneline -1 HEAD` — confirmer l'état HEAD
+- `git for-each-ref --format='%(refname:short) %(upstream:track) %(committerdate:relative) %(subject)' refs/heads` — métadonnées des branches
 
-Classifiez chaque branche locale dans l'une de ces catégories :
+Classer chaque branche locale dans l'une de ces catégories :
 
-**Sûr de supprimer :**
+**Sûre de supprimer :**
 - Branche de suivi où l'amont est `[gone]` (branche distante supprimée)
 - Entièrement fusionnée dans la branche par défaut (`git branch --merged <default>`)
-- Dernier commit antérieur à 90 jours sans association PR ouverte
+- Dernier commit antérieur à 90 jours sans association de PR ouverte
 
-**Possiblement obsolète — À examiner d'abord :**
-- Dernier commit entre 30–90 jours auparavant
-- Non fusionnée, aucun suivi amont défini
-- Le nom correspond à un motif suggérant une branche de courte durée (`fix/`, `hotfix/`, `wip/`, `tmp/`, `test-`)
+**Potentiellement obsolète — à vérifier d'abord :**
+- Dernier commit entre 30 et 90 jours
+- Non fusionnée, aucun suivi en amont défini
+- Le nom correspond à un motif suggérant une branche éphémère (`fix/`, `hotfix/`, `wip/`, `tmp/`, `test-`)
 
-**Conserver :**
+**À conserver :**
 - Branche HEAD actuelle
 - `main`, `master`, `develop`, `staging`, `release/*` par défaut
-- Toute branche avec des commits non accessibles depuis la branche par défaut et dernier commit dans les 30 jours
+- Toute branche avec des commits non accessibles depuis la branche par défaut et dernier commit datant de moins de 30 jours
 
-Écrivez trois sections avec le nom de la branche, la date du dernier commit et la raison de la classification.
+Afficher trois sections avec le nom de la branche, la date du dernier commit et la raison de la classification.
 
-Ensuite, imprimez les commandes exactes pour supprimer les branches sûres :
+Ensuite, imprimer les commandes exactes pour supprimer les branches sûres :
 ```
 # Local
 git branch -d <branch> ...
@@ -38,4 +38,4 @@ git branch -d <branch> ...
 git push <remote> --delete <branch> ...
 ```
 
-Utilisez `-d` (suppression sûre), pas `-D`, sauf si la branche est déjà confirmée fusionnée. N'exécutez aucune commande de suppression — imprimez-les uniquement pour que l'utilisateur les examine et les exécute.
+Utiliser `-d` (suppression sûre), non `-D`, sauf si la branche est déjà confirmée fusionnée. Ne pas exécuter de commandes de suppression — seulement les afficher pour que l'utilisateur les examine et les exécute.

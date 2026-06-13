@@ -91,6 +91,3 @@ Parcourir cette liste lors de l'examen d'un document:
 Modifications apportées : suppression de « il vaut la peine de noter », remplacement de « l'IA de pointe / robuste / évolutif » par un nombre de débit concret, suppression de « de plus » et « en conclusion », conversion en voix active et suppression de la phrase de clôture redondante.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

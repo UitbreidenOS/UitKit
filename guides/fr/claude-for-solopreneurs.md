@@ -175,5 +175,3 @@ Si vous dépensez 6+ heures par semaine sur les activités que Claude couvre —
 - [SEO Strategy for Small Business Content](claude-small-business-seo-strategy.md) — comment ce contenu est construit
 
 ---
-
-> **Claudient** est soutenu par [Uitbreiden](https://uitbreiden.com/) — construisant des produits IA et des solutions B2B avec les communautés de développeurs.

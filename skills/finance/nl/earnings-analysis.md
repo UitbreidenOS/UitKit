@@ -149,6 +149,3 @@ Volledig jaar verhoogd: middelpunt $575M versus vorige $557M = $18M verhogen (+3
 **Morgenochtend notitie lead:** „[Bedrijf] leverde een schone Q2 slag van $5M (3,6%) op de top lijn met 112% NRR signalering gezonde expansie. Management verhoogde volledige jaar begeleiding door $18M op het middelpunt — een geloofwaardige verhogen gegeven Q2 slag. Kopen behouden, PT verhoogd naar $X op hogere volledige jaar schattingen."
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

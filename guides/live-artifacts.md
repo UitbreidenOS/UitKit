@@ -108,6 +108,3 @@ Every live artifact has a share button. Clicking it generates a public URL (or a
 - Google Sheets data source requires the Google Drive connector to be authorized in Cowork
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

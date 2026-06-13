@@ -1,40 +1,40 @@
 ---
-description: Verwijder dode CSS, consolideer duplicaten, dwing design tokens af en los specificiteit problemen op
-argument-hint: "[file-or-directory]"
+description: Dode CSS verwijderen, duplicaten consolideren, design tokens afdwingen, en specificiteitsproblemen oplossen
+argument-hint: "[bestand-of-directory]"
 ---
-Clean up CSS/styles in: $ARGUMENTS
+CSS/styles opschonen in: $ARGUMENTS
 
-If no argument is given, scan all `.css`, `.scss`, `.module.css`, and Tailwind class strings in `src/`.
+Indien geen argument is gegeven, scan alle `.css`, `.scss`, `.module.css` en Tailwind class strings in `src/`.
 
-**Step 1 — Dead code removal**
-Identify and delete:
-- CSS rules whose selectors match no element in the JSX/HTML in this codebase (static analysis — flag dynamic class names as uncertain, do not delete them)
-- `@keyframes` declarations that are not referenced by any `animation` or `animation-name` property
-- CSS custom properties (variables) declared in `:root` or a component scope but never read via `var(--name)`
-- Commented-out rule blocks older than the surrounding code (use git blame heuristic if available)
+**Stap 1 — Dode code verwijdering**
+Identificeer en verwijder:
+- CSS regels waarvan de selectors geen element in de JSX/HTML van deze codebase matchen (statische analyse — markeer dynamische klassenamen als onzeker, verwijder ze niet)
+- `@keyframes` declaraties die niet door enige `animation` of `animation-name` eigenschap worden gerefereerd
+- CSS aangepaste eigenschappen (variabelen) gedeclareerd in `:root` of een component scope maar nooit gelezen via `var(--name)`
+- Uitgecommentarieerde regelblokken die ouder zijn dan de omringende code (gebruik git blame heuristiek indien beschikbaar)
 
-**Step 2 — Duplicate consolidation**
-- Identical or near-identical rule sets applied to different selectors → extract a shared utility class or CSS custom property
-- Repeated `margin`, `padding`, or `gap` values that match an existing design token → replace with the token
-- Media query blocks with the same breakpoint scattered across the file → merge into a single block
+**Stap 2 — Duplicaat consolidatie**
+- Identieke of bijna identieke regelsets toegepast op verschillende selectors → extraheer een gedeelde utility class of CSS aangepaste eigenschap
+- Herhaalde `margin`, `padding` of `gap` waarden die overeenkomen met een bestaande design token → vervang met de token
+- Media query blokken met dezelfde breekpunt verspreid over het bestand → merge in een enkel blok
 
-**Step 3 — Design token enforcement**
-Scan the project for a token source: CSS custom properties in `:root`, a Tailwind config `theme.extend`, a `tokens.ts` / `theme.ts` file, or a design system import.
-For each hardcoded value found:
-- Colors (hex, rgb, hsl): replace with the closest matching token if one exists within 5% perceptual distance; flag if no match
-- Spacing (px, rem values): replace with the matching spacing scale token
-- Font sizes: replace with the matching type scale token
-- Do not replace values that have no reasonable token equivalent — flag them in the output instead
+**Stap 3 — Design token afdwinging**
+Scan het project voor een token bron: CSS aangepaste eigenschappen in `:root`, een Tailwind config `theme.extend`, een `tokens.ts` / `theme.ts` bestand, of een design system import.
+Voor elke hardcoded waarde gevonden:
+- Kleuren (hex, rgb, hsl): vervang met de dichtst bijzijnde overeenkomende token indien er een bestaat binnen 5% perceptuele afstand; markeer indien geen match
+- Afstanden (px, rem waarden): vervang met de overeenkomende afstandsschaal token
+- Tekengroottes: vervang met de overeenkomende typografische schaal token
+- Vervang geen waarden die geen redelijk token equivalent hebben — markeer ze in plaats daarvan in de uitvoer
 
-**Step 4 — Specificity and cascade issues**
-- Selectors with specificity above `(0, 2, 0)` (two classes) → simplify or restructure
-- `!important` declarations: remove each one and verify the cascade works without it; if removal changes behavior, note it but leave the `!important` in place with a comment explaining why
-- Deeply nested SCSS (more than 3 levels) → flatten to BEM or utility classes matching the project convention
-- Universal selector `*` with non-reset properties → flag for review
+**Stap 4 — Specificiteit en cascade problemen**
+- Selectors met specificiteit hoger dan `(0, 2, 0)` (twee klassen) → vereenvoudig of herstructureer
+- `!important` declaraties: verwijder elk en verifieer dat de cascade zonder het werkt; als verwijdering gedrag verandert, noteer dit maar laat de `!important` op zijn plaats met een commentaar dat uitlegt waarom
+- Diep geneste SCSS (meer dan 3 niveaus) → flatten naar BEM of utility classes overeenkomstig de projectconventie
+- Universele selector `*` met niet-reset eigenschappen → markeer voor beoordeling
 
-**Step 5 — Output**
-Apply all safe changes (dead code, duplicates, token substitutions) directly.
-For destructive or uncertain changes (selector deletion that may affect dynamic classes, `!important` removal), emit a list:
-`file:line | issue | recommended action | reason not auto-applied`
+**Stap 5 — Uitvoer**
+Pas alle veilige wijzigingen toe (dode code, duplicaten, token vervangingen) rechtstreeks.
+Voor destructieve of onzekere wijzigingen (selector verwijdering die dynamische klassen kan beïnvloeden, `!important` verwijdering), emit een lijst:
+`bestand:lijn | probleem | aanbevolen actie | reden niet auto-toegepast`
 
-Report totals: lines removed, rules consolidated, tokens substituted.
+Rapporteer totalen: verwijderde lijnen, geconsolideerde regels, tokens vervangen.

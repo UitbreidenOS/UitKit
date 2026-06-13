@@ -229,6 +229,3 @@ Why non-negotiable: If you're subject to GDPR or CCPA, you're legally required t
 **What to let go:** SLA credits, IP clauses (assuming no custom development), and governing law are lower priority at this spend level.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

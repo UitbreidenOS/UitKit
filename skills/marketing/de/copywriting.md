@@ -211,6 +211,3 @@ Anstelle von "Starten" → **"Überprüfen Sie meinen ersten Vertrag kostenlos"*
 Geschätzte CVR-Verbesserung: 2,5-3,5% (basierend auf Spezifität + Ergebnis-Erst-Struktur).
 
 ---
-
-> **Zusammenarbeit mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir bauen KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

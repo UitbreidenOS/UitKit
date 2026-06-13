@@ -177,9 +177,9 @@ Une compétence pleine de conseils de codage généraux (utiliser les annotation
 
 ## Travaillez avec nous
 
-Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA avec des communautés de développeurs et livrons des solutions IA B2B. Si vous souhaitez de l'aide pour créer des intégrations Claude Code en production, des bibliothèques de compétences personnalisées ou des produits alimentés par l'IA — contactez-nous.
 
-**[uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)**
+
+
 
 ---
 

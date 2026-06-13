@@ -107,6 +107,3 @@ Doel: > 90% cache hit-tarief. Een miss op node_modules mag de build-output cache
 4. Voeg Turborepo toe met `outputs: ["dist/**"]` — tweede CI-run raakt cache, build-tijd daalt naar 45 seconden
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -340,6 +340,3 @@ Claude Code lo recoge automáticamente cuando el archivo existe en la raíz del 
 Ver archivos en inglés para boilerplate completo de ejemplo con SQLite.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

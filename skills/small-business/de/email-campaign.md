@@ -152,6 +152,3 @@ A/B-Test-Empfehlung: « 25% Rabatt auf Sommerkleider — dieses Wochenende nur �
 Ergebnisse nach Ausführung der Kampagne: 31% Öffnungsrate auf E-Mail 1, 8,2% Klickrate, $4.100 in verfolgten Einnahmen zur Kampagne. Frühere Kampagnen zeigten durchschnittlich 19% Öffnung und 4,1% Klick. Claude-Analyse: die Betreffzeile mit Vorteilsrahmen übertraf die direkte Version um 4 Prozentpunkte in der Öffnungsrate — verwenden Sie Vorteilsrahmen als Standard für Werbekampagnen künftig.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

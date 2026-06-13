@@ -345,6 +345,3 @@ La escritura de ADRs debe ocurrir cuando se toma la decisión — no seis meses 
 - [Habilidad de generación de runbooks](../skills/productivity/runbook-generator.md)
 
 ---
-
-> **Trabaja con nosotros:** Claudient cuenta con el respaldo de [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

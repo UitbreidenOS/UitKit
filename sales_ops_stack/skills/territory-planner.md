@@ -251,5 +251,3 @@ Track quarterly:
 - **Week 12:** Post-implementation review; adjust if needed
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient)

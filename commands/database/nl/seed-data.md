@@ -1,32 +1,32 @@
 ---
-description: Genereer realistische seed-data scripts voor ontwikkelings- of testomgevingen
-argument-hint: "[table name(s), schema file, or description]"
+description: Genereer realistische seed-datascripts voor ontwikkelings- of testomgevingen
+argument-hint: "[tabelnamen, schemabestand, of beschrijving]"
 ---
-Genereer seed-data voor: $ARGUMENTS
+Genereer seeddata voor: $ARGUMENTS
 
-Als $ARGUMENTS een tabelnaam of lijst met namen is, zoek schemadefinities in de codebase. Als het een schemabestand is, lees dit. Als het een beschrijving is, leid het schema af uit context.
+Als $ARGUMENTS een tabelnaam of lijst met namen is, zoek schemadefinities in de codebase. Als het een schemabestand is, lees het in. Als het een beschrijving is, leid het schema af uit context.
 
-Regels voor seed-data generatie:
+Regels voor seeddata-generatie:
 
-1. Detecteer het seeding-mechanisme dat in dit project wordt gebruikt:
-   - SQL INSERT-bestanden, framework seeders (Rails db/seeds.rb, Django fixtures, Prisma seed.ts, Laravel seeders, Knex seeds), of factory libraries (FactoryBot, factory-boy, Faker.js).
-   - Match het bestaande formaat exact.
+1. Detecteer het seedmechanisme dat in dit project wordt gebruikt:
+   - SQL INSERT-bestanden, framework seeders (Rails db/seeds.rb, Django fixtures, Prisma seed.ts, Laravel seeders, Knex seeds), of factory-bibliotheken (FactoryBot, factory-boy, Faker.js).
+   - Pas de bestaande indeling exact aan.
 
-2. Genereer data die:
-   - Realistisch is: gebruik domein-geschikte waarden (realistische namen, geldige e-mails, plausibele datums, correcte enum-waarden).
-   - Gevarieerd is: minimaal 10-20 rijen per tabel, tenzij de tabel een kleine opzoekset vertegenwoordigt.
-   - Consistent is over gerelateerde tabellen: foreign keys verwijzen naar geldige ID's in parent tables; seeding-volgorde respecteert FK-beperkingen.
-   - Veilig is: gebruik nooit echte PII-patronen — gebruik duidelijk nep-data (bijv. `alice@example.com`, niet `alice@gmail.com`).
+2. Genereer gegevens die:
+   - Realistisch zijn: gebruik domeingeschikte waarden (realistische namen, geldige e-mailadressen, plausibele datums, correcte opsommingswaarden).
+   - Gevarieerd zijn: minstens 10-20 rijen per tabel, tenzij de tabel een kleine verzameling vertegenwoordigt.
+   - Consistent zijn over verwante tabellen: vreemde sleutels verwijzen naar geldige ID's in bovenliggende tabellen; seedingvolgorde respecteert FK-constraints.
+   - Veilig zijn: gebruik nooit echte PII-patronen — gebruik duidelijk nep-gegevens (bijv. `alice@example.com`, niet `alice@gmail.com`).
 
-3. Dek edge cases af:
-   - Minstens één rij per afzonderlijke enum/status-waarde.
-   - Null-waarden voor nullable kolommen waar de applicatie deze moet afhandelen.
-   - Grenswaarden (nulbedragen, maximale lengtetekenreeksen, verre toekomst/verleden datums) waar relevant voor testen.
+3. Dek randzaken af:
+   - Minstens één rij per duidelijke opsommingswaarde.
+   - Null-waarden voor nullbare kolommen waar de toepassing deze moet afhandelen.
+   - Grenswaarden (nulbedragen, maximale tekenlengte, verre toekomst/verleden datums) waar relevant voor testen.
 
-4. Als het schema soft-delete kolommen heeft, voeg zowel actieve als verwijderde records toe.
+4. Als het schema soft-delete-kolommen heeft, neem zowel actieve als verwijderde records op.
 
-5. Geef het seed-bestand(en) uit met juiste bestandsnamen en paden volgens projectconventies.
+5. Voer het seeddatumbestand(en) uit met correcte bestandsnamen en paden volgens projectconventies.
 
-6. Na de seed-data, geef een lijst van eventuele vereiste prerequisite-seeds die eerst moeten draaien (afhankelijkheidsvolgorde) en eventuele handmatige instellingsstappen (bijv. een superuser aanmaken vóór het seeden van gebruikersrollen).
+6. Voeg na de seeddata een lijst in van alle vereiste prerequisite-seeds die eerst moeten worden uitgevoerd (afhankelijkheidsvolgorde) en alle handmatige installatiestappen (bijv. een superuser aanmaken voordat gebruikersrollen worden gesesd).
 
-Geef niet meer dan 50 rijen per tabel uit, tenzij expliciet aangevraagd.
+Voer niet meer dan 50 rijen per tabel uit, tenzij uitdrukkelijk aangevraagd.

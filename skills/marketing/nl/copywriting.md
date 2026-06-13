@@ -211,6 +211,3 @@ In plaats van "Aan de slag" → **"Beoordeel mijn eerste contract gratis"**
 Geschatte CVR verbetering: 2,5-3,5% (gebaseerd op specificiteit + resultaat-eerst structuur).
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

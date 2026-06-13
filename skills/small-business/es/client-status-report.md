@@ -268,6 +268,3 @@ Not formal. Not a form letter. Should sound like a professional colleague who re
 **Resultado esperado:** Un informe de estado profesional con el encabezado "Semana 3 — Verde", tres elementos completados listados específicamente (cuaderno de palabras clave, taller de voz de marca, borrador del calendario editorial del T3), un bloqueo explícito (hoja de ruta del producto), una decisión necesaria (aprobación del calendario antes del miércoles), y vista previa de la próxima semana (escritura de briefs para las primeras 4 piezas de contenido, asumiendo aprobación recibida). Correo electrónico de envío: "La semana 3 está lista — Verde en todos los frentes..." en menos de 4 oraciones, con el informe adjunto o en línea.
 
 ---
-
-> **Trabaja con nosotros:** Claudient cuenta con el respaldo de [Uitbreiden](https://uitbreiden.com/) — desarrollamos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

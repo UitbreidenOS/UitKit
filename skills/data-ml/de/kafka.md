@@ -261,6 +261,3 @@ Design einer Kafka Pipeline für E-Commerce Order Events:
 5. **Monitoring**: Prometheus Alert löst aus, wenn Consumer Group Lag 10.000 Messages überschreitet — triggert PagerDuty.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

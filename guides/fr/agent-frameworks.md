@@ -306,6 +306,3 @@ Flux de travail typique :
 Claude Code fonctionne mieux quand vous lui dites quel cadre vous utilisez au début de la session. Ajouter le choix du cadre à `CLAUDE.md` dans la racine du projet pour le maintenir cohérent entre les sessions.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

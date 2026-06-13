@@ -14,7 +14,7 @@ This guide gets you from zero to a working Claude Code environment with your fir
 ## Step 1 — Clone Claudient
 
 ```bash
-git clone https://github.com/Claudient/Claudient.git ~/Claudient
+
 ```
 
 You now have the full library locally. Nothing runs automatically — you pick what you want.
@@ -220,7 +220,3 @@ Or launch with `--sandbox` for a single session without changing project config.
 ---
 
 ## Work With Us
-
-Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products with developer communities and deliver B2B AI solutions. If you're building something serious with Claude Code and want expert help, a technical partner, or just want to be part of the community — come find us.
-
-**[uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)**

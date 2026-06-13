@@ -325,6 +325,3 @@ Cada QBR necesita una diapositiva de ROI. `/qbr-builder` te obliga a cuantificar
 - [Skill de prevención de churn](../skills/marketing/churn-prevention.md)
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

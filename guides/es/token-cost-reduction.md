@@ -281,6 +281,3 @@ Costos aproximados a precios de mayo de 2026. Verifica la página de precios de 
 Aplicar todas las estrategias de baja complejidad juntas típicamente logra 30–50% reducción de costo total sin cambiar la calidad de resultados.
 
 ---
-
-> **Trabaja con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

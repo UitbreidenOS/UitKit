@@ -76,6 +76,3 @@ Un projet qui s'appuie sur les invites se dégrade au fil du temps. À mesure qu
 L'investissement dans la configuration du harnais paie des dividendes sur chaque session future. L'investissement dans un long prompt système paie des dividendes uniquement sur le courant.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

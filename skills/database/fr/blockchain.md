@@ -230,6 +230,3 @@ forge test --fuzz-runs 10000 -vvv
 6. Test fuzz Foundry `testFuzz_royaltyNeverExceedsSalePrice(uint256 salePrice)` s'exécute 10 000 itérations assertant royalty <= salePrice pour toutes les entrées.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

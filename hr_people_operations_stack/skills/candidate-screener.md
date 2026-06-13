@@ -208,7 +208,7 @@ Probe retention risk; assess fit for messaging-heavy architecture. Consider codi
 
 ---
 
-Built with [Claudient](https://github.com/Claudient/Claudient) · [claude.com/claude-code](https://claude.com/claude-code)
+
 ```
 
 ---
@@ -249,5 +249,3 @@ Candidates who seem good on paper but often underperform:
 5. **Rapid escalation without depth:** "Promoted to manager after 3 years." Assess if earned or just timeline.
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [claude.com/claude-code](https://claude.com/claude-code)

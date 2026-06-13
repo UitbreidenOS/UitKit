@@ -129,5 +129,3 @@ volumes:
 - `.dockerignore` deckt `__pycache__`, `.env`, `.git`, `*.pyc` ab
 
 ---
-
-> **Mit uns arbeiten:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen KI-Produkte und B2B-Lösungen mit Entwickler-Communities. KI-Workloads containerisieren oder cloud-native Systeme bauen? [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

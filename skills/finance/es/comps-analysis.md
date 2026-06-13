@@ -139,6 +139,3 @@ Precio acción actual: $19,81 → se sienta cerca medio sobre todas metodología
 **Universo comps esperado:** 6-8 empresas B2B SaaS mid-market en escala ARR similar y perfil crecimiento. Tabla múltiplos con EV/ARR (LTM + NTM), EV/Ganancia Bruta, P/E NTM donde aplique. Rango valoración implicada. Nota sobre prima que comps merecen dado 110% NRR.
 
 ---
-
-> **Trabaje con nosotros:** Claudient cuenta con respaldo de [Uitbreiden](https://uitbreiden.com/) — construimos productos IA y soluciones B2B con comunidades desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

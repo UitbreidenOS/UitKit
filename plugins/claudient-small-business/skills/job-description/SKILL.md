@@ -114,6 +114,3 @@ Tone: professional but friendly — we're a small team, not corporate
 **Claude writes a complete job posting** with: clear title ("Client Coordinator"), compelling intro paragraph about the firm, role overview in plain English, responsibilities list (8-10 bullet points), requirements split into must-have/nice-to-have, what they'll love about the role, salary range, and a direct application instruction.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

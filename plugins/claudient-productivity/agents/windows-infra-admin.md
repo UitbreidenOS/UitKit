@@ -91,6 +91,3 @@ Configuration WorkstationBaseline {
 Design an OU structure for a 500-person company across three locations. Create GPOs for workstation lockdown (screen lock, USB storage disable, Windows Defender baseline). Write PowerShell scripts to automate user onboarding (create AD account, add to groups, set manager, enable mailbox via remote Exchange session) and offboarding (disable account, remove group memberships, move to Disabled OU, revoke certificates, archive mailbox).
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -264,6 +264,3 @@ Déviations d'architecture : escalader. C'est un signal que Exécuter a improvis
 RIPER a un surcoût. Le surcoût se rembourse sur le travail complexe ; il ne se rembourse pas sur le travail petit. La règle de base : si vous pouvez tenir l'implémentation complète dans votre tête sans l'écrire, RIPER est excessif.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

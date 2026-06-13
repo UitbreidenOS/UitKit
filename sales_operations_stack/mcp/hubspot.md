@@ -105,5 +105,3 @@ If your CRM is Salesforce instead:
 - See `salesforce.md` in this directory
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient)

@@ -69,5 +69,3 @@ Runs the offer-reviewer skill to audit a draft offer before sending to candidate
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

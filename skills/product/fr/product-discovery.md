@@ -206,6 +206,3 @@ Ne construisez pas encore. « Les ingénieurs ne mettent pas à jour les tickets
 Menez 5 entretiens. Vous saurez quelle hypothèse est vraie — et vous économiserez probablement 2-3 mois construisant la mauvaise chose.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous créons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -294,6 +294,3 @@ Carol Wu, Head of Sales Ops, TechCo, 800 employees, FinTech, uses HubSpot + Inte
 **Disqualified (D-tier):** 11 leads → archived.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

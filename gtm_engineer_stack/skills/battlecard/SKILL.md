@@ -96,5 +96,3 @@ Your differentiator. Avoid superlatives, avoid naming them, avoid attack languag
 "Apex CRM does a good job with standard deal tracking. We're purpose-built for high-complexity B2B sales where you're tracking multiple stakeholder relationships and need to map buyer consensus across the organization — so you know exactly who is blocking a close and can focus your coaching there."
 
 ---
-
-Built with [Claudient](https://github.com/Claudients/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

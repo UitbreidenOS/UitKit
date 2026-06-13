@@ -112,6 +112,3 @@ for 6 hours — what decisions were made and what do I need to know?
 **Thread timestamps are precise:** `reply_to_thread` requires the exact `ts` (timestamp) value of the parent message, which looks like `1716300000.000100`. Get it from `get_channel_history` output before replying.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -117,6 +117,3 @@ macOS works without any setup.
 **Result:** A precise, multi-sentence prompt delivered without typing — and without losing focus on the code being read.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

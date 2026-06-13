@@ -163,6 +163,3 @@ Vast tarief tegen $29 is klassieke early-stage eenvoud — slim voor validatie, 
 **Geprojecteerde impact:** Als 20% van bestaande klanten upgraden naar Team ($79) en 5% naar Business ($199), stijgt maandelijkse inkomsten ~35% met hetzelfde aantal klanten.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -209,6 +209,3 @@ Les décisions qui changent la portée ou la conception doivent être signalées
 La règle centrale reste la même dans les deux cas : pas de saut de phases et pas de mise en œuvre sans un plan approuvé. Le développement solo n'est pas une raison pour ignorer la recherche — c'est la raison principale pour être plus discipliné à son sujet.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

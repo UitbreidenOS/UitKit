@@ -291,6 +291,3 @@ do not affect the working tree.
 **`description` is the most important field after `name`.** The router uses it to decide when to delegate here. A vague or generic description causes mis-routing — either the agent fires when it should not, or it is never selected. Write the description as an explicit trigger condition, not a capability summary.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

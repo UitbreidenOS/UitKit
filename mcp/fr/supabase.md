@@ -191,6 +191,3 @@ La clé de rôle de service contourne Row-Level Security complètement. Traitez-
 - Faites pivoter la clé de rôle de service immédiatement si elle est jamais exposée dans un référentiel public.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -154,6 +154,3 @@ Los ingresos alcanzaron $12.400 esta semana — 27% por encima de la semana pasa
 3. Seguimiento de la referencia que acaba de aterrizar para comenzar el proyecto
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

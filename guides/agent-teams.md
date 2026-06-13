@@ -362,6 +362,3 @@ Agent teams use significantly more tokens than a single session. Each teammate h
 For research, review, and new features the extra tokens are usually worthwhile. For routine tasks, a single session is more cost-effective.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

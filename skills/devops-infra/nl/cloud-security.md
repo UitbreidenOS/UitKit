@@ -260,6 +260,3 @@ aws cloudtrail describe-trails --query 'trailList[*].[Name,S3BucketName,IsMultiR
 Herstel eerst root-toegangssleutels en internet-SSH — dit zijn de twee meest misbruikte misconfiguaties.
 
 ---
-
-> **Met ons samenwerken:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

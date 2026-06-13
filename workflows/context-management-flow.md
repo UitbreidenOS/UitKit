@@ -124,6 +124,3 @@ Spawn an Agent tool call for a bounded subtask. The subagent runs with its own c
 - When the hint would need to be so detailed that writing it takes longer than briefing a fresh session
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -94,6 +94,3 @@ The skill conducts the four-category interview as a structured conversation, col
 Then confirms: "Profile complete. Contract Reviewer, Escalation Flagger, and Redline Negotiator skills will now use this profile for all reviews."
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

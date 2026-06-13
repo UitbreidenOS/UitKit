@@ -175,5 +175,3 @@ jobs:
 - Geen hardcoded secrets — OIDC voor registry-authenticatie
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen. CI/CD bouwen voor AI-producten of cloud-deployments? [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

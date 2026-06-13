@@ -363,6 +363,3 @@ Generate: board agenda proposal, initial KPI dashboard structure, first 90-day m
 | Referenzgespräch-Erkenntnisse | % der Deals, bei denen Kundengespräche deine Einschätzung geändert haben |
 
 ---
-
-> **Arbeite mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

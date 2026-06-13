@@ -291,6 +291,3 @@ Impact projeté : [X clients supplémentaires/mois aux taux de conversion actuel
 - Churn : appeler les 2 clients churned cette semaine ; comprendre si c'est le produit, le prix ou un concurrent
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

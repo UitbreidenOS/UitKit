@@ -110,6 +110,3 @@ Utilice este flujo de trabajo para cualquier lanzamiento de función que:
 | **Beta** | Usuarios de opción | Solo invitación | Correo electrónico de invitación | Verificación semanal |
 
 ---
-
-> **Trabaje con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

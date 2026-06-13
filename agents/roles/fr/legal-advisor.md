@@ -91,6 +91,3 @@ Terminez toujours chaque analyse avec :
 Analyser un contrat de fournisseur SaaS. Identifier les 5 principales clauses à risque — classer chacune VERT/JAUNE/ROUGE, expliquer le risque en anglais simple pour un fondateur non-avocat, noter la section dans laquelle elle apparaît et rédiger une question spécifique pour l'examen du conseil juridique par problème. Conclure par un résumé des trois clauses qui exigent le plus d'urgence une négociation avant la signature.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -103,5 +103,3 @@ The review will verify:
 - Repeat until PASS status achieved
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [Newsletter Writer Stack](./README.md)

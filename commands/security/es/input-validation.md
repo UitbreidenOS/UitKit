@@ -1,55 +1,55 @@
 ---
 description: Auditar validación de entrada y sanitización en todos los límites de confianza
-argument-hint: "[file, route, or module]"
+argument-hint: "[archivo, ruta o módulo]"
 ---
-Auditar validación de entrada y sanitización en `$ARGUMENTS` (predeterminado: todos los manejadores de solicitudes y puntos de entrada de datos) para vulnerabilidades de inyección, confusión de tipos y aplicación de límites faltante.
+Auditar validación de entrada y sanitización en `$ARGUMENTS` (por defecto: todos los manejadores de solicitudes y puntos de entrada de datos) para vulnerabilidades de inyección, confusión de tipos y aplicación de límites faltantes.
 
 **1. Localizar todos los límites de confianza**
 
-Encuentra todos los lugares donde datos externos ingresan a la aplicación:
+Encontrar cada lugar donde datos externos entran en la aplicación:
 - Manejadores de solicitudes HTTP (cuerpo, parámetros de consulta, parámetros de ruta, encabezados, cookies)
-- Cargas de archivos y datos de formulario multiparte
+- Cargas de archivos y datos de formularios multiparte
 - Manejadores de mensajes WebSocket
-- Cargas de trabajos en segundo plano (colas, entradas cron)
+- Cargas de trabajos en segundo plano (colas, entradas de cron)
 - Respuestas de API externas tratadas como confiables
-- Variables de entorno utilizadas en la lógica del código
+- Variables de entorno usadas en lógica de código
 
 **2. Inyección SQL**
 
-- Encuentra todas las consultas de base de datos. ¿Son declaraciones parametrizadas/preparadas, o concatenadas con cadenas?
-- Verifica el uso de ORM — ¿hay escapes de consulta sin procesar (`.raw()`, `query()`, `execute()`) con entrada sin sanitizar?
-- Busca inyección de segundo orden: entrada del usuario almacenada en BD luego utilizada en una consulta sin procesar.
+- Encontrar todas las consultas de base de datos. ¿Son parameterizadas/prepared statements o concatenación de cadenas?
+- Verificar uso de ORM — ¿hay escotillas de consulta sin procesar (`.raw()`, `query()`, `execute()`) con entrada sin sanitizar?
+- Buscar inyección de segundo orden: entrada de usuario almacenada en BD y luego usada en una consulta sin procesar.
 
 **3. Inyección de comandos**
 
-- Encuentra todos los usos de `exec`, `spawn`, `system`, `popen`, `subprocess`, `child_process`, `os.system` y equivalentes.
-- ¿Se interpola la entrada suministrada por el usuario en comandos de shell? Incluso con escape, prefiere matrices de argumentos sobre cadenas de shell.
+- Encontrar todos los usos de `exec`, `spawn`, `system`, `popen`, `subprocess`, `child_process`, `os.system` y equivalentes.
+- ¿Se interpola entrada proporcionada por el usuario en comandos shell? Incluso con escape, preferir matrices de argumentos sobre cadenas shell.
 
-**4. Inyección de plantilla (SSTI)**
+**4. Inyección de plantillas (SSTI)**
 
-- Identifica motores de plantilla del lado del servidor en uso (Jinja2, Twig, Handlebars, Pebble, Velocity).
+- Identificar motores de plantillas del lado del servidor en uso (Jinja2, Twig, Handlebars, Pebble, Velocity).
 - ¿Se renderiza datos controlados por el usuario dentro de expresiones de plantilla (`{{ }}`, `<%= %>`)?
 
 **5. Traversal de ruta**
 
-- Encuentra todas las operaciones de lectura/escritura de archivos que usan nombres o rutas de archivo suministrados por el usuario.
+- Encontrar todas las operaciones de lectura/escritura de archivos usando nombres de ruta o rutas proporcionadas por el usuario.
 - ¿Se valida la ruta resuelta contra un directorio base permitido (por ejemplo, `os.path.abspath` + verificación de prefijo)?
 
 **6. Validación de tipo y esquema**
 
-- ¿Se valida cada objeto entrante contra un esquema estricto antes de su uso?
-- ¿Se comprueban los límites de las entradas numéricas? ¿Se validan enums contra una lista permitida?
+- ¿Se valida cada objeto entrante contra un esquema estricto antes de usarlo?
+- ¿Se verifican límites de entradas numéricas? ¿Se validan enumeraciones contra una lista permitida?
 - ¿Hay riesgo de contaminación de prototipos (Node.js `Object.assign`, `merge` con entrada no confiable)?
 
 **7. Salida**
 
 Para cada hallazgo:
 ```
-[SEVERITY] [file:line] — tipo de vulnerabilidad
-Input source: de dónde proviene el dato no confiable
-Sink: dónde se usa de manera insegura
+[SEVERIDAD] [archivo:línea] — tipo de vulnerabilidad
+Fuente de entrada: de dónde se origina el dato no confiable
+Sumidero: dónde se usa de forma insegura
 PoC: carga mínima o solicitud que demuestra el problema
-Fix: remediación específica (parametrizar, lista permitida, validar esquema, etc.)
+Corrección: remediación específica (parametrizar, lista permitida, validar esquema, etc.)
 ```
 
-No intentes explotar hallazgos — describe únicamente el vector de ataque y la solución.
+No intentes explotar hallazgos — describe solo el vector de ataque y la corrección.

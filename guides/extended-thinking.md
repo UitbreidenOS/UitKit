@@ -437,6 +437,3 @@ Use this before enabling thinking mode. If fewer than 3 items apply, use standar
 **Enabling thinking on streaming endpoints with tight latency budgets.** Thinking mode delays the first text token by the full duration of the thinking phase. If your UI shows a typing indicator and users expect a response within 1–2 seconds, this will feel broken. Either hide the thinking phase behind a deliberate loading state or disable thinking on that endpoint.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -303,6 +303,3 @@ Run a baseline measurement in Week 1 before using Claude Code at scale. Review a
 - [Invoice chaser skill](../skills/finance/invoice-chaser.md)
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -206,6 +206,3 @@ Bouw nog niet. „Engineers updaten tickets niet" is een symptoom met minstens 3
 Voer 5 interviews uit. Je weet welke hypothese waar is — en je spaart waarschijnlijk 2-3 maanden door het verkeerde te bouwen.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaargemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

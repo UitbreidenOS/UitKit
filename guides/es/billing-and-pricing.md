@@ -139,6 +139,3 @@ Si tienes una suscripción Max, tu fondo de créditos del SDK del agente está p
 Para usuarios de clave API, la consola de Anthropic (console.anthropic.com) proporciona uso de tokens por día desglosado por modelo y un gráfico de gastos para el período de facturación.
 
 ---
-
-> **Trabaja con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -306,6 +306,3 @@ Flujo de trabajo típico:
 Claude Code funciona mejor cuando le dices qué marco estás usando al inicio de la sesión. Agrega la opción del marco a `CLAUDE.md` en la raíz del proyecto para mantenerla consistente en sesiones.
 
 ---
-
-> **Trabaja con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -144,6 +144,3 @@ Définissez le thème Clair, Sombre ou Système via `/config`. Pour les utilisat
 - La navigation par tour du visionneur de différence est le moyen le plus rapide de vérifier ce qu'une tâche d'agent long a réellement fait — utilisez-la avant de fusionner.
 
 ---
-
-> **Travaillez avec nous:** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

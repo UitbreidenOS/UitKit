@@ -175,5 +175,3 @@ The Claude for Small Business workflows are point-and-click. The Claudient skill
 - [SEO Strategy for Small Business Content](claude-small-business-seo-strategy.md)
 
 ---
-
-> **Claudient** is backed by [Uitbreiden](https://uitbreiden.com/) — building AI products and B2B solutions with developer communities.

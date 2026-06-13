@@ -256,7 +256,7 @@ export const metadata: Metadata = {
   title: 'Claudient — Skills, Agents & Plugins for Claude Code',
   description: 'The community-powered knowledge system for Claude Code. 150+ skills, 22 agents, and hooks for developers, GTM teams, and business owners.',
   keywords: ['claude code', 'ai productivity', 'developer tools', 'claude skills'],
-  authors: [{ name: 'Uitbreiden', url: 'https://uitbreiden.com' }],
+
   openGraph: {
     title: 'Claudient — Skills & Agents for Claude Code',
     description: '150+ skills across 15 categories. Install with: npx claudient add all',
@@ -338,6 +338,3 @@ Secondary: "See how it works →" (video demo link)
 ```
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

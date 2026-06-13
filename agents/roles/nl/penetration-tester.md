@@ -44,6 +44,3 @@ Begin niet met testen zonder alles van het volgende te bevestigen:
 [Rest of pentest methodology follows same translation pattern]
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -222,6 +222,3 @@ Ajoutez un ticket de dette à chaque sprint valant environ 20% de la capacité. 
 Signalez au leadership mensuellement: « Nous avons fermé X éléments de dette, voici le résultat mesurable. »
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

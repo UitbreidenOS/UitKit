@@ -228,6 +228,3 @@ Pourquoi non-négociable : Si vous êtes soumis au RGPD ou CCPA, vous êtes lég
 **Ce à laisser tomber :** Crédits SLA, clauses IP (en supposant pas de développement personnalisé) et droit gouvernant sont moins prioritaires à ce niveau de dépense.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

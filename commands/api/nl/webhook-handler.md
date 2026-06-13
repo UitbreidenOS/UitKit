@@ -1,35 +1,35 @@
 ---
-description: Implementeer een veilige, idempotente webhook-ontvanger met handtekeningverificatie en tolerantie voor pogingen
+description: Implementeer een veilige, idempotente webhook-ontvanger met handtekeningverificatie en retry-tolerantie
 argument-hint: "[provider] [event-types]"
 ---
 Implementeer een webhook-handler voor: $ARGUMENTS
 
-Parse als: webhook-providernaam (bijv. Stripe, GitHub, Twilio) en een door komma's gescheiden lijst met event-types die moeten worden afgehandeld. Als de provider onbekend is, bouw een generiek signed-webhook-patroon.
+Parse als: webhook provider naam (bijv. Stripe, GitHub, Twilio) en een komma-gescheiden lijst van event-typen om af te handelen. Als provider onbekend is, bouw een generiek ondertekend-webhook patroon.
 
-Beveiliging — niet-onderhandelbaar:
-- Verifieer de handtekening van de provider voordat u een payload verwerkt. Lees het patroon in de documentatie van de provider voor de exacte header en HMAC-algoritme (meestal `HMAC-SHA256`)
-- Vergelijk handtekeningen met een constant-time comparisonfunctie — nooit string equality
-- Wijs verzoeken met ontbrekende of ongeldige handtekeningen direct af met `401` — log de fout
-- Valideer het `timestamp`-veld als de provider dat bevat; wijs events ouder dan 5 minuten af om replay-aanvallen te voorkomen
-- Secret moet uit een omgevingsvariabele komen — nooit hardcoded
+Security — niet ter discussie:
+- Verifieer de handtekening van de provider voordat u het bericht verwerkt. Lees het patroon in de documentatie van de provider voor de exacte header en HMAC-algoritme (meestal `HMAC-SHA256`)
+- Vergelijk handtekeningen met een constant-time vergelijkingsfunctie — nooit string gelijkheid
+- Wijs verzoeken af met ontbrekende of ongeldige handtekeningen met `401` onmiddellijk — log het falen
+- Valideer het `timestamp` veld als de provider er een bevat; wijs events af die ouder zijn dan 5 minuten om replay-aanvallen te voorkomen
+- Geheim moet uit een omgevingsvariabele komen — nooit hardcoded
 
 Idempotentie:
-- Elke webhook-aflevering heeft een unieke event ID in de header of payload — extraheer deze
-- Controleer een deduplicatieopslagplaats (databasetabel of Redis-set met TTL) voordat u verwerkt
-- Als de event ID al is verwerkt, retourneer onmiddellijk `200` — verwerk niet opnieuw
-- Sla de event ID op met een TTL van minstens het retry-venster van de provider (meestal 72 uur)
+- Elke webhook-bezorging heeft een unieke event-ID in de header of het bericht — extract deze
+- Controleer een deduplicatie-opslag (DB-tabel of Redis-set met TTL) voordat u verwerkt
+- Als de event-ID al is verwerkt, retourneer `200` onmiddellijk — verwerk niet opnieuw
+- Sla de event-ID op met een TTL van minstens het retry-venster van de provider (meestal 72 uur)
 
 Verwerkingspatroon:
 - Bevestig onmiddellijk met `200` — laat de provider niet wachten op bedrijfslogica
-- Plaats de geverifieerde, gedeserialiseerde payload in een taakwachtrij voor asynchrone verwerking
-- Als er geen taakwachtrij bestaat, verwerk synchroniseren maar reageer toch binnen 5 seconden
-- Log het event-type, event ID en verwerkingsresultaat voor elke event
+- Plaats het gevalideerde, gedeserialiseerde bericht in een taakwachtrij voor asynchrone verwerking
+- Als er geen taakwachtrij bestaat, verwerk synchroon maar reageer nog steeds binnen 5 seconden
+- Log het event-type, event-ID en verwerkingsresultaat voor elk event
 
 Handler-structuur:
-1. Middleware voor handtekeningverificatie (herbruikbaar, niet inline)
-2. Deduplicatiecontrole
-3. Payload-parsing en type-dispatch per event-type
-4. Per-event handler-functies (één per event-type vermeld in $ARGUMENTS)
-5. Foutafhandeling die 200 retourneert zelfs bij verwerkingsfout (om retries voor bugs te voorkomen)
+1. Handtekeningverificatie middleware (herbruikbaar, niet inline)
+2. Deduplicatie controle
+3. Bericht parsing en type dispatching op event-type
+4. Per-event handler functies (één per event-type vermeld in $ARGUMENTS)
+5. Foutafhandeling die 200 retourneert zelfs bij verwerkingsfouten (om retries voor bugs te voorkomen)
 
-Schrijf tests voor: geldige handtekening, ongeldige handtekening, duplicate event, elk event-type correct dispatched.
+Schrijf tests voor: geldige handtekening, ongeldige handtekening, dubbele event, elk event-type correct gewijzigd.

@@ -82,6 +82,3 @@ Why did the build fail 20 minutes ago? Show me the full logs.
 - Preview deployments (from PRs) and production deployments are separate — specify the target environment when running env var operations.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

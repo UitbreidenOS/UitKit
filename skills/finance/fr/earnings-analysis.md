@@ -149,6 +149,3 @@ Année complète augmentée : point médian 575 M$ vs. 557 M$ précédent = 18 M
 **Début de la note du matin :** « [Entreprise] a livré un battement net de Q2 de 5 M$ (3,6%) sur le haut de ligne avec 112% NRR signalant une expansion saine. Le management a augmenté la guidance pour l'année complète de 18 M$ au point médian — une augmentation crédible compte tenu du battement de Q2. Maintenir l'achat, augmentant le PT à $X sur les estimations de l'année fiscale supérieures. »
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

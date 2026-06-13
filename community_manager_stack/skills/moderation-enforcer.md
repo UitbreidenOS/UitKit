@@ -194,5 +194,3 @@ Every moderation decision is logged with:
 This log is private (not shared with community) but available for audit if needed.
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [claude.com/claude-code](https://claude.com/claude-code)

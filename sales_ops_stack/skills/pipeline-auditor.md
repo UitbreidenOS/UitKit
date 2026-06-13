@@ -231,5 +231,3 @@ Save as `audits/pipeline-audit-[YYYY-MM-DD].md`
 **Focus Areas:** [List based on current findings]
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient)

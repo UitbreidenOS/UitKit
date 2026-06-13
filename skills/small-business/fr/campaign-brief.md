@@ -125,6 +125,3 @@ Objectif : 10 nouvelles réservations en 3 semaines.
 **Métriques de succès :** 10 réservations = $X de revenus à votre prix moyen. Suivez quel canal chaque réservation provient.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

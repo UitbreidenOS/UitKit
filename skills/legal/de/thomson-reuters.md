@@ -67,6 +67,3 @@ nach Van Buren v. United States. Gib Bluebook-Zitationen für jeden Fall zurück
 Claude befragt Westlaw über das TR MCP, gibt eine strukturierte Circuit-Split-Analyse mit Zitationen zurück, kennzeichnet Bereiche anhaltender Uneinigkeit und hängt die zwingende Forschungswarnung an.
 
 ---
-
-> **Arbeiten Sie mit uns :** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwicklergemeinschaften.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

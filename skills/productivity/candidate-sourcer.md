@@ -293,6 +293,3 @@ Would a 20-minute call make sense to see if there's something here?
 - Hire 1 in 6-8 weeks from start of active sourcing
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

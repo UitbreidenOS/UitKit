@@ -196,5 +196,3 @@ After extraction, pass text to:
 5. Deploy to production
 
 ---
-
-Built with [Claudient](https://github.com/Claudients/Claudient)

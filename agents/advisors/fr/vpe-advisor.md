@@ -163,6 +163,3 @@ Embaucher 6 ingénieurs de plus dans un système avec un délai de 12 jours ajou
 - Ne pas embaucher 6 à la fois — intégration 6 simultanément à 22 personnes = 27 % de l'équipe est "nouvelle" = les ingénieurs seniors passent 40 % du temps en 1:1s et révisions de code
 
 ---
-
-> **Travaillez avec nous:** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits d'IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

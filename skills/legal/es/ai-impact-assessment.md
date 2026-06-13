@@ -194,6 +194,3 @@ Secciones del documento:
 **Recomendado:** La adquisición debe estar condicionada a que el proveedor proporcione documentación de conformidad y acepte derechos de auditoría contractual.
 
 ---
-
-> **Trabaje con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

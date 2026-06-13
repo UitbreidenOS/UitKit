@@ -166,5 +166,3 @@ Yes, with high confidence. At that revenue band, the operator typically spends 1
 - All ecommerce-relevant skills in [skills/small-business/](../skills/small-business/)
 
 ---
-
-> **Claudient** is backed by [Uitbreiden](https://uitbreiden.com/) — building AI products and B2B solutions with developer communities.

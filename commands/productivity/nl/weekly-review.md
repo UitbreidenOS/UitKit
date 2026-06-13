@@ -1,34 +1,34 @@
 ---
-description: Produceer een wekelijks overzicht op basis van git-geschiedenis, notities of vrije invoer
-argument-hint: "[week context, notes, or leave blank for git]"
+description: Genereer een weekoverzicht op basis van git-geschiedenis, notities of vrije invoer
+argument-hint: "[weekcontext, notities, of laat leeg voor git]"
 ---
-Generate a weekly review based on: $ARGUMENTS
+Genereer een weekoverzicht op basis van: $ARGUMENTS
 
-If $ARGUMENTS is empty or minimal, run `git log --since="7 days ago" --oneline --author=$(git config user.email)` to derive accomplishments from commits.
+Als $ARGUMENTS leeg of minimaal is, voer `git log --since="7 days ago" --oneline --author=$(git config user.email)` uit om prestaties uit commits af te leiden.
 
-Produce these sections:
+Produceer deze secties:
 
-**Shipped / Completed**  
-Bulleted list. Each item is a concrete deliverable or milestone, not a task. Group related commits into one item. No more than 8 bullets.
+**Opgeleverd / Afgerond**  
+Lijst met opsommingstekens. Elk item is een concrete deliverable of mijlpaal, geen taak. Groepeer gerelateerde commits in één item. Niet meer dan 8 opsommingspunten.
 
-**In Progress**  
-Bulleted list. What is actively underway and expected to close in the next 1–2 weeks. Include rough completion percentage if inferable.
+**Lopende werkzaamheden**  
+Lijst met opsommingstekens. Wat is actief in uitvoering en naar verwachting afgerond in de komende 1-2 weken. Voeg ruw voltooiingspercentage toe indien afleidbaar.
 
-**Blocked / At Risk**  
-Bulleted list. Each item: what is blocked, why, and who/what unblocks it. Omit if nothing is blocked.
+**Geblokkeerd / Op risico**  
+Lijst met opsommingstekens. Elk item: wat is geblokkeerd, waarom, en wie/wat ontblokt dit. Weglaten indien niets geblokkeerd is.
 
-**Learnings**  
-2–4 bullets. Observations about process, tooling, approach, or domain knowledge gained this week. Not a summary of what was done — insight only.
+**Lessen**  
+2-4 opsommingspunten. Observaties over proces, tooling, aanpak of domeinkennis opgedaan deze week. Geen samenvatting van wat is gedaan — alleen inzicht.
 
-**Next Week Focus**  
-3–5 bullets. Concrete priorities for the coming week, ordered by importance.
+**Focus volgende week**  
+3-5 opsommingspunten. Concrete prioriteiten voor de komende week, geordend op belangrijkheid.
 
-Rules:
-- Schrijf in de eerste persoon.
-- Calibrate detail to signal-to-noise: skip trivial chores and dependency bumps unless they were painful.
-- Do not include time estimates for next week unless the input provided them.
-- If git history shows only automated commits (bots, CI), note this and ask for manual input.
-- Keep each bullet to one sentence unless a second sentence adds essential context.
-- Total output should be scannable in under 2 minutes.
+Regels:
+- Schrijf in eerste persoon.
+- Kalibreer detail op signaal-ruisverhouding: sla triviale taken en afhankelijkheidsupdates over tenzij deze pijnlijk waren.
+- Voeg geen tijdschattingen voor volgende week toe tenzij de invoer deze bevatte.
+- Als git-geschiedenis alleen geautomatiseerde commits toont (bots, CI), merk dit op en vraag om handmatige invoer.
+- Houd elk opsommingspunt tot één zin, tenzij een tweede zin essentiële context toevoegt.
+- Totale output moet in minder dan 2 minuten gescand kunnen worden.
 
-Output only the weekly review.
+Voer alleen het weekoverzicht uit.

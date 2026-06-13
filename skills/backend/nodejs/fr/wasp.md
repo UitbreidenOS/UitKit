@@ -287,6 +287,3 @@ wasp deploy fly deploy
 - Action de création de tâche qui vérifie `user.subscriptionStatus` avant d'autoriser plus de 10 tâches
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

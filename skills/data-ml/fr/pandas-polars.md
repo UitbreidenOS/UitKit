@@ -143,5 +143,3 @@ df.to_parquet("output.parquet", index=False, compression='snappy')
 - Écrire en Parquet avec compression snappy
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs. Vous construisez des pipelines de données ou des produits IA basés sur des données ? [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

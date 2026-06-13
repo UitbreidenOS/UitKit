@@ -90,6 +90,3 @@ Los tokens de usuarios de sistema no expiran en un ciclo de 60 días como los to
 - Para evitar gastos excesivos durante las pruebas, establece `status=PAUSED` cuando crees campañas a través de MCP — habilítalas manualmente después de revisar la configuración.
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

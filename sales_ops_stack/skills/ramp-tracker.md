@@ -263,5 +263,3 @@ If rep is at risk, implement one or more:
 **Scheduled Next Review:** [Date]
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient)

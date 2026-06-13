@@ -419,6 +419,3 @@ Benutzerdefinierte Erweiterungen, die frühe Anwender in den ersten 90 Tagen bau
 Die vorgefertigten 15 Workflows sind die On-Ramp. Claude Projects sind die Autobahn.
 
 ---
-
-> **Claudient** wird unterstützt durch [Uitbreiden](https://uitbreiden.com/) — Konstruktion von KI-Produkten und B2B-Lösungen mit Entwickler-Gemeinschaften.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

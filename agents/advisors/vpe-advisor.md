@@ -164,6 +164,3 @@ Hiring 6 more engineers into a system with 12-day lead time adds more work-in-pr
 - Do not hire 6 at once — onboarding 6 simultaneously at 22 people = 27% of the team is "new" = senior engineers spend 40% of time in 1:1s and code reviews
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

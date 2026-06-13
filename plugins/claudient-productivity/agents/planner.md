@@ -62,5 +62,3 @@ Do not include code samples. Focus on sequencing and scope.
 6. **Risk:** Users created before migration have no `organization_id` — needs backfill decision before step 1
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities. [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

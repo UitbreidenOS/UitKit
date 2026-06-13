@@ -146,5 +146,3 @@ df.to_parquet("output.parquet", index=False, compression='snappy')
 - Write to Parquet with snappy compression
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities. Building data pipelines or AI data products? [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

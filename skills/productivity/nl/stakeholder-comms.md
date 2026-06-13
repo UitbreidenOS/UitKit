@@ -285,6 +285,3 @@ Stel gespreksonderwerpen op voor managers die vragen van hun teams krijgen.
 **Verwachte uitvoer:** Drie documenten. Bedrijfsbrede e-mail: begint met "we sluiten het Londense kantoor" in zin één, legt de redenering uit (kostenefficiëntie, team werkt al succesvol remote), vermeldt de ingangsdatum, beschrijft wat dit betekent voor de 12 getroffen medewerkers (vrijwillige ontslagregeling of formele remote-regelingen), en wat er voor iedereen anders verandert (niets — business as usual). Gespreksonderwerpen voor de Londense manager: wat te zeggen als teamleden vragen "waarom nu", hoe emotionele reacties op te vangen, hoe het vrijwillige ontslagregelingproces eruitziet. Directe notitie aan de 12 getroffen medewerkers: warmere toon, specifiek over hun opties, specifiek over het ondersteuningspakket, drukt oprechte waardering uit, noemt de HR-contactpersoon voor vragen.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

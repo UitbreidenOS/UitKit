@@ -53,6 +53,3 @@ Run Claude Code in background on a long task (test suite, migration, build) whil
 "I use Cursor for writing React components and exploring the codebase. I switch to Claude Code terminal when I need to: run the full test suite, refactor across 30 files, set up GitHub Actions, or do a database migration. `CLAUDE.md` holds our shared conventions — both tools pick them up automatically without any extra configuration."
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

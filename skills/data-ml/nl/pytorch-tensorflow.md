@@ -167,5 +167,3 @@ history = model.fit(
 - Train/val-splitsing via `DataLoader` met shuffling alleen op train
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen. ML-modellen of AI-aangedreven producten bouwen? [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

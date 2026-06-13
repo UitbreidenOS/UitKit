@@ -250,6 +250,3 @@ Si les utilisateurs atteignent la chronologie sans dépendances définis, il n'y
 Exécutez une session de suivi de 15 minutes avec 3 utilisateurs : montrez-leur où se trouve la fonction de dépendance, demandez-leur de l'utiliser, observez — l'interaction elle-même est-elle claire une fois trouvée ?
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

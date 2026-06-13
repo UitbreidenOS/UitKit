@@ -272,6 +272,3 @@ DROP INDEX idx_orders_user_id;
 **Zero downtime guarantee:** Each step is a backwards-compatible deploy. Rollback at any step before Phase 5 = flip the deploy. After Phase 5 = forward-only (schedule a maintenance window if you hit issues — won't happen).
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

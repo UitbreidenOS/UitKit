@@ -178,6 +178,3 @@ Prochaine mise à jour dans 20 minutes
 4. Un service aval (vérification fraude, inventaire) expiration et en cascade
 
 ---
-
-> **Travail avec nous:** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

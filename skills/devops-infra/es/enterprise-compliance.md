@@ -78,6 +78,3 @@ Empresa de servicios financieros implementando en 50 ingenieros:
 - Sin acceso directo a la API de Anthropic — todo el tráfico se enruta a través del punto final privado de Bedrock
 
 ---
-
-> **Trabaje con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

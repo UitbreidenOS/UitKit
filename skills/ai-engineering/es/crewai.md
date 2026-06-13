@@ -89,6 +89,3 @@ Cuando los roles se asignan naturalmente al problema, cuando necesitas un protot
 Pipeline de contenido para un blog de desarrolladores: un `ResearchAgent` recopila datos técnicos sobre una nueva biblioteca, un `WriterAgent` redacta el artículo, un `ReviewerAgent` verifica precisión y tono. Proceso secuencial, Claude Sonnet en los tres agentes, completado en menos de 50 líneas de código.
 
 ---
-
-> **Trabaje con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

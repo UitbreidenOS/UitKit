@@ -1,6 +1,6 @@
 ---
 description: Trouver et éliminer la logique, les données ou les structures dupliquées
-argument-hint: "[file or directory]"
+argument-hint: "[fichier ou répertoire]"
 ---
 Dédupliquez le code dans $ARGUMENTS.
 

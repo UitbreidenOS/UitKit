@@ -219,6 +219,3 @@ else { $credentialStore = "$HOME/.local/share/myapp" }  # Linux
 Schrijf een PowerShell-module voor Azure-resourcebeheer: functies voor het opsommen van resources op label, het creëren van gelabelde resources, bulkupdate labels over een resourcegroep en het verwijderen van verouderde resources. Inclusief module-manifest, Pester-tests voor elke openbare functie met gesimuleerde Az-cmdlets, cross-platform-padafhandeling en een SecretManagement-integratie voor opslag van service principal-referenties.
 
 ---
-
-> **Werk met ons mee:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -355,6 +355,3 @@ Al final de la reunión, proponer:
 **Salida esperada:** Informe completo — perfil de asistente investigando a la nueva VP (LinkedIn, antecedentes de empresa anterior, en qué se enfocó en su último rol), puntos de conversación sobre por qué este es el momento correcto para expandir (datos de uso, nuevos casos de uso desbloqueados en los últimos 6 meses, evidencia de ROI), pregunta clave a hacer ("¿Qué haría que esta asociación fuera un claro éxito en tus primeros 90 días?"), qué NO comprometerse (cambios de precios sin aprobación de finanzas, desarrollo personalizado) y próximos pasos propuestos (demostración del producto con su equipo en 2 semanas, llamada de presentación del patrocinador ejecutivo).
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

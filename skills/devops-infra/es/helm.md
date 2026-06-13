@@ -307,6 +307,3 @@ helm install nextjs-app ./nextjs-app -n my-app --create-namespace
 De aquí en adelante, futuras actualizaciones son solo `helm upgrade nextjs-app ./nextjs-app`.
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

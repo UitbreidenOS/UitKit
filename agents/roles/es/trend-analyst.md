@@ -129,6 +129,3 @@ Always state data limitations: market surveys have methodology bias, GitHub star
 Analyze the trend for "AI agents in enterprise workflows." Score all 8 signal categories with evidence, classify the maturity stage, estimate the S-curve position, forecast mainstream adoption timeline (years from now), identify the top 3 accelerators and inhibitors, draw an analogy to a prior technology transition (with caveats), and give a strategic recommendation for a B2B SaaS company deciding whether to build agent features into their product in 2026.
 
 ---
-
-> **Trabaje con nosotros:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — construimos AI products and B2B solutions with comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

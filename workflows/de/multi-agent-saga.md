@@ -214,6 +214,3 @@ Hinweis: Benachrichtigungsschritt (Schritt 4) wurde nie ausgeführt, hat also ke
 ```
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

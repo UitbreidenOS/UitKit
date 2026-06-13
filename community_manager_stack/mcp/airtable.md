@@ -141,5 +141,3 @@ mcp__airtable__update({
 - **For escalation:** Filter churn_risk=true to identify members needing immediate outreach
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [claude.com/claude-code](https://claude.com/claude-code)

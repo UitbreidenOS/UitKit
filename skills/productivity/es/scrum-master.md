@@ -217,6 +217,3 @@ Acción específica: "Nuevo elemento agregado a mitad del sprint requiere aproba
 Deja de usar Comenzar/Detener/Continuar. Cambia a una retro de Línea de tiempo — recorre el último sprint día a día. Esto fuerza ejemplos específicos en lugar de quejas genéricas, y ejemplos específicos tienen causas específicas.
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

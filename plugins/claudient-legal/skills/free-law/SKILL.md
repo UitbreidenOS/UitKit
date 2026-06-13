@@ -77,6 +77,3 @@ summary of each holding.
 Claude queries CourtListener via MCP, returns a list of matching opinions with citations and holding summaries, notes which cases have pending cert petitions, and appends the mandatory research disclaimer.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -94,5 +94,3 @@ Score each decision across 4 dimensions (1–3 pts each; max 12):
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [claudecode.ai](https://claudecode.ai/)

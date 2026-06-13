@@ -152,7 +152,3 @@ Voir `hooks/lifecycle/cost-tracker.sh` pour une implémentation prête à l'empl
 ---
 
 ## Travaillez avec nous
-
-Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA avec des communautés de développeurs et livrons des solutions IA B2B. Si vous cherchez à réduire les coûts IA à grande échelle, à créer des outils Claude Code pour votre équipe ou à lancer des produits IA B2B — parlons-en.
-
-**[uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)**

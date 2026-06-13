@@ -207,6 +207,3 @@ If any item fails, rewrite those sections.
 **Expected output:** Opening verdict sentence ("Growth is accelerating on revenue but conversion and retention signals warrant attention"). Wins: revenue growth strong, WAU trend positive. Concerns: conversion rate drop coincides with Tuesday launch — new feature may be disrupting the signup flow; churn uptick is early-stage but 3-month trend to watch. Recommendation: A/B test the new onboarding flow against the prior version; schedule churn cohort analysis to identify if a specific segment is driving the 1.8% rate. Watch list: conversion rate and churn for next 2 weeks.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

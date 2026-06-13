@@ -92,6 +92,3 @@ Always close every analysis with:
 Analyze a SaaS vendor contract. Identify the top 5 risk clauses — classify each GREEN/YELLOW/RED, explain the risk in plain English for a non-lawyer founder, note which section it appears in, and draft one specific question for legal counsel review per issue. Close with a summary of the three clauses that most urgently require negotiation before signature.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

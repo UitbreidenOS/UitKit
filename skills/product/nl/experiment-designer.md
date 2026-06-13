@@ -215,6 +215,3 @@ Waarom 4 weken, niet 20 dagen:
 **Één voorzorg:** Als uw 500 bezoekers/dag figuur mobiele en desktop users omvat, segment de resultaten per device. Checkout flows gedragen zich zeer verschillend op mobiel vs. desktop — een winning resultaat overall zou een regressie op één platform kunnen maskeren.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

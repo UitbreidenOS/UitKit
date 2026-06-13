@@ -241,6 +241,3 @@ git branch -d hotfix/prod-bug
 Der Worktree-Ansatz ist für komplexe Situationen streng besser als Stashing — Stash-Pop-Konflikte sind ein echtes Risiko; Worktrees haben keine.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

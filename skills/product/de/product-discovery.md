@@ -206,6 +206,3 @@ Nicht bauen noch. „Ingenieure aktualisieren Tickets nicht" ist ein Symptom mit
 Führen Sie 5 Interviews durch. Sie werden wissen, welche Hypothese wahr ist — und Sie werden wahrscheinlich 2-3 Monate sparen, indem Sie das Falsche bauen.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen AI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

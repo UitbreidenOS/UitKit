@@ -255,6 +255,3 @@ Keep each definition under 80 words. Write for a non-technical executive who is 
 **Expected output:** Full monthly report opening with "October was a record new business month that was partially offset by our largest customer churn event to date." Revenue section shows $2.1M vs. $2.0M plan. Root cause on churn: the enterprise customer departure drove the NRR decline from 112% to 108% — a structural, not trend event. New logo record is genuine signal. Actions table: post-mortem on churned account (VP Customer Success, Nov 7), ICP refinement to screen out customers with similar risk profile (VP Product + VP Sales, Nov 14). Watch list: enterprise renewal pipeline for Q4.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

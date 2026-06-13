@@ -102,6 +102,3 @@ wie man es reduziert, bevor wir beginnen.
 **Blockierte Aufgaben brauchen explizites Unblocking:** Wenn eine Aufgabe markiert `blocked` ist, wird Task Master sie nicht via `next_task` aufdecken bis ihr Status aktualisiert ist. Wenn ein Blocker gelöst ist, setze die blockierte Aufgabe zurück auf `pending` und füge eine Note hinzu, erklärend was sich geändert hat.
 
 ---
-
-> **Zusammenarbeit mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen AI-Produkte und B2B-Lösungen mit Developer-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

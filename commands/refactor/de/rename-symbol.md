@@ -1,29 +1,29 @@
 ---
-description: Ein Symbol konsistent über alle Dateien im Geltungsbereich umbenennen
-argument-hint: "[old-name] [new-name] [file or directory]"
+description: Symbol konsistent über alle Dateien im Geltungsbereich umbenennen
+argument-hint: "[alter-name] [neuer-name] [datei oder verzeichnis]"
 ---
-Benennen Sie das in $ARGUMENTS angegebene Symbol um — Format: `<old-name> <new-name> <path>`.
+Benenne das in $ARGUMENTS angegebene Symbol um — Format: `<alter-name> <neuer-name> <pfad>`.
 
-1. Analysieren Sie die Argumente: alter Name, neuer Name und die Datei oder das Verzeichnis, auf die sich die Operation bezieht.
+1. Analysiere die Argumente: alter Name, neuer Name und die Datei oder das Verzeichnis, das bearbeitet werden soll.
 
-2. Validieren Sie vor dem Umbenennen:
-   - Der neue Name befolgt die Namenskonvention, die für diesen Symboltyp in dieser Codebasis verwendet wird (camelCase, snake_case, PascalCase, SCREAMING_SNAKE, usw.)
-   - Der neue Name existiert nicht bereits im selben Geltungsbereich
+2. Vor dem Umbenennen überprüfe:
+   - Der neue Name folgt der Namenskonvention, die für diesen Symboltyp in dieser Codebasis verwendet wird (camelCase, snake_case, PascalCase, SCREAMING_SNAKE, usw.)
+   - Der neue Name existiert nicht bereits im gleichen Geltungsbereich
    - Der neue Name ist kein reserviertes Schlüsselwort und wird nicht von einer importierten Abhängigkeit verwendet
 
-3. Finden Sie jeden Verweis auf den alten Namen innerhalb des angegebenen Geltungsbereichs:
-   - Deklaration (Funktionsdefinition, Klasse, Variable, Typ-Alias, Konstante, Enum-Mitglied)
-   - Alle Aufrufstellen und Verwendungsstellen
-   - Import-/Export-Anweisungen (benannte Importe, Wiederexporte)
-   - String-Literale, die bekanntermaßen auf das Symbol verweisen (z. B. Ereignisnamen, dynamische `require()`, `keyof` String-Zugriff) — markieren Sie diese, benennen Sie sie aber nicht automatisch um, da sie API-Verträge sein können
+3. Finde jeden Verweis auf den alten Namen innerhalb des angegebenen Geltungsbereichs:
+   - Deklaration (Funktionsdefinition, Klasse, Variable, Typ-Alias, Konstante, Enum-Member)
+   - Alle Aufrufobjekte und Verwendungsstellen
+   - Import-/Export-Anweisungen (benannte Importe, Re-Exporte)
+   - String-Literale, die bekanntermaßen auf das Symbol verweisen (z. B. Ereignisnamen, dynamische `require()`, `keyof` String-Zugriff) — markiere diese, aber benenne sie nicht automatisch um, da sie möglicherweise API-Verträge sind
    - JSDoc-/Docstring-Verweise
-   - Kommentare, die das Symbol nennen — aktualisieren Sie diese, wenn die Umbenennung den Kommentar ungültig macht
+   - Kommentare, die das Symbol benennen — aktualisiere diese, wenn die Umbenennung den Kommentar falsch macht
 
-4. Führen Sie die Umbenennung an jeder identifizierten Stelle durch. Benennen Sie nicht um:
-   - Teilübereinstimmungen (z. B. das Umbenennen von `user` darf nicht `username` oder `currentUser` berühren)
-   - Nicht verwandte Symbole, die zufällig denselben Namen in einem anderen Geltungsbereich haben
+4. Wende die Umbenennung an jeder identifizierten Stelle an. Benenne nicht um:
+   - Teilübereinstimmungen (z. B. Umbenennung von `user` darf nicht `username` oder `currentUser` ändern)
+   - Nicht verwandte Symbole, die zufällig den Namen in einem anderen Geltungsbereich teilen
    - Externe Dateien außerhalb des angegebenen Pfads, es sei denn, das Symbol wird exportiert und diese Dateien befinden sich im Repo
 
-5. Überprüfen Sie nach dem Umbenennen, dass alle Importpfade und Modul-Wiederexporte intern konsistent sind.
+5. Überprüfe nach der Umbenennung, dass alle Importpfade und Modul-Re-Exporte intern konsistent sind.
 
-6. Ausgabe: Gesamtzahl der aktualisierten Verweise, Liste der geänderten Dateien und alle Stellen, die zur manuellen Überprüfung markiert werden (String-Literale, dynamischer Zugriff).
+6. Ausgabe: Gesamtanzahl der aktualisierten Verweise, Liste der geänderten Dateien und alle Stellen, die für manuelle Überprüfung gekennzeichnet sind (String-Literale, dynamischer Zugriff).

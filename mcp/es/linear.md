@@ -96,6 +96,3 @@ Para despliegues de equipo donde múltiples personas necesiten acceso, crea una 
 **Crear en lote con cuidado:** Crear muchos problemas en una sesión es rápido, pero Linear envía notificaciones para cada uno. Advierte al equipo o usa una clave de API de cuenta de servicio para operaciones en lote.
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

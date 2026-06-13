@@ -236,6 +236,3 @@ Success criteria: No checkout failures; p99 recovers within 60s of Redis restart
 **Finding:** the application has no fallback logic — it throws 500 errors rather than falling back to the database. The mental model was wrong. Ticket opened to implement fallback. Hypothesis scheduled to re-run after fix.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

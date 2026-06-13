@@ -435,6 +435,3 @@ Cableado Riverpod: `cameraNotifierProvider` llama a `CameraChannel.capturePhoto(
 Canal de plataforma: Dart llama al método `capturePhoto`, iOS usa `AVCaptureSession`, Android usa `CameraX`. Ambos lados devuelven la ruta del archivo guardado o lanzan `PlatformException` en rechazo de permiso, que el notifier mapea a estado `AsyncError`.
 
 ---
-
-> **Trabaja con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

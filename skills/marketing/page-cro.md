@@ -139,6 +139,3 @@ Key issues by priority:
 **Top A/B test to run first:** Change CTA copy from "Get Started" to "Start Free Trial — No Credit Card" → estimated 20-35% lift based on similar SaaS data.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

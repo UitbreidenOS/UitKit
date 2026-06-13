@@ -121,6 +121,3 @@ Ein gut strukturierter Projekt-Scope sieht aus wie:
 **Annahme, dass Kompetenzen den Baum hochgehen.** Das tun sie nicht. CLAUDE.md-Dateien gehen hoch; Kompetenzen nicht. Eine Kompetenz in `/workspace/project/.claude/skills/` ist nicht sichtbar, wenn Claude in `/workspace/project/packages/api/` arbeitet. Jedes Sub-Paket benötigt sein eigenes `.claude/skills/` für paketspezifische Kompetenzen.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -342,6 +342,3 @@ All Claude finance outputs are `[VERIFY]`-marked. This discipline forces you to 
 - [3-statement model skill](../skills/finance/3-statement-model.md)
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -255,6 +255,3 @@ Configure una estructura Terragrunt de 3 entornos (dev/staging/prod) para AWS VP
 5. El pipeline de GitHub Actions promueve dev → staging → prod con puertas de aprobación manuales en cada etapa.
 
 ---
-
-> **Trabaje con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

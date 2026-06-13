@@ -231,6 +231,3 @@ Schrijf het literatuurbeoordelingsgedeelte voor mijn opgenomen papers en thema's
 Opmerking: Ik synthetiseer over papers op bevinding, niet op paper — dit is de sleutel structurele verandering.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

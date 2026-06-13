@@ -151,6 +151,3 @@ Yes — the NRR differential is the tell. Let me load the numbers:
 Before cutting partner, diagnose: is the NRR gap due to (a) wrong ICP from partners, (b) less CS coverage, or (c) partner customers using less of the product? Fix the root cause before exiting the channel.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

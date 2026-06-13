@@ -201,6 +201,3 @@ Deze geschillen zijn niet louter semantisch — zij gaan naar hart vraag of gest
 *Advocaatcontrole vereist voor indiening. Alle [AANHAALINGAANDUIDING]-markers moeten door geverifieerde aanhaling vervangen. Alle [Dossier bij ___]-markers vereisen geverifieerde pagina/regelnummers uit dossier.*
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelingsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

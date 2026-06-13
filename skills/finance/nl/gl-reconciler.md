@@ -289,6 +289,3 @@ Genereer de tussenmaatschappelijke reconciliatie-sjabloon voor mijn entiteitsstr
 4. "First time right"-cultuur: controller controleert tijdens de maand, niet alleen bij afsluiting
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — wij bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

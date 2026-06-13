@@ -310,5 +310,3 @@ Not for marketing copy or testimonial selection. Not for individual customer sup
 4. **Monitor:** Mobile app demand; revisit if SMB expansion strategy changes
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [Product Operations Stack](https://github.com/Claudient/Claudient)

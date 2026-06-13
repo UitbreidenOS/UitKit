@@ -157,6 +157,3 @@ Inclure :
 **Brouillon de réponse :** Confirme les catégories de données trouvées, confirme la suppression des données de marketing, explique la conservation de 7 ans des dossiers de paiement avec base légale, inclut le droit de se plaindre à l'ICO.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -172,6 +172,3 @@ WACC=10,5% €17,0  €18,0   €19,0   €20,1   €21,6
 - Output duidelijk gemarkeerd met `[VERIFY]` en kernveronderstellingen vermeld
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -92,6 +92,3 @@ Pour les analyses et les rapports en lecture seule, omettez `write_products` de 
 - Pour les grands catalogues de produits, filtrez `list_products` par `status=active` et `vendor` pour garder les ensembles de résultats gérables avant d'enchaîner les opérations.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

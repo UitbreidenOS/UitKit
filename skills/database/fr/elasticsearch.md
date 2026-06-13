@@ -392,6 +392,3 @@ Concevez un index de catalogue de produits avec recherche en texte intégral, fi
 Cette requête: correspond au texte de recherche avec le champ de nom renforcé, filtre les produits audio en stock dans la plage prix/note, double le score des produits marqués featured, et retourne les agrégations catégorie/prix/note pour le panneau de facette à côté des résultats.
 
 ---
-
-> **Travaillez avec nous:** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

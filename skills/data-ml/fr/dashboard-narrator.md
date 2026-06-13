@@ -207,6 +207,3 @@ Si un élément échoue, réécrire ces sections.
 **Résultat attendu :** Phrase de verdict d'ouverture ("La croissance s'accélère en termes de revenus mais les signaux de conversion et de rétention méritent attention"). Points positifs : forte croissance des revenus, tendance WAU positive. Préoccupations : la baisse du taux de conversion coïncide avec le lancement de mardi — la nouvelle fonctionnalité perturbe peut-être le flux d'inscription ; la hausse du churn est précoce mais à surveiller sur 3 mois. Recommandation : tester A/B le nouveau flux d'onboarding par rapport à la version précédente ; programmer une analyse des cohortes de churn pour identifier si un segment spécifique conduit le taux de 1,8 %. Liste de surveillance : taux de conversion et churn pour les 2 prochaines semaines.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -299,6 +299,3 @@ Generate a structured course improvement report:
 **Erwartete Ausgabe:** Zusammenfassung — der Inhalt war hochrelevant, aber das Tempo war die klare Schwäche. Stärkste Elemente: die Fallstudie und die Kleingruppendisskussion. Häufigste Kritik: Inhaltsdichte im Verhältnis zur Zeit (40 % der Teilnehmer), unzureichende Übung (25 %). Handlungsempfehlungen: 20 % des Inhalts kürzen, um Luft zu lassen (die Relevanz-Bewertung zeigt, dass der richtige Inhalt vorhanden ist — das Problem ist das Volumen), ein zweites Übungsszenario hinzufügen, das einen Teil der Vorlesungszeit ersetzt, den Vormittag in zwei kürzere Blöcke mit einer Pause aufteilen. Eine Erkenntnis: Das Tempo-Problem und der Wunsch nach mehr Übung sind dasselbe Problem — wenn der Zeitplan zu eng ist, wird die Übung gestrichen. Eines lösen, löst beide.
 
 ---
-
-> **Mit uns arbeiten:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

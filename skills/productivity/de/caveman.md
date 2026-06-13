@@ -68,5 +68,3 @@ tickets into 5 categories. Return only: ticket_id, category.
 **Referenz:** [github.com/JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) — die maßgebliche Caveman-Implementierung. Claudient verweist auf diese Arbeit; sie wird hier nicht dupliziert.
 
 ---
-
-> **Arbeite mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwickler-Communities. [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

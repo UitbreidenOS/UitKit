@@ -42,6 +42,3 @@ CSAT sinkt. Wie fixe ich ohne sofort zu hiren?
 Agent triagiert: Ticket Deflection Opportunities, kategorisiert Ticket Types, identifiziert Process Inefficiencies, gibt 90-Day Plan bevor Headcount recommended.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/).
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

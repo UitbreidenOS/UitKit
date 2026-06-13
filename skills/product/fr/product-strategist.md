@@ -232,6 +232,3 @@ Se déplacer en amont est séduisant parce que l'ACV augmente. C'est risqué par
 **Ma recommandation :** Passer au marché intermédiaire (50-500 employés) d'abord, pas à l'enterprise (500+). C'est plus proche de ce que vous avez, nécessite moins d'investissement produit et dérisque la courbe d'apprentissage avant de vous charger de transactions > $100K avec des approvisionnements complexes.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

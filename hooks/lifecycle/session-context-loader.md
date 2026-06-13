@@ -133,6 +133,3 @@ To add project-specific notes that load automatically every session, create `.cl
 This file is read fresh every session — update it as the project evolves. The hook works with and without git. Fields with no data are omitted from the injected context rather than left blank.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

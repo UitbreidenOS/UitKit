@@ -116,5 +116,3 @@ Schedule phone screen this week. In screening call, probe: (1) Willingness to re
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

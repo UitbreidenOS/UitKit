@@ -372,6 +372,3 @@ Traversez ceci à la fin de vos 30 premiers jours pour évaluer si vous avez jet
 Si vous marquez 8-10 sur cette liste de vérification après 30 jours, le mois deux sera matériellement plus facile et les économies de temps se composeront. Si vous marquez sous 7, identifiez les articles que vous avez sautés et terminez-les au cours de la semaine cinq avant d'ajouter des nouveaux workflows.
 
 ---
-
-> **Claudient** est soutenu par [Uitbreiden](https://uitbreiden.com/) — construire des produits d'IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

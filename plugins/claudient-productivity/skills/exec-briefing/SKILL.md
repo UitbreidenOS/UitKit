@@ -355,6 +355,3 @@ At the end of the meeting, propose:
 **Expected output:** Full briefing — attendee profile researching the new VP (LinkedIn, prior company background, what she focused on in her last role), talking points for why this is the right time to expand (usage data, new use cases unlocked in the last 6 months, ROI evidence), key question to ask ("What would make this partnership a clear success in your first 90 days?"), what NOT to commit to (pricing changes without finance sign-off, custom development), and proposed next steps (product demo with her team in 2 weeks, executive sponsor intro call).
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

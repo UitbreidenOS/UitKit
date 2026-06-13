@@ -198,5 +198,5 @@ Liebe Grüße
 
 ---
 
-🔗 **[Uitbreiden — Aufbau von KI-Produkten und B2B-Tools mit Developer Communities.](https://uitbreiden.com/)**
+
 📺 **[Abonniere unseren YouTube-Kanal für weitere Tiefgänge](https://www.youtube.com/channel/UCcvK8pHyqeR7Q_0lYkuHlUg)**

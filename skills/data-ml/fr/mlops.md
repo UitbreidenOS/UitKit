@@ -195,6 +195,3 @@ Configuration de MLflow tracking pour un modèle de classification binaire avec 
 5. Le job GitHub Actions `ml-pipeline` échoue rapidement si l'un des portails de précision ou de latence n'est pas respecté — bloquant la fusion de promouvoir un modèle dégradé.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

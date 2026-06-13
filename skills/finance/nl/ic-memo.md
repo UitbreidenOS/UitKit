@@ -151,6 +151,3 @@ Markeer secties waar je meer informatie nodig hebt voor nauwkeurige voltooiing.
 **Verwachte uitvoer:** Alle 9 secties met passende `[VERIFY]` markers op alle financiën. Samenvatting met MOIC/IRR doelen. Investeringsthese gericht op HR tech tailwinds, product-led growth en weg naar winstgevendheid. Rendement analyse met 5-jaar basisscenario (3x MOIC, 25% IRR) en gevoeligheid tabel. Risico sectie behandelend SaaS churn, concurrentiële bedreigingen en management afhankelijkheid.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

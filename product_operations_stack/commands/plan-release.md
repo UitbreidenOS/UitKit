@@ -75,5 +75,3 @@ Claude runs `/plan-release` with your scope and timeline. Returns:
 - Deployment checklist (what to do in the 24 hours before launch)
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [Product Operations Stack](https://github.com/Claudient/Claudient)

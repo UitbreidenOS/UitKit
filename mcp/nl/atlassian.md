@@ -120,6 +120,3 @@ met de titel "Release Notes — Sprint 42".
 **Geen credentials committen:** Houd `ATLASSIAN_API_TOKEN` in je globale `~/.claude.json`, niet in een project-niveau `.claude/mcp.json` die naar versiecontrole kan worden gecommit.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

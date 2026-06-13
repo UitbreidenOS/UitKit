@@ -356,6 +356,3 @@ const userService = inject(key)  // typisiert als UserService | undefined
 - Vue Router Route mit `meta: { title: 'Products' }` und einem Navigation Guard, der `document.title` setzt
 
 ---
-
-> **Mit uns arbeiten:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -89,6 +89,3 @@ Die Kompetenz führt das vierkategorige Interview aus als strukturiertes Gesprä
 Dann bestätigt : « Profil abgeschlossen. Die Kompetenzen Contract Reviewer, Escalation Flagger und Redline Negotiator werden dieses Profil jetzt für alle Überprüfungen verwenden. »
 
 ---
-
-> **Arbeiten Sie mit uns :** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

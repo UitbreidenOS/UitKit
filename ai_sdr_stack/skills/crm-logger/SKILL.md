@@ -53,5 +53,3 @@ Do not use to log speculative or future activities — only log completed action
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudients/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

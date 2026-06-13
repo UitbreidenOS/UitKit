@@ -1,37 +1,37 @@
 ---
-description: Überprüfung eines Datenbankschemas auf Designfehler, Normalisierungsprobleme und Produktionsreife
-argument-hint: "[schema file or table name(s)]"
+description: Überprüfe ein Datenbankschema auf Designfehler, Normalisierungsprobleme und Produktionsreife
+argument-hint: "[Schema-Datei oder Tabellenname(n)]"
 ---
-Sie führen eine Produktionsreife-Überprüfung eines Datenbankschemas durch. Überprüfungsziel: $ARGUMENTS
+Du führst eine Produktionsreife-Überprüfung eines Datenbankschemas durch. Überprüfungsziel: $ARGUMENTS
 
-Falls $ARGUMENTS ein Dateipfad ist, lesen Sie die Datei. Falls es ein Tabellenname oder eine Liste von Namen ist, suchen Sie nach Schemadefinitionen in der Codebasis (Migrationen, ORM-Modelle, schema.sql, schema.rb, prisma.schema, usw.).
+Falls $ARGUMENTS ein Dateipfad ist, lies die Datei. Falls es ein Tabellenname oder eine Liste von Namen ist, suche nach Schemadefinitionen in der Codebasis (Migrationen, ORM-Modelle, schema.sql, schema.rb, prisma.schema, etc.).
 
-Überprüfen Sie das Schema über diese Dimensionen:
+Überprüfe das Schema über diese Dimensionen:
 
 **Normalisierung und Datenintegrität**
-- Identifizieren Sie Verstöße gegen 1NF, 2NF, 3NF. Beachten Sie Denormalisierungen, die absichtlich sind (für Leseleistung) im Vergleich zu versehentlichen.
-- Erkennen Sie Spalten, die mehrere Werte speichern (kommagetrennte Listen, JSON-Arrays, die als Relationen verwendet werden).
-- Überprüfen Sie, dass jede Tabelle einen eindeutigen Primärschlüssel hat.
-- Überprüfen Sie, dass Fremdschlüssel deklariert sind und nicht nur durch Benennungskonvention impliziert werden.
-- Überprüfen Sie fehlende UNIQUE-Constraints für Spalten, die eindeutig sein sollten.
-- Erkennen Sie nullable Spalten, die NOT NULL sein sollten, basierend auf geschäftlicher Semantik.
+- Identifiziere Verstöße gegen 1NF, 2NF, 3NF. Notiere Denormalisierungen, die absichtlich sind (für Leseleistung) vs. versehentlich.
+- Erkenne Spalten, die mehrere Werte speichern (kommagetrennte Listen, JSON-Arrays, die als Relationen verwendet werden).
+- Überprüfe, dass jede Tabelle einen klaren Primärschlüssel hat.
+- Verifiziere, dass Fremdschlüssel deklariert sind und nicht nur durch Namenskonvention impliziert werden.
+- Überprüfe auf fehlende UNIQUE-Einschränkungen für Spalten, die eindeutig sein sollten.
+- Erkenne nullable Spalten, die basierend auf Business-Semantik NOT NULL sein sollten.
 
-**Typangemessenheit**
-- Flaggen Sie Zeichenketten-Spalten, die E-Mail-Adressen, UUIDs, IP-Adressen, JSON, Geldbeträge oder Datumszeiten speichern — schlagen Sie angemessene Typen vor.
-- Flaggen Sie INT, das für Boolean verwendet wird (verwenden Sie BOOLEAN), oder FLOAT, das für Währung verwendet wird (verwenden Sie DECIMAL/NUMERIC).
-- Überprüfen Sie die Zeitzonen-Behandlung: TIMESTAMP vs TIMESTAMPTZ (PostgreSQL), DATETIME vs TIMESTAMP (MySQL).
+**Typ-Angemessenheit**
+- Kennzeichne String-Spalten, die E-Mails, UUIDs, IP-Adressen, JSON, Geldbeträge oder Datetimes speichern — schlag angemessene Typen vor.
+- Kennzeichne INT für Boolean (verwende BOOLEAN) oder FLOAT für Währung (verwende DECIMAL/NUMERIC).
+- Überprüfe Zeitzonenbehandlung: TIMESTAMP vs TIMESTAMPTZ (PostgreSQL), DATETIME vs TIMESTAMP (MySQL).
 
 **Benennung und Konsistenz**
-- Überprüfen Sie konsistente Benennungskonventionen (snake_case vs camelCase, Plural vs Singular-Tabellennamen).
-- Identifizieren Sie inkonsistente Spalten-Benennungsmuster für häufige Felder (created_at vs createdAt vs create_time).
+- Überprüfe auf konsistente Namenskonventionen (snake_case vs camelCase, plural vs singular Tabellennamen).
+- Identifiziere inkonsistente Spaltenbenennung für häufige Felder (created_at vs createdAt vs create_time).
 
 **Skalierungsbedenken**
-- Tabellen, bei denen ein Index auf Fremdschlüsselspalten fehlt.
-- Tabellen ohne offensichtliche Partitionierungsstrategie, die wahrscheinlich 10 Millionen Zeilen überschreiten werden.
-- Fehlendes Soft-Delete-Muster, bei dem harte Löschungen Audit-Anforderungen brechen würden.
-- VARCHAR ohne vernünftige Längenbegrenzung auf Spalten, die wahrscheinlich indiziert werden.
+- Tabellen ohne Index auf Fremdschlüsselspalten.
+- Tabellen ohne offensichtliche Partitionierungsstrategie, die wahrscheinlich 10M Zeilen überschreiten werden.
+- Fehlendes Soft-Delete-Muster, bei dem Hard Deletes Audit-Anforderungen brechen würden.
+- VARCHAR ohne angemessene Längenbegrenzung für Spalten, die wahrscheinlich indiziert werden.
 
 **Sicherheit**
-- Spalten, die sensible Daten (Passwort, ssn, card_number, secret) zu speichern scheinen, ohne eine Benennungskonvention, die anzeigt, dass sie gehasht/verschlüsselt sind.
+- Spalten, die sensible Daten zu speichern scheinen (password, ssn, card_number, secret) ohne Namenskonvention, die angibt, dass sie gehasht/verschlüsselt sind.
 
-Geben Sie einen strukturierten Bericht mit Schweregradbewertungen (CRITICAL / WARNING / SUGGESTION) für jeden Befund und eine konkrete Behebung aus.
+Gebe einen strukturierten Bericht mit Schweregradbewertungen (CRITICAL / WARNING / SUGGESTION) für jeden Fund aus, und einen konkreten Fix für jeden.

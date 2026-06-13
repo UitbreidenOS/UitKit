@@ -288,6 +288,3 @@ Write an ERC-721 NFT contract with allowlist minting, ERC-2981 royalties, and a 
 6. Foundry fuzz test `testFuzz_royaltyNeverExceedsSalePrice(uint256 salePrice)` runs 10,000 iterations asserting royalty <= salePrice for all inputs. Second fuzz test `testFuzz_allowlistMintDecrementsBalance(address minter, uint256 quota)` verifies balance always decrements exactly 1 per mint regardless of initial quota.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

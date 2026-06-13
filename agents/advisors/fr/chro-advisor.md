@@ -156,6 +156,3 @@ Pas de système de nivellement et pas de critères de promotion clairs. Les ing�
 C'est une correction de 8-12 semaines, pas une transformation de culture. Corrigez le problème visible d'abord.
 
 ---
-
-> **Travaillez avec nous:** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits d'IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

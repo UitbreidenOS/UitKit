@@ -226,7 +226,7 @@ Determine your company's positioning strategy:
 
 ---
 
-Built with [Claudient](https://github.com/Claudient/Claudient) · [claude.com/claude-code](https://claude.com/claude-code)
+
 ```
 
 ---
@@ -259,5 +259,3 @@ By location:
 - **Geographic arbitrage risk:** Remote hire at same salary as SF-based peer earning 30% less elsewhere. Action: Document market justification or adjust offer.
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [claude.com/claude-code](https://claude.com/claude-code)

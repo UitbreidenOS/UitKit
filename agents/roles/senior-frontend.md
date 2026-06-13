@@ -243,6 +243,3 @@ LCP of 3.2s on a hero image is almost always one of three things:
 Expected improvement: LCP from 3.2s → < 1.0s after priority + optimised image.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

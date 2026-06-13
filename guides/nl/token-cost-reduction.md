@@ -281,6 +281,3 @@ Geschatte kosten bij mei 2026 prijzen. Controleer Anthropic's prijspagina voor h
 Het toepassen van alle lage-complexiteitsstrategieën samen levert meestal 30–50% totale kostverlaging op zonder de kwaliteit van resultaten te veranderen.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -218,6 +218,3 @@ Specific action: "New item added mid-sprint requires explicit PM + tech lead sig
 Stop using Start/Stop/Continue. Switch to a Timeline retro — go back through the last sprint day by day. This forces specific examples rather than generic complaints, and specific examples have specific causes.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

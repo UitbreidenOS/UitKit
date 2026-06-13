@@ -138,6 +138,3 @@ Sleutelproblemen op prioriteit:
 **Top A/B-test om eerst uit te voeren:** Wijzig CTA-tekst van "Aan de slag" naar "Gratis proef starten — Geen creditcard" → geschatte verhoging van 20-35% op basis van vergelijkbare SaaS-gegevens.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

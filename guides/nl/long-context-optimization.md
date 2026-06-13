@@ -603,6 +603,3 @@ Oorzaak: elke iteratie voegde 10K tokens tool geschiedenis aan zelfde context zo
 Fix: implementeer schrijf-staat-naar-disk patroon. Overweeg ScheduleWakeup voor hard reset tussen lange iteratie's.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI producten en B2B oplossingen met developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

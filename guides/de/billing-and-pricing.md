@@ -139,6 +139,3 @@ Wenn Sie ein Max-Abonnement haben, ist Ihr Agent SDK-Kreditpool bezahlt. Die Aus
 Für API-Key-Benutzer bietet die Anthropic Console (console.anthropic.com) tägliche Token-Nutzung aufgeschlüsselt nach Modell und einen Ausgabengraphen für den Abrechnungszeitraum.
 
 ---
-
-> **Arbeiten Sie mit uns zusammen:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen KI-Produkte und B2B-Lösungen mit Entwicklergemeinschaften.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

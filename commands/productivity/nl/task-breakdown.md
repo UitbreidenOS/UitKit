@@ -1,30 +1,30 @@
 ---
-description: Verdeel een doel of feature in scoped, sequentiële taken met tijdsinschattingen
-argument-hint: "[goal or feature description]"
+description: Een doel of feature uiteenleggen in scoped, sequentiële taken met inspanningsschattingen
+argument-hint: "[doelbeschrijving of feature beschrijving]"
 ---
-Verdeel het volgende in een gesequentieerde takenlijst: $ARGUMENTS
+Leg het volgende uit in een gesequentieerde takenlijst: $ARGUMENTS
 
-Maak een vlakke, geordende lijst met taken. Voor elke taak:
+Produceer een platte, geordende takenlijst. Voor elke taak:
 
 ```
-[ ] <verb-first task title>
-    Size: XS | S | M | L | XL   (XS=<1h, S=1-3h, M=3-8h, L=1-3d, XL=>3d)
-    Depends on: <task number(s), or "none">
-    Notes: <one line — key assumption, risk, or constraint. Omit if nothing notable.>
+[ ] <werkwoord-eerste taaktitel>
+    Grootte: XS | S | M | L | XL   (XS=<1h, S=1-3h, M=3-8h, L=1-3d, XL=>3d)
+    Hangt af van: <taaknummers, of "geen">
+    Opmerkingen: <één regel — sleutelaanname, risico of beperking. Weglaten als niets opvallends.>
 ```
 
-Voeg na de lijst een **Risks & Assumptions** sectie toe (3–6 bullets) met betrekking tot:
-- Onbekenden die schattingen kunnen verstoren
-- Externe afhankelijkheden (APIs, andere teams, infra)
-- Scope grenzen — wat is expliciet NIET inbegrepen
+Na de lijst voegt u een **Risico's & Aannames** sectie toe (3–6 bullets) met:
+- Onbekenden die schattingen kunnen verpesten
+- Externe afhankelijkheden (API's, andere teams, infra)
+- Scoped grenzen — wat is expliciet NIET opgenomen
 
 Regels:
-- Taken moeten onafhankelijk door één persoon in één zitting afgerond kunnen worden (M of kleiner verdient voorkeur).
-- Als een taak XL zou zijn, splits deze op.
+- Taken moeten onafhankelijk voltooid kunnen worden door één persoon in één zitting (M of kleiner bij voorkeur).
+- Als een taak XL zou zijn, splits deze.
 - Orden taken zodat elk kan starten zodra de afhankelijkheden klaar zijn — geen circulaire deps.
 - Gebruik implementatie-niveau werkwoorden: Write, Add, Refactor, Deploy, Test, Configure — niet vage werkwoorden zoals "Handle" of "Work on."
-- Neem geen taken op voor projectmanagementsoverhead (standups, reviews), tenzij het verzoek hier expliciet om vraagt.
-- Als $ARGUMENTS te vaag is om in te delen zonder aannames over scope, stel één verduidelijkingsvraag voordat je doorgaat.
-- Geen marketingtaal. Geen "ensure seamless experience."
+- Voeg geen taken toe voor projectmanagementinitiatief (standups, reviews) tenzij het verzoek daar expliciet om vraagt.
+- Als $ARGUMENTS te vaag is om uit te leggen zonder naar bereik te gokken, stel één verduidelijkende vraag voordat u verdergaat.
+- Geen marketingtaal. Geen "zorg voor naadloze ervaring."
 
-Output alleen de takenlijst en risks sectie.
+Voer alleen de takenlijst en risico's sectie uit.

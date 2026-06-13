@@ -603,6 +603,3 @@ Cause : chaque itération ajouté les 10K tokens d'historique d'outil au même c
 Fix : mettre en place le motif write-état-vers-disque. Considérer ScheduleWakeup pour un reset dur entre les itérations longues.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons les produits IA et les solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

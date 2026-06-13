@@ -133,6 +133,3 @@ Nee. Ik zal uw programma aanpassen aan wat u hebt — of dat een gym is, thuisui
 Boek een gratis 20-minuut gesprek en we praten over uw doelen, huidig fitnessniveau en de beste aanpak voor u. Geen verplichting. → [Boek hier]
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

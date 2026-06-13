@@ -101,5 +101,3 @@ Do not use before the PRD is final. Do not use for features with no cross-functi
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudients/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

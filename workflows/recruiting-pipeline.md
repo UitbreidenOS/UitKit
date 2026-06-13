@@ -387,6 +387,3 @@ If screen-to-advance rate is very high: you may be passing candidates who aren't
 If offer accept rate is low: compensation isn't competitive, process is too slow, or the candidate experience is poor — diagnose which.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -1,6 +1,6 @@
 ---
-description: Amorcer un cycle TDD — écrire d'abord les tests qui échouent, puis implémenter
-argument-hint: "[function, class, or feature to build]"
+description: Amorcer un cycle TDD — écrire les tests qui échouent en premier, puis implémenter
+argument-hint: "[fonction, classe ou fonctionnalité à construire]"
 ---
 Démarrer un cycle TDD pour : $ARGUMENTS
 
@@ -8,32 +8,32 @@ Démarrer un cycle TDD pour : $ARGUMENTS
 
 1. Clarifier la cible à partir de l'argument :
    - Si une signature de fonction ou une description : dériver les contrats d'entrée/sortie
-   - Si un nom de classe ou de module : déduire les responsabilités à partir du nom et de tout contexte de code existant
-   - Si une description de fonctionnalité : identifier la plus petite unité de comportement par laquelle commencer
+   - Si un nom de classe ou de module : déduire les responsabilités à partir du nom et du contexte de code existant
+   - Si une description de fonctionnalité : identifier la plus petite unité de comportement à commencer
 
-2. Vérifier tout code d'implémentation ou partiel existant. S'il y en a, le lire mais ne pas le modifier pour l'instant.
+2. Vérifier s'il existe une implémentation existante ou un code partiel. Si trouvé, le lire mais ne pas le modifier pour le moment.
 
-3. Écrire d'abord les tests qui échouent — aucun code d'implémentation pour l'instant.
+3. Écrire d'abord les tests qui échouent — aucun code d'implémentation pour le moment.
 
    Pour chaque test :
    - Le nommer au format : `[unité] [scénario] [résultat attendu]`
    - Couvrir dans cet ordre : chemin heureux → cas limites → chemins d'erreur
-   - Écrire le nombre minimum de tests qui spécifie complètement le contrat (éviter la redondance)
-   - Utiliser le cadre de test existant du projet et le style d'assertion
+   - Écrire le nombre minimum de tests qui spécifient complètement le contrat (éviter les redondances)
+   - Utiliser le framework de test existant du projet et le style d'assertion
 
-   Cas de test minimaux à écrire avant d'arrêter :
-   - Au moins 1 test de chemin heureux
-   - Au moins 1 test de limite ou de cas limite
-   - Au moins 1 test d'erreur/d'entrée invalide (si la cible peut échouer)
+   Cas de test minimum à écrire avant de s'arrêter :
+   - Au moins 1 test du chemin heureux
+   - Au moins 1 test de cas limite ou particulier
+   - Au moins 1 test d'erreur/entrée invalide (si la cible peut échouer)
 
-4. Exécuter les tests. Confirmer qu'ils échouent pour la bonne raison (pas une erreur de syntaxe ou d'importation — un véritable échec d'assertion contre une logique manquante).
+4. Exécuter les tests. Confirmer qu'ils échouent pour la bonne raison (pas une erreur de syntaxe ou d'import — un véritable échec d'assertion contre la logique manquante).
 
-5. Écrire l'implémentation minimale qui rend les tests réussis :
-   - Aucune logique au-delà de ce que les tests nécessitent
-   - Aucun traitement spéculatif de cas non encore testés
+5. Écrire l'implémentation minimale qui fait passer les tests :
+   - Aucune logique au-delà de ce que les tests exigent
+   - Aucune gestion spéculative de cas non encore testés
    - Suivre le style de code existant du projet
 
-6. Exécuter les tests à nouveau. Si tous réussissent, signaler le succès.
+6. Exécuter les tests à nouveau. Si tous passent, signaler le succès.
 
 7. Si un test échoue toujours après l'implémentation, afficher la sortie d'échec et diagnostiquer l'écart avant de tenter une correction.
 

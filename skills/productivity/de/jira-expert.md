@@ -261,6 +261,3 @@ Wenn das Bug-Volumen steigt, wird die Velocity-Rückgang durch ungeplante Arbeit
 Fügen Sie ein "Cycle Time" Gadget zu Ihrem Board hinzu. Wenn die Cycle Time zunimmt (Stories dauern länger zu vervollständigen), ist das Problem WIP-Limit — zu viele Dinge im Progress auf einmal.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird unterstützt durch [Uitbreiden](https://uitbreiden.com/) — wir bauen KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

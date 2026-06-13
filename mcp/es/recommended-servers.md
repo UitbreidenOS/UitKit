@@ -166,5 +166,3 @@ Agrega servidores a `~/.claude/settings.json` (global) o `.claude/settings.json`
 Usa referencias a variables de entorno (`${VAR}`) en lugar de secretos hardcodeados.
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores. [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

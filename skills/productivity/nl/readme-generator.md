@@ -158,6 +158,3 @@ Target audience: developers using Claude Code
 **Verwachte uitvoer:** Volledige README met hero-beschrijving, npm/licentie/taal-badges, installatiesectie (`npx claudient add all`), CLI-referentietabel voor alle subcommando's, categorielijst, bijdragende sectie, MIT-licentievoettekst.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen samen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

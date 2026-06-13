@@ -78,6 +78,3 @@ for await (const message of query({ prompt: "Review this PR diff", options })) {
 Un pipeline de revisión de código en CI: en cada evento de apertura de PR, un job de GitHub Actions llama al SDK del Agente con el diff del PR como prompt. El agente revisa el diff, llama a herramientas internas para verificar la base de datos de cobertura de pruebas, y publica un comentario de revisión estructurado de vuelta al PR a través de la API de GitHub. La bandera `--bare` mantiene el tiempo de inicio en frío por debajo de 2 segundos.
 
 ---
-
-> **Trabaje con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

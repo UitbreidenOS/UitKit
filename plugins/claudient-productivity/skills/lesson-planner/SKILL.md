@@ -316,6 +316,3 @@ By the end of this lesson, students will be able to:
 **Expected output:** Three learning objectives using apply/calculate-level Bloom's verbs. Lesson structure: 10-minute hook (why unit economics killed companies you've heard of), 20-minute direct instruction on CAC/LTV/payback with formulas, 30-minute workshop where each founder calculates their own metrics using a provided template, 15-minute pair share and debrief ("what did you discover about your own business?"), 10-minute exit ticket (calculate a given scenario + answer "what does this tell you about business health?"). Extension for founders whose numbers already look solid: calculate sensitivity analysis — what happens to LTV/CAC if churn drops 10%?
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

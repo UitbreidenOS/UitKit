@@ -80,6 +80,3 @@ Reglas:
 - Monitoreo de retraso: alerte cuando el retraso del consumidor exceda un umbral — el crecimiento del retraso significa que los consumidores no pueden seguir el ritmo de los productores
 
 ---
-
-> **Trabaje con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

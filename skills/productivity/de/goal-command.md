@@ -55,6 +55,3 @@ Natürliche Sprache funktioniert. Die Bedingung sollte beobachtbar und eindeutig
 Claude führt `tsc --noEmit` aus, liest die Fehlerliste, behebt jeden Fehler, führt erneut aus, sieht verbleibende Fehler, behebt diese, führt erneut aus — Schleife läuft weiter bis null Fehler. Hält dann an und rapportiert: "Behoben 14 TypeScript-Fehler über 6 Dateien. `tsc --noEmit` beendet sauber."
 
 ---
-
-> **Arbeiten Sie mit uns :** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwicklergemeinschaften.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

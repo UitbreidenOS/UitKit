@@ -1,6 +1,6 @@
 ---
 description: Extraheer een gemarkeerd blok of beschreven logica naar een benoemde functie met juiste handtekening en aanroepsite-updates
-argument-hint: "[file] [line-range or description]"
+argument-hint: "[bestand] [regelrange of beschrijving]"
 ---
 Je voert een chirurgische extract-function refactor uit op $ARGUMENTS.
 

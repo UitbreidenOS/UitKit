@@ -345,6 +345,3 @@ ADR writing has to happen when the decision is made — not six months later. Us
 - [Runbook generator skill](../skills/productivity/runbook-generator.md)
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

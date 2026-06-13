@@ -114,5 +114,3 @@ When you run product operations workflows (roadmap analysis, feedback synthesis,
 This creates a searchable history of all product operations work.
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [Product Operations Stack](https://github.com/Claudient/Claudient)

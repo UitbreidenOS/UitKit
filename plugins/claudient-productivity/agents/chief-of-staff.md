@@ -157,6 +157,3 @@ Prevents re-relitigating settled questions. Invaluable during board reviews.
 In 6 months, the CEO should have 2 fewer hours of meetings per day and be less of a bottleneck on cross-functional decisions — not because they're less involved, but because the system is working without them.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

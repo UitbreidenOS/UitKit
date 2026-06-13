@@ -255,6 +255,3 @@ Diseño de firmware FreeRTOS para STM32F4 leyendo temperatura/presión de BMP388
 5. **Tarea de perro guardián** (prioridad 5): espera en bits de grupo de eventos establecidos por tareas de sensor y UART cada ciclo. Si ambos bits no están establecidos dentro de 2s, el IWDG reinicia el dispositivo. Marca de agua alta de pila verificada en compilaciones de depuración y registrada por UART al arranque.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

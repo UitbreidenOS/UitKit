@@ -260,6 +260,3 @@ Design an ECS movement system in Unity DOTS for 5,000 simultaneous entities at 6
 5. Wire a thin MonoBehaviour bridge that reads ECS entity count for the HUD and passes player position to an ECS targeting system via `SystemAPI.SetSingleton`.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -168,6 +168,3 @@ kubectl rollout undo deployment/api
 **Escalation:** If memory stays > 90% after restart AND no deploy → page on-call senior engineer.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

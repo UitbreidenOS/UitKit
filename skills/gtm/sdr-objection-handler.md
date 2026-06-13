@@ -284,6 +284,3 @@ Output:
 > Most teams that talk to us are using Salesforce + either Outreach or a manual process. Curious which camp you're in — worth 15 minutes to show you what teams your size do with the combination?"
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

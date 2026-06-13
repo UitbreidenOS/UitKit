@@ -372,6 +372,3 @@ Voer dit aan het einde van uw eerste 30 dagen uit om te evalueren of u de sticht
 Als u 8-10 op deze checklist na 30 dagen scoort, zal maand twee veel gemakkelijker zijn en zullen de timebesparerings samengesteld. Als u onder 7 scoort, identificeer de items die u hebt overgeslagen en voltooi ze tijdens week vijf voordat u nieuwe workflows toevoegt.
 
 ---
-
-> **Claudient** wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — AI-producten en B2B-oplossingen bouwen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

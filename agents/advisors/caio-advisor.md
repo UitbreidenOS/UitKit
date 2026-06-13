@@ -153,6 +153,3 @@ CV screening is a well-defined classification task with consistent format. Fine-
 **Eval harness requirement (Art. 15):** Before any deployment — frontier API or fine-tuned — you need a documented accuracy benchmark. At minimum: 500 gold-standard CV-job pairs with human-labelled hiring decisions, tested against demographic parity requirements. This is not optional; it's the conformity evidence your Annex IV document needs.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

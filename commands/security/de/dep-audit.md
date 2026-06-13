@@ -1,12 +1,12 @@
 ---
 description: Projektabhängigkeiten auf bekannte CVEs und Supply-Chain-Risiken prüfen
-argument-hint: "[package-file or ecosystem]"
+argument-hint: "[Paketdatei oder Ökosystem]"
 ---
-Überwachen Sie die Abhängigkeiten in diesem Projekt auf bekannte Sicherheitslücken und Supply-Chain-Risiken.
+Prüfen Sie die Abhängigkeiten in diesem Projekt auf bekannte Anfälligkeiten und Supply-Chain-Risiken.
 
-Ziel: $ARGUMENTS (automatische Erkennung, falls leer — gescannte Repo-Root und Unterverzeichnisse nach Manifest-Dateien).
+Ziel: $ARGUMENTS (automatische Erkennung, wenn leer — gescannt das Repository-Verzeichnis und Unterverzeichnisse nach Manifestdateien).
 
-1. **Ökosysteme erkennen**: Identifizieren Sie alle vorhandenen Lockfiles und Manifeste:
+1. **Ökosystem(e) erkennen**: Identifizieren Sie alle vorhandenen Lockfiles und Manifeste:
    - Node: `package.json`, `package-lock.json`, `yarn.lock`, `pnpm-lock.yaml`
    - Python: `requirements*.txt`, `Pipfile.lock`, `pyproject.toml`, `poetry.lock`
    - Go: `go.mod`, `go.sum`
@@ -14,7 +14,7 @@ Ziel: $ARGUMENTS (automatische Erkennung, falls leer — gescannte Repo-Root und
    - Java/Kotlin: `pom.xml`, `build.gradle`
    - Ruby: `Gemfile.lock`
 
-2. **Native Audit-Tools ausführen**, falls verfügbar:
+2. **Native Audit-Tools ausführen**, wo verfügbar:
    - `npm audit --json` / `yarn audit` / `pnpm audit`
    - `pip-audit` oder `safety check`
    - `cargo audit`
@@ -22,22 +22,22 @@ Ziel: $ARGUMENTS (automatische Erkennung, falls leer — gescannte Repo-Root und
    - `bundle audit`
    Erfassen Sie die Ausgabe und analysieren Sie die Ergebnisse.
 
-3. **CVEs identifizieren**: Für jeden verwundbaren Paketbericht:
+3. **CVEs identifizieren**: Für jedes anfällige Paket berichten Sie:
    - Paketname und aktuelle Version
    - CVE-ID(s) und CVSS-Score
-   - Beschreibung der Sicherheitslücke (ein Satz)
-   - Behobene Version (falls verfügbar)
+   - Anfälligkeitsbeschreibung (ein Satz)
+   - Behobene Version (falls vorhanden)
    - Ob dies eine direkte oder transitive Abhängigkeit ist
-   - Ob der verwundbare Code-Pfad von der Anwendung erreichbar ist
+   - Ob der anfällige Code-Pfad von der Anwendung aus erreichbar ist
 
-4. **Supply-Chain-Signale**: Markieren Sie jedes Paket, das zeigt:
-   - Unveröffentlichte oder gelöschte Versionen in der Lockfile
-   - Pakete ohne Downloads, einzelner Wartungsperson oder sehr recent Besitzwechsel
-   - Dependency-Confusion-Risiko (interne Paketnamen, die in öffentlichen Registern existieren)
+4. **Supply-Chain-Signale**: Kennzeichnen Sie alle Pakete mit:
+   - Unveröffentlichte oder verworfene Versionen, die in der Lockfile festgelegt sind
+   - Pakete mit null Downloads, einzelnem Betreuer oder sehr kürzlichen Besitzerwechseln
+   - Dependency-Confusion-Risiko (interne Paketnamen, die in öffentlichen Registern vorhanden sind)
    - Pakete mit Install-Skripten (`preinstall`, `postinstall`), die beliebigen Code ausführen
-   - Wildcard-Versionsangaben (`*`, `>=0.0.0`), die jede zukünftige Version akzeptieren
+   - Wildcard-Version-Pins (`*`, `>=0.0.0`), die zukünftige Versionen akzeptieren
 
-5. **Priorisieren**: Nach Erreichbarkeit > CVSS-Score > direkt vs. transitiv ordnen.
+5. **Priorisieren**: Bewerten Sie nach Erreichbarkeit > CVSS-Score > direkt vs. transitiv.
 
 6. **Ausgabe**:
    ```
@@ -55,4 +55,4 @@ Ziel: $ARGUMENTS (automatische Erkennung, falls leer — gescannte Repo-Root und
    Paste-ready commands to fix all critical/high issues.
    ```
 
-Wenn Audit-Tools nicht verfügbar sind, kreuzen Sie Versionen mit bekannten CVE-Datenbanken aus Trainingsdaten ab und beachten Sie die Einschränkung. Ändern Sie keine Dateien und führen Sie keine Install-Befehle aus.
+Wenn Audit-Tools nicht verfügbar sind, gleichen Sie Versionen mit bekannten CVE-Datenbanken aus Trainingsdaten ab und vermerken Sie die Einschränkung. Ändern Sie keine Dateien und führen Sie keine Install-Befehle aus.

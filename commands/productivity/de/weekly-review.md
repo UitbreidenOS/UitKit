@@ -1,34 +1,34 @@
 ---
-description: Erstelle eine Wochenübersicht aus Git-Verlauf, Notizen oder freier Eingabe
-argument-hint: "[week context, notes, or leave blank for git]"
+description: Wöchentliche Zusammenfassung aus Git-Verlauf, Notizen oder freiem Text generieren
+argument-hint: "[Wochenkontext, Notizen oder leer lassen für Git]"
 ---
-Generiere eine Wochenübersicht basierend auf: $ARGUMENTS
+Wöchentliche Zusammenfassung generieren basierend auf: $ARGUMENTS
 
-Wenn $ARGUMENTS leer oder minimal ist, führe `git log --since="7 days ago" --oneline --author=$(git config user.email)` aus, um Erfolge aus Commits abzuleiten.
+Wenn $ARGUMENTS leer oder minimal ist, führe `git log --since="7 days ago" --oneline --author=$(git config user.email)` aus, um Erfolge aus Commits zu ermitteln.
 
 Erstelle diese Abschnitte:
 
 **Versendet / Abgeschlossen**  
-Aufzählung. Jedes Element ist ein konkretes Ergebnis oder Meilenstein, keine Aufgabe. Fasse verwandte Commits in einem Element zusammen. Nicht mehr als 8 Punkte.
+Aufzählungsliste. Jeder Punkt ist ein konkretes Lieferergebnis oder Meilenstein, nicht eine Aufgabe. Gruppiere verwandte Commits zu einem Punkt. Maximal 8 Punkte.
 
 **In Arbeit**  
-Aufzählung. Was gerade läuft und in den nächsten 1–2 Wochen abgeschlossen sein soll. Füge ungefähren Fortschritt hinzu, wenn erkennbar.
+Aufzählungsliste. Was aktiv in Bearbeitung ist und in den nächsten 1–2 Wochen abgeschlossen werden soll. Berücksichtige ungefähren Fertigstellungsfortschritt, falls erkennbar.
 
-**Blockiert / Gefährdet**  
-Aufzählung. Jedes Element: Was ist blockiert, warum, und wer/was hebt die Blockierung auf. Weglassen, falls nichts blockiert ist.
+**Blockiert / Risiko**  
+Aufzählungsliste. Jeder Punkt: Was ist blockiert, warum, und wer/was hebt die Blockierung auf. Weglassen, falls nichts blockiert ist.
 
 **Erkenntnisse**  
-2–4 Punkte. Beobachtungen zu Prozess, Werkzeugen, Ansätzen oder Domänenwissen, das diese Woche gewonnen wurde. Keine Zusammenfassung dessen, was getan wurde – nur Erkenntnisse.
+2–4 Punkte. Beobachtungen zu Prozess, Werkzeugen, Ansatz oder Domain-Wissen, das diese Woche gewonnen wurde. Nicht eine Zusammenfassung von Taten — nur Erkenntnisse.
 
 **Fokus nächste Woche**  
 3–5 Punkte. Konkrete Prioritäten für die kommende Woche, geordnet nach Wichtigkeit.
 
 Regeln:
-- Schreibe in der ersten Person.
-- Kalibriere Details auf Signal-zu-Rauschen-Verhältnis: Überspringe banale Aufgaben und Dependency-Updates, es sei denn, sie waren schwierig.
-- Füge keine Zeitschätzungen für nächste Woche hinzu, es sei denn, die Eingabe enthielt sie.
-- Wenn Git-Verlauf nur automatisierte Commits zeigt (Bots, CI), merke das an und frage nach manuellem Input.
-- Halte jede Aufzählung auf einen Satz, es sei denn, ein zweiter Satz fügt wesentlichen Kontext hinzu.
-- Gesamtausgabe sollte in unter 2 Minuten scanbar sein.
+- Schreibe in der Ich-Form.
+- Kalibriere Details nach Signal-zu-Rauschen-Verhältnis: überspringe triviale Aufgaben und Abhängigkeitsaktualisierungen, es sei denn, sie waren schwierig.
+- Keine Zeitschätzungen für nächste Woche, es sei denn, die Eingabe enthielt sie.
+- Wenn Git-Verlauf nur automatisierte Commits zeigt (Bots, CI), notiere dies und frage nach manueller Eingabe.
+- Halte jeden Punkt auf einen Satz, es sei denn, ein zweiter Satz fügt wesentlichen Kontext hinzu.
+- Gesamte Ausgabe sollte in unter 2 Minuten überblickbar sein.
 
-Geben nur die Wochenübersicht aus.
+Nur die wöchentliche Zusammenfassung ausgeben.

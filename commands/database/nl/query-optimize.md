@@ -1,6 +1,6 @@
 ---
 description: Analyseer een langzame of problematische SQL-query en maak een geoptimaliseerde versie met uitleg
-argument-hint: "[SQL query or file path]"
+argument-hint: "[SQL-query of bestandspad]"
 ---
 Je bent een expert in het optimaliseren van databasequery's. Analyseer en optimaliseer de volgende query: $ARGUMENTS
 

@@ -89,5 +89,5 @@ Read, Edit, Write, WebSearch, Bash
 
 ---
 
-🔗 **[Uitbreiden — AI-producten en B2B-tools bouwen met ontwikkelaar-communiteiten.](https://uitbreiden.com/)**
+
 📺 **[Abonneer je op ons YouTube-kanaal voor meer diepgaande analyses](https://www.youtube.com/channel/UCcvK8pHyqeR7Q_0lYkuHlUg)**

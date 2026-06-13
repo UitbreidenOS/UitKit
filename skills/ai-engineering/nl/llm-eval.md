@@ -40,6 +40,3 @@ Continu tracking met dashboards instellen.
 ```
 
 ---
-
-> **Met ons samenwerken:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/).
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

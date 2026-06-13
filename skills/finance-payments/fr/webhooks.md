@@ -294,6 +294,3 @@ await processWebhookOnce(event.id, async () => {
 - Retourner 200 pour les types d'événements inconnus (ne pas échouer sur les nouveaux types)
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

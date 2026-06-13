@@ -96,6 +96,3 @@ Für Team-Deployments, wo mehrere Personen Zugang brauchen, erstelle stattdessen
 **Bulk-Erstellung mit Bedacht:** Das Erstellen vieler Issues in einer Session ist schnell, aber Linear sendet Benachrichtigungen für jedes. Warne das Team oder verwende einen Service-Account-API-Key für Bulk-Operationen.
 
 ---
-
-> **Zusammenarbeit mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen AI-Produkte und B2B-Lösungen mit Developer-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

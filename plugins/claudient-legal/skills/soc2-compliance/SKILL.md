@@ -239,6 +239,3 @@ Auditor reviews your evidence, interviews control owners, issues the report.
 **Shortcut:** Use Vanta or Drata. For $8-15K/year, they automate 80% of evidence collection by connecting directly to AWS, GitHub, Google Workspace, etc. Worth it for a first SOC 2 to avoid manual evidence overhead.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

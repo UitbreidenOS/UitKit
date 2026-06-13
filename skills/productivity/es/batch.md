@@ -128,6 +128,3 @@ Unit 8: src/utils/*.ts (3 files, ~8 functions)
 **Tras la aprobación:** 8 agentes de fondo arrancan en paralelo. Cada uno abre un PR con el título `docs(jsdoc): add JSDoc to [module name]`. Tiempo total: ~20 minutos en lugar de ~2,5 horas en secuencial.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

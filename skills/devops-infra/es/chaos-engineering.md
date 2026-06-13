@@ -74,6 +74,3 @@ Análisis de consumidores directos/indirectos, impacto externo, ruta de recupera
 Agenda de game day para [equipo], preparación, ejercicios de ejecución, debriefing.
 
 ---
-
-> **Trabaje con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/).
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

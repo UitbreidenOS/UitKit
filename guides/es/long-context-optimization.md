@@ -603,6 +603,3 @@ Causa: cada iteración agregó 10K tokens de historial de herramientas a la mism
 Corrección: implementa el patrón de escrita-estado-a-disco. Considera ScheduleWakeup para un reinicio duro entre iteraciones largas.
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

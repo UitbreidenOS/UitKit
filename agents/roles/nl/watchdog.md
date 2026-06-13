@@ -82,6 +82,3 @@ Bij het controleren agent output, evalueer tegen vier dimensies:
 [Rest of content follows same translation pattern - sections on Multi-agent output reconciliation and Example use case]
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

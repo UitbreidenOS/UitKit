@@ -131,6 +131,3 @@ Plan de fase (salida de Fase 0):
 El usuario aprueba el plan. Claude ejecuta la Fase 1. El usuario revisa la plantilla, dice "proceder". Claude ejecuta la Fase 2. Durante la Fase 2, Claude nota que el servicio de correo electrónico necesita una clave API que no está en la configuración — se detiene e informa en lugar de agregar unilateralmente la clave de configuración. El usuario agrega la clave, dice "proceder". La Fase 3 se completa. La verificación de integración pasa.
 
 ---
-
-> **Trabaje con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

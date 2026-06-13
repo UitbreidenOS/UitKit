@@ -256,6 +256,3 @@ def forecast_capacity(metric_df, horizon_days=90):
 4. **Audit de corvée :** identifie l'approbation manuelle du déploiement (→ automatiser avec portail de déploiement dans CI), nettoyage des journaux (→ politique de cycle de vie S3), et mise à l'échelle manuelle pendant les pics de trafic (→ HPA avec métriques personnalisées)
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

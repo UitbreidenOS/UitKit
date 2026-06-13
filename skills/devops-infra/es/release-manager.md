@@ -289,6 +289,3 @@ Configure la estrategia recomendada para mi equipo con comandos git y puntos de 
 - [ ] Plan de reversión: ¿puede reactivar los puntos finales antiguos si la adopción de migración es demasiado baja?
 
 ---
-
-> **Trabaje con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

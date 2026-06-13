@@ -236,6 +236,3 @@ Names that may have clearer trademark space: check availability of [name + your 
 *Attorney review required before finalising. Do not launch marketing campaigns until clearance is confirmed.*
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

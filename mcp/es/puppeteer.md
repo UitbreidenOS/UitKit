@@ -28,7 +28,7 @@ Establece `PUPPETEER_HEADLESS` en `false` para ver el navegador mientras se ejec
 
 ```
 # Captura de pantalla de página
-"Take a screenshot of https://uitbreiden.com and describe what you see"
+
 
 # Raspado de datos estructurados
 "Go to [URL] and extract all product names and prices into a JSON list"

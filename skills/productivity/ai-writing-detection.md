@@ -91,6 +91,3 @@ Run through this list when reviewing a document:
 Changes made: removed "it's worth noting", replaced "cutting-edge AI / robust / scalable" with a concrete throughput number, removed "furthermore" and "in conclusion", converted to active voice, and cut the redundant closing sentence.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

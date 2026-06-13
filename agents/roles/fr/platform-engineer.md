@@ -413,6 +413,3 @@ GROUP BY team;
    - Garde-fous : pas de points de terminaison publics sans approbation explicite, pas de conteneurs root, pas de limites de ressources manquantes (webhook d'admission applique)
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

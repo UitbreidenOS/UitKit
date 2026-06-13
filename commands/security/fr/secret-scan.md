@@ -1,56 +1,56 @@
 ---
-description: Analysez la base de code à la recherche de secrets, d'identifiants et de valeurs sensibles validés ou codés en dur
-argument-hint: "[path or git-ref]"
+description: Analyser le dépôt de code pour rechercher les secrets, identifiants et valeurs sensibles validés ou en dur
+argument-hint: "[chemin ou git-ref]"
 ---
-Analysez `$ARGUMENTS` (par défaut : l'ensemble du dépôt incluant l'historique git) à la recherche de secrets, d'identifiants et de valeurs sensibles qui ne doivent pas apparaître dans le contrôle de source ou les artefacts déployés.
+Analyser `$ARGUMENTS` (par défaut : tout le dépôt incluant l'historique git) pour trouver les secrets, identifiants et valeurs sensibles qui ne doivent pas apparaître dans le contrôle de code source ou les artefacts déployés.
 
-**Phase 1 — Analyse par motif (fichiers source)**
+**Phase 1 — Analyse des motifs (fichiers source)**
 
-Recherchez dans tous les fichiers non binaires :
-- Clés API et jetons : modèles comme `sk-`, `ghp_`, `xoxb-`, `AKIA`, `AIza`, UUID utilisés comme secrets
+Rechercher dans tous les fichiers non binaires :
+- Clés API et tokens : motifs comme `sk-`, `ghp_`, `xoxb-`, `AKIA`, `AIza`, UUIDs utilisés comme secrets
 - Clés privées : en-têtes PEM (`-----BEGIN * PRIVATE KEY-----`), blocs de clés SSH privées
-- Mots de passe : variables nommées `password`, `passwd`, `pwd`, `secret`, `token`, `api_key` attribuées à des chaînes littérales
-- Chaînes de connexion : DSN avec identifiants intégrés (`postgres://user:pass@host`)
-- Secrets JWT : clés de signature codées en dur
+- Mots de passe : variables nommées `password`, `passwd`, `pwd`, `secret`, `token`, `api_key` assignées à des littéraux de chaîne
+- Chaînes de connexion : DSNs avec identifiants intégrés (`postgres://user:pass@host`)
+- Secrets JWT : clés de signature en dur
 - Secrets OAuth : littéraux `client_secret`
-- Identifiants de fournisseur cloud : AWS, GCP, Azure, Terraform, jetons de compte de service Kubernetes
-- URL de webhook avec jetons intégrés (Slack, Discord, GitHub)
+- Identifiants de fournisseur cloud : AWS, GCP, Azure, Terraform, tokens de compte de service Kubernetes
+- URLs de webhook avec tokens intégrés (Slack, Discord, GitHub)
 - Contenu du fichier `.env` accidentellement validé
 
 **Phase 2 — Analyse de l'historique git** (si dans un dépôt git)
 
-Exécutez : `git log --all --full-history -- '*.env' '*.pem' '*.key' '*.p12' '*.pfx'`
-Vérifiez les commits récents pour les validations accidentelles de secrets qui auraient pu être "supprimées" mais restent dans l'historique.
+Exécuter : `git log --all --full-history -- '*.env' '*.pem' '*.key' '*.p12' '*.pfx'`
+Vérifier les validations récentes pour les secrets accidentellement validés qui peuvent avoir été « supprimés » mais subsistent dans l'historique.
 
 **Phase 3 — Fichiers de configuration et d'infrastructure**
 
-Examinez : `docker-compose.yml`, manifestes Kubernetes, valeurs Helm, configurations CI/CD (`.github/`, `.circleci/`, `.travis.yml`, `Jenkinsfile`) pour les valeurs env codées en dur.
+Examiner : `docker-compose.yml`, manifestes Kubernetes, valeurs Helm, configurations CI/CD (`.github/`, `.circleci/`, `.travis.yml`, `Jenkinsfile`) pour les valeurs env en dur.
 
-**Phase 4 — Triage de chaque découverte**
+**Phase 4 — Trier chaque détection**
 
 Pour chaque résultat :
 - Chemin du fichier et numéro de ligne
 - Type de secret (par exemple, clé d'accès AWS, GitHub PAT)
-- S'il s'agit d'un secret réel ou d'un espace réservé/exemple (marquer comme LIVE ou EXAMPLE)
-- S'il apparaît dans l'historique git (marquer comme HISTORY le cas échéant)
+- S'il semble être réel ou un placeholder/exemple (marquer comme LIVE ou EXAMPLE)
+- S'il apparaît dans l'historique git (marquer comme HISTORY si applicable)
 
 **Format de sortie** :
 ```
-## Secret Scan Results
+## Résultats de l'analyse des secrets
 
-### LIVE Secrets (rotate immediately)
-[file:line] [type] — masked preview: sk-...xxxx
+### Secrets LIVE (rotation immédiate)
+[fichier:ligne] [type] — aperçu masqué : sk-...xxxx
 
-### EXAMPLE / Placeholder (verify)
-[file:line] [type] — context: ...
+### EXAMPLE / Placeholder (à vérifier)
+[fichier:ligne] [type] — contexte : ...
 
-### History Leaks
-[commit] [file] [type] — note: still accessible via git
+### Fuites dans l'historique
+[commit] [fichier] [type] — note : toujours accessible via git
 
-### Remediation
-1. Rotate all LIVE secrets before doing anything else.
-2. Use git-filter-repo or BFG to purge history leaks.
-3. Add detected patterns to .gitignore and pre-commit hooks.
+### Remédiation
+1. Faire tourner tous les secrets LIVE avant toute autre chose.
+2. Utiliser git-filter-repo ou BFG pour purger les fuites historiques.
+3. Ajouter les motifs détectés à .gitignore et les hooks de pré-commit.
 ```
 
-Ne jamais afficher la valeur complète du secret — toujours masquer les 4 derniers caractères.
+Ne jamais afficher la valeur complète du secret — toujours masquer jusqu'aux 4 derniers caractères.

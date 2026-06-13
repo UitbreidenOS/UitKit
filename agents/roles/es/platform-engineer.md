@@ -413,6 +413,3 @@ GROUP BY team;
    - Guardrails: sin puntos finales públicos sin aprobación explícita, sin contenedores root, sin límites de recursos faltantes (webhook de admisión lo impone)
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

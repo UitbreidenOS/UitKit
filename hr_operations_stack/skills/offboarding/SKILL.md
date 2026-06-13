@@ -106,5 +106,3 @@ Not for internal transfer (use onboarding-optimizer). Not without compliance aud
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [claudecode.ai](https://claudecode.ai/)

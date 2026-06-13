@@ -113,6 +113,3 @@ Ton: professionell aber freundlich — wir sind ein kleines Team, kein Konzern
 **Claude schreibt eine vollständige Stellenanzeige** mit: klarem Titel (« Client-Koordinator »), ansprechendem Einleitungsabsatz über das Büro, Rollenübersicht auf Englisch, Verantwortungsliste (8-10 Punkte), in Must-Have/Nice-to-Have aufgeteilte Anforderungen, was sie an der Rolle lieben werden, Gehaltsbereich und direkte Bewerbungsanweisung.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -101,6 +101,3 @@ lodash-versie 4.17.20 of eerder en list de betrokken repositories.
 **PR-body-kwaliteit:** Wanneer je `create_pull_request` gebruikt, geef je Claude het diff en de issuecontext en vraag je het om de PR-body te conceptualiseren. Het resultaat zal nuttiger zijn dan een sjabloongvulde tijdelijke aanduiding.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

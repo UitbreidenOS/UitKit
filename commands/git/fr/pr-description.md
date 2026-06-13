@@ -1,33 +1,33 @@
 ---
-description: Rédigez un titre et une description de pull request à partir des commits et diff de la branche
-argument-hint: "[base-branch]"
+description: Rédiger un titre et une description de pull request à partir des commits et du diff de la branche
+argument-hint: "[branche-de-base]"
 ---
-Déterminez la branche de base : utilisez $ARGUMENTS si fourni, sinon utilisez `main` par défaut.
+Déterminez la branche de base : utilisez $ARGUMENTS si fourni, sinon par défaut `main`.
 
-Exécutez ces commandes pour collecter le contexte :
-1. `git log <base-branch>...HEAD --oneline` — liste des commits sur cette branche
-2. `git diff <base-branch>...HEAD --stat` — résumé des modifications au niveau des fichiers
-3. `git diff <base-branch>...HEAD` — diff complet pour l'analyse sémantique
+Exécutez ces commandes pour rassembler le contexte :
+1. `git log <branche-de-base>...HEAD --oneline` — lister les commits de cette branche
+2. `git diff <branche-de-base>...HEAD --stat` — résumé des modifications au niveau des fichiers
+3. `git diff <branche-de-base>...HEAD` — diff complet pour l'analyse sémantique
 
 À partir de ce contexte, produisez une description de pull request en Markdown :
 
 ```
 ## Résumé
-<2-4 points couvrant ce qui a changé et pourquoi — pas une liste de fichiers>
+<2-4 points de balle couvrant ce qui a changé et pourquoi — pas une liste de fichiers>
 
 ## Modifications
-<Regroupées par domaine, pas par fichier. Utilisez des sous-points pour plus de détails.>
+<Groupées par préoccupation, pas par fichier. Utilisez des sous-puces pour les détails.>
 
 ## Tests
-<Étapes de test spécifiques qu'un relecteur devrait exécuter pour valider la correction.
-Si les tests sont automatisés, nommez les fichiers ou commandes de test.>
+<Étapes de test spécifiques qu'un relecteur devrait exécuter pour valider la correctitude.
+Si les tests sont automatisés, nommez les fichiers de test ou les commandes.>
 
-## Remarques pour les relecteurs
-<Signalez les décisions non évidentes, les compromis, les zones d'incertitude, ou les TODOs laissés pour un suivi ultérieur.
-Omettez cette section s'il n'y a rien de particulier à noter.>
+## Notes pour les relecteurs
+<Signaler les décisions non évidentes, les compromis, les zones d'incertitude ou les TODOs laissés pour un suivi ultérieur.
+Omettez cette section s'il n'y a rien de remarquable.>
 ```
 
 En haut, avant le corps, affichez une seule ligne :
-`Title: <impératif, ≤70 caractères, sans point>`
+`Titre : <impérative, ≤70 caractères, sans point>`
 
-N'incluez pas les titres génériques que le dépôt n'a pas besoin. Ne résumez pas chaque fichier modifié — synthétisez l'intention.
+N'incluez pas les en-têtes de modèle que le dépôt n'a pas besoin. Ne résumez pas chaque fichier modifié — synthétisez l'intention.

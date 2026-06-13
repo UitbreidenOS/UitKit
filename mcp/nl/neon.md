@@ -78,6 +78,3 @@ Verwijder de feature-auth-vertakking — migratie is samengevoegd
 - Free tier bevat 10 vertakkingen per project — meer dan genoeg voor actieve development.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

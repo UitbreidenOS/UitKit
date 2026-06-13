@@ -58,6 +58,3 @@ Nicht Code Samples einschließen.
 6. **Risk:** Users created vor Migration haben kein `organization_id` — Backfill Decision nötig vor Step 1
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/).
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

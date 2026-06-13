@@ -108,5 +108,3 @@ exit 0
 5. Restart Claude Code
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [Product Operations Stack](https://github.com/Claudient/Claudient)

@@ -152,6 +152,3 @@ Recommandation de test A/B : « 25% de réduction sur les robes d'été — ce w
 Résultats après avoir exécuté la campagne : taux d'ouverture de 31% sur Email 1, taux de clic de 8,2%, $4 100 en revenus suivi à la campagne. Les campagnes précédentes affichaient une moyenne de 19% d'ouverture et 4,1% de clic. Analyse Claude : la ligne d'objet à cadrage bénéficiaire a surpassé la version directe de 4 points de pourcentage en taux d'ouverture — utilisez le cadrage bénéficiaire comme défaut pour les campagnes promotionnelles à l'avenir.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

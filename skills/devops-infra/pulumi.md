@@ -251,6 +251,3 @@ If your team is strong TypeScript developers and you're starting fresh or have <
 Pulumi has a `pulumi convert --from terraform` command that converts HCL to TypeScript/Python — it's not perfect but handles ~70% of typical configs. Migrate module by module, not all at once.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -1,38 +1,38 @@
 ---
 description: Rédiger un email professionnel à partir d'un sujet, d'une intention et d'un contexte optionnel
-argument-hint: "[recipient, purpose, key points]"
+argument-hint: "[destinataire, objectif, points clés]"
 ---
 Rédiger un email professionnel basé sur : $ARGUMENTS
 
-Déduisez les éléments suivants de $ARGUMENTS :
-- **Type de destinataire** : cadre, collègue ingénieur, fournisseur externe, client, recruteur, etc.
-- **Intention** : informer, demander, escalader, refuser, assurer le suivi, présenter, etc.
-- **Ton** : formel, collégial ou direct — par défaut collégial sauf indication contraire du contexte.
+Déduire les éléments suivants de $ARGUMENTS :
+- **Type de destinataire** : cadre dirigeant, collègue ingénieur, fournisseur externe, client, recruteur, etc.
+- **Intention** : informer, demander, escalader, refuser, relancer, présenter, etc.
+- **Ton** : formel, collégial ou direct — par défaut collégial sauf indication contraire.
 
 Format de sortie :
 
-**Objet :** [concis, spécifique — pas de "Suite à..." ou "Question rapide"]
+**Objet :** [concis, spécifique — pas de "Suite à..." ou "Petite question"]
 
 **Corps :**
 [corps de l'email]
 
 Règles pour le corps :
-- Commencez par le point principal, pas par "J'espère que cet email vous trouve bien" ou équivalent superflu.
-- Énoncez la demande ou l'information clé dans les deux premières phrases.
-- Utilisez de courts paragraphes (2–4 phrases maximum). Une idée par paragraphe.
-- S'il existe une action requise du destinataire, rendez-la explicite : quoi, avant quand.
-- Terminez par une phrase — soit une prochaine étape claire, soit un appel à l'action sans friction.
-- Pas de phrases passe-partout ("N'hésitez pas à nous contacter", "Merci d'avance").
-- Signature temporaire : `[Your name]`
-- Longueur cible : 80–200 mots pour la plupart des emails. Allez plus loin uniquement si le contenu l'exige.
+- Commencer par l'essentiel, pas par "J'espère que cet email vous trouve bien" ou équivalent.
+- Énoncer la demande ou l'information clé dans les deux premières phrases.
+- Utiliser des paragraphes courts (2–4 phrases maximum). Une idée par paragraphe.
+- S'il y a une action attendue du destinataire, la rendre explicite : quoi, avant quand.
+- Terminer par une phrase — soit une prochaine étape claire, soit un appel à l'action sans friction.
+- Pas de formules de politesse (« N'hésitez pas à me contacter », « Merci d'avance »).
+- Signature : `[Votre nom]`
+- Longueur cible : 80–200 mots pour la plupart des emails. Plus long seulement si le contenu l'exige.
 
-Étalonnage du ton selon le type de destinataire :
-- Cadre : signal élevé, pas de superflu, commencez par l'impact.
-- Collègue / coéquipier : direct, peut utiliser le cadrage "nous", la conversation est acceptable.
-- Fournisseur externe : professionnel mais pas rigide ; soyez spécifique sur ce dont vous avez besoin.
-- Client : cadrage empathique, évitez le jargon interne.
+Calibrage du ton par type de destinataire :
+- Cadre dirigeant : signal fort, pas de remplissage, mener avec l'impact.
+- Collègue / coéquipier : direct, peut utiliser le cadre « nous », conversationnel acceptable.
+- Fournisseur externe : professionnel mais pas rigide ; être spécifique sur les besoins.
+- Client : bienveillant, éviter le jargon interne.
 - Recruteur : bref, confiant, pas de désespoir.
 
-Si $ARGUMENTS est ambigu quant à l'intention ou au destinataire, énoncez votre hypothèse au début en une ligne, puis produisez le brouillon.
+Si $ARGUMENTS est ambigu sur l'intention ou le destinataire, énoncer votre hypothèse en haut en une ligne, puis produire le brouillon.
 
-Affichez la ligne d'objet, le corps et la note d'hypothèse le cas échéant. Pas de préambule.
+Produire la ligne d'objet, le corps et la note d'hypothèse si applicable. Pas de préambule.

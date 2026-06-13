@@ -268,6 +268,3 @@ Not formal. Not a form letter. Should sound like a professional colleague who re
 **Erwartete Ausgabe:** Ein professioneller Statusbericht-E-Mail mit der Überschrift „Woche 3 — Grün", drei spezifisch aufgeführten erledigten Punkten (Keyword-Recherche-Workbook, Brand-Voice-Workshop, Q3-Redaktionskalender-Entwurf), einem expliziten Hindernis (Produkt-Roadmap), einer benötigten Entscheidung (Kalender-Genehmigung bis Mittwoch) und einer Vorschau auf die nächste Woche (Brief-Schreiben für die ersten 4 Content-Stücke, unter der Voraussetzung, dass die Genehmigung eingetroffen ist). E-Mail-Wrapper: „Woche 3 ist erledigt — Grün auf der ganzen Linie..." in unter 4 Sätzen, mit dem Bericht im Anhang oder inline.
 
 ---
-
-> **Arbeite mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

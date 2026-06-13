@@ -201,6 +201,3 @@ Ces litiges ne sont pas simplement sémantiques — ils vont au cœur de la ques
 *Examen par avocat requis avant dépôt. Tous les marqueurs [ESPACE RÉSERVÉ À LA CITATION] doivent être remplacés par des citations vérifiées. Tous les marqueurs [Dossier à ___] nécessitent des numéros de page/ligne vérifiés du dossier.*
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

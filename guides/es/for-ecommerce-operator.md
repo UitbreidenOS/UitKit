@@ -389,6 +389,3 @@ Control diario de stock → si stock < 14 días → crear tarea de reorden en tu
 - [Flujo de trabajo semanal de comercio electrónico](../workflows/ecommerce-weekly.md)
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

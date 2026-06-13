@@ -263,6 +263,3 @@ Generate an action plan with 30/60/90 day milestones.
 **Resultado esperado:** Panel de salud del portafolio con la Empresa A en Verde (por encima del plan, posible desencadenante de seguimiento), Empresa B en Rojo (plan fallido + problema de burn = intervención necesaria — acciones específicas: análisis de bridge, opciones de reducción de burn, conversación con el fundador), Empresa C en Amarillo (el triunfo empresarial es positivo pero la salida del CTO supone un reloj de 60 días sobre la continuidad del producto — agenda del consejo: plan de CTO interino, retención del fundador). Encuadre para LPs del trimestre: equilibrado, lidera con el triunfo de la Empresa A, aborda B y C con acciones específicas tomadas.
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

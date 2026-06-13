@@ -163,6 +163,3 @@ Flat pricing at $29 is classic early-stage simplicity — smart for validation, 
 **Projected impact:** If 20% of existing customers upgrade to Team ($79) and 5% to Business ($199), monthly revenue increases ~35% with same customer count.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

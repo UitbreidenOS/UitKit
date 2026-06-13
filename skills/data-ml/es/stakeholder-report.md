@@ -255,6 +255,3 @@ Keep each definition under 80 words. Write for a non-technical executive who is 
 **Resultado esperado:** Informe mensual completo que se abre con "Octubre fue un mes récord en nuevos negocios, parcialmente compensado por el mayor evento de churn de clientes empresariales hasta la fecha." La sección de ingresos muestra 2,1 M$ frente a un plan de 2,0 M$. Análisis de causa raíz del churn: la salida del cliente empresarial impulsó el descenso del NRR del 112% al 108% — un evento estructural, no de tendencia. El récord de nuevos logos es una señal genuina. Tabla de acciones: análisis post-mortem de la cuenta perdida (VP Customer Success, 7 de nov.), refinamiento del ICP para descartar clientes con perfil de riesgo similar (VP Producto + VP Ventas, 14 de nov.). Lista de seguimiento: pipeline de renovaciones empresariales para el T4.
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

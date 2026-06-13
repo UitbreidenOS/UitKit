@@ -355,6 +355,3 @@ Aan het einde van de vergadering voorstellen:
 **Verwachte uitvoer:** Volledige briefing — deelnemersprofiel dat de nieuwe VP onderzoekt (LinkedIn, achtergrond bij vorig bedrijf, waar ze op heeft gefocust in haar vorige functie), gespreksonderwerpen voor waarom dit het juiste moment is om uit te breiden (gebruiksgegevens, nieuwe toepassingen ontgrendeld de afgelopen 6 maanden, ROI-bewijs), sleutelvraag om te stellen ("Wat zou dit partnerschap een duidelijk succes maken in uw eerste 90 dagen?"), wat NIET toe te zeggen (prijswijzigingen zonder goedkeuring financiën, maatwerkontwikkeling), en voorgestelde volgende stappen (productdemo met haar team in 2 weken, introductiegesprek met executive sponsor).
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

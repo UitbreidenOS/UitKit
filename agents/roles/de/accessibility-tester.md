@@ -414,6 +414,3 @@ Nach dem Lesen der Komponentendatei erstellt das Audit einen Bericht:
 - Fix: Bei Öffnen, verschieben Sie den Fokus zu `<h2>` in der Modalität (oder zum ersten fokussierbaren Element) — Bildschirmleser kündigen die Überschrift automatisch an
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

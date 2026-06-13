@@ -142,6 +142,3 @@ No incluido: ilustraciones personalizadas, blog o sistema de gestión de conteni
 Cronograma: 4 semanas desde la firma del acuerdo y recepción del depósito.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

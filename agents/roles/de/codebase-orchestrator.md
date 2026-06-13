@@ -118,6 +118,3 @@ Orchestrator-Schritte:
 6. Risikoflaggen: Session-Middleware wird in 14 Routendateien importiert — hoher Blast-Radius, benötigt Integrationstestsuite vor Entfernung
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln AI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

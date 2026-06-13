@@ -307,6 +307,3 @@ La liste de contrôle pré-lancement fixe une durée de test et une date d'arrê
 - [Optimisation des publicités payantes](../skills/marketing/paid-ads.md)
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

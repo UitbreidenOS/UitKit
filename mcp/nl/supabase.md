@@ -191,6 +191,3 @@ De service role key omzeilt Row-Level Security volledig. Behandel het als een ro
 - Rotate de service role key onmiddellijk als het ooit in een public repository is blootgesteld.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — wij bouwen AI-producten en B2B-oplossingen met developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

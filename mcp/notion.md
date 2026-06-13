@@ -96,6 +96,3 @@ The integration only sees pages explicitly shared with it. Sharing a parent page
 **Use search to bootstrap:** When you don't have IDs, always start with `search` using a descriptive title. It returns page IDs and database IDs you can use in subsequent calls.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

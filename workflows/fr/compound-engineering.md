@@ -104,6 +104,3 @@ Parce que CLAUDE.md référence `@LESSONS.md`, Claude lit le journal complet des
 - **Écrivez immédiatement.** Les leçons écrites au moment de la correction sont plus précises que les résumés rétrospectifs.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

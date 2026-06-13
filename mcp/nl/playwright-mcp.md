@@ -117,6 +117,3 @@ Geen API-sleutel vereist. De browser draait lokaal op je machine. Voor sites die
 **Multi-stap-flows:** Keten tools natuurlijk in een eenmalige prompt. Claude zal `navigate → wait → type → click → screenshot` in de juiste volgorde uitvoeren zonder dat je elke stap apart specificeert.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

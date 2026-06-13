@@ -42,6 +42,3 @@ Todas las revisiones de solicitudes de extracción — conducta del autor y revi
 15. **Documenta patrones que valga la pena repetir** — si una revisión expone un patrón que debe aplicarse ampliamente, no lo corrijas solo en este PR. Presenta una regla, agrega un lint, o actualiza la guía de codificación.
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

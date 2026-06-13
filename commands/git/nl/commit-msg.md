@@ -10,18 +10,18 @@ Format:
 ```
 <type>(<scope>): <subject>
 
-[optional body]
+[optioneel body]
 
-[optional footer(s)]
+[optioneel footer(s)]
 ```
 
-Rules:
-- Type must be one of: feat, fix, docs, style, refactor, perf, test, build, ci, chore, revert
-- Subject: imperative mood, lowercase, no period, ≤72 chars
-- Body: wrap at 72 chars, explain *why* not *what*, include breaking change rationale if applicable
-- Footer: reference issues as `Fixes #N` or `Closes #N`; mark breaking changes as `BREAKING CHANGE: <description>`
-- Scope: use $ARGUMENTS if provided, otherwise infer from the changed file paths or module names
+Regels:
+- Type moet een van de volgende zijn: feat, fix, docs, style, refactor, perf, test, build, ci, chore, revert
+- Subject: imperatieve vorm, kleine letters, geen punt, ≤72 tekens
+- Body: terugloop bij 72 tekens, leg uit *waarom* niet *wat*, inclusief rationale voor breaking changes indien van toepassing
+- Footer: referentieer problemen als `Fixes #N` of `Closes #N`; markeer breaking changes als `BREAKING CHANGE: <description>`
+- Scope: gebruik $ARGUMENTS als deze is opgegeven, anders afleiden uit de gewijzigde bestandspaden of modulenamen
 
-Voer alleen het uiteindelijke commit-bericht uit — geen inleiding, geen code fences, geen uitleg.
+Voer alleen het uiteindelijke commit-bericht uit — geen inleiding, geen code blokken, geen uitleg.
 
-Als het diff meerdere niet-gerelateerde problemen omvat (bijv. feature + niet-gerelateerde refactor), markeer dit expliciet vóór het bericht en stel voor de commit op te splitsen.
+Als het diff meerdere niet-gerelateerde zaken omvat (bijvoorbeeld feature + niet-gerelateerde refactor), markeer dit expliciet vóór het bericht en stel voor om de commit op te splitsen.

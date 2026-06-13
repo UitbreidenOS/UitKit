@@ -391,6 +391,3 @@ Extiende este patrón para incluir tareas abiertas (desde un archivo de tareas),
 - [ ] `/usage` marcado en el inicio de la sesión para confirmar que el overhead base es aceptable
 
 ---
-
-> **Trabaja con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

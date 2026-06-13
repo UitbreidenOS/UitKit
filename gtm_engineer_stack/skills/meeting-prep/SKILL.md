@@ -96,5 +96,3 @@ The Series A close + RevOps hire is the opening. Your value prop: ops teams at t
 *(Reading time: 24 seconds.)*
 
 ---
-
-Built with [Claudient](https://github.com/Claudients/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

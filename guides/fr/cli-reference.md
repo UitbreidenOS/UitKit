@@ -121,6 +121,3 @@ Les chemins sont résolus par rapport à la racine du projet. Utilisez ceci quan
 | `--all` | | Appliquer la commande à toutes les sessions (utilisé avec `respawn`) |
 
 ---
-
-> **Travaillez avec nous:** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

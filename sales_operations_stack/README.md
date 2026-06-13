@@ -1,16 +1,17 @@
 # Sales Operations Stack
 
-> The complete Claude Code workspace for sales operations — pipeline forecasting, quota management, deal velocity tracking, territory optimization, and performance auditing. Execute data-driven sales strategy with real-time analytics, predictive modeling, and automated compliance audits.
+> Autonomous sales operations execution engine — pipeline analytics, territory management, sales forecasting, quota tracking, deal velocity analysis, and revenue intelligence for high-performance sales teams.
 
 ---
 
 ## Quick Start
 
 1. **Copy this folder** into your Claude Code workspace or project.
-2. **Add MCP servers** — Configure Salesforce and HubSpot in `settings.json` for direct CRM access and real-time data sync.
-3. **Set your targets** — Open `CLAUDE.md`, define quota targets, forecast methodology, and territory rules.
-4. **Run `/forecast-pipeline`** — Generate accurate quarterly forecast from live CRM data, bottleneck detection, and risk flags.
-5. **Run `/analyze-velocity`** — Track deal velocity across all reps, identify stalled deals, and surface coaching opportunities.
+2. **Configure your CRM** — Add Salesforce or HubSpot credentials to `settings.json` (see `mcp/connections.md`).
+3. **Review your CLAUDE.md** — Customize sales operations domains and constraints for your business.
+4. **Run `/analyze-pipeline`** — Get a real-time pipeline health snapshot with deal aging, conversion rates, and at-risk deals.
+5. **Run `/optimize-territory`** — Analyze territory balance, quota fairness, and account distribution. Identify gaps.
+6. **Run `/build-forecast`** — Generate 13-month rolling forecast with commit/best-case/upside scenarios.
 
 ---
 

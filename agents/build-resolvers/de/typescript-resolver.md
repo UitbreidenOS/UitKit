@@ -61,6 +61,3 @@ Argument of type 'string | undefined' is not assignable to parameter of type 'st
 - Minimal: 2-Line Zusatz, keine Logic Änderung
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/).
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

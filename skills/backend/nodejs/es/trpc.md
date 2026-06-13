@@ -298,6 +298,3 @@ export default async function Page() {
 - `components/TaskList.tsx` — `useQuery` para lista, `useMutation` para crear/completar/eliminar, actualizaciones optimistas en `onMutate`
 
 ---
-
-> **Trabaje con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

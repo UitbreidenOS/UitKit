@@ -205,6 +205,3 @@ Copy for each checklist item (task title + 1-line description).
 Expected outcome: raising activation from 31% to 50% → estimated trial-to-paid improvement from 18% to ~28%.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

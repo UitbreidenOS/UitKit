@@ -69,5 +69,3 @@ Recommendation: Replace generic "saw your company is growing" hook with specific
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudients/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

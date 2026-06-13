@@ -102,6 +102,3 @@ rm -f .claude/keepalive-count
 - This hook is intentionally dumb — it does not inspect what Claude did or whether it succeeded. Pair it with an error-detection hook if you need to stop on failure.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

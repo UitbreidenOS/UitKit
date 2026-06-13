@@ -45,5 +45,3 @@ If you don't have MCP servers configured, the skills degrade gracefully:
 MCP significantly improves trigger signal quality. Recommended for active prospecting sessions.
 
 ---
-
-Built with [Claudient](https://github.com/Claudients/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

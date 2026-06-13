@@ -246,5 +246,3 @@ def call_with_retry(client, **kwargs, max_retries=3):
 - Gebruikt `claude-haiku-4-5-20251001` voor classificatie (kostenefficiënt), `claude-sonnet-4-6` voor uitleg
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen. [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -252,7 +252,7 @@ Het plan, gekalibreerd op ruwweg één verzendpartij per week.
 **Week 4 — Distributie**
 - Reddit-lanceringen via r/ClaudeAI, r/Entrepreneur, r/sweatystartup (gestaffelde).
 - Awesome-list PR's (5 minimum).
-- Één langform blog post op uitbreiden.com met terugkoppeling.
+
 
 **Week 5+ — Samengesteld**
 - Één nieuw verticaal per week.
@@ -267,7 +267,7 @@ De metrieke die tellen, in volgorde:
 1. **GitHub sterren** — proxy voor organische ontdekking. Doel: +200 in de 30 dagen na het small-business lancering.
 2. **npm install count voor `claudient add skills small-business`** — proxy voor werkelijke adoptie.
 3. **GitHub traffic voor `/skills/small-business/`** — proxy voor SEO-prestatie.
-4. **Externe backlinks** — gemeten via GitHub mention API en Google zoekopdracht voor `link:github.com/Claudient/Claudient`.
+
 5. **Merkmerk zoekopdracht** — "claudient small business" verschijnt in Google autocomplete of gerelateerde zoekopdrachten.
 
 Vermijd optimalisatie voor: totale bestandsaantal, regelaantal of alles dat opvullerinhoud aanmoedigt.
@@ -317,5 +317,3 @@ De strategie is een levend document. Updates naar dit bestand worden aangemoedig
 - Alle skills onder [skills/small-business/](../skills/small-business/) — de steunende lange staart
 
 ---
-
-> **Claudient** wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — het bouwen van AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.

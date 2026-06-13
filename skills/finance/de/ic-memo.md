@@ -151,6 +151,3 @@ Kennzeichne Abschnitte, wo Sie mehr Informationen für genaue Vollendung benöti
 **Erwartete Ausgabe:** Alle 9 Abschnitte mit angemessenen `[VERIFY]`-Markierungen bei allen Finanzzahlen. Executive Summary mit MOIC/IRR-Zielen. Investitionsthese fokussiert auf HR-Tech-Rückenwind, Product-Led-Growth und Weg zur Rentabilität. Renditeanalyse mit 5-Jahres-Basisfall (3x MOIC, 25% IRR) und Sensitivitätstabelle. Risikoabschnitt abdeckend SaaS-Churn, Wettbewerbsdrohungen und Managemententabhängigkeit.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir bauen AI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

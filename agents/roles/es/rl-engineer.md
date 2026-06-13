@@ -461,6 +461,3 @@ PPO config: 8 parallel envs, `n_steps=2048`, `batch_size=256`, `ent_coef=0.01` t
 ONNX export: `ActorWrapper` traces the policy's `_predict` path, exported with `opset_version=17`, dynamic batch dimension. Runtime inference via `onnxruntime` returns 6-dim joint velocity command from 16-dim observation in <1ms on CPU.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

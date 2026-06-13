@@ -191,6 +191,3 @@ Phase 5 — Rapportage (Dagen 13-14):
 **Hoogwaardige knelpunten om te testen:** externe web-app-authenticatie, intern netwerk-segmentatie tussen DMZ en betalingssystemen, detectiecapaciteit voor credential dumping.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) – we bouwen AI-producten en B2B-oplossingen met developer-communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

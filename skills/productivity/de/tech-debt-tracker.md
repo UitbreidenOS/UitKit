@@ -222,6 +222,3 @@ Fügen Sie bei jedem Sprint ein Schuldenticket hinzu, das etwa 20% der Kapazitä
 Monatlich der Führung berichten: „Wir haben X Schuldengegenstände geschlossen, hier ist das messbare Ergebnis."
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

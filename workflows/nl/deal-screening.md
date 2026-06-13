@@ -363,6 +363,3 @@ Genereer: voorstel bestuursvergaderingsagenda, initiële KPI-dashboardstructuur,
 | Inzichten referentiegesprekken | % deals waarbij klantgesprekken je inzicht veranderden |
 
 ---
-
-> **Werk met ons samen:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — wij bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

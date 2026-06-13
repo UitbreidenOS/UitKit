@@ -337,6 +337,3 @@ Format output as a table.
 Slack gets notified of the 3 hot replies. CRM updated automatically. SDR reviews and sends 3 draft responses in 8 minutes total.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

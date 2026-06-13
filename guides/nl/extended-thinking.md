@@ -437,6 +437,3 @@ Gebruik dit voordat je thinking modus inschakelt. Als minder dan 3 items van toe
 **Thinking op streaming endpoints met nauwe latentie budgets inschakelen.** Thinking modus vertraagt de eerste text token door de volle duur van de thinking fase. Als je UI een typing indicator toont en gebruikers een respons verwachten binnen 1–2 seconden, dit voelt kapot. Ofwel verberg de thinking fase achter een doelbewuste loading state ofwel schakel thinking op dat endpoint uit.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI producten en B2B oplossingen met developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

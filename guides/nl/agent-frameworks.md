@@ -306,6 +306,3 @@ Typische workflow:
 Claude Code werkt het beste wanneer u aan het begin van de sessie aangeeft welk framework u gebruikt. Voeg de framework-keuze toe aan `CLAUDE.md` in de projectroot om het consistent in sessies te houden.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

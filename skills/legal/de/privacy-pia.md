@@ -157,6 +157,3 @@ Einbeziehen:
 **Datenschutzbeauftragten-Empfehlung:** DPIA obligatorisch vor Start. Datenschutzbehörde konsultieren, wenn Restrisiko nach Minderung hoch bleibt.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwicklergemeinschaften.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

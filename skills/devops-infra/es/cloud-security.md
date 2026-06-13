@@ -260,6 +260,3 @@ aws cloudtrail describe-trails --query 'trailList[*].[Name,S3BucketName,IsMultiR
 Corrija primero las claves de acceso raíz e SSH a Internet — estos son los dos errores de configuración más comúnmente explotados.
 
 ---
-
-> **Trabajar con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

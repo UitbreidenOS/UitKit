@@ -194,5 +194,3 @@ Analyze pipeline mix by territory:
 - **By July 15:** New hire ramped; West Coast territory live.
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient)

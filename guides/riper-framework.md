@@ -264,6 +264,3 @@ Architecture deviations: escalate. This is a signal that Execute improvised — 
 RIPER has overhead. The overhead pays for itself on complex work; it does not pay for itself on small work. The rule of thumb: if you can hold the full implementation in your head without writing it down, RIPER is overkill.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

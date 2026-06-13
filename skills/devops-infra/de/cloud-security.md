@@ -260,6 +260,3 @@ aws cloudtrail describe-trails --query 'trailList[*].[Name,S3BucketName,IsMultiR
 Beheben Sie zuerst Root-Zugangsschlüssel und Internet-SSH — dies sind die beiden am häufigsten ausgenutztesten Fehlkonfigurationen.
 
 ---
-
-> **Mit uns arbeiten:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen KI-Produkte und B2B-Lösungen mit Entwicklergemeinschaften.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

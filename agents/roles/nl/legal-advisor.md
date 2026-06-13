@@ -91,6 +91,3 @@ Sluit altijd elke analyse af met:
 Analyseer een SaaS-leverancierscontract. Identificeer top-5 riscoclausules — classificeer elk GROEN/GEEL/ROOD, leg risico uit in duidelijke Nederlands voor een niet-juridische oprichter, noteer welke sectie het bevat en ontwerp één specifieke vraag voor juridische beoordeling per probleem. Sluit af met een samenvatting van drie clausules die meest dringend onderhandelingen vereisen vóór ondertekening.
 
 ---
-
-> **Werk met ons mee:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

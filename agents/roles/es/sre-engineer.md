@@ -256,6 +256,3 @@ def forecast_capacity(metric_df, horizon_days=90):
 4. **Auditoría de tareas repetitivas:** identifica aprobación manual de implementación (→ automatizar con compuerta de implementación en CI), limpieza de registros (→ política de ciclo de vida S3), y escalado manual durante picos de tráfico (→ HPA con métricas personalizadas)
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -263,6 +263,3 @@ Generate an action plan with 30/60/90 day milestones.
 **Résultat attendu :** Tableau de bord de santé du portefeuille avec la société A en Vert (en avance sur le plan, déclencheur potentiel de suivi d'investissement), la société B en Rouge (plan manqué + problème de burn = intervention nécessaire — actions spécifiques : analyse du bridge, options de réduction du burn, conversation avec le fondateur), la société C en Jaune (la victoire entreprise est positive mais le départ du CTO est une horloge de 60 jours sur la continuité produit — agenda CA : plan CTO intérimaire, rétention du fondateur). Cadrage LP pour le trimestre : équilibré, présente en tête la victoire de la société A, aborde B et C avec les actions spécifiques prises.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

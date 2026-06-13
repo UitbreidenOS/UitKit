@@ -92,6 +92,3 @@ Voor alleen-lezen analytics en rapportage, laat je `write_products` weg uit de b
 - Filter voor grote productcatalogi `list_products` op `status=active` en `vendor` om resultaatsets beheersbaar te houden voordat je bewerkingen koppelt.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

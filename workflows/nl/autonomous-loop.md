@@ -248,6 +248,3 @@ Wait for all subagents to complete before processing auto_merge tasks.
 Totale tijd: ~14 minuten voor 50 PRs. Gelijkwaardige handmatige tijd: 3–4 uur.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

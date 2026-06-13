@@ -1,43 +1,43 @@
 ---
-description: Générer des histoires Storybook CSF3 pour un composant couvrant toutes les variantes et états significatifs
+description: Générer des stories Storybook CSF3 pour un composant couvrant tous les variants et états significatifs
 argument-hint: "[ComponentFile.tsx]"
 ---
-Générer des histoires Storybook pour : $ARGUMENTS
+Générer des stories Storybook pour : $ARGUMENTS
 
-Lisez le fichier de composant avant d'écrire quoi que ce soit. Extrayez l'interface des props, les variantes et l'état de la source.
+Lire le fichier du composant avant d'écrire quoi que ce soit. Extraire l'interface des props, les variants et l'état de la source.
 
 **Étape 1 — Analyser le composant**
-Identifiez :
-- Tous les props et leurs types (drapeaux booléens, littéraux de chaîne union, facultatifs vs obligatoires)
-- Comportement contrôlé vs non contrôlé (accepte-t-il `value`/`onChange` ?)
-- États de chargement, erreur, vide et désactivé s'ils existent
-- Tous les sous-composants composites qui doivent être démontrés ensemble
+Identifier :
+- Tous les props et leurs types (drapeaux booléens, littéraux de chaîne union, optionnels vs requis)
+- Le comportement contrôlé vs non contrôlé (accepte-t-il `value`/`onChange` ?)
+- Les états de chargement, erreur, vide et désactivé s'ils existent
+- Tous les sous-composants composés qui doivent être démontrés ensemble
 
-**Étape 2 — Déterminer la couverture des histoires**
-Générez des histoires pour :
-1. `Default` — props minimaux requis, pas d'extras facultatifs
-2. Une histoire par prop booléen significatif qui change la sortie visible (par exemple, `isDisabled`, `isLoading`, `isError`)
-3. Une histoire par variante d'union de chaîne (par exemple, `variant: "primary" | "secondary" | "danger"`)
-4. `AllVariants` — une seule histoire rendant toutes les variantes côte à côte en utilisant une fonction de rendu avec un wrapper flex/grid, utile pour la régression visuelle
-5. Une histoire d'état contrôlé si le composant accepte `value`/`onChange` — utilisez `useState` à l'intérieur de la fonction `render`
-6. Cas limites : chaîne vide, débordement de texte très long, nombre zéro, données facultatives null/undefined — seulement si le composant est susceptible de les rencontrer
+**Étape 2 — Déterminer la couverture des stories**
+Générer des stories pour :
+1. `Default` — props requis minimaux, pas d'extras optionnels
+2. Une story par prop booléen significatif qui change le rendu visible (par exemple, `isDisabled`, `isLoading`, `isError`)
+3. Une story par variant de chaîne union (par exemple, `variant: "primary" | "secondary" | "danger"`)
+4. `AllVariants` — une seule story rendant tous les variants côte à côte en utilisant une fonction render avec un wrapper flex/grid, utile pour les régressions visuelles
+5. Une story d'état contrôlé si le composant accepte `value`/`onChange` — utiliser `useState` à l'intérieur de la fonction `render`
+6. Cas limites : chaîne vide, débordement de texte très long, compte zéro, données optionnelles null/undefined — seulement si le composant est susceptible de les rencontrer
 
-Ne générez pas d'histoires pour les détails d'implémentation interne ou les props qui n'affectent que l'ergonomie des développeurs.
+Ne pas générer de stories pour les détails d'implémentation interne ou les props qui affectent uniquement l'ergonomie des développeurs.
 
-**Étape 3 — Écrivez le fichier d'histoires**
-Règles de format :
-- Utilisez CSF3 (objet meta `export default { ... }` + exports d'histoires nommées)
+**Étape 3 — Écrire le fichier de story**
+Règles de formatage :
+- Utiliser CSF3 (`export default { ... }` objet meta + exports de story nommés)
 - `satisfies Meta<typeof Component>` pour le type meta
-- `satisfies StoryObj<typeof Component>` pour chaque histoire
-- `args` au niveau meta pour les défauts partagés ; remplacez par histoire seulement ce qui change
-- Utilisez `argTypes` pour documenter les props union avec `control: { type: 'select' }`
-- Importez le composant avec le même chemin d'importation utilisé ailleurs dans le projet (vérifiez les importations existantes)
-- Décorateurs : n'ajoutez un décorateur `padding` que si le composant en a visuellement besoin — ne l'enveloppez pas dans des fournisseurs inutiles à moins que le composant n'ait explicitement besoin de contexte
+- `satisfies StoryObj<typeof Component>` pour chaque story
+- `args` au niveau meta pour les valeurs par défaut partagées ; remplacer par story seulement ce qui change
+- Utiliser `argTypes` pour documenter les props union avec `control: { type: 'select' }`
+- Importer le composant avec le même chemin d'import utilisé ailleurs dans le projet (vérifier les imports existants)
+- Décorateurs : ajouter uniquement un décorateur `padding` si le composant le nécessite visuellement — ne pas envelopper dans des fournisseurs inutiles à moins que le composant n'ait explicitement besoin de contexte
 
 **Étape 4 — Tests d'interaction (si @storybook/test est disponible)**
-Pour l'histoire `Default`, ajoutez une fonction `play` qui :
-- Vérifie que le composant s'affiche sans erreur
+Pour la story `Default`, ajouter une fonction `play` qui :
+- Vérifie que le composant se rend sans erreur
 - Simule l'interaction utilisateur principale (clic, saisie, sélection)
 - Affirme le résultat DOM attendu avec `expect()`
 
-Fichier de sortie : placez le fichier d'histoire adjacent au composant (`ComponentName.stories.tsx`). Ne créez pas de répertoire séparé `__stories__` à moins qu'il n'existe déjà.
+Fichier de sortie : placer le fichier de story adjacent au composant (`ComponentName.stories.tsx`). Ne pas créer de répertoire `__stories__` séparé à moins qu'il n'existe déjà.

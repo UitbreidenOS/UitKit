@@ -541,6 +541,3 @@ Claude toma la captura de pantalla, la analiza y confirma la corrección o itera
 | Múltiples estados de IU | Envía todas las capturas de pantalla en un turno; pide a Claude que compare entre ellas |
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

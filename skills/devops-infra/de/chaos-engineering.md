@@ -74,6 +74,3 @@ Direkte/indirekte Konsumenten-Analyse, externe Auswirkungen, Recovery-Weg, Risik
 Game-Day-Agenda für [Team], Vorbereitung, Ausführungsübungen, Nachbesprechung.
 
 ---
-
-> **Mit uns arbeiten:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -109,6 +109,3 @@ Claude markeert: White-label diffusoren liggen boven de 20%-drempel maar ver ond
 Aanbeveling: Verschuif betaalde adspending naar handgemaakte kaarsen (hoogste winst %) en digitale geurideeën (hoogste winst %, geen afhandeling). Controleer diffusorenprijs — een prijsverhoging van $7 brengt winst naar 37% en zal het volume waarschijnlijk niet aanzienlijk verminderen gegeven uw huidige prijspositie.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

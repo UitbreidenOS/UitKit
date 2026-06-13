@@ -99,6 +99,3 @@ Audit findings:
 Output: trimmed CLAUDE.md under 180 lines preserving all unique, actionable guidance. Each removal is explained so the developer can disagree before accepting.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -108,6 +108,3 @@ Utilisez toujours les clés du mode test (`sk_test_`) dans la configuration loca
 **Les champs de métadonnées sont interrogeables :** Si votre application écrit des métadonnées structurées aux clients ou abonnements (par exemple, `plan_tier`, `internal_user_id`), ces champs sont filtrables dans `list_customers` et `list_subscriptions` — utile pour les requêtes ciblées.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

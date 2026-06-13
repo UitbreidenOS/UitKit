@@ -134,6 +134,3 @@ Alerte de taux de combustion : si la disponibilité tombe en dessous de 99.5% pe
 Examinez la performance réelle par rapport au SLO. Si vous n'avez jamais utilisé le budget d'erreur, la cible peut être trop faible. Si vous êtes constamment dépassé, la cible a besoin d'ajustement ou d'investissement.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

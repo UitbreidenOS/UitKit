@@ -109,6 +109,3 @@ Claude signale : les diffuseurs marque blanche sont au-dessus du plancher de 20%
 Recommandation : déplacez les dépenses publicitaires payantes vers les bougies faites à la main (marge % la plus élevée) et les guides numériques (marge % la plus élevée, sans réalisation). Révisez la tarification des diffuseurs — une augmentation de prix de $7 porte la marge à 37% et il est peu probable qu'elle réduise le volume de manière significative compte tenu de votre position de prix actuelle.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -286,6 +286,3 @@ Concevoir l'architecture IoT pour 1 000 capteurs de température industriels :
 5. **Surveillance** : tableau de bord CloudWatch affiche le taux d'ingestion de messages, la latence de synchronisation d'ombre, et l'état d'exécution du travail OTA par étape.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

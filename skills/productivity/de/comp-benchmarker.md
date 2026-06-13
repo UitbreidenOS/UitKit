@@ -256,6 +256,3 @@ Der Londoner PM-Markt ist eng, besonders für Senior ICs mit B2B-SaaS-Erfahrung.
 Wenn sie ein Amazon/Google-Angebot mit RSUs haben, kannst du beim Bargeld nicht mithalten. Konkurrieren auf: Umfang (sie werden einen vollständigen Produktbereich besitzen, kein Feature), Geschwindigkeit (sie werden in Wochen, nicht Quartalen liefern) und Upside (Equity kann ein Vielfaches einer öffentlichen RSU wert sein).
 
 ---
-
-> **Arbeite mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

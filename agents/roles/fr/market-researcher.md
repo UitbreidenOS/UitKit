@@ -124,6 +124,3 @@ Lors de la recherche, notez toujours : source, date, méthodologie (sondage vs e
 Dimensionnez le marché pour une SaaS de gestion des dépenses B2B ciblant des entreprises américaines de 10-500 employés. Produisez TAM en utilisant à la fois la méthode descendante (dépenses logicielles SMB totales, tranchées par catégorie de gestion des dépenses) et ascendante (nombre d'entreprises adressables × ACV estimée), SAM filtré sur les marchés anglophones avec le bon profil d'entreprise, et SOM avec un taux de capture réaliste de 3 ans construit à partir d'hypothèses de capacité de vente. Affiche toutes les sources et hypothèses explicitement.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

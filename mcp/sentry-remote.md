@@ -81,6 +81,3 @@ Organization-level tokens (for multi-project orgs) work the same way — create 
 - Pipe `get_issue` output into a code fix request — Claude has the full context needed to write a targeted patch.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -67,6 +67,3 @@ na Van Buren tegen Verenigde Staten. Retourneer Bluebook-citaten voor elke zaak.
 Claude vraagt Westlaw via het TR MCP, retourneert een gestructureerde circuit split-analyse met citaten, vlaggen gebieden van voortdurend meningsverschil, en voegt de verplichte onderzoekswaarschuwing in.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

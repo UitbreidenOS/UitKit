@@ -310,6 +310,3 @@ done
 Runbook complet, liste de contrôle avant le jeu, modèle de rétrospective et format de backlog de remédiation inclus pour les trois scénarios.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

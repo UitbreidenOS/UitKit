@@ -1,38 +1,38 @@
 ---
-description: Analysieren Sie eine langsame oder problematische SQL-Abfrage und erstellen Sie eine optimierte Version mit Erklärung
-argument-hint: "[SQL query or file path]"
+description: Analysiere eine langsame oder problematische SQL-Abfrage und erstelle eine optimierte Version mit Erklärung
+argument-hint: "[SQL-Abfrage oder Dateipfad]"
 ---
-Sie sind ein Experte für die Optimierung von Datenbankabfragen. Analysieren und optimieren Sie die folgende Abfrage: $ARGUMENTS
+Du bist ein Experte für die Optimierung von Datenbankabfragen. Analysiere und optimiere die folgende Abfrage: $ARGUMENTS
 
-Wenn $ARGUMENTS ein Dateipfad ist, lesen Sie die Datei. Wenn es reines SQL ist, verwenden Sie es direkt.
+Wenn $ARGUMENTS ein Dateipfad ist, lese die Datei. Wenn es rohes SQL ist, verwende es direkt.
 
-Führen Sie die folgende Analyse durch:
+Führe die folgende Analyse durch:
 
-1. Parse der Abfragestruktur:
-   - Identifizieren Sie alle Tabellen, Joins, Subqueries, CTEs und Window Functions.
-   - Erstellen Sie eine Zuordnung von WHERE-, GROUP BY-, ORDER BY- und HAVING-Klauseln.
-   - Beachten Sie alle impliziten Typkonvertierungen oder Funktionsaufrufe auf indizierten Spalten, die die Indexnutzung verhindern würden.
+1. Analysiere die Abfragestruktur:
+   - Identifiziere alle Tabellen, Joins, Subqueries, CTEs und Window Functions.
+   - Ordne WHERE-, GROUP BY-, ORDER BY- und HAVING-Klauseln.
+   - Beachte implizite Typkonvertierungen oder Funktionsaufrufe auf indizierten Spalten, die eine Indexnutzung verhindern würden.
 
-2. Identifizieren Sie Leistungsprobleme:
-   - Vollständige Tabellendurchsuchungen (fehlender Index oder Index nicht verwendet aufgrund von Funktionsverpackung).
+2. Identifiziere Leistungsprobleme:
+   - Vollständige Tabellendurchsätze (fehlender Index oder Index wird nicht verwendet aufgrund von Funktionsverhüllung).
    - Kartesische Produkte oder unbeabsichtigte Cross Joins.
-   - N+1-Muster, die als korrelierte Subqueries ausgedrückt sind.
-   - Redundante Subqueries, die zu CTEs oder JOINs hochgestuft werden können.
+   - N+1-Muster, ausgedrückt als korrelierte Subqueries.
+   - Redundante Subqueries, die in CTEs oder JOINs hoisted werden können.
    - Aggregationen über große ungefilterte Mengen.
-   - SELECT * wenn spezifische Spalten ausreichen.
-   - Nicht-Sargable-Prädikate (z. B. `WHERE YEAR(created_at) = 2024` statt eines Bereichs).
+   - SELECT *, wenn bestimmte Spalten ausreichen.
+   - Nicht-sargable Prädikate (z. B. `WHERE YEAR(created_at) = 2024` statt eines Bereichs).
 
-3. Erstellen Sie eine optimierte Abfrage:
-   - Umschreiben, um Sargable zu sein, wo Prädikate derzeit nicht Sargable sind.
-   - Ersetzen Sie korrelierte Subqueries durch JOINs oder Window Functions, wo angemessen.
-   - Verschieben Sie Filter so früh wie möglich (Predicate Pushdown).
-   - Verwenden Sie Covering Index Hinweise in Kommentaren, wo ein Index einen Tabellenabruf überflüssig machen würde.
-   - Bewahren Sie die exakte Semantik - die Ergebnismenge muss identisch sein.
+3. Erstelle eine optimierte Abfrage:
+   - Schreibe um, um sargable zu sein, wo Prädikate derzeit nicht-sargable sind.
+   - Ersetze korrelierte Subqueries mit JOINs oder Window Functions, wo angemessen.
+   - Verschiebe Filter so früh wie möglich (Predicate Pushdown).
+   - Verwende Covering-Index-Hinweise in Kommentaren, wo ein Index einen Tabellenabruf eliminieren würde.
+   - Bewahre exakte Semantik – das Ergebnis muss identisch sein.
 
-4. Zeigen Sie einen Diff zwischen Original- und optimierter Version.
+4. Zeige einen Diff zwischen ursprünglicher und optimierter Version.
 
-5. Erklären Sie jede Änderung in einer Aufzählungsliste, einschließlich der erwarteten Auswirkungen (z. B. "beseitigt seq scan auf orders, geschätzte 10-100x Reduktion der untersuchten Zeilen").
+5. Erkläre jede Änderung in einer Aufzählungsliste, einschließlich der erwarteten Auswirkung (z. B. „eliminiert seq scan auf orders, geschätzter 10-100x Reduktion der untersuchten Zeilen").
 
-6. Listet auf, welche Indizes erstellt werden sollten, um die optimierte Abfrage zu unterstützen, mit der exakten CREATE INDEX-Anweisung.
+6. Liste alle Indizes auf, die zur Unterstützung der optimierten Abfrage erstellt werden sollten, mit der genauen CREATE INDEX-Anweisung.
 
-Geben Sie die angenommene Datenbank-Engine (PostgreSQL, MySQL, SQLite, MSSQL usw.) basierend auf der erkannten Syntax an. Passen Sie die Empfehlungen entsprechend an.
+Gebe die angenommene Datenbank-Engine (PostgreSQL, MySQL, SQLite, MSSQL, etc.) basierend auf erkannter Syntax an. Passe Empfehlungen entsprechend an.

@@ -291,6 +291,3 @@ do not affect the working tree.
 **`description` est le champ le plus important après `name`.** Le routeur l'utilise pour décider quand déléguer ici. Une description vague ou générique cause un routage incorrect — soit l'agent se déclenche quand il ne devrait pas, soit il n'est jamais sélectionné. Écrivez la description comme une condition de déclenchement explicite, pas un résumé de capacité.
 
 ---
-
-> **Travaillez avec nous:** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -134,6 +134,3 @@ Claude schrijft de MLS-beschrijving en uitgebreide marketingkopie. Het omvat « 
 MLS-beschrijving: 148 woorden. Uitgebreide versie: 340 woorden met kopal, drie functie-voordeel-aanbiedingen en een buurtalinea.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

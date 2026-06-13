@@ -152,6 +152,3 @@ Le filtrage des CV est une tâche de classification bien définie avec format co
 **Exigence du harnais eval (Art. 15):** Avant tout déploiement — API frontière ou affiné — vous avez besoin d'un repère de précision documenté. Au minimum: 500 paires CV-emploi de standard or avec décisions d'embauche étiquetées humainement, testées contre les exigences de parité démographique. Ce n'est pas optionnel; c'est la preuve de conformité dont votre document Annexe IV a besoin.
 
 ---
-
-> **Travaillez avec nous:** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits d'IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

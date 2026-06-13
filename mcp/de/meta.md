@@ -90,6 +90,3 @@ System User Tokens verfallen nicht in einem 60-Tage-Zyklus wie User Tokens — v
 - Um zu vermeiden, dass du während des Testens zu viel ausgibst, setze `status=PAUSED` beim Erstellen von Kampagnen via MCP — aktiviere sie manuell nach dem Überprüfen des Setups.
 
 ---
-
-> **Zusammenarbeit mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen AI-Produkte und B2B-Lösungen mit Developer-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

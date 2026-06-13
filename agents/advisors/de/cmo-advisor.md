@@ -44,6 +44,3 @@ Wo investiere ich meine ersten $10K/Monat Marketing Budget?
 Agent evaluiert: existierende Customer Acquisition Sources, Category Awareness Level, Sales Cycle Length, und gibt spezifische Channel Empfehlung — wahrscheinlich Content/SEO + LinkedIn Organic bevor Paid.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/).
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

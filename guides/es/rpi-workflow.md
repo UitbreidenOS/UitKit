@@ -209,6 +209,3 @@ Las decisiones que cambian el alcance o diseño deben señalarse de vuelta al ag
 La regla central permanece igual en ambos casos: sin saltarse fases e sin implementación sin plan aprobado. Desarrollo solo no es razón para saltarse investigación — es la razón primaria para ser más disciplinado al respecto.
 
 ---
-
-> **Trabaja con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

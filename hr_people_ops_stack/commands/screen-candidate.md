@@ -48,5 +48,3 @@ Runs the candidate-screener skill to comprehensively score a candidate against y
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

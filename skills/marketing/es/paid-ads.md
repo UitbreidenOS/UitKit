@@ -195,6 +195,3 @@ A $99/mes, necesitas CPA < $200 para tener un período de recuperación viable (
 - Agrega campaña de marca con coincidencia exacta — presupuesto $500/mes
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

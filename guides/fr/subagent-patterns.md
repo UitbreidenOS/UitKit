@@ -234,6 +234,3 @@ Après que tous ont terminé, comparer les conclusions et retourner la cause rac
 - Utiliser Opus pour : décisions à enjeux élevés, analyse d'architecture complexe — pas pour les rôles de soutien
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -167,6 +167,3 @@ Burn rate alert: als beschikbaarheid onder 99,5% valt gedurende 1 uur → on-cal
 Bekijk werkelijke performance vs SLO. Als je nooit budget hebt gebruikt, kan doel te los zijn. Als je constant over bent, moet doel aangepast of geïnvesteerd worden.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -161,5 +161,3 @@ Next report: June 17–23, 2026
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [claude.com/claude-code](https://claude.com/claude-code)

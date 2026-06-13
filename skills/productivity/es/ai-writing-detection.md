@@ -86,6 +86,3 @@ Recorre esta lista cuando revises un documento:
 Cambios realizados: eliminado "vale la pena notar", reemplazado "IA vanguardia / robusto / escalable" con un número de rendimiento concreto, eliminado "además" e "en conclusión", convertido a voz activa, y cortado la oración de cierre redundante.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

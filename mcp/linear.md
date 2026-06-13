@@ -96,6 +96,3 @@ For team deployments where multiple people need access, create an OAuth app unde
 **Bulk create with care:** Creating many issues in one session is fast, but Linear sends notifications for each one. Warn the team or use a service account API key for bulk operations.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

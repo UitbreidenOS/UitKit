@@ -419,6 +419,3 @@ Les extensions personnalisées que les adopteurs précoces ont construit à l'in
 Les 15 workflows pré-construits sont la rampe d'accès. Claude Projects sont l'autoroute.
 
 ---
-
-> **Claudient** est soutenu par [Uitbreiden](https://uitbreiden.com/) — construire des produits d'IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

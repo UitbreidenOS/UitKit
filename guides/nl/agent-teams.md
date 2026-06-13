@@ -362,6 +362,3 @@ Agent teams gebruiken aanzienlijk meer tokens dan een enkele sessie. Elk teamgen
 Voor onderzoek, review en nieuwe features zijn de extra tokens meestal voordelig. Voor routinetaken is een enkele sessie kosteneffectiever.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

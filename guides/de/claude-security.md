@@ -709,7 +709,3 @@ Eine Härtungs-Checkliste für Claude Code in Team- oder CI-Umgebungen. Wenden S
 ---
 
 ## Arbeiten Sie mit uns
-
-Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir bauen KI-Produkte mit Developer-Communities und liefern B2B KI-Lösungen. Wenn Sie Hilfe bei der Sicherung von Claude Code Deployments in Scale, beim Bauen von konformen KI-Workflows oder beim Auditing Ihrer KI-Toolchain benötigen — wir können helfen.
-
-**[uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)**

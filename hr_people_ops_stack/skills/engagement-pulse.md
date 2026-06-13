@@ -251,5 +251,3 @@ Jamie consistently exceeds expectations on technical execution and mentors junio
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

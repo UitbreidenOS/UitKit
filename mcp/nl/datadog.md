@@ -105,6 +105,3 @@ Minimum permissions application key: `metrics_read`, `logs_read`, `monitors_read
 Alle MCP aanroepen verbruiken Datadog API quota. Metrics queries en log searches tellen tegen je plan API rate limieten. Vermijd loopend hoog-frequentie automated queries (bijv. via hooks) zonder review je plan's limieten — Datadog handhaaft per-seconde en per-uur API caps op organization niveau.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI producten en B2B oplossingen met developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

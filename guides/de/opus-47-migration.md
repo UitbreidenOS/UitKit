@@ -218,6 +218,3 @@ Claude Code verwaltet die API-Schicht für Sie. Es gibt keine API-level Breaking
 Was möglicherweise Anpassungen erfordert, ist Ihr Prompt-Stil. Opus 4.7s wörtlichere Interpretation und konservativere Tool-Nutzung können komplexe mehrstufige Sessions beeinflussen. Wenn Claude Code Sessions nach der Modell-Aktualisierung weniger autonom werden, fügen Sie explizite Anweisungen zu Ihrer CLAUDE.md hinzu: Spezifizieren Sie, welche Tools proaktiv verwendet werden sollen, definieren Sie, was „gründlich" für Ihre Codebasis bedeutet, und entfernen Sie mehrdeutige Standing Instructions, die sich darauf verlassen haben, dass das Modell Absicht ableitet.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

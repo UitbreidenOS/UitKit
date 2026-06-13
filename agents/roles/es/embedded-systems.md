@@ -99,6 +99,3 @@ Firmware FreeRTOS para STM32 con sensor SPI via DMA:
 5. Watchdog: `HAL_IWDG_Refresh` llamado desde tarea watchdog dedicada que monitorea todas otras tareas via flags de latido — si tarea pierde latido, watchdog dispara y reinicia sistema
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

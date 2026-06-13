@@ -97,6 +97,3 @@ Stel het token in als `FIGMA_API_TOKEN` in het configuratieblok hierboven. Commi
 **Visueel diff-workflow:** Maak een screenshot van de geïmplementeerde component met Playwright MCP, haal dan de Figma-spec op met deze server. Vraag Claude om de twee naast elkaar te vergelijken en verschillen op te sommen.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -148,6 +148,3 @@ PR: "Agregar inicio de sesión OAuth2 con Google"
 El revisor humano recibe una diferencia que ya está simplificada, verificada de seguridad y anotada.
 
 ---
-
-> **Trabaje con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

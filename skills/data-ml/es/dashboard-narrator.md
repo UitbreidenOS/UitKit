@@ -207,6 +207,3 @@ If any item fails, rewrite those sections.
 **Resultado esperado:** Frase veredicto de apertura ("El crecimiento se acelera en ingresos, pero las señales de conversión y retención requieren atención"). Logros: fuerte crecimiento de ingresos, tendencia positiva de WAU. Preocupaciones: la caída de la tasa de conversión coincide con el lanzamiento del martes — la nueva función puede estar perturbando el flujo de registro; el aumento del churn es incipiente, pero hay que seguir la tendencia durante 3 meses. Recomendación: prueba A/B del nuevo flujo de incorporación frente a la versión anterior; programar análisis de cohortes de churn para identificar si un segmento específico está impulsando el 1,8%. Lista de seguimiento: tasa de conversión y churn durante las próximas 2 semanas.
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

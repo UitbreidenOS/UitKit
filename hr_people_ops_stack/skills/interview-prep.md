@@ -335,5 +335,3 @@ Let them ask. Note what signals: Are they asking about team? Roadmap? Growth? Or
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

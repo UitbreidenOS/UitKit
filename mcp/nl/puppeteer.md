@@ -28,7 +28,7 @@ Stel `PUPPETEER_HEADLESS` in op `false` om de browser terwijl deze draait te bek
 
 ```
 # Screenshot van pagina
-"Take a screenshot of https://uitbreiden.com and describe what you see"
+
 
 # Gestructureerde gegevens schrapen
 "Go to [URL] and extract all product names and prices into a JSON list"

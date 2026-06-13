@@ -292,6 +292,3 @@ con un 95% de confianza estadística y un 80% de poder.
 Si "Ver Precios" gana en clics pero los registros de prueba no aumentan, los usuarios son más curiosos pero no más comprometidos. Eso es un problema de claridad de precios, no un problema de CTA — la próxima prueba es la propia página de precios.
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

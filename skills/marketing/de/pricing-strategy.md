@@ -163,6 +163,3 @@ Pauschalpreisgestaltung bei 29 USD ist klassische Early-Stage-Einfachheit — in
 **Projizierte Auswirkung:** Wenn 20% der Bestandskunden auf Team ($79) upgraden und 5% auf Business ($199), steigt der monatliche Umsatz um ~35% mit derselben Kundenanzahl.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

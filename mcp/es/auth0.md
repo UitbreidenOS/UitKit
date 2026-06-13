@@ -105,6 +105,3 @@ Otorga solo los alcances que necesites. Evita `read:client_keys` — expone secr
 Las llamadas a API de Gestión de Auth0 se incluyen en todos los planes de Auth0 — no hay tarifas por llamada. Sin embargo, los planes gratuitos están limitados a 1,000 usuarios activos e imponen límites de velocidad de API de Gestión. Los inquilinos de producción en planes pagados tienen límites de velocidad más altos y capacidad de usuario. Verifica tu cuota de API de Gestión bajo **Configuración → Configuración de Inquilino** en el Panel de Auth0.
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

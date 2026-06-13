@@ -72,5 +72,3 @@ tickets into 5 categories. Return only: ticket_id, category.
 **Reference:** [github.com/JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) — the authoritative caveman implementation. Claudient references this work; it is not duplicated here.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities. [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

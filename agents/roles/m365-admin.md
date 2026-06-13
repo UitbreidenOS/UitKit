@@ -95,6 +95,3 @@ Prioritize improvements by: (1) impact score relative to effort, (2) compliance 
 Design a Conditional Access policy set for a 200-person company. Requirements: MFA for all cloud app access, block legacy authentication protocols, require compliant device for SharePoint and Exchange access, exclude two break-glass accounts from all policies, and configure audit alerting on break-glass sign-in. Deliver the policy list, configuration parameters for each, and the PowerShell to deploy them via Microsoft Graph.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

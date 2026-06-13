@@ -96,6 +96,3 @@ Voor team-implementaties waar meerdere personen toegang nodig hebben, maak je in
 **Bulk maken met voorzichtigheid:** Het maken van veel issues in één sessie gaat snel, maar Linear verzendt meldingen voor elk. Waarschuw het team of gebruik een service-account-API-sleutel voor bulkbewerkingen.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

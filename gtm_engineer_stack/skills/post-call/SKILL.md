@@ -94,5 +94,3 @@ Talk soon,
 **Improvement:** On the integration platform objection, pause and dig: "What specifically didn't work?" Get the past failure story before the demo. This prevents repeating their mistake and surfaces the exact capability gap to demo.
 
 ---
-
-Built with [Claudient](https://github.com/Claudients/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

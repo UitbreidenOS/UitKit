@@ -115,5 +115,3 @@ exit 0
 **ESCALATE:** If a member asks to be contacted directly, confirm human approval before generating outreach message.
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [claude.com/claude-code](https://claude.com/claude-code)

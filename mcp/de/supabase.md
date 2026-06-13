@@ -191,6 +191,3 @@ Der Service Role Key umgeht Row-Level Security komplett. Behandle ihn als Root C
 - Rotiere den Service Role Key sofort, wenn er jemals in einem public Repository exposiert ist.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir bauen KI-Produkte und B2B Lösungen mit Developer Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

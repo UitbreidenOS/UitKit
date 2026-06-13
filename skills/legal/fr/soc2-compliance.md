@@ -239,6 +239,3 @@ L'auditeur examine vos preuves, interroge les propriétaires de contrôles, publ
 **Raccourci :** Utilisez Vanta ou Drata. Pour 8-15 K$/an, ils automatisent 80% de la collecte de preuves en se connectant directement à AWS, GitHub, Google Workspace, etc. Vaut le coup pour un premier SOC 2 pour éviter la surcharge manuelle de preuves.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -458,6 +458,3 @@ For the most likely cause: what's the one change with the fastest impact?
 | Délai d'embauche (postes eng.) | < 45 jours | > 90 jours |
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous développons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

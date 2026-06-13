@@ -131,5 +131,3 @@ Scoring: 1–5 per round; minimum total 18/25 to advance to offer
 **Success Metrics:** 8-week time-to-hire, 85% offer acceptance, 6-month retention >95%
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [claudecode.ai](https://claudecode.ai/)

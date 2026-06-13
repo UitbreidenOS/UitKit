@@ -177,5 +177,3 @@ Not for real-time alerting or incident response—this is for retrospective anal
 3. Schedule deep-dive on mid-market churn reasons
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [Product Operations Stack](https://github.com/Claudient/Claudient)

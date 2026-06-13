@@ -187,6 +187,3 @@ Add the `settings.json` snippet to your global `~/.claude/settings.json` or a pr
 - For group chats, the chat ID is negative (e.g., `-1001234567890`).
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

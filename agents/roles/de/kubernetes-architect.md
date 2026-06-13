@@ -80,6 +80,3 @@ Regeln:
 - Lag-Überwachung: Warnen, wenn Consumer-Lag einen Schwellwert überschreitet — Lag-Wachstum bedeutet, Consumer können nicht mit Producers mithalten
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln AI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

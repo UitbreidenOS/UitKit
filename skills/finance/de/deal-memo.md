@@ -296,6 +296,3 @@ Write a crisp recommendation section (150 words max). State your view clearly. A
 **Erwartete Ausgabe:** Ein vollständiges Deal-Memo mit Marktanalyse (Legal Tech X0 Mrd. USD, KI-Disruptions-Timing), Team (ausgezeichnete Domain/Technik-Passung, fehlender Enterprise-Sales-Leader), Unit Economics (Aufforderung zur LTV/CAC-Verifizierung), Wettbewerbslandschaft (Harvey, Ironclad, Kira als Vergleichsunternehmen), Risikofaktoren (Kundenkonzentration in Piloten, regulatorische Risiken rund um KI in Rechtsberatung, Enterprise-Sales-GTM) und ein Empfehlungsabschnitt, der entweder für oder gegen das Investment argumentiert. Alle vom Gründer bereitgestellten Finanzzahlen sind mit [UNVERIFIED] markiert.
 
 ---
-
-> **Arbeite mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

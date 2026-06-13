@@ -105,5 +105,3 @@ exit 0
 - False positives possible; moderator makes final call
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · Community Builder Edition

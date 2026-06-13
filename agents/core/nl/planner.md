@@ -20,6 +20,3 @@ Escaleer naar **Opus 4.7** Alleen als Plan Architectuur Besluiten over Vele Syst
 - Nieuw Feature Moet Ontworpen worden voor Code Geschreven Wordt
 
 ---
-
-> **Werk Met Ons:** Claudient Wordt Ondersteund door [Uitbreiden](https://uitbreiden.com/).
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

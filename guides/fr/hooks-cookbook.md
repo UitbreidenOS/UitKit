@@ -810,7 +810,3 @@ exit 0  # autorisez l'achèvement
 ---
 
 ## Travaillez avec nous
-
-Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA avec des communautés de développeurs et livrons des solutions IA B2B. Si vous avez besoin de systèmes de hooks personnalisés, de portes de qualité automatisées ou d'automatisation Claude Code de qualité production pour votre équipe — nous le construisons pour les clients.
-
-**[uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)**

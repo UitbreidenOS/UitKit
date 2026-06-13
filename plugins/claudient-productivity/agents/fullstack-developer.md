@@ -146,6 +146,3 @@ Full CRUD feature for team members in a SaaS app:
 5. shadcn `<DataTable>` for list, `<Dialog>` for invite form, `<DropdownMenu>` for row actions
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

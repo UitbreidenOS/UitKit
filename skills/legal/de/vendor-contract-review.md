@@ -228,6 +228,3 @@ Warum nicht verhandelbar: Wenn Sie DSGVO oder CCPA unterliegen, sind Sie gesetzl
 **Was man weglassen sollte:** SLA-Guthaben, IP-Klauseln (vorausgesetzt kein kundenspezifische Entwicklung) und Anwendbares Recht sind auf diesem Ausgabenniveau niederrangiger.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen AI-Produkte und B2B-Lösungen mit Entwicklergemeinschaften.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

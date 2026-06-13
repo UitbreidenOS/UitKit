@@ -55,6 +55,3 @@ El lenguaje natural funciona. La condición debe ser observable e inequívoca :
 Claude ejecuta `tsc --noEmit`, lee la lista de errores, corrige cada error, ejecuta de nuevo, ve errores restantes, corrige los mismos, ejecuta de nuevo — el ciclo continúa hasta cero errores. Luego se detiene e informa: "Resuelto 14 errores TypeScript en 6 archivos. `tsc --noEmit` se cierra limpiamente."
 
 ---
-
-> **Trabaje con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

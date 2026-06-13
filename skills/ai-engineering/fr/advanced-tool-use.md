@@ -172,6 +172,3 @@ Avec chargement différé (`ENABLE_TOOL_SEARCH=auto:10`) : seulement les 10 outi
 Ajouter `input_examples` aux 10 outils toujours chargés augmente la précision des paramètres de 72% à 90% sur les outils qui importent le plus.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

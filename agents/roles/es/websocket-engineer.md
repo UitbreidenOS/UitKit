@@ -86,6 +86,3 @@ Enviar ArrayBuffer directamente. Streams de alta frecuencia usar WebSocket nativ
 Editor de documentos colaborativo en tiempo real con servidor Socket.io, auth JWT, adaptador Redis para escalado horizontal, seguimiento de presencia y reconexión con reproducción de eventos.
 
 ---
-
-> **Trabaja con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

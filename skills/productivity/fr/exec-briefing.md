@@ -355,6 +355,3 @@ Pour chaque ligne rouge : rédiger une déflexion professionnelle qui ne nuit pa
 **Sortie attendue :** Briefing complet — profil du participant avec recherche sur la nouvelle VP (LinkedIn, parcours dans l'entreprise précédente, sur quoi elle s'est concentrée dans son dernier rôle), points de discussion sur pourquoi c'est le bon moment pour l'expansion (données d'utilisation, nouveaux cas d'usage débloqués dans les 6 derniers mois, preuves de ROI), question clé à poser ("Qu'est-ce qui ferait de ce partenariat un succès évident dans vos 90 premiers jours ?"), ce qu'il NE FAUT PAS s'engager à faire (changements de tarification sans approbation de la direction financière, développement personnalisé), et prochaines étapes proposées (démo produit avec son équipe dans 2 semaines, appel d'introduction avec le sponsor exécutif).
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

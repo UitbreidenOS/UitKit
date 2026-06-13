@@ -20,6 +20,3 @@ Voert Gerichte Security Audit uit van Code Changes — Focussing op OWASP Top 10
 - Secrets Accidenteel in Code Opgenomen Checken
 
 ---
-
-> **Werk Met Ons:** Claudient Wordt Ondersteund door [Uitbreiden](https://uitbreiden.com/).
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

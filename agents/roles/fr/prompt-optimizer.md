@@ -126,6 +126,3 @@ Correctif :
 Résultat : le taux d'échec baisse de 15 % à moins de 2 %, la longueur totale du prompt réduite de 120 tokens.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

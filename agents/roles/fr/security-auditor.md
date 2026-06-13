@@ -125,6 +125,3 @@ Audit de sécurité avant la version d'une API REST Node.js :
 Sortie : rapport de constatations avec 2 Critique, 3 Haute, 4 Moyenne, chacune avec score CVSS et correctif de code spécifique.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

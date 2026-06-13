@@ -208,6 +208,3 @@ Concevez un modèle de chemin doré pour un nouveau microservice Python :
 5. Une équipe crée un nouveau service en cliquant sur « Créer » dans Backstage, en remplissant le nom et le propriétaire — elle fonctionne en production dans les 30 minutes sans toucher à aucun code d'infrastructure.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

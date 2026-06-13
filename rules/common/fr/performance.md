@@ -36,5 +36,3 @@ Copiez les sections pertinentes dans le `CLAUDE.md` de votre projet.
 - Les tests de performance appartiennent à la CI — une régression qui passe la revue de code mais échoue le budget de performance doit être détectée automatiquement
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs. [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

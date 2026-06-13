@@ -208,6 +208,3 @@ Ticket: LIN-2847
 **Without this workflow:** engineers would continue merging feature work not knowing 71% of the month's reliability budget was consumed in one afternoon.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

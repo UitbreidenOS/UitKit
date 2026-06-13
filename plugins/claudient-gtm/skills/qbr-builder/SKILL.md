@@ -256,6 +256,3 @@ Produce the specific recovery QBR plan for my customer.
 **Key risk:** If the CFO raises support quality as a renewal condition, have a service credit ready to offer — not volunteered, but ready if they push.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

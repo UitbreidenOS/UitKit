@@ -252,6 +252,3 @@ Twee problemen: kosten en prestatie. Ze zijn gerelateerd.
 - Dev/staging verplaatsen naar B-tier of Azure Dev/Test-abonnement prijzen gebruiken
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met developer-gemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

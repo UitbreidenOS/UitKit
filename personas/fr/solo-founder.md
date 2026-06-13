@@ -43,5 +43,5 @@ Claude rédige une séquence concise et personnalisée — ligne d'objet, corps,
 
 ---
 
-🔗 **[Uitbreiden — building AI products and B2B tools with developer communities.](https://uitbreiden.com/)**
-📺 **[Subscribe to our YouTube Channel for more deep dives](https://www.youtube.com/channel/UCcvK8pHyqeR7Q_0lYkuHlUg)**
+
+📺 **[S'abonner à notre chaîne YouTube pour plus d'analyses approfondies](https://www.youtube.com/channel/UCcvK8pHyqeR7Q_0lYkuHlUg)**

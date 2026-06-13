@@ -89,6 +89,3 @@ Quand les rôles correspondent naturellement au problème, quand vous avez besoi
 Pipeline de contenu pour un blog de développeurs : un `ResearchAgent` rassemble des faits techniques sur une nouvelle bibliothèque, un `WriterAgent` rédige l'article, un `ReviewerAgent` vérifie la précision et le ton. Processus séquentiel, Claude Sonnet sur les trois agents, terminé en moins de 50 lignes de code.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

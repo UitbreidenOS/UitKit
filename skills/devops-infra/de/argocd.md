@@ -296,6 +296,3 @@ Git-Commit → Git-Push → ArgoCD erkennt Änderung → stellt automatisch bere
 ArgoCD fragt Ihr Repo standardmäßig alle 3 Minuten ab. Für sofortige Synchronisierung konfigurieren Sie einen GitHub-Webhook, der auf Ihre ArgoCD-Instanz verweist.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

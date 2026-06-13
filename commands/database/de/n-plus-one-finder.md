@@ -1,33 +1,33 @@
 ---
-description: N+1-Abfragemuster in ORM-Code erkennen und Batch-Loading-Fixes erzeugen
+description: N+1-Abfragemuster in ORM-Code erkennen und Batch-Loading-Fixes produzieren
 argument-hint: "[file path, directory, or route/controller name]"
 ---
-Scannen Sie nach N+1-Abfragemustern in: $ARGUMENTS
+Nach N+1-Abfragemustern suchen in: $ARGUMENTS
 
-Wenn $ARGUMENTS ein Dateipfad ist, lesen Sie ihn. Wenn es sich um ein Verzeichnis handelt, scannen Sie alle relevanten Quelldateien darin. Wenn es sich um einen Controller- oder Route-Namen handelt, suchen Sie die entsprechenden Codedateien.
+Wenn $ARGUMENTS ein Dateipfad ist, lesen Sie ihn. Wenn es ein Verzeichnis ist, scannen Sie alle relevanten Quelldateien darin. Wenn es ein Controller- oder Route-Name ist, lokalisieren Sie die entsprechenden Code-Dateien.
 
-Erkennungsansatz:
+Erkennungsmethode:
 
-1. Identifizieren Sie das verwendete ORM oder die Abfragebibliothek (ActiveRecord, SQLAlchemy, Django ORM, TypeORM, Prisma, Sequelize, GORM, Hibernate usw.).
+1. Das verwendete ORM oder die Abfragebibliothek identifizieren (ActiveRecord, SQLAlchemy, Django ORM, TypeORM, Prisma, Sequelize, GORM, Hibernate, usw.).
 
-2. Scannen Sie nach N+1-Mustern:
-   - Schleifen (for, forEach, map, each, .all.map usw.), die ORM-Aufrufe im Schleifenkörper enthalten.
-   - Lazy-loaded Zuordnungen, auf die innerhalb einer Schleife zugegriffen wird (z. B. `post.comments` wird pro Post in einer Iteration aufgerufen).
-   - Serialisierer oder View-Templates, die Zuordnungslasten pro Datensatz auslösen.
-   - `.find()` oder `.get()`-Aufrufe innerhalb von Schleifen, die batchartig sein könnten.
+2. Nach N+1-Mustern scannen:
+   - Schleifen (for, forEach, map, each, .all.map, etc.), die ORM-Aufrufe im Schleifentext enthalten.
+   - Lazy-Load-Zuordnungen, die innerhalb einer Schleife aufgerufen werden (z.B. `post.comments` aufgerufen pro Post in einer Iteration).
+   - Serialisierer oder View-Templates, die Zuordnungs-Loads pro Datensatz auslösen.
+   - `.find()`- oder `.get()`-Aufrufe innerhalb von Schleifen, die bündeln könnten.
    - Fehlende Eager-Load-Direktiven (includes, eager_load, preload, joinedload, selectinload, with, include).
 
-3. Geben Sie für jeden gefundenen N+1-Fall aus:
-   - Dateipfad und Zeilennummern des fehlerhaften Codes.
+3. Für jeden N+1-Fund ausgeben:
+   - Dateipfad und Zeilennummer(n) des fehlerhaften Codes.
    - Die Abfrage, die N-mal ausgeführt wird.
-   - Die Korrektur: exakter Code, der zeigt, wie die Zuordnung batchartig oder eager-load wird.
-   - Die ORM-spezifische Methode (z. B. `includes(:comments)` für ActiveRecord, `options(selectinload(Post.comments))` für SQLAlchemy, `include: { comments: true }` für Prisma).
+   - Die Lösung: exakter Code zeigt, wie man die Zuordnung bündelt/eager-ladet.
+   - Die ORM-spezifische Methode zur Verwendung (z.B. `includes(:comments)` für ActiveRecord, `options(selectinload(Post.comments))` für SQLAlchemy, `include: { comments: true }` für Prisma).
 
-4. Markieren Sie auch:
-   - Fehlende `select`-Felder, die vollständige Zeilenlast verursachen, wenn nur eine Teilmenge benötigt wird.
-   - Fehlende `.distinct` auf Zuordnungszahlen, die zu aufgeblasenen Ergebnissen führen.
-   - Wiederholte identische Abfragen innerhalb desselben Request-Zyklus, die memoized oder gecacht werden sollten.
+4. Auch kennzeichnen:
+   - Fehlende `select`-Felder, die Vollzeilenladungen verursachen, wenn nur eine Teilmenge benötigt wird.
+   - Fehlende `.distinct` bei Zuordnungszählern, die aufgeblasene Ergebnisse verursachen.
+   - Wiederholte identische Abfragen innerhalb des gleichen Request-Zyklus, die memoized oder gecacht werden sollten.
 
-5. Wenn die Codebasis Query-Logging oder ein Query-Count-Assertion-Muster hat (z. B. `assert_queries`, `nplusone`-Bibliothek), schlagen Sie vor, Guards hinzuzufügen, um Regressionen zu verhindern.
+5. Wenn die Codebasis Abfrage-Logging oder ein Query-Count-Assertion-Muster aufweist (z.B. `assert_queries`, `nplusone`-Bibliothek), schlagen Sie vor, Guards hinzuzufügen, um Regressions zu verhindern.
 
-Geben Sie Erkenntnisse als priorisierte Liste aus – HIGH (in einem heißen Pfad oder Schleife über unbegrenzte Sammlungen), MEDIUM, LOW – mit exaktem Code-Fix für jeden.
+Ausgaben von Erkenntnissen als priorisierte Liste — HIGH (in einem Hot Path oder Schleife über unbegrenzte Sammlungen), MEDIUM, LOW — mit exaktem Code-Fix für jeden.

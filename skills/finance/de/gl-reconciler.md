@@ -289,6 +289,3 @@ Erstellen Sie die Konzernabstimmungsvorlage für meine Unternehmensstruktur.
 4. „Beim ersten Mal richtig"-Kultur: Controller überprüft während des Monats, nicht nur beim Abschluss
 
 ---
-
-> **Mit uns arbeiten:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

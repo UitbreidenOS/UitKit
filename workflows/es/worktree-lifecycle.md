@@ -137,6 +137,3 @@ Agregar `.worktrees/` a `.gitignore` — estos directorios son estado del sistem
 - Los worktrees comparten el mismo directorio `.git` que el repo principal. Las operaciones como `git fetch` y `git log` en cualquier worktree ven todas las ramas.
 
 ---
-
-> **Trabaje con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

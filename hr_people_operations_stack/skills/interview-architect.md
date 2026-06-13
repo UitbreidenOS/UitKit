@@ -267,5 +267,3 @@ Stop interview early and escalate if you observe:
 - **Inability to handle feedback:** Gets defensive when asked probing questions → Note; may struggle with feedback culture.
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [claude.com/claude-code](https://claude.com/claude-code)

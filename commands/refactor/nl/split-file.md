@@ -1,32 +1,32 @@
 ---
-description: Een oversized of mixed-concern bestand in gerichte modules splitsen
+description: Splits een te groot of gemengd-concern bestand in gerichte modules
 argument-hint: "[file]"
 ---
-Splits $ARGUMENTS in kleinere, single-concern bestanden.
+Split $ARGUMENTS in kleinere bestanden met één verantwoordelijkheid.
 
-1. Lees het volledige bestand. Identificeer logische clusters van symbolen:
-   - Groepeer op domein concern (bijv. auth logica, DB queries, HTTP handlers, utility helpers)
+1. Lees het gehele bestand. Identificeer logische clusters van symbolen:
+   - Groepeer op domeinverantwoordelijkheid (bijv. auth-logica, DB-query's, HTTP-handlers, utility-helpers)
    - Groepeer op type (bijv. alle types/interfaces samen, alle constanten samen) als dat de conventie van het project is
-   - Bekijk bestaande sibling bestanden in dezelfde directory om het gevestigde split patroon te matchen
+   - Bekijk bestaande zusterbestanden in dezelfde directory om het gevestigde split-patroon na te volgen
 
-2. Stel een split plan voor alvorens wijzigingen aan te brengen:
-   - Zet iedere nieuwe bestandsnaam en welke symbolen deze zal bevatten op
-   - Identificeer alle cross-file dependencies die de split zal creëren (imports die voorheen niet bestonden)
-   - Zeg welk bestand, zo aanwezig, het re-export barrel wordt (index.ts, __init__.py, mod.rs, etc.)
+2. Stel een splitplan voor voordat je wijzigingen aanbrengt:
+   - Vermeld elke nieuwe bestandsnaam en welke symbolen deze zal bevatten
+   - Identificeer alle cross-file-afhankelijkheden die de split zal creëren (imports die voorheen niet bestonden)
+   - Bepaal welk bestand, indien aanwezig, het re-export-barrel wordt (index.ts, __init__.py, mod.rs, enzovoort)
 
 3. Voer de split uit:
-   - Creëer ieder nieuw bestand met alleen de symbolen die eraan toegewezen zijn
-   - Voeg alle noodzakelijke import statements toe — zowel binnen de nieuwe bestanden als van alle bestanden die voorheen het originele bestand importeerden
-   - Update het originele bestand om te re-exporten van de nieuwe modules als backward compatibility vereist is; anders verwijder het originele
+   - Maak elk nieuw bestand aan met alleen de symbolen die eraan zijn toegewezen
+   - Voeg alle noodzakelijke import-statements toe — zowel binnen de nieuwe bestanden als vanuit bestanden die eerder het origineel importeerden
+   - Update het originele bestand om opnieuw uit te voeren vanuit de nieuwe modules als achterwaartse compatibiliteit vereist is; anders verwijder het origineel
    - Verwijder alle nu-redundante imports binnen de nieuwe bestanden
 
-4. Verifieer dat ieder symbool dat van buiten het originele bestand bereikbaar was nog steeds bereikbaar is op hetzelfde import pad, of zet de padwijziging expliciet op papier.
+4. Controleer dat elk symbool dat van buiten het originele bestand bereikbaar was, nog steeds bereikbaar is op hetzelfde import-pad, of documenteer de padwijziging expliciet.
 
-5. Hernoem symbolen niet, wijzig logica niet, en format code niet opnieuw tijdens de split.
+5. Hernoem geen symbolen, wijzig geen logica, en herformateer geen code tijdens de split.
 
-6. Output: lijst van gemaakte nieuwe bestanden, symbolen die naar ieder ervan verplaatst zijn, en alle import paden die externe oproepers moeten updaten.
+6. Output: lijst met gemaakte nieuwe bestanden, symbolen die naar elk zijn verplaatst, en alle import-paden die externe aanroepers moeten bijwerken.
 
-Constraints:
-- Splits nooit in meer dan 5 bestanden in één pass — als het bestand meer rechtvaardigt, leg uit en stop na 5.
-- Creëer geen bestanden kleiner dan ~20 betekenisvolle regels tenzij de domein grens uitzonderlijk duidelijk is.
-- Match de nieuwe bestandsnamen op de bestaande naamgevingsconventie van het project.
+Beperkingen:
+- Split nooit in meer dan 5 bestanden in één keer — als het bestand meer rechtvaardigt, leg dit uit en stop na 5.
+- Maak geen bestanden kleiner dan ongeveer 20 betekenisvolle regels, tenzij de domeingrens uitzonderlijk duidelijk is.
+- Zorg ervoor dat de nieuwe bestandsnamen overeenkomen met de naamgevingsconventie van het project.

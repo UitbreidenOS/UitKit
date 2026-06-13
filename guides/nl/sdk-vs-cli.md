@@ -126,6 +126,3 @@ Als uw automatisering afhankelijk is van deterministische uitvoer:
 Bare CLI-modus is de juiste keuze wanneer u de Claude Code-binaire nodig hebt, maar zich zorgen maakt over latentie. Het SDK is nog sneller wanneer u de CLI helemaal niet nodig hebt.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

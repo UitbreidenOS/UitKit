@@ -218,6 +218,3 @@ Claude Code gestiona la capa API para usted. No hay cambios incompatibles a nive
 Lo que puede requerir ajuste es su estilo de solicitud. La interpretación más literal de Opus 4.7 y el uso más conservador de herramientas pueden afectar sesiones complejas de múltiples pasos. Si las sesiones de Claude Code se vuelven menos autónomas después de la actualización del modelo, agregue instrucciones explícitas a su CLAUDE.md: especifique qué herramientas deben usarse de manera proactiva, defina qué significa "exhaustivo" para su base de código, y elimine cualquier instrucción permanente ambigua que dependiera del modelo deduciendo intención.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

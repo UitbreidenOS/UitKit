@@ -242,6 +242,3 @@ LCP von 3,2 Sekunden auf einem Heldenbild ist fast immer eine dieser drei Dinge:
 Erwartete Verbesserung: LCP von 3,2 s → < 1,0 s nach Priorität + optimiertem Bild.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir bauen KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

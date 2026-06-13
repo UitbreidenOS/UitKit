@@ -126,6 +126,3 @@ Variabel: leveranciersbetaling $1.200 verschuldigd 15e
 - Aanbeveling: Vervolg de $3.200 factuur actief. Tel de $8.000 offerte nog niet mee in de planning.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

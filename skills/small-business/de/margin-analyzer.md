@@ -109,6 +109,3 @@ Claude kennzeichnet: White-Label-Diffusoren liegen über der 20%-Grenze, sind ab
 Empfehlung: Verlagern Sie Paid-Ad-Ausgaben auf handgemachte Kerzen (höchste Marge %) und digitale Anleitungen (höchste Marge %, keine Erfüllung). Überprüfen Sie die Diffusor-Preisgestaltung — eine Preiserhöhung von $7 bringt die Marge auf 37% und wird das Volumen angesichts Ihrer aktuellen Preisposition wahrscheinlich nicht erheblich senken.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

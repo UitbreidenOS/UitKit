@@ -307,6 +307,3 @@ helm install nextjs-app ./nextjs-app --dry-run --debug
 The key insight: your current `deployment.yaml` is already ~80% of the Helm template. Just replace the hardcoded values with `{{ .Values.X }}` references and create the corresponding values.yaml.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

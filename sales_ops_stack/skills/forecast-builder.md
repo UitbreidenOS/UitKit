@@ -277,5 +277,3 @@ If No, reasons for hold:
 **Methodology Adjustment:** [If variance >±10%, note adjustment for next run]
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient)

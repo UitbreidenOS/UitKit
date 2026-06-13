@@ -243,6 +243,3 @@ Add `npm run audit:ci` to your CI pipeline — blocks deploy on new critical/hig
 **Timeline:** 8 months without audit → expect 3-8 medium/high CVEs, 0-2 critical. Most fixable in a single PR.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

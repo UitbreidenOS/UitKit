@@ -231,6 +231,3 @@ Schreiben Sie den Literaturüberblicks-Abschnitt für meine eingeschlossenen Pap
 Hinweis: Ich synthetisiere über Papiere nach Ergebnis, nicht nach Papier — dies ist die Schlüssel-Strukturveränderung.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird unterstützt durch [Uitbreiden](https://uitbreiden.com/) — wir bauen KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

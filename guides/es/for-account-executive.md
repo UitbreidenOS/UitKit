@@ -333,6 +333,3 @@ Un MSP solo funciona si ambas partes lo aceptan. La skill incluye una plantilla 
 - [Agente competitive analyst](../agents/roles/competitive-analyst.md)
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

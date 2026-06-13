@@ -271,6 +271,3 @@ Keep it under 200 words. Professional, not defensive.
 **Erwartete Ausgabe:** Ein vollständiger CMA-Bericht mit der Vergleichstabelle, die Anpassungen zeigt (+$8K für das größere Bad bei Vergleich 2, -$10K für kleinere Fläche bei Vergleich 3), angepasste Wertspanne von $608K–$628K, empfohlener Listenpreis von $618K, ein 3-Absatz-Verkäufernarrativ, das den ausgewogenen Markt erklärt und wie die aktualisierte Küche das obere Ende der Spanne rechtfertigt, und ein Preissenkungsauslöser an Tag 14 / $599K, wenn keine Angebote eingehen.
 
 ---
-
-> **Arbeite mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

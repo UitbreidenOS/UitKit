@@ -289,6 +289,3 @@ Configurer la stratégie recommandée pour mon équipe avec commandes git et poi
 - [ ] Plan de rétablissement : pouvez-vous réactiver les anciens endpoints si l'adoption de la migration est trop faible ?
 
 ---
-
-> **Travailler avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

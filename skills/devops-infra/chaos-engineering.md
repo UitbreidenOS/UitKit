@@ -224,6 +224,3 @@ spec:
 → Fix: implement circuit breaker pattern with `opossum` (Node.js) or `resilience4j` (Java) — fail-open with manual review queue for the duration of the outage.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

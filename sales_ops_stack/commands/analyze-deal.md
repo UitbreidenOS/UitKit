@@ -156,5 +156,3 @@ Deal: [Company] | Value: $[X]K | Stage: [Current] | Risk: [Low/Med/High] | Recom
 - `/plan-territory` — If dealing with new rep struggles (coaching needed)
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient)

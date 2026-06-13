@@ -367,6 +367,3 @@ Utiliser Claude pour rédiger des mémos juridiques même pour les questions de 
 - [Compétence de réponse aux DSAR](../skills/legal/dsar-response.md)
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

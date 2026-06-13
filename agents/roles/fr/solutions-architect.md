@@ -105,5 +105,5 @@ Pour chaque décision architecturale majeure, enregistrez :
 
 ---
 
-🔗 **[Uitbreiden — construire des produits IA et des outils B2B avec les communautés de développeurs.](https://uitbreiden.com/)**
+
 📺 **[S'abonner à notre chaîne YouTube pour plus d'analyses approfondies](https://www.youtube.com/channel/UCcvK8pHyqeR7Q_0lYkuHlUg)**

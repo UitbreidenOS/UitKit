@@ -94,5 +94,3 @@ exit 0
 5. Restart Claude Code for hook to take effect
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [Product Operations Stack](https://github.com/Claudient/Claudient)

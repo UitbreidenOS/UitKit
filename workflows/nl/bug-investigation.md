@@ -115,6 +115,3 @@ Voor eenvoudiger fouten met een duidelijke schuldige, sla parallelle agenten ove
 - `/skills/productivity/self-eval` — beoordeel de kwaliteit van uw debug-proces
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

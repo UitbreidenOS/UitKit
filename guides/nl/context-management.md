@@ -144,6 +144,3 @@ Langere context = hogere kosten per verzoek. Strategieën om kosten te verlagen:
 - Gebruik `CLAUDE.md` om stabiele context goedkoop voor te laden
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaargemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

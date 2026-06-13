@@ -292,6 +292,3 @@ avec 95% de confiance statistique et 80% de puissance.
 Si "Voir les tarifs" gagne sur les clics mais que les inscriptions à l'essai n'augmentent pas, les utilisateurs sont plus curieux mais pas plus engagés. C'est un problème de clarté des tarifs, pas un problème de CTA — le prochain test porte sur la page de tarification elle-même.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

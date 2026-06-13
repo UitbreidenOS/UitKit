@@ -342,6 +342,3 @@ Alle Claude-financiële uitvoer is gemarkeerd met `[VERIFY]`. Deze discipline dw
 - [3-statements-model-vaardigheid](../skills/finance/3-statement-model.md)
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — wij bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

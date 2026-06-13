@@ -127,6 +127,3 @@ Betreffzeile: Der größte Fehler neuer Benutzer
 [setzt sich für alle 5 E-Mails mit Betreffzeilen und Copy fort]
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

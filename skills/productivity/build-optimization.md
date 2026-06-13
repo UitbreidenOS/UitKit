@@ -112,6 +112,3 @@ Target: >90% cache hit rate. A miss on node_modules should not invalidate the bu
 4. Add Turborepo with `outputs: ["dist/**"]` — second CI run hits cache, build time drops to 45 seconds
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

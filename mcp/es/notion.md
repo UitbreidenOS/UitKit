@@ -96,6 +96,3 @@ La integración solo ve páginas explícitamente compartidas con ella. Compartir
 **Usa search para iniciar:** Cuando no tengas IDs, siempre comienza con `search` usando un título descriptivo. Devuelve IDs de página e IDs de base de datos que puedas usar en llamadas posteriores.
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

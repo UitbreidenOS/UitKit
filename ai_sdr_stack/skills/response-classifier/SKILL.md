@@ -70,5 +70,3 @@ CRM Update: Mark status → REPLIED (interested). Update lifecycle → SQL. Log:
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudients/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

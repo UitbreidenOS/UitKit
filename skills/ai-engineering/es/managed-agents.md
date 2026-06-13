@@ -138,6 +138,3 @@ Un producto que permite a los usuarios enviar tareas de investigación de forma 
 Toda la ejecución del agente — búsquedas web, extracción de datos, síntesis — ocurre en la nube de Anthropic sin gestión de infraestructura.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -147,7 +147,3 @@ Complexe projecten profiteren van een `CONTEXT.md` — een woordenlijst van dome
 ---
 
 ## Werk met ons samen
-
-Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten met ontwikkelaarsgemeenschappen en leveren B2B AI-oplossingen. Als u langlopende AI-workflows, autonome agents bouwt, of hulp nodig heeft bij het ontwerpen van geheugenarchitecturen voor productie Claude Code-implementaties — wij kunnen helpen.
-
-**[uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)**

@@ -148,6 +148,3 @@ PR: "Add OAuth2 login with Google"
 Human reviewer receives a diff that is already simplified, security-checked, and annotated.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

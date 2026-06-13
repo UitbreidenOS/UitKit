@@ -126,6 +126,3 @@ Variabel: Lieferantenzahlung $1.200 fällig 15.
 - Empfehlung: Verfolgen Sie die $3.200 Rechnung aktiv. Zählen Sie das $8.000 Angebot in der Planung noch nicht.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

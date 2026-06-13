@@ -1,52 +1,52 @@
 ---
-description: Führe eine strukturierte Git-Bisect durch, um den Commit zu finden, der eine Regression eingeführt hat
-argument-hint: "[failing test, command, or behavior description]"
+description: Führe eine strukturierte git bisect durch, um den Commit zu finden, der eine Regression verursacht hat
+argument-hint: "[fehlgeschlagener Test, Befehl oder Verhaltensbeschreibung]"
 ---
-Finde den Commit, der diese Regression eingeführt hat: $ARGUMENTS
+Finde den Commit, der diese Regression verursacht hat: $ARGUMENTS
 
-Sie führen eine binäre Suche durch die Git-Historie durch. Seien Sie methodisch.
+Du führst eine binäre Suche über die git-Historie durch. Sei methodisch.
 
-1. **Etablieren Sie das Test-Oracle** — bevor Sie Git anfassen, definieren Sie genau, wie man gut vs. schlecht bestimmt:
-   - Bevorzugen Sie einen einzigen Befehl, der bei guten Ergebnissen mit 0 und bei schlechten mit nicht-null endet
+1. **Definiere das Test-Orakel** — bevor du git anfasst, definiere genau, wie man gut von schlecht unterscheidet:
+   - Bevorzuge einen einzelnen Befehl, der bei gut mit 0 und bei schlecht mit nicht-null endet
    - Beispiele: `pytest tests/test_foo.py::test_bar`, `cargo test`, `node test.js`, `./check.sh`
-   - Wenn die Regression visuell oder verhaltensbedingt ist (nicht ein Test), schreiben Sie ein Skript, das das beobachtbare Symptom überprüft
-   - Das Oracle muss schnell sein (< 30s idealerweise) und deterministisch
+   - Falls die Regression visuell oder verhaltensbedingt ist (kein Test), schreibe ein Skript, das das beobachtbare Symptom prüft
+   - Das Orakel muss schnell (< 30s idealerweise) und deterministisch sein
 
-2. **Identifizieren Sie die bekannten guten und bekannten schlechten Commits**
-   - Bekannt-schlecht: normalerweise HEAD oder der erste Commit, in dem die Regression bemerkt wurde
-   - Bekannt-gut: ein Commit oder Tag, in dem das Verhalten korrekt war (aktuelles Release-Tag, letzter Deploy, usw.)
-   - Bestätigen Sie beide, indem Sie das Oracle gegen jeden ausführen, bevor Sie bisect starten
+2. **Identifiziere die bekannt-guten und bekannt-schlechten Commits**
+   - Bekannt-schlecht: normalerweise HEAD oder der erste Commit, wo die Regression bemerkt wurde
+   - Bekannt-gut: ein Commit oder Tag, wo das Verhalten korrekt war (aktueller Release-Tag, letzter Deploy, etc.)
+   - Bestätige beide, indem du das Orakel gegen jeden testst, bevor du bisect startest
 
-3. **Führen Sie die Bisect aus**
+3. **Führe die bisect aus**
    ```
    git bisect start
    git bisect bad <bad-commit>
    git bisect good <good-commit>
    ```
-   Führen Sie dann für jeden Checkout das Oracle aus und markieren Sie:
+   Dann für jeden Checkout das Orakel ausführen und markieren:
    ```
-   git bisect good   # if oracle passes
-   git bisect bad    # if oracle fails
+   git bisect good   # wenn Orakel erfolgreich ist
+   git bisect bad    # wenn Orakel fehlschlägt
    ```
-   Oder automatisieren Sie es: `git bisect run <oracle-command>`
+   Oder automatisiere es: `git bisect run <oracle-command>`
 
-4. **Interpretieren Sie das Ergebnis** — wenn bisect beendet ist, zeigt Git auf den ersten schlechten Commit. Lesen Sie:
+4. **Interpretiere das Ergebnis** — wenn bisect fertig ist, zeigt git auf den ersten schlechten Commit. Lese:
    - Die Commit-Nachricht und das Diff (`git show <sha>`)
-   - Die spezifischen Zeilen, die sich ändern und sich auf das fehlgeschlagene Oracle beziehen
+   - Die spezifischen Zeilen, die geändert wurden und zur fehlgeschlagenen Oracle-Ausführung führen
    - Den Autor und alle verknüpften Issues/PRs für Kontext
 
-5. **Bestätigen Sie das Ergebnis** — checken Sie den Commit direkt vor dem schlechten aus, führen Sie das Oracle aus,
-   bestätigen Sie, dass es bestanden wird. Checken Sie den schlechten Commit aus, bestätigen Sie, dass er fehlschlägt. Dies schließt ein fehlerhaftes Oracle aus.
+5. **Bestätige das Ergebnis** — checke den Commit kurz vor dem schlechten aus, führe das Orakel aus,
+   bestätige, dass es erfolgreich ist. Checke den schlechten Commit aus, bestätige, dass er fehlschlägt. Dies schließt ein fehleranfälliges Orakel aus.
 
-6. **Bereinigung**
+6. **Räume auf**
    ```
    git bisect reset
    ```
 
-7. **Bericht** — fassen Sie zusammen:
-   - Den SHA des angreifenden Commits und die Nachricht
-   - Der spezifischen Diff-Chunk, der die Regression eingeführt hat
-   - Ob die Änderung beabsichtigt war (die Behebung ist eine Reversion oder ein Folgepatch)
+7. **Berichte** — fasse zusammen:
+   - Die offendierenden Commit-SHA und -Nachricht
+   - Das spezifische Diff-Chunk, das die Regression verursacht hat
+   - Ob die Änderung beabsichtigt war (die Lösung ist ein Revert oder ein Follow-up-Patch)
 
-Wenn die Test-Suite noch nicht existiert, ist Schritt 1, das Oracle zuerst zu schreiben und dann fortzufahren.
-Überspringen Sie nicht den Bestätigungsschritt — ein falsches Bisect-Ergebnis kostet mehr Zeit als es spart.
+Falls die Test-Suite noch nicht existiert, besteht Schritt 1 darin, zuerst das Orakel zu schreiben, dann fortzufahren.
+Überspringe nicht den Bestätigungsschritt — ein falsches Bisect-Ergebnis kostet mehr Zeit, als es spart.

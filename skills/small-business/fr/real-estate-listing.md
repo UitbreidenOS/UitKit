@@ -134,6 +134,3 @@ Claude écrit la description MLS et la copie marketing étendue. Il inclut « à
 Description MLS : 148 mots. Version étendue : 340 mots avec un titre, trois callouts de caractéristiques-avantages et un paragraphe de quartier.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -209,6 +209,3 @@ Decisions that change the scope or design should be flagged back to the engineer
 The core rule stays the same in both cases: no skipping phases and no implementation without a signed-off plan. Solo development is not a reason to skip research — it is the primary reason to be more disciplined about it.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

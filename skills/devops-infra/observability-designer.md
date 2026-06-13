@@ -269,6 +269,3 @@ Replace `console.log("Payment failed: " + err)` with structured JSON across all 
 Grafana Cloud free tier covers you: Prometheus metrics + Loki logs + Tempo traces. Zero cost until you scale beyond their generous free limits. When you hit $500/month Grafana cost, re-evaluate.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

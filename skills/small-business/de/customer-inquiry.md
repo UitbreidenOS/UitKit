@@ -133,6 +133,3 @@ Nein. Ich gestalte Ihr Programm um das herum, was Sie haben — ob Fitnessstudio
 Buchen Sie einen kostenlosen 20-Minuten-Anruf und wir sprechen über Ihre Ziele, aktuellen Fitnesslevel und den besten Ansatz für Sie. Keine Verpflichtung. → [Hier buchen]
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

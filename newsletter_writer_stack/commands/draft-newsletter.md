@@ -116,5 +116,3 @@ FOOTER (unsubscribe + social)
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [Newsletter Writer Stack](./README.md)

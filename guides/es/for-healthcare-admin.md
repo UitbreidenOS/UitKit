@@ -303,6 +303,3 @@ Realiza una medición de referencia en la Semana 1 antes de usar Claude Code a e
 - [Habilidad de seguimiento de facturas](../skills/finance/invoice-chaser.md)
 
 ---
-
-> **Trabaja con nosotros:** Claudient cuenta con el respaldo de [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -170,6 +170,3 @@ Which of these changed most? That tells you where to focus.
 **What this is NOT:** a sales problem. Adding more new logos while NRR is 97% is accelerating toward a wall. Fix retention first.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

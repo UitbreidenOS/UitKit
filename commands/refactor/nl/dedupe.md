@@ -1,29 +1,29 @@
 ---
 description: Vind en elimineer gedupliceerde logica, gegevens of structuur
-argument-hint: "[file or directory]"
+argument-hint: "[bestand of map]"
 ---
-Verwijder duplicaten in code in $ARGUMENTS.
+Dedupliceer code in $ARGUMENTS.
 
-1. Scan het bereik op duplicatie:
-   - Identieke of bijna identieke functielichamen (>5 regels met triviale variatie)
+1. Scan het bereik voor duplicatie:
+   - Identieke of bijna identieke functiebodies (>5 regels met triviale variatie)
    - Gekopieerde gegevensstructuren of configuratieblokken met kleine verschillen
    - Herhaalde inline logica die eenmaal kan worden geëxtraheerd (bijv. dezelfde validatie, dezelfde sorteercomparator, dezelfde transformatie)
-   - Gedupliceerde typedefinities of interface-declaraties
-   - Meerdere functies die alleen verschillen in een enkele parameterwaarde — kandidaten voor parameterisering
+   - Gededupliceerde typedefinities of interfaceverklaringen
+   - Meerdere functies die slechts verschillen door een enkele parameterwaarde — kandidaten voor parameterisering
 
-2. Voor elke gevonden duplicaatcluster:
-   - Identificeer de canonieke versie om te behouden (verkies de meest complete, best benoemde of meest recent aangepaste)
-   - Bepaal of de kopieën verschillen in gegevens (→ parameteriseer) of in gedrag (→ behoud apart, dit zijn geen duplicaten)
+2. Voor elk gededupliceerd cluster gevonden:
+   - Identificeer de canonieke versie die u wilt behouden (geef de voorkeur aan de meest volledige, best benoemde of onlangs gewijzigde)
+   - Bepaal of de kopieën verschillen naar gegevens (→ parameterisering) of naar gedrag (→ afzonderlijk behouden, dit zijn geen duplicaten)
    - Produceer een enkele gedeelde implementatie: extraheer een functie, constante of type naar behoefte
 
-3. Vervang alle duplicaatlocaties met aanroepen naar de gedeelde implementatie. Laat de oude kopieën niet achter.
+3. Vervang alle gededupliceerde locaties met aanroepen naar de gedeelde implementatie. Laat de oude kopieën niet op hun plaats.
 
-4. Na vervanging, verwijder alle imports of helpers die alleen bestonden ter ondersteuning van de verwijderde kopieën.
+4. Verwijder na vervanging alle imports of helpers die uitsluitend ter ondersteuning van de verwijderde kopieën bestonden.
 
-5. Output: voor elke deduplicatie, vermeld het gemaakte gedeelde symbool, hoeveel locaties werden vervangen, en waar elk zich bevond.
+5. Uitvoer: voor elke deduplicatie, list het gemaakte gedeelde symbool, hoeveel sites werden vervangen, en waar elk zich bevond.
 
 Beperkingen:
-- "Vergelijkbaar" is niet "duplicaat." Voeg alleen code samen die dezelfde bedoeling en semantiek heeft — dwing onverwante code niet in een gedeelde abstractie omdat het er hetzelfde uitziet.
-- Introduceer geen nieuwe abstractielaag (klasse, module, mixin) alleen om een enkel paar van twee functies te dedupliceren. Een gewone functie-extractie is voldoende.
-- Behoud al het bestaande gedrag. Als het samenvouwen van duplicaten subtiele veranderingen aan een callsite vereist, markeer deze expliciet.
-- Dedupliceer geen tests — test-redundantie is vaak opzettelijk.
+- "Vergelijkbaar" is niet "duplicaat." Voeg code alleen samen die dezelfde intentie en semantiek heeft — dwing onverwante code niet in een gedeelde abstractie omdat het er hetzelfde uitziet.
+- Introduceer geen nieuwe abstractielaag (klasse, module, mixin) alleen om een enkel paar van twee functies te dedupliceren. Een eenvoudige functieextractie is voldoende.
+- Behoud al het bestaande gedrag. Als het samenvouwen van duplicaten subtiele wijzigingen in een callsite vereist, markeer die dan expliciet.
+- Deduplicate testen niet — testredundantie is vaak opzettelijk.

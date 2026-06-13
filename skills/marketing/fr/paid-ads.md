@@ -195,6 +195,3 @@ Produire: liste des hypothèses classées + expériences à exécuter, chacune a
 - Ajoutez une campagne de marque avec correspondance exacte — budget $500/mois
 
 ---
-
-> **Travaillez avec nous:** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits d'IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

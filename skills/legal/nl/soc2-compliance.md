@@ -84,6 +84,3 @@ Resultaat: gapregister met prioriteitsclassificering en opschatveling inspanning
 [Continuing with remaining sections in Dutch, matching structure...]
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelingsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

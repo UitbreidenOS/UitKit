@@ -38,6 +38,3 @@ Ich will Contractor in California einstellen für laufende Work
 Agent flags: California AB5 Independent Contractor Classification Test, Risiko Misclassification als Employee, praktische Konsequenzen (Back Taxes, Benefits, Penalties), welche Faktoren Misclassification wahrscheinlicher machen, und recommended: consult Employment Attorney in California vor Engagement.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/).
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

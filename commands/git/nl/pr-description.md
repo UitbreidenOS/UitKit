@@ -1,33 +1,33 @@
 ---
-description: Maak een pull request-titel en -beschrijving op basis van branch-commits en diff
+description: Draft een pull request titel en beschrijving vanuit branch commits en diff
 argument-hint: "[base-branch]"
 ---
-Bepaal de basisbranch: gebruik $ARGUMENTS als deze is gegeven, anders standaard naar `main`.
+Bepaal de base branch: gebruik $ARGUMENTS als deze is opgegeven, anders default naar `main`.
 
 Voer deze commando's uit om context te verzamelen:
 1. `git log <base-branch>...HEAD --oneline` — lijst commits op deze branch
-2. `git diff <base-branch>...HEAD --stat` — samenvattingstatus op bestandsniveau
+2. `git diff <base-branch>...HEAD --stat` — samenvatting van veranderingen op bestandsniveau
 3. `git diff <base-branch>...HEAD` — volledige diff voor semantische analyse
 
-Produceer op basis van deze context een pull request-beschrijving in Markdown:
+Uit deze context een pull request beschrijving in Markdown produceren:
 
 ```
 ## Samenvatting
-<2-4 opsommingspunten met wat is gewijzigd en waarom — geen lijst van bestanden>
+<2-4 opsommingspunten die behandelen wat er veranderd is en waarom — geen bestandenlijst>
 
-## Wijzigingen
+## Veranderingen
 <Gegroepeerd per onderwerp, niet per bestand. Gebruik sub-opsommingspunten voor details.>
 
 ## Testen
 <Specifieke teststappen die een reviewer moet uitvoeren om correctheid te valideren.
-Als tests automatisch zijn, naam van de testbestanden of commando's.>
+Indien testen geautomatiseerd zijn, de testnamen of commando's noemen.>
 
 ## Opmerkingen voor reviewers
-<Markeer niet-voor-de-hand-liggende besluiten, compromissen, onzekerheidsbronnen of TODOs voor vervolgstappen.
-Laat deze sectie weg als er niets opmerkelijks is.>
+<Markeer niet-voor-de-hand-liggende beslissingen, afwegingen, gebieden van onzekerheid, of TODOs voor vervolgstappen.
+Deze sectie weglaten indien er niets opmerkelijk is.>
 ```
 
-Aan het begin, voor de body, output een enkele regel:
-`Title: <imperatief, ≤70 tekens, geen punt>`
+Aan het begin, voor de body, één regel uitvoeren:
+`Title: <imperatief, ≤70 karakters, geen punt>`
 
-Voeg geen standaardkoppen in die de repository niet nodig heeft. Vat niet elk gewijzigd bestand samen — syntheseer bedoeling.
+Geen standaard koppelingen opnemen die de repository niet nodig heeft. Niet elke verandering samenvatten — bedoeling syntheseren.

@@ -294,6 +294,3 @@ await processWebhookOnce(event.id, async () => {
 - 200 teruggeven voor onbekende gebeurtenistypen (niet falen bij nieuwe typen)
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — wij bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

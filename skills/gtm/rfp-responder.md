@@ -258,6 +258,3 @@ For each genuine gap: 2-3 sentences — what we don't have, what we do instead, 
 Have legal review the data/privacy section. CEO spot-check the 10 most sensitive questions. Submit with a cover note offering a virtual security meeting with your CTO.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -312,6 +312,3 @@ const rows = await db.execute<{ id: string; email: string; postCount: number }>(
 - Scripts `package.json` : `"db:push"`, `"db:generate"`, `"db:migrate"`, `"db:studio"`
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

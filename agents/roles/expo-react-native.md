@@ -392,6 +392,3 @@ Push notifications: `registerForPushNotifications()` called after authentication
 OTA updates: `expo-updates` installed, `checkForUpdate()` called on `AppState` change to `active`. `eas.json` maps `preview` and `production` build profiles to matching update channels. Rollback by publishing a previous bundle via `eas update --channel production --republish`.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

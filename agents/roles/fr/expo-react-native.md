@@ -391,6 +391,3 @@ Notifications push : `registerForPushNotifications()` appelée après authentifi
 Mises à jour OTA : `expo-updates` installée, `checkForUpdate()` appelée sur changement d'`AppState` vers `active`. `eas.json` mappe les profils de build `preview` et `production` aux canaux de mise à jour correspondants. Rollback en publiant un bundle précédent via `eas update --channel production --republish`.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

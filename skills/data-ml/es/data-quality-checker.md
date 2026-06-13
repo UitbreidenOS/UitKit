@@ -358,6 +358,3 @@ print(df.nunique().sort_values())          # Cardinality — low = likely catego
 **Resultado esperado:** Script de auditoría Python completado para esa tabla. Consultas SQL para: verificación de order_id duplicado (clave primaria), verificación de valores atípicos de precio (precios negativos, precios > 10.000 $), verificación de cantidad (cero o negativa), fechas futuras en created_at, valores distintos de la columna de estado (marcar valores inesperados), integridad referencial de user_id frente a una tabla de usuarios. Después de ejecutar: plantilla de informe de salud de datos. Tres pruebas dbt a agregar: unique/not_null en order_id, accepted_values en status, relationships en user_id. Comentario: si se encuentran valores atípicos de precio, eso explicaría los ingresos elevados — investiga si el pico es real o un problema de calidad de datos.
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

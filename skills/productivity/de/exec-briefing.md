@@ -355,6 +355,3 @@ Am Ende des Meetings vorschlagen:
 **Erwartete Ausgabe:** Vollständiges Briefing — Teilnehmerprofil, das den neuen VP recherchiert (LinkedIn, frühere Firmenhintergründe, worauf sie sich in ihrer letzten Rolle konzentriert hat), Gesprächspunkte, warum jetzt der richtige Zeitpunkt für eine Erweiterung ist (Nutzungsdaten, neue Anwendungsfälle in den letzten 6 Monaten, ROI-Nachweise), wichtigste zu stellende Frage ("Was würde diese Partnerschaft in Ihren ersten 90 Tagen zu einem klaren Erfolg machen?"), was NICHT zugesagt werden sollte (Preisänderungen ohne Finanzgenehmigung, kundenspezifische Entwicklung) und vorgeschlagene nächste Schritte (Produktdemo mit ihrem Team in 2 Wochen, Executive-Sponsor-Einführungsgespräch).
 
 ---
-
-> **Arbeite mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -1,57 +1,57 @@
 ---
-description: Stel een production-ready RAG-pijplijn in voor een gegeven gegevensbron en stack
-argument-hint: "[data source description and preferred stack]"
+description: Bouw een RAG-pipeline klaar voor productie op basis van een gegeven gegevensbron en stack
+argument-hint: "[beschrijving van de gegevensbron en voorkeur voor stack]"
 ---
-U ontwerpt een retrieval-augmented generation-pijplijn op basis van: $ARGUMENTS
+U ontwerpt een retrieval-augmented generation pipeline op basis van: $ARGUMENTS
 
-Indien geen stack-voorkeur is gegeven, gebruik de standaard: Python, LangChain, pgvector (PostgreSQL), `claude-sonnet-4-6` voor generatie, `text-embedding-3-small` via OpenAI voor embeddings (vervang door Voyage AI als gebruiker Anthropic-only aangeeft).
+Als geen stack-voorkeur wordt gegeven, gebruik dan standaard: Python, LangChain, pgvector (PostgreSQL), `claude-sonnet-4-6` voor generatie, `text-embedding-3-small` via OpenAI voor embeddings (wissel naar Voyage AI als gebruiker alleen Anthropic aangeeft).
 
 **Stap 1 — Begrijp de gegevens**
 
 Identificeer uit $ARGUMENTS:
-- Brontype: PDF's, webpagina's, databaserijen, codebestanden, Notion/Confluence, e-mails of gemengd
-- Updatefrequentie: statische corpus, alleen toevoegen of regelmatig gewijzigd
-- Grootteschatting: <1 k documenten, 1 k–100 k of 100 k+
+- Brontype: PDF's, webpagina's, databaserijen, codebestanden, Notion/Confluence, e-mails, of gemengd
+- Updatefrequentie: statische corpus, alleen toevoegingen, of regelmatig veranderd
+- Grootte-schatting: <1 k documenten, 1 k–100 k, of 100 k+
 - Gevoeligheid: PII aanwezig? Air-gapped vereist?
 
-Vermeld je aannames expliciet indien niet gegeven.
+Vermeld uw aannames expliciet indien niet gegeven.
 
-**Stap 2 — Kies chunking-strategie**
+**Stap 2 — Kies een chunking-strategie**
 
-Selecteer en rechtvaardigen één van:
-- Vaste grootte met overlap (snel, basisversion)
-- Semantisch / sentence-window (betere samenhang voor proza)
-- Recursieve karaktersplitsing op documentstructuur (code, markdown)
-- Parent-document retriever (kleine chunk ophalen, parentcontext retourneren)
+Selecteer en rechtvaardig één van de volgende:
+- Vaste grootte met overlap (snel, standaard)
+- Semantisch / sentence-window (betere coherentie voor proza)
+- Recursief splitsen op tekst op basis van docstructuur (code, markdown)
+- Parent-document retriever (klein chunk ophalen, context van parent retourneren)
 
-Toon de exacte chunker-configuratie: `chunk_size`, `chunk_overlap`, scheidingstekens.
+Toon de exacte chunker-configuratie: `chunk_size`, `chunk_overlap`, scheidingstekenlijst.
 
-**Stap 3 — Genereer de ingestie-pijplijn**
+**Stap 3 — Genereer de opnamepipeline**
 
 Schrijf een Python-script (`ingest.py`) dat:
-- Documenten van het hierboven geïdentificeerde brontype laadt
-- Tekst reinigt en normaliseert (verwijder boilerplate, normaliseer witruimte, verwerk codering)
-- Documenten chunked met de gekozen strategie
+- Documenten uit het hierboven geïdentificeerde brontype laadt
+- Tekst schoonmaakt en normaliseert (verwijder sjablooncode, normaliseer witruimte, verwerk codering)
+- Documenten met de gekozen strategie in chunks splitst
 - Chunks in batches insluit (max 512 per API-aanroep)
-- Upserts in de vectorstore met metadata: `source`, `chunk_index`, `ingested_at`
-- Is idempotent — herrun op ongewijzigde docs embeddt niet opnieuw in
+- In de vectorstore insluit met metadata: `source`, `chunk_index`, `ingested_at`
+- Idempotent is — opnieuw uitvoeren op ongewijzigde documenten leidt niet tot opnieuw insluiten
 
-**Stap 4 — Genereer de retrieval + generatie-keten**
+**Stap 4 — Genereer de retrieval + generatie-chain**
 
-Schrijf een Python-module (`rag_chain.py`) dat:
-- Een query-tekenreeks van gebruikers accepteert
-- De query insluit en top-K chunks (standaard K=5) ophaalt met MMR-herschikking
-- Een systeemaanwijzing samenstelt die het model instrueert alleen uit opgehaalde context te antwoorden en bronnen op te geven via `source` metagegevensveld
-- Aanroepen `claude-sonnet-4-6` met prompt caching op het contextblok (gebruik `cache_control: {"type": "ephemeral"}` op de contextberichten)
+Schrijf een Python-module (`rag_chain.py`) die:
+- Een querystring van de gebruiker accepteert
+- De query insluit en top-K chunks ophaalt (standaard K=5) met MMR-herrangschikking
+- Een systeemprompt construeert die het model instructie geeft om alleen uit opgehaalde context te antwoorden en bronnen te citeren met het metadata-veld `source`
+- `claude-sonnet-4-6` aanroept met prompt caching op het contextblok (gebruik `cache_control: {"type": "ephemeral"}` op de contextberichten)
 - Retourneert: `{"answer": str, "sources": list[str], "tokens_used": int}`
 
 **Stap 5 — Operationele checklist**
 
 Lijst als selectievakjes:
-- [ ] Indexversheid-strategie (geplande herbewerkingsingestie vs. webhook-trigger)
-- [ ] Versie-vastlegging van insluitingsmodel
-- [ ] Metrische gegevens voor ophaaldetectiekwaliteit (MRR, recall@K)
-- [ ] Terugval wanneer ophaalbewegingsvertrouwen laag is
-- [ ] PII-scrubbing indien van toepassing
+- [ ] Strategie voor indexverversing (geplande opnieuw insluiten vs. webhook-trigger)
+- [ ] Versieafzetting van insluitingsmodel
+- [ ] Metrische gegevens voor ophaalkwaliteit om bij te houden (MRR, recall@K)
+- [ ] Fallback wanneer ophaalprecisie laag is
+- [ ] PII-reiniging indien van toepassing
 
-Uitvoer: `ingest.py`, `rag_chain.py`, operationele checklist. Geen stubs.
+Output: `ingest.py`, `rag_chain.py`, operationele checklist. Geen stubs.

@@ -151,6 +151,3 @@ Jüngste Aktivität: Hat vor 3 Monaten eine interne Beschwerde über einen Kolle
 **Kündigen Sie nicht, bevor die Rechtsberatung diese Situation überprüft hat.**
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwicklergemeinschaften.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

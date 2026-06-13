@@ -112,6 +112,3 @@ Las operaciones de reconocimiento y resolución requieren que `PD_USER_EMAIL` es
 El MCP de PagerDuty usa API REST v2 de PagerDuty, que se incluye en todos los planes pagados. No hay tarifas por llamada. Los límites de velocidad se aplican a 960 solicitudes/minuto por token de API para la mayoría de puntos finales — bien por encima de uso interactivo, pero relevante para flujos de trabajo automatizados.
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

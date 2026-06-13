@@ -144,6 +144,3 @@ Contexte plus long = coût par demande plus élevé. Stratégies pour réduire l
 - Utiliser `CLAUDE.md` pour pré-charger le contexte stable à bas prix
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

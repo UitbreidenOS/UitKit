@@ -37,6 +37,3 @@ Alle Projekte — alle Sprachen, alle Paketmanager (`npm`, `pip`, `cargo`, `go m
 
 
 ---
-
-> **Arbeiten Sie mit uns zusammen:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwickler-Communitys.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

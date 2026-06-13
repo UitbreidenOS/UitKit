@@ -349,6 +349,3 @@ await server.connect(transport)
 - Fragmento de `settings.json` para registrar como servidor MCP `linear` con variable de entorno `LINEAR_API_KEY`
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -158,6 +158,3 @@ Target audience: developers using Claude Code
 **Résultat attendu :** README complet avec description principale, badges npm/licence/langage, section d'installation (`npx claudient add all`), tableau de référence CLI pour toutes les sous-commandes, liste des catégories, section de contribution, pied de page licence MIT.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

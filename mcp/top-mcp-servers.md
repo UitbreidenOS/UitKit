@@ -1121,6 +1121,3 @@ Add to Indie SaaS: `playwright`, `sentry`, `linear`, `slack`, `sequential-thinki
 - For production databases: create a dedicated read-only MCP user
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -310,6 +310,3 @@ done
 El runbook completo, checklist pre-game, plantilla de retrospectiva y formato de backlog de remediación se incluyen para los tres escenarios.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

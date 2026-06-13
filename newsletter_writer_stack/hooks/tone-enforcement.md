@@ -167,5 +167,3 @@ BANNED_WORDS=(
 - **Exception handling:** If you have a legitimate reason for a flagged word, add a comment: `<!-- exception: "robust" used deliberately -->` to suppress the flag
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [Newsletter Writer Stack](./README.md)

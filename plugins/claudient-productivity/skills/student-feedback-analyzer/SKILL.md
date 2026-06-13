@@ -299,6 +299,3 @@ Generate a structured course improvement report:
 **Expected output:** Summary — the content was highly relevant but the pacing was the clear weakness. Strongest elements: the case study and small group discussion. Top criticisms: content density relative to time (40% of respondents), insufficient practice (25%). Actionable recommendations: cut 20% of content to leave breathing room (the relevance rating shows the right content is there — the problem is volume), add a second practice scenario to replace some lecture time, break the morning into two shorter blocks with a break. One insight: the pacing issue and the desire for more practice are the same problem — when the schedule is too tight, practice gets cut. Solving one solves both.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

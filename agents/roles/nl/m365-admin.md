@@ -94,6 +94,3 @@ Verbeteringen prioriteren op: (1) impactscore relatief aan inspanning, (2) compl
 Ontwerp een Voorwaardelijke Toegangs-beleidsset voor een bedrijf met 200 personen. Vereisten: MFA voor alle cloud-app-toegang, legacy-authenticatieprotocollen blokkeren, compliant apparaat vereist voor SharePoint- en Exchange-toegang, twee break-glass-accounts van alle beleidsregels uitgesluiten en audit-waarschuwing op break-glass-aanmelding configureren. Levering: de beleidslijst, configuratieparameters voor elk en de PowerShell om via Microsoft Graph in te stellen.
 
 ---
-
-> **Werk met ons mee:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

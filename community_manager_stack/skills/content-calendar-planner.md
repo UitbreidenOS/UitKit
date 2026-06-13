@@ -129,5 +129,3 @@ For each initiative:
 | Year-end planning workshop | Workshop | Sep 24 | [Name] | 75+ attendees | Sep 1 |
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · Community Builder Edition

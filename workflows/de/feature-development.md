@@ -151,5 +151,3 @@ Do not include a list of files changed — the diff covers that.
 - [ ] CONTEXT.md aktualisiert, wenn neue Domain-Begriffe eingeführt wurden
 
 ---
-
-> **Mit uns arbeiten:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen KI-Produkte und B2B-Lösungen mit Entwickler-Communities. [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -397,6 +397,3 @@ Design a product catalog index with full-text search, faceted filtering by categ
 This query: matches the search text with boosted name field, filters to in-stock audio products in the price/rating range, doubles the score for featured-tagged products, and returns category/price/rating aggregations for the facet panel alongside the results.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

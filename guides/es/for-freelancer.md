@@ -325,6 +325,3 @@ Usa un Kanban simple para tu pipeline: Prospecto → Propuesta enviada → Negoc
 - [Flujo de trabajo semanal del freelancer](../workflows/freelancer-weekly.md)
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

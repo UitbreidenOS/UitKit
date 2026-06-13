@@ -176,5 +176,3 @@ Indirekt. Die Skills, die sich zusammensetzen — Newsletter Publisher (Kadenz),
 - [SEO Strategy for Small Business Content](claude-small-business-seo-strategy.md)
 
 ---
-
-> **Claudient** wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — Bau von KI-Produkten und B2B-Lösungen mit Entwickler-Communities.

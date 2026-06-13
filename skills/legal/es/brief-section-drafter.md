@@ -201,6 +201,3 @@ Estas disputas no son meramente semánticas — van al corazón de si la razón 
 *Revisión de abogado requerida antes de presentar. Todos los marcadores [MARCADOR DE POSICIÓN DE CITA] deben reemplazarse con citas verificadas. Todos los marcadores [Expediente en ___] requieren números de página/línea verificados del expediente.*
 
 ---
-
-> **Trabaje con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

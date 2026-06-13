@@ -91,6 +91,3 @@ ArrayBuffer direct naar socket. High-frequency streams native WebSocket gebruike
 Real-time collaborative document editor met Socket.io server, JWT auth, Redis adapter voor horizontale schaling, presence tracking en reconnection met event replay.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

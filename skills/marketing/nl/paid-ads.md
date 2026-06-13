@@ -195,6 +195,3 @@ Bij $99/mnd heb je CPA nodig < $200 voor een levensvatbare terugbetaalperiode (a
 - Voeg merkcampagne met exacte overeenkomst toe — budget $500/mnd
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

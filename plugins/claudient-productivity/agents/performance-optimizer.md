@@ -170,6 +170,3 @@ API endpoint `POST /api/reports/generate` takes 2s p99, target is 200ms:
 6. Bonus finding: EXPLAIN ANALYZE reveals missing index on `orders.userId` — add index, p99 drops to 80ms
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -54,5 +54,3 @@ Estimated revision time: [15 min / 1 hour / etc]
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudients/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

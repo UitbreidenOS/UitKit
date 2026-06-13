@@ -175,5 +175,3 @@ De Claude for Small Business workflows zijn point-and-click. De Claudient-vaardi
 - [SEO Strategy for Small Business Content](claude-small-business-seo-strategy.md)
 
 ---
-
-> **Claudient** wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — het bouwen van AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.

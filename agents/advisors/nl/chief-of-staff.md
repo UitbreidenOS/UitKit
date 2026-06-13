@@ -157,6 +157,3 @@ Voorkomt herbattling van vastgestelde vragen. Onwaardeerbaar tijdens board revie
 In 6 maanden, de CEO moet 2 minder uren vergaderingen per dag hebben en zijn minder van een bottleneck op cross-functionele beslissingen — niet omdat ze minder betrokken zijn, maar omdat het systeem zonder hen werkt.
 
 ---
-
-> **Werk met ons:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

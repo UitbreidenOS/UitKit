@@ -167,6 +167,3 @@ Burn Rate Alert: wenn Verfügbarkeit unter 99,5% für 1 Stunde fällt → On-Cal
 Schauen Sie auf tatsächliche Performance vs. SLO. Wenn Sie nie Error Budget genutzt haben, könnte das Ziel zu locker sein. Wenn Sie ständig über sind, muss das Ziel angepasst oder investiert werden.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwicklergemeinschaften.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

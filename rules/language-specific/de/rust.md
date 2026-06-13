@@ -37,6 +37,3 @@ Alle Rust-Dateien (`*.rs`) in jedem Projekt.
 
 
 ---
-
-> **Arbeite mit uns zusammen:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir erstellen KI-Produkte und B2B-Lösungen mit Developer Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -207,6 +207,3 @@ const isEnabled = await client.isFeatureEnabled('new-checkout', userId)
 **Recomendación predeterminada:** Implementación progresiva + indicadores de características. Progresiva para infraestructura; indicadores para cambios de producto.
 
 ---
-
-> **Trabajar con nosotros:** Claudient respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

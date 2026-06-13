@@ -271,6 +271,3 @@ Keep it under 200 words. Professional, not defensive.
 **Résultat attendu :** Un rapport CMA complet avec le tableau de comparables montrant les ajustements (+8 000 $ pour la salle de bains supplémentaire du Comparable 2, -10 000 $ pour la taille inférieure du Comparable 3), une fourchette de valeur ajustée de 608 000 $–628 000 $, un prix affiché recommandé de 618 000 $, un narratif de présentation vendeur en 3 paragraphes expliquant le marché équilibré et comment la cuisine rénovée justifie le haut de la fourchette, et un déclencheur de réduction de prix au Jour 14 / 599 000 $ en l'absence d'offres.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

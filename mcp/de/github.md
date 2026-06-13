@@ -101,6 +101,3 @@ Lodash-Version 4.17.20 oder früher abhängen, und liste die betroffenen Reposit
 **PR-Body-Qualität:** Wenn du `create_pull_request` verwendest, gebe Claude den Diff und den Issue-Kontext und bitte es, den PR-Body zu schreiben. Das Ergebnis wird nützlicher sein als ein Template-gefüllter Platzhalter.
 
 ---
-
-> **Zusammenarbeit mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen AI-Produkte und B2B-Lösungen mit Developer-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

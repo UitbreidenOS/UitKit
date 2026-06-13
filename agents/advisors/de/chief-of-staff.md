@@ -120,6 +120,3 @@ Gesunder Split bei Skalierung (50+ Employees):
 - Deliverable: Operating Rhythm das Unternehmen läuft für 12 Monate
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/).
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

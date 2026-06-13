@@ -97,6 +97,3 @@ Aucune authentification requise. La Pensée séquentielle est un processus local
 **Pas un substitut à la connaissance du domaine :** La Pensée séquentielle améliore la structure et l'exhaustivité du raisonnement. Elle n'ajoute pas d'informations que Claude ne possède pas. Si le problème nécessite des données externes actuelles, associez-le à la recherche web ou à des outils de récupération.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

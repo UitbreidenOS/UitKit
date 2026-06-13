@@ -124,5 +124,5 @@ kafka-consumer-groups.sh --bootstrap-server broker:9092 \
 
 ---
 
-🔗 **[Uitbreiden — building AI products and B2B tools with developer communities.](https://uitbreiden.com/)**
+
 📺 **[Subscribe to our YouTube Channel for more deep dives](https://www.youtube.com/channel/UCcvK8pHyqeR7Q_0lYkuHlUg)**

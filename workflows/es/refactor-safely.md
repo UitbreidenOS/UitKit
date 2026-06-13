@@ -146,5 +146,3 @@ Nunca mezcles un commit de refactoring con un commit de funcionalidad o correcci
 - **Saltarse la línea base** — asumir que las pruebas son adecuadas sin verificar primero
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores. [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -170,6 +170,3 @@ El endpoint API `POST /api/reports/generate` tarda 2s p99, el objetivo es 200ms:
 6. Bonificación: EXPLAIN ANALYZE revela índice faltante en `orders.userId` — agregar índice, p99 baja a 80ms
 
 ---
-
-> **Trabaja con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -268,6 +268,3 @@ Not formal. Not a form letter. Should sound like a professional colleague who re
 **Résultat attendu :** Un rapport de statut professionnel avec le titre « Semaine 3 — Vert », trois éléments accomplis listés spécifiquement (cahier de mots-clés, atelier voix de marque, brouillon du calendrier éditorial T3), un blocage explicite (feuille de route produit), une décision requise (approbation du calendrier avant mercredi), et un aperçu de la semaine suivante (rédaction des briefs pour les 4 premiers contenus, sous réserve d'approbation reçue). Enveloppe e-mail : « La semaine 3 est terminée — Vert sur toute la ligne... » en moins de 4 phrases, avec le rapport en pièce jointe ou intégré.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

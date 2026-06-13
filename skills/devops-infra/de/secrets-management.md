@@ -362,6 +362,3 @@ aws cloudtrail lookup-events \
 7. Fügen Sie `git-secrets` oder `gitleaks` Pre-Commit-Hook zu allen Repos hinzu
 
 ---
-
-> **Mit uns arbeiten:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen KI-Produkte und B2B-Lösungen mit Entwicklergemeinschaften.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

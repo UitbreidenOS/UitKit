@@ -209,6 +209,3 @@ Coûts approximatifs à la tarification de mai 2026. Vérifiez la page de tarifi
 Appliquer toutes les stratégies à faible complexité ensemble permet généralement d'atteindre une réduction totale des coûts de 30 à 50 % sans changer la qualité des résultats.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

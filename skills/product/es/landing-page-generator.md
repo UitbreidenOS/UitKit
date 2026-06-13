@@ -49,6 +49,3 @@ Objetivo: LCP < 1s, CLS < 0.1, responsivo mobile-first.
 [Las secciones posteriores siguen el mismo patrón que la versión francesa con detalles técnicos en español]
 
 ---
-
-> **Trabaje con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — creamos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

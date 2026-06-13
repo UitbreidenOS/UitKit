@@ -168,7 +168,3 @@ Jeder Unter-Agent sollte ein explizites Umfangslimit haben.
 ---
 
 ## Arbeiten Sie mit uns
-
-Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte mit Entwickler-Communities und liefern B2B-KI-Lösungen. Wenn Sie Multi-Agenten-Systeme, autonome Workflows oder Claude Code-Orchestrierung in Produktionsqualität entwerfen — wir haben das in der Produktion gebaut und können Ihnen helfen.
-
-**[uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)**

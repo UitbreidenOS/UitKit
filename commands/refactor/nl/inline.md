@@ -1,35 +1,35 @@
 ---
-description: Inline een functie, variabele of constante die indirection zonder waarde toevoegt
+description: Voeg een functie, variabele of constante inline die indirectie zonder waarde toevoegt
 argument-hint: "[symbol-name] [file]"
 ---
-Inline het symbool opgegeven in $ARGUMENTS — formaat: `<symbol-name> <file>`.
+Voeg het in $ARGUMENTS opgegeven symbool inline — format: `<symbol-name> <file>`.
 
-1. Lees het bestand. Zoek de declaratie van het genoemde symbool en elke aanroepsite of gebruik.
+1. Lees het bestand. Zoek de declaratie van het benoemde symbool en elke aanroepingsplek of gebruik.
 
-2. Bepaal of inlining geschikt is. Inlining is geschikt wanneer:
-   - Het symbool op slechts één of twee plaatsen wordt aanroepen
-   - De body van het symbool is eenvoudiger of duidelijker dan de naam suggereert (de naam voegt geen informatie toe)
-   - Het symbool is een single-expression wrapper zonder hergebruikswaarde
-   - Een variabele of constante wordt eenmaal toegewezen en eenmaal gebruikt, en de tussenliggende naam helpt niet met leesbaarheid
+2. Bepaal of inlinen passend is. Inlinen is passend wanneer:
+   - Het symbool op slechts één of twee plaatsen wordt aangeroepen
+   - De body van het symbool eenvoudiger of duidelijker is dan de naam suggereert (de naam voegt geen informatie toe)
+   - Het symbool een wrapper van één expressie is zonder hergebruikswaarde
+   - Een variabele of constante eenmaal wordt toegewezen en eenmaal wordt gebruikt, en de tussenliggende naam helpt niet met leesbaarheid
 
-   Inline NIET wanneer:
-   - Het symbool wordt op 3+ plaatsen gebruikt (inlining zou duplicatie opnieuw introduceren)
-   - De naam is werkelijk informatief en het verwijderen ervan zou de bedoeling obscuur maken
-   - Het symbool heeft neveneffecten die bij declaratie worden uitgevoerd (inlining kan uitvoervolgorde veranderen)
-   - Het symbool wordt geëxporteerd of maakt deel uit van een openbare API
+   Voeg NIET inline wanneer:
+   - Het symbool op 3+ plaatsen wordt gebruikt (inlinen zou duplicatie herintroduceren)
+   - De naam is werkelijk informatief en het verwijderen zou opzet obscuur maken
+   - Het symbool neveneffecten heeft die tijdens declaratie worden uitgevoerd (inlinen kan uitvoervolgorde veranderen)
+   - Het symbool is geëxporteerd of onderdeel van een openbare API
 
-3. Voor elke aanroepsite:
-   - Vervang de body van het symbool direct, met alle parameterbindingen correct gesubstitueerd
-   - Als de body variabelen uit het oorspronkelijke bereik referenceert die niet beschikbaar zijn op de aanroepsite, stop en rapporteer — de inline is niet veilig
-   - Zorg ervoor dat operator prioriteit correct is na substitutie (voeg haakjes toe indien nodig)
+3. Voor elke aanroepingsplek:
+   - Vervang de body van het symbool rechtstreeks, met eventuele parameterbindingen correct vervangen
+   - Als de body verwijst naar variabelen uit het originele bereik die niet beschikbaar zijn op de aanroepingsplek, stop en rapporteer — de inline is niet veilig
+   - Zorg ervoor dat de operatorrangorde na vervanging correct is (voeg haakjes toe indien nodig)
 
-4. Na inlining van alle sites, verwijder de originele declaratie.
+4. Nadat alle plaatsen zijn inlined, verwijder je de originele declaratie.
 
-5. Verwijder alle imports die alleen bestonden ter ondersteuning van het nu verwijderde symbool.
+5. Verwijder alle imports die alleen ter ondersteuning van het nu-verwijderde symbool bestonden.
 
 6. Verifieer dat het resultaat syntactisch en semantisch correct is:
-   - Geen bungelverwisselingen
-   - Geen veranderde evaluatievolgorde voor expressies met neveneffecten
-   - Typen controleren nog steeds als de taal getypeerd is
+   - Geen hanggende verwijzingen
+   - Geen gewijzigde evaluatievolgorde voor expressies met neveneffecten
+   - Typen kloppen nog steeds als de taal getypeerd is
 
-7. Output: symboolnaam, aantal sites inline, locatie van originele declaratie, en bevestiging dat deze is verwijderd.
+7. Output: symboolnaam, aantal plaatsen inlined, originele declaratielocatie, en bevestiging dat het werd verwijderd.

@@ -102,6 +102,3 @@ comment le réduire avant que nous commencions.
 **Les tâches bloquées nécessitent un déblocage explicite :** Si une tâche est marquée `blocked`, Task Master ne la fera pas surface via `next_task` jusqu'à ce que son statut soit mis à jour. Quand un blocker est résolu, remettez la tâche bloquée à `pending` et ajoutez une note expliquant ce qui a changé.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

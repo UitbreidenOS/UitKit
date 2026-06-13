@@ -208,6 +208,3 @@ Ontwerp een golden path template voor een nieuwe Python microservice:
 5. Een team creëert een nieuw service door op 'Creëren' in Backstage te klikken, naam en owner in te vullen — draait in productie binnen 30 minuten zonder infrastructuurcode aan te raken.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

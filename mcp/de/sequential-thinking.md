@@ -96,6 +96,3 @@ Keine Authentifizierung erforderlich. Sequentielles Denken ist ein lokaler Proze
 **Kein Ersatz für Domänenwissen:** Sequentielles Denken verbessert die Struktur und Vollständigkeit des Reasonings. Es addiert keine Informationen, die Claude nicht hat. Wenn das Problem aktuelle externe Daten benötigt, kombinieren Sie es mit Web-Suche oder Abruf-Tools.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

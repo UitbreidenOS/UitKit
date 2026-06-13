@@ -336,6 +336,3 @@ Name: [your name], [your company]
 **Verwachte uitvoer:** Volledige SOW met Sectie 2 met daarin: discovery-workshop (1 sessie, 90 min), gebruikersstroomtoewijzing (3 flows), wireframes (8 schermen), high-fidelity Figma-mockups (8 schermen, desktop + mobiel). Sectie 3-uitsluitingen: copywriting en UX-tekst, documentatie voor ontwikkelaarsoverdracht, bruikbaarheidstesting, implementatie. Sectie 4 klantverantwoordelijkheden: toegang tot 3 huidige gebruikers voor een discovery-call van 30 minuten, bestaande merkrichtlijnen binnen 2 werkdagen. Herzieningsbeleid: 2 rondes op wireframes, 2 rondes op high-fidelity. Betaling: $3.250 bij ondertekening, $3.250 bij definitieve Figma-oplevering. Tarief wijzigingsopdracht: $150/uur.
 
 ---
-
-> **Samenwerken:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — wij bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

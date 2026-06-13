@@ -292,6 +292,3 @@ mit 95% statistischer Konfidenz und 80% Teststärke.
 Wenn „See Pricing" bei Klicks gewinnt, aber Trial-Anmeldungen nicht steigen, sind Nutzer neugieriger, aber nicht stärker committet. Das ist ein Problem mit der Preisklarheit, kein CTA-Problem — nächster Test ist die Preisseite selbst.
 
 ---
-
-> **Mit uns arbeiten:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

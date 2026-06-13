@@ -118,6 +118,3 @@ Pasos del Orquestador:
 6. Banderas de riesgo: el middleware de sesión se importa en 14 archivos de ruta — radio de impacto alto, requiere suite de pruebas de integración antes de la eliminación
 
 ---
-
-> **Trabaje con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

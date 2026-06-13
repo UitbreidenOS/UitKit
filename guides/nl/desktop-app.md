@@ -144,6 +144,3 @@ Stel Licht, Donker of Systeemthema in via `/config`. Voor power-users is aangepa
 - De per-beurt navigatie van de diff-viewer is de snelste manier om te controleren wat een lange agenttaak echt gedaan heeft — gebruik het vóór samenvoegen.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

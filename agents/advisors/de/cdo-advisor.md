@@ -89,6 +89,3 @@ Die meisten 2021-2023 TOS enthalten NICHT explizit "AI Model Training" — das w
 **Sicherer Pfad:** Pseudonymisieren Sie (Kundenbezeichner entfernen, aggregieren nach Feature-Typ nicht Kunde), verwenden Sie für Fine-Tuning eines Task-spezifischen Modells.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/).
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

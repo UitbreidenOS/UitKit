@@ -293,6 +293,3 @@ Respuesta 400 (errores a nivel de archivo antes del procesamiento):
 Resuelve las preguntas abiertas primero, luego generaré las pruebas fallidas.
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

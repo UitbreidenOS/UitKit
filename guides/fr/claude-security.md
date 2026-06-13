@@ -709,7 +709,3 @@ Une liste de contrôle de renforcement pour Claude Code dans les environnements 
 ---
 
 ## Travaillez avec nous
-
-Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA avec les communautés de développeurs et livrons des solutions IA B2B. Si vous avez besoin d'aide pour sécuriser les déploiements de Claude Code à l'échelle, construire des workflows IA conformes ou auditer votre chaîne d'outils IA — nous pouvons vous aider.
-
-**[uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)**

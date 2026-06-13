@@ -138,6 +138,3 @@ Cadence de review : [mensuelle / trimestrielle]
 6. Accepter la réalité zero-click : optimiser pour la notoriété de marque et les clics en bas de l'entonnoir, pas le trafic au milieu de l'entonnoir
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

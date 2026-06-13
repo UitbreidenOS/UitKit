@@ -159,6 +159,3 @@ What was done well: correct HTTP semantics, proper validation library used
 What could be better: duplicate email handling, rate limiting, error message sanitisation, test coverage for failure cases
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

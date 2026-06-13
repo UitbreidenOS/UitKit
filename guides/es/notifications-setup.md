@@ -368,6 +368,3 @@ curl -X POST -H 'Content-type: application/json' \
 Ejecuta una sesión corta de Claude de 2 minutos con tus hooks activos y confirma que al menos una notificación se dispara antes de dejar una sesión de múltiples horas desatendida.
 
 ---
-
-> **Trabaja con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

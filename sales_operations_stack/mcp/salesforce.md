@@ -1,15 +1,14 @@
 # Salesforce MCP Configuration
 
-## What This Does
+## Purpose
 
-Integrates Salesforce CRM as MCP server for Claude Code. Enables direct pipeline queries, opportunity reads/writes, and quota tracking from within Claude sessions.
+Connects Salesforce CRM for real-time pipeline data extraction, deal queries, and opportunity management from within Claude Code.
 
-## When to Use
+## When to use
 
-- Running `/pipeline-review` — query pipeline directly from Salesforce
-- Running `/deal-deep-dive [opportunity-id]` — fetch deal details from SFDC
-- Logging approvals/actions to `session-log.md` — write back to Salesforce activities
-- Running quota-tracker and territory-optimizer — aggregate deals by rep/territory from CRM
+- Running `/analyze-pipeline` — query current opportunities and stage history
+- Running quota and territory analyses — aggregate by rep, territory, and account
+- Logging actions to session — write activities and notes to Salesforce records
 
 ## Setup Steps
 
@@ -108,5 +107,3 @@ If your CRM is HubSpot instead:
 - See `hubspot.md` in this directory
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient)

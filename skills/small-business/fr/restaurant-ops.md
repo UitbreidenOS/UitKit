@@ -123,6 +123,3 @@ Les 3 négatifs obtiennent chacun une réponse spécifique et directe :
 Les 9 positifs obtiennent chacun une réponse différente, chacune reflétant quelque chose de spécifique que le critique a mentionné — le tiramisu, un serveur particulier, un souper d'anniversaire. Aucune ne répète la même ligne d'ouverture.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

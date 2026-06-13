@@ -113,5 +113,3 @@ Last one — I've noticed great teams either nail docs automation early or it be
 **Note:** All examples are fictional. Before sending, personalize with specific details from your account brief (actual funding date, known decision-maker, verified pain point). Review subject lines for tone fit with your brand voice. Ensure your value prop directly addresses the trigger, not a generic pitch. Remove this sequence from rotation if the prospect responds — shift to an inbound sequence instead.
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

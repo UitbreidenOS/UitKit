@@ -326,6 +326,3 @@ Con Claude, una actualización de curso que antes tomaba una semana toma un día
 - [Habilidad revisión de literatura](../skills/productivity/lit-review.md)
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

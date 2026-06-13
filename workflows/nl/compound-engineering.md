@@ -104,6 +104,3 @@ Omdat CLAUDE.md verwijst naar `@LESSONS.md`, leest Claude het volledige lessen-l
 - **Schrijf onmiddellijk.** Lessen geschreven op het moment van correctie zijn nauwkeuriger dan retrospectieve samenvattingen.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

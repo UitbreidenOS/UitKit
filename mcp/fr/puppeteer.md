@@ -28,7 +28,7 @@ Définissez `PUPPETEER_HEADLESS` à `false` pour regarder le navigateur pendant 
 
 ```
 # Capturer une page
-"Take a screenshot of https://uitbreiden.com and describe what you see"
+
 
 # Grattage de données structurées
 "Go to [URL] and extract all product names and prices into a JSON list"

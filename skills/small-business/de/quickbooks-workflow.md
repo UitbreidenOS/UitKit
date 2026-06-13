@@ -117,6 +117,3 @@ Worauf sollte ich zuerst schauen?
 Analyse Ihrer Marge (8%), Vergleich mit typischen Benchmarks für Ihren Geschäftstyp, Kennzeichnung der Kategorie "Sonstiges" als überprüfungswürdig für Missklassifizierungen, Anmerkung, dass die Marketingausgaben im Verhältnis zum Umsatz hoch sind und fragt, welche Rendite Sie sehen, schlägt einen Jahresvergleich vor.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

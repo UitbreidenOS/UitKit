@@ -230,6 +230,3 @@ En PostHog: Insights → Funnels → agrega estos 5 pasos en orden. Configura ve
 **Primer experimento:** Agrega una lista de verificación de "inicio rápido" en el estado de dashboard vacío con 3 tareas. Cada evento de finalización de tarea = rastreado. El estado vacío es la palanca #1 en el paso 2→3.
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -46,6 +46,3 @@ Wir haben 18 Monate Runway, $4.2M ARR, 15% MoM Growth.
 Der Agent strukturiert die Analyse um: Dilution-Kosten jetzt vs. Risiko schlechterer Terms später, Burn-Rate Projektion wenn Growth sinkt, Optionalitäts-Wert von Kapital in unsicheren Märkten, was das "Warten"-Szenario tatsächlich in 12 Monaten aussieht, und gibt direkte Empfehlung.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/).
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -191,6 +191,3 @@ Phase 5 — Rapport (Jours 13-14):
 **Points d'étranglement de plus haute valeur à tester:** authentification d'application web externe, segmentation de réseau interne entre DMZ et systèmes de paiement, capacité de détection pour credential dumping.
 
 ---
-
-> **Travail avec nous:** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

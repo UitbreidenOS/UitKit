@@ -76,5 +76,3 @@ Not for individual coaching or performance feedback (use performance-reviewer). 
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [claudecode.ai](https://claudecode.ai/)

@@ -136,5 +136,3 @@ fi
 - Monthly review: are alert thresholds well-calibrated or too sensitive?
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · Community Builder Edition

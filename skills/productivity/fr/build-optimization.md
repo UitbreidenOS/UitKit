@@ -112,6 +112,3 @@ Cible : > 90% de taux de hit du cache. Un miss sur node_modules ne doit pas inva
 4. Ajouter Turborepo avec `outputs: ["dist/**"]` — le deuxième run CI atteint le cache, le temps de compilation tombe à 45 secondes
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

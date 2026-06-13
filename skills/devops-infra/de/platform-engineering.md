@@ -208,6 +208,3 @@ Gestalten Sie ein Golden-Path Template für einen neuen Python Microservice:
 5. Ein Team erstellt einen neuen Service, indem es in Backstage auf „Erstellen" klickt, Name und Owner ausfüllt — in 30 Minuten läuft er in Produktion, ohne Infrastruktur-Code zu berühren.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir erstellen KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

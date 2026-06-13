@@ -169,6 +169,3 @@ Decisión enrutamiento:
 **Enrutamiento:** Due Diligence Mejorada requiere antes onboarding. Oficial conformidad senior y aprobación MLRO necesaria. [VERIFY] todos hallazgos.
 
 ---
-
-> **Trabaje con nosotros:** Claudient cuenta con respaldo de [Uitbreiden](https://uitbreiden.com/) — construimos productos IA y soluciones B2B con comunidades desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

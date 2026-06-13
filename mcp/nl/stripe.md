@@ -108,6 +108,3 @@ Gebruik altijd testmodus-sleutels (`sk_test_`) in development en lokale configur
 **Metagegevensvelden zijn querybaar:** Als je applicatie gestructureerde metagegevens naar klanten of abonnementen schrijft (bijv. `plan_tier`, `internal_user_id`), zijn die velden filterbaar in `list_customers` en `list_subscriptions` — handig voor gerichte queries.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

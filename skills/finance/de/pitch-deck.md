@@ -232,6 +232,3 @@ $80K ARR bei 15% monatlichem Wachstum bringt uns in 14 Monaten auf $600K ARR. Di
 „Wir beschaffen $2M, um 2 Ingenieure und unseren ersten AE einzustellen. Die Konstruktion ermöglicht es uns, den vollständigen Contract-Review-Workflow abzudecken — nicht nur NDAs. Der AE nimmt das, was wir mit Design-Partnern bewiesen haben, und verwandelt es in eine wiederholbare Motion. Wir erreichen $600K ARR in 18 Monaten, was die Series A-Schwelle für diese Kategorie ist."
 
 ---
-
-> **Mit uns arbeiten:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

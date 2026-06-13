@@ -109,6 +109,3 @@ GRR 80% bedeutet, Sie verlieren 20% ARR jährlich. Bei $5M ARR sind das $1M evap
 3. 4. CSM einstellen — die Ökonomie ist klar
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/).
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

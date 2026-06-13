@@ -54,6 +54,3 @@ Volledige documentatie voor mijn codebase genereren.
 ```
 
 ---
-
-> **Met ons samenwerken:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/).
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

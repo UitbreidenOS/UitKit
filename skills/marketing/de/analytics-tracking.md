@@ -230,6 +230,3 @@ In PostHog: Insights → Funnels → füge diese 5 Schritte der Reihe nach hinzu
 **Erstes Experiment:** Füge eine "Schnellstart"-Checkliste im leeren Dashboard-Zustand mit 3 Aufgaben hinzu. Jede Aufgaben-Abschluss-Ereignis = verfolgt. Leerer Zustand ist der #1 Hebel bei Schritt 2→3.
 
 ---
-
-> **Zusammenarbeit mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir bauen KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

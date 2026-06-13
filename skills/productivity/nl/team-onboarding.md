@@ -143,6 +143,3 @@ npm run dev                        # http://localhost:3000
 Het volledige document loopt ongeveer 3 pagina's en behandelt alles van eerste kloon tot eerste samengesmolten PR.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

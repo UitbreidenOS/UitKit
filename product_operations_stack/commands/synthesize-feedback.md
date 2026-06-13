@@ -73,5 +73,3 @@ Claude runs `/synthesize-feedback` with your data. Returns:
 - Analysis of competitors (tools customers compare you to, gaps you have)
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [Product Operations Stack](https://github.com/Claudient/Claudient)

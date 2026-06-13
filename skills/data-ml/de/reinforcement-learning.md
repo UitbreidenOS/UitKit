@@ -220,6 +220,3 @@ python train.py --total-timesteps 2000000 --n-envs 8 --tensorboard-log ./tb_logs
 Production Inference Endpoint lädt `policy.onnx` beim Startup und gibt diskrete Order Actions in unter 5ms p99 zurück.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

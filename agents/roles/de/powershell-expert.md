@@ -219,6 +219,3 @@ else { $credentialStore = "$HOME/.local/share/myapp" }  # Linux
 Schreiben Sie ein PowerShell-Modul für Azure-Ressourcen-Verwaltung: Funktionen zum Auflisten von Ressourcen nach Tag, Erstellen von getaggten Ressourcen, Massen-Aktualisierung von Tags über eine Ressourcengruppe und Entfernen veralteter Ressourcen. Includes Modul-Manifest, Pester-Tests für jede öffentliche Funktion mit simulierten Az-Cmdlets, Cross-Platform-Pfad-Handling und einer SecretManagement-Integration zum Speichern der Service Principal-Anmeldedaten.
 
 ---
-
-> **Arbeiten Sie mit uns :** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen KI-Produkte und B2B-Lösungen mit Entwickler-Communitys.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

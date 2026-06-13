@@ -132,6 +132,3 @@ Production RAG system for a 10,000-document technical knowledge base:
 - Cost estimate: 1,000 queries/day × avg 4k tokens = 4M tokens/day. With caching on 2k static tokens: ~2M effective tokens/day ≈ $3/day on Sonnet
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

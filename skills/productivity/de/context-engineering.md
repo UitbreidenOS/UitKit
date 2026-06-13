@@ -96,6 +96,3 @@ The bug was introduced in commit abc123. Focus on the token validation path.
 The second version gives Claude the right files, the failure mode, the suspected location, and a time anchor — with no wasted tokens on unrelated code.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

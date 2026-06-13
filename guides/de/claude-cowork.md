@@ -135,6 +135,3 @@ Für Teams, die Cowork-Automatisierung neben Claude Code-Automatisierung ausfüh
 - Arbeit in einem Git-Repository
 
 ---
-
-> **Arbeiten Sie mit uns zusammen:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen KI-Produkte und B2B-Lösungen mit Entwicklergemeinschaften.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

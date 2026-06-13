@@ -59,6 +59,3 @@ Ende mit: Ihre Empfehlung, Ein-Satz Begründung, und Was zu record in ADR.
 - Risk flagged: SQS FIFO Queues haben 3k Msg/Sec Limit.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/).
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

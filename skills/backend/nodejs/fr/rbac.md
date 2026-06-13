@@ -327,6 +327,3 @@ export async function updateMemberRole(orgId: string, memberId: string, newRole:
 - Toutes les requêtes de données incluent le filtre `organizationId` pour prévenir les fuites de données entre orgs
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -134,6 +134,3 @@ AGPL v3 Sectie 13 breidt GPL-copyleft uit naar netwerkgebruik: "als u het progra
 **Onmiddellijke actie:** Stop met distribueren van het huidige product totdat u een oplossing hebt. [VERIFY] interpretatie met een IP-advocaat.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

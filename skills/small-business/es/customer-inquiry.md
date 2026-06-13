@@ -133,6 +133,3 @@ No. Diseñaré su programa en torno a lo que tiene — ya sea un gimnasio, equip
 Reserva una llamada gratuita de 20 minutos y hablaremos sobre tus objetivos, nivel de forma física actual y el mejor enfoque para ti. Sin obligación. → [Reserva aquí]
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

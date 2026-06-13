@@ -92,6 +92,3 @@ For read-only analytics and reporting, omit `write_products` from the scope list
 - For large product catalogs, filter `list_products` by `status=active` and `vendor` to keep result sets manageable before chaining operations.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

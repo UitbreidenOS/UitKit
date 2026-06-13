@@ -125,5 +125,3 @@ Monitor for:
 - **Toxic tone shift:** Language becomes hostile, respectful debate turns into personal attacks, psychological safety drops >20 points.
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · Community Builder Edition

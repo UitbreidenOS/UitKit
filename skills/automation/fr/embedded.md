@@ -255,6 +255,3 @@ Concevoir un firmware FreeRTOS pour STM32F4 lisant la température/pression de B
 5. **Tâche de surveillance** (priorité 5) : attend les bits de groupe d'événements définis par les tâches de capteur et UART à chaque cycle. Si les deux bits ne sont pas définis dans les 2s, l'IWDG réinitialise l'appareil. La marque d'eau haute de pile est vérifiée dans les builds de débogage et enregistrée sur UART au démarrage.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

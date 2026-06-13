@@ -213,6 +213,3 @@ DROP INDEX idx_orders_user_id;
 **Zero-downtime-garantie:** Elke stap is een achterwaarts compatibele implementatie. Terugdraaien bij elke stap vóór Fase 5 = implementatie schakelen. Na Fase 5 = alleen-voorwaarts.
 
 ---
-
-> **Met ons samenwerken:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

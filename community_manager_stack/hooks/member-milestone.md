@@ -146,5 +146,3 @@ MEMBER_ID=123 MEMBER_NAME="Jane Smith" MILESTONE_TYPE="anniversary" ANNIVERSARY_
 - Celebrations build community identity and retention
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · Community Builder Edition

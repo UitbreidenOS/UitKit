@@ -389,6 +389,3 @@ Dagelijkse voorraadcheck → als voorraad < 14 dagen → maak nabestelttaak in j
 - [E-commerce wekelijkse workflow](../workflows/ecommerce-weekly.md)
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

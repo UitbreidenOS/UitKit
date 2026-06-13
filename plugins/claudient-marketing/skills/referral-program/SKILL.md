@@ -227,6 +227,3 @@ If 5% of your user base refers 1 person and 40% of those convert → cost per ac
 4. Measure participation rate weekly; iterate the incentive if < 5% participate
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

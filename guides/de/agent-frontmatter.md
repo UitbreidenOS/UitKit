@@ -291,6 +291,3 @@ do not affect the working tree.
 **`description` ist das wichtigste Feld nach `name`.** Der Router verwendet es, um zu entscheiden, wann hier delegiert werden soll. Eine vage oder generische Beschreibung verursacht Routing-Fehler — entweder wird der Agent ausgelöst, wenn er es nicht sollte, oder er wird nie ausgewählt. Schreiben Sie die Beschreibung als explizite Triggerbedingung, nicht als Fähigkeitszusammenfassung.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen KI-Produkte und B2B-Lösungen mit Entwicklergemeinschaften.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

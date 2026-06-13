@@ -92,5 +92,3 @@ Include at the end a summary table showing all items ranked, with score, recomme
 **Recommendation:** LOW — Defer to backlog, reconsider if adoption demand grows
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [Product Operations Stack](https://github.com/Claudient/Claudient)

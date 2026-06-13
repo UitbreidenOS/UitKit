@@ -255,6 +255,3 @@ Stel een 3-environment Terragrunt structuur (dev/staging/prod) in voor AWS VPC +
 5. GitHub Actions pipeline promoveert dev → staging → prod met handmatige approvaalgatters bij elk stadium.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

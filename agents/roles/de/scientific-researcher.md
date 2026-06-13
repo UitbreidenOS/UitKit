@@ -95,6 +95,3 @@ Strukturiert Review von der Evidence für ein Therapeutisch Intervention:
 6. Forschungs Gaps: Keine Studies in Populations > 65, Keine Head-zu-Head Comparison mit Second-Line Therapies, Keine Long-Term (> 12 Month) Outcome Data
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -709,7 +709,3 @@ Een hardening checklist voor Claude Code in team of CI environments. Pas toe op 
 ---
 
 ## Work With Us
-
-Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — wij bouwen AI-producten met developer communities en leveren B2B AI-oplossingen. Als u hulp nodig heeft bij het beveiligen van Claude Code deployments op schaal, het bouwen van compliant AI workflows, of het auditen van uw AI toolchain — wij kunnen helpen.
-
-**[uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)**

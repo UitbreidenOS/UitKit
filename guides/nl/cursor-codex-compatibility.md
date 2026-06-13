@@ -310,6 +310,3 @@ Voor projectbezorgde regels ondersteunt Continue `@Rules`-blokken in `.continue/
 De viersectie-structuur was ontworpen om zelfstandig te zijn. Een goed geschreven Claudient-skill zou minder dan 10 minuten moeten vergen om naar elk van deze programma's overgedragen te worden.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

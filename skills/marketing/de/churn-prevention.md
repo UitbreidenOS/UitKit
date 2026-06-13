@@ -153,6 +153,3 @@ Grundursache: Aktivierungsversagen, kein Produktversagen. "Nutze es nicht genug"
 **Projizierte Auswirkung:** Diese 3 Änderungen könnten das Segment "nutze es nicht genug" von 42% um die Hälfte reduzieren = ~1,6% Reduzierung der Gesamt-Monats-Churn-Rate.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

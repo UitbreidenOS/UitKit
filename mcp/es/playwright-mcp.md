@@ -118,6 +118,3 @@ No se requiere clave de API. El navegador se ejecuta localmente en tu máquina. 
 **Flujos de múltiples pasos:** Encadena herramientas naturalmente en una sola solicitud. Claude secuenciará `navigate → wait → type → click → screenshot` en el orden correcto sin que tengas que especificar cada paso por separado.
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

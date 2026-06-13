@@ -176,6 +176,3 @@ if (Number(dailyTotal) > DAILY_BUDGET) {
 | Traducción por lotes | $0.0005/doc | Muy alto (API de lotes + Haiku) |
 
 ---
-
-> **Trabajar con nosotros:** Claudient respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

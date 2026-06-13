@@ -146,5 +146,3 @@ Ne jamais mélanger un commit de refactoring avec un commit de fonctionnalité o
 - **Sauter la baseline** — supposer que les tests sont adéquats sans vérifier d'abord
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs. [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

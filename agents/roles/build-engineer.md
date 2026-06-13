@@ -127,6 +127,3 @@ Reduce a Vite monorepo's CI build from 8 minutes to under 2 minutes:
 6. Result: cache hits restore vendor chunks in 15s; only changed packages rebuild; total CI time drops from 8 min to 90s
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

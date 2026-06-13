@@ -115,6 +115,3 @@ Para errores más simples con un culpable obvio, omita agentes paralelos y use e
 - `/skills/productivity/self-eval` — califique la calidad de su proceso de depuración
 
 ---
-
-> **Trabaje con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

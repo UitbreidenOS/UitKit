@@ -1,56 +1,56 @@
 ---
-description: Redactar un Registro de Decisiones de Arquitectura para una decisión técnica específica
-argument-hint: "[decision topic]"
+description: Redacta un Registro de Decisión Arquitectónica para una decisión técnica específica
+argument-hint: "[tema de decisión]"
 ---
-Redactar un Registro de Decisiones de Arquitectura (ADR) para: $ARGUMENTS
+Redacta un Registro de Decisión Arquitectónica (ADR) para: $ARGUMENTS
 
 Antes de escribir:
-1. Busca un directorio `docs/decisions/`, `docs/adr/` o `adr/` para determinar
-   la convención de numeración y el esquema de nomenclatura de archivos en uso. Coincide exactamente.
-2. Si ya existe una plantilla de ADR en el repositorio, úsala. Si no, usa el formato siguiente.
-3. Lee los archivos de código fuente relevantes para fundamentar las secciones "Contexto" y "Consecuencias" en
-   código real, no en hipótesis.
+1. Verifica si existe un directorio `docs/decisions/`, `docs/adr/`, o `adr/` para determinar
+   la convención de numeración y el esquema de nombres de archivo en uso. Coincide exactamente.
+2. Si ya existe una plantilla ADR en el repositorio, úsala. Si no, usa el formato a continuación.
+3. Lee los archivos fuente relevantes para fundamentar las secciones "Contexto" y "Consecuencias" en
+   código real, no en hipotéticos.
 
-Formato del ADR:
+Formato ADR:
 
-# ADR-NNN: [Título — frase nominal que describe la decisión, no el problema]
+# ADR-NNN: [Título — frase nominal describiendo la decisión, no el problema]
 
 ## Estado
-Propuesto | Aceptado | Descontinuado | Reemplazado por ADR-NNN
+Propuesto | Aceptado | Deprecado | Reemplazado por ADR-NNN
 
 ## Fecha
 YYYY-MM-DD
 
 ## Contexto
 ¿Qué situación, restricción o requisito obligó esta decisión?
-Incluir: escala, tamaño del equipo, restricciones del sistema existente, requisitos externos.
-Mantén los hechos — sin defensa aquí.
+Incluye: escala, tamaño del equipo, restricciones del sistema existente, requisitos externos.
+Mantén solo hechos — sin defensa aquí.
 
 ## Decisión
-Declara la decisión en una frase que comience con "Vamos a…".
+Declara la decisión en una oración comenzando con "Decidimos…".
 Luego explica el mecanismo: qué se construirá, cambiará o adoptará, y cómo.
 
 ## Alternativas Consideradas
 Para cada alternativa considerada:
 - **Nombre de la opción**: qué es, por qué fue considerada, por qué fue rechazada.
-Al menos dos alternativas. No enumeres opciones que nunca fueron consideradas seriamente.
+Al menos dos alternativas. No listes opciones que nunca fueron seriamente consideradas.
 
 ## Consecuencias
 **Positivas:**
-- Beneficios concretos y verificables (rendimiento, simplicidad, coste, velocidad del equipo).
+- Beneficios concretos y verificables (desempeño, simplicidad, costo, velocidad del equipo).
 
 **Negativas:**
-- Compensaciones reales aceptadas. No las minimices.
+- Compromisos reales aceptados. No los minimices.
 
 **Riesgos:**
-- Qué podría salir mal. Qué activaría reconsiderar esta decisión.
+- Qué podría salir mal. Qué dispararía reconsiderar esta decisión.
 
 ## Referencias
-Enlaces a PRs, problemas, pruebas de rendimiento o documentación externa relevante que informaron la decisión.
+Enlaces a PRs relevantes, issues, benchmarks, o documentos externos que informaron la decisión.
 
 Reglas de escritura:
-- Sé preciso y neutral. Un ADR es un registro histórico, no una presentación de ventas.
-- Escribe en tiempo pasado para decisiones aceptadas, futuro para las propuestas.
+- Sé preciso y neutral. Un ADR es un registro histórico, no un argumento de venta.
+- Escribe en pasado para decisiones aceptadas, futuro para propuestas.
 - Evita adjetivos vagos: "simple", "flexible", "escalable" no significan nada sin evidencia.
 - Si $ARGUMENTS es vago, haz una pregunta aclaratoria antes de proceder: ¿qué decisión específica
   necesita ser registrada, y qué fue elegido?

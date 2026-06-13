@@ -137,6 +137,3 @@ Voeg `.worktrees/` toe aan `.gitignore` — deze directories zijn lokale bestand
 - Worktrees delen dezelfde `.git`-directory als main repo. Operaties zoals `git fetch` en `git log` in elke worktree zien alle branches.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — wij bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

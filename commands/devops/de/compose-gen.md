@@ -1,37 +1,37 @@
 ---
-description: Generieren Sie eine produktionsreife docker-compose.yml für das aktuelle Projekt
-argument-hint: "[service-name or stack description]"
+description: Erstelle eine produktionsreife docker-compose.yml für das aktuelle Projekt
+argument-hint: "[Service-Name oder Stack-Beschreibung]"
 ---
-Generieren Sie eine produktionsreife `docker-compose.yml` für: $ARGUMENTS
+Erstelle eine produktionsreife `docker-compose.yml` für: $ARGUMENTS
 
-Überprüfen Sie das aktuelle Arbeitsverzeichnis — lesen Sie vorhandene Dockerfiles, package.json, pyproject.toml, go.mod oder ähnliche Manifeste ein, um den Stack abzuleiten.
+Inspiziere das aktuelle Arbeitsverzeichnis — lese alle vorhandenen Dockerfiles, package.json, pyproject.toml, go.mod oder ähnliche Manifeste, um den Stack abzuleiten.
 
 Anforderungen:
-- Verwenden Sie benannte Volumen, keine Bind Mounts, für persistente Daten
-- Setzen Sie `restart: unless-stopped` auf allen langwierigen Services
-- Injizieren Sie Secrets über Umgebungsvariablen, die auf eine `.env`-Datei verweisen — kodieren Sie Anmeldedaten niemals direkt
-- Fügen Sie einen `healthcheck`-Block für jeden Service ein, der einen Port freilegt
-- Definieren Sie ein dediziertes Bridge-Netzwerk; verwenden Sie nicht das Standard-Netzwerk
-- Versehen Sie Image-Tags mit Pin-Versionen — verwenden Sie niemals `:latest`
-- Fügen Sie einen `depends_on` mit `condition: service_healthy` für Services mit Startup-Abhängigkeiten hinzu
-- Trennen Sie `dev`- und `prod`-Profile, wo anwendbar, mithilfe des `profiles`-Schlüssels
-- Für Datenbanken: Setzen Sie explizit `POSTGRES_DB` / `MYSQL_DATABASE` / usw. und geben Sie Ports nur auf localhost frei (`127.0.0.1:<port>:<port>`)
+- Verwende benannte Volumes, keine Bind Mounts, für persistente Daten
+- Setze `restart: unless-stopped` auf allen langlaufenden Services
+- Injiziere Secrets über Umgebungsvariablen, die auf eine `.env`-Datei verweisen — hardcodiere nie Anmeldedaten
+- Füge einen `healthcheck`-Block für jeden Service ein, der einen Port offenlegt
+- Definiere ein dediziertes Bridge-Netzwerk; verwende nicht das Standard-Netzwerk
+- Fixiere Image-Tags — verwende nie `:latest`
+- Füge ein `depends_on` mit `condition: service_healthy` für Services mit Startup-Abhängigkeiten hinzu
+- Trenne `dev`- und `prod`-Profile, wo zutreffend, mit dem `profiles`-Schlüssel
+- Für Datenbanken: Setze explizite `POSTGRES_DB` / `MYSQL_DATABASE` / etc. und exponiere Ports nur auf localhost (`127.0.0.1:<port>:<port>`)
 
 Ausgabe:
 1. Die vollständige `docker-compose.yml`
-2. Eine `docker-compose.override.yml` mit Source-Mount- und Debug-Port-Overrides für die lokale Entwicklung
-3. Eine `.env.example` mit jeder erforderlichen Variable ohne echte Werte
+2. Eine `docker-compose.override.yml` mit Source-Mount- und Debug-Port-Overrides für lokale Entwicklung
+3. Eine `.env.example`, die jede erforderliche Variable ohne echte Werte auflistet
 
-Nach den Dateien auflisten:
+Nach den Dateien listen auf:
 - Jede Umgebungsvariable, die der Operator bereitstellen muss
-- Alle Volumen, die vorab gefüllt oder mit Init-Scripts initialisiert werden müssen
-- Befehle zum Hochfahren des Stacks und zur Überprüfung der Gesundheit:
+- Alle Volumes, die vorgefüllt oder mit Init-Scripts initialisiert werden müssen
+- Befehle, um den Stack hochzufahren und die Gesundheit zu überprüfen:
   ```
   docker compose up -d
   docker compose ps
   docker compose logs --tail=50 <service>
   ```
 
-Wenn der Stack einen Reverse Proxy (nginx/traefik/caddy) hat, fügen Sie ihn mit strukturell korrekter, aber auskommentierter TLS-Terminierungskonfiguration ein.
+Wenn der Stack einen Reverse Proxy (nginx/traefik/caddy) hat, füge ihn mit strukturell korrektem, aber auskommentiertem TLS-Terminierungskonfiguration ein.
 
-Generieren Sie keinen Dockerfile, wenn nicht explizit gefordert — nur Compose.
+Generiere keine Dockerfile, es sei denn, dies wird explizit angefordert — nur Compose.

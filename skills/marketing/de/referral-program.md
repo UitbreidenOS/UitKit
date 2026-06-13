@@ -227,6 +227,3 @@ Wenn 5% Ihrer Benutzerbasis 1 Person empfehlen und 40% davon konvertieren → Ko
 4. Teilnahmequote wöchentlich messen; iterieren Sie den Anreiz, wenn < 5% teilnehmen
 
 ---
-
-> **Zusammenarbeit mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir bauen KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -153,6 +153,3 @@ Causa raíz: Falla de activación, no falla de producto. "No lo uso lo suficient
 **Impacto proyectado:** Estos 3 cambios podrían reducir el segmento "no lo uso lo suficiente" de 42% a la mitad = ~1,6% de reducción en la tasa de churn mensual total.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

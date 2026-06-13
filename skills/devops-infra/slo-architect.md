@@ -166,6 +166,3 @@ Burn rate alert: if availability drops below 99.5% for 1 hour straight → page 
 Look at actual performance vs. SLO. If you never used error budget, the target may be too loose. If you're constantly over, the target needs adjustment or investment.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

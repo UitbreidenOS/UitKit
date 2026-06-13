@@ -48,6 +48,3 @@ Ejecute Claude Code en segundo plano en una tarea larga (suite de pruebas, migra
 "Utilizo Cursor para escribir componentes React y explorar la codebase. Cambio a la terminal Claude Code cuando necesito: ejecutar la suite de pruebas completa, refactorizar en 30 archivos, configurar GitHub Actions o realizar una migración de base de datos. `CLAUDE.md` contiene nuestras convenciones compartidas — ambas herramientas las toman automáticamente sin configuración adicional."
 
 ---
-
-> **Trabaje con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

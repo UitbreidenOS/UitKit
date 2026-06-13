@@ -1,44 +1,44 @@
 ---
-description: Examinier les snapshots obsolètes ou gonflés et décider de les mettre à jour ou de les réécrire
-argument-hint: "[snapshot file, test file, or directory]"
+description: Examiner les snapshots obsolètes ou volumineux et décider entre mise à jour ou réécriture
+argument-hint: "[fichier snapshot, fichier de test ou répertoire]"
 ---
 Examiner les snapshots dans : $ARGUMENTS
 
 Étapes :
 
-1. Localisez les fichiers de snapshot. Emplacements courants :
-   - Jest: `__snapshots__/*.snap` adjacent aux fichiers de test
-   - Vitest: même modèle que Jest
-   - Storybook: `*.stories.snap`
-   - Si l'argument pointe vers un fichier de test, trouvez son fichier `.snap` associé.
+1. Localiser les fichiers snapshot. Emplacements courants :
+   - Jest : `__snapshots__/*.snap` adjacents aux fichiers de test
+   - Vitest : même modèle que Jest
+   - Storybook : `*.stories.snap`
+   - Si l'argument pointe vers un fichier de test, trouver son fichier `.snap` associé.
 
-2. Pour chaque snapshot en scope, évaluez :
+2. Pour chaque snapshot dans le périmètre, évaluer :
 
    **Taille**
-   - Comptez les lignes sérialisées. Marquez tout snapshot dépassant 50 lignes comme candidat au remplacement.
-   - Les snapshots volumineux obscurent souvent l'assertion réelle — l'intention est enfouie.
+   - Compter les lignes sérialisées. Signaler tout snapshot dépassant 50 lignes comme candidat pour remplacement.
+   - Les grands snapshots obscurcissent souvent l'assertion réelle — l'intention est cachée.
 
    **Stabilité**
-   - Identifiez le contenu qui changera à chaque exécution : timestamps, IDs générés, adresses mémoire, valeurs aléatoires, hashes de build.
-   - Celles-ci rendent les snapshots peu fiables et doivent être masquées ou remplacées.
+   - Identifier le contenu qui changera à chaque exécution : horodatages, ID générés, adresses mémoire, valeurs aléatoires, hachages de build.
+   - Ceux-ci rendent les snapshots peu fiables et doivent être masqués ou remplacés.
 
    **Spécificité**
-   - Déterminez ce que le test essaie réellement de vérifier. Si un snapshot capture un composant rendu entier mais que le test s'appelle « affiche le bouton soumettre », le snapshot est sur-spécifié.
+   - Déterminer ce que le test essaie vraiment de vérifier. Si un snapshot capture un composant rendu entier mais le test s'appelle « renders the submit button », le snapshot est sur-spécifié.
 
    **Duplication**
-   - Marquez les snapshots dans plusieurs tests qui capturent le même sous-arbre avec variation mineure — ils peuvent être fusionnables.
+   - Signaler les snapshots à travers plusieurs tests qui capturent le même sous-arbre avec variation mineure — ils peuvent être fusionnables.
 
-3. Pour chaque snapshot marqué, recommandez l'une des options suivantes :
-   - **Mettre à jour** — le snapshot est correct en structure mais obsolète ; exécutez `--updateSnapshot`
-   - **Remplacer** — échangez le snapshot pour des assertions de propriété ciblées (montrez le remplacement)
-   - **Masquer** — conservez le snapshot mais ajoutez des transformations de sérialiseur ou `expect.any()` pour neutraliser les valeurs volatiles
-   - **Supprimer** — le snapshot est dupliqué par un autre test ou ne fournit aucun signal ; supprimez-le
+3. Pour chaque snapshot signalé, recommander l'une des actions suivantes :
+   - **Mise à jour** — le snapshot est correct en structure mais obsolète ; exécuter `--updateSnapshot`
+   - **Remplacement** — remplacer le snapshot par des assertions de propriétés ciblées (afficher le remplacement)
+   - **Masquage** — conserver le snapshot mais ajouter des transformations de sérialiseur ou `expect.any()` pour neutraliser les valeurs volatiles
+   - **Suppression** — le snapshot duplique un autre test ou ne fournit pas de signal ; le supprimer
 
-4. Appliquez les remplacements et suppressions non ambigus. Ne mettez pas à jour automatiquement les snapshots obsolètes — marquez-les pour que l'utilisateur les confirme avec `--updateSnapshot`.
+4. Appliquer les remplacements et suppressions qui sont sans ambiguïté. Ne pas mettre à jour automatiquement les snapshots obsolètes — les signaler à l'utilisateur pour confirmation avec `--updateSnapshot`.
 
-5. Pour chaque remplacement, montrez :
-   - Le snapshot original (tronqué si > 10 lignes)
-   - La ou les nouvelles assertion(s) qui le remplacent
+5. Pour chaque remplacement, afficher :
+   - Le snapshot original (tronqué si >10 lignes)
+   - La ou les nouvelles assertions qui le remplacent
    - Pourquoi c'est plus maintenable
 
-6. Terminez par un résumé : X snapshots examinés, Y mis à jour, Z remplacés par des assertions, W supprimés, V marqués pour examen manuel.
+6. Terminer par un résumé : X snapshots examinés, Y mis à jour, Z remplacés par des assertions, W supprimés, V signalés pour examen manuel.

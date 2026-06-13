@@ -310,6 +310,3 @@ Für projektbezogene Regeln unterstützt Continue `@Rules`-Blöcke in `.continue
 Die Struktur mit vier Abschnitten wurde für Autonomie entworfen. Ein gut geschriebener Claudient-Skill sollte weniger als 10 Minuten benötigen, um auf eines dieser Werkzeuge portiert zu werden.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir erstellen KI-Produkte und B2B-Lösungen mit Entwicklergemeinden.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

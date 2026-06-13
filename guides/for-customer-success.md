@@ -325,6 +325,3 @@ Every QBR needs a ROI slide. `/qbr-builder` forces you to quantify what the cust
 - [Churn prevention skill](../skills/marketing/churn-prevention.md)
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

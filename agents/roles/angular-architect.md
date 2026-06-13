@@ -463,6 +463,3 @@ Routing: all feature routes use `loadChildren` pointing to `*.routes.ts` files. 
 Change detection: every component annotated with `ChangeDetectionStrategy.OnPush`. Template control flow uses `@for` with `track` and `@if`. All array/object mutations create new references. Signals used for local component state.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

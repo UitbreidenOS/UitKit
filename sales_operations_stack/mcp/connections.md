@@ -1,8 +1,8 @@
-# MCP Connections & Setup
+# MCP Connections & Integration Guide
 
 ## Overview
 
-The Sales Operations Stack supports two primary CRM integrations: **Salesforce** and **HubSpot**. Choose the one matching your current CRM.
+Sales Operations Stack integrates with multiple MCPs for real-time pipeline data, analytics, and reporting.
 
 ---
 
@@ -125,5 +125,3 @@ Claude will route queries to both and you can specify which CRM to prioritize pe
 3. **Integrate into weekly workflow:** Run `/pipeline-review` every Friday before exec updates
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient)

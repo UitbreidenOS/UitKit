@@ -100,5 +100,3 @@ Quarterly, surface:
 - Compliance or legal issues that warrant policy hardening
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · Community Builder Edition

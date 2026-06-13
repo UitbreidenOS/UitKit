@@ -481,6 +481,3 @@ async fn main() -> Result<()> {
 Gestion des erreurs : type d'erreur personnalisée `thiserror` couvre `io::Error` et erreurs d'analyse CSV. `?` se propage proprement à travers les fonctions `async`. Les paniques de travailleur sont attrapées à la limite `spawn` via dépaquetage `JoinHandle`.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

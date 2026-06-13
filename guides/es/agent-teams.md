@@ -362,6 +362,3 @@ Agent Teams usa significativamente más tokens que una sesión única. Cada comp
 Para investigación, revisión y nuevas características, los tokens extra usualmente valen la pena. Para tareas rutinarias, una sesión única es más rentable.
 
 ---
-
-> **Trabajo con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

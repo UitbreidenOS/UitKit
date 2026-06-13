@@ -256,6 +256,3 @@ El mercado de PM en Londres es competitivo, particularmente para ICs senior con 
 Si tienen una oferta de Amazon/Google con RSUs, no puedes igualar en efectivo. Compite en: alcance (serán responsables de un área de producto completa, no de una función), velocidad (lanzarán en semanas, no trimestres) y potencial (las acciones pueden valer múltiplos de un RSU público).
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

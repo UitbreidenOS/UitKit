@@ -134,6 +134,3 @@ Claude writes the MLS description and the expanded marketing copy. It includes "
 The MLS description: 148 words. The expanded version: 340 words with a headline, three feature-benefit callouts, and a neighborhood paragraph.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

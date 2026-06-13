@@ -46,4 +46,3 @@ Use only Strong or Medium signals as email triggers.
 Get at exa.ai → Sign up → API Keys. Free tier: 1,000 searches/month.
 
 ---
-Built with [Claudient](https://github.com/Claudients/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

@@ -50,6 +50,3 @@ Sollte ich jetzt fundraisen oder zuerst Runway extenden?
 Der Agent berechnet exakte Runway (4.9 Monate), modelliert Growth-Trajektorie, berechnet MRR für Profitabilität, bewertet Fundraising Timeline vs. verfügbare Runway, und gibt direkte Empfehlung — wahrscheinlich: starten Sie Fundraise jetzt während Sie gleichzeitig $10-15K/Monat Burn-Reduktion finden.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/).
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

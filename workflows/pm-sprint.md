@@ -415,6 +415,3 @@ Produce: revised story or splitting recommendation that resolves the gap.
 | PM time in reviews/ceremonies | <25% of work week | Higher: PM is admin, not PM |
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

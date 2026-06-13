@@ -371,6 +371,3 @@ Haal deze wekelijks op uit Google Analytics, GSC en je e-mailplatform:
 - [Email sequence skill](../skills/marketing/email-sequence.md)
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -126,6 +126,3 @@ Si su automatización depende de una salida determinista:
 El modo CLI desnudo es la opción correcta cuando necesita el binario de Claude Code pero le preocupa la latencia. El SDK es aún más rápido cuando no necesita la CLI en absoluto.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

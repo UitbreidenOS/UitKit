@@ -1,49 +1,49 @@
 ---
-description: Beoordeel autorisatielogica op privilege escalation, verbroken toegangscontrole en IDOR-fouten
-argument-hint: "[file or module]"
+description: Autorisatielogica controleren op escalatie van rechten, verbroken toegangscontrole en IDOR-flaws
+argument-hint: "[bestand of module]"
 ---
-Controleer de autorisatie- en toegangscontroleimplementatie in `$ARGUMENTS` (standaard: gehele codebase) op verbroken toegangscontrole, privilege escalation-paden en IDOR-kwetsbaarheden.
+Controleer de autorisatie- en toegangscontrolimplementatie in `$ARGUMENTS` (standaard: volledige codebase) op verbroken toegangscontrole, paden voor escalatie van rechten en IDOR-kwetsbaarheden.
 
-**1. Wijs het machtigingsmodel in kaart**
+**1. Maak kaart van het machtigingsmodel**
 
 Identificeer en documenteer:
 - Verificatiemechanisme (sessie, JWT, API-sleutel, OAuth)
 - Rol-/machtigingsdefinities — waar ze worden opgeslagen en hoe ze worden geladen
-- Middleware of decorators die authz afdwingen (bijv. `@require_permission`, `isAdmin` guards)
-- Resources die zijn beveiligd versus die niet zijn beveiligd
+- Middleware of decorators die autorisatie afdwingen (bijv. `@require_permission`, `isAdmin` guards)
+- Resources die worden beveiligd versus die dat niet zijn
 
 **2. Controleer op verbroken toegangscontrole (OWASP A01)**
 
-- Zijn autorisatiecontroles consistent toegepast, of alleen in bepaalde codepaden naar dezelfde bron?
-- Kan een gebruiker met lagere bevoegdheden eindpunten met hogere bevoegdheden bereiken door het verzoek te manipuleren (methodeverandering, parameterwijziging, padtraversering)?
-- Zijn er admin-only routes die alleen vertrouwen op een booleaanse vlag in gebruiker-gecontroleerde invoer (bijv. `?admin=true`)?
-- Verbergt de frontend UI-elementen voor ongeautoriseerde gebruikers maar faalt de server-side dezelfde regels af te dwingen?
+- Worden autorisatiecontroles consistent toegepast, of alleen in enkele codepadpaden die naar dezelfde resource leiden?
+- Kan een gebruiker met lagere rechten hogere endpoint-rechten bereiken door het verzoek te manipuleren (methodevervanging, parametertampering, pad traversal)?
+- Zijn er admin-only routes die uitsluitend vertrouwen op een Booleaanse vlag in gebruikersgecontroleerde invoer (bijv. `?admin=true`)?
+- Verbergt het frontend UI-elementen voor niet-geautoriseerde gebruikers, maar faalt het om dezelfde regels server-side af te dwingen?
 
 **3. Controleer op IDOR (Insecure Direct Object Reference)**
 
-- Zoek elk eindpunt dat een door de gebruiker geleverde ID accepteert (padparameter, queryparameter, bodyveldt) en haalt een record op.
-- Controleer of elke opzoeken een eigendoms- of lidmaatschapscontrole bevat — niet alleen dat de record bestaat.
-- Markeer patronen zoals: `GET /invoices/:id` waarbij de query `SELECT * FROM invoices WHERE id = ?` is zonder `AND user_id = current_user`.
+- Zoek elk eindpunt dat een door de gebruiker opgegeven ID accepteert (pad param, query param, body-veld) en haalt een record op.
+- Verifieer dat elke zoekopdracht een eigendoms- of lidmaatschapscontrole bevat — niet alleen dat de record bestaat.
+- Markeert patronen als: `GET /invoices/:id` waarbij de query `SELECT * FROM invoices WHERE id = ?` is zonder `AND user_id = current_user`.
 
-**4. Controleer op privilege escalation**
+**4. Controleer op escalatie van rechten**
 
-- Kan een normale gebruiker zijn eigen rol/machtigingen wijzigen via een API-eindpunt?
-- Zijn er mass-assignment-kwetsbaarheden waarbij een `PATCH /users/:id` een `role`-veld accepteert?
-- Is er een stroom voor het maken of uitnodigen van gebruikers waarbij de oproeper willekeurige rollen op het nieuwe account kan instellen?
+- Kan een normale gebruiker hun eigen rol/machtigingen wijzigen via een API-eindpunt?
+- Zijn er kwetsbaarheden met massatoewijzing waarbij een `PATCH /users/:id` een `role`-veld accepteert?
+- Is er een gebruikersmaakt- of uitnodigingsstroom waarin de aanroeper willekeurige rollen op het nieuwe account kan instellen?
 
-**5. JWT / sessie-specifieke controles** (indien van toepassing)
+**5. JWT / sessiespécifieke controles** (indien van toepassing)
 
-- Wordt het algoritme server-side gevalideerd? (`alg: none` attack, algoritmeconfusie RS256→HS256)
-- Worden JWT's op elke beveiligde route geverifieerd op vervaldatum, uitgever en publiek?
-- Worden sessietokens ongeldig gemaakt bij afmelden en wachtwoordwijziging?
+- Wordt het algoritme server-side gevalideerd? (`alg: none` aanval, algoritmeconfusie RS256→HS256)
+- Worden JWT's op vervaltijd, uitgever en publiek op elke beveiligde route geverifieerd?
+- Worden sessietokens ongeldig gemaakt bij afmelding en wachtwoordwijziging?
 
-**6. Output**
+**6. Uitvoer**
 
 Voor elke bevinding:
 ```
-[SEVERITY] [file:line] — description
-Attack scenario: one sentence explaining how an attacker exploits this
-Fix: specific code change or pattern to apply
+[ERNST] [bestand:regel] — beschrijving
+Aanvalsscenario: één zin die uitlegt hoe een aanvaller dit exploiteert
+Oplossing: specifieke codewijziging of patroon om toe te passen
 ```
 
-Severity: Critical (direct data breach or account takeover), High (privilege escalation), Medium (info disclosure), Low (defense in depth gap).
+Ernst: Kritiek (directe dataschending of accountovernaming), Hoog (escalatie van rechten), Gemiddeld (informatievatting), Laag (verdedigingsgat).

@@ -200,6 +200,3 @@ Under 100 words. Professional and warm.
 **Expected output:** A 280-word personal letter from Sarah and Tom that opens with a specific detail about the garden ("the raised beds along the south fence"), mentions their careers as something that ties them to the community, expresses intent to stay and maintain the character of the home, and closes with warmth. No mention of kids, religion, or national origin. Agent cover letter separately — summarises the $715K offer, 20% down, conventional with Chase, appraisal gap coverage to $20K, flexible close, and positions the offer as low-risk for the sellers.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

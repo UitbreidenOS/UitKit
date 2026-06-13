@@ -454,6 +454,3 @@ Sidekiq: `NotificationJob` queued `after_create_commit` to send push notificatio
 Kamal: `config/deploy.yml` with two web servers, one worker server, PostgreSQL and Redis accessories. Rolling deploy with health check on `/up`. `RAILS_MASTER_KEY` and `DATABASE_URL` sourced from `.env` secrets.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

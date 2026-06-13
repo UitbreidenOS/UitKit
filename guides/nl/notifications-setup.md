@@ -368,6 +368,3 @@ curl -X POST -H 'Content-type: application/json' \
 Voer een korte 2-minuten Claude sessie uit met uw hooks actief en bevestig minstens één melding maakt vuurwerk voordat u een multi-uur sessie onbewaakt laat.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

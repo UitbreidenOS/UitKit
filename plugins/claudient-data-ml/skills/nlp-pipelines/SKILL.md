@@ -250,6 +250,3 @@ Fine-tune XLM-R for 3-class multilingual sentiment classification (positive / ne
 Zero-shot cross-lingual: after fine-tuning on English data only, evaluate on French and German test sets to confirm transfer (XLM-R typically retains 85%+ of English F1 on closely related European languages).
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

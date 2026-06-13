@@ -255,6 +255,3 @@ Limiter chaque définition à 80 mots. Écrire pour un dirigeant non technique q
 **Résultat attendu :** Rapport mensuel complet s'ouvrant sur "Octobre a été un mois record pour les nouvelles affaires, partiellement compensé par l'événement de churn le plus important de notre historique." La section revenus affiche 2,1 M$ vs. plan de 2,0 M$. Cause racine du churn : le départ du client enterprise a conduit le déclin du NRR de 112 % à 108 % — un événement structurel, pas de tendance. Le record de nouveaux logos est un vrai signal. Tableau d'actions : post-mortem du compte churné (VP Succès Client, 7 nov.), affinement du PCI pour éliminer les clients présentant un profil de risque similaire (VP Produit + VP Ventes, 14 nov.). Liste de surveillance : pipeline de renouvellement enterprise pour le T4.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

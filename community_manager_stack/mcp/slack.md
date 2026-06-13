@@ -85,5 +85,3 @@ slack_get_reactions(channel_id="C123", limit=100)
 - Remove bot permissions if no longer used
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · Community Builder Edition

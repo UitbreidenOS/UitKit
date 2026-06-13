@@ -217,6 +217,3 @@ Specifieke actie: "Nieuw item toegevoegd midden-sprint vereist expliciete PM + t
 Stop met Start/Stop/Continue. Switch naar een Timeline retro — ga dag voor dag terug door de afgelopen sprint. Dit dwingt specifieke voorbeelden af in plaats van algemene klachten, en specifieke voorbeelden hebben specifieke oorzaken.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

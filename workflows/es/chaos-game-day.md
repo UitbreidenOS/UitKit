@@ -236,6 +236,3 @@ Success criteria: No checkout failures; p99 recovers within 60s of Redis restart
 **Hallazgo:** la aplicación no tiene lógica de retroceso — lanza errores 500 en lugar de volver a la base de datos. El modelo mental era incorrecto. Ticket abierto para implementar retroceso. Hipótesis programada para volver a ejecutarse después de correcciones.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

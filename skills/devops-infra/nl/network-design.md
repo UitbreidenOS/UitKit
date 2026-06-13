@@ -271,6 +271,3 @@ Ontwerp AWS-netwerk voor een 3-tier e-commerce applicatie:
 5. Istio service mesh met mTLS afgedwongen over alle ECS tasks. VirtualService geconfigureerd voor canary-implementaties met 10% traffic split.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

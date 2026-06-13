@@ -175,5 +175,3 @@ Los flujos de trabajo de Claude for Small Business son point-and-click. Las habi
 - [SEO Strategy for Small Business Content](claude-small-business-seo-strategy.md)
 
 ---
-
-> **Claudient** es respaldado por [Uitbreiden](https://uitbreiden.com/) — construcción de productos de IA y soluciones B2B con comunidades de desarrolladores.

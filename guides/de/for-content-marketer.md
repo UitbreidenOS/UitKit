@@ -371,6 +371,3 @@ Diese Metriken wöchentlich aus Google Analytics, GSC und deiner E-Mail-Plattfor
 - [E-Mail-Sequenz-Skill](../skills/marketing/email-sequence.md)
 
 ---
-
-> **Arbeite mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

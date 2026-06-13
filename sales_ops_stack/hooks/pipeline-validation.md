@@ -149,5 +149,3 @@ If validation fails:
 - **Warning (Log only):** Allows import but flags for manual review; examples: deal value outliers, duplicate accounts, old last activity dates
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient)

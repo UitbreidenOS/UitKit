@@ -481,6 +481,3 @@ async fn main() -> Result<()> {
 Error handling: `thiserror` custom error type covers `io::Error` and CSV parse errors. `?` propagates cleanly through `async` functions. Worker panics are caught at the `spawn` boundary via `JoinHandle` unwrapping.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

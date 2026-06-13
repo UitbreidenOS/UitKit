@@ -843,6 +843,3 @@ Antes de implementar cualquier servidor MCP, confirme:
 5. **Contaminación cruzada de materias** — Cuando ejecuta Claude en múltiples materias en la misma sesión, verifique que los resultados de búsqueda de iManage o NetDocuments no muestren documentos de materias para las que el usuario no está autorizado. Configure el alcance del servidor MCP a nivel de materia, no a nivel de usuario, donde la DMS lo admite.
 
 ---
-
-> **Trabaje con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

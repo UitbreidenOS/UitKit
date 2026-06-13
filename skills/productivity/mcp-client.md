@@ -150,6 +150,3 @@ An application that connects to three MCP servers (filesystem, GitHub, Postgres)
 7. On shutdown, close all three transports cleanly
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

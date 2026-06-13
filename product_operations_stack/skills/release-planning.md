@@ -286,5 +286,3 @@ Not for real-time incident response or hotfixes. Not without clear scope definit
 - [ ] Executive approval (pending product sign-off)
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [Product Operations Stack](https://github.com/Claudient/Claudient)

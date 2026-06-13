@@ -358,6 +358,3 @@ print(df.nunique().sort_values())          # Kardinalität — niedrig = wahrsch
 **Erwartete Ausgabe:** Python-Audit-Skript, das für diese Tabelle befüllt wird. SQL-Abfragen für: Duplikat-order_id-Prüfung (Primärschlüssel), Ausreißer-Preischeck (negative Preise, Preise > 10.000 $), Mengenprüfung (null oder negativ), zukünftige Daten in created_at, eindeutige Werte in der status-Spalte (unerwartete Werte kennzeichnen), referentielle Integrität von user_id gegenüber einer users-Tabelle. Danach: Datenqualitätsbericht-Vorlage. Drei dbt-Tests hinzufügen: unique/not_null auf order_id, accepted_values auf status, relationships auf user_id. Kommentar: Falls Preisausreißer gefunden werden, würde das den Umsatzanstieg erklären — untersuchen, ob der Anstieg real oder ein Datenproblem ist.
 
 ---
-
-> **Arbeite mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir bauen KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

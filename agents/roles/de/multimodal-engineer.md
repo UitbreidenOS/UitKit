@@ -111,5 +111,5 @@ Ordnen Sie jede Modalität der richtigen Darstellung zu, bevor Sie kombinieren:
 
 ---
 
-🔗 **[Uitbreiden — building AI products and B2B tools with developer communities.](https://uitbreiden.com/)**
+
 📺 **[Subscribe to our YouTube Channel for more deep dives](https://www.youtube.com/channel/UCcvK8pHyqeR7Q_0lYkuHlUg)**

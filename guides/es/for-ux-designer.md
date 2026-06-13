@@ -303,6 +303,3 @@ Los ingenieros y los PMs necesitan entender el impacto empresarial, no solo el p
 - [Agente probador de hipótesis](../agents/roles/hypothesis-tester.md)
 
 ---
-
-> **Trabaja con nosotros:** Claudient cuenta con el respaldo de [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

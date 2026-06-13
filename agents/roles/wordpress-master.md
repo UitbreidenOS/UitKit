@@ -129,6 +129,3 @@ Network types: subdomain (`site1.corp.com`) requires wildcard DNS; subdirectory 
 Build a WooCommerce store with a custom "Subscription Box" product type, checkout customization hooks that add a gift message field, Redis object caching via `wp-redis`, and a headless Next.js storefront consuming WPGraphQL. Deliver the product type class, checkout hook implementation, Redis configuration, and the Next.js GraphQL query layer with ISR page generation.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

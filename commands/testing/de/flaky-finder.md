@@ -1,6 +1,6 @@
 ---
-description: Fehlerquellen in bestehenden Tests identifizieren und beheben
-argument-hint: "[test file or directory]"
+description: Quellen von Instabilität in vorhandenen Tests identifizieren und beheben
+argument-hint: "[Test-Datei oder Verzeichnis]"
 ---
 Analysiere Tests auf Fehleranfälligkeit in: $ARGUMENTS
 
@@ -15,34 +15,34 @@ Schritte:
    - Assertions unmittelbar nach asynchronen Operationen ohne Awaiting
    - Hartcodierte Timeouts, die sich zwischen CI und lokalen Umgebungen unterscheiden können
 
-   **Reihenfolgeabhängigkeit**
-   - Tests, die Zustand auf Modulebene oder globaler Ebene mutieren ohne Cleanup
-   - `beforeAll` Setup, das spätere Tests benötigen, aber nicht deklarieren
-   - Testdateien, die Ausführungsreihenfolge innerhalb einer Suite voraussetzen
+   **Ausführungsreihenfolge-Abhängigkeit**
+   - Tests, die gemeinsame Modul-Ebenen- oder globale Zustände ohne Cleanup verändern
+   - `beforeAll` Setup, auf das spätere Tests angewiesen sind, ohne es zu deklarieren
+   - Test-Dateien, die die Ausführungsreihenfolge innerhalb einer Suite annehmen
 
    **Nicht-Determinismus**
    - Verwendung von `Math.random()`, `Date.now()` oder `new Date()` in Assertions ohne Mocking
    - Netzwerkaufrufe zu echten Endpunkten (keine Interceptoren/Mocks)
    - Dateisystem-Lesevorgänge ohne Fixtures — Pfade, die sich je nach Umgebung unterscheiden
 
-   **Ressourcenkonflikte**
-   - Parallele Tests, die in die gleichen Datenbankzeilen oder Dateien schreiben
+   **Ressourcen-Contention**
+   - Parallele Tests, die in dieselben Datenbankzeilen oder Dateien schreiben
    - Port-Konflikte in Server-Start-Tests
-   - Fehlende Transaction-Rollbacks oder Teardown
+   - Fehlende Transaction Rollbacks oder Teardown
 
-   **Selector-Fragilität (UI/E2E)**
-   - CSS-Klassenselektoren, die visuellen Stil kodieren, nicht Semantik
-   - XPath-Ausdrücke abhängig von DOM-Tiefe
-   - Text-Content-Treffer, die bei i18n oder Copy-Änderungen fehlschlagen
+   **Selektor-Fragilität (UI/E2E)**
+   - CSS-Klassen-Selektoren, die visuellen Stil kodieren, nicht Semantik
+   - XPath-Ausdrücke, die von DOM-Tiefe abhängig sind
+   - Text-Inhalts-Matches, die bei i18n oder Copy-Änderungen fehlschlagen
 
 3. Für jeden Fund bereitstellen:
-   - Musterkategorie (von oben)
+   - Muster-Kategorie (von oben)
    - Genaue Position (Datei:Zeile)
    - Grundursache in einem Satz
-   - Eine konkrete Korrektur — zeige das Before/After-Code-Snippet
+   - Eine konkrete Lösung — zeige Code-Snippet vor/nach
 
-4. Nach dem Katalogisieren, wende Fixes auf Probleme an, die eindeutig sicher zu ändern sind (z.B. `sleep(500)` gegen einen richtigen Wait austauschen, fehlende `afterEach` Cleanup hinzufügen).
+4. Nach dem Katalogisieren, wende automatisch Fixes auf Probleme an, die eindeutig sicher zu ändern sind (z.B. `sleep(500)` durch einen korrekten Wait ersetzen, fehlenden `afterEach` Cleanup hinzufügen).
 
 5. Für Fixes, die Designentscheidungen erfordern (z.B. Einführung einer Test-Datenbank, Hinzufügen eines Mock-Servers), beschreibe den Ansatz, aber implementiere nicht ohne Bestätigung.
 
-6. Beende mit einer Anzahl: X Funde, Y automatisch korrigiert, Z erfordern manuelle Aktion.
+6. Beende mit einer Anzahl: X Funde, Y automatisch behoben, Z erfordern manuelle Aktion.

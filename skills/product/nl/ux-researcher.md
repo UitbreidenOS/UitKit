@@ -250,6 +250,3 @@ Als users de timeline bereiken zonder dependencies ingesteld, is er geen hint da
 Run een 15-minuten vervolgzitting met 3 users: toon waar het dependency feature is, vraag hen het gebruiken, observeer — is de interactie zelf duidelijk eenmaal gevonden?
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

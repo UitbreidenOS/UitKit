@@ -1,6 +1,6 @@
 ---
 description: Identifier et corriger les sources d'instabilité dans les tests existants
-argument-hint: "[test file or directory]"
+argument-hint: "[fichier de test ou répertoire]"
 ---
 Analyser les tests pour détecter l'instabilité dans : $ARGUMENTS
 

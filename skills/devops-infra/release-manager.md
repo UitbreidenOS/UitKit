@@ -291,6 +291,3 @@ Set up the recommended strategy for my team with git commands and CI/CD integrat
 - [ ] Rollback plan: can you re-enable the old endpoints if migration uptake is too low?
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

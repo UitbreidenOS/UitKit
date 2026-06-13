@@ -264,6 +264,3 @@ Desviaciones de arquitectura: escala. Esta es una señal que Execute improvisó 
 RIPER tiene sobrecarga. La sobrecarga se paga a sí misma en trabajo complejo; no se paga a sí misma en trabajo pequeño. La regla de oro: si puedes mantener la implementación completa en tu cabeza sin escribirla, RIPER es excesivo.
 
 ---
-
-> **Trabaja con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

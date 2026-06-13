@@ -90,6 +90,3 @@ System user tokens do not expire on a 60-day cycle like user tokens — use them
 - To avoid overspending during testing, set `status=PAUSED` when creating campaigns via MCP — enable them manually after reviewing the setup.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

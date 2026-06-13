@@ -138,6 +138,3 @@ Review-cadence: [maandelijks / driemaandelijks]
 6. Accepteer de zero-click-realiteit: optimaliseer voor merkbewustzijn en bottom-funnel klikken, niet mid-funnel traffic
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

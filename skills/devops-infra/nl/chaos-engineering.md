@@ -74,6 +74,3 @@ Analyse directe/indirecte consumenten, externe impact, recovery-pad, risicodrivu
 Game-day-agenda voor [team], voorbereiding, uitvoeringsoefeningen, debriefing.
 
 ---
-
-> **Met ons samenwerken:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/).
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

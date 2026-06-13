@@ -102,6 +102,3 @@ Design a FHIR R4 integration for a clinical analytics pipeline:
 6. Schedule nightly incremental exports using `_since` parameter for only new/modified resources
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

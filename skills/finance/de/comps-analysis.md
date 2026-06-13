@@ -139,6 +139,3 @@ Aktueller Aktienkurs: $19,81 → sitzt nahe Mittelpunkt über alle Methoden
 **Erwartetes Comps-Universum:** 6-8 Mid-Market B2B SaaS-Unternehmen mit ähnlicher ARR-Skalierung und Wachstumsprofil. Multiples-Tabelle mit EV/ARR (LTM + NTM), EV/Bruttoprofit, NTM P/E falls zutreffend. Implizierte Bewertungsspanne. Anmerkung zur Prämie, die Comps verdienen, angesichts 110% NRR.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir bauen AI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -121,6 +121,3 @@ Las rutas se resuelven relativamente a la raíz del proyecto. Utilícelo cuando 
 | `--all` | | Aplicar comando a todas las sesiones (usado con `respawn`) |
 
 ---
-
-> **Trabaje con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

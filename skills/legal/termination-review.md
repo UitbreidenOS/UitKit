@@ -150,6 +150,3 @@ Recent activity: Filed an internal complaint about a colleague 3 months ago
 **Do not terminate until legal counsel reviews this situation.**
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

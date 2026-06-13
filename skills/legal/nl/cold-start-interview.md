@@ -89,6 +89,3 @@ De vaardigheid voert het viercategorie-interview uit als een gestructureerd gesp
 Bevestigt dan : « Profiel voltooid. De vaardigheden Contract Reviewer, Escalation Flagger en Redline Negotiator zullen dit profiel nu gebruiken voor alle beoordelingen. »
 
 ---
-
-> **Werk met ons :** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met developer-gemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

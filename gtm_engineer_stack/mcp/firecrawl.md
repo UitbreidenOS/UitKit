@@ -38,5 +38,3 @@ mcp__firecrawl__scrape({ "url": "https://company.com/pricing" })
 - Save credits: only scrape pages WebFetch fails on
 
 ---
-
-Built with [Claudient](https://github.com/Claudients/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

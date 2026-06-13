@@ -285,6 +285,3 @@ Draft talking points for managers who will receive questions from their teams.
 **Erwartete Ausgabe:** Drei Dokumente. E-Mail an alle Mitarbeiter: beginnt im ersten Satz mit „wir schließen das Londoner Büro", erklärt die Begründung (Kosteneffizienz, Team arbeitet bereits erfolgreich remote), nennt das Datum des Inkrafttretens, beschreibt, was das für die 12 Betroffenen bedeutet (freiwilliges Ausscheiden oder formale Remote-Regelungen), und was sich für alle anderen ändert (nichts — business as usual). Gesprächsleitfaden für den Londoner Manager: Was zu sagen ist, wenn Teammitglieder fragen „warum jetzt", wie mit emotionalen Reaktionen umzugehen ist, wie der Prozess für freiwilliges Ausscheiden aussieht. Direkte Nachricht an die 12 Betroffenen: wärmerer Ton, konkret zu ihren Optionen, konkret zum Unterstützungspaket, drückt aufrichtige Wertschätzung aus, nennt den HR-Kontakt für Fragen.
 
 ---
-
-> **Mit uns arbeiten:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

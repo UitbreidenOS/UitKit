@@ -119,6 +119,3 @@ Orchestrator steps:
 6. Risk flags: session middleware is imported in 14 route files — high blast radius, needs integration test suite before removal
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

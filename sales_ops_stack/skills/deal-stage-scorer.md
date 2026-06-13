@@ -141,5 +141,3 @@ Save as `deals/[deal-id]-stage-check.md`
 [Any additional context: urgency signals, competitive pressure, customer sentiment, etc.]
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient)

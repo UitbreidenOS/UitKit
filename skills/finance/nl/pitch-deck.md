@@ -232,6 +232,3 @@ $80K ARR op 15% MoM-groei brengt ons in 14 maanden naar $600K ARR. Dit kapitaal 
 « We halen $2M op om 2 ingenieurs en onze eerste AE in te huren. De engineering stelt ons in staat het volledige contract-reviewworkflow te behandelen — niet alleen NDA's. De AE neemt wat we met designpartners hebben bewezen en verandert het in een herhaalbare beweging. We bereiken $600K ARR in 18 maanden, wat de Series A-drempel voor deze categorie is. »
 
 ---
-
-> **Met ons werken:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met developersgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

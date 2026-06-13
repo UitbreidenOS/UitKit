@@ -289,6 +289,3 @@ Generar la plantilla de conciliación intercompañía para mi estructura de enti
 4. Cultura de "correcto a la primera": controller revisa durante el mes, no solo en el cierre
 
 ---
-
-> **Trabajar con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

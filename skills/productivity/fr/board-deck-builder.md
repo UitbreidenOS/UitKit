@@ -14,6 +14,3 @@ description: "Constructeur de deck tableau : structurer la narrative, slides de 
 [Abbreviated - full French translation continues with Instructions, Example sections]
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

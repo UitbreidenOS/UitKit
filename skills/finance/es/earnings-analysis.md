@@ -149,6 +149,3 @@ Año completo aumentado: punto medio $575M vs. $557M anterior = aumento de $18M 
 **Lead de nota matutina:** „[Empresa] entregó una ganancia neta de Q2 de $5M (3,6%) en la línea superior con 112% NRR señalando expansión saludable. La dirección aumentó la orientación de año completo por $18M en el punto medio — un aumento creíble dada la ganancia de Q2. Mantener compra, aumentando precio objetivo a $X en estimaciones de año fiscal más altas."
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

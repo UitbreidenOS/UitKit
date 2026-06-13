@@ -419,6 +419,3 @@ Aangepaste uitbreidingen die vroege adopters in de eerste 90 dagen bouwden, omva
 De voorgebouwde 15 workflows zijn de on-ramp. Claude Projects zijn de snelweg.
 
 ---
-
-> **Claudient** wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — AI-producten en B2B-oplossingen bouwen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

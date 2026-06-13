@@ -112,6 +112,3 @@ Acknowledge und Resolve Operations erfordern, dass `PD_USER_EMAIL` zur Email des
 Der PagerDuty MCP nutzt PagerDuty's REST API v2, das in allen Bezahl-Plänen enthalten ist. Es gibt keine Per-Call-Fees. Rate-Limits werden bei 960 Requests/Minute pro API-Token für die meisten Endpoints erzwungen — well über Interaktive Nutzung, aber relevant für Automatisiert-Workflows.
 
 ---
-
-> **Arbeite mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen AI-Produkte und B2B-Lösungen mit Developer Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

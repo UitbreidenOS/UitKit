@@ -110,5 +110,3 @@ Include in output:
 3. **Re-engage Alumni:** Winback email to 72 inactive members. Survey top 20 on why they left. Results inform product/moderation changes.
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · Community Builder Edition

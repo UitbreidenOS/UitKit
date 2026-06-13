@@ -117,6 +117,3 @@ macOS fonctionne sans aucune configuration.
 **Résultat:** Une invite précise et multi-phrase livrée sans taper — et sans perdre la concentration sur le code lu.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -126,6 +126,3 @@ Si votre automatisation dépend d'une sortie déterministe :
 Le mode CLI nu est le bon choix lorsque vous avez besoin du binaire Claude Code mais que vous vous préoccupez de la latence. Le SDK est encore plus rapide quand vous n'avez pas besoin de la CLI du tout.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

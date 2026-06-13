@@ -363,6 +363,3 @@ Generar: propuesta de agenda del consejo, estructura inicial del cuadro de mando
 | Perspectivas de las llamadas de referencia | % de operaciones donde las llamadas a clientes cambiaron su opinión |
 
 ---
-
-> **Trabaja con nosotros:** Claudient cuenta con el respaldo de [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

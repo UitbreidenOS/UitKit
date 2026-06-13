@@ -194,5 +194,3 @@ Not for general org charts—this focuses on *product decision-making* stakehold
 - Migration communication plan undefined
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [Product Operations Stack](https://github.com/Claudient/Claudient)

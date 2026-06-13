@@ -1,15 +1,15 @@
 ---
-description: Genereer een changelog-vermelding voor commits sinds de laatste tag of een gegeven ref
+description: Genereer een changelog-invoer voor commits sinds de laatste tag of een gegeven ref
 argument-hint: "[from-ref]"
 ---
 Bepaal het bereik:
 - Als $ARGUMENTS is opgegeven, gebruik `git log $ARGUMENTS...HEAD`
 - Voer anders `git describe --tags --abbrev=0` uit om de laatste tag te vinden, gebruik dan `git log <last-tag>...HEAD`
-- Als geen tags bestaan, gebruik de volledige geschiedenis: `git log HEAD`
+- Als er geen tags bestaan, gebruik de volledige geschiedenis: `git log HEAD`
 
 Voer ook `git log <range> --oneline` en `git diff <range> --stat` uit voor structuur.
 
-Produceer een changelog-vermelding in Keep a Changelog-format (https://keepachangelog.com):
+Produceer een changelog-invoer in Keep a Changelog-formaat (https://keepachangelog.com):
 
 ```markdown
 ## [Unreleased] — <today's date YYYY-MM-DD>
@@ -34,11 +34,11 @@ Produceer een changelog-vermelding in Keep a Changelog-format (https://keepachan
 ```
 
 Regels:
-- Laat secties weg die geen vermeldingen hebben
-- Elke vermelding is één regel, geschreven voor een eindgebruiker of API-consument — niet voor interne ontwikkeling
-- Groepeer gerelateerde commits in één vermelding; vermeld niet elke commit afzonderlijk
-- Verwijs naar PR's of issues tussen haakjes wanneer commit-berichten deze vermelden: `(#123)`
-- Vermeldingen beginnen met een hoofdletter, geen punt op het einde
-- Negeer chore/style/refactor commits tenzij zij het openbare gedrag beïnvloeden
+- Laat secties achterwege die geen invoeren hebben
+- Elke invoer is één regel, geschreven voor een eindgebruiker of API-consument — niet voor interne ontwikkeling
+- Groepeer gerelateerde commits in één invoer; vermeld niet elk commit afzonderlijk
+- Verwijs naar PR's of issues in haakjes als commit-berichten ze noemen: `(#123)`
+- Invoeren beginnen met een hoofdletter, geen punt aan het einde
+- Negeer chore/style/refactor commits tenzij ze invloed hebben op openbare-facing gedrag
 
 Voer alleen het markdown-blok uit.

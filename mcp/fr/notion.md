@@ -96,6 +96,3 @@ L'intégration ne voit que les pages explicitement partagées avec elle. Partage
 **Utilisez search pour l'amorçage :** Quand vous n'avez pas d'IDs, commencez toujours par `search` en utilisant un titre descriptif. Il retourne les IDs de page et les IDs de base de données que vous pouvez utiliser dans les appels suivants.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

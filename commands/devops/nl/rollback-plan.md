@@ -1,25 +1,25 @@
 ---
-description: Genereer een stap-voor-stap terugdraaiplan voor de huidige implementatie of recente wijziging
-argument-hint: "[service name, version, or PR/commit to roll back]"
+description: Genereer een stap-voor-stap rollback plan voor de huidige deployment of recente wijziging
+argument-hint: "[servicenaam, versie, of PR/commit om terug te draaien]"
 ---
-Genereer een terugdraaiplan voor: $ARGUMENTS
+Genereer een rollback plan voor: $ARGUMENTS
 
-Inspecteer het project om het implementatiemechanisme (Kubernetes, ECS, Heroku, bare VM, Lambda, etc.), de CI/CD-pijplijn en eventuele stateful componenten (databases, wachtrijen, caches, feature flags) te bepalen.
+Controleer het project om het implementatiemechanisme (Kubernetes, ECS, Heroku, bare VM, Lambda, enz.) te bepalen, de CI/CD pipeline, en eventuele stateful componenten (databases, queues, caches, feature flags).
 
 Produceer een runbook met deze secties:
 
-**1. Checklist voorafgaande aan terugdraaien**
-- Bevestig de doelvorige versie/revisie waarnaar moet worden teruggekeerd (afbeeldingstag, Git SHA, Helm-revisie)
-- Bepaal wie goedkeuring moet geven voordat wordt uitgevoerd (on-call lead, incident commander)
-- Controleer dat het vorige artefact nog steeds in het register/archief bestaat — als niet, markeer dit onmiddellijk
-- Noem alle schemamigraties die sinds de vorige versie zijn toegepast (niet-reversibele migraties blokkeren een schone terugkeer)
+**1. Pre-rollback checklist**
+- Bevestig de doelversie/revisie om naar terug te draaien (image tag, Git SHA, Helm revision)
+- Identificeer wie goedkeuring moet geven voordat het wordt uitgevoerd (on-call lead, incident commander)
+- Controleer dat het vorige artefact nog steeds in het register/archief aanwezig is — indien niet, direct markeren
+- Lijst eventuele schema-migraties op die sinds de vorige versie zijn uitgevoerd (onherstelbare migraties blokkeren een schone rollback)
 
-**2. Impactbeoordeling**
-- Geschatte uitvaltijd of verminderde periode tijdens terugdraaien
-- Welke gebruikers/tenants/regio's zijn getroffen
-- Alle gegevens die sinds de foute implementatie zijn geschreven en die mogelijk niet compatibel zijn met het vorige schema
+**2. Impact assessment**
+- Geschatte downtime of verslechterde periode tijdens rollback
+- Welke gebruikers/tenants/regio's worden beïnvloed
+- Alle gegevens die sinds de slechte deploy zijn geschreven en die mogelijk incompatibel zijn met het vorige schema
 
-**3. Terugdraaistappen** (genummerd, copy-paste klaar commando's)
+**3. Rollback stappen** (genummerd, copy-paste gereed commando's)
 
 Voor Kubernetes:
 ```
@@ -34,21 +34,21 @@ helm history <release> -n <namespace>
 helm rollback <release> <revision> -n <namespace>
 ```
 
-Voor databasemigraties: geef het exacte down-migratie commando of noteer dat handmatige schema-omkering vereist is en geef aan welke SQL moet worden uitgevoerd.
+Voor database-migraties: geef het exacte down-migration commando of noteer dat een handmatige schema-omkering vereist is en specificeer welke SQL moet worden uitgevoerd.
 
-Voor feature flags: noem welke vlaggen uit moeten worden gezet voor of na de binaire terugkeer.
+Voor feature flags: lijst welke vlaggen moeten worden uitgeschakeld vóór of na de binary rollback.
 
 **4. Verificatiestappen**
 - Smoke test commando's of URL's om te bevestigen dat de service gezond is op de vorige versie
-- Sleutelmetrieken om 10 minuten na terugdraaien te controleren (foutpercentage, latency p99, wachtrijdiepte)
+- Belangrijkste statistieken om gedurende 10 minuten na rollback in het oog te houden (error rate, latency p99, queue depth)
 
-**5. Afbreukcriteria**
-- Voorwaarden waaronder het terugdraaien zelf moet worden gestopt en geëscaleerd
-- Terugval als terugdraaien mislukt (bijv. verplaatsing van verkeer naar een bekende goede regio)
+**5. Abort criteria**
+- Voorwaarden waaronder de rollback zelf moet worden gestopt en geëscaleerd
+- Fallback als rollback mislukt (bijv. traffic shifting naar een gekend werkende regio)
 
-**6. Acties na terugdraaien**
-- Open een trackingprobleem voor root cause analyse
-- Behoud logs en traces uit het incidentvenster voordat ze verlopen
-- Tijdlijn om opnieuw in te stellen met de fix
+**6. Post-rollback acties**
+- Open een tracking issue voor root cause analysis
+- Behoud logs en traces van het incident window voordat ze verlopen
+- Tijdlijn voor poging tot opnieuw implementeren met de fix
 
-Markeer elke stap die niet kan worden geautomatiseerd en handelsgewijze oordeel of verheven toegang vereist.
+Markeer eventuele stap die niet kan worden geautomatiseerd en menselijk oordeel of verhoogde toegang vereist.

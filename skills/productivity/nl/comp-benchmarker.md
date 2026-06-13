@@ -256,6 +256,3 @@ De Londense PM-markt is krap, met name voor senior IC's met B2B SaaS-ervaring. S
 Als ze een Amazon/Google-aanbod hebben met RSU's, kunt u niet op cash concurreren. Concurreer op: reikwijdte (ze bezitten een volledig productgebied, geen functie), snelheid (ze leveren in weken niet kwartalen), en opwaarts potentieel (aandelen kunnen meervouden waard zijn van een beursgenoteerde RSU).
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

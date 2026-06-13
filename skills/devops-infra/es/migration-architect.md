@@ -213,6 +213,3 @@ DROP INDEX idx_orders_user_id;
 **Garantía sin tiempo de inactividad:** Cada paso es una implementación compatible hacia atrás. Reversión en cualquier paso antes de Fase 5 = cambiar la implementación. Después de Fase 5 = solo hacia adelante.
 
 ---
-
-> **Trabaje con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

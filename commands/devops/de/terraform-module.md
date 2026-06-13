@@ -1,45 +1,45 @@
 ---
-description: Erstelle ein wiederverwendbares Terraform-Modul für die beschriebene Infrastrukturkomponente
-argument-hint: "[component: e.g. vpc, rds, ecs-service, s3-bucket]"
+description: Gerüst für ein wiederverwendbares Terraform-Modul für die beschriebene Infrastruktur-Komponente
+argument-hint: "[component: z.B. vpc, rds, ecs-service, s3-bucket]"
 ---
-Erstelle ein produktionsreifes Terraform-Modul für: $ARGUMENTS
+Gerüst für ein produktionsreifes Terraform-Modul für: $ARGUMENTS
 
-Zielerprovider: Leite den Provider aus dem Kontext ab (AWS/GCP/Azure) oder verwende standardmäßig AWS, wenn unklar. Verwende die neueste stabile Providerversion.
+Ziel-Provider: Aus dem Kontext ableiten (AWS/GCP/Azure) oder auf AWS als Standard setzen, falls mehrdeutig. Neueste stabile Provider-Version verwenden.
 
-Generiere die folgende Dateistruktur:
+Folgende Dateistruktur generieren:
 ```
 modules/<name>/
   main.tf
   variables.tf
   outputs.tf
   versions.tf
-  README.md  (minimal — inputs/outputs table only)
+  README.md  (minimal — nur Eingabe-/Ausgabetabelle)
 ```
 
-Standards zum Befolgen:
+Zu befolgende Standards:
 
 `versions.tf`:
-- Fixiere die Terraform `required_version` auf `>= 1.5`
-- Fixiere die Providerversion mit einer `~>` Einschränkung auf die neueste Minor-Version
+- Terraform `required_version` auf `>= 1.5` festlegen
+- Provider-Version mit einer `~>` Constraint auf die neueste Minor-Version festlegen
 
 `variables.tf`:
 - Jede Variable hat eine `description` und einen `type` — keine `any` Typen
-- Verwende `validation` Blöcke für Werte mit bekannten Einschränkungen (CIDR-Bereiche, erlaubte Instanztypen, Tag-Formate)
-- Sensible Variablen als `sensitive = true` markiert
-- Stelle `default` nur dann bereit, wenn ein sicherer, breit anwendbarer Wert existiert — lasse erforderliche Eingaben ohne Standards
+- `validation` Blöcke für Werte mit bekannten Constraints verwenden (CIDR-Bereiche, erlaubte Instance-Typen, Tag-Formate)
+- Sensitive Variablen mit `sensitive = true` markieren
+- `default` nur bereitstellen, wenn ein sicherer, allgemein anwendbarer Wert existiert — erforderliche Eingaben ohne Defaults lassen
 
 `main.tf`:
-- Wende Standard-Tags/Labels an: `Name`, `Environment`, `ManagedBy = "terraform"`, `Module`
-- Verwende `for_each` statt `count` für Multi-Instanz-Ressourcen
-- Keine hardcodierten Region, Account-ID oder ARN — leite diese von Datenquellen ab (`aws_caller_identity`, `aws_region`)
-- Aktiviere Verschlüsselung ruhender Daten auf allen Speicherressourcen
-- Aktiviere Löschschutz auf zustandsbehafteten Ressourcen (RDS, DynamoDB) — exponiere als Variable mit Standard `true`
+- Standard-Tags/Labels anwenden: `Name`, `Environment`, `ManagedBy = "terraform"`, `Module`
+- `for_each` über `count` für Multi-Instance-Ressourcen bevorzugen
+- Keine hardcodierten Region, Account-ID oder ARN — aus Data Sources ableiten (`aws_caller_identity`, `aws_region`)
+- Verschlüsselung im Ruhezustand auf allen Speicher-Ressourcen aktivieren
+- Löschschutz auf Stateful-Ressourcen (RDS, DynamoDB) aktivieren — als Variable exposieren, Standard `true`
 
 `outputs.tf`:
-- Exportiere die Ressourcen-ID, ARN (falls zutreffend) und alle Endpunkt-/DNS-Namen, die Verbraucher benötigen
-- Markiere sensible Ausgaben als `sensitive = true`
+- Ressourcen-ID, ARN (falls zutreffend) und alle Endpoint/DNS-Namen exportieren, die Consumer benötigen
+- Sensitive Outputs mit `sensitive = true` markieren
 
 Nach dem Dateiinhalt ausgeben:
-1. Beispiel `module {}` Block zeigt, wie ein Root-Modul dieses aufruft
-2. Alle IAM-Berechtigungen, die die Terraform-Ausführungsrolle benötigt, um diese Ressourcen zu verwalten
-3. Bekannte Gotchas beim Löschen (z.B. nicht leere S3-Buckets, RDS-Snapshot-Anforderungen)
+1. Beispiel `module {}` Block, der zeigt, wie ein Root-Modul dieses Modul aufruft
+2. IAM-Berechtigungen, die die Terraform-Ausführungsrolle benötigt, um diese Ressourcen zu verwalten
+3. Bekannte Gotchas beim Zerstören (z.B. nicht-leere S3-Buckets, RDS-Snapshot-Anforderungen)

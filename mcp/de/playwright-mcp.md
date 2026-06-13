@@ -117,6 +117,3 @@ Kein API-Schlüssel erforderlich. Der Browser läuft lokal auf deiner Maschine. 
 **Multi-Step-Flows:** Verkette Tools natürlich in einem einzelnen Prompt. Claude wird `navigate → wait → type → click → screenshot` in der richtigen Reihenfolge sequenzieren ohne, dass du jeden Schritt einzeln spezifizierst.
 
 ---
-
-> **Zusammenarbeit mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen AI-Produkte und B2B-Lösungen mit Developer-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

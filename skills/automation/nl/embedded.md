@@ -255,6 +255,3 @@ Ontwerp FreeRTOS firmware voor STM32F4 lezen temperature/pressure van BMP388 via
 5. **Watchdog task** (priority 5): wacht op event group bits ingesteld door sensor en UART tasks elke cycle. Als beide bits niet zijn ingesteld binnen 2s, IWDG zet device opnieuw in. Stack high water mark gecontroleerd in debug builds en gelogd over UART op boot.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

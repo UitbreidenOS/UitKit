@@ -176,5 +176,3 @@ Minor concerns: CTO historically resists third-party tools; integration with cus
 - No obvious competitors in Meridian's tech stack per LinkedIn headcount analysis; opportunity to be category-first in their workflow
 
 ---
-
-Built with [Claudient](https://github.com/Claudients/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

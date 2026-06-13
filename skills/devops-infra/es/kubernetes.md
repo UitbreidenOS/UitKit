@@ -125,5 +125,3 @@ env:
 - HorizontalPodAutoscaler con objetivo de 70% de utilización de CPU, mínimo 3 / máximo 10 réplicas
 
 ---
-
-> **Trabaja con nosotros:** Claudient está respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores. ¿Construyendo infraestructura Kubernetes o productos de IA cloud-native? [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

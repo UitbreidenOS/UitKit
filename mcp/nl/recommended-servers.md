@@ -166,5 +166,3 @@ Voeg servers toe aan `~/.claude/settings.json` (globaal) of `.claude/settings.js
 Gebruik omgevingsvariabele-verwijzingen (`${VAR}`) in plaats van hardcoded secrets.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen. [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -146,5 +146,3 @@ Meng een refactorcommit nooit met een feature- of bugfix-commit. Houd ze geschei
 - **De basislijn overslaan** — aannemen dat tests adequaat zijn zonder het te controleren
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen. [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

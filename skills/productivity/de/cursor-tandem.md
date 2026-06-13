@@ -48,6 +48,3 @@ Führen Sie Claude Code im Hintergrund bei einer langen Aufgabe (Test-Suite, Mig
 "Ich nutze Cursor zum Schreiben von React-Komponenten und zum Erkunden der Codebase. Ich wechsle zum Claude Code-Terminal, wenn ich folgendes benötige: die komplette Test-Suite ausführen, über 30 Dateien refaktorisieren, GitHub Actions einrichten oder eine Datenbank-Migration durchführen. `CLAUDE.md` enthält unsere gemeinsamen Konventionen — beide Werkzeuge holen sie sich automatisch ohne zusätzliche Konfiguration."
 
 ---
-
-> **Arbeiten Sie mit uns :** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwicklergemeinschaften.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

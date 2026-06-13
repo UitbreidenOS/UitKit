@@ -144,6 +144,3 @@ Set Light, Dark, or System theme via `/config`. For power users, custom CSS inje
 - The diff viewer's per-turn navigation is the fastest way to review what a long agent task actually did — use it before merging.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

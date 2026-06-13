@@ -345,6 +345,3 @@ ADR-Schreiben muss beim Treffen der Entscheidung stattfinden — nicht sechs Mon
 - [Runbook generator skill](../skills/productivity/runbook-generator.md)
 
 ---
-
-> **Arbeite mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

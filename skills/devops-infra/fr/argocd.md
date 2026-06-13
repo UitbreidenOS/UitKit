@@ -296,6 +296,3 @@ git commit → git push → ArgoCD détecte le changement → déploie automatiq
 ArgoCD scrute votre repo toutes les 3 minutes par défaut. Pour une synchronisation instantanée, configurez un webhook GitHub pointant vers votre instance ArgoCD.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -172,6 +172,3 @@ WACC=10,5% 17,0$  18,0$   19,0$   20,1$   21,6$
 - Résultat clairement marqué `[VERIFY]` avec divulgation des hypothèses clés
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

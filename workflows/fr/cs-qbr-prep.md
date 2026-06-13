@@ -322,6 +322,3 @@ Si un dirigeant ou un AE a participé, envoyez-leur un résumé interne en 3 poi
 | Opportunités d'expansion identifiées | ≥ 1 par compte VERT | - | Aucune explorée |
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous développons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

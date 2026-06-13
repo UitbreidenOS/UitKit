@@ -90,5 +90,3 @@ exit 0
 5. Restart Claude Code for the hook to take effect
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [claudecode.ai](https://claudecode.ai/)

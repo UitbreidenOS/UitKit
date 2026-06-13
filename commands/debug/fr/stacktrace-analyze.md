@@ -1,29 +1,29 @@
 ---
-description: Analyser une trace de pile pour identifier la cause racine, la chaîne d'appels et un correctif actionnable
-argument-hint: "[paste stack trace]"
+description: Analyser une stack trace pour identifier la cause racine, la chaîne d'appels et un correctif exploitable
+argument-hint: "[coller stack trace]"
 ---
-Analysez la trace de pile suivante et produisez un diagnostic précis et exploitable.
+Analysez la stack trace suivante et produisez un diagnostic précis et exploitable.
 
-Trace de pile :
+Stack trace :
 $ARGUMENTS
 
-Travaillez systématiquement :
+Travaillez systématiquement à travers ceci :
 
-1. **Analysez la trace** — identifiez le langage et l'environnement d'exécution (Python, JVM, Go, Node, Rust, .NET, etc.). Notez le type d'exception/erreur et le message en haut de la trace.
+1. **Analyser la trace** — identifiez le langage et le runtime (Python, JVM, Go, Node, Rust, .NET, etc.). Notez le type d'exception/erreur et le message en haut de la trace.
 
-2. **Parcourez la chaîne d'appels** — à partir du point de lancement d'origine (cadre pertinent le plus profond), remontez à travers chaque cadre :
-   - Identifiez quels cadres sont du code d'application par rapport au framework/bibliothèque par rapport aux internes du runtime
-   - Concentrez l'analyse sur les cadres d'application — c'est là que réside le bogue
-   - Pour chaque cadre d'application, expliquez ce dont cette fonction est responsable et pourquoi elle se trouve dans cette chaîne d'appels
+2. **Parcourir la chaîne d'appels** — en partant du point d'origine du lancement (frame pertinent le plus profond), tracez vers le haut à travers chaque frame :
+   - Identifiez quels frames sont du code application par rapport à framework/bibliothèque par rapport aux internals du runtime
+   - Concentrez l'analyse sur les frames application — c'est là que vivent les bugs
+   - Pour chaque frame application, indiquez ce que cette fonction est responsable de faire et pourquoi elle est dans cette chaîne d'appels
 
-3. **Identifiez l'origine** — identifiez le cadre unique où le contrôle aurait dû s'écarter du chemin correct. Ce n'est pas toujours le cadre le plus profond ; c'est le cadre où une mauvaise hypothèse, une vérification manquante ou un état invalide a été introduit.
+3. **Identifier précisément l'origine** — identifiez le frame unique où le contrôle aurait dû diverger du chemin correct. Ce n'est pas toujours le frame le plus profond ; c'est le frame où une hypothèse erronée, une vérification manquante ou un état invalide a été introduit.
 
-4. **Lisez la source** — si les chemins de fichier de la trace existent dans ce référentiel, lisez les lignes pertinentes. Comparez les numéros de ligne de la trace avec le code réel. Ne vous fiez pas à la trace seule.
+4. **Lire la source** — si les chemins de fichier dans la trace existent dans ce dépôt, lisez les lignes pertinentes. Effectuez une recoupement entre les numéros de ligne dans la trace et le code réel. Ne vous fiez pas à la trace seule.
 
-5. **Diagnostiquez la cause racine** — énoncez exactement quelle condition a déclenché cette trace. Soyez précis sur les valeurs des variables, les états des objets ou le timing qui a conduit ici si cela peut être déduit.
+5. **Diagnostiquer la cause racine** — indiquez exactement quelle condition a déclenché cette trace. Soyez spécifique concernant les valeurs de variables, les états d'objets ou les timings qui ont mené ici si on peut les déduire.
 
-6. **Éliminez les fausses pistes** — si des cadres sont du bruit (wrappers asynchrones, middleware, boucles de réessai), dites-le explicitement afin que le lecteur ne les pourchasse pas.
+6. **Écarter les fausses pistes** — si des frames sont du bruit (wrappers asynchrones, middleware, boucles de retry), dites-le explicitement afin que le lecteur ne les poursuive pas.
 
-7. **Correctif** — fournissez la modification de code concrète qui élimine ce chemin d'échec. Montrez l'emplacement exact (fichier, fonction, plage de lignes) et la modification avant/après. Si le correctif nécessite de comprendre l'état externe, expliquez ce qu'il faut vérifier et comment.
+7. **Correctif** — fournissez le changement de code concret qui élimine ce chemin d'échec. Montrez l'emplacement exact (fichier, fonction, plage de lignes) et le changement avant/après. Si le correctif nécessite de comprendre l'état externe, indiquez quoi vérifier et comment.
 
-8. **Garde contre la régression** — suggérez le test minimal qui aurait détecté ceci avant qu'il ne soit livré en production.
+8. **Garde de régression** — suggérez le test minimal qui aurait attrapé ceci avant qu'il ne atteigne la production.

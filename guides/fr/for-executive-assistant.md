@@ -325,6 +325,3 @@ Claude vérifie la clarté et les problèmes de ton, mais vous connaissez votre 
 - [Compétence constructeur de support de conseil](../skills/productivity/board-deck-builder.md)
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous créons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

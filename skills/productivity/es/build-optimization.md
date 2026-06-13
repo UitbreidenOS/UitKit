@@ -107,6 +107,3 @@ Objetivo: >90% de tasa de acierto de caché. Un fallo en node_modules no debe in
 4. Agregar Turborepo con `outputs: ["dist/**"]` — segunda ejecución de CI acierta en caché, tiempo de compilación cae a 45 segundos
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -21,6 +21,3 @@ description: "Besluitkwaliteit entiteitsonderzoek: bouw een uitgebreide dossier 
 [Full Dutch translation would continue with all sections matching the French version structure, translated to Dutch]
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -250,6 +250,3 @@ Si los usuarios llegan a la cronología sin dependencias establecidas, no hay pi
 Ejecute una sesión de seguimiento de 15 minutos con 3 usuarios: muéstreles dónde está la característica de dependencia, pídales que la usen, observe — ¿es clara la interacción en sí una vez encontrada?
 
 ---
-
-> **Trabaja con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

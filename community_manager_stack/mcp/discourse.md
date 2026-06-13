@@ -99,5 +99,3 @@ discourse_create_post(topic_id=123, raw="Welcome! Let me help you get started...
 - Rotate keys quarterly
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · Community Builder Edition

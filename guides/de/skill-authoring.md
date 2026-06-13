@@ -177,9 +177,9 @@ Eine Skill voller allgemeiner Coding-Ratschläge (Typ-Annotationen verwenden, Te
 
 ## Arbeiten Sie mit uns
 
-Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte mit Entwickler-Communities und liefern B2B-KI-Lösungen. Wenn Sie Hilfe beim Aufbau produktionsreifer Claude Code-Integrationen, benutzerdefinierter Skill-Bibliotheken oder KI-betriebener Produkte benötigen — melden Sie sich.
 
-**[uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)**
+
+
 
 ---
 

@@ -330,6 +330,3 @@ Velocity matters more than win rate. A team running 4 losing tests per month lea
 **Not documenting learning from losses:** "We killed it" is not a learning. "Users don't respond to urgency messaging in this context" is.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

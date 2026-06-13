@@ -150,5 +150,3 @@ All 5 checks passed. Ready for human approval before sending.
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudients/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

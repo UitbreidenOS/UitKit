@@ -231,6 +231,3 @@ CLAUDE_MCP_DEBUG=1 claude
 - `/mcp/` directory — configuraciones de servidor y recomendaciones para herramientas populares
 
 ---
-
-> **Trabajar con nosotros:** Claudient respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -1,6 +1,6 @@
 ---
 description: Exécuter une analyse de sécurité statique complète sur un fichier ou un répertoire et signaler les vulnérabilités exploitables
-argument-hint: "[path]"
+argument-hint: "[chemin]"
 ---
 Effectuer une analyse de sécurité statique approfondie de `$ARGUMENTS`. Si aucun chemin n'est fourni, analysez l'arborescence de travail entière.
 
@@ -28,17 +28,17 @@ Effectuer une analyse de sécurité statique approfondie de `$ARGUMENTS`. Si auc
 
 5. **Format de sortie** :
    ```
-   ## Security Scan: <path>
+   ## Analyse de sécurité : <chemin>
 
-   ### Summary
-   CRITICAL: N | HIGH: N | MEDIUM: N | LOW: N
+   ### Résumé
+   CRITIQUE : N | ÉLEVÉE : N | MOYENNE : N | BASSE : N
 
-   ### Findings
-   [severity] [CWE-XXX] file:line — description
-   Fix: ...
+   ### Résultats
+   [sévérité] [CWE-XXX] fichier:ligne — description
+   Correction : ...
 
-   ### Deferred (MEDIUM/LOW)
-   Bullet list only — no fix detail
+   ### Différé (MOYENNE/BASSE)
+   Liste à puces uniquement — pas de détail de correction
    ```
 
 Ne pas inclure les conclusions dont vous n'êtes pas certain. Préférez la précision au rappel — une critique confirmée vaut mieux que dix basses spéculatives.

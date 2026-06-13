@@ -71,5 +71,3 @@ Not for severance negotiation (escalate to counsel). Not without board/CFO appro
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [claudecode.ai](https://claudecode.ai/)

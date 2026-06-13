@@ -139,6 +139,3 @@ Procédure de rollback : [étapes]
 Intégrer un nouvel employé sur tous les systèmes. Entrée : nom, département, gestionnaire, date de début, rôle, emplacement de bureau. Sortie : liste de tâches décomposée avec propriété de domaine, runbook séquencé avec les étapes de rollback pour chaque phase, esquisse PowerShell pour la création de compte AD remise à `powershell-expert`, configuration M365 remise à `m365-admin` et une liste de vérification de vérification que le technicien informatique complète le premier jour.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

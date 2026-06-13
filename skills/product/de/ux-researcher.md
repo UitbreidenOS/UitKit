@@ -250,6 +250,3 @@ Wenn Benutzer die Zeitachse ohne gesetzte Abhängigkeiten erreichen, gibt es kei
 Führen Sie eine 15-Minuten-Nachfolgetermin mit 3 Benutzern durch: zeigen Sie ihnen, wo die Abhängigkeitsfunktion ist, fragen Sie sie, sie zu benutzen, beobachten Sie — ist die Interaktion selbst klar, wenn gefunden?
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir bauen KI-Produkte und B2B-Lösungen mit Entwicklergemeinschaften.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

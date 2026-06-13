@@ -279,6 +279,3 @@ Die Verantwortlichen (Ihre B2B-Kunden) sind für DPIA verantwortlich — aber si
 3. 🟡 Transparenz — Endbenutzer wissen wahrscheinlich nicht, dass Verhalten gescort wird. Ihre Kunden (Verantwortliche) müssen ihnen sagen.
 
 ---
-
-> **Mit uns arbeiten:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

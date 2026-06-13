@@ -121,6 +121,3 @@ A well-structured project scope looks like:
 **Assuming skills walk up the directory tree.** They do not. CLAUDE.md files walk up; skills do not. A skill in `/workspace/project/.claude/skills/` is not visible when Claude is working inside `/workspace/project/packages/api/`. Each sub-package needs its own `.claude/skills/` for package-specific skills.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

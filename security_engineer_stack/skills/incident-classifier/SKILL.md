@@ -215,5 +215,3 @@ Customer account accessed by unauthorized third party. Attacker used stolen cred
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudients/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

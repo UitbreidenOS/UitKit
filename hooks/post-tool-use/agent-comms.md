@@ -172,6 +172,3 @@ CLAUDE_AGENT_NAME=code-reviewer claude ...
 The bus file (`.claude/agent-messages.jsonl`) is project-local. Add it to `.gitignore` for ephemeral sessions, or commit it for persistent cross-session relay.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

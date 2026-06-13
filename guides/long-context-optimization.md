@@ -603,6 +603,3 @@ Cause: each iteration added 10K tokens of tool history to the same context witho
 Fix: implement the write-state-to-disk pattern. Consider ScheduleWakeup for a hard reset between long iterations.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

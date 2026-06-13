@@ -134,6 +134,3 @@ Claude escribe la descripción de MLS y la copia de marketing expandida. Incluye
 Descripción de MLS: 148 palabras. Versión expandida: 340 palabras con un titular, tres llamadas de característica-beneficio y un párrafo de barrio.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

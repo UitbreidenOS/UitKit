@@ -1,32 +1,32 @@
 ---
-description: Generiere gründliche Unit-Tests für die angegebene Datei oder Funktion
+description: Erstelle umfangreiche Unit Tests für die angegebene Datei oder Funktion
 argument-hint: "[file-or-function]"
 ---
-Sie schreiben Unit-Tests für: $ARGUMENTS
+Du schreibst Unit Tests für: $ARGUMENTS
 
-Befolgen Sie diese Schritte:
+Befolge diese Schritte:
 
-1. Lesen Sie die Zieldatei oder lokalisieren Sie die benannte Funktion in der Codebasis. Verstehen Sie ihre öffentliche Schnittstelle, Nebenwirkungen und Abhängigkeiten.
+1. Lies die Zieldatei oder lokalisiere die benannte Funktion in der Codebasis. Verstehe ihre öffentliche Schnittstelle, Nebenwirkungen und Abhängigkeiten.
 
-2. Identifizieren Sie alle erforderlichen Testfälle:
+2. Identifiziere alle erforderlichen Testfälle:
    - Happy Path (typische gültige Eingaben)
-   - Grenzfälle (leer, Null, Maximum, Minimum, einzelnes Element)
+   - Grenzwertbedingungen (leer, null, max, min, einzelnes Element)
    - Fehlerpfade (ungültige Eingabe, fehlende Abhängigkeiten, geworfene Ausnahmen)
-   - Edge Cases spezifisch für die Domänenlogik
+   - Spezifische Edge Cases der Domain-Logik
 
-3. Erkennen Sie das existierende Test-Framework und die Konventionen in diesem Projekt (Jest, Pytest, Go testing, Vitest, RSpec, usw.). Entsprechen Sie dem Stil genau – gleiche describe/it-Verschachtelungstiefe, gleicher Assertion-Stil, gleiche bereits verwendete Mock/Stub-Muster.
+3. Erkenne das bestehende Test-Framework und die Konventionen in diesem Projekt (Jest, Pytest, Go testing, Vitest, RSpec, etc.). Entspreche dem Stil genau — gleiche describe/it Verschachtelungstiefe, gleicher Assertion-Stil, gleiche Mock-/Stub-Muster, die bereits verwendet werden.
 
-4. Schreiben Sie Tests, die:
-   - Isoliert sind: kein gemeinsamer veränderlicher Zustand zwischen Tests
-   - Beschreibende Namen haben, die als Spezifikationen lesbar sind („gibt null zurück, wenn Benutzer nicht gefunden wird", nicht „Testfall 1")
+4. Schreibe Tests, die:
+   - Isoliert sind: keine gemeinsamen veränderbaren Zustände zwischen Tests
+   - Aussagekräftige Namen haben, die sich als Spezifikationen lesen ("gibt null zurück, wenn Benutzer nicht gefunden wird", nicht "Testfall 1")
    - Ein logisches Konzept pro Test überprüfen
-   - Arrange-Act-Assert-Struktur verwenden
-   - Nur das mocken, was eine echte Grenze überschreitet (Netzwerk, Dateisystem, DB, Zeit, Zufälligkeit)
+   - eine Arrange-Act-Assert-Struktur verwenden
+   - Nur das mocken, das eine echte Grenze überschreitet (Netzwerk, Dateisystem, Datenbank, Zeit, Zufälligkeit)
 
-5. Mocken Sie NICHT die zu testende Einheit selbst. Schreiben Sie NICHT Tests, die nur das Mock testen.
+5. Mocke NICHT die zu testende Einheit selbst. Schreibe KEINE Tests, die nur das Mock testen.
 
-6. Platzieren Sie die Testdatei neben der Quelldatei nach Projektkonventionen (z.B. `__tests__/`, `.test.ts`, `_test.go`).
+6. Platziere die Testdatei neben der Quelldatei und befolge dabei die Projektkonventionen (z.B. `__tests__/`, `.test.ts`, `_test.go`).
 
-7. Nach dem Schreiben führen Sie die Tests aus und bestätigen Sie, dass sie bestanden werden. Wenn welche fehlschlagen, beheben Sie entweder den Test (wenn die Erwartung falsch war) oder zeigen Sie den Fehler in der Implementierung deutlich auf.
+7. Führe die Tests nach dem Schreiben aus und bestätige, dass sie bestanden werden. Falls welche fehlschlagen, behebe entweder den Test (wenn die Erwartung falsch war) oder mache den Fehler in der Implementierung deutlich.
 
-Schreiben Sie keine Platzhaltertests. Hinterlassen Sie keine `TODO`-Kommentare. Jeder Test muss vollständig und aussagekräftig sein.
+Schreibe keine Placeholder-Tests. Hinterlasse keine `TODO`-Kommentare. Jeder Test muss vollständig und aussagekräftig sein.

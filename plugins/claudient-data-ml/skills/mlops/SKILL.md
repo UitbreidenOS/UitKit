@@ -209,6 +209,3 @@ Set up MLflow tracking for a binary classification model with a staging-to-produ
 5. The `ml-pipeline` GitHub Actions job fails fast if either the accuracy or latency gate is not met — blocking the merge from promoting a degraded model.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

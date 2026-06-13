@@ -14,7 +14,7 @@ Dieser Leitfaden bringt Sie in weniger als 10 Minuten von null zu einer funktion
 ## Schritt 1 — Claudient klonen
 
 ```bash
-git clone https://github.com/Claudient/Claudient.git ~/Claudient
+
 ```
 
 Sie haben jetzt die vollständige Bibliothek lokal. Es wird nichts automatisch ausgeführt — Sie wählen aus, was Sie benötigen.
@@ -158,7 +158,3 @@ Durchsuchen Sie `agents/`, um zu verstehen, was verfügbar ist. Wenn Sie möchte
 ---
 
 ## Arbeiten Sie mit uns
-
-Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir entwickeln KI-Produkte mit Entwickler-Communities und liefern B2B-KI-Lösungen. Wenn Sie etwas Ernsthaftes mit Claude Code aufbauen und Expertenunterstützung, einen technischen Partner oder einfach Teil der Community sein möchten — kommen Sie zu uns.
-
-**[uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)**

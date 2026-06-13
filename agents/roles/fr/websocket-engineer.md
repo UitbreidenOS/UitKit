@@ -140,6 +140,3 @@ Utiliser un token bucket ou une fenêtre glissante pour la production ; l'approc
 - En cas de reconnexion : le client envoie le dernier horloge vectorielle connu, le serveur rejoue les opérations depuis ce point
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -221,5 +221,3 @@ Employee signature: Priya Gupta        Date: 2027-01-15
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient)

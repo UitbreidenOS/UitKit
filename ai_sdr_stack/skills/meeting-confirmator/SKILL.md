@@ -76,5 +76,3 @@ Looking forward to it — good timing given the recent launch.
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudients/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

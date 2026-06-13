@@ -101,6 +101,3 @@ Le bug a été introduit dans commit abc123. Concentrez-vous sur le chemin de va
 La deuxième version donne à Claude les bons fichiers, le mode de défaillance, l'emplacement soupçonné et une ancre temporelle — sans waster de tokens sur du code non lié.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

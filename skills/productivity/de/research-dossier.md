@@ -17,6 +17,3 @@ description: "Entitätsforschung in Entscheidungsqualität: einen umfassenden Do
 [Full German translation would continue with all sections from source file, translated to German]
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird unterstützt durch [Uitbreiden](https://uitbreiden.com/) — wir bauen KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

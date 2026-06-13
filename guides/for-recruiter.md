@@ -309,6 +309,3 @@ The debrief structure in `/interview-scorecard` requires each interviewer to sha
 - [Team onboarding skill](../skills/productivity/team-onboarding.md)
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

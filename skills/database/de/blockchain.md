@@ -283,6 +283,3 @@ Schreiben Sie einen ERC-721 NFT Contract mit Allowlist Minting, ERC-2981 Royalti
 6. Foundry Fuzz Test `testFuzz_royaltyNeverExceedsSalePrice(uint256 salePrice)` führt 10.000 Iterationen aus und assert dass Royalty <= SalePrice für alle Inputs. Zweiter Fuzz Test `testFuzz_allowlistMintDecrementsBalance(address minter, uint256 quota)` verifiziert Balance decrements immer genau 1 pro Mint unabhängig von Initial Quota.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

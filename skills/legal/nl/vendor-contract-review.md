@@ -228,6 +228,3 @@ Waarom niet onderhandelbaar: Als u onder GDPR of CCPA valt, bent u wettelijk ver
 **Wat los te laten:** SLA-tegoed, IP-clausules (aangenomen geen aangepaste ontwikkeling) en toepasselijk recht zijn op dit uitgavenniveau lager prioriteit.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelingsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

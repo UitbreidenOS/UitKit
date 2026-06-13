@@ -410,6 +410,3 @@ Ab v2.1.146 wurde `/simplify` in `/code-review` umbenannt. Alter Name funktionie
 Überprüft aktuelle Diffs auf Kompilierungsfehler, Logikfehler, Sicherheitslücken — nicht Stil oder Formatierung.
 
 ---
-
-> **Arbeiten Sie mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen KI-Produkte und B2B-Lösungen mit Entwicklergemeinschaften.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

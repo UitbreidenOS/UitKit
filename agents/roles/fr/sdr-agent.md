@@ -216,6 +216,3 @@ const SDR_CHANNELS = {
 **Résultat :** Le SDR a lancé 10 campagnes de sensibilisation personnalisées en 30 minutes au lieu de 3 heures.
 
 ---
-
-> **Travailler avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

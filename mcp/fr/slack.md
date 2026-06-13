@@ -111,6 +111,3 @@ Résumez le canal #engineering d'aujourd'hui. J'ai été plongé pendant 6 heure
 **Les horodatages des fils sont précis :** `reply_to_thread` nécessite la valeur exacte de `ts` (horodatage) du message parent, qui ressemble à `1716300000.000100`. Obtenez-la à partir de la sortie `get_channel_history` avant de répondre.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

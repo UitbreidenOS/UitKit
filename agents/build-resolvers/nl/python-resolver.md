@@ -19,6 +19,3 @@ Diagnosticeert en Fixt Python Import Errors, Runtime Exceptions, Type Annotation
 - Dependency Version Conflicts
 
 ---
-
-> **Werk Met Ons:** Claudient Wordt Ondersteund door [Uitbreiden](https://uitbreiden.com/).
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

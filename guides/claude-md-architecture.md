@@ -231,6 +231,3 @@ Use the shared UserRepository from @/shared/db instead.
 **Quarterly review:** read the whole file, remove anything that's stale, add anything from recent sessions that you keep repeating.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

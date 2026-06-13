@@ -231,6 +231,3 @@ In PostHog: Insights → Funnels → add these 5 steps in order. Set conversion 
 **First experiment:** Add a "quick start" checklist in the empty dashboard state with 3 tasks. Each task completion event = tracked. Empty state is the #1 lever at step 2→3.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

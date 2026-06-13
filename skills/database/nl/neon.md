@@ -250,6 +250,3 @@ Dit stelt `DATABASE_URL` automatisch in in Vercel per omgeving (productie → ma
 - `.github/workflows/preview.yml` — create-branch-action + migratie + Vercel-deploy
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — wij bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

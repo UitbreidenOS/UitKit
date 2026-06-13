@@ -23,6 +23,3 @@ description: "Expertise Confluence : architecture documentaire, gouvernance du c
 [Content continues with full sections on space architecture, documentation governance, templates, and automation - full French translation would follow the same structure as other files]
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec les communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

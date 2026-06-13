@@ -69,6 +69,3 @@ Classificeren:
 **Antwoordconcept:** Bevestigt gevonden gegevenscategorieën, bevestigt verwijdering van marketinggegevens, legt 7-jaar bewaring van betalingsgegevens uit met juridische basis, bevat recht om bij ICO klacht in te dienen.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

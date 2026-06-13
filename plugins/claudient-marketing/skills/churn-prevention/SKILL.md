@@ -153,6 +153,3 @@ Root cause: Activation failure, not product failure. "Not using it enough" = did
 **Projected impact:** These 3 changes could reduce the 42% "not using it" segment by half = ~1.6% reduction in total monthly churn rate.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

@@ -76,6 +76,3 @@ Een project dat op prompts leunt, verslechtert zich in de loop van de tijd. Naar
 De investering in harnasconfiguratie levert dividenden op bij elke toekomstige sessie. De investering in een lange systeemprompt levert dividenden op alleen op de huidge.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

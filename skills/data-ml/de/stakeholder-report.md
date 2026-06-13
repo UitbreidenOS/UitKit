@@ -255,6 +255,3 @@ Jede Definition unter 80 Wörter halten. Für eine nicht-technische Führungskra
 **Erwartete Ausgabe:** Vollständiger Monatsbericht, der mit „Oktober war ein Rekordumsatzmonat für Neugeschäfte, der teilweise durch unsere bislang größte Kundenwanderung aufgewogen wurde" beginnt. Umsatzabschnitt zeigt 2,1 Mio. $ vs. 2,0 Mio. $ Plan. Ursachenanalyse zur Fluktuation: der Abgang des Enterprise-Kunden trieb den NRR-Rückgang von 112 % auf 108 % — ein strukturelles, kein Trendsignal. Der neue Logo-Rekord ist echtes Signal. Maßnahmentabelle: Nachbesprechung zum abgewanderten Kunden (VP Customer Success, 7. Nov.), ICP-Verfeinerung zur Aussortierung von Kunden mit ähnlichem Risikoprofil (VP Product + VP Sales, 14. Nov.). Beobachtungsliste: Enterprise-Verlängerungs-Pipeline für Q4.
 
 ---
-
-> **Arbeite mit uns:** Claudient wird unterstützt von [Uitbreiden](https://uitbreiden.com/) — wir bauen KI-Produkte und B2B-Lösungen mit Entwickler-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

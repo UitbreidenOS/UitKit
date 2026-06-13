@@ -72,5 +72,3 @@ Claude runs `/analyze-roadmap` with your backlog, customer data, and OKRs. Retur
 - Estimated effort and capacity planning implications
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient) · [Product Operations Stack](https://github.com/Claudient/Claudient)

@@ -125,6 +125,3 @@ Goal: 10 new bookings in the next 3 weeks.
 **Success metrics:** 10 bookings = $X revenue at your average price. Track which channel each booking came from.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

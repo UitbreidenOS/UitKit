@@ -135,5 +135,3 @@ SUCCESS METRICS
 ```
 
 ---
-
-Built with [Claudient](https://github.com/Claudient/Claudient)

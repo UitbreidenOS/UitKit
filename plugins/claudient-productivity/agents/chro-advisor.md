@@ -156,6 +156,3 @@ No levelling system and no clear promotion criteria. Engineers hit L3 with nowhe
 This is an 8-12 week fix, not a culture transformation. Fix the visible problem first.
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

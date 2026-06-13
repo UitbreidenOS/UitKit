@@ -285,6 +285,3 @@ Je vais noter ceux-ci en votre nom avec des hypothèses raisonnables — vous de
 **Pourquoi les webhooks personnalisés score faible :** Impact élevé par utilisateur, mais seuls les utilisateurs avancés en ont besoin. Les 80 utilisateurs qui en ont besoin sont probablement bruyants mais représentent une petite part de votre levier de croissance.
 
 ---
-
-> **Travaillez avec nous :** Claudient est soutenu par [Uitbreiden](https://uitbreiden.com/) — nous construisons des produits IA et des solutions B2B avec des communautés de développeurs.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

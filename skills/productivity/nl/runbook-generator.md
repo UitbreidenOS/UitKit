@@ -167,6 +167,3 @@ kubectl rollout undo deployment/api
 **Escalatie:** Indien geheugen > 90% na herstart EN geen deployment → pagina on-call senior engineer.
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

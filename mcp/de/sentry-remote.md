@@ -81,6 +81,3 @@ Org-Level-Tokens (für Multi-Projekt-Orgs) funktionieren gleich — erstelle sie
 - Pipe `get_issue`-Ausgabe in eine Code-Fix-Anfrage — Claude hat den vollen Kontext zum Schreiben eines gezielten Patches.
 
 ---
-
-> **Zusammenarbeit mit uns:** Claudient wird von [Uitbreiden](https://uitbreiden.com/) unterstützt — wir bauen AI-Produkte und B2B-Lösungen mit Developer-Communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

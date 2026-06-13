@@ -151,6 +151,3 @@ Señale secciones donde necesita más información para completar con precisión
 **Salida esperada:** Las 9 secciones con marcadores `[VERIFY]` apropiados en todas finanzas. Resumen ejecutivo con objetivos MOIC/IRR. Tesis inversión enfocada en tailwinds HR tech, crecimiento product-led y camino a rentabilidad. Análisis rendimiento con caso base 5 años (3x MOIC, 25% IRR) y tabla sensibilidad. Sección riesgo cubriendo churn SaaS, amenazas competitivas y dependencia dirección.
 
 ---
-
-> **Trabaje con nosotros:** Claudient cuenta con respaldo de [Uitbreiden](https://uitbreiden.com/) — construimos productos IA y soluciones B2B con comunidades desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

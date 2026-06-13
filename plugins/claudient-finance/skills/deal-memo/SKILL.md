@@ -296,6 +296,3 @@ Write a crisp recommendation section (150 words max). State your view clearly. A
 **Expected output:** A full deal memo covering market (legal tech $X0B, AI disruption timing), team (excellent domain/technical fit, missing enterprise sales leader), unit economics (prompt for LTV/CAC verification), competitive landscape (Harvey, Ironclad, Kira as comps), risk factors (customer concentration in pilots, regulatory around AI in legal advice, enterprise sales GTM), and a recommendation section that either leans in or passes with clear rationale. All founder-provided financial figures marked [UNVERIFIED].
 
 ---
-
-> **Work with us:** Claudient is backed by [Uitbreiden](https://uitbreiden.com/) — we build AI products and B2B solutions with developer communities.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

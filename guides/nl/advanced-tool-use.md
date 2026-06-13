@@ -309,6 +309,3 @@ Gecombineerde besparing op een 10-query analytische workflow: ongeveer 60% minde
 | Hoge tokenkosten bij elke beurt | Alle vier gecombineerd |
 
 ---
-
-> **Werk met ons:** Claudient wordt ondersteund door [Uitbreiden](https://uitbreiden.com/) — we bouwen AI-producten en B2B-oplossingen met ontwikkelaarsgemeenschappen.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

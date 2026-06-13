@@ -30,5 +30,3 @@ Claude acheminera les requêtes vers les deux et vous pouvez spécifier lequel p
 3. **Intégrez dans le flux de travail hebdomadaire :** Exécutez `/pipeline-review` chaque vendredi avant les mises à jour pour les cadres
 
 ---
-
-Construit avec [Claudient](https://github.com/Claudient/Claudient)

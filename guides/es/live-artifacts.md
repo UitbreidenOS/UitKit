@@ -108,6 +108,3 @@ Cada artefacto vivo tiene un botón de compartición. Al hacerlo, se genera una 
 - La fuente de datos de Google Sheets requiere que el conector de Google Drive esté autorizado en Cowork
 
 ---
-
-> **Trabaja con nosotros:** Claudient es respaldado por [Uitbreiden](https://uitbreiden.com/) — construimos productos de IA y soluciones B2B con comunidades de desarrolladores.
-> [uitbreiden.com](https://uitbreiden.com/) · [Reddit](https://www.reddit.com/r/uitbreiden/) · [YouTube](https://www.youtube.com/@UITBREIDEN)

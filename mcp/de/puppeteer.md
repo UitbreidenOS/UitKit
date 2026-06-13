@@ -28,7 +28,7 @@ Setzen Sie `PUPPETEER_HEADLESS` auf `false`, um den Browser während der Ausfüh
 
 ```
 # Screenshot einer Seite
-"Take a screenshot of https://uitbreiden.com and describe what you see"
+
 
 # Strukturierte Daten scrapen
 "Go to [URL] and extract all product names and prices into a JSON list"
