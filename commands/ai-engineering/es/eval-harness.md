@@ -1,6 +1,6 @@
 ---
-description: Generar un arnés de prueba para evaluar un prompt o cadena LLM contra un conjunto de datos
-argument-hint: "[prompt file or description of the task being evaluated]"
+description: Genera un arnés de prueba para evaluar un prompt o cadena de LLM contra un conjunto de datos
+argument-hint: "[archivo de prompt o descripción de la tarea que se está evaluando]"
 ---
 Estás construyendo un arnés de evaluación LLM para la tarea descrita en $ARGUMENTS.
 

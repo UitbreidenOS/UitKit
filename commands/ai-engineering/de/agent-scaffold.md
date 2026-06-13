@@ -1,32 +1,32 @@
 ---
-description: Gerüst für einen Multi-Step Claude-Agenten mit Tool-Nutzung, Speicher und definierter Stoppbedingung erstellen
-argument-hint: "[agent goal or task description]"
+description: Einen mehrstufigen Claude-Agent mit Tool-Use, Memory und einer definierten Stoppbedingung aufbauen
+argument-hint: "[Agent-Ziel oder Aufgabenbeschreibung]"
 ---
-Gerüst für einen produktiven Claude-Agenten erstellen, der folgende Aufgabe erfüllt: $ARGUMENTS
+Baue einen produktiven Claude-Agent auf, der folgendes erreicht: $ARGUMENTS
 
 **Schritt 1 — Agent-Design-Spezifikation**
 
-Bevor Sie Code schreiben, definieren Sie:
+Bevor du Code schreibst, definiere:
 
-- **Ziel** — die Terminal-Erfolgsbedingung (kein Prozess, sondern ein Zustand)
-- **Eingaben** — was der Agent beim Start erhält (Strings, Dateipfade, strukturierte Daten)
-- **Ausgaben** — was er nach Abschluss produziert (geschriebene Dateien, API-Aufrufe, zurückgegebenes strukturiertes Ergebnis)
-- **Benötigte Tools** — zählen Sie jedes Tool auf: Name, Zweck, Input-Schema, Rückgabeform
-- **Speichermodell** — wählen Sie eines:
-  - Zustandslos (nur Kontextfenster, geeignet für <20 Tool-Aufrufe)
-  - Zusammenfassungs-Speicher (komprimieren Sie die Historie mit Haiku nach jedem N Schritten)
-  - Externer Speicher (schreiben Sie wichtige Fakten in eine Scratchpad-Datei oder einen Key-Value-Store)
-- **Stoppbedingungen** — was löst aus, dass der Agent die endgültige Ausgabe zurückgibt oder weiterhin in Schleife läuft:
+- **Ziel** — die Erfolgsbedingung (kein Prozess, sondern ein Zustand)
+- **Eingaben** — was der Agent bei Start erhält (Strings, Dateipfade, strukturierte Daten)
+- **Ausgaben** — was er bei Fertigstellung produziert (geschriebene Dateien, API-Aufrufe, zurückgegebene strukturierte Ergebnisse)
+- **Benötigte Tools** — enummeriere jedes Tool: Name, Zweck, Input-Schema, Rückgabeschema
+- **Memory-Modell** — wähle eines:
+  - Stateless (nur Kontextfenster, geeignet für <20 Tool-Aufrufe)
+  - Summary Memory (Verlauf mit Haiku nach jedem N-ten Schritt komprimieren)
+  - Externes Memory (wichtige Fakten in eine Scratchpad-Datei oder Key-Value-Store schreiben)
+- **Stoppbedingungen** — was bewirkt, dass der Agent die Endausgabe zurückgibt statt weiterzumachen:
   - Erfolg: Zielzustand erreicht
   - Fehler: Fehlerzähler überschritten, widersprüchlicher Zustand erkannt
-  - Obergrenze: max_iterations erreicht (immer einschließen)
+  - Obergrenze: max_iterations erreicht (immer einbeziehen)
 
 **Schritt 2 — Agent generieren**
 
-Schreiben Sie `agent.py` mit dem Anthropic Python SDK. Anforderungen:
+Schreibe `agent.py` mit dem Anthropic Python SDK. Anforderungen:
 
-- Modell: `claude-sonnet-4-6` (konfigurierbar über Umgebungsvariable `AGENT_MODEL`)
-- Implementieren Sie die Agent-Schleife:
+- Modell: `claude-sonnet-4-6` (konfigurierbar via `AGENT_MODEL` Umgebungsvariable)
+- Implementiere die Agentic Loop:
   ```
   while not done and iterations < max_iterations:
       response = client.messages.create(tools=tools, messages=history)
@@ -37,23 +37,23 @@ Schreiben Sie `agent.py` mit dem Anthropic Python SDK. Anforderungen:
       elif response.stop_reason == "end_turn":
           done = True
   ```
-- Definieren Sie jedes Tool als ein Dictionary mit `name`, `description`, `input_schema` (JSON Schema)
-- Tool-Dispatch: eine `dispatch(tool_name, tool_input)`-Funktion, die zu Python-Callables weiterleitet
-- Verwenden Sie `cache_control: {"type": "ephemeral"}` auf der System-Prompt-Nachricht
-- Strukturierte endgültige Ausgabe: Agent gibt eine typisierte Dataclass zurück, nicht rohen Text
-- Protokollieren Sie jede Iteration: aufgerufenes Tool, Input-Zusammenfassung, Ergebnis-Zusammenfassung (nicht vollständiger Inhalt)
+- Definiere jedes Tool als Dictionary mit `name`, `description`, `input_schema` (JSON Schema)
+- Tool-Dispatch: eine `dispatch(tool_name, tool_input)` Funktion, die an Python-Callables weitergeleitet wird
+- Nutze `cache_control: {"type": "ephemeral"}` auf der System-Prompt-Nachricht
+- Strukturierte Endausgabe: Agent gibt einen typisierten Dataclass zurück, nicht reinen Text
+- Protokolliere jede Iteration: aufgerufenes Tool, Input-Zusammenfassung, Ergebnis-Zusammenfassung (nicht vollständiger Inhalt)
 
 **Schritt 3 — Fehlerbehandlung**
 
-- Umwickeln Sie jeden Tool-Aufruf mit try/except; geben Sie `{"error": str(e)}` als Tool-Ergebnis zurück — lösen Sie niemals Fehler in die Schleife aus
-- Bei Überschreitung von `max_iterations`: geben Sie Teilergebnisse mit einer `status: "incomplete"`-Flagge zurück
-- Bei API-Fehlern (`anthropic.APIStatusError`): wiederholen Sie bis zu 3 Mal mit exponentiellem Backoff
+- Umhülle jeden Tool-Aufruf mit try/except; gib `{"error": str(e)}` als Tool-Ergebnis zurück — werfe niemals in die Loop
+- Wenn `max_iterations` überschritten: gib Teilergebnisse mit `status: "incomplete"` Flag zurück
+- Bei API-Fehlern (`anthropic.APIStatusError`): wiederhole bis zu 3 Mal mit exponentieller Backoff-Strategie
 
 **Schritt 4 — CLI-Einstiegspunkt**
 
-Exponieren Sie über `argparse`:
-- `--goal` (oder positional): überschreiben Sie das hardcodierte Ziel
+Exponiere via `argparse`:
+- `--goal` (oder Position): überschreibe das hardcodierte Ziel
 - `--max-iterations`: Standard 25
-- `--dry-run`: drucken Sie den Plan (System-Prompt + Tools) ohne Ausführung
+- `--dry-run`: gib den Plan aus (System-Prompt + Tools) ohne Ausführung
 
-**Ausgabe:** `agent.py` mit allen implementierten Tools, keine Stubs. Schließen Sie ein Verwendungsbeispiel in einem Kommentarblock am Anfang der Datei ein.
+**Ausgabe:** `agent.py` mit allen implementierten Tools, keine Stubs. Füge ein Verwendungsbeispiel in einem Kommentarblock am Anfang der Datei ein.
