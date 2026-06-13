@@ -1,0 +1,23 @@
+# CODEOWNERS for Claudient
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Core configuration — always requires maintainer review
+package.json                    @tushar2704
+.claude-plugin/                 @tushar2704
+.github/                        @tushar2704
+
+# CLI and scripts
+scripts/                        @tushar2704
+
+# Core knowledge directories
+skills/                         @tushar2704
+agents/                         @tushar2704
+hooks/                          @tushar2704
+rules/                          @tushar2704
+commands/                       @tushar2704
+mcp/                            @tushar2704
+
+# Documentation
+CLAUDE.md                       @tushar2704
+CONTRIBUTING.md                 @tushar2704
+development.md                  @tushar2704
