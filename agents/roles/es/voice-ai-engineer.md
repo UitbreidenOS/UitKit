@@ -1,6 +1,7 @@
 ---
 name: voice-ai-engineer
-description: Delegate when building voice interfaces, speech pipelines, or real-time audio AI systems.
+description: Delega cuando construyas interfaces de voz, canalizaciones de voz o sistemas de IA de audio en tiempo real.
+updated: 2026-06-13
 ---
 
 # Ingeniero de IA de Voz
@@ -114,4 +115,4 @@ Optimizar cada etapa de forma independiente; medir latencia en cada límite.
 ---
 
 
-📺 **[Subscribe to our YouTube Channel for more deep dives](https://www.youtube.com/channel/UCcvK8pHyqeR7Q_0lYkuHlUg)**
+📺 **[Suscríbete a nuestro canal de YouTube para más análisis profundos](https://www.youtube.com/channel/UCcvK8pHyqeR7Q_0lYkuHlUg)**

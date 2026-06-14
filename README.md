@@ -1,6 +1,6 @@
 # Claude Code Skills, Agents & Plugins — Claudient
 
-**Claudient** is the largest open-source knowledge base for **Claude Code** — Anthropic's AI coding CLI. It ships 384+ domain skills, 182+ specialist agents, 40 pre-wired workspace stacks, 40 MCP configs, 100+ slash commands, hooks, and workflows, all installable in 30 seconds. No stack re-explaining. Claude already knows your domain.
+**Claudient** is the largest open-source knowledge base for **Claude Code** — Anthropic's AI coding CLI. It ships 384+ domain skills, 182+ specialist agents, 42 pre-wired workspace stacks, 40 MCP configs, 100+ slash commands, hooks, and workflows, all installable in 30 seconds. No stack re-explaining. Claude already knows your domain.
 
 **New to Claude Code?** Claude Code is Anthropic's official command-line AI assistant for software development — it reads your codebase, runs commands, edits files, and completes tasks autonomously inside your terminal or IDE. Claudient is the open-source community library that extends it with expert-level skills across every stack and domain.
 
@@ -21,7 +21,7 @@
 
 **Stop explaining your stack to Claude every session.**
 
-Claudient is the largest open-source knowledge base for **Claude Code** — 384+ skills, 182+ specialist agents, 100+ slash commands, 100+ guides, 40 hooks, 45 workflows, 83 project structures, 40 workspace stacks, 10 personas, 32 rules, 40 MCP server configs, 10 automation routines, 20 annotated CLAUDE.md examples, cross-harness adapters (Cursor/Windsurf/Codex/Gemini/Copilot), plus output styles, themes, statuslines, keybindings, settings templates, and an Agent SDK pack — all installable in 30 seconds.
+Claudient is the largest open-source knowledge base for **Claude Code** — 384+ skills, 182+ specialist agents, 100+ slash commands, 100+ guides, 40 hooks, 45 workflows, 83 project structures, 42 workspace stacks, 10 personas, 32 rules, 40 MCP server configs, 10 automation routines, 20 annotated CLAUDE.md examples, cross-harness adapters (Cursor/Windsurf/Codex/Gemini/Copilot), plus output styles, themes, statuslines, keybindings, settings templates, and an Agent SDK pack — all installable in 30 seconds.
 
 ```bash
 # Install as a Claude Code plugin marketplace (recommended)
@@ -206,7 +206,7 @@ Each pack includes: domain-specific slash commands, a curated agent roster, a da
 
 ---
 
-## Workspace Stacks — 40 Pre-Wired Domain Workspaces
+## Workspace Stacks — 42 Pre-Wired Domain Workspaces
 
 Complete workspace stacks with a `CLAUDE.md`, 8 skills, and project structure — each designed for a specific role or domain. Drop a stack into your project and Claude immediately has domain expertise.
 
@@ -267,10 +267,12 @@ Complete workspace stacks with a `CLAUDE.md`, 8 skills, and project structure �
 | `b2b_consultant_stack` | Client management, proposals | 8 |
 | `ai_sdr_stack` | AI-powered SDR workflows | 8 |
 | `community_manager_stack` | Community engagement, moderation | 8 |
+| `bio_research_stack` | Experimental design, biostatistics, publication | 8 |
+| `healthcare_stack` | Clinical ops, HIPAA, EHR integration, telehealth | 8 |
 
 ```bash
 # Install a complete workspace stack
-npx claudient add all   # includes all 40 stacks
+npx claudient add all   # includes all 42 stacks
 ```
 
 ---
@@ -413,7 +415,7 @@ Claudient/
 │   ├── go-cli-tool/          # Go CLI tool
 │   └── dbt-pipeline/         # dbt data pipeline
 ├── structures/               # 83 project structure templates
-├── *_stack/                  # 40 pre-wired workspace stacks (CLAUDE.md + 8 skills each)
+├── *_stack/                  # 42 pre-wired workspace stacks (CLAUDE.md + 8 skills each)
 ├── scripts/                  # Build and utility scripts
 ├── site/                     # Astro documentation site source
 ├── docs/                     # ADRs and internal documentation
@@ -716,7 +718,7 @@ Event-driven automation for Claude Code — runs outside Claude's context as rea
 |---|---|
 | **Skills** | **384+** |
 | **Agents** | **182+** |
-| **Workspace Stacks** | **40** |
+| **Workspace Stacks** | **42** |
 | **Hooks** | **40** |
 | **MCP config guides** | **40** |
 | **Routines** | **10** |

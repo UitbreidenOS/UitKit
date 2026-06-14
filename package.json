@@ -1,7 +1,7 @@
 {
   "name": "claudient",
   "version": "1.10.1",
-  "description": "The Claude Code knowledge system — installable plugin marketplace with 384+ skills, 182+ agents, 40 workspace stacks, 40 MCP configs, 100+ commands, 40 hooks, 32 rules, 10 routines, 100+ guides, 83 structures, output styles, themes, statuslines, keybindings, settings templates, and an Agent SDK pack in 5 languages.",
+  "description": "The Claude Code knowledge system — installable plugin marketplace with 400+ skills, 182+ agents, 42 workspace stacks, 40 MCP configs, 100+ commands, 40 hooks, 32 rules, 10 routines, 100+ guides, 83 structures, output styles, themes, statuslines, keybindings, settings templates, and an Agent SDK pack in 5 languages.",
   "keywords": [
     "claude-code",
     "claude",
