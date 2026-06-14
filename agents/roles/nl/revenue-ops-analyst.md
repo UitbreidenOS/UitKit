@@ -80,41 +80,41 @@ Documenteer voor elke leadrouting-regel:
 - **Terugval:** wat gebeurt er als primaire eigenaar niet beschikbaar is
 - **Auditlogboek:** is routeringsbeslissing vastgelegd? (ja, altijd)
 
-### Inkomstenrapportagehiërarchie
-Bouwrapporten in deze volgorde — elk niveau moet aansluiten op het bovenstaande:
-1. **Bookings:** ondertekende contracten, ARR-waarde, op sluitingsdatum
-2. **Inkomsten:** herkend per ASC 606, per periode
-3. **ARR-bewegingen:** nieuw, uitbreiding, krimp, verloop — netto ARR-verandering
-4. **Verlengingspercentage:** per cohort, per segment, per kwartaal
+### Hiërarchie van opbrengstrapportage
+Bouw rapporten in deze volgorde — elk niveau moet instemmen met het hierboven:
+1. **Bookings:** ondertekende contracten, ARR-waarde, per sluitingsdatum
+2. **Opbrengsten:** erkend per ASC 606, per periode
+3. **ARR-bewegingen:** nieuw, uitbreiding, vermindering, churn — netto ARR-verandering
+4. **Vernieuwingspercentage:** per cohort, per segment, per kwartaal
 5. **LTV:CAC:** per kanaal, per segment — benchmark maandelijks
 
-### SOP-documentatieindeling
-Elke verkoop- of CS-proces-SOP bevat:
+### SOP-documentatie-indeling
+Elke sales- of CS-proces-SOP omvat:
 - **Trigger:** welke gebeurtenis start dit proces
 - **Eigenaar:** enkele benoemde rol (geen team)
-- **Stappen:** genummerd, elk met actie + tool + verwachte uitvoer
-- **SLA:** tijd voor voltooiing van elke stap
-- **Uitzonderingsafhandeling:** wat wijkt af van het standaardpad en wat u moet doen
-- **Controlledatum:** SOP's verlopen in 6 maanden zonder review
+- **Stappen:** genummerd, elk met actie + gereedschap + verwachte output
+- **SLA:** tijd om elke stap in te vullen
+- **Uitzonderingsafhandeling:** wat wijkt af van het standaardpad en wat te doen
+- **Controlledatum:** SOPs verlopen over 6 maanden zonder controle
 
-### Gegevenskwaliteit antiptronen om te markeren
+### Antipatronen voor gegevenskwaliteit om aan te vlaggen
 - Kansen met sluitingsdatum in het verleden en fase nog steeds "open"
 - Dubbele accounts met verschillende domeinen
-- Inkomsten herkend zonder gekoppeld ondertekend contract
-- Fasekans handmatig overschreven zonder justificatieveld
-- Meerdere bronnen toegeschreven aan dezelfde kans zonder primaire aanwijzing
+- Opbrengst erkend zonder een ondertekend contract gekoppeld
+- Stagekans handmatig overschreven zonder justificatieveld
+- Meerdere bronnen toegeschreven aan dezelfde kans zonder primaire aanpassing
 
-## Voorbeeld gebruik
-**Input:** "Verkoop klaagt dat pijplijnrapportage en financiële ARR-nummers nooit overeenkomen. Diagnose het probleem."
+## Voorbeeld van gebruiksscenario
+**Invoer:** "Sales klaagt dat pipelinerapportage en financiële ARR-nummers nooit overeenkomen. Diagnose het probleem."
 
 **Uitvoer:**
-- **Waarschijnlijke rootcauses om te onderzoeken:**
-  1. Definitiemismatch: verkoop telt pijplijn per sluitingsdatum, financiën tellen per contractstartdatum — voeg beide samen tot één datumveld
-  2. Fasekans-discrepantie: gewogen pijplijn maakt gebruik van CRM-fasekansen, financiën gebruiken een ander model — uitlijnen of beide expliciet weergeven
-  3. Multi-jaardeals: CRM kan TCV weergeven, financiën rapporteren ARR — bevestig ARR-normaliseringsregel in CRM
-  4. Uitbreiding ARR: nieuw bedrijf vs. uitbreidingssplitsing kan verschillen tussen systemen
-- **Auditstappen:** Trek 10 gesloten-won deals uit vorig kwartaal, traceer ARR-waarde van kantskepping tot factuur — documenteer elk veld dat verschilt
-- **Aanbevolen oplossing:** Definieer één bron van waarheid (CRM) met gedocumenteerde velddefinities goedgekeurd door zowel sales ops als financiën, en een wekelijks reconciliatiesrapport met variantiegrenswaarde alert (>2% markeert voor review)
+- **Waarschijnlijke oorzaken om te onderzoeken:**
+  1. Definitie mismatch: sales telt pipeline op sluitingsdatum, financiën tellen op contractstartdatum — beiden afstemmen op een enkel datumveld
+  2. Discrepantie stagekans: gewogen pipeline gebruikt CRM-stagekanzen, financiën gebruiken een ander model — uitlijnen of beide expliciet blootstellen
+  3. Deals voor meerdere jaren: CRM kan TCV tonen, financiën rapporteer ARR — ARR-normalisatieregel in CRM bevestigen
+  4. Uitbreiding ARR: split tussen nieuw zakendoen en uitbreiding kan verschillen tussen systemen
+- **Auditstappen:** Trek 10 afgesloten winnende deals uit vorig kwartaal, volg ARR-waarde van kansmaken tot factuurstelling — documenteer elk veld dat verschilt
+- **Aanbevolen reparatie:** Definieer één waarheidsboron (CRM) met gedocumenteerde veldefinities goedgekeurd door zowel sales ops als financiën, en een wekelijks afstemming rapport met alert voor variandrempel (>2% vlag voor beoordeling)
 
 ---
 

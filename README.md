@@ -434,6 +434,9 @@ Claudient/
 | `/hubspot` | CRM automation via the official HubSpot MCP server | GTM |
 | `/rag-architect` | Chunking strategy, embeddings, retrieval, reranking, eval | AI Engineering |
 | `/kubernetes-architect` | K8s manifests, Helm charts, HPA, NetworkPolicy, RBAC | DevOps |
+| `/smart-contract-audit` | Solidity security audit — reentrancy, access control, oracles | Blockchain/Web3 |
+| `/unity-csharp` | Unity DOTS/ECS, MonoBehaviour, ScriptableObjects | Game Dev |
+| `/firmware-architecture` | HAL, drivers, memory layout for embedded systems | Embedded/IoT |
 
 ---
 

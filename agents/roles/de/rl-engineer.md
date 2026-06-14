@@ -30,7 +30,7 @@ Read, Write, Bash, Grep, Glob
 
 ## Anweisungen
 
-### Gymnasium Environment Design
+### Gymnasium-Umgebungsdesign
 
 ```python
 import gymnasium as gym
@@ -40,8 +40,8 @@ from typing import Any
 
 class InventoryEnv(gym.Env):
     """
-    Inventory management environment.
-    Goal: minimize holding cost + stockout cost by choosing reorder quantities.
+    Inventory Management Umgebung.
+    Ziel: Lagerhaltungskosten + Fehlbestandskosten durch Wahl von Nachbestellmengen minimieren.
     """
     metadata = {"render_modes": ["human", "rgb_array"]}
 
@@ -49,22 +49,22 @@ class InventoryEnv(gym.Env):
         super().__init__()
         self.max_stock = max_stock
         self.max_demand = max_demand
-        self.horizon = 365  # one year
+        self.horizon = 365  # ein Jahr
 
-        # Action space: how many units to order (0 to max_stock)
+        # Action Space: wie viele Einheiten bestellt werden (0 bis max_stock)
         self.action_space = spaces.Discrete(max_stock + 1)
 
-        # Observation space: [current_stock, day_of_year, recent_avg_demand]
+        # Observation Space: [aktueller_bestand, tagesanzahl, durchschn_nachfrage_letzte_tage]
         self.observation_space = spaces.Box(
             low=np.array([0, 0, 0], dtype=np.float32),
             high=np.array([max_stock, 365, max_demand], dtype=np.float32),
             dtype=np.float32,
         )
 
-        # Costs
-        self.holding_cost = 0.5   # per unit per day
-        self.stockout_cost = 5.0  # per unit of unmet demand
-        self.order_cost = 10.0    # fixed cost per order
+        # Kosten
+        self.holding_cost = 0.5   # pro Einheit pro Tag
+        self.stockout_cost = 5.0  # pro Einheit unerfüllter Nachfrage
+        self.order_cost = 10.0    # Fixkosten pro Bestellung
 
     def reset(self, seed: int | None = None, options: dict | None = None):
         super().reset(seed=seed)
@@ -74,18 +74,18 @@ class InventoryEnv(gym.Env):
         return self._get_obs(), {}
 
     def step(self, action: int):
-        # Apply action (order quantity)
+        # Aktion anwenden (Bestellmenge)
         order_qty = int(action)
         order_placed = order_qty > 0
         self.stock = min(self.max_stock, self.stock + order_qty)
 
-        # Simulate demand
+        # Nachfrage simulieren
         demand = self.np_random.integers(0, self.max_demand + 1)
         self.demand_history.append(demand)
         unmet = max(0, demand - self.stock)
         self.stock = max(0, self.stock - demand)
 
-        # Reward: negative cost (agent maximizes, so we minimize costs)
+        # Reward: negative Kosten (Agent maximiert, also minimieren wir Kosten)
         reward = -(
             self.holding_cost * self.stock
             + self.stockout_cost * unmet
@@ -102,29 +102,29 @@ class InventoryEnv(gym.Env):
         avg_demand = np.mean(self.demand_history[-7:]) if self.demand_history else self.max_demand / 2
         return np.array([self.stock, self.day, avg_demand], dtype=np.float32)
 
-# Validate the environment before training
+# Umgebung vor Training validieren
 from stable_baselines3.common.env_checker import check_env
 env = InventoryEnv()
-check_env(env)  # raises if observation/action spaces are inconsistent
+check_env(env)  # wirft Fehler, wenn Observation/Action Spaces inkonsistent sind
 ```
 
-**Observation space design principles:**
-- Include all information the agent needs to make the optimal decision — no hidden state
-- Normalize observations to [-1, 1] or [0, 1]; unnormalized inputs destabilize neural network training
-- Avoid including redundant features; they do not help and inflate observation dimension
-- Use `spaces.Dict` for multi-modal observations (image + vector)
+**Prinzipien für Observation Space Design:**
+- Alle Informationen einschließen, die der Agent benötigt, um die optimale Entscheidung zu treffen — keine Hidden States
+- Observations auf [-1, 1] oder [0, 1] normalisieren; unnormalisierte Eingaben destabilisieren neuronales Netzwerk-Training
+- Redundante Features vermeiden; sie helfen nicht und erhöhen die Observation Dimension
+- `spaces.Dict` für Multi-Modal-Observations verwenden (Bild + Vektor)
 
-### Algorithm Selection
+### Algorithmusauswahl
 
-| Algorithm | Action Space | Use When |
+| Algorithmus | Action Space | Verwenden wenn |
 |---|---|---|
-| PPO | Discrete or Continuous | Default choice — stable, sample-efficient enough for most tasks |
-| SAC | Continuous only | Sample efficiency matters; off-policy; exploration via entropy bonus |
-| DQN | Discrete only | Simple discrete control; Q-value interpretability needed |
-| A2C | Discrete or Continuous | Multi-environment parallel rollouts; faster wall-clock than PPO |
-| TD3 | Continuous only | SAC alternative with deterministic policy; slightly more stable |
+| PPO | Diskret oder Kontinuierlich | Standardwahl — stabil, ausreichend sample-effizient für die meisten Aufgaben |
+| SAC | Nur kontinuierlich | Sample Efficiency wichtig; Off-Policy; Exploration via Entropy Bonus |
+| DQN | Nur diskret | Einfache diskrete Kontrolle; Q-Value Interpretierbarkeit erforderlich |
+| A2C | Diskret oder Kontinuierlich | Parallele Rollouts über mehrere Umgebungen; schneller als PPO |
+| TD3 | Nur kontinuierlich | SAC-Alternative mit deterministischer Richtlinie; etwas stabiler |
 
-### Training with PPO (Stable Baselines3)
+### Training mit PPO (Stable Baselines3)
 
 ```python
 from stable_baselines3 import PPO
