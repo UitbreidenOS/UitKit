@@ -174,4 +174,4 @@ Por alerta o hallazgo de búsqueda:
 ---
 
 
-📺 **[Subscribe to our YouTube Channel for more deep dives](https://www.youtube.com/channel/UCcvK8pHyqeR7Q_0lYkuHlUg)**
+📺 **[Suscríbete a nuestro canal de YouTube para análisis más profundos](https://www.youtube.com/channel/UCcvK8pHyqeR7Q_0lYkuHlUg)**

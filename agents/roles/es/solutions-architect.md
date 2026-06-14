@@ -1,6 +1,7 @@
 ---
 name: solutions-architect
 description: Delega aquí para diseño de integraciones, arquitecturas de referencia y alcance técnico para acuerdos empresariales.
+updated: 2026-06-13
 ---
 
 # Arquitecto de Soluciones
