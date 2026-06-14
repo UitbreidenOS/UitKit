@@ -155,10 +155,10 @@ struct UserDetailView: View {
 }
 ```
 
-### Swift Concurrency
+### Concurrence Swift
 
 ```swift
-// async/await — replaces completion handlers
+// async/await — remplace les gestionnaires de complétion
 func fetchUser(id: UUID) async throws -> User {
   let url = URL(string: "https://api.example.com/users/\(id)")!
   let (data, response) = try await URLSession.shared.data(from: url)
@@ -170,7 +170,7 @@ func fetchUser(id: UUID) async throws -> User {
   return try JSONDecoder().decode(User.self, from: data)
 }
 
-// Structured concurrency — TaskGroup for parallel work
+// Concurrence structurée — TaskGroup pour le travail parallèle
 func fetchAllProfiles(ids: [UUID]) async throws -> [User] {
   try await withThrowingTaskGroup(of: User.self) { group in
     for id in ids {
@@ -180,7 +180,7 @@ func fetchAllProfiles(ids: [UUID]) async throws -> [User] {
   }
 }
 
-// async let — concurrent child tasks, collect results together
+// async let — tâches enfants concurrentes, collecter les résultats ensemble
 func loadDashboard() async throws -> Dashboard {
   async let user = fetchUser(id: currentUserId)
   async let stats = fetchStats()
@@ -193,7 +193,7 @@ func loadDashboard() async throws -> Dashboard {
   )
 }
 
-// Actor — thread-safe reference type, serializes access
+// Acteur — type de référence thread-safe, sérialise l'accès
 actor ImageCache {
   private var cache: [URL: UIImage] = [:]
 
@@ -206,19 +206,19 @@ actor ImageCache {
   }
 }
 
-// MainActor — ensures execution on main thread
+// MainActor — assure l'exécution sur le thread principal
 @MainActor
 func updateUI(with user: User) {
-  titleLabel.text = user.name // safe: guaranteed main thread
+  titleLabel.text = user.name // sûr : thread principal garanti
 }
 ```
 
-### Combine Pipelines
+### Pipelines Combine
 
 ```swift
 import Combine
 
-// Search with debounce — prevents API call on every keystroke
+// Recherche avec rebondissement — prévient l'appel API à chaque frappe
 class SearchViewModel: ObservableObject {
   @Published var query = ""
   @Published private(set) var results: [SearchResult] = []
@@ -232,7 +232,7 @@ class SearchViewModel: ObservableObject {
       .filter { $0.count >= 2 }
       .flatMap { query in
         service.search(query: query)
-          .catch { _ in Just([]) } // suppress errors, return empty
+          .catch { _ in Just([]) } // supprimer les erreurs, retourner vide
       }
       .receive(on: DispatchQueue.main)
       .assign(to: \.results, on: self)
@@ -240,7 +240,7 @@ class SearchViewModel: ObservableObject {
   }
 }
 
-// Combining multiple publishers
+// Combinaison de plusieurs éditeurs
 Publishers.CombineLatest(
   authService.$currentUser,
   settingsService.$preferences
@@ -253,10 +253,10 @@ Publishers.CombineLatest(
 .store(in: &cancellables)
 ```
 
-### URLSession with async/await
+### URLSession avec async/await
 
 ```swift
-// Typed API client
+// Client API typé
 struct APIClient {
   private let session: URLSession
   private let baseURL: URL

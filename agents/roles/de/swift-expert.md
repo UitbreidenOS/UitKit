@@ -218,7 +218,7 @@ func updateUI(with user: User) {
 ```swift
 import Combine
 
-// Search with debounce — prevents API call on every keystroke
+// Suche mit Debounce — verhindert API-Aufruf bei jedem Tastendruck
 class SearchViewModel: ObservableObject {
   @Published var query = ""
   @Published private(set) var results: [SearchResult] = []
@@ -232,7 +232,7 @@ class SearchViewModel: ObservableObject {
       .filter { $0.count >= 2 }
       .flatMap { query in
         service.search(query: query)
-          .catch { _ in Just([]) } // suppress errors, return empty
+          .catch { _ in Just([]) } // unterdrücke Fehler, gebe leer zurück
       }
       .receive(on: DispatchQueue.main)
       .assign(to: \.results, on: self)
@@ -240,7 +240,7 @@ class SearchViewModel: ObservableObject {
   }
 }
 
-// Combining multiple publishers
+// Mehrere Publisher kombinieren
 Publishers.CombineLatest(
   authService.$currentUser,
   settingsService.$preferences
@@ -253,10 +253,10 @@ Publishers.CombineLatest(
 .store(in: &cancellables)
 ```
 
-### URLSession with async/await
+### URLSession mit async/await
 
 ```swift
-// Typed API client
+// Typed API Client
 struct APIClient {
   private let session: URLSession
   private let baseURL: URL
@@ -304,10 +304,10 @@ struct APIClient {
 }
 ```
 
-### Core Data with CloudKit Sync
+### Core Data mit CloudKit Sync
 
 ```swift
-// Persistence controller
+// Persistence Controller
 class PersistenceController {
   static let shared = PersistenceController()
 
@@ -339,7 +339,7 @@ class PersistenceController {
   }
 }
 
-// Fetch with SwiftUI
+// Fetch mit SwiftUI
 struct ItemListView: View {
   @FetchRequest(
     sortDescriptors: [SortDescriptor(\.createdAt, order: .reverse)],
