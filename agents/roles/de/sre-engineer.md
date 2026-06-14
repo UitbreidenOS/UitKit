@@ -54,12 +54,12 @@ Monatliches Budget (28 Tage): 0,001 × 28 × 24 × 60 = 40,3 Minuten
 - > 75% verbraucht → Einfrieren nicht-kritischer Deployments
 - 100% verbraucht → Vollständige Incident-Response erforderlich; Post-Mortem vor Wiederaufnahme von Feature-Arbeit erforderlich
 
-### Vier goldene Signale
+### Vier Goldene Signale
 
-Instrumentieren Sie jeden Dienst gegen diese:
+Instrumentieren Sie jeden Service gegen diese:
 
 ```yaml
-# Prometheus-Aufzeichnungsregeln für goldene Signale
+# Prometheus Recording Rules für Goldene Signale
 groups:
   - name: golden_signals
     rules:
@@ -67,7 +67,7 @@ groups:
       - record: job:request_latency_seconds:p99
         expr: histogram_quantile(0.99, sum(rate(http_request_duration_seconds_bucket[5m])) by (le, job))
 
-      # Verkehr: Anfragen pro Sekunde
+      # Traffic: Anfragen pro Sekunde
       - record: job:request_rate:5m
         expr: sum(rate(http_requests_total[5m])) by (job)
 
@@ -80,25 +80,25 @@ groups:
         expr: 1 - avg(rate(node_cpu_seconds_total{mode="idle"}[5m])) by (instance)
 ```
 
-### PromQL-SLI-Beispiele
+### PromQL SLI-Beispiele
 
 ```promql
-# Verfügbarkeitts-SLI (28-Tage-Fenster)
+# Verfügbarkeits-SLI (28-Tage-Fenster)
 sum(rate(http_requests_total{status!~"5.."}[28d]))
 /
 sum(rate(http_requests_total[28d]))
 
-# Latenz-SLI — % Anfragen unter 200ms
+# Latenz-SLI — % der Anfragen unter 200ms
 sum(rate(http_request_duration_seconds_bucket{le="0.2"}[28d]))
 /
 sum(rate(http_request_duration_seconds_count[28d]))
 
-# Verbleibendes Fehlerbudget (%)
+# Verbleibendes Error Budget (%)
 (
   sum(rate(http_requests_total{status!~"5.."}[28d]))
   / sum(rate(http_requests_total[28d]))
   - 0.999  # SLO
-) / 0.001   # Fehlerbudget
+) / 0.001   # Error Budget
 * 100
 ```
 
@@ -107,33 +107,33 @@ sum(rate(http_request_duration_seconds_count[28d]))
 Jedes Runbook muss dieser Vorlage folgen:
 
 ```markdown
-# Runbook: [Dienstname] — [Alarmname]
+# Runbook: [Service-Name] — [Alert-Name]
 
 ## Schweregrad
 P1 / P2 / P3
 
-## Auslösungsbedingung
-Alarm wird ausgelöst wenn: [genaue Bedingung, z.B. Fehlerrate > 1% für 5 Minuten]
+## Trigger-Bedingung
+Alert wird ausgelöst, wenn: [genaue Bedingung, z.B. Fehlerrate > 1% für 5 Minuten]
 
-## Sofortige Maßnahmen (erste 5 Minuten)
-1. Bestätigen Sie die Benachrichtigung in PagerDuty
-2. Überprüfen Sie das [Dashboard-Link] auf aktuelle Fehlerrate, Latenz und Verkehr
-3. Überprüfen Sie aktuelle Bereitstellungen: `kubectl rollout history deployment/[name]`
+## Sofortmaßnahmen (erste 5 Minuten)
+1. Bestätigen Sie den Alert in PagerDuty
+2. Überprüfen Sie das [Dashboard-Link] auf aktuelle Fehlerrate, Latenz und Traffic
+3. Überprüfen Sie aktuelle Deployments: `kubectl rollout history deployment/[name]`
 4. Überprüfen Sie Pod-Status: `kubectl get pods -n [namespace] | grep -v Running`
 
 ## Diagnose-Schritte
-1. Überprüfen Sie Protokolle: `kubectl logs -l app=[name] --since=10m | grep ERROR`
-2. Überprüfen Sie nachgelagerte Abhängigkeiten: [listen Sie die Dienste auf, von denen diese abhängt + Health-Check-URLs]
-3. Überprüfen Sie Ressourcensättigung: `kubectl top pods -n [namespace]`
+1. Logs überprüfen: `kubectl logs -l app=[name] --since=10m | grep ERROR`
+2. Überprüfen Sie nachgelagerte Abhängigkeiten: [Liste Services, von denen dieser abhängt + Health-Check-URLs]
+3. Überprüfen Sie Ressourcen-Sättigung: `kubectl top pods -n [namespace]`
 
 ## Eskalationspfad
-- 0–5 min: On-Call-Ingenieur
-- 5–15 min: Diensteigentümer
-- 15+ min: Engineering Manager + Incident Commander
+- 0–5 Min: On-Call Engineer
+- 5–15 Min: Service-Besitzer
+- 15+ Min: Engineering Manager + Incident Commander
 
 ## Rollback-Verfahren
 ```bash
-# Zurückrollen zur vorherigen Bereitstellung
+# Rollback zur vorherigen Bereitstellung
 kubectl rollout undo deployment/[service-name] -n [namespace]
 
 # Rollback überprüfen
@@ -141,56 +141,56 @@ kubectl rollout status deployment/[service-name] -n [namespace]
 ```
 
 ## Kommunikationsvorlage
-> **[ZEIT] — [SERVICE] beeinträchtigt.** Auswirkung: [beschreiben Sie sichtbare Benutzerauswirkung]. Ingenieurwesen untersucht. Nächste Aktualisierung in 15 Minuten.
+> **[TIME] — [SERVICE] beeinträchtigt.** Auswirkung: [beschreiben Sie Auswirkungen für Benutzer]. Engineering untersucht dies. Nächstes Update in 15 Minuten.
 
 ## Nach dem Incident
-- Post-Mortem erforderlich wenn P1 oder Fehlerbudget > 50% aufgebraucht
-- Vorlage: [Link zur Post-Mortem-Vorlage]
+- Post-Mortem erforderlich, wenn P1 oder Error Budget > 50% verbraucht
+- Vorlage: [Link zu Post-Mortem-Vorlage]
 ```
 
-### Identifikation und Beseitigung von Arbeit
+### Toil-Identifikation und Eliminierung
 
-Arbeit qualifiziert sich wenn sie ALLES ist: manuell, wiederholend, automatisierbar, und skaliert O(n) mit Dienstwachstum.
+Toil qualifiziert sich, wenn es ALL davon ist: manuell, wiederholbar, automatisierbar und skaliert O(n) mit Service-Wachstum.
 
-**Arbeitsaudit-Vorlage:**
+**Toil-Audit-Vorlage:**
 ```
 Aufgabe: [Name]
-Häufigkeit: [täglich / wöchentlich / pro Bereitstellung]
+Häufigkeit: [täglich / wöchentlich / pro-Deployment]
 Zeitkosten: [Minuten pro Vorkommen]
 Automatisierbar: ja / nein
-Priorität: Hoch (>30 min/Woche) / Mittel / Niedrig
+Priorität: Hoch (>30 Min/Woche) / Mittel / Niedrig
 ```
 
-Ziel: SRE-Arbeit < 50% der Gesamtarbeitszeit. Quartalsweise messen.
+Ziel: SRE-Toil < 50% der Gesamtarbeitszeit. Vierteljährlich messen.
 
-**Häufige Arbeitsquellen und Automatisierungsansätze :**
-- Zertifikatrotation → `cert-manager` auf Kubernetes mit Auto-Renewal
-- Log-Archiv-Bereinigung → S3 Lifecycle-Policies
-- Skalierungsereignisse → HPA oder KEDA für ereignisgesteuerte Skalierung
-- Datenbankbackup-Verifikation → geplante Lambda/Cloud Function, die zu einer kurzlebigen Instanz wiederherstellt und Zeilenanzahl validiert
-- Abhängigkeitsversion-Updates → Dependabot oder Renovate Bot
+**Häufige Toil-Quellen und Automatisierungsansätze:**
+- Zertifikatsrotation → `cert-manager` auf Kubernetes mit Auto-Renewal
+- Log-Archiv-Bereinigung → S3 Lifecycle-Richtlinien
+- Skalierungsereignisse → HPA oder KEDA für ereignisgesteuerte Autoskalierung
+- Datenbank-Backup-Verifizierung → geplante Lambda/Cloud Function, die zu einer ephemeren Instanz wiederherstellt und Zeilenanzahl validiert
+- Abhängigkeits-Versionsbumps → Dependabot oder Renovate Bot
 
-### Alarm-Design-Prinzipien
+### Alerting-Design-Prinzipien
 
-Ein Alarm ist nur gültig wenn er:
-1. **Umsetzbar** ist — eine Person muss eine Entscheidung treffen, um ihn zu beheben
-2. **Dringend** ist — kann nicht bis zu Geschäftszeiten warten (für PagerDuty)
-3. **Symptomatisch** ist — Alarm auf Benutzerauswirkung, nicht auf interne Ursachen
+Ein Alert ist nur gültig, wenn es:
+1. **Umsetzbar** ist — ein Mensch muss eine Entscheidung treffen, um es zu beheben
+2. **Dringend** ist — es kann nicht bis zur Geschäftszeit warten (für PagerDuty)
+3. **Symptomatisch** ist — Alert zur Benutzerauswirkung, nicht zu internen Ursachen
 
-Alarmwichte-Matrix:
-| Schweregrad | Antwortzeit | Kanal | Definition |
+Alert-Schweregrad-Matrix:
+| Schweregrad | Reaktionszeit | Kanal | Definition |
 |---|---|---|---|
-| P1 | < 15 min MTTR | PagerDuty + Telefon | Benutzerseitige Ausfallzeit oder Fehlerbudget > 100% |
-| P2 | < 2h MTTR | PagerDuty | Erhebliche Beeinträchtigung, Fehlerbudget > 50% |
-| P3 | < 24h MTTR | Slack | Nicht dringendes Zuverlässigkeitsproblem |
+| P1 | < 15 Min MTTR | PagerDuty + Telefon | Benutzergerichteter Ausfall oder Error Budget > 100% |
+| P2 | < 2h MTTR | PagerDuty | Erhebliche Beeinträchtigung, Error Budget > 50% |
+| P3 | < 24h MTTR | Slack | Nicht-dringend Zuverlässigkeitsproblem |
 
-**Vermeidung von Alarm-Ermüdung :**
-- Jeder Alarm muss einen Eigentümer und ein verlinktes Runbook haben
-- Überprüfen Sie das Alarmvolumen monatlich — wenn Alarm > 5x/Woche ohne Maßnahme auslöst, ist es Rauschen
-- Bevorzugen Sie Multi-Fenster-Burn-Rate-Alarme gegenüber einfachen Schwellwert-Alarmen:
+**Alert-Fatigue-Vermeidung:**
+- Jeder Alert muss einen Besitzer und ein verknüpftes Runbook haben
+- Überprüfen Sie das Alert-Volumen monatlich — wenn Alert > 5x/Woche ohne Aktion ausgelöst wird, ist es Rauschen
+- Bevorzugen Sie Multi-Window Burn-Rate Alerts gegenüber einfachen Threshold-Alerts:
 
 ```yaml
-# Multi-Fenster-Burn-Rate-Alarm (brennt 2% des Monatsbudgets in 1h = 14,4x Rate)
+# Multi-Window Burn-Rate Alert (2% des monatlichen Budgets in 1h verbrennen = 14,4x Rate)
 - alert: ErrorBudgetBurnRateHigh
   expr: |
     (
@@ -202,14 +202,14 @@ Alarmwichte-Matrix:
   labels:
     severity: page
   annotations:
-    summary: "Hohe Fehlerbudget-Burn-Rate für {{ $labels.job }}"
+    summary: "Hohe Error-Budget-Burn-Rate für {{ $labels.job }}"
     runbook: "https://wiki.internal/runbooks/error-budget-burn"
 ```
 
-### Kapazitätsplanung
+### Capacity Planning
 
 ```python
-# Einfaches Kapazitätsprognosescript
+# Einfaches Capacity-Forecasting-Skript
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 import numpy as np
@@ -235,7 +235,7 @@ def forecast_capacity(metric_df, horizon_days=90):
         'projected_value': projection,
         'ci_lower': projection - 1.96 * std,
         'ci_upper': projection + 1.96 * std,
-        'days_until_saturation': None  # von Schwellwert berechnen
+        'days_until_saturation': None  # aus Schwellenwert berechnen
     }
 ```
 
