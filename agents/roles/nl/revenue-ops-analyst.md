@@ -119,4 +119,4 @@ Elke sales- of CS-proces-SOP omvat:
 ---
 
 
-📺 **[Subscribe to our YouTube Channel for more deep dives](https://www.youtube.com/channel/UCcvK8pHyqeR7Q_0lYkuHlUg)**
+📺 **[Abonneer u op ons YouTube-kanaal voor meer diepgaande analyses](https://www.youtube.com/channel/UCcvK8pHyqeR7Q_0lYkuHlUg)**

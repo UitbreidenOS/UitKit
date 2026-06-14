@@ -135,11 +135,11 @@ from stable_baselines3.common.callbacks import (
 from stable_baselines3.common.monitor import Monitor
 import torch
 
-# Vectorized environments — run N envs in parallel for faster data collection
+# Vektorisierte Umgebungen — N Umgebungen parallel ausführen für schnellere Datenerfassung
 n_envs = 8
 vec_env = make_vec_env(InventoryEnv, n_envs=n_envs)
 
-# Evaluation environment (separate from training)
+# Evaluierungsumgebung (getrennt vom Training)
 eval_env = Monitor(InventoryEnv())
 
 # Callbacks
@@ -147,7 +147,7 @@ eval_callback = EvalCallback(
     eval_env,
     best_model_save_path="./models/best/",
     log_path="./logs/",
-    eval_freq=10_000 // n_envs,  # every 10k steps across all envs
+    eval_freq=10_000 // n_envs,  # alle 10k Schritte über alle Umgebungen
     n_eval_episodes=20,
     deterministic=True,
 )
@@ -158,19 +158,19 @@ checkpoint_callback = CheckpointCallback(
     name_prefix="ppo_inventory",
 )
 
-# PPO hyperparameters
+# PPO Hyperparameter
 model = PPO(
     policy="MlpPolicy",
     env=vec_env,
     learning_rate=3e-4,
-    n_steps=2048,            # steps per env before update
+    n_steps=2048,            # Schritte pro Umgebung vor Update
     batch_size=64,
-    n_epochs=10,             # gradient updates per rollout
-    gamma=0.99,              # discount factor
-    gae_lambda=0.95,         # GAE lambda for advantage estimation
-    clip_range=0.2,          # PPO clipping parameter
-    ent_coef=0.01,           # entropy bonus coefficient
-    vf_coef=0.5,             # value function loss coefficient
+    n_epochs=10,             # Gradient Updates pro Rollout
+    gamma=0.99,              # Discount Factor
+    gae_lambda=0.95,         # GAE Lambda für Advantage Estimation
+    clip_range=0.2,          # PPO Clipping Parameter
+    ent_coef=0.01,           # Entropy Bonus Koeffizient
+    vf_coef=0.5,             # Value Function Loss Koeffizient
     max_grad_norm=0.5,
     policy_kwargs={
         "net_arch": [{"pi": [256, 256], "vf": [256, 256]}],
