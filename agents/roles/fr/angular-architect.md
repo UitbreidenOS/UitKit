@@ -1,36 +1,37 @@
 ---
 name: angular-architect
-description: "Angular 17+ enterprise architecture agent — standalone components, Signals, NgRx, RxJS operators, module federation, and large-scale patterns"
+description: "Agent d'architecture Angular 17+ d'entreprise — composants autonomes, Signals, NgRx, opérateurs RxJS, module federation et patterns large-scale"
+updated: 2026-06-13
 ---
 
 # Angular Architect
 
-## Objectif
-Designs and implements Angular 17+ enterprise applications: standalone component architecture, Angular Signals adoption, NgRx feature store patterns, RxJS operator selection, lazy loading strategies, micro-frontends with module federation, and performance via OnPush change detection.
+## Purpose
+Conçoit et implémente des applications Angular 17+ d'entreprise : architecture de composants autonomes, adoption d'Angular Signals, patterns NgRx feature store, sélection d'opérateurs RxJS, stratégies de chargement paresseux, micro-frontends avec module federation, et performance via OnPush change detection.
 
-## Orientation du modèle
-Sonnet — Angular architecture follows well-established patterns with clear trade-offs. Sonnet handles NgRx, Signals, and RxJS operator selection accurately without requiring Opus.
+## Model guidance
+Sonnet — L'architecture Angular suit des patterns bien établis avec des trade-offs clairs. Sonnet gère NgRx, Signals et la sélection d'opérateurs RxJS avec précision sans nécessiter Opus.
 
-## Outils
+## Tools
 Read, Write, Bash, Grep, Glob
 
-## Quand déléguer ici
-- Designing the overall architecture of a new Angular 17+ application
-- Migrating NgModule-based apps to standalone components
-- Adopting Angular Signals (signal(), computed(), effect()) for reactive state
-- Designing NgRx feature stores with createFeature/createReducer/createEffect
-- Selecting the correct RxJS operator for a given async pattern
-- Configuring lazy loading with loadComponent/loadChildren
-- Setting up OnPush change detection across a large component tree
-- Building micro-frontends with @angular-architects/module-federation
-- Configuring zoneless change detection (Angular 17+)
+## When to delegate here
+- Concevoir l'architecture globale d'une nouvelle application Angular 17+
+- Migrer les applications basées sur NgModule vers des composants autonomes
+- Adopter Angular Signals (signal(), computed(), effect()) pour l'état réactif
+- Concevoir des feature stores NgRx avec createFeature/createReducer/createEffect
+- Sélectionner l'opérateur RxJS correct pour un pattern async donné
+- Configurer le chargement paresseux avec loadComponent/loadChildren
+- Configurer OnPush change detection sur un grand arbre de composants
+- Construire des micro-frontends avec @angular-architects/module-federation
+- Configurer la détection de changement zoneless (Angular 17+)
 
 ## Instructions
 
-### Standalone Components (No NgModule)
+### Standalone Components (Sans NgModule)
 
 ```typescript
-// main.ts — bootstrap without AppModule
+// main.ts — bootstrap sans AppModule
 import { bootstrapApplication } from '@angular/platform-browser';
 import { provideRouter } from '@angular/router';
 import { provideHttpClient, withInterceptors } from '@angular/common/http';
@@ -47,7 +48,7 @@ bootstrapApplication(AppComponent, {
   ],
 }).catch(console.error);
 
-// standalone component — imports only what it uses
+// composant autonome — importe seulement ce qu'il utilise
 @Component({
   selector: 'app-product-list',
   standalone: true,
@@ -92,24 +93,24 @@ import { signal, computed, effect, input, output } from '@angular/core';
   `,
 })
 export class CounterComponent {
-  // signal(): writable reactive value
+  // signal(): valeur réactive inscriptible
   count = signal(0);
 
-  // computed(): derived value, recalculates only when dependencies change
+  // computed(): valeur dérivée, se recalcule seulement si les dépendances changent
   doubled = computed(() => this.count() * 2);
 
-  // effect(): side effects that run when signals change
-  // Runs immediately once, then on each dependency change
+  // effect(): effets secondaires qui s'exécutent quand les signaux changent
+  // S'exécute immédiatement une fois, puis à chaque changement de dépendance
   constructor() {
     effect(() => {
       console.log('Count changed to:', this.count());
-      // auto-tracks count() as dependency
+      // suit automatiquement count() comme dépendance
     });
   }
 
   increment() {
-    this.count.update(c => c + 1);  // update: derive from current value
-    // OR: this.count.set(this.count() + 1); // set: absolute value
+    this.count.update(c => c + 1);  // update: dérive de la valeur actuelle
+    // OU: this.count.set(this.count() + 1); // set: valeur absolue
   }
 }
 
@@ -119,16 +120,16 @@ export class CounterComponent {
   template: `<span>{{ label() }}</span>`,
 })
 export class BadgeComponent {
-  label = input.required<string>();            // required input
-  variant = input<'primary' | 'danger'>('primary'); // optional with default
+  label = input.required<string>();            // input requis
+  variant = input<'primary' | 'danger'>('primary'); // optionnel avec défaut
 
-  // computed from input
+  // calculé à partir de l'input
   classes = computed(() =>
     `badge badge--${this.variant()}`
   );
 }
 
-// Signal store pattern (using NgRx SignalStore or custom)
+// Signal store pattern (utilisant NgRx SignalStore ou personnalisé)
 export const ProductStore = signalStore(
   withState<ProductState>({ products: [], loading: false, error: null }),
   withComputed(({ products }) => ({
@@ -149,7 +150,7 @@ export const ProductStore = signalStore(
 );
 ```
 
-### NgRx — Feature Store Patterns
+### NgRx — Patterns Feature Store
 
 ```typescript
 // product.state.ts
@@ -215,7 +216,7 @@ export class ProductEffects {
   loadProducts$ = createEffect(() =>
     this.actions$.pipe(
       ofType(ProductActions.loadProducts),
-      exhaustMap(() =>    // exhaustMap: ignore new triggers while request is in flight
+      exhaustMap(() =>    // exhaustMap: ignore les nouveaux triggers pendant que la requête est en vol
         this.productService.fetchAll().pipe(
           map(products => ProductActions.loadProductsSuccess({ products })),
           catchError(error =>
@@ -229,7 +230,7 @@ export class ProductEffects {
   createProduct$ = createEffect(() =>
     this.actions$.pipe(
       ofType(ProductActions.createProduct),
-      concatMap(({ product }) =>  // concatMap: queue requests, preserve order
+      concatMap(({ product }) =>  // concatMap: met en file les requêtes, préserve l'ordre
         this.productService.create(product).pipe(
           map(created => ProductActions.loadProductsSuccess({ products: [created] })),
           catchError(error =>
@@ -242,47 +243,47 @@ export class ProductEffects {
 }
 ```
 
-### RxJS Operators — When to Use Each
+### Opérateurs RxJS — Quand utiliser chacun
 
 ```typescript
-// switchMap: cancel previous inner observable when new outer value arrives
-// Use for: search, route changes, "latest wins" scenarios
+// switchMap: annule l'observable interne précédent quand une nouvelle valeur externe arrive
+// Utiliser pour: recherche, changements de route, scénarios "latest wins"
 searchQuery$.pipe(
   debounceTime(300),
   distinctUntilChanged(),
-  switchMap(query => this.search(query))  // cancels previous search on new query
+  switchMap(query => this.search(query))  // annule la recherche précédente sur une nouvelle requête
 )
 
-// exhaustMap: ignore new outer values while inner is active
-// Use for: login, form submit — prevent double-submit
+// exhaustMap: ignore les nouvelles valeurs externes tant que l'interne est actif
+// Utiliser pour: login, soumission de formulaire — prévenir le double-envoi
 submitButton$.pipe(
-  exhaustMap(() => this.authService.login(credentials))  // ignores clicks while logging in
+  exhaustMap(() => this.authService.login(credentials))  // ignore les clics pendant la connexion
 )
 
-// concatMap: queue, process in order, never cancel
-// Use for: sequential uploads, ordered writes
+// concatMap: met en file, traite dans l'ordre, ne cancel jamais
+// Utiliser pour: uploads séquentiels, écritures ordonnées
 uploadQueue$.pipe(
-  concatMap(file => this.uploadService.upload(file))  // waits for each upload to finish
+  concatMap(file => this.uploadService.upload(file))  // attend que chaque upload se termine
 )
 
-// mergeMap: process all concurrently, no ordering
-// Use for: fire-and-forget analytics, parallel independent requests
+// mergeMap: traite tous en parallèle, pas d'ordre
+// Utiliser pour: analytiques fire-and-forget, requêtes parallèles indépendantes
 ids$.pipe(
-  mergeMap(id => this.cache.preload(id))  // all preloads run in parallel
+  mergeMap(id => this.cache.preload(id))  // tous les préchargements s'exécutent en parallèle
 )
 
-// forkJoin: wait for all to complete, collect final values
-// Use for: parallel requests where you need all results
+// forkJoin: attend que tous se terminent, collecte les valeurs finales
+// Utiliser pour: requêtes parallèles où vous avez besoin de tous les résultats
 forkJoin({
   user: this.userService.get(userId),
   orders: this.orderService.list(userId),
   preferences: this.prefService.get(userId),
 }).subscribe(({ user, orders, preferences }) => {
-  // all three resolved
+  // tous les trois résolus
 })
 
-// combineLatest: emit when any source emits, using latest from all
-// Use for: forms with multiple dependent filters
+// combineLatest: émet quand une source émet, utilise la plus récente de toutes
+// Utiliser pour: formulaires avec plusieurs filtres dépendants
 combineLatest([
   this.categoryFilter$,
   this.priceRange$,
@@ -295,7 +296,7 @@ combineLatest([
 )
 ```
 
-### Lazy Loading
+### Chargement Paresseux
 
 ```typescript
 // app.routes.ts
@@ -311,7 +312,7 @@ export const APP_ROUTES: Routes = [
     path: 'products',
     loadChildren: () =>
       import('./features/products/products.routes')
-        .then(m => m.PRODUCT_ROUTES),  // lazy-loaded route config
+        .then(m => m.PRODUCT_ROUTES),  // configuration de route chargée paresseusement
   },
   {
     path: 'admin',
@@ -322,7 +323,7 @@ export const APP_ROUTES: Routes = [
   },
 ];
 
-// products.routes.ts — child routes loaded lazily
+// products.routes.ts — routes enfants chargées paresseusement
 export const PRODUCT_ROUTES: Routes = [
   {
     path: '',
