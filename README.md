@@ -1,6 +1,6 @@
 # Claude Code Skills, Agents & Plugins — Claudient
 
-**Claudient** is the largest open-source knowledge base for **Claude Code** — Anthropic's AI coding CLI. It ships 380+ domain skills, 182+ specialist agents, 100+ slash commands, hooks, and workflows, all installable in 30 seconds. No stack re-explaining. Claude already knows your domain.
+**Claudient** is the largest open-source knowledge base for **Claude Code** — Anthropic's AI coding CLI. It ships 384+ domain skills, 182+ specialist agents, 43 pre-wired workspace stacks, 40 MCP configs, 100+ slash commands, hooks, and workflows, all installable in 30 seconds. No stack re-explaining. Claude already knows your domain.
 
 **New to Claude Code?** Claude Code is Anthropic's official command-line AI assistant for software development — it reads your codebase, runs commands, edits files, and completes tasks autonomously inside your terminal or IDE. Claudient is the open-source community library that extends it with expert-level skills across every stack and domain.
 
@@ -9,19 +9,19 @@
 [![GitHub Stars](https://img.shields.io/github/stars/Claudient/Claudient?color=f97316&label=stars)](https://github.com/Claudient/Claudient)
 [![License: AGPL-3.0](https://img.shields.io/badge/code-AGPL--3.0-3b82f6.svg)](LICENSE-CODE)
 [![Content License: CC-BY-SA-4.0](https://img.shields.io/badge/content-CC--BY--SA--4.0-ec4899.svg)](LICENSE-CONTENT)
-[![Skills](https://img.shields.io/badge/skills-380+-f97316)](#skills-by-category)
+[![Skills](https://img.shields.io/badge/skills-384+-f97316)](#skills-by-category)
 [![Agents](https://img.shields.io/badge/agents-182+-ec4899)](#agents)
 [![Commands](https://img.shields.io/badge/commands-100+-a855f7)](#slash-commands)
 [![Plugins](https://img.shields.io/badge/plugin_marketplace-19_plugins-22c55e)](#install-as-a-claude-code-plugin)
 [![Claude for Small Business](https://img.shields.io/badge/small_business-30+_skills-06b6d4)](#claude-for-small-business)
-[![MCP](https://img.shields.io/badge/MCP_configs-31+-8b5cf6)](#top-100-mcp-servers)
+[![MCP](https://img.shields.io/badge/MCP_configs-40-8b5cf6)](#top-100-mcp-servers)
 [![Languages](https://img.shields.io/badge/languages-EN%20FR%20DE%20NL%20ES-3b82f6)](#translations)
 [![Reddit](https://img.shields.io/badge/Reddit-r%2Fuitbreiden-FF4500?logo=reddit&logoColor=white)](https://www.reddit.com/r/uitbreiden/)
 [![YouTube](https://img.shields.io/badge/YouTube-%40UITBREIDEN-FF0000?logo=youtube&logoColor=white)](https://www.youtube.com/@UITBREIDEN)
 
 **Stop explaining your stack to Claude every session.**
 
-Claudient is the largest open-source knowledge base for **Claude Code** — 380+ skills, 182+ specialist agents, 100+ slash commands, 100+ guides, 40 hooks, 45 workflows, 82 project structures, 10 personas, 32 rules, 20 annotated CLAUDE.md examples, cross-harness adapters (Cursor/Windsurf/Codex/Gemini/Copilot), plus output styles, themes, statuslines, keybindings, settings templates, routines, and an Agent SDK pack — all installable in 30 seconds.
+Claudient is the largest open-source knowledge base for **Claude Code** — 384+ skills, 182+ specialist agents, 100+ slash commands, 100+ guides, 40 hooks, 45 workflows, 83 project structures, 43 workspace stacks, 10 personas, 32 rules, 40 MCP server configs, 10 automation routines, 20 annotated CLAUDE.md examples, cross-harness adapters (Cursor/Windsurf/Codex/Gemini/Copilot), plus output styles, themes, statuslines, keybindings, settings templates, and an Agent SDK pack — all installable in 30 seconds.
 
 ```bash
 # Install as a Claude Code plugin marketplace (recommended)
@@ -86,7 +86,7 @@ Claudient covers every primitive Claude Code supports, not just skills:
 | **Keybindings** | 4 presets — vim, emacs, ergonomic, power-user | merge into `~/.claude/keybindings.json` |
 | **Settings templates** | 5 starters — solo-dev, team, security-hardened, enterprise, minimal | drop into `.claude/settings.json` |
 | **Hooks** | 40 across all 2026 events — including new `http`, `prompt`, and `agent` hook types | see [`hooks/`](hooks/) |
-| **Routines** | 4 scheduled cloud-agent templates — daily-standup, pr-triage, dependency-audit, incident-watch | see [`routines/`](routines/) |
+| **Routines** | 10 scheduled cloud-agent templates — daily-standup, pr-triage, dependency-audit, incident-watch, weekly-retro, sprint-planning, code-review-rotation, security-scan, changelog-generator, cost-audit | see [`routines/`](routines/) |
 | **Computer-use skills** | 4 — ui-testing, visual-qa, legacy-app-automation, screenshot-verify | `/plugin install` or copy |
 | **CLAUDE.md gallery** | 20 annotated real-world templates — Next.js SaaS, FastAPI, monorepo, CLI tool, dbt, mobile, OSS library, k8s, small business, legal, fintech, game dev, embedded, and more | see [`claude-md-examples/`](claude-md-examples/) |
 | **Cross-harness adapters** | Use Claudient in Cursor, Windsurf, Codex CLI, Gemini Code Assist, GitHub Copilot — adapter guides + install script | see [`compatibility/`](compatibility/) |
@@ -125,7 +125,7 @@ Install: `/plugin install claudient-commands@claudient` or copy [`commands/`](co
 |---|---|---|
 | **Domain context** | Re-explain your stack every session | Skills activate automatically |
 | **Specialist tasks** | Claude guesses at best practices | 182+ expert agents with scoped tools |
-| **Tool integrations** | Manual copy-paste between tools | 31 MCP server configs ready to install |
+| **Tool integrations** | Manual copy-paste between tools | 40 MCP server configs ready to install |
 | **Event automation** | Manual triggers, forgotten steps | 40 hooks that fire on the right events |
 | **Team / language** | English only, one-size config | 5 languages, composable per project |
 | **Small business** | Generic AI advice | 30+ vertical skills for real workflows |
@@ -138,7 +138,11 @@ Install: `/plugin install claudient-commands@claudient` or copy [`commands/`](co
 
 | You are... | You get... |
 |---|---|
-| **Developer / vibe coder** | Skills for Next.js, FastAPI, Rust, Go, Drizzle, tRPC, Docker, k8s, Terraform, and 200+ more stacks — activate with a slash command |
+| **Developer / vibe coder** | Skills for Next.js, FastAPI, Rust, Go, Drizzle, tRPC, Docker, k8s, Terraform, Unity, Flutter, Solidity, and 200+ more stacks — activate with a slash command |
+| **Mobile developer** | React Native/Expo, Flutter, SwiftUI, Jetpack Compose, push notifications, offline-first, app store deployment |
+| **Game developer** | Unity C#, Unreal C++, Godot GDScript, game networking, physics, level design, performance profiling |
+| **Embedded/IoT engineer** | Firmware architecture, RTOS, BLE, sensor integration, low-power design, OTA updates |
+| **Web3 builder** | Smart contract audit, DeFi protocols, NFT marketplaces, DAO governance, gas optimization |
 | **AI product builder** | RAG Architect, LangGraph, Prompt Engineering, LLM Eval, MCP Server Builder, Claude API patterns with prompt caching |
 | **GTM / RevOps engineer** | HubSpot MCP, SDR Agent, Lead Enrichment, CRM Hygiene, Email Automation, Deal Desk |
 | **Finance / Legal professional** | DCF models, 3-statement models, IC memos, contract review, GDPR, SOC 2, EU AI Act — with mandatory human review gates |
@@ -156,7 +160,7 @@ Claude Code is Anthropic's official command-line AI assistant for software devel
 Skills are markdown files in `.claude/commands/` (or loaded via the plugin system) that define reusable expert behaviors. When triggered by a slash command or keywords, Claude Code reads the skill and applies its domain expertise to your current context — no repeated prompting required.
 
 ### How is Claudient different from writing a CLAUDE.md file?
-A `CLAUDE.md` sets project-level context for one repo. Claudient skills are domain-level and reusable across every project — 380+ skills covering FastAPI, Kubernetes, HubSpot, React, Terraform, and hundreds more stacks.
+A `CLAUDE.md` sets project-level context for one repo. Claudient skills are domain-level and reusable across every project — 384+ skills covering FastAPI, Kubernetes, HubSpot, React, Terraform, and hundreds more stacks.
 
 ### Does Claudient work with Cursor, GitHub Copilot, or other AI coding tools?
 Claudient is designed for Claude Code (CLI and IDE extensions). Cross-harness adapters in [`compatibility/`](compatibility/) also support Cursor, Windsurf, Codex CLI, Gemini Code Assist, and GitHub Copilot.
@@ -199,6 +203,75 @@ Run `npx claudient add all` to install everything, or use the Claude Code plugin
 | Healthcare Admin | `npx claudient add skills small-business` | uses existing skills — no dedicated guide yet |
 
 Each pack includes: domain-specific slash commands, a curated agent roster, a daily workflow, a 30-day ramp plan, and tool integration configs.
+
+---
+
+## Workspace Stacks — 43 Pre-Wired Domain Workspaces
+
+Complete workspace stacks with a `CLAUDE.md`, 8 skills, and project structure — each designed for a specific role or domain. Drop a stack into your project and Claude immediately has domain expertise.
+
+### Engineering & Infrastructure
+
+| Stack | Domain | Skills |
+|---|---|---|
+| `fullstack_developer_stack` | Full-stack web development | 8 |
+| `frontend_engineer_stack` | React, Vue, Angular, Svelte | 8 |
+| `api_developer_stack` | API design, OpenAPI, auth, webhooks | 8 |
+| `devops_platform_stack` | Kubernetes, Terraform, CI/CD, IaC | 8 |
+| `sre_stack` | SLOs, error budgets, incident response | 8 |
+| `security_engineer_stack` | Pen testing, compliance, threat modeling | 8 |
+| `database_admin_stack` | Query optimization, migrations, backups | 8 |
+| `mobile_developer_stack` | React Native, Flutter, SwiftUI, Compose | 8 |
+| `game_developer_stack` | Unity, Unreal, Godot, networking, physics | 8 |
+| `embedded_iot_stack` | Firmware, RTOS, BLE, OTA updates | 8 |
+| `blockchain_web3_stack` | Smart contracts, DeFi, NFTs, DAOs | 8 |
+
+### Data & AI
+
+| Stack | Domain | Skills |
+|---|---|---|
+| `data_engineer_stack` | dbt, Spark, Airflow, data pipelines | 8 |
+| `mlai_engineer_stack` | ML models, training, deployment, MLOps | 8 |
+| `analytics_engineer_stack` | BI, dashboards, metrics, experimentation | 8 |
+
+### Business & GTM
+
+| Stack | Domain | Skills |
+|---|---|---|
+| `founder_ceo_stack` | Strategy, fundraising, team building | 8 |
+| `finance_cfo_stack` | Financial modeling, unit economics, reporting | 8 |
+| `gtm_engineer_stack` | HubSpot, CRM, revenue ops, analytics | 8 |
+| `content_marketing_stack` | SEO, content strategy, copywriting | 8 |
+| `customer_success_stack` | Retention, NRR, onboarding, health scores | 8 |
+| `sales_operations_stack` | Pipeline, forecasting, deal desk | 8 |
+| `product_manager_stack` | Discovery, roadmaps, experiments | 8 |
+| `growth_engineer_stack` | Experimentation, A/B testing, growth loops | 8 |
+| `brand_manager_stack` | Brand strategy, positioning, guidelines | 8 |
+
+### Operations & Support
+
+| Stack | Domain | Skills |
+|---|---|---|
+| `operations_manager_stack` | Process optimization, SOPs, vendor management | 8 |
+| `user_research_stack` | Study design, interviews, synthesis | 8 |
+| `hr_people_operations_stack` | HR workflows, people analytics | 8 |
+| `qa_testing_engineer_stack` | Test strategy, automation, quality | 8 |
+| `technical_writer_stack` | Documentation, API docs, style guides | 8 |
+| `legal_operations_stack` | Contract management, compliance | 8 |
+| `podcast_producer_stack` | Episode production, distribution | 8 |
+| `newsletter_writer_stack` | Newsletter writing, growth | 8 |
+| `youtube_creator_stack` | Video production, SEO, growth | 8 |
+| `investor_vc_stack` | Deal flow, due diligence, portfolio | 8 |
+| `recruiter_ta_stack` | Sourcing, screening, onboarding | 8 |
+| `ecommerce_operator_stack` | Shopify, marketplace, inventory | 8 |
+| `b2b_consultant_stack` | Client management, proposals | 8 |
+| `ai_sdr_stack` | AI-powered SDR workflows | 8 |
+| `community_manager_stack` | Community engagement, moderation | 8 |
+
+```bash
+# Install a complete workspace stack
+npx claudient add all   # includes all 43 stacks
+```
 
 ---
 
@@ -260,10 +333,10 @@ Claudient/
 │   ├── claudient-personas/         # 10 personas
 │   └── claudient-everything/       # meta-bundle (all domains)
 │
-├── skills/                   # 380+ auto-invoking domain skills
+├── skills/                   # 384+ auto-invoking domain skills
 │   ├── backend/              # Next.js, FastAPI, Go, Rust, .NET, Rails, Laravel, Flutter
 │   ├── devops-infra/         # Kubernetes, Terraform, Docker, CI/CD, AWS/GCP/Azure, Helm
-│   ├── ai-engineering/       # Claude API, RAG, LangGraph, MCP builder, evals, prompt caching
+│   ├── ai-engineering/       # Claude API, RAG, LangGraph, MCP builder, Agent Teams, Ultraplan
 │   ├── data-ml/              # dbt, Spark, Kafka, MLOps, PyTorch, Pandas/Polars
 │   ├── database/             # Drizzle, Prisma, PostgreSQL, Supabase, Redis, Elasticsearch
 │   ├── gtm/                  # HubSpot, SDR, email automation, CRM hygiene, deal desk
@@ -322,15 +395,15 @@ Claudient/
 ├── rules/                    # 32 always-follow guideline files
 │   ├── common/               # Language-agnostic coding and workflow principles
 │   └── language-specific/    # Per-language style rules
-├── mcp/                      # 31+ MCP server config guides
-│   └── configs/              # Ready-to-use JSON configs (GitHub, Postgres, and more)
+├── mcp/                      # 40 MCP server config guides
+│   └── configs/              # Ready-to-use JSON configs (GitHub, Postgres, Redis, Kafka, Docker, and more)
 ├── personas/                 # 10 operating profiles
 ├── output-styles/            # 8 output style definitions
 ├── themes/                   # 10 UI themes (Dracula, Nord, Tokyo Night, Catppuccin...)
 ├── statuslines/              # 6 statusline scripts
 ├── keybindings/              # 4 presets: vim · emacs · ergonomic · power-user
 ├── settings-templates/       # 5 starter settings.json templates
-├── routines/                 # 4 scheduled cloud-agent routine templates
+├── routines/                 # 10 scheduled cloud-agent routine templates
 ├── compatibility/            # Cross-harness adapters (Cursor, Windsurf, Codex, Gemini, Copilot)
 ├── claude-md-examples/       # 20 annotated real-world CLAUDE.md templates
 ├── examples/                 # Complete working project references
@@ -339,7 +412,8 @@ Claudient/
 │   ├── fastapi-ai-app/       # FastAPI + Claude API
 │   ├── go-cli-tool/          # Go CLI tool
 │   └── dbt-pipeline/         # dbt data pipeline
-├── structures/               # 82 project structure templates
+├── structures/               # 83 project structure templates
+├── *_stack/                  # 43 pre-wired workspace stacks (CLAUDE.md + 8 skills each)
 ├── scripts/                  # Build and utility scripts
 ├── site/                     # Astro documentation site source
 ├── docs/                     # ADRs and internal documentation
@@ -381,12 +455,16 @@ Claudient/
 | [Stripe MCP](mcp/stripe.md) | Query customers, subscriptions, payments, churn data | — |
 | [Notion MCP](mcp/notion.md) | Read/write pages, query databases, create docs | — |
 | [Taskmaster MCP](mcp/taskmaster.md) | AI task management with context isolation across sessions | — |
+| [Postgres MCP](mcp/postgres.md) | SQL queries, schema inspection, table management | — |
+| [Redis MCP](mcp/redis.md) | Cache inspection, key management, memory stats | — |
+| [Jira MCP](mcp/jira.md) | Issue management, sprint tracking, JQL queries | — |
+| [Docker MCP](mcp/docker.md) | Container inspection, log analysis, resource monitoring | — |
 
 **→ [Full guide: Top 100 MCP Servers for Indie Builders](mcp/top-mcp-servers.md)** — installation configs, tier rankings, and curated bundles for every stack.
 
 ```bash
 npx claudient add mcp starter   # GitHub + Memory + Playwright
-npx claudient add mcp all       # All 31 individual config guides
+npx claudient add mcp all       # All 40 individual config guides
 ```
 
 ---
@@ -567,9 +645,9 @@ npx claudient add agents
 
 <a name="skills-by-category"></a>
 
-## Skills by Category — 380+ Claude Code Skills
+## Skills by Category — 384+ Claude Code Skills
 
-**380+ skills · 19 categories · EN · FR · DE · NL · ES**
+**384+ skills · 19 categories · EN · FR · DE · NL · ES**
 
 | Category | Count | Top skills |
 |---|---|---|
@@ -577,7 +655,7 @@ npx claudient add agents
 | `backend/python` | 5 | FastAPI, Django, pytest, Python Async |
 | `backend/other` | 11 | Go, C#/.NET, Spring Boot, Rust, Rails, Laravel, Elixir, Flutter, PHP, Ruby, Swift |
 | `devops-infra` | 36 | AWS/Azure/GCP, Kubernetes, Helm, Terraform, Terragrunt, Docker, GitHub Actions, Sentry, OpenTelemetry |
-| `ai-engineering` | 17 | Claude API, Vercel AI SDK, LangGraph, RAG Architect, Prompt Caching, Batch API, MCP Builder |
+| `ai-engineering` | 20 | Claude API, Vercel AI SDK, LangGraph, RAG Architect, Prompt Caching, Batch API, MCP Builder, Agent Teams, Ultraplan, Ultrareview |
 | `data-ml` | 15 | dbt, Spark, Kafka, MLOps, NLP Pipelines, Reinforcement Learning, Pandas/Polars, PyTorch |
 | `database` | 12 | Drizzle, Prisma, PostgreSQL, Supabase, Neon, Redis, Elasticsearch, Blockchain/Solidity |
 | `gtm` | 32 | HubSpot, SDR Agent, Lead Enrichment, Email Automation, CRM Hygiene, Deal Desk, Revenue Ops |
@@ -633,10 +711,12 @@ Event-driven automation for Claude Code — runs outside Claude's context as rea
 
 | Type | Count |
 |---|---|
-| **Skills** | **380+** |
+| **Skills** | **384+** |
 | **Agents** | **182+** |
+| **Workspace Stacks** | **43** |
 | **Hooks** | **40** |
-| **MCP config guides** | **31+** |
+| **MCP config guides** | **40** |
+| **Routines** | **10** |
 | **Guides** | **100+** |
 | **Workflows** | **45+** |
 | **Prompts** | **31+** |

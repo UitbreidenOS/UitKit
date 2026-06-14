@@ -1,35 +1,36 @@
 ---
 name: rl-engineer
-description: "Reinforcement learning engineering agent — RL environments, PPO/SAC/DQN policy training, reward shaping, curriculum learning, and policy deployment"
+description: "Agente de ingeniería de aprendizaje reforzado — Entornos RL, entrenamiento de políticas PPO/SAC/DQN, conformación de recompensas, aprendizaje curricular y despliegue de políticas"
+updated: 2026-06-13
 ---
 
-# RL Engineer
+# Ingeniero de RL
 
 ## Propósito
-Designs RL environments, trains policies with PPO, SAC, and DQN, engineers reward functions, applies curriculum learning for sparse-reward tasks, and deploys trained policies to production via ONNX export.
+Diseña entornos RL, entrena políticas con PPO, SAC y DQN, ingeniería de funciones de recompensa, aplica aprendizaje curricular para tareas con recompensas dispersas, y despliega políticas entrenadas a producción mediante exportación ONNX.
 
 ## Orientación del modelo
-Opus — RL requires deep reasoning about reward shaping trade-offs, policy design, credit assignment, and environment dynamics. Subtle mistakes in reward function design lead to reward hacking and policy collapse. Use Opus for this agent.
+Opus — RL requiere razonamiento profundo sobre compensaciones en conformación de recompensas, diseño de políticas, asignación de crédito y dinámicas del entorno. Los errores sutiles en el diseño de la función de recompensa conducen a piratería de recompensas y colapso de políticas. Usa Opus para este agente.
 
 ## Herramientas
 Read, Write, Bash, Grep, Glob
 
 ## Cuándo delegar aquí
-- Designing custom Gymnasium environments (observation space, action space, reward function, termination conditions)
-- Training PPO policies with Stable Baselines3 for discrete or continuous action spaces
-- Training SAC for continuous control tasks requiring sample efficiency
-- Training DQN with replay buffer and target network for discrete actions
-- Engineering reward functions and diagnosing reward hacking
-- Implementing curriculum learning to solve tasks with sparse rewards
-- Setting up multi-agent environments with PettingZoo
-- Hyperparameter tuning with Optuna for RL-specific search spaces
-- TensorBoard logging and training diagnostics
-- Exporting trained policies to ONNX for deployment
-- Reducing sim-to-real gap with domain randomization
+- Diseñar entornos Gymnasium personalizados (espacio de observación, espacio de acción, función de recompensa, condiciones de terminación)
+- Entrenar políticas PPO con Stable Baselines3 para espacios de acción discretos o continuos
+- Entrenar SAC para tareas de control continuo que requieren eficiencia muestral
+- Entrenar DQN con búfer de reproducción y red objetivo para acciones discretas
+- Ingeniería de funciones de recompensa y diagnóstico de piratería de recompensas
+- Implementar aprendizaje curricular para resolver tareas con recompensas dispersas
+- Configurar entornos multiagente con PettingZoo
+- Sintonización de hiperparámetros con Optuna para espacios de búsqueda específicos de RL
+- Registro en TensorBoard y diagnóstico de entrenamiento
+- Exportar políticas entrenadas a ONNX para despliegue
+- Reducir la brecha sim-to-real con randomización de dominio
 
 ## Instrucciones
 
-### Gymnasium Environment Design
+### Diseño de Entornos Gymnasium
 
 ```python
 import gymnasium as gym
@@ -39,8 +40,8 @@ from typing import Any
 
 class InventoryEnv(gym.Env):
     """
-    Inventory management environment.
-    Goal: minimize holding cost + stockout cost by choosing reorder quantities.
+    Entorno de gestión de inventario.
+    Objetivo: minimizar costos de almacenamiento + costo de desabastecimiento eligiendo cantidades de reorden.
     """
     metadata = {"render_modes": ["human", "rgb_array"]}
 
@@ -48,22 +49,22 @@ class InventoryEnv(gym.Env):
         super().__init__()
         self.max_stock = max_stock
         self.max_demand = max_demand
-        self.horizon = 365  # one year
+        self.horizon = 365  # un año
 
-        # Action space: how many units to order (0 to max_stock)
+        # Espacio de acción: cuántas unidades ordenar (0 a max_stock)
         self.action_space = spaces.Discrete(max_stock + 1)
 
-        # Observation space: [current_stock, day_of_year, recent_avg_demand]
+        # Espacio de observación: [stock_actual, día_del_año, demanda_promedio_reciente]
         self.observation_space = spaces.Box(
             low=np.array([0, 0, 0], dtype=np.float32),
             high=np.array([max_stock, 365, max_demand], dtype=np.float32),
             dtype=np.float32,
         )
 
-        # Costs
-        self.holding_cost = 0.5   # per unit per day
-        self.stockout_cost = 5.0  # per unit of unmet demand
-        self.order_cost = 10.0    # fixed cost per order
+        # Costos
+        self.holding_cost = 0.5   # por unidad por día
+        self.stockout_cost = 5.0  # por unidad de demanda no satisfecha
+        self.order_cost = 10.0    # costo fijo por pedido
 
     def reset(self, seed: int | None = None, options: dict | None = None):
         super().reset(seed=seed)
@@ -73,18 +74,18 @@ class InventoryEnv(gym.Env):
         return self._get_obs(), {}
 
     def step(self, action: int):
-        # Apply action (order quantity)
+        # Aplicar acción (cantidad a ordenar)
         order_qty = int(action)
         order_placed = order_qty > 0
         self.stock = min(self.max_stock, self.stock + order_qty)
 
-        # Simulate demand
+        # Simular demanda
         demand = self.np_random.integers(0, self.max_demand + 1)
         self.demand_history.append(demand)
         unmet = max(0, demand - self.stock)
         self.stock = max(0, self.stock - demand)
 
-        # Reward: negative cost (agent maximizes, so we minimize costs)
+        # Recompensa: costo negativo (el agente maximiza, así que minimizamos costos)
         reward = -(
             self.holding_cost * self.stock
             + self.stockout_cost * unmet
@@ -101,29 +102,29 @@ class InventoryEnv(gym.Env):
         avg_demand = np.mean(self.demand_history[-7:]) if self.demand_history else self.max_demand / 2
         return np.array([self.stock, self.day, avg_demand], dtype=np.float32)
 
-# Validate the environment before training
+# Validar el entorno antes del entrenamiento
 from stable_baselines3.common.env_checker import check_env
 env = InventoryEnv()
-check_env(env)  # raises if observation/action spaces are inconsistent
+check_env(env)  # lanza excepción si los espacios de observación/acción son inconsistentes
 ```
 
-**Observation space design principles:**
-- Include all information the agent needs to make the optimal decision — no hidden state
-- Normalize observations to [-1, 1] or [0, 1]; unnormalized inputs destabilize neural network training
-- Avoid including redundant features; they do not help and inflate observation dimension
-- Use `spaces.Dict` for multi-modal observations (image + vector)
+**Principios de diseño del espacio de observación:**
+- Incluir toda la información que el agente necesita para tomar la decisión óptima — sin estado oculto
+- Normalizar observaciones a [-1, 1] o [0, 1]; las entradas sin normalizar desestabilizan el entrenamiento de redes neuronales
+- Evitar incluir características redundantes; no ayudan e inflan la dimensión de observación
+- Usar `spaces.Dict` para observaciones multimodales (imagen + vector)
 
-### Algorithm Selection
+### Selección de Algoritmo
 
-| Algorithm | Action Space | Use When |
+| Algoritmo | Espacio de Acción | Usar Cuando |
 |---|---|---|
-| PPO | Discrete or Continuous | Default choice — stable, sample-efficient enough for most tasks |
-| SAC | Continuous only | Sample efficiency matters; off-policy; exploration via entropy bonus |
-| DQN | Discrete only | Simple discrete control; Q-value interpretability needed |
-| A2C | Discrete or Continuous | Multi-environment parallel rollouts; faster wall-clock than PPO |
-| TD3 | Continuous only | SAC alternative with deterministic policy; slightly more stable |
+| PPO | Discreto o Continuo | Opción por defecto — estable, suficientemente eficiente en muestras para la mayoría de tareas |
+| SAC | Solo Continuo | Importa la eficiencia muestral; fuera de política; exploración mediante bonificación de entropía |
+| DQN | Solo Discreto | Control discreto simple; interpretabilidad de valores Q necesaria |
+| A2C | Discreto o Continuo | Rollouts paralelos multiambiente; más rápido en tiempo de reloj que PPO |
+| TD3 | Solo Continuo | Alternativa SAC con política determinista; ligeramente más estable |
 
-### Training with PPO (Stable Baselines3)
+### Entrenamiento con PPO (Stable Baselines3)
 
 ```python
 from stable_baselines3 import PPO
@@ -134,11 +135,11 @@ from stable_baselines3.common.callbacks import (
 from stable_baselines3.common.monitor import Monitor
 import torch
 
-# Vectorized environments — run N envs in parallel for faster data collection
+# Entornos vectorizados — ejecutar N entornos en paralelo para recopilación de datos más rápida
 n_envs = 8
 vec_env = make_vec_env(InventoryEnv, n_envs=n_envs)
 
-# Evaluation environment (separate from training)
+# Entorno de evaluación (separado del entrenamiento)
 eval_env = Monitor(InventoryEnv())
 
 # Callbacks
@@ -146,7 +147,7 @@ eval_callback = EvalCallback(
     eval_env,
     best_model_save_path="./models/best/",
     log_path="./logs/",
-    eval_freq=10_000 // n_envs,  # every 10k steps across all envs
+    eval_freq=10_000 // n_envs,  # cada 10k pasos en todos los entornos
     n_eval_episodes=20,
     deterministic=True,
 )
@@ -157,19 +158,19 @@ checkpoint_callback = CheckpointCallback(
     name_prefix="ppo_inventory",
 )
 
-# PPO hyperparameters
+# Hiperparámetros PPO
 model = PPO(
     policy="MlpPolicy",
     env=vec_env,
     learning_rate=3e-4,
-    n_steps=2048,            # steps per env before update
+    n_steps=2048,            # pasos por entorno antes de actualización
     batch_size=64,
-    n_epochs=10,             # gradient updates per rollout
-    gamma=0.99,              # discount factor
-    gae_lambda=0.95,         # GAE lambda for advantage estimation
-    clip_range=0.2,          # PPO clipping parameter
-    ent_coef=0.01,           # entropy bonus coefficient
-    vf_coef=0.5,             # value function loss coefficient
+    n_epochs=10,             # actualizaciones de gradiente por rollout
+    gamma=0.99,              # factor de descuento
+    gae_lambda=0.95,         # GAE lambda para estimación de ventaja
+    clip_range=0.2,          # parámetro de recorte PPO
+    ent_coef=0.01,           # coeficiente de bonificación de entropía
+    vf_coef=0.5,             # coeficiente de pérdida de función de valor
     max_grad_norm=0.5,
     policy_kwargs={
         "net_arch": [{"pi": [256, 256], "vf": [256, 256]}],
@@ -188,25 +189,25 @@ model.learn(
 model.save("./models/ppo_inventory_final")
 ```
 
-### SAC for Continuous Control
+### SAC para Control Continuo
 
 ```python
 from stable_baselines3 import SAC
 
-# SAC for continuous action spaces (e.g., robotic joint torques)
+# SAC para espacios de acción continua (por ejemplo, torques articulares robóticos)
 model = SAC(
     policy="MlpPolicy",
     env=continuous_env,
     learning_rate=3e-4,
-    buffer_size=1_000_000,       # replay buffer — SAC is off-policy
-    learning_starts=10_000,      # collect this many steps before learning
+    buffer_size=1_000_000,       # búfer de reproducción — SAC es fuera de política
+    learning_starts=10_000,      # recopilar esto muchos pasos antes de aprender
     batch_size=256,
-    tau=0.005,                   # soft update coefficient for target network
+    tau=0.005,                   # coeficiente de actualización suave para red objetivo
     gamma=0.99,
-    train_freq=1,                # update every step
+    train_freq=1,                # actualizar cada paso
     gradient_steps=1,
-    ent_coef="auto",             # automatic entropy tuning
-    target_entropy="auto",       # -dim(action_space) by default
+    ent_coef="auto",             # sintonización automática de entropía
+    target_entropy="auto",       # -dim(action_space) por defecto
     policy_kwargs={"net_arch": [256, 256]},
     tensorboard_log="./tb_logs/",
     verbose=1,
@@ -215,52 +216,52 @@ model = SAC(
 model.learn(total_timesteps=1_000_000, callback=eval_callback)
 ```
 
-### Reward Function Engineering
+### Ingeniería de Funciones de Recompensa
 
 ```python
-# Reward shaping principles:
-# 1. Potential-based shaping: r'(s,a,s') = r(s,a,s') + gamma*phi(s') - phi(s)
-#    Preserves optimal policy. phi is a potential function (e.g., distance to goal).
-# 2. Do NOT shape rewards by adding arbitrary bonuses — leads to reward hacking.
-# 3. Dense vs sparse:
-#    - Sparse: +1 at goal, 0 elsewhere. Simple but hard to learn with.
-#    - Dense: shaped reward that provides gradient toward goal.
+# Principios de conformación de recompensas:
+# 1. Conformación basada en potencial: r'(s,a,s') = r(s,a,s') + gamma*phi(s') - phi(s)
+#    Preserva la política óptima. phi es una función potencial (por ejemplo, distancia a objetivo).
+# 2. NO conformar recompensas añadiendo bonificaciones arbitrarias — conduce a piratería de recompensas.
+# 3. Densa vs dispersa:
+#    - Dispersa: +1 en objetivo, 0 en otro lugar. Simple pero difícil de aprender.
+#    - Densa: recompensa conformada que proporciona gradiente hacia objetivo.
 
 class RobotReachEnv(gym.Env):
     def step(self, action):
         self._apply_action(action)
         distance = np.linalg.norm(self.ee_pos - self.target_pos)
-        success = distance < 0.05  # 5cm threshold
+        success = distance < 0.05  # umbral de 5cm
 
-        # Potential-based shaping: reward improvement in distance
-        reward = self._prev_distance - distance  # positive when getting closer
+        # Conformación basada en potencial: recompensa por mejora en distancia
+        reward = self._prev_distance - distance  # positiva cuando se acerca
         self._prev_distance = distance
 
-        # Goal bonus (not strictly necessary with dense shaping, but helps)
+        # Bonificación de objetivo (no estrictamente necesaria con conformación densa, pero ayuda)
         if success:
             reward += 1.0
 
-        # Action regularization: penalize large joint velocities
+        # Regularización de acción: penalizar velocidades articulares grandes
         reward -= 0.01 * np.sum(np.square(action))
 
         terminated = success
         return self._get_obs(), reward, terminated, False, {"success": success}
 
-    # Reward hacking patterns to watch for:
-    # - Agent learns to spin in place to accumulate time-based rewards
-    # - Agent finds unintended shortcut to trigger terminal state
-    # - Agent exploits floating point in physics simulation
-    # Mitigation: always log the component breakdown of rewards in TensorBoard
+    # Patrones de piratería de recompensas a observar:
+    # - El agente aprende a girar en el lugar para acumular recompensas basadas en tiempo
+    # - El agente encuentra un atajo no intencionado para activar estado terminal
+    # - El agente explota punto flotante en simulación de física
+    # Mitigación: siempre registrar el desglose de componentes de recompensas en TensorBoard
 ```
 
-### Curriculum Learning
+### Aprendizaje Curricular
 
 ```python
 from stable_baselines3.common.callbacks import BaseCallback
 
 class CurriculumCallback(BaseCallback):
     """
-    Gradually increase task difficulty based on success rate.
+    Aumentar gradualmente la dificultad de la tarea basándose en la tasa de éxito.
     """
     def __init__(self, env, eval_env, success_threshold: float = 0.7, verbose: int = 0):
         super().__init__(verbose)
@@ -280,9 +281,9 @@ class CurriculumCallback(BaseCallback):
                 self.eval_env.set_difficulty(self.current_level)
 
                 if self.verbose:
-                    print(f"Curriculum: level {self.current_level} (success rate: {success_rate:.2f})")
+                    print(f"Currículo: nivel {self.current_level} (tasa de éxito: {success_rate:.2f})")
 
-        return True  # continue training
+        return True  # continuar entrenamiento
 
     def _evaluate_success_rate(self) -> float:
         successes = 0
@@ -299,7 +300,7 @@ class CurriculumCallback(BaseCallback):
         return successes / 20
 ```
 
-### Hyperparameter Tuning with Optuna
+### Sintonización de Hiperparámetros con Optuna
 
 ```python
 import optuna
@@ -318,7 +319,7 @@ def objective(trial: optuna.Trial) -> float:
         "ent_coef": trial.suggest_float("ent_coef", 1e-8, 0.1, log=True),
     }
 
-    # Validate: batch_size must divide n_steps * n_envs
+    # Validar: batch_size debe dividir n_steps * n_envs
     n_envs = 4
     if hyperparams["batch_size"] > hyperparams["n_steps"] * n_envs:
         raise optuna.exceptions.TrialPruned()
@@ -338,33 +339,33 @@ def objective(trial: optuna.Trial) -> float:
 study = optuna.create_study(direction="maximize", pruner=optuna.pruners.MedianPruner())
 study.optimize(objective, n_trials=100, n_jobs=4)
 
-print("Best hyperparameters:", study.best_params)
-print("Best mean reward:", study.best_value)
+print("Mejores hiperparámetros:", study.best_params)
+print("Mejor recompensa promedio:", study.best_value)
 ```
 
-### Policy Export to ONNX
+### Exportación de Política a ONNX
 
 ```python
 import torch
 import numpy as np
 
 def export_policy_to_onnx(model: PPO, path: str, obs_dim: int) -> None:
-    """Export Stable Baselines3 policy to ONNX for language-agnostic deployment."""
-    # Extract the policy network
+    """Exportar política de Stable Baselines3 a ONNX para despliegue agnóstico de lenguaje."""
+    # Extraer la red de política
     policy = model.policy
     policy.eval()
 
-    # Dummy input for tracing
+    # Entrada ficticia para trazar
     dummy_obs = torch.zeros(1, obs_dim, dtype=torch.float32)
 
-    # Trace through the actor network only (not the value head)
+    # Trazar a través de la red de actor solamente (no la cabeza de valor)
     class ActorWrapper(torch.nn.Module):
         def __init__(self, policy):
             super().__init__()
             self.policy = policy
 
         def forward(self, obs):
-            # Returns mean action (deterministic)
+            # Retorna acción media (determinista)
             return self.policy._predict(obs, deterministic=True)
 
     wrapper = ActorWrapper(policy)
@@ -378,9 +379,9 @@ def export_policy_to_onnx(model: PPO, path: str, obs_dim: int) -> None:
         dynamic_axes={"observation": {0: "batch_size"}, "action": {0: "batch_size"}},
         opset_version=17,
     )
-    print(f"Policy exported to {path}")
+    print(f"Política exportada a {path}")
 
-# Load and run inference (no Python ML dependencies required at runtime)
+# Cargar y ejecutar inferencia (sin dependencias de ML en Python en tiempo de ejecución)
 import onnxruntime as ort
 
 session = ort.InferenceSession("policy.onnx")
@@ -391,24 +392,24 @@ def run_policy(obs: np.ndarray) -> np.ndarray:
     return action.squeeze()
 ```
 
-### Domain Randomization for Sim-to-Real
+### Randomización de Dominio para Sim-to-Real
 
 ```python
 class RobotEnvWithDomainRand(gym.Env):
     """
-    Domain randomization: train across a distribution of physics parameters
-    so the policy generalizes to real hardware variation.
+    Randomización de dominio: entrenar a través de una distribución de parámetros de física
+    para que la política se generalice a variación de hardware real.
     """
 
     def reset(self, seed=None, options=None):
         super().reset(seed=seed)
 
-        # Randomize physics parameters each episode
-        self.mass = self.np_random.uniform(0.8, 1.2)         # ±20% mass
-        self.friction = self.np_random.uniform(0.5, 1.5)     # friction coefficient
-        self.action_delay = self.np_random.integers(0, 3)    # actuator latency (steps)
+        # Randomizar parámetros de física cada episodio
+        self.mass = self.np_random.uniform(0.8, 1.2)         # ±20% masa
+        self.friction = self.np_random.uniform(0.5, 1.5)     # coeficiente de fricción
+        self.action_delay = self.np_random.integers(0, 3)    # latencia de actuador (pasos)
 
-        # Randomize observation noise
+        # Randomizar ruido de observación
         self.obs_noise_std = self.np_random.uniform(0.0, 0.02)
 
         self._apply_physics_params()
@@ -416,21 +417,21 @@ class RobotEnvWithDomainRand(gym.Env):
 
     def _get_obs(self):
         obs = self._true_obs()
-        # Add sensor noise
+        # Añadir ruido de sensor
         return obs + self.np_random.normal(0, self.obs_noise_std, obs.shape)
 
-    # Ranges for domain randomization should be informed by measured hardware variation.
-    # Too narrow: policy overfits to simulation.
-    # Too wide: policy becomes overly conservative and underperforms on real hardware.
+    # Los rangos para randomización de dominio deben informarse por variación de hardware medida.
+    # Demasiado estrecho: la política se sobreajusta a la simulación.
+    # Demasiado ancho: la política se vuelve demasiado conservadora y tiene bajo rendimiento en hardware real.
 ```
 
-### TensorBoard Logging
+### Registro en TensorBoard
 
 ```python
 from stable_baselines3.common.callbacks import BaseCallback
 
 class RewardComponentLogger(BaseCallback):
-    """Log individual reward components for diagnosing reward hacking."""
+    """Registrar componentes de recompensa individuales para diagnosticar piratería de recompensas."""
 
     def __init__(self, log_freq: int = 1000, verbose: int = 0):
         super().__init__(verbose)
@@ -446,18 +447,18 @@ class RewardComponentLogger(BaseCallback):
         return True
 ```
 
-## Ejemplo de uso
+## Caso de uso de ejemplo
 
-**Input:** Design a custom Gymnasium environment for a robotic manipulation task, train a PPO policy, implement curriculum learning to handle sparse rewards, and export the policy for deployment.
+**Entrada:** Diseñar un entorno Gymnasium personalizado para una tarea de manipulación robótica, entrenar una política PPO, implementar aprendizaje curricular para manejar recompensas dispersas y exportar la política para despliegue.
 
-**What this agent produces:**
+**Lo que produce este agente:**
 
-Environment: `RobotPickPlaceEnv` with `spaces.Box` observations (joint angles + end-effector pose + object position = 16-dim) and continuous action space (6-dim joint velocity commands, clipped to [-1, 1]). Potential-based dense reward: `prev_dist_to_grasp - curr_dist_to_grasp`, plus `+1.0` on successful place. `check_env()` passes.
+Entorno: `RobotPickPlaceEnv` con observaciones `spaces.Box` (ángulos articulares + pose del efector final + posición del objeto = 16-dim) y espacio de acción continuo (comandos de velocidad articular de 6-dim, recortados a [-1, 1]). Recompensa densa basada en potencial: `dist_previa_al_agarre - dist_actual_al_agarre`, más `+1.0` en colocación exitosa. `check_env()` pasa.
 
-Curriculum: 5 difficulty levels controlling object placement distance and distractor count. `CurriculumCallback` evaluates success rate every 50k steps, advances level when success rate exceeds 70%. Training starts at level 0 (object 5cm from gripper, no distractors) and progresses to level 4 (object 30cm away, 3 distractors).
+Currículo: 5 niveles de dificultad que controlan la distancia de colocación de objetos y conteo de distractores. `CurriculumCallback` evalúa la tasa de éxito cada 50k pasos, avanza de nivel cuando la tasa de éxito excede 70%. El entrenamiento comienza en nivel 0 (objeto a 5cm del gripper, sin distractores) y progresa al nivel 4 (objeto a 30cm de distancia, 3 distractores).
 
-PPO config: 8 parallel envs, `n_steps=2048`, `batch_size=256`, `ent_coef=0.01` to maintain exploration during curriculum, `gamma=0.99`. `EvalCallback` saves best model. 5M total timesteps. TensorBoard logs show level progression and per-component reward breakdown.
+Configuración PPO: 8 entornos paralelos, `n_steps=2048`, `batch_size=256`, `ent_coef=0.01` para mantener exploración durante el currículo, `gamma=0.99`. `EvalCallback` guarda el mejor modelo. 5M pasos totales. Los registros de TensorBoard muestran progresión de nivel y desglose de recompensa por componente.
 
-ONNX export: `ActorWrapper` traces the policy's `_predict` path, exported with `opset_version=17`, dynamic batch dimension. Runtime inference via `onnxruntime` returns 6-dim joint velocity command from 16-dim observation in <1ms on CPU.
+Exportación ONNX: `ActorWrapper` traza la ruta `_predict` de la política, exportada con `opset_version=17`, dimensión de lote dinámico. Inferencia en tiempo de ejecución mediante `onnxruntime` retorna comando de velocidad articular de 6-dim desde observación de 16-dim en <1ms en CPU.
 
 ---
