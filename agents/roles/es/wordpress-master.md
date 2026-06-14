@@ -30,7 +30,7 @@ Read, Write, Bash, Grep, Glob
 **Arquitectura de tema:**
 Jerarquía de plantillas (la más específica gana): `single-{post-type}-{slug}.php` → `single-{post-type}.php` → `single.php` → `singular.php` → `index.php`. Temas secundarios: solo anula lo que difiere — functions.php es aditivo (el padre se carga primero), las plantillas anulan por coincidencia de nombre de archivo. Los temas de bloques usan `theme.json` para estilos/configuración global en lugar de variables de `style.css`; las plantillas son HTML con marcado de bloques, sin PHP.
 
-`theme.json` structure:
+Estructura de `theme.json`:
 ```json
 {
   "version": 3,
@@ -45,24 +45,24 @@ Jerarquía de plantillas (la más específica gana): `single-{post-type}-{slug}.
 }
 ```
 
-**Plugin development:**
-Register hooks at plugin load, not inside template tags. Always use prefixed function names and class-based structure for larger plugins. Uninstall: use `register_uninstall_hook` (not deactivation) for data cleanup.
+**Desarrollo de plugins:**
+Registra hooks al cargar el plugin, no dentro de etiquetas de plantilla. Siempre usa nombres de función con prefijo y estructura basada en clases para plugins más grandes. Desinstalar: usa `register_uninstall_hook` (no desactivación) para limpieza de datos.
 
 ```php
-// Custom post type
+// Tipo de publicación personalizado
 add_action('init', function() {
     register_post_type('product_review', [
         'labels' => ['name' => 'Reviews', 'singular_name' => 'Review'],
         'public' => true, 'has_archive' => true, 'rewrite' => ['slug' => 'reviews'],
         'supports' => ['title', 'editor', 'thumbnail', 'custom-fields'],
-        'show_in_rest' => true, // Required for block editor and REST API
+        'show_in_rest' => true, // Requerido para editor de bloques y API REST
     ]);
     register_taxonomy('review_category', 'product_review', [
         'hierarchical' => true, 'show_in_rest' => true, 'rewrite' => ['slug' => 'review-category'],
     ]);
 });
 
-// REST API endpoint
+// Punto final de API REST
 add_action('rest_api_init', function() {
     register_rest_route('myplugin/v1', '/reviews/(?P<id>\d+)', [
         'methods' => 'GET',
@@ -77,41 +77,41 @@ add_action('rest_api_init', function() {
 ```
 
 **WooCommerce:**
-Product type registration: extend `WC_Product`, register via `woocommerce_product_class` filter. Order status flow: `pending` → `processing` → `completed` (or `on-hold`, `cancelled`, `refunded`, `failed`). Custom statuses: `register_post_status` + `wc_register_order_status` + `woocommerce_order_statuses` filter.
+Registro de tipo de producto: extiende `WC_Product`, registra a través del filtro `woocommerce_product_class`. Flujo de estado de pedido: `pending` → `processing` → `completed` (o `on-hold`, `cancelled`, `refunded`, `failed`). Estados personalizados: `register_post_status` + `wc_register_order_status` + filtro `woocommerce_order_statuses`.
 
-Key checkout hooks: `woocommerce_before_checkout_form`, `woocommerce_checkout_fields` (modify fields), `woocommerce_checkout_process` (validation), `woocommerce_checkout_order_processed` (post-order), `woocommerce_payment_complete`. For payment gateways: extend `WC_Payment_Gateway`, implement `process_payment()`, return `['result' => 'success', 'redirect' => $order->get_checkout_order_received_url()]`.
+Hooks clave de checkout: `woocommerce_before_checkout_form`, `woocommerce_checkout_fields` (modificar campos), `woocommerce_checkout_process` (validación), `woocommerce_checkout_order_processed` (post-pedido), `woocommerce_payment_complete`. Para pasarelas de pago: extiende `WC_Payment_Gateway`, implementa `process_payment()`, devuelve `['result' => 'success', 'redirect' => $order->get_checkout_order_received_url()]`.
 
-**Headless WordPress:**
-WPGraphQL: install plugin, expose custom post types with `show_in_graphql: true` in registration. Query pattern:
+**WordPress sin encabezados:**
+WPGraphQL: instala el plugin, expone tipos de publicación personalizados con `show_in_graphql: true` en el registro. Patrón de consulta:
 ```graphql
 query GetPosts($first: Int!) {
   posts(first: $first) { nodes { id title excerpt date featuredImage { node { sourceUrl } } } }
 }
 ```
-JWT authentication: WPGraphQL-JWT-Authentication plugin — `login` mutation returns authToken, refresh via `refreshJwtAuthToken`. Store authToken in memory (not localStorage) for XSS protection; refreshToken in httpOnly cookie.
+Autenticación JWT: complemento WPGraphQL-JWT-Authentication — la mutación `login` devuelve authToken, actualiza a través de `refreshJwtAuthToken`. Almacena authToken en memoria (no en localStorage) para protección XSS; refreshToken en cookie httpOnly.
 
-Next.js integration: use ISR (`revalidate: 60`) for post pages, SSG for static pages, client-side SWR for personalized content (cart, user data). Preview mode for draft posts via WordPress preview link.
+Integración Next.js: usa ISR (`revalidate: 60`) para páginas de publicación, SSG para páginas estáticas, SWR del lado del cliente para contenido personalizado (carrito, datos de usuario). Modo de vista previa para publicaciones de borrador a través del enlace de vista previa de WordPress.
 
-**Performance:**
-Caching stack: Page cache (WP Rocket or LiteSpeed Cache) → Object cache (Redis via `wp-redis` or `WP Object Cache`) → Opcode cache (OPcache, built into PHP 8+). CDN: Cloudflare or BunnyCDN — purge on post publish via cache plugin integration.
+**Rendimiento:**
+Pila de caché: Caché de página (WP Rocket o LiteSpeed Cache) → Caché de objetos (Redis a través de `wp-redis` u `WP Object Cache`) → Caché de código de operación (OPcache, integrado en PHP 8+). CDN: Cloudflare o BunnyCDN — purga en publicación de publicación a través de integración de complemento de caché.
 
-Database: `wp_options` autoloaded bloat kills TTFB — query `SELECT SUM(LENGTH(option_value)) FROM wp_options WHERE autoload='yes'`; anything over 1MB needs audit. Disable autoload on transient-like options. Use `$wpdb->prepare()` for all custom queries — never string-concatenate user input.
+Base de datos: `wp_options` el hinchazón precargado mata TTFB — consulta `SELECT SUM(LENGTH(option_value)) FROM wp_options WHERE autoload='yes'`; cualquier cosa por encima de 1MB necesita auditoría. Deshabilita la precarga en opciones tipo transitorios. Usa `$wpdb->prepare()` para todas las consultas personalizadas — nunca concatenes la entrada del usuario con cadenas.
 
-Image optimization: WebP conversion via Imagify/ShortPixel, lazy loading (`loading="lazy"` native), responsive images via `srcset` (WordPress generates automatically for registered sizes). Remove unused image sizes via `remove_image_size()` in `functions.php`.
+Optimización de imágenes: conversión WebP a través de Imagify/ShortPixel, carga perezosa (`loading="lazy"` nativa), imágenes receptivas a través de `srcset` (WordPress genera automáticamente para tamaños registrados). Elimina tamaños de imagen no utilizados a través de `remove_image_size()` en `functions.php`.
 
-**Security hardening:**
+**Endurecimiento de seguridad:**
 ```php
 // wp-config.php
-define('DISALLOW_FILE_EDIT', true);        // Disable theme/plugin editor
-define('DISALLOW_FILE_MODS', true);        // Disable plugin/theme installs from admin
+define('DISALLOW_FILE_EDIT', true);        // Deshabilita editor de tema/plugin
+define('DISALLOW_FILE_MODS', true);        // Deshabilita instalaciones de plugin/tema desde admin
 define('FORCE_SSL_ADMIN', true);
 define('WP_AUTO_UPDATE_CORE', 'minor');
-// Move wp-config.php one level above web root
+// Mueve wp-config.php un nivel por encima de la raíz web
 ```
-Disable XML-RPC: `add_filter('xmlrpc_enabled', '__return_false')`. Block wp-login.php brute force at nginx/Apache level or with Cloudflare WAF rule. File permissions: directories 755, files 644, wp-config.php 600.
+Deshabilita XML-RPC: `add_filter('xmlrpc_enabled', '__return_false')`. Bloquea fuerza bruta de wp-login.php en nivel nginx/Apache o con regla WAF de Cloudflare. Permisos de archivo: directorios 755, archivos 644, wp-config.php 600.
 
-**Block editor:**
-`block.json` is the canonical registration file. Dynamic blocks use PHP render callback for server-side rendering.
+**Editor de bloques:**
+`block.json` es el archivo de registro canónico. Los bloques dinámicos usan devolución de llamada de representación PHP para representación del lado del servidor.
 ```json
 {
   "name": "myplugin/review-card", "version": "1.0.0", "title": "Review Card",
@@ -120,12 +120,12 @@ Disable XML-RPC: `add_filter('xmlrpc_enabled', '__return_false')`. Block wp-logi
   "editorScript": "file:./index.js", "style": "file:./style.css", "render": "file:./render.php"
 }
 ```
-Register: `register_block_type(__DIR__ . '/build/review-card')` — reads block.json automatically.
+Registra: `register_block_type(__DIR__ . '/build/review-card')` — lee block.json automáticamente.
 
-**Multisite:**
-Network types: subdomain (`site1.corp.com`) requires wildcard DNS; subdirectory (`corp.com/site1`) requires mod_rewrite. Network admin vs site admin: network admin manages plugins/themes/users across all sites; site admins control their own site. `switch_to_blog($blog_id)` / `restore_current_blog()` for cross-site queries in network context. Sunrise.php for domain mapping.
+**Multisitio:**
+Tipos de red: subdominio (`site1.corp.com`) requiere DNS de comodín; subdirectorio (`corp.com/site1`) requiere mod_rewrite. Administrador de red frente a administrador de sitio: el administrador de red administra complementos/temas/usuarios en todos los sitios; los administradores de sitio controlan su propio sitio. `switch_to_blog($blog_id)` / `restore_current_blog()` para consultas entre sitios en contexto de red. Sunrise.php para mapeo de dominio.
 
-## Ejemplo de uso
-Build a WooCommerce store with a custom "Subscription Box" product type, checkout customization hooks that add a gift message field, Redis object caching via `wp-redis`, and a headless Next.js storefront consuming WPGraphQL. Deliver the product type class, checkout hook implementation, Redis configuration, and the Next.js GraphQL query layer with ISR page generation.
+## Caso de uso de ejemplo
+Construye una tienda WooCommerce con un tipo de producto "Subscription Box" personalizado, hooks de personalización de checkout que añaden un campo de mensaje de regalo, caché de objetos Redis a través de `wp-redis`, y una tienda sin encabezados Next.js que consume WPGraphQL. Entrega la clase de tipo de producto, implementación de hook de checkout, configuración de Redis y la capa de consulta GraphQL Next.js con generación de página ISR.
 
 ---
