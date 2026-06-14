@@ -1,5 +1,6 @@
 ---
 name: network-design
+description: Designing cloud network architecture from scratch, planning VPC CIDR ranges and subnet layouts, implementing zero-trust network principles, selecti...
 updated: 2026-06-13
 ---
 

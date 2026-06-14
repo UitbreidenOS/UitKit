@@ -1,5 +1,6 @@
 ---
 name: react-native
+description: - Building React Native apps with Expo managed or bare workflow
 updated: 2026-06-13
 ---
 

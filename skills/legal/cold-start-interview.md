@@ -1,5 +1,6 @@
 ---
 name: cold-start-interview
+description: - First time using any legal skill for a new organization
 updated: 2026-06-13
 ---
 

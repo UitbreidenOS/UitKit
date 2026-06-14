@@ -1,5 +1,6 @@
 ---
 name: crewai
+description: Build multi-agent crews with CrewAI framework for collaborative AI task execution
 updated: 2026-06-13
 ---
 

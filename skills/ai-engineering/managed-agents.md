@@ -1,5 +1,6 @@
 ---
 name: managed-agents
+description: Deploy and manage Claude agents with lifecycle management, monitoring, and scaling
 updated: 2026-06-13
 ---
 

@@ -1,5 +1,6 @@
 ---
 name: email-metrics
+description: - Diagnosing underperforming cold email sequences (reply rate < 3%)
 updated: 2026-06-13
 ---
 

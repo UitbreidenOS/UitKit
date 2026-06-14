@@ -1,5 +1,6 @@
 ---
 name: team-onboarding
+description: - User runs `/team-onboarding`
 updated: 2026-06-13
 ---
 

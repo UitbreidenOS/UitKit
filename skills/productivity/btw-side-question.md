@@ -1,5 +1,6 @@
 ---
 name: btw-side-question
+description: - User wants to ask a quick question mid-session without it appearing in conversation history
 updated: 2026-06-13
 ---
 

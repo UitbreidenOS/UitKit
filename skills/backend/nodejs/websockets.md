@@ -1,5 +1,6 @@
 ---
 name: websockets
+description: - Building real-time bidirectional features (chat, live dashboards, notifications, multiplayer)
 updated: 2026-06-13
 ---
 

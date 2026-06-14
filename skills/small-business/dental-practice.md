@@ -1,5 +1,6 @@
 ---
 name: dental-practice
+description: - You run a solo or small group dental practice and the front desk is drowning in operational follow-up
 updated: 2026-06-13
 ---
 

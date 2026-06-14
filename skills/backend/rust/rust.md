@@ -1,5 +1,6 @@
 ---
 name: rust
+description: - Writing or reviewing Rust code with ownership, borrow checker, or lifetime errors
 updated: 2026-06-13
 ---
 

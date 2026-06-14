@@ -1,5 +1,6 @@
 ---
 name: claude-design
+description: Build production-ready UIs and prototypes with Claude Design
 updated: 2026-06-13
 ---
 

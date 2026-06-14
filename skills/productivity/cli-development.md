@@ -1,5 +1,6 @@
 ---
 name: cli-development
+description: Building command-line tools in any language, or when the user mentions Commander, Click, Cobra, Typer, yargs, or Inquirer.
 updated: 2026-06-13
 ---
 

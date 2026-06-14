@@ -1,5 +1,6 @@
 ---
 name: ecommerce-seller
+description: - You sell on multiple ecommerce platforms (Shopify, Amazon, Etsy, eBay, Walmart) and need consistent listing copy across all of them
 updated: 2026-06-13
 ---
 

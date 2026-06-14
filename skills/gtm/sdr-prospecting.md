@@ -1,5 +1,6 @@
 ---
 name: sdr-prospecting
+description: - Building a net-new account list from scratch (quarterly prospecting campaigns, market penetration)
 updated: 2026-06-13
 ---
 

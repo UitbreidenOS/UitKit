@@ -1,5 +1,6 @@
 ---
 name: angular
+description: Build Angular applications with TypeScript, RxJS, and NgRx state management
 updated: 2026-06-13
 ---
 

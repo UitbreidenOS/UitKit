@@ -1,5 +1,6 @@
 ---
 name: gtm-plays
+description: Account prioritization workflows, building trigger-based sales sequences, daily prospecting cadences, territory planning, and sales kickoff plannin...
 updated: 2026-06-13
 ---
 

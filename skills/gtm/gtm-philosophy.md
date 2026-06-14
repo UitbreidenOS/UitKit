@@ -1,5 +1,6 @@
 ---
 name: gtm-philosophy
+description: When planning or refactoring an outbound motion, validating account selection before investing pipeline resources, debugging why a sequence is unde...
 updated: 2026-06-13
 ---
 

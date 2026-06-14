@@ -1,5 +1,6 @@
 ---
 name: phoenix
+description: Build Elixir Phoenix web applications with LiveView, channels, and Ecto
 updated: 2026-06-13
 ---
 

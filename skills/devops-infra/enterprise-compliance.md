@@ -1,5 +1,6 @@
 ---
 name: enterprise-compliance
+description: Deploying Claude Code in a regulated industry (finance, healthcare, government); enterprise security review of AI tooling; data residency or sovere...
 updated: 2026-06-13
 ---
 

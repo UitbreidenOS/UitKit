@@ -1,5 +1,6 @@
 ---
 name: claude-design-tokens
+description: Manage design tokens for consistent theming across Claude Design projects
 updated: 2026-06-13
 ---
 

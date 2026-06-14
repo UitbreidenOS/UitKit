@@ -1,5 +1,6 @@
 ---
 name: frontier-design
+description: Push creative boundaries with frontier design techniques for AI-generated interfaces
 updated: 2026-06-13
 ---
 

@@ -1,5 +1,6 @@
 ---
 name: terragrunt
+description: Managing Terraform configurations across multiple environments (dev/staging/prod) that share modules but need different variable values. Reducing b...
 updated: 2026-06-13
 ---
 

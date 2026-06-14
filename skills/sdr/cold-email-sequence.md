@@ -1,5 +1,6 @@
 ---
 name: cold-email-sequence
+description: - You are building a 4-email outbound campaign with specific timing (Day 0, 3, 7, 12)
 updated: 2026-06-13
 ---
 

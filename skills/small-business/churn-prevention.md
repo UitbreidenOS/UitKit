@@ -1,5 +1,6 @@
 ---
 name: churn-prevention
+description: - You run a subscription business (SaaS, membership, recurring service, content subscription) and want to reduce customer churn
 updated: 2026-06-13
 ---
 

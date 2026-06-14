@@ -1,5 +1,6 @@
 ---
 name: iot
+description: Develop IoT applications with device communication, sensor data, and edge computing
 updated: 2026-06-13
 ---
 

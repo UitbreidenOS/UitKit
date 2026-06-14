@@ -1,5 +1,6 @@
 ---
 name: meeting-to-action
+description: - Right after any client call, sales call, or team meeting — within the hour while context is fresh
 updated: 2026-06-13
 ---
 

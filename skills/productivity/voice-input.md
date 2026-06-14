@@ -1,5 +1,6 @@
 ---
 name: voice-input
+description: - User says they want to speak their prompt rather than type it
 updated: 2026-06-13
 ---
 

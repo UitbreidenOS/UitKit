@@ -1,5 +1,6 @@
 ---
 name: linkedin-sdr
+description: - You are running a B2B prospecting campaign and need to scale outreach on LinkedIn without violating platform ToS
 updated: 2026-06-13
 ---
 

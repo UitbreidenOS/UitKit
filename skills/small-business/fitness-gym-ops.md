@@ -1,5 +1,6 @@
 ---
 name: fitness-gym-ops
+description: - You run a fitness studio, gym, CrossFit box, yoga studio, Pilates studio, or boutique fitness business
 updated: 2026-06-13
 ---
 

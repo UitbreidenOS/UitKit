@@ -155,6 +155,21 @@ Gives you a running log of input/output tokens + estimated cost per session. Use
 
 ---
 
+## Example
+
+```
+User: "Activate lean mode and fix the auth middleware"
+
+Claude (lean mode):
+→ Haiku 4.5 (constrained task)
+→ Read auth/middleware.py:40-80 (line range, not full file)
+→ Fix: reject expired tokens, add 401 response
+→ Output: "Fixed. 3 lines changed. Rejects tokens past exp claim."
+→ Tokens saved: ~60% vs standard Sonnet response
+```
+
+---
+
 ## Quick reference card
 
 | Situation | Action |

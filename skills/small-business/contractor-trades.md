@@ -1,5 +1,6 @@
 ---
 name: contractor-trades
+description: - You run a skilled trades business — plumbing, HVAC, electrical, landscaping, painting, roofing, general contracting, handyman services
 updated: 2026-06-13
 ---
 

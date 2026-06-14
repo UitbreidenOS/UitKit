@@ -1,5 +1,6 @@
 ---
 name: company-intelligence
+description: - User provides a company name and LinkedIn URL and asks to "research this account," "build a dossier," "find decision-makers," or "extract pain si...
 updated: 2026-06-13
 ---
 

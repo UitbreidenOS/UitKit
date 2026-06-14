@@ -1,5 +1,6 @@
 ---
 name: embedded
+description: Develop embedded systems firmware and hardware interfaces with Claude Code
 updated: 2026-06-13
 ---
 

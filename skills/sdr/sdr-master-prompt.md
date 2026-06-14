@@ -1,5 +1,6 @@
 ---
 name: sdr-master-prompt
+description: - AI SDR assistant is being initialized for a new account, campaign, or sequence
 updated: 2026-06-13
 ---
 

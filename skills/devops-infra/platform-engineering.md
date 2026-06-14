@@ -1,5 +1,6 @@
 ---
 name: platform-engineering
+description: Building internal developer platforms (IDPs), creating golden path service templates that encode organizational standards, setting up Backstage ser...
 updated: 2026-06-13
 ---
 

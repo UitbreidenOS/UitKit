@@ -1,5 +1,6 @@
 ---
 name: bookkeeper-practice
+description: - You run a solo or small-team bookkeeping or fractional CFO practice
 updated: 2026-06-13
 ---
 

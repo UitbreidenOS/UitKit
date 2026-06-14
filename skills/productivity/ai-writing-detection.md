@@ -1,5 +1,6 @@
 ---
 name: ai-writing-detection
+description: Auditing documentation, blog posts, or marketing copy for AI-pattern text; when the user wants content to sound more human; reviewing a README or p...
 updated: 2026-06-13
 ---
 

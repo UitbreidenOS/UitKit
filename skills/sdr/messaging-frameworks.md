@@ -1,5 +1,6 @@
 ---
 name: messaging-frameworks
+description: You are crafting cold outreach (email, LinkedIn, or call script) and need to select which framework maximizes reply rate and conversation quality f...
 updated: 2026-06-13
 ---
 

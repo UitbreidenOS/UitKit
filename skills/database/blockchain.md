@@ -1,5 +1,6 @@
 ---
 name: blockchain
+description: Writing or reviewing Solidity smart contracts, implementing ERC-20/721/1155 token standards, building DeFi protocols, optimizing gas costs, perform...
 updated: 2026-06-13
 ---
 

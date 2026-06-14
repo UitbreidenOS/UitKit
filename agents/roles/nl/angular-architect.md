@@ -150,7 +150,7 @@ export const ProductStore = signalStore(
 );
 ```
 
-### NgRx — Feature Store Patterns
+### NgRx — Feature Store Patronen
 
 ```typescript
 // product.state.ts
@@ -216,7 +216,7 @@ export class ProductEffects {
   loadProducts$ = createEffect(() =>
     this.actions$.pipe(
       ofType(ProductActions.loadProducts),
-      exhaustMap(() =>    // exhaustMap: ignore new triggers while request is in flight
+      exhaustMap(() =>    // exhaustMap: negeer nieuwe triggers terwijl verzoek in uitvoering is
         this.productService.fetchAll().pipe(
           map(products => ProductActions.loadProductsSuccess({ products })),
           catchError(error =>
@@ -230,7 +230,7 @@ export class ProductEffects {
   createProduct$ = createEffect(() =>
     this.actions$.pipe(
       ofType(ProductActions.createProduct),
-      concatMap(({ product }) =>  // concatMap: queue requests, preserve order
+      concatMap(({ product }) =>  // concatMap: wachtrij aanvragen, behoud volgorde
         this.productService.create(product).pipe(
           map(created => ProductActions.loadProductsSuccess({ products: [created] })),
           catchError(error =>
@@ -243,47 +243,47 @@ export class ProductEffects {
 }
 ```
 
-### RxJS Operators — When to Use Each
+### RxJS Operators — Wanneer elk gebruiken
 
 ```typescript
-// switchMap: cancel previous inner observable when new outer value arrives
-// Use for: search, route changes, "latest wins" scenarios
+// switchMap: annuleer vorige inner observable wanneer nieuwe outer waarde aankomt
+// Gebruik voor: zoeken, route wijzigingen, "meest recente wint" scenario's
 searchQuery$.pipe(
   debounceTime(300),
   distinctUntilChanged(),
-  switchMap(query => this.search(query))  // cancels previous search on new query
+  switchMap(query => this.search(query))  // annuleert vorige zoekopdracht bij nieuwe query
 )
 
-// exhaustMap: ignore new outer values while inner is active
-// Use for: login, form submit — prevent double-submit
+// exhaustMap: negeer nieuwe outer waarden terwijl inner actief is
+// Gebruik voor: login, formulier verzenden — voorkomen dubbele verzending
 submitButton$.pipe(
-  exhaustMap(() => this.authService.login(credentials))  // ignores clicks while logging in
+  exhaustMap(() => this.authService.login(credentials))  // negeert klikken terwijl aanmelden bezig is
 )
 
-// concatMap: queue, process in order, never cancel
-// Use for: sequential uploads, ordered writes
+// concatMap: wachtrij, verwerk in volgorde, annuleer nooit
+// Gebruik voor: opeenvolgende uploads, geordende schrijfbewerkingen
 uploadQueue$.pipe(
-  concatMap(file => this.uploadService.upload(file))  // waits for each upload to finish
+  concatMap(file => this.uploadService.upload(file))  // wacht tot elke upload voltooid is
 )
 
-// mergeMap: process all concurrently, no ordering
-// Use for: fire-and-forget analytics, parallel independent requests
+// mergeMap: verwerk alles gelijktijdig, geen volgorde
+// Gebruik voor: fire-and-forget analytiek, parallelle onafhankelijke aanvragen
 ids$.pipe(
-  mergeMap(id => this.cache.preload(id))  // all preloads run in parallel
+  mergeMap(id => this.cache.preload(id))  // alle voorladingen draaien parallel
 )
 
-// forkJoin: wait for all to complete, collect final values
-// Use for: parallel requests where you need all results
+// forkJoin: wacht tot alles voltooid is, verzamel uiteindelijke waarden
+// Gebruik voor: parallelle aanvragen waarbij je alle resultaten nodig hebt
 forkJoin({
   user: this.userService.get(userId),
   orders: this.orderService.list(userId),
   preferences: this.prefService.get(userId),
 }).subscribe(({ user, orders, preferences }) => {
-  // all three resolved
+  // alle drie opgelost
 })
 
-// combineLatest: emit when any source emits, using latest from all
-// Use for: forms with multiple dependent filters
+// combineLatest: verzend wanneer willekeurige bron verzendt, gebruik meest recent van alle
+// Gebruik voor: formulieren met meerdere afhankelijke filters
 combineLatest([
   this.categoryFilter$,
   this.priceRange$,
@@ -312,7 +312,7 @@ export const APP_ROUTES: Routes = [
     path: 'products',
     loadChildren: () =>
       import('./features/products/products.routes')
-        .then(m => m.PRODUCT_ROUTES),  // lazy-loaded route config
+        .then(m => m.PRODUCT_ROUTES),  // lui geladen route configuratie
   },
   {
     path: 'admin',
@@ -323,7 +323,7 @@ export const APP_ROUTES: Routes = [
   },
 ];
 
-// products.routes.ts — child routes loaded lazily
+// products.routes.ts — child routes lui geladen
 export const PRODUCT_ROUTES: Routes = [
   {
     path: '',
@@ -341,12 +341,12 @@ export const PRODUCT_ROUTES: Routes = [
 ### OnPush Change Detection
 
 ```typescript
-// Rule: every component in a large app should use OnPush
-// OnPush only checks for changes when:
-// 1. An @Input reference changes (not mutation)
-// 2. An event originates from the component or its children
-// 3. An Observable or Signal used in the template emits
-// 4. ChangeDetectorRef.markForCheck() is called manually
+// Regel: elke component in een grote app moet OnPush gebruiken
+// OnPush controleert alleen op wijzigingen wanneer:
+// 1. Een @Input referentie wijzigt (geen mutatie)
+// 2. Een event afkomstig is van de component of zijn kinderen
+// 3. Een Observable of Signal gebruikt in de template verzendt
+// 4. ChangeDetectorRef.markForCheck() handmatig aangeroepen wordt
 
 @Component({
   selector: 'app-data-table',
@@ -359,15 +359,15 @@ export const PRODUCT_ROUTES: Routes = [
   `,
 })
 export class DataTableComponent {
-  // Signal input — change detection triggered automatically
+  // Signal input — change detection automatisch geactiveerd
   rows = input.required<Row[]>();
 }
 
-// Spread-replace arrays/objects — never mutate in place with OnPush
-// Bad (mutation — OnPush will not detect):
+// Spread-vervangen arrays/objecten — nooit in plaats mutatie met OnPush
+// Slecht (mutatie — OnPush detecteert niet):
 this.items.push(newItem);
 
-// Good (new reference — triggers OnPush):
+// Goed (nieuwe referentie — activeert OnPush):
 this.items = [...this.items, newItem];
 ```
 
@@ -403,7 +403,7 @@ new ModuleFederationPlugin({
   shared: { '@angular/core': { singleton: true } },
 })
 
-// Shell routing — lazy-load MFE routes
+// Shell routing — lui-laden MFE routes
 {
   path: 'orders',
   loadChildren: () => loadRemoteModule({

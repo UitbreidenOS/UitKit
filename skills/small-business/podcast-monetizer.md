@@ -1,5 +1,6 @@
 ---
 name: podcast-monetizer
+description: - You run an independent podcast that you want to monetize via sponsors, products, courses, or a paid tier
 updated: 2026-06-13
 ---
 

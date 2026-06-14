@@ -1,5 +1,6 @@
 ---
 name: free-law
+description: Researching US federal and state court decisions without a paid subscription; looking up PACER filings, docket numbers, or judge records; bulk case...
 updated: 2026-06-13
 ---
 

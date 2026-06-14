@@ -1,5 +1,6 @@
 ---
 name: cold-outreach
+description: - Launching a new outreach campaign and you need first-touch emails that do not sound like templates
 updated: 2026-06-13
 ---
 

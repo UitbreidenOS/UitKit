@@ -1,5 +1,6 @@
 ---
 name: rails
+description: - Building or maintaining a Rails 7+ application
 updated: 2026-06-13
 ---
 

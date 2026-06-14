@@ -1,5 +1,6 @@
 ---
 name: claude-design-workflow
+description: Build end-to-end design workflows with Claude Design for rapid UI/UX iteration
 updated: 2026-06-13
 ---
 

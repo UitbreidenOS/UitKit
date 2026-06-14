@@ -1,5 +1,6 @@
 ---
 name: linkedin-outreach
+description: - Running a LinkedIn connection or prospecting campaign targeting decision-makers
 updated: 2026-06-13
 ---
 

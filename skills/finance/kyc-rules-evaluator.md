@@ -1,5 +1,6 @@
 ---
 name: kyc-rules-evaluator
+description: Evaluating a new customer or counterparty for onboarding, producing a KYC risk rating, making an enhanced due diligence (EDD) decision, or running ...
 updated: 2026-06-13
 ---
 

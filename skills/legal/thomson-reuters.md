@@ -1,5 +1,6 @@
 ---
 name: thomson-reuters
+description: Legal research requiring case law, statutes, regulations, or Westlaw/Practical Law content; user is a lawyer or legal researcher using Claude Code ...
 updated: 2026-06-13
 ---
 

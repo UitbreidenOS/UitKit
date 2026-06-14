@@ -1,5 +1,6 @@
 ---
 name: escalation-flagger
+description: - After contract review identifies issues that may exceed the reviewer's authority
 updated: 2026-06-13
 ---
 

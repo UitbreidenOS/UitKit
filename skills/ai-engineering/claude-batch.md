@@ -1,5 +1,6 @@
 ---
 name: claude-batch
+description: Run large-scale batch processing with Claude API for bulk text analysis, classification, and generation
 updated: 2026-06-13
 ---
 

@@ -1,5 +1,6 @@
 ---
 name: qualification-meddpicc
+description: - SDR has completed initial qualification call and is determining whether to schedule an AE (sales engineer / account executive) discovery meeting
 updated: 2026-06-13
 ---
 

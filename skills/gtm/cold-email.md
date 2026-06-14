@@ -1,5 +1,6 @@
 ---
 name: cold-email
+description: Writing cold outbound emails to prospects, reviewing email copy for effectiveness, building multi-email sequences, or designing campaigns targeting...
 updated: 2026-06-13
 ---
 

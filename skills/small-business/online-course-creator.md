@@ -1,5 +1,6 @@
 ---
 name: online-course-creator
+description: - You're an independent course creator (educator, expert, coach turning expertise into a course) and you're building or relaunching a course
 updated: 2026-06-13
 ---
 

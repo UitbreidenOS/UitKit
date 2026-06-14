@@ -1,5 +1,6 @@
 ---
 name: objection-handling
+description: You are in a live discovery call, email thread, or async response where a prospect has voiced resistance. Use this skill to convert objections into...
 updated: 2026-06-13
 ---
 

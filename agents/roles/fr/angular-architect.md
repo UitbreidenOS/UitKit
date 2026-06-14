@@ -341,12 +341,12 @@ export const PRODUCT_ROUTES: Routes = [
 ### OnPush Change Detection
 
 ```typescript
-// Rule: every component in a large app should use OnPush
-// OnPush only checks for changes when:
-// 1. An @Input reference changes (not mutation)
-// 2. An event originates from the component or its children
-// 3. An Observable or Signal used in the template emits
-// 4. ChangeDetectorRef.markForCheck() is called manually
+// Règle: chaque composant dans une grande application devrait utiliser OnPush
+// OnPush vérifie les changements seulement quand:
+// 1. Une référence @Input change (pas une mutation)
+// 2. Un événement provient du composant ou de ses enfants
+// 3. Un Observable ou Signal utilisé dans le template émet
+// 4. ChangeDetectorRef.markForCheck() est appelé manuellement
 
 @Component({
   selector: 'app-data-table',
@@ -359,15 +359,15 @@ export const PRODUCT_ROUTES: Routes = [
   `,
 })
 export class DataTableComponent {
-  // Signal input — change detection triggered automatically
+  // Signal input — détection de changement déclenchée automatiquement
   rows = input.required<Row[]>();
 }
 
-// Spread-replace arrays/objects — never mutate in place with OnPush
-// Bad (mutation — OnPush will not detect):
+// Spread-replace arrays/objects — ne mutez jamais in place avec OnPush
+// Mauvais (mutation — OnPush ne détectera pas):
 this.items.push(newItem);
 
-// Good (new reference — triggers OnPush):
+// Bon (nouvelle référence — déclenche OnPush):
 this.items = [...this.items, newItem];
 ```
 
@@ -420,16 +420,16 @@ new ModuleFederationPlugin({
 // main.ts
 bootstrapApplication(AppComponent, {
   providers: [
-    provideExperimentalZonelessChangeDetection(), // replaces provideZoneChangeDetection
+    provideExperimentalZonelessChangeDetection(), // remplace provideZoneChangeDetection
     provideRouter(APP_ROUTES),
   ],
 });
 
-// With zoneless, change detection is signal-driven
-// All components MUST use signals or async pipe for automatic updates
-// setTimeout/setInterval do NOT trigger CD automatically
-// Use signal() + computed() for all reactive state
-// Use takeUntilDestroyed() for Observable cleanup
+// Avec zoneless, la détection de changement est dirigée par signal
+// Tous les composants DOIVENT utiliser des signaux ou le async pipe pour les mises à jour automatiques
+// setTimeout/setInterval ne déclenchent PAS CD automatiquement
+// Utilisez signal() + computed() pour tout état réactif
+// Utilisez takeUntilDestroyed() pour le nettoyage Observable
 @Component({
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -443,7 +443,7 @@ export class ZonelessComponent {
   constructor() {
     this.dataService.getMessage()
       .pipe(takeUntilDestroyed(this.destroyRef))
-      .subscribe(msg => this.message.set(msg)); // signal.set() triggers CD
+      .subscribe(msg => this.message.set(msg)); // signal.set() déclenche CD
   }
 }
 ```

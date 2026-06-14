@@ -1,5 +1,6 @@
 ---
 name: agent-sdk
+description: Build AI agents using the Claude Agent SDK with tool use, memory, and multi-step orchestration
 updated: 2026-06-13
 ---
 

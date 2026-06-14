@@ -1,5 +1,6 @@
 ---
 name: lead-triager
+description: - New contacts came in from a form submission, event, or campaign and you need to know who to call first
 updated: 2026-06-13
 ---
 

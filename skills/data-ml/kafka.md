@@ -1,5 +1,6 @@
 ---
 name: kafka
+description: Designing or implementing event-driven architectures, building real-time data pipelines with Kafka, configuring producers and consumers in Python o...
 updated: 2026-06-13
 ---
 

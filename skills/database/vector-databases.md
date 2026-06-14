@@ -1,5 +1,6 @@
 ---
 name: vector-databases
+description: - User is implementing semantic search, RAG pipelines, or recommendation systems
 updated: 2026-06-13
 ---
 

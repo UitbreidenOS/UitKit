@@ -1,5 +1,6 @@
 ---
 name: goal-command
+description: User wants Claude to keep working on a task without stopping to check in; user wants to set a completion condition and walk away; user asks about a...
 updated: 2026-06-13
 ---
 

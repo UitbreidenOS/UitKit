@@ -1,5 +1,6 @@
 ---
 name: personalization
+description: Before writing any cold outreach message; when building account research playbooks; when scoring personalization quality on a message or campaign; ...
 updated: 2026-06-13
 ---
 

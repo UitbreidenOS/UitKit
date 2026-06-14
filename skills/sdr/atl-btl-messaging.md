@@ -1,5 +1,6 @@
 ---
 name: atl-btl-messaging
+description: - Drafting cold outreach to a new account and you don't know the champion's seniority level yet
 updated: 2026-06-13
 ---
 

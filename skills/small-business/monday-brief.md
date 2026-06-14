@@ -1,5 +1,6 @@
 ---
 name: monday-brief
+description: - Start of every week — you want a clear picture of where the business stands before the week begins
 updated: 2026-06-13
 ---
 

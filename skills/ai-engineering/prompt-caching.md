@@ -1,5 +1,6 @@
 ---
 name: prompt-caching
+description: Optimize Claude API costs and latency with prompt caching strategies
 updated: 2026-06-13
 ---
 

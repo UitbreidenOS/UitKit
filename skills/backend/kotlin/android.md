@@ -1,5 +1,6 @@
 ---
 name: android
+description: Build Android applications with Kotlin, Jetpack Compose, and modern Android architecture
 updated: 2026-06-13
 ---
 

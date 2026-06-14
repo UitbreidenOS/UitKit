@@ -1,5 +1,6 @@
 ---
 name: flutter
+description: Build cross-platform mobile apps with Flutter and Dart
 updated: 2026-06-13
 ---
 

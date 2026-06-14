@@ -1,5 +1,6 @@
 ---
 name: agency-operations
+description: - You run a creative, marketing, design, dev, or content agency with 2-25 people
 updated: 2026-06-13
 ---
 

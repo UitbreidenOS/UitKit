@@ -1,5 +1,6 @@
 ---
 name: modal
+description: Build serverless AI pipelines with Modal for cloud-based compute and inference
 updated: 2026-06-13
 ---
 

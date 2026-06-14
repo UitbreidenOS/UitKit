@@ -1,5 +1,6 @@
 ---
 name: ptc
+description: Implement prompt-to-code workflows for rapid prototyping and code generation
 updated: 2026-06-13
 ---
 

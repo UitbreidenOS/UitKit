@@ -1,5 +1,6 @@
 ---
 name: static-analysis
+description: Security reviews, code quality audits, or when the user mentions CodeQL, Semgrep, or finding vulnerability patterns across a codebase.
 updated: 2026-06-13
 ---
 

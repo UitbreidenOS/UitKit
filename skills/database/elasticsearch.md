@@ -1,5 +1,6 @@
 ---
 name: elasticsearch
+description: - Designing an Elasticsearch index mapping from scratch
 updated: 2026-06-13
 ---
 

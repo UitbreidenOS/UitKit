@@ -1,5 +1,6 @@
 ---
 name: laravel
+description: - Building or maintaining a Laravel 11 application
 updated: 2026-06-13
 ---
 

@@ -1,5 +1,6 @@
 ---
 name: buying-signals
+description: When prospecting B2B SaaS, you are deciding whether and when to reach out to a target account. Activate this skill when you have:
 updated: 2026-06-13
 ---
 

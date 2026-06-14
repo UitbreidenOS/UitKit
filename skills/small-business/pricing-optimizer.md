@@ -1,5 +1,6 @@
 ---
 name: pricing-optimizer
+description: - You're considering raising prices and want a structured framework instead of guessing
 updated: 2026-06-13
 ---
 

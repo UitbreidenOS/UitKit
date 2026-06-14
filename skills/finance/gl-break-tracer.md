@@ -1,5 +1,6 @@
 ---
 name: gl-break-tracer
+description: Investigating a general ledger reconciliation break, unexplained variance in a trial balance, subledger-to-GL mismatch, or a month-end close discre...
 updated: 2026-06-13
 ---
 

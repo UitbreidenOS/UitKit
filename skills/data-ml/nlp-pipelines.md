@@ -1,5 +1,6 @@
 ---
 name: nlp-pipelines
+description: Building NLP systems end to end — text preprocessing, fine-tuning transformer models, named entity recognition (NER), text classification, sentimen...
 updated: 2026-06-13
 ---
 

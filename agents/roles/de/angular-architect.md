@@ -216,7 +216,7 @@ export class ProductEffects {
   loadProducts$ = createEffect(() =>
     this.actions$.pipe(
       ofType(ProductActions.loadProducts),
-      exhaustMap(() =>    // exhaustMap: ignore new triggers while request is in flight
+      exhaustMap(() =>    // exhaustMap: ignoriert neue Trigger während Anfrage läuft
         this.productService.fetchAll().pipe(
           map(products => ProductActions.loadProductsSuccess({ products })),
           catchError(error =>
@@ -230,7 +230,7 @@ export class ProductEffects {
   createProduct$ = createEffect(() =>
     this.actions$.pipe(
       ofType(ProductActions.createProduct),
-      concatMap(({ product }) =>  // concatMap: queue requests, preserve order
+      concatMap(({ product }) =>  // concatMap: reiht Anfragen auf, erhält Reihenfolge
         this.productService.create(product).pipe(
           map(created => ProductActions.loadProductsSuccess({ products: [created] })),
           catchError(error =>
@@ -243,47 +243,47 @@ export class ProductEffects {
 }
 ```
 
-### RxJS Operators — When to Use Each
+### RxJS-Operatoren — Wann man jeden einsetzt
 
 ```typescript
-// switchMap: cancel previous inner observable when new outer value arrives
-// Use for: search, route changes, "latest wins" scenarios
+// switchMap: bricht vorherige innere Observable ab wenn neuer äußerer Wert ankommt
+// Verwende für: Suche, Routenänderungen, "Latest Wins"-Szenarien
 searchQuery$.pipe(
   debounceTime(300),
   distinctUntilChanged(),
-  switchMap(query => this.search(query))  // cancels previous search on new query
+  switchMap(query => this.search(query))  // bricht bisherige Suche bei neuer Abfrage ab
 )
 
-// exhaustMap: ignore new outer values while inner is active
-// Use for: login, form submit — prevent double-submit
+// exhaustMap: ignoriert neue äußere Werte während innere aktiv ist
+// Verwende für: Login, Formular absenden — verhindert Doppelsubmit
 submitButton$.pipe(
-  exhaustMap(() => this.authService.login(credentials))  // ignores clicks while logging in
+  exhaustMap(() => this.authService.login(credentials))  // ignoriert Klicks beim Einloggen
 )
 
-// concatMap: queue, process in order, never cancel
-// Use for: sequential uploads, ordered writes
+// concatMap: reiht auf, verarbeitet der Reihe nach, bricht nie ab
+// Verwende für: sequenzielle Uploads, geordnete Schreibvorgänge
 uploadQueue$.pipe(
-  concatMap(file => this.uploadService.upload(file))  // waits for each upload to finish
+  concatMap(file => this.uploadService.upload(file))  // wartet bis jeder Upload fertig ist
 )
 
-// mergeMap: process all concurrently, no ordering
-// Use for: fire-and-forget analytics, parallel independent requests
+// mergeMap: verarbeitet alle parallel, keine Reihenfolge
+// Verwende für: Fire-and-Forget Analytics, parallele unabhängige Anfragen
 ids$.pipe(
-  mergeMap(id => this.cache.preload(id))  // all preloads run in parallel
+  mergeMap(id => this.cache.preload(id))  // alle Preloads laufen parallel
 )
 
-// forkJoin: wait for all to complete, collect final values
-// Use for: parallel requests where you need all results
+// forkJoin: wartet bis alle fertig, sammelt finale Werte
+// Verwende für: parallele Anfragen wo man alle Ergebnisse braucht
 forkJoin({
   user: this.userService.get(userId),
   orders: this.orderService.list(userId),
   preferences: this.prefService.get(userId),
 }).subscribe(({ user, orders, preferences }) => {
-  // all three resolved
+  // alle drei aufgelöst
 })
 
-// combineLatest: emit when any source emits, using latest from all
-// Use for: forms with multiple dependent filters
+// combineLatest: gibt aus wenn irgendwelche Quellen ausgeben, nutzt neueste von allen
+// Verwende für: Formulare mit mehreren abhängigen Filtern
 combineLatest([
   this.categoryFilter$,
   this.priceRange$,
@@ -312,7 +312,7 @@ export const APP_ROUTES: Routes = [
     path: 'products',
     loadChildren: () =>
       import('./features/products/products.routes')
-        .then(m => m.PRODUCT_ROUTES),  // lazy-loaded route config
+        .then(m => m.PRODUCT_ROUTES),  // lazy-geladene Routenkonfiguration
   },
   {
     path: 'admin',
@@ -323,7 +323,7 @@ export const APP_ROUTES: Routes = [
   },
 ];
 
-// products.routes.ts — child routes loaded lazily
+// products.routes.ts — Kind-Routen lazy-geladen
 export const PRODUCT_ROUTES: Routes = [
   {
     path: '',
@@ -338,15 +338,15 @@ export const PRODUCT_ROUTES: Routes = [
 ];
 ```
 
-### OnPush Change Detection
+### OnPush-Änderungserkennung
 
 ```typescript
-// Rule: every component in a large app should use OnPush
-// OnPush only checks for changes when:
-// 1. An @Input reference changes (not mutation)
-// 2. An event originates from the component or its children
-// 3. An Observable or Signal used in the template emits
-// 4. ChangeDetectorRef.markForCheck() is called manually
+// Regel: jede Komponente in einer großen App sollte OnPush verwenden
+// OnPush überprüft nur auf Änderungen wenn:
+// 1. Eine @Input-Referenz sich ändert (keine Mutation)
+// 2. Ein Ereignis von der Komponente oder ihren Kindern stammt
+// 3. Eine Observable oder Signal in der Vorlage ausgeben
+// 4. ChangeDetectorRef.markForCheck() manuell aufgerufen wird
 
 @Component({
   selector: 'app-data-table',
@@ -359,22 +359,22 @@ export const PRODUCT_ROUTES: Routes = [
   `,
 })
 export class DataTableComponent {
-  // Signal input — change detection triggered automatically
+  // Signal-Eingabe — Änderungserkennung automatisch ausgelöst
   rows = input.required<Row[]>();
 }
 
-// Spread-replace arrays/objects — never mutate in place with OnPush
-// Bad (mutation — OnPush will not detect):
+// Spread-Replace Arrays/Objekte — nie in-place mutieren mit OnPush
+// Schlecht (Mutation — OnPush wird nicht erkennen):
 this.items.push(newItem);
 
-// Good (new reference — triggers OnPush):
+// Gut (neue Referenz — triggert OnPush):
 this.items = [...this.items, newItem];
 ```
 
-### Module Federation (Micro-frontends)
+### Modul-Federation (Micro-Frontends)
 
 ```javascript
-// webpack.config.js — shell app
+// webpack.config.js — Shell-App
 const ModuleFederationPlugin = require('@angular-architects/module-federation/webpack');
 
 module.exports = {
@@ -393,7 +393,7 @@ module.exports = {
   ],
 };
 
-// webpack.config.js — remote (orders MFE)
+// webpack.config.js — Remote (Orders MFE)
 new ModuleFederationPlugin({
   name: 'orders',
   filename: 'remoteEntry.js',
@@ -403,7 +403,7 @@ new ModuleFederationPlugin({
   shared: { '@angular/core': { singleton: true } },
 })
 
-// Shell routing — lazy-load MFE routes
+// Shell-Routing — lazy-load MFE Routen
 {
   path: 'orders',
   loadChildren: () => loadRemoteModule({
@@ -414,22 +414,22 @@ new ModuleFederationPlugin({
 }
 ```
 
-### Zoneless Change Detection (Angular 17+)
+### Zoneless-Änderungserkennung (Angular 17+)
 
 ```typescript
 // main.ts
 bootstrapApplication(AppComponent, {
   providers: [
-    provideExperimentalZonelessChangeDetection(), // replaces provideZoneChangeDetection
+    provideExperimentalZonelessChangeDetection(), // ersetzt provideZoneChangeDetection
     provideRouter(APP_ROUTES),
   ],
 });
 
-// With zoneless, change detection is signal-driven
-// All components MUST use signals or async pipe for automatic updates
-// setTimeout/setInterval do NOT trigger CD automatically
-// Use signal() + computed() for all reactive state
-// Use takeUntilDestroyed() for Observable cleanup
+// Mit Zoneless wird Änderungserkennung Signal-getrieben
+// Alle Komponenten MÜSSEN Signals oder async-Pipe für automatische Updates verwenden
+// setTimeout/setInterval triggern CD nicht automatisch
+// Verwende signal() + computed() für den ganzen reaktiven Zustand
+// Verwende takeUntilDestroyed() für Observable-Cleanup
 @Component({
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -443,23 +443,23 @@ export class ZonelessComponent {
   constructor() {
     this.dataService.getMessage()
       .pipe(takeUntilDestroyed(this.destroyRef))
-      .subscribe(msg => this.message.set(msg)); // signal.set() triggers CD
+      .subscribe(msg => this.message.set(msg)); // signal.set() triggert CD
   }
 }
 ```
 
-## Anwendungsbeispiel
+## Beispiel-Anwendungsfall
 
-**Input:** Architect an Angular 17 enterprise app with standalone components, NgRx feature store, lazy-loaded routes, and OnPush change detection throughout.
+**Input:** Gestalte eine Angular 17 Enterprise-App mit Standalone-Komponenten, NgRx Feature Store, lazy-geladenen Routen und OnPush-Änderungserkennung durchgehend.
 
-**What this agent produces:**
+**Was dieser Agent produziert:**
 
-Bootstrap: `bootstrapApplication` with `provideRouter`, `provideHttpClient(withInterceptors([authInterceptor]))`, `provideStore()`, `provideEffects()`, `provideStoreDevtools()`.
+Bootstrap: `bootstrapApplication` mit `provideRouter`, `provideHttpClient(withInterceptors([authInterceptor]))`, `provideStore()`, `provideEffects()`, `provideStoreDevtools()`.
 
-Feature structure: one NgRx feature per domain (`products`, `cart`, `users`) using `createFeature` with `extraSelectors`. Effects use `exhaustMap` for mutations, `switchMap` for queries. All state reads via `store.selectSignal()` — no `.subscribe()` in components.
+Feature-Struktur: ein NgRx-Feature pro Domain (`products`, `cart`, `users`) mit `createFeature` und `extraSelectors`. Effects nutzen `exhaustMap` für Mutationen, `switchMap` für Abfragen. Alle Zustandslesezeichen über `store.selectSignal()` — keine `.subscribe()` in Komponenten.
 
-Routing: all feature routes use `loadChildren` pointing to `*.routes.ts` files. Auth guard is a functional guard (`canActivate: [authGuard]`). Shell uses `ShellRoute` pattern for persistent navigation chrome.
+Routing: alle Feature-Routen nutzen `loadChildren` zeigend auf `*.routes.ts`-Dateien. Auth Guard ist ein funktionaler Guard (`canActivate: [authGuard]`). Shell nutzt `ShellRoute`-Muster für beständige Navigations-Chrome.
 
-Change detection: every component annotated with `ChangeDetectionStrategy.OnPush`. Template control flow uses `@for` with `track` and `@if`. All array/object mutations create new references. Signals used for local component state.
+Änderungserkennung: jede Komponente annotiert mit `ChangeDetectionStrategy.OnPush`. Template-Kontrollfluss nutzt `@for` mit `track` und `@if`. Alle Array/Objekt-Mutationen erzeugen neue Referenzen. Signals verwendet für lokalen Komponenten-Zustand.
 
 ---

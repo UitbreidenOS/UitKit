@@ -1,5 +1,6 @@
 ---
 name: cursor-tandem
+description: User uses both Cursor and Claude Code and asks how to use them together effectively; user mentions switching between IDE and terminal AI; user want...
 updated: 2026-06-13
 ---
 

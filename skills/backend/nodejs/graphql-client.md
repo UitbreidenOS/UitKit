@@ -1,5 +1,6 @@
 ---
 name: graphql-client
+description: - Setting up a GraphQL client in a React or Next.js project
 updated: 2026-06-13
 ---
 

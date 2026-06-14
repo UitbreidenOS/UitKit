@@ -1,5 +1,6 @@
 ---
 name: powershell
+description: - Writing or reviewing PowerShell scripts for Windows administration or cross-platform automation
 updated: 2026-06-13
 ---
 

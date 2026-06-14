@@ -1,5 +1,6 @@
 ---
 name: personalization-buckets
+description: When crafting cold outreach (email, LinkedIn, InMail) and you need to:
 updated: 2026-06-13
 ---
 

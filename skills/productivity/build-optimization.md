@@ -1,5 +1,6 @@
 ---
 name: build-optimization
+description: Slow builds, large bundle sizes, CI pipelines taking more than 5 minutes, or when the user mentions Webpack, Vite, Turbo, esbuild, or Rollup perfor...
 updated: 2026-06-13
 ---
 

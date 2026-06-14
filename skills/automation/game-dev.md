@@ -1,5 +1,6 @@
 ---
 name: game-dev
+description: Build games with Claude Code — game loops, physics, AI behaviors, and asset management
 updated: 2026-06-13
 ---
 

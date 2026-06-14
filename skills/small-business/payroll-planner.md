@@ -1,5 +1,6 @@
 ---
 name: payroll-planner
+description: - You are 1-2 weeks out from payroll and want to confirm the money is there before it hits
 updated: 2026-06-13
 ---
 

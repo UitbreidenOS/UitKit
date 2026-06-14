@@ -1,5 +1,6 @@
 ---
 name: reinforcement-learning
+description: Designing Gymnasium-compatible environments, training policies with Stable Baselines3, engineering or debugging reward functions, implementing curr...
 updated: 2026-06-13
 ---
 

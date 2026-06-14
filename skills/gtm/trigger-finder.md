@@ -1,5 +1,6 @@
 ---
 name: trigger-finder
+description: Daily prospecting workflow when building event-triggered sequences, prioritizing who to contact in the next 24 hours, or operationalizing buying in...
 updated: 2026-06-13
 ---
 

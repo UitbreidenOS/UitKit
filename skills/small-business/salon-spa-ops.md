@@ -1,5 +1,6 @@
 ---
 name: salon-spa-ops
+description: - You run a salon, spa, barbershop, nail studio, or wellness practice and need to compress the operational work between appointments
 updated: 2026-06-13
 ---
 

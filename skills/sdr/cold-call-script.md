@@ -1,5 +1,6 @@
 ---
 name: cold-call-script
+description: - You are executing B2B outbound cold calls and need a structure that fits 60 seconds without triggering sales-call defensiveness.
 updated: 2026-06-13
 ---
 

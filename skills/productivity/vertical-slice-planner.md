@@ -1,5 +1,6 @@
 ---
 name: vertical-slice-planner
+description: - Planning a new feature or project before building starts
 updated: 2026-06-13
 ---
 

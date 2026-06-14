@@ -1,5 +1,6 @@
 ---
 name: hiring-pipeline
+description: - You're hiring for a small business or solo practice and have 20+ applications to triage for a single role
 updated: 2026-06-13
 ---
 

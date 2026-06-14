@@ -1,5 +1,6 @@
 ---
 name: autofix-pr
+description: User wants Claude to automatically apply code review suggestions without manual intervention; user mentions `/autofix-pr`; user wants hands-off PR ...
 updated: 2026-06-13
 ---
 

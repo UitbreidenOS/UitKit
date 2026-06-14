@@ -1,5 +1,6 @@
 ---
 name: month-end-close
+description: - It is the last few days of the month and you need to close the books
 updated: 2026-06-13
 ---
 

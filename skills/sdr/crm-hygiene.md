@@ -1,5 +1,6 @@
 ---
 name: crm-hygiene
+description: Trigger this skill when:
 updated: 2026-06-13
 ---
 

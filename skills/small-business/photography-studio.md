@@ -1,5 +1,6 @@
 ---
 name: photography-studio
+description: - You run a solo or small-team photography studio — wedding, portrait, commercial, real estate, food, brand
 updated: 2026-06-13
 ---
 

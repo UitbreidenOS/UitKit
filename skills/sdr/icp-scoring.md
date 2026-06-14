@@ -1,5 +1,6 @@
 ---
 name: icp-scoring
+description: You are prospecting B2B SaaS companies and need to qualify leads against a defined ideal customer profile (ICP). Trigger this when: scoring a new l...
 updated: 2026-06-13
 ---
 

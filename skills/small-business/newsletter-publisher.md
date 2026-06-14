@@ -1,5 +1,6 @@
 ---
 name: newsletter-publisher
+description: - You run a paid or free newsletter (Substack, Beehiiv, ConvertKit/Kit, Ghost, Mailchimp) and want to systematize the operational work around each ...
 updated: 2026-06-13
 ---
 
