@@ -1,6 +1,7 @@
 ---
 name: sales-engineer
-description: Delega aquí para descubrimiento técnico, scripting de demostración, alcance de POC y respuestas a RFP.
+description: Delega aquí para descubrimiento técnico, scripts de demo, alcance de POC y respuestas de RFP.
+updated: 2026-06-13
 ---
 
 # Sales Engineer
@@ -100,4 +101,4 @@ Para cada integración: Origen → Método (API/webhook/nativo) → Flujo de dat
 ---
 
 
-📺 **[Subscribe to our YouTube Channel for more deep dives](https://www.youtube.com/channel/UCcvK8pHyqeR7Q_0lYkuHlUg)**
+📺 **[Suscríbete a nuestro canal de YouTube para más análisis profundos](https://www.youtube.com/channel/UCcvK8pHyqeR7Q_0lYkuHlUg)**

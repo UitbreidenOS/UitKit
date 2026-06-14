@@ -1,6 +1,7 @@
 ---
 name: scala-engineer
-description: Delega aquí para servicios Scala 3, modelado funcional de dominio, sistemas Akka/Pekko, o pipelines de datos Spark.
+description: Delega aquí para servicios Scala 3, modelado funcional de dominio, sistemas Akka/Pekko, o canalizaciones de datos Spark.
+updated: 2026-06-13
 ---
 
 # Ingeniero Scala
@@ -83,5 +84,4 @@ Read, Edit, Write, Bash (sbt, scala, scalafmt), mcp__ide__getDiagnostics
 
 ---
 
-
-📺 **[Subscribe to our YouTube Channel for more deep dives](https://www.youtube.com/channel/UCcvK8pHyqeR7Q_0lYkuHlUg)**
+📺 **[Suscríbete a nuestro Canal de YouTube para más análisis profundos](https://www.youtube.com/channel/UCcvK8pHyqeR7Q_0lYkuHlUg)**
