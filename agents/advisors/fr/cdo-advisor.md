@@ -71,59 +71,59 @@ Recommandation basée sur le stade (non basée sur la préférence) :
 - Couche de service (reverse ETL) : acheter si nécessaire (Census, Hightouch)
 - Feature store : construire uniquement si > 5 modèles ML en production ; sinon overkill
 
-### Valorisation des données clients
+### Valorisation des données client
 
-Quatre approches pour valoriser un corpus de données pour M&A ou levée de fonds:
+Quatre approches pour valoriser un corpus de données pour M&A ou levée de fonds :
 
-**1. Coût de remplacement:** combien coûterait-il à un acheteur de recréer cette donnée?
-(Coût de collecte + traitement + labélisation + gestion du consentement)
+**1. Coût de remplacement :** combien coûterait à un acquéreur de recréer ces données ?
+(Coût de collecte + traitement + labellisation + gestion du consentement)
 
-**2. Multiple de revenu:** produits data basés sur ce corpus × revenu × multiple applicable
-(Produit data SaaS: 5-8x ARR; accès aux données brutes: 2-3x ARR)
+**2. Multiple de revenu :** produits data construits sur ce corpus × revenu × multiple applicable
+(Produit data SaaS : 5-8x ARR ; accès données brutes : 2-3x ARR)
 
-**3. Valeur d'option stratégique:** quel avantage d'entraînement IA cela donne à l'acquéreur?
-(Signal comportemental unique qui ne peut pas être synthétisé = prime)
+**3. Valeur d'option stratégique :** quel avantage d'entraînement IA cela donne à l'acquéreur ?
+(Signal comportemental unique non synthétisable = prime)
 
-**4. Ajustement de responsabilité:** soustraire l'exposition réglementaire
-(Non-conformité RGPD/CCPA, lacunes de consentement, restrictions de sous-licensing = rabais)
+**4. Ajustement de responsabilité :** soustraire l'exposition réglementaire
+(Non-conformité RGPD/CCPA, lacunes de consentement, restrictions de sous-licence = réduction)
 
-**Drapeaux rouges M&A dans un actif de données:**
-- Accords clients avec clauses d'exclusion de données (données ne peuvent pas transférer en acquisition)
-- Pas de provenance de consentement documentée pour cas d'usage d'entraînement
-- Données traitées dans catégories réglementées (santé, finance, enfants) sans les bons licenses
-- Sous-processeurs qui ont des droits sur les données qui ne transfèrent pas automatiquement
+**Red flags M&A dans un asset de données :**
+- MSAs clients avec clauses de carve-out de données (données ne peuvent pas transférer en acquisition)
+- Pas de provenance de consentement documentée pour les cas d'usage d'entraînement
+- Données traitées dans catégories réglementées (santé, financier, enfants) sans les bonnes licences
+- Sous-processeurs qui ont des droits data qui ne transfèrent pas automatiquement
 
 ### Évolution organisationnelle de l'équipe data
 
-| Étape entreprise | Embaucher dans cet ordre | N'embauchez pas encore |
+| Stade de l'entreprise | Embaucher dans cet ordre | Ne pas embaucher encore |
 |---|---|---|
-| Pré-PMF | Analyste data (SQL, tableaux de bord) | Data scientist |
-| PMF / Series A | Analytics engineer (dbt, modélisation de données) | ML engineer |
+| Pre-PMF | Data analyst (SQL, dashboards) | Data scientist |
+| PMF / Series A | Analytics engineer (dbt, data modelling) | ML engineer |
 | Series B | Data scientist (si cas d'usage ML confirmé) | Research scientist |
 | Series C | Data product manager | Chief Data Officer (généralement) |
-| Series D+ | CDO — si donnée est core au produit ou histoire M&A | — |
+| Series D+ | CDO — si data est central au produit ou story M&A | — |
 
-**Déclencher centralisation vs. intégration:**
-- Centraliser (hub and spoke): < 4 consommateurs data; équipe data < 5 personnes
-- Intégrer (fédérée): > 4 domaines produit; équipe data > 8 personnes; domaines ont feuilles de route indépendantes
+**Trigger centralisation vs embedding :**
+- Centraliser (hub and spoke) : < 4 consommateurs de données ; équipe data < 5 personnes
+- Embarquer (fédéré) : > 4 domaines produit ; équipe data > 8 personnes ; domaines avec roadmaps indépendantes
 
-## Example use case
+## Cas d'usage exemple
 
-**Scénario:** Series A SaaS avec 500 clients entreprise. A collecté 3 ans de logs d'usage comportemental. Le CEO veut entraîner un modèle sur cette donnée. Est-ce légal?
+**Scénario :** SaaS Series A avec 500 clients enterprise. Données de logs d'utilisation comportementale collectées sur 3 ans. Le PDG veut entraîner un modèle sur ces données. Est-ce légal ?
 
-**Évaluation CDO:**
+**Évaluation CDO :**
 
-**Origine de donnée:** Données comportementales 1ère partie collectées selon TOS SaaS standard.
+**Origine des données :** Données comportementales 1st-party collectées sous un TOS SaaS standard.
 
-**Question clé:** Le TOS dit-il (a) vous accorder des droits d'utiliser les données clients pour entraînement de modèle IA, ou (b) uniquement pour opérer et améliorer le service?
+**Question clé :** Le TOS (a) accorde-t-il des droits d'utiliser les données client pour l'entraînement de modèles IA, ou (b) ne permet-il que l'utilisation pour opérer et améliorer le service ?
 
-La plupart des TOS SaaS de 2021-2023 n'incluent PAS explicitement "entraîner des modèles IA" — ce langage a été ajouté post-ChatGPT. Vérifiez le langage spécifique.
+La plupart des TOS SaaS de 2021-2023 n'incluent PAS explicitement "entraînement de modèles IA" — ce langage a été ajouté post-ChatGPT. Vérifiez le langage spécifique.
 
-**Si TOS dit "améliorer nos services":**
-L'interprétation des données d'entraînement dépend de si clients s'attendraient raisonnablement à cela. Pour clients B2B avec obligations de gouvernance des données: probablement non. Risque: moyen-élevé. Recommandé: obtenir consentement explicite des clients via amendement DPA ou nouveau TOS, ou utiliser uniquement télémétrie agrégée/anonymisée.
+**Si le TOS dit "améliorer nos services" :**
+L'interprétation des données d'entraînement dépend de ce que les clients attenderaient raisonnablement. Pour les clients B2B avec obligations de gouvernance des données : probablement pas. Risque : moyen-élevé. Recommandation : obtenir consentement explicite des clients via amendement DPA ou nouveau TOS, ou utiliser uniquement télémétrie agrégée/anonymisée.
 
-**Voie plus sûre:** Pseudonymiser les données (retirer identifiants clients, agréger par type de feature pas par client), utiliser pour fine-tuning d'un modèle task-spécifique sur motifs comportementaux pseudonymisés, obtenir révision légale pour juridiction spécifique de vos clients de plus haute valeur.
+**Chemin plus sûr :** Pseudonymiser les données (supprimer les identifiants client, agréger par type de feature non par client), utiliser pour fine-tuning d'un modèle spécifique à la tâche sur motifs comportementaux pseudonymisés, obtenir examen juridique pour la juridiction spécifique de vos clients à plus haute valeur.
 
-**Si entraînement sur données EU:** Article 6 du RGPD base légale requise. Les "intérêts légitimes" peuvent fonctionner pour amélioration interne mais pas pour entraînement d'un modèle fondamental que vous licenserez à d'autres.
+**Si entraînement sur données clients EU :** Base légale RGPD Article 6 requise. Les "intérêts légitimes" peuvent fonctionner pour amélioration interne mais pas pour entraînement d'un modèle foundationnel que vous licencierez à d'autres.
 
 ---
