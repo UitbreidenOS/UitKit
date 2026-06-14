@@ -91,52 +91,52 @@ routes:
     strip_path: false
     plugins: [rate-limit-public, jwt-optional]
 ```
-- Streifen des Path vor Weiterleitung wenn Upstream-Services Root-Paths verwenden
-- Versions-Routing: Path-Prefix (`/v1`, `/v2`) bevorzugt gegenüber Header-Versionierung für Cacheability
-- Sunset veraltete Routes: füge `Deprecation` und `Sunset` Header vor Entfernung hinzu
+- Pfad vor Weiterleitung an Upstream-Services entfernen, wenn diese Root-Pfade verwenden
+- Versions-Routing: Path-Prefix (`/v1`, `/v2`) bevorzugt gegenüber Header-Versionierung für Cacheabilität
+- Deprecated Routes abschalten: `Deprecation` und `Sunset` Headers vor Entfernung hinzufügen
 
-### Load Balancing & Widerstandsfähigkeit
-- Round-Robin für stateless Services; Least-Connections für variable Verarbeitungszeit
-- Health Checks: aktiv (Gateway pollt `/health`) + passiv (Circuit Break bei 5xx Rate)
-- Circuit Breaker Schwellenwerte: öffnen nach 50% Fehlerrate in 10s Fenster; halb-offen nach 30s
-- Retry-Policy: Wiederhole bei `503`, `504` und Connection Errors; max 2 Retries; exponentielles Backoff mit Jitter
-- Timeout-Hierarchie: Upstream-Timeout < Gateway-Timeout < Client-Timeout (verhindert Kaskade)
+### Load Balancing & Resilienz
+- Round-Robin für Stateless Services; Least-Connections für variable Verarbeitungszeit
+- Health Checks: aktiv (Gateway polls `/health`) + passiv (Circuit Break bei 5xx Rate)
+- Circuit Breaker Schwellwerte: öffnen nach 50% Fehlerrate in 10s Fenster; halb-offen nach 30s
+- Retry-Richtlinie: Retry bei `503`, `504` und Connection Errors; max 2 Retries; exponentieller Backoff mit Jitter
+- Timeout-Hierarchie: Upstream Timeout < Gateway Timeout < Client Timeout (verhindert Cascade)
 
 ### Request-Transformation
-- Header Injection: füge `X-Request-ID` (UUID v4), `X-Forwarded-For`, `X-Real-IP` bei jedem Request hinzu
-- Entferne interne Header vor Weiterleitung zu externen Upstreams: `Authorization` → Service-Credential-Substitution
-- Body-Transformation: nur am Gateway wenn wirklich notwendig (Parse-Kosten sind hoch in der Skalierung)
-- Response: entferne interne Header (`X-Powered-By`, `Server`) von Responses zu Clients
+- Header-Injection: `X-Request-ID` (UUID v4), `X-Forwarded-For`, `X-Real-IP` bei jedem Request hinzufügen
+- Interne Headers vor Weiterleitung an externe Upstreams entfernen: `Authorization` → Service-Credential-Substitution
+- Body-Transformation: nur am Gateway wenn unbedingt erforderlich (Parsing-Kosten sind hoch im Maßstab)
+- Response: interne Headers (`X-Powered-By`, `Server`) aus Responses zu Clients entfernen
 
 ### TLS & mTLS
-- Terminiere TLS am Gateway; internes Mesh kann mTLS separat verwenden
+- TLS am Gateway terminieren; interner Mesh kann mTLS separat verwenden
 - HSTS: `max-age=63072000; includeSubDomains; preload`
-- Minimum TLS 1.2; TLS 1.3 bevorzugt; deaktiviere TLS 1.0/1.1 explizit
-- Zertifikatserneuerung: automatisiere mit cert-manager oder Let's Encrypt ACME; alert bei 30-Tage-Ablauf
-- mTLS für Service-to-Service: ausgabe kurzlebige Zertifikate (24h) via interner CA (Vault PKI oder SPIFFE)
+- Mindestens TLS 1.2; TLS 1.3 bevorzugt; TLS 1.0/1.1 explizit deaktivieren
+- Zertifikaterneurung: mit cert-manager oder Let's Encrypt ACME automatisieren; bei 30-Tage-Ablauf warnen
+- mTLS für Service-zu-Service: kurzlebige Zertifikate (24h) via interner CA (Vault PKI oder SPIFFE) ausstellen
 
 ### Observability-Checkliste
-- Zugriffsllog-Felder: `timestamp`, `request_id`, `method`, `path`, `status`, `latency_ms`, `upstream_latency_ms`, `consumer_id`, `service`
-- Injiziere `traceparent` Header (W3C Trace Context) wenn nicht vorhanden; propagiere downstream
-- Metriken: Request-Rate, Fehlerrate (4xx/5xx separat), p50/p95/p99 Latenz pro Service
-- Alert bei: Fehlerrate > 1% sustained 5min; p99 Latenz > 2s; Gateway CPU > 80%
+- Access Log Felder: `timestamp`, `request_id`, `method`, `path`, `status`, `latency_ms`, `upstream_latency_ms`, `consumer_id`, `service`
+- `traceparent` Header (W3C Trace Context) injizieren falls nicht vorhanden; Downstream propagieren
+- Metriken: Request Rate, Error Rate (4xx/5xx separat), p50/p95/p99 Latency pro Service
+- Alert bei: Error Rate > 1% über 5min; p99 Latency > 2s; Gateway CPU > 80%
 
-### Konfigurationsmanagement
-- Deklarative Konfiguration (Kong deck, nginx config, Envoy xDS) in Version Control — niemals Click-Ops
-- Validiere Konfiguration in CI: `deck validate` oder `nginx -t` vor Deploy
-- Blue-Green Gateway Deployments: verschiebe Traffic schrittweise mit gewichtetem Routing
+### Konfigurationsverwaltung
+- Deklarative Konfiguration (Kong deck, nginx config, Envoy xDS) in Versionskontrolle — nie Click-Ops
+- Konfiguration in CI validieren: `deck validate` oder `nginx -t` vor Deploy
+- Blue-Green Gateway Deployments: Traffic schrittweise mit gewichtelem Routing verschieben
 
 ## Beispiel-Use-Case
-**Input:** "Füge Rate Limiting und JWT Auth zu unserer Public API hinzu — kostenlos 100 req/min, Pro 2000 req/min."
+**Input:** "Ratenlimiting und JWT Auth zu unserer Public API hinzufügen — Free Tier 100 req/min, Pro Tier 2000 req/min."
 
 **Output:**
-- JWT Plugin: Verifiziere RS256 Signatur gegen JWKS Endpoint; extrahiere `plan` Claim
+- JWT Plugin: RS256 Signatur gegen JWKS Endpoint verifizieren; `plan` Claim extrahieren
 - Rate Limit Plugin: bedingt auf `plan` Claim — `free` → 100/min, `pro` → 2000/min mit Redis Sliding Window
-- Consumer Mapping: Gateway mappt JWT `sub` zu Consumer ID für pro-Consumer Metriken
-- Zurückgegebene Header: `X-RateLimit-Limit-Minute`, `X-RateLimit-Remaining-Minute`, `X-RateLimit-Reset`
-- Unauthentifizierte Requests: `401 Unauthorized` vor Rate Limiting (lehne früh ab, reduziere Redis Writes)
+- Consumer Mapping: Gateway mappt JWT `sub` zu Consumer ID für per-Consumer Metriken
+- Zurückgegebene Headers: `X-RateLimit-Limit-Minute`, `X-RateLimit-Remaining-Minute`, `X-RateLimit-Reset`
+- Nicht-authentifizierte Requests: `401 Unauthorized` vor Ratenlimiting (früh ablehnen, Redis-Schreibvorgänge reduzieren)
 
 ---
 
 
-📺 **[Subscribe to our YouTube Channel for more deep dives](https://www.youtube.com/channel/UCcvK8pHyqeR7Q_0lYkuHlUg)**
+📺 **[Abonnieren Sie unseren YouTube-Kanal für weitere tiefe Einblicke](https://www.youtube.com/channel/UCcvK8pHyqeR7Q_0lYkuHlUg)**

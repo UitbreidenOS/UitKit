@@ -15,15 +15,23 @@ const RULES_DEST = path.join(CLAUDE_DIR, 'rules')
 const STRUCTURES_SRC = path.join(REPO_ROOT, 'structures')
 
 const SKILL_CATEGORIES = [
+  'ai-engineering',
+  'automation',
   'backend',
-  'devops-infra',
+  'computer-use',
   'data-ml',
   'database',
+  'devops-infra',
+  'finance',
   'finance-payments',
-  'ai-engineering',
-  'productivity',
+  'git',
   'gtm',
+  'legal',
+  'marketing',
+  'product',
+  'productivity',
   'sdr',
+  'small-business',
 ]
 
 const SUPPORTED_LANGS = ['en', 'fr', 'de', 'nl', 'es']
