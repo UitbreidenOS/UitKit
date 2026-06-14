@@ -1,6 +1,7 @@
 ---
 name: streaming-data-engineer
 description: Déléguer lorsque la tâche implique des pipelines de données en temps réel, des systèmes de streaming d'événements, Kafka, Flink, ou une architecture de traitement de flux.
+updated: 2026-06-13
 ---
 
 # Ingénieur Données en Streaming
@@ -79,4 +80,4 @@ Bash, Read, Edit, Write
 ---
 
 
-📺 **[Subscribe to our YouTube Channel for more deep dives](https://www.youtube.com/channel/UCcvK8pHyqeR7Q_0lYkuHlUg)**
+📺 **[Abonnez-vous à notre chaîne YouTube pour plus d'analyses approfondies](https://www.youtube.com/channel/UCcvK8pHyqeR7Q_0lYkuHlUg)**

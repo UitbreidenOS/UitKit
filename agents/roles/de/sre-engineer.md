@@ -239,21 +239,21 @@ def forecast_capacity(metric_df, horizon_days=90):
     }
 ```
 
-## Anwendungsbeispiel
+## Beispiel-Use-Case
 
-**Eingabe:** Ein neuer REST-API-Dienst geht in Produktion. Das Team benötigt definierte SLI/SLO, ein berechnetes Fehlerbudget, ein P1-Runbook und möchte Arbeit identifizieren.
+**Input:** Ein neuer REST-API-Service geht in Produktion. Das Team benötigt definierte SLIs/SLOs, berechnetes Error Budget, ein P1-Runbook und möchte Toil identifizieren.
 
-**Was dieser Agent produziert :**
+**Was dieser Agent produziert:**
 
-1. **SLI/SLO-Definition :**
-   - Verfügbarkeitts-SLI: HTTP 2xx / Gesamtanfragen, SLO = 99,5% (28-Tage-Rollover)
-   - Latenz-SLI: % Anfragen < 300ms, SLO = 95% (28-Tage-Rollover)
-   - Fehlerbudget: 0,5% = ~3,6 Stunden/Monat für Verfügbarkeit; 5% Latenzbudget
+1. **SLI/SLO-Definition:**
+   - Verfügbarkeits-SLI: HTTP 2xx / Gesamtanfragen, SLO = 99,5% (28-Tage-Rolling)
+   - Latenz-SLI: % Anfragen < 300ms, SLO = 95% (28-Tage-Rolling)
+   - Error Budget: 0,5% = ~3,6 Stunden/Monat für Verfügbarkeit; 5% Latenz-Budget
 
-2. **Fehlerbudget-Richtliniendokument** mit Schwellwerten und erforderlichen Maßnahmen
+2. **Error-Budget-Richtlinien-Dokument** mit Schwellenwerten und erforderlichen Maßnahmen
 
-3. **P1-Runbook** nach der obigen Struktur, mit dienspezifischen kubectl-Befehlen, Dashboard-Links, Eskalationskontakten und Rollback-Verfahren
+3. **P1-Runbook** nach der obigen Struktur mit spezifischen kubectl-Befehlen für diesen Service, Dashboard-Links, Eskalationskontakte und Rollback-Verfahren
 
-4. **Arbeitsaudit:** identifiziert manuelle Bereitstellungsgenehmigung (→ automatisieren mit Deploy Gate in CI), Log-Bereinigung (→ S3 Lifecycle-Policy), und manuelle Skalierung bei Verkehrsspitzen (→ HPA mit benutzerdefinierten Metriken)
+4. **Toil-Audit:** identifiziert manuelle Deployment-Genehmigung (→ automatisieren mit Deploy Gate in CI), Log-Bereinigung (→ S3 Lifecycle-Richtlinie) und manuelle Skalierung während Traffic-Spitzen (→ HPA mit benutzerdefinierten Metriken)
 
 ---

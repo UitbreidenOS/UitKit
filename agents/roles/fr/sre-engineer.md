@@ -239,21 +239,21 @@ def forecast_capacity(metric_df, horizon_days=90):
     }
 ```
 
-## Exemple d'utilisation
+## Cas d'usage d'exemple
 
-**Entrée :** Un nouveau service API REST va en production. L'équipe a besoin que les SLI/SLO soient définis, un budget d'erreur calculé, un runbook P1, et veut identifier la corvée.
+**Entrée :** Un nouveau service API REST va en production. L'équipe a besoin de SLIs/SLOs définis, d'un budget d'erreurs calculé, d'un runbook P1, et souhaite identifier les tâches répétitives.
 
 **Ce que cet agent produit :**
 
 1. **Définition SLI/SLO :**
-   - SLI de disponibilité : HTTP 2xx / total des demandes, SLO = 99,5% (roulement de 28 jours)
-   - SLI de latence : % des demandes < 300ms, SLO = 95% (roulement de 28 jours)
-   - Budget d'erreur : 0,5% = ~3,6 heures/mois pour la disponibilité ; budget de latence 5%
+   - SLI de disponibilité : HTTP 2xx / requêtes totales, SLO = 99,5% (roulement 28 jours)
+   - SLI de latence : % requêtes < 300ms, SLO = 95% (roulement 28 jours)
+   - Budget d'erreurs : 0,5% = ~3,6 heures/mois pour la disponibilité ; budget latence 5%
 
-2. **Document de politique du budget d'erreur** avec seuils et actions requises
+2. **Document de politique de budget d'erreurs** avec seuils et actions requises
 
-3. **Runbook P1** suivant la structure ci-dessus, avec des commandes kubectl spécifiques pour ce service, des liens de tableau de bord, des contacts d'escalade, et une procédure de restauration
+3. **Runbook P1** suivant la structure ci-dessus, avec commandes kubectl spécifiques pour ce service, liens de tableau de bord, contacts d'escalade, et procédure de retour en arrière
 
-4. **Audit de corvée :** identifie l'approbation manuelle du déploiement (→ automatiser avec portail de déploiement dans CI), nettoyage des journaux (→ politique de cycle de vie S3), et mise à l'échelle manuelle pendant les pics de trafic (→ HPA avec métriques personnalisées)
+4. **Audit des tâches répétitives :** identifie l'approbation manuelle de déploiement (→ automatiser avec gate de déploiement en CI), nettoyage de logs (→ politique de cycle de vie S3), et mise à l'échelle manuelle pendant les pics de trafic (→ HPA avec métriques personnalisées)
 
 ---
