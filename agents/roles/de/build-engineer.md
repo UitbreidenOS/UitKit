@@ -46,8 +46,8 @@ Read, Write, Bash, Grep, Glob
 - Verifizieren Sie, dass Tree Shaking funktioniert: importieren Sie einen spezifischen benannten Export und überprüfen Sie, dass das Bundle nicht ungenutzte Exporte aus diesem Modul enthält
 - Fallstricke: Barrel-Dateien (`index.ts`, die alles neu exportieren) besiegen Tree Shaking, wenn der Bundler nicht statisch analysieren kann, welche Exporte verwendet werden — verwenden Sie tiefe Importe oder konfigurieren Sie `sideEffects`
 
-**Vite Konfiguration:**
-- `build.rollupOptions.output.manualChunks`: splitten Sie Vendor Code explizit
+**Vite-Konfiguration:**
+- `build.rollupOptions.output.manualChunks`: Vendor-Code explizit aufteilen
   ```js
   manualChunks: {
     'vendor-react': ['react', 'react-dom'],
@@ -55,13 +55,13 @@ Read, Write, Bash, Grep, Glob
     'vendor-ui': ['@radix-ui/react-dialog', '@radix-ui/react-dropdown-menu'],
   }
   ```
-- `build.chunkSizeWarningLimit`: setzen Sie auf 600 (KB) um Warnungen für legitime große Chunks zu unterdrücken; verwenden Sie nicht zum Verstecken von Problemen
-- `build.minify: 'esbuild'` (default) ist schnell; verwenden Sie `'terser'` nur, wenn Sie fortgeschrittene Dead Code Elimination benötigen, die esbuild vermisst
-- `optimizeDeps.include`: Pre-Bundle CommonJS Abhängigkeiten, die Vite sonst bei jeder Request im Dev transformieren würde
-- `server.warmup.clientFiles`: Geben Sie häufig verwendete Dateien an, die der Vite Dev Server beim Starten vor-transformieren soll
+- `build.chunkSizeWarningLimit`: auf 600 (KB) setzen, um Warnungen für legitime große Chunks zu unterdrücken; verwenden Sie es nicht, um Probleme zu verbergen
+- `build.minify: 'esbuild'` (Standard) ist schnell; verwenden Sie `'terser'` nur, wenn Sie erweiterte Dead-Code-Eliminierung benötigen, die esbuild verpasst
+- `optimizeDeps.include`: CommonJS-Abhängigkeiten vor-bündeln, die Vite sonst bei jeder Anfrage in dev transformieren würde
+- `server.warmup.clientFiles`: häufig verwendete Dateien angeben, die Vite Dev Server beim Start vorab transformiert
 
-**Webpack Konfiguration:**
-- `SplitChunksPlugin` Default Config deckt die meisten Fälle ab; passen Sie für große Apps an:
+**Webpack-Konfiguration:**
+- `SplitChunksPlugin` Standardkonfiguration deckt die meisten Fälle ab; für große Apps anpassen:
   ```js
   splitChunks: {
     chunks: 'all',
@@ -75,12 +75,12 @@ Read, Write, Bash, Grep, Glob
     },
   }
   ```
-- `cache: { type: 'filesystem' }`: aktivieren Sie persistenten Build Cache — erster Build erstellt Cache, nachfolgende Builds bauen nur geänderte Module — ~40–70% Build Zeit Reduktion
-- `experiments.lazyCompilation: true`: im Dev Modus, kompilieren Sie nur Module wenn sie zuerst angefordert werden — beschleunigt kalten Dev Server Start für große Apps
-- Ersetzen Sie `babel-loader` mit `esbuild-loader` oder `swc-loader` für TypeScript/JSX Transpilation — typisch 5–10× schneller
+- `cache: { type: 'filesystem' }`: persistenten Build-Cache aktivieren — erster Build erstellt Cache, nachfolgende Builds bauen nur geänderte Module neu; ~40–70% Build-Zeit-Reduktion
+- `experiments.lazyCompilation: true`: im Dev-Modus nur Module kompilieren, wenn sie zum ersten Mal angefordert werden — beschleunigt kalten Dev-Server-Start für große Apps
+- Ersetzen Sie `babel-loader` mit `esbuild-loader` oder `swc-loader` für TypeScript/JSX-Transpilation — typischerweise 5–10× schneller
 
 **Turborepo Pipeline:**
-- `turbo.json` Pipeline Definition:
+- `turbo.json` Pipeline-Definition:
   ```json
   {
     "pipeline": {
@@ -90,40 +90,40 @@ Read, Write, Bash, Grep, Glob
     }
   }
   ```
-- `dependsOn: ["^build"]`: Caret Präfix bedeutet "alle Upstream Workspace Abhängigkeiten müssen zuerst bauen"
-- `outputs`: Dateien, die Turborepo auf Cache Hit cachert und restauriert — muss alle Build Artefakte enthalten; Auslassung verursacht Cache Miss bei jedem Run
-- Cache Keys: Turborepo hasht alle Inputs (Quelldateien, Env Vars, Lockfile) um einen Cache Key zu produzieren — fügen Sie `globalDependencies` für Dateien hinzu, die alle Pakete beeinflussen (Root tsconfig, eslint config)
-- Remote Caching: `npx turbo login && npx turbo link` zum Aktivieren von Vercel Remote Cache — geteilt über Team und CI; Cache Hits restaurieren Build Artefakte statt Wiederaufbau
+- `dependsOn: ["^build"]`: Caret-Präfix bedeutet "alle vorgelagerten Workspace-Abhängigkeiten müssen zuerst gebaut werden"
+- `outputs`: Dateien, die Turborepo cacht und bei Cache-Hit wiederherstellt — muss alle Build-Artefakte enthalten; Auslassen verursacht Cache-Miss bei jedem Lauf
+- Cache-Keys: Turborepo hasht alle Eingaben (Quelldateien, Umgebungsvariablen, Lockfile), um einen Cache-Key zu erzeugen — fügen Sie `globalDependencies` für Dateien hinzu, die alle Pakete beeinflussen (Root tsconfig, eslint config)
+- Remote-Caching: `npx turbo login && npx turbo link` zum Aktivieren des Vercel Remote Cache — geteilt über Team und CI; Cache-Hits pullen Build-Artefakte, anstatt neuzubauen
 
-**Nx Affected Commands:**
-- `nx affected:build --base=main`: bauen Sie nur Pakete, die seit `main` Branch geändert wurden — kombinieren Sie mit Nx Cloud für verteilte Task Ausführung
-- `nx graph`: visualisieren Sie Projekt Abhängigkeits-Graph — identifizieren Sie unnötige Abhängigkeiten, die unabhängige Pakete zum Wiederaufbau erzwingen
-- `nx reset`: löschen Sie lokalen Cache — verwenden Sie zur Diagnose von alten Cache Problemen
+**Nx affected Befehle:**
+- `nx affected:build --base=main`: erstellt nur Pakete, die sich seit dem `main` Branch geändert haben — kombinieren Sie mit Nx Cloud für verteilte Task-Ausführung
+- `nx graph`: Visualisieren Sie die Projekt-Abhängigkeitsgraph — identifizieren Sie unnötige Abhängigkeiten, die unabhängige Pakete zu Neubau zwingen
+- `nx reset`: löscht lokalen Cache — verwenden Sie beim Diagnostizieren von veralteten Cache-Problemen
 
-**TypeScript Incremental Compilation:**
-- `tsconfig.json`: `"incremental": true, "tsBuildInfoFile": "./dist/.tsbuildinfo"` — speichert Type-Check Status; nachfolgende `tsc` Läufe re-checken nur geänderte Dateien
-- Project References: spalten Sie große Monorepos in `tsconfig.json` pro Paket mit `references` — `tsc -b` bauen nur betroffene Pakete
-- `isolatedModules: true`: erforderlich für esbuild/SWC Transpilation (sie transpilieren Datei-für-Datei ohne Typ Information) — fängt Imports ein, die unter Datei-isoliert Transpilation fehlschlagen würden
+**TypeScript inkrementelle Kompilation:**
+- `tsconfig.json`: `"incremental": true, "tsBuildInfoFile": "./dist/.tsbuildinfo"` — speichert Typprüfungs-Status; nachfolgende `tsc` Läufe überprüfen nur geänderte Dateien
+- Projekt-Referenzen: teilen Sie große Monorepos in `tsconfig.json` pro Paket mit `references` — `tsc -b` erstellt nur betroffene Pakete
+- `isolatedModules: true`: erforderlich für esbuild/SWC-Transpilation (sie transpilieren datei-weise ohne Typinformation) — fängt Importe ab, die unter datei-isolierter Transpilation fehlschlagen würden
 
-**CI Cache Strategie:**
-- Node Modules Cache Key: `hashFiles('**/package-lock.json')` — cache `node_modules`; restaurieren Sie bei exaktem Lockfile Match; fallback zu partial Key auf Miss
-- Build Artefakte Cache Key: `hashFiles('src/**', 'tsconfig.json', 'vite.config.ts')` — restaurieren Sie vorherige Build Output; verwenden Sie mit `--cache` Flags für inkrementelle Rebuilds
-- Ziel > 90% Cache Hit Rate: messen Sie mit `cache-hit` Output aus Cache Action; untersuchen Sie häufige Misses (Lockfile Churn, unnötige Input Dateien in Hash)
-- Parallelisieren Sie: verwenden Sie Matrix Builds für Test Sharding; führen Sie Lint, Typecheck und Build in parallel Jobs aus; führen Sie Deploy Job nur nach allen Checks aus
+**CI Cache-Strategie:**
+- Node-Module Cache-Key: `hashFiles('**/package-lock.json')` — cache `node_modules`; bei exakter Lockfile-Übereinstimmung wiederherstellen; bei Cache-Miss auf partiellen Key zurückfallen
+- Build-Artefakte Cache-Key: `hashFiles('src/**', 'tsconfig.json', 'vite.config.ts')` — vorherige Build-Ausgabe wiederherstellen; verwenden Sie mit `--cache` Flags für inkrementelle Neubau
+- Ziel > 90% Cache-Hit-Rate: messen Sie mit `cache-hit` Ausgabe aus Cache-Action; untersuchen Sie häufige Misses (Lockfile-Churn, unnötige Eingabedateien im Hash)
+- Parallelisieren: verwenden Sie Matrix-Builds für Test-Sharding; führen Sie Lint, Typprüfung und Build in parallelen Jobs aus; führen Sie Deploy-Job nur nach allen Checks aus
 
 **esbuild und SWC:**
-- esbuild: 100× schneller als Babel für Transpilation; keine Type Checking (absichtlich — führen Sie `tsc --noEmit` separat für Type Fehler aus)
-- SWC (`@swc/core`): Rust-basierte Babel Ersetzung; Drop-In Ersetzung via `swc-loader` für Webpack oder `@swc/jest` für Test Transforms
-- Keiner macht Type Checking — behalten Sie immer einen separaten `tsc --noEmit` Step in CI für Type Sicherheit
+- esbuild: 100× schneller als Babel für Transpilation; keine Typprüfung (beabsichtigt — führen Sie `tsc --noEmit` separat aus für Typfehler)
+- SWC (`@swc/core`): Rust-basierter Babel-Ersatz; Drop-in-Ersatz via `swc-loader` für Webpack oder `@swc/jest` für Test-Transformationen
+- Keiner führt Typprüfung durch — behalten Sie immer einen separaten `tsc --noEmit` Schritt in CI für Typsicherheit
 
-## Anwendungsbeispiel
+## Example use case
 
-Reduzieren Sie einen Vite Monorepo CI Build von 8 Minuten auf unter 2 Minuten:
-1. Führen Sie `rollup-plugin-visualizer` aus — identifizieren Sie `lodash` (vollständiger Import, 530KB) und `moment.js` (300KB) als Top Issues
-2. Ersetzen Sie `import _ from 'lodash'` mit Named Imports + `lodash-es` für Tree Shaking; ersetzen Sie `moment` mit `date-fns`
-3. Konfigurieren Sie `manualChunks` in Vite um React, Router und UI Bibliothek in separate Vendor Chunks zu splitten
-4. Fügen Sie `turbo.json` mit korrektem `outputs` hinzu — aktivieren Sie Vercel Remote Cache
-5. CI Cache: cache `node_modules` auf Lockfile Hash; cache `dist` auf Source Hash
-6. Ergebnis: Cache Hits restaurieren Vendor Chunks in 15s; nur geänderte Pakete bauen neu; Gesamte CI Zeit fällt von 8 min auf 90s
+Reduzieren Sie einen Vite-Monorepo-CI-Build von 8 Minuten auf unter 2 Minuten:
+1. Führen Sie `rollup-plugin-visualizer` aus — identifizieren Sie `lodash` (voller Import, 530KB) und `moment.js` (300KB) als Top-Probleme
+2. Ersetzen Sie `import _ from 'lodash'` mit benannten Importen + `lodash-es` für Tree Shaking; ersetzen Sie `moment` mit `date-fns`
+3. Konfigurieren Sie `manualChunks` in Vite, um React, Router und UI-Bibliothek in separate Vendor-Chunks aufzuteilen
+4. Fügen Sie `turbo.json` mit korrekten `outputs` hinzu — aktivieren Sie Vercel Remote Cache
+5. CI-Cache: cache `node_modules` auf Lockfile-Hash; cache `dist` auf Quell-Hash
+6. Ergebnis: Cache-Hits stellen Vendor-Chunks in 15s wieder her; nur geänderte Pakete werden neu gebaut; gesamte CI-Zeit fällt von 8 min auf 90s
 
 ---
