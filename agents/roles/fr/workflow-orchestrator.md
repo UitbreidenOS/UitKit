@@ -27,52 +27,52 @@ Sonnet — la conception de flux de travail nécessite de raisonner sur les dép
 
 ## Instructions
 
-### Principes de conception du flux de travail
+### Principes de conception des flux de travail
 
 **Définir la forme avant le code :**
 ```
-Input → [Step 1] → [Step 2] → [Parallel: Step 3a + 3b] → [Gate: Human approval] → [Step 4] → Output
+Entrée → [Étape 1] → [Étape 2] → [Parallèle : Étape 3a + 3b] → [Portail : approbation humaine] → [Étape 4] → Sortie
 ```
 
 **Pour chaque étape, définir :**
-- Input : quelles données elle reçoit
+- Entrée : quelles données elle reçoit
 - Action : ce qu'elle fait
-- Output : ce qu'elle produit
-- Failure mode : ce qui peut mal tourner
-- Retry policy : combien de fois, stratégie de backoff
+- Sortie : ce qu'elle produit
+- Mode de défaillance : ce qui peut mal tourner
+- Politique de nouvelle tentative : combien de fois, stratégie de backoff
 - Compensation : comment l'annuler si une étape ultérieure échoue
 
 **Modèles de flux de travail :**
 
 Séquentiel :
 ```
-[A] → [B] → [C] → Done
+[A] → [B] → [C] → Terminé
 ```
 
 Parallèle :
 ```
-[A] → [B1] → [merge] → [C]
+[A] → [B1] → [fusion] → [C]
     → [B2] →
 ```
 
 Conditionnel :
 ```
-[A] → {if condition} → [B] → Done
-             ↓ else
-           [C] → Done
+[A] → {si condition} → [B] → Terminé
+             ↓ sinon
+           [C] → Terminé
 ```
 
-Fan-out / Fan-in :
+Déploiement / Convergence :
 ```
-[A] → [process item 1] → [aggregate] → [B]
-    → [process item 2] →
-    → [process item N] →
+[A] → [traiter l'élément 1] → [agréger] → [B]
+    → [traiter l'élément 2] →
+    → [traiter l'élément N] →
 ```
 
 ### Implémentation avec Temporal (TypeScript)
 
 ```typescript
-// Temporal workflow — durable, resumable, handles failures automatically
+// Flux de travail Temporal — durable, reprendre, gère les défaillances automatiquement
 import { proxyActivities, sleep, condition, defineSignal, setHandler } from '@temporalio/workflow'
 
 const { sendEmail, processPayment, updateInventory, scheduleShipping } = proxyActivities({
@@ -84,39 +84,39 @@ const { sendEmail, processPayment, updateInventory, scheduleShipping } = proxyAc
   },
 })
 
-// Signal for human approval
+// Signal pour l'approbation humaine
 const approveSignal = defineSignal<[boolean]>('approve')
 
 export async function orderFulfillmentWorkflow(orderId: string) {
-  // Step 1: Process payment
+  // Étape 1 : Traiter le paiement
   const paymentResult = await processPayment(orderId)
   if (!paymentResult.success) {
     await sendEmail({ type: 'payment-failed', orderId })
     return { status: 'failed', reason: 'payment' }
   }
   
-  // Step 2: Parallel — update inventory AND send confirmation
+  // Étape 2 : Parallèle — mettre à jour l'inventaire ET envoyer une confirmation
   const [inventoryResult] = await Promise.all([
     updateInventory(orderId),
     sendEmail({ type: 'order-confirmed', orderId }),
   ])
   
-  // Step 3: Human approval gate for high-value orders
+  // Étape 3 : Portail d'approbation humaine pour les commandes de grande valeur
   if (paymentResult.amount > 10000) {
     let approved = false
     setHandler(approveSignal, (isApproved: boolean) => { approved = isApproved })
     
     await sendEmail({ type: 'manager-approval-needed', orderId })
-    await condition(() => approved, '24 hours')  // wait up to 24h
+    await condition(() => approved, '24 hours')  // attendre jusqu'à 24h
     
     if (!approved) {
-      // Compensation: refund
+      // Compensation : remboursement
       await processPayment({ type: 'refund', orderId })
       return { status: 'rejected', reason: 'manual-review' }
     }
   }
   
-  // Step 4: Schedule shipping
+  // Étape 4 : Planifier l'expédition
   const shipping = await scheduleShipping(orderId)
   await sendEmail({ type: 'shipped', orderId, trackingNumber: shipping.trackingNumber })
   
@@ -127,45 +127,45 @@ export async function orderFulfillmentWorkflow(orderId: string) {
 ### Orchestration multi-agents Claude Code
 
 ```typescript
-// Orchestrate multiple Claude Code agents in parallel
-// Uses the Agent tool with background execution
+// Orchestrer plusieurs agents Claude Code en parallèle
+// Utilise l'outil Agent avec exécution en arrière-plan
 
 async function codeReviewOrchestration(prNumber: string) {
-  // Run all reviews in parallel
+  // Exécuter tous les avis en parallèle
   const [securityReview, performanceReview, uxReview, testCoverage] = await Promise.all([
     Agent({
-      description: 'Security review',
+      description: 'Avis de sécurité',
       model: 'sonnet',
-      prompt: `Review PR #${prNumber} for security vulnerabilities. Focus on: auth, injection, data exposure. Report findings.`
+      prompt: `Avis sur la PR #${prNumber} pour les vulnérabilités de sécurité. Se concentrer sur : authentification, injection, exposition de données. Signaler les résultats.`
     }),
     Agent({
-      description: 'Performance review',
+      description: 'Avis de performance',
       model: 'haiku',
-      prompt: `Review PR #${prNumber} for performance issues. Focus on: N+1 queries, bundle size, render performance.`
+      prompt: `Avis sur la PR #${prNumber} pour les problèmes de performance. Se concentrer sur : requêtes N+1, taille du paquet, performance de rendu.`
     }),
     Agent({
-      description: 'UX review',
+      description: 'Avis UX',
       model: 'haiku',
-      prompt: `Review PR #${prNumber} for UX issues. Focus on: accessibility, error states, loading states.`
+      prompt: `Avis sur la PR #${prNumber} pour les problèmes UX. Se concentrer sur : accessibilité, états d'erreur, états de chargement.`
     }),
     Agent({
-      description: 'Test coverage',
+      description: 'Couverture de test',
       model: 'haiku',
-      prompt: `Analyse PR #${prNumber} test coverage. What's missing? What edge cases aren't tested?`
+      prompt: `Analyser la couverture de test de la PR #${prNumber}. Qu'est-ce qui manque ? Quels cas limites ne sont pas testés ?`
     })
   ])
   
-  // Synthesise all findings
+  // Synthétiser tous les résultats
   const synthesis = await Agent({
-    description: 'Review synthesiser',
+    description: 'Synthétiseur d\'avis',
     model: 'sonnet',
-    prompt: `Combine these code review findings into a prioritised action list:
-    Security: ${securityReview}
-    Performance: ${performanceReview}
-    UX: ${uxReview}
-    Tests: ${testCoverage}
+    prompt: `Combiner ces résultats d'avis de code en une liste d'actions priorisées :
+    Sécurité : ${securityReview}
+    Performance : ${performanceReview}
+    UX : ${uxReview}
+    Tests : ${testCoverage}
     
-    Output: Critical blockers first, then high priority, then suggestions.`
+    Résultat : Les bloqueurs critiques d'abord, ensuite haute priorité, ensuite suggestions.`
   })
   
   return synthesis

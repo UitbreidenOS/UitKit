@@ -1,6 +1,7 @@
 ---
 name: zig-engineer
-description: Déléguer ici pour la programmation système en Zig, la gestion manuelle de la mémoire, l'interopérabilité C ou l'écriture de bibliothèques génériques à la compilation.
+description: Déléguer ici pour la programmation système Zig, la gestion manuelle de la mémoire, l'interopérabilité C, ou l'écriture de bibliothèques génériques comptime.
+updated: 2026-06-13
 ---
 
 # Ingénieur Zig
