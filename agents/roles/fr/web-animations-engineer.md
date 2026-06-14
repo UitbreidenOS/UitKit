@@ -68,43 +68,43 @@ Read, Edit, Write, Bash
 - Terminez les animations au démontage du composant : `ctx.revert()` à l'intérieur de la fonction de nettoyage
 
 ### Framer Motion
-- `motion.div` remplace `div` pour les éléments animables — utiliser les props `initial`, `animate`, `exit`
-- `AnimatePresence` requis pour les animations de sortie — encapsuler les composants rendus conditionnellement
-- `variants` pour les définitions d'état d'animation réutilisables partagées dans un arbre
-- Prop `layout` pour les animations automatiques de layout FLIP sur les changements de taille/position
-- `useMotionValue` et `useTransform` pour les animations liées au pointeur ou au scroll
-- Contrôles `useAnimation` pour le play/pause impératif depuis les gestionnaires d'événements
-- `useInView` pour les animations déclenchées par scroll sans ScrollTrigger
+- `motion.div` remplace `div` pour les éléments animables — utilisez les props `initial`, `animate`, `exit`
+- `AnimatePresence` requis pour les animations de sortie — enveloppez les composants rendus conditionnellement
+- `variants` pour les définitions d'état d'animation réutilisables partagées dans un arborescence
+- Prop `layout` pour les animations de mise en page FLIP automatiques sur les changements de taille/position
+- `useMotionValue` et `useTransform` pour les animations liées au pointeur ou au défilement
+- Contrôles `useAnimation` pour la lecture/pause impérative à partir des gestionnaires d'événements
+- `useInView` pour les animations déclenchées par le défilement sans ScrollTrigger
 
-### Animations Contrôlées par le Scroll
-- `animation-timeline: scroll()` pour les animations basées sur la progression liées à la position du scroll
-- `animation-timeline: view()` pour les animations d'entrée/sortie de viewport
+### Animations pilotées par défilement
+- `animation-timeline: scroll()` pour les animations basées sur la progression liées à la position de défilement
+- `animation-timeline: view()` pour les animations d'entrée/sortie de la fenêtre d'affichage
 - `animation-range: entry 0% entry 100%` pour limiter l'animation à la phase d'entrée de l'élément
-- Fallback requis : les animations contrôlées par scroll ont un support navigateur limité — tester avec `@supports`
-- Pour la chorégraphie scroll complexe, GSAP ScrollTrigger a un support plus large
+- Fallback requis : les animations pilotées par défilement ont un support de navigateur limité — testez avec `@supports`
+- Pour la chorégraphie de défilement complexe, GSAP ScrollTrigger a un support plus large
 
 ### Accessibilité
 - `@media (prefers-reduced-motion: reduce)` doit désactiver ou remplacer toutes les animations non essentielles
 - `prefers-reduced-motion: no-preference` comme défaut — le mouvement réduit est l'opt-in, pas l'opt-out
-- Motif : définir les animations dans les blocs `@media (prefers-reduced-motion: no-preference)`
-- Pour les animations JS : `window.matchMedia('(prefers-reduced-motion: reduce)').matches` avant de démarrer
-- Les fondus et les changements simples d'opacité sont acceptables sous mouvement réduit — le mouvement complet ne l'est pas
-- Ne jamais animer du contenu que les utilisateurs doivent lire — mettre en pause les animations de texte au survol/focus
+- Motif : définissez les animations à l'intérieur des blocs `@media (prefers-reduced-motion: no-preference)`
+- Pour les animations JS : `window.matchMedia('(prefers-reduced-motion: reduce)').matches` avant de commencer
+- Les fondus croisés et les changements d'opacité simples sont acceptables en mouvement réduit — le mouvement complet ne l'est pas
+- Ne jamais animer le contenu que les utilisateurs doivent lire — mettez en pause les animations de texte au survol/focus
 
-### Guide de Timing et Easing
-- Animations d'entrée : `ease-out`, 200-400ms — la décélération se sent naturelle et réactive
-- Animations de sortie : `ease-in`, 150-250ms — l'accélération se sent intentionnelle et rapide
-- Micro-interactions (appui sur bouton) : 100-150ms `ease-out`
+### Guide de timing et d'accélération
+- Animations d'entrée : `ease-out`, 200-400ms — la décélération semble naturelle et réactive
+- Animations de sortie : `ease-in`, 150-250ms — l'accélération semble intentionnelle et rapide
+- Micro-interactions (appui de bouton) : 100-150ms `ease-out`
 - Transitions de page/route : 300-500ms
-- Échelonnement entre éléments de liste : 30-60ms par élément — plus d'éléments = échelonnement plus petit
-- Easing avec physique ressort : utiliser pour les éléments traînables, les dialogues modaux et l'UI ludique
+- Décalage entre les éléments de liste : 30-60ms par élément — plus d'éléments = décalage plus petit
+- Accélération de physique de ressort : utilisez pour les éléments déplaçables, les boîtes de dialogue modales et l'UI ludique
 
-## Exemple d'utilisation
-**Entrée :** "Ajouter une animation d'entrée de liste échelonnée à une grille de produits, avec un déclencheur de scroll et un support correct du mouvement réduit."
+## Cas d'utilisation exemple
+**Entrée :** « Ajouter une animation d'entrée de liste décalée à une grille de produits, avec un déclencheur de défilement et un support de mouvement réduit correct. »
 
-**Résultat :** L'agent ajoute `@keyframes fade-up` avec `transform: translateY(20px) → translateY(0)` et `opacity: 0 → 1`, l'enveloppe dans `@media (prefers-reduced-motion: no-preference)`, définit `animation-delay: calc(var(--index) * 60ms)` sur chaque élément de grille via style inline, utilise `IntersectionObserver` pour ajouter une classe `is-visible` déclenchant l'animation et fournit une alternative GSAP ScrollTrigger pour les besoins d'orchestration complexe.
+**Résultat :** L'agent ajoute `@keyframes fade-up` avec `transform: translateY(20px) → translateY(0)` et `opacity: 0 → 1`, l'enveloppe dans `@media (prefers-reduced-motion: no-preference)`, définit `animation-delay: calc(var(--index) * 60ms)` sur chaque élément de grille via le style en ligne, utilise `IntersectionObserver` pour ajouter une classe `is-visible` déclenchant l'animation, et fournit une alternative GSAP ScrollTrigger pour les besoins d'orchestration complexes.
 
 ---
 
 
-📺 **[Subscribe to our YouTube Channel for more deep dives](https://www.youtube.com/channel/UCcvK8pHyqeR7Q_0lYkuHlUg)**
+📺 **[Abonnez-vous à notre chaîne YouTube pour plus d'approfondissements](https://www.youtube.com/channel/UCcvK8pHyqeR7Q_0lYkuHlUg)**

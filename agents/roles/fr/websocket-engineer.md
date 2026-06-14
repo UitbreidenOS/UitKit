@@ -78,7 +78,7 @@ io.adapter(createAdapter(pubClient, subClient));
 
 Les sessions collantes sont requises lors de l'utilisation du transport de polling — configurez votre équilibrage de charge pour acheminer un client vers le même serveur pendant la durée de la connexion. Avec transport WebSocket uniquement, les sessions collantes ne sont pas nécessaires.
 
-**Reconnexion et resynchronisation d'état client**
+**Reconnexion client et resynchronisation d'état**
 
 ```ts
 const socket = io(SERVER_URL, {
@@ -88,12 +88,12 @@ const socket = io(SERVER_URL, {
 });
 
 socket.on("connect", () => {
-  // Resynchronisation : demander les événements manqués depuis le dernier numéro de séquence connu
+  // Resync: demander les événements manqués depuis le dernier numéro de séquence connu
   socket.emit("resync", { lastSeq: localState.lastSeq });
 });
 ```
 
-Toujours concevoir pour la reconnexion au niveau du protocole : assigner des numéros de séquence aux événements, laisser les clients demander une fenêtre de relecture en cas de reconnexion.
+Concevez toujours la reconnexion au niveau du protocole : assignez des numéros de séquence aux événements, laissez les clients demander une fenêtre de relecture à la reconnexion.
 
 **Système de présence**
 ```ts
@@ -108,7 +108,7 @@ socket.on("disconnect", async () => {
 });
 ```
 
-Utiliser une pulsation (ping tous les 30s) pour détecter les déconnexions silencieuses qui ne déclenchent pas l'événement `disconnect` (chutes de réseau).
+Utilisez un battement (ping toutes les 30s) pour détecter les déconnexions silencieuses qui ne déclenchent pas l'événement `disconnect` (chutes de réseau).
 
 **Limitation de débit**
 ```ts
@@ -117,27 +117,27 @@ const limiter = new Map<string, number>();
 socket.on("message", (data) => {
   const now = Date.now();
   const last = limiter.get(socket.id) ?? 0;
-  if (now - last < 100) return; // max 10 events/sec
+  if (now - last < 100) return; // max 10 événements/sec
   limiter.set(socket.id, now);
   // traiter le message
 });
 ```
 
-Utiliser un token bucket ou une fenêtre glissante pour la production ; l'approche map est pour l'illustration.
+Utilisez un token bucket ou une fenêtre glissante pour la production; l'approche par map est pour l'illustration.
 
-**Streaming binaire**
-- Envoyer ArrayBuffer directement : `socket.emit("frame", buffer)` — Socket.io détecte automatiquement les payloads binaires
-- Pour les flux haute fréquence (vidéo, données de capteurs), préférer WebSocket natif avec un protocole binaire de frame pour éviter la surcharge de sérialisation de Socket.io
+**Diffusion binaire**
+- Envoyez ArrayBuffer directement : `socket.emit("frame", buffer)` — Socket.io détecte automatiquement les charges utiles binaires
+- Pour les flux haute fréquence (vidéo, données de capteurs), préférez WebSocket natif avec un protocole de trame binaire pour éviter la surcharge de sérialisation Socket.io
 
 ## Exemple de cas d'usage
 
 Éditeur de document collaboratif en temps réel :
 
 - Serveur Socket.io avec middleware d'authentification JWT à la poignée de main
-- Une room par ID de document ; les clients rejoignent à l'ouverture, quittent à la fermeture
-- Les déltas Operational Transform ou CRDT émis comme des événements `doc:op` vers la room
-- Adaptateur Redis avec `@socket.io/redis-adapter` pour le déploiement à 3 instances derrière un upstream nginx avec `ip_hash` (sessions sticky pour le fallback de polling)
-- Présence : ensemble Redis par document suivant les IDs d'utilisateurs actifs, pulsation tous les 25s avec TTL 60s
-- En cas de reconnexion : le client envoie le dernier horloge vectorielle connu, le serveur rejoue les opérations depuis ce point
+- Une room par ID de document; les clients rejoignent à l'ouverture, quittent à la fermeture
+- Deltas Operational Transform ou CRDT émis comme événements `doc:op` vers la room
+- Adaptateur Redis avec `@socket.io/redis-adapter` pour déploiement à 3 instances derrière un upstream nginx avec `ip_hash` (sessions collantes pour fallback de polling)
+- Présence : ensemble Redis par document suivi des IDs utilisateur actifs, battement toutes les 25s avec TTL de 60s
+- À la reconnexion : le client envoie le dernier vecteur d'horloge connu, le serveur relit les opérations depuis ce point
 
 ---
