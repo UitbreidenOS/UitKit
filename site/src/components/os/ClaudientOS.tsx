@@ -55,7 +55,15 @@ export default function ClaudientOS() {
             <span className="text-[12px] font-semibold text-body">GitHub</span>
           </a>
           <span className="text-[13px] font-medium text-mute">
-            by <span className="font-extrabold text-brand-red tracking-tight">Uitbreiden</span>
+            by{" "}
+            <a
+              href="https://www.youtube.com/channel/UCcvK8pHyqeR7Q_0lYkuHlUg"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-extrabold text-brand-red tracking-tight hover:underline underline-offset-2 transition"
+            >
+              Uitbreiden
+            </a>
           </span>
         </div>
       </div>
