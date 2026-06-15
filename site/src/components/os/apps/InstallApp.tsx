@@ -16,6 +16,13 @@ const stats = [
   { label: "Commands", value: "80+", icon: "⌨️", color: "#f54e00" },
 ];
 
+const tiers = [
+  { name: "Community", price: "Free", color: "#3fb950", desc: "All public skills, agents, stacks", features: ["400+ skills", "190+ agents", "50 workspace stacks", "41 MCP configs", "5 languages"] },
+  { name: "Team", price: "$15–25/seat", color: "#1d4aff", desc: "Private stacks + weekly updates", features: ["Everything in Community", "Private stack hosting", "Weekly auto-updates", "Priority requests", "Email support (24h)"] },
+  { name: "Business", price: "Custom", color: "#f5b800", desc: "Certified marketplace + SSO", features: ["Everything in Team", "Governance & audit hooks", "SSO (SAML/OAuth)", "Usage analytics", "Slack support (2h)"] },
+  { name: "Enterprise", price: "Annual", color: "#b62ad9", desc: "VPC + compliance + dedicated", features: ["Everything in Business", "Self-hosted / VPC", "SOC2/GDPR/EU-AI-Act", "Dedicated engineer", "White-label option"] },
+];
+
 export function InstallApp() {
   const [copied, setCopied] = useState<number | null>(null);
 
@@ -91,6 +98,40 @@ export function InstallApp() {
         <GhostButton onClick={() => window.open("https://github.com/Claudient/Claudient", "_blank")}>
           GitHub
         </GhostButton>
+      </div>
+
+      {/* Pricing Tiers */}
+      <div className="mt-6 pt-5 border-t border-hairline">
+        <Eyebrow color="#b62ad9">Plans & Pricing</Eyebrow>
+        <p className="mt-1 text-[12px] text-mute">Start free, grow with Claudient.</p>
+        <div className="mt-3 grid grid-cols-2 sm:grid-cols-4 gap-2">
+          {tiers.map((t) => (
+            <div key={t.name} className="rounded-xl border border-hairline bg-white p-3">
+              <div className="flex items-center gap-2">
+                <span className="inline-flex items-center rounded-full px-2 py-0.5 text-[10px] font-bold text-white" style={{ backgroundColor: t.color }}>{t.name}</span>
+              </div>
+              <div className="mt-1.5 text-[15px] font-extrabold text-ink">{t.price}</div>
+              <div className="text-[10px] text-mute">{t.desc}</div>
+              <ul className="mt-2 space-y-1">
+                {t.features.map((f) => (
+                  <li key={f} className="flex items-center gap-1.5 text-[10px] text-body">
+                    <span className="text-[#3fb950]">✓</span> {f}
+                  </li>
+                ))}
+              </ul>
+              {t.name === "Enterprise" && (
+                <a href="mailto:enterprise@claudient.ai" className="mt-2 inline-flex items-center rounded-md bg-brand-purple px-2 py-1 text-[10px] font-bold text-white hover:bg-brand-purple/90 transition w-full text-center justify-center">
+                  Contact Sales
+                </a>
+              )}
+              {t.name === "Team" && (
+                <a href="https://github.com/Claudient/Claudient" target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex items-center rounded-md border border-olive/60 bg-white px-2 py-1 text-[10px] font-semibold text-ink hover:bg-cream transition w-full text-center justify-center">
+                  Learn More
+                </a>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -7,7 +7,10 @@ export type AppId =
   | "stacks"
   | "install"
   | "about"
-  | "trash";
+  | "trash"
+  | "cli"
+  | "benchmarks"
+  | "community";
 
 export interface AppMeta {
   id: AppId;

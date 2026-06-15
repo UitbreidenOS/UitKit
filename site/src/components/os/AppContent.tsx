@@ -9,6 +9,9 @@ import { StacksApp } from "./apps/StacksApp";
 import { InstallApp } from "./apps/InstallApp";
 import { AboutApp } from "./apps/AboutApp";
 import { TrashApp } from "./apps/TrashApp";
+import { CliApp } from "./apps/CliApp";
+import { BenchmarksApp } from "./apps/BenchmarksApp";
+import { CommunityApp } from "./apps/CommunityApp";
 
 export function AppContent({ appId, wm }: { appId: AppId; wm: WindowManager }) {
   switch (appId) {
@@ -30,6 +33,12 @@ export function AppContent({ appId, wm }: { appId: AppId; wm: WindowManager }) {
       return <AboutApp wm={wm} />;
     case "trash":
       return <TrashApp />;
+    case "cli":
+      return <CliApp />;
+    case "benchmarks":
+      return <BenchmarksApp />;
+    case "community":
+      return <CommunityApp />;
     default:
       return null;
   }

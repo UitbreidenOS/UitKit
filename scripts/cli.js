@@ -42,6 +42,7 @@ claudient — Claude Code knowledge system
 
 Usage:
   npx claudient init                          Interactive first-run setup
+  npx claudient init --enterprise             Set up enterprise-scale governance & compliance
   npx claudient doctor                        Check Claude Code setup health
   npx claudient consult "<need>"             Recommend skills and stacks by keyword
   npx claudient benchmark [skill-id]          Show eval scores for skills
@@ -1814,6 +1815,114 @@ function scoreCommand() {
   writeReport('claudient-score-report.md', output)
 }
 
+async function initEnterpriseCommand() {
+  const readline = require('readline')
+  const rl = readline.createInterface({ input: process.stdin, output: process.stdout })
+  const ask = (q) => new Promise(resolve => rl.question(q, resolve))
+
+  const BOLD  = '\x1b[1m'
+  const ORANGE = '\x1b[33m'
+  const GREEN = '\x1b[32m'
+  const BLUE = '\x1b[34m'
+  const DIM   = '\x1b[2m'
+  const RESET = '\x1b[0m'
+
+  console.log(`
+${BOLD}╔══════════════════════════════════════════════════════════╗
+║         CLAUDIENT ENTERPRISE SETUP                         ║
+║   Configure governance, compliance, and team-scale features ║
+╚══════════════════════════════════════════════════════════════╝${RESET}
+`)
+
+  // Check Claude Code installed
+  if (!fs.existsSync(CLAUDE_DIR)) {
+    console.error(`${ORANGE}⚠ ~/.claude not found.${RESET}`)
+    console.error(`  Claude Code must be installed first: https://claude.ai/code\n`)
+    rl.close()
+    process.exit(1)
+  }
+  console.log(`${GREEN}✓ Claude Code detected at ${CLAUDE_DIR}${RESET}\n`)
+
+  // 1. Team Size
+  console.log(`${BOLD}Step 1/4 — Team Size${RESET}`)
+  console.log('  1. Small team (5–25 seats)')
+  console.log('  2. Medium org (25–100 seats)')
+  console.log('  3. Large enterprise (100+ seats)')
+  const sizeInput = (await ask('  Select: ')).trim()
+  const sizeMap = { '1': 'small', '2': 'medium', '3': 'large' }
+  const teamSize = sizeMap[sizeInput] || 'medium'
+  console.log(`  → ${teamSize}\n`)
+
+  // 2. Compliance Requirements
+  console.log(`${BOLD}Step 2/4 — Compliance${RESET}`)
+  console.log('  1. SOC2 Type II (Logictech, Healthcare)')
+  console.log('  2. GDPR (Europe)')
+  console.log('  3. EU-AI-Act (EU regulated)')
+  console.log('  4. Custom (other)')
+  console.log('  5. None (proceed without compliance stack)')
+  const compInput = (await ask('  Select: ')).trim()
+  const compMap = { '1': 'soc2', '2': 'gdpr', '3': 'eu_ai_act', '4': 'custom' }
+  const compliance = compMap[compInput] || null
+  if (compliance) console.log(`  → ${compliance}\n`)
+  else console.log(`  → Skipping compliance stack\n`)
+
+  // 3. Enterprise Features
+  console.log(`${BOLD}Step 3/4 — Enterprise Features${RESET}`)
+  const auditInput = (await ask('  Enable audit logging? [Y/n] ')).trim().toLowerCase()
+  const auditLogging = auditInput !== 'n'
+  const ssoInput = (await ask('  Enable SSO/RBAC? [Y/n] ')).trim().toLowerCase()
+  const ssorbac = ssoInput !== 'n'
+  console.log(`  → Audit logging: ${auditLogging ? 'Yes' : 'No'}`)
+  console.log(`  → SSO/RBAC: ${ssorbac ? 'Yes' : 'No'}\n`)
+
+  // 4. Contact for onboarding
+  console.log(`${BOLD}Step 4/4 — Sales Engagement${RESET}`)
+  const emailInput = (await ask('  Email for onboarding support: ')).trim()
+  console.log(`  → ${emailInput || 'skipped'}\n`)
+
+  rl.close()
+
+  // Install compliance stack if selected
+  if (compliance && compliance !== 'custom') {
+    console.log(`${BLUE}Installing ${compliance.toUpperCase()} compliance stack...${RESET}`)
+    const stackPath = path.join(REPO_ROOT, 'enterprise', 'compliance_stacks', compliance)
+    if (fs.existsSync(stackPath)) {
+      try {
+        execSync(`cd "${process.cwd()}" && npx claudient add stack ${stackPath}`, { stdio: 'inherit' })
+        console.log(`${GREEN}✓ Compliance stack installed${RESET}\n`)
+      } catch (e) {
+        console.error(`${ORANGE}⚠ Could not auto-install stack. Run manually:${RESET}`)
+        console.error(`  npx claudient add stack ${stackPath}\n`)
+      }
+    }
+  }
+
+  // Final summary and CTA
+  console.log(`${BOLD}═══════════════════════════════════════════════════════════${RESET}`)
+  console.log(`${GREEN}✓ Enterprise setup complete!${RESET}`)
+  console.log(`
+Your next steps:
+  1. Run ${BLUE}npx claudient doctor${RESET} to verify setup
+  2. Run ${BLUE}npx claudient audit${RESET} to check compliance status
+  3. Review ${BLUE}enterprise/PRICING.md${RESET} for tier benefits
+
+${BOLD}Ready to scale?${RESET}
+  ${BLUE}https://claudient.ai/enterprise${RESET}
+  ${BLUE}enterprise@claudient.ai${RESET}
+
+We'll help you:
+  → Configure governance hooks and audit trails
+  → Set up team-scale RBAC and SSO
+  → Map your compliance to controls (SOC2/GDPR/EU-AI-Act)
+  → Train your team on enterprise features
+  ${DIM}(Enterprise tier includes dedicated stack engineer + SLA)${RESET}
+`)
+
+  if (emailInput) {
+    console.log(`${DIM}✓ Email logged for outreach. Expect contact within 24h.${RESET}\n`)
+  }
+}
+
 // ── Main ──────────────────────────────────────────────────────────────────────
 
 const [, , command, ...rawArgs] = process.argv
@@ -1882,7 +1991,11 @@ switch (command) {
     break
   }
   case 'init':
-    initCommand().catch(err => { console.error(err); process.exit(1) })
+    if (flags.enterprise) {
+      initEnterpriseCommand().catch(err => { console.error(err); process.exit(1) })
+    } else {
+      initCommand().catch(err => { console.error(err); process.exit(1) })
+    }
     break
   case 'recommend':
   case 'scan':

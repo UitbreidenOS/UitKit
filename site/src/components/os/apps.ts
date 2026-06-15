@@ -64,6 +64,27 @@ export const APPS: Record<AppId, AppMeta> = {
     accent: "#76786c",
     defaultSize: { width: 520, height: 420 },
   },
+  cli: {
+    id: "cli",
+    title: "CLI Commands",
+    icon: "⌨️",
+    accent: "#f54e00",
+    defaultSize: { width: 860, height: 620 },
+  },
+  benchmarks: {
+    id: "benchmarks",
+    title: "Skill Evals",
+    icon: "📊",
+    accent: "#8b5cf6",
+    defaultSize: { width: 860, height: 600 },
+  },
+  community: {
+    id: "community",
+    title: "Community Stacks",
+    icon: "🌍",
+    accent: "#f54e00",
+    defaultSize: { width: 880, height: 600 },
+  },
 };
 
 export const DESKTOP_ICONS: AppId[] = [
@@ -73,6 +94,9 @@ export const DESKTOP_ICONS: AppId[] = [
   "mcp",
   "guides",
   "stacks",
+  "cli",
+  "benchmarks",
+  "community",
   "install",
   "about",
   "trash",
