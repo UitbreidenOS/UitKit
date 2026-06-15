@@ -11,9 +11,11 @@ interface StackDef {
   color: string;
   skills: { id: string; name: string }[];
   cmds: string[];
+  hooks: string[];
+  mcp: string[];
 }
 
-/* ─── all 50 stacks with real skill data ─── */
+/* ─── all 50 stacks ─── */
 const stacks: StackDef[] = [
   { name: "Full-Stack Developer", icon: "⚡", desc: "Frontend + backend + database + deployment skills.", color: "#3fb950",
     skills: [
@@ -21,84 +23,108 @@ const stacks: StackDef[] = [
       { id: "dependency-auditor", name: "Dependency Auditor" }, { id: "performance-analyzer", name: "Performance Analyzer" },
       { id: "pr-reviewer", name: "PR Reviewer" }, { id: "refactoring-recommender", name: "Refactoring Recommender" },
       { id: "security-scanner", name: "Security Scanner" }, { id: "test-generator", name: "Test Generator" },
-    ], cmds: ["review-pr", "generate-tests", "audit-deps"] },
+    ], cmds: ["review-pr", "generate-tests", "audit-deps"],
+    hooks: ["test-coverage-enforcer", "security-scanner", "performance-regression-detector"],
+    mcp: ["code-analysis", "github"] },
   { name: "AI SDR", icon: "📞", desc: "Prospecting, outreach, and pipeline management.", color: "#f54e00",
     skills: [
       { id: "campaign-tracker", name: "Campaign Tracker" }, { id: "crm-logger", name: "CRM Logger" },
       { id: "email-personalizer", name: "Email Personalizer" }, { id: "follow-up-scheduler", name: "Follow-Up Scheduler" },
       { id: "lead-scorer", name: "Lead Scorer" }, { id: "meeting-confirmator", name: "Meeting Confirmator" },
       { id: "objection-handler", name: "Objection Handler" }, { id: "response-classifier", name: "Response Classifier" },
-    ], cmds: ["prospect-batch", "score-lead", "execute-sequence"] },
+    ], cmds: ["prospect-batch", "score-lead", "execute-sequence"],
+    hooks: ["approval-gate", "activity-logger", "crm-sync-validator", "email-compliance"],
+    mcp: ["firecrawl", "exa"] },
   { name: "DevOps Platform", icon: "🏗️", desc: "CI/CD, IaC, monitoring, incident response.", color: "#1d4aff",
     skills: [
       { id: "ci_cd", name: "CI/CD Pipelines" }, { id: "docker", name: "Docker Optimization" },
       { id: "infrastructure", name: "Infrastructure Disaster Recovery" }, { id: "kubernetes", name: "Kubernetes Deployment" },
       { id: "logging", name: "ELK Logging" }, { id: "monitoring", name: "Prometheus Alerting" },
       { id: "security", name: "Security Scanning" }, { id: "terraform", name: "Terraform Modules" },
-    ], cmds: ["deploy-k8s", "tf-apply", "run-pipeline"] },
+    ], cmds: ["k8s-debug", "terraform-plan", "logs-search"],
+    hooks: ["pre-deploy", "post-incident", "daily-health-check"],
+    mcp: ["kubernetes-api", "terraform-state"] },
   { name: "Data Engineer", icon: "🔧", desc: "ETL, dbt, Spark, warehouse, and pipelines.", color: "#1078a3",
     skills: [
       { id: "data-validation", name: "Data Validation" }, { id: "data-warehousing", name: "Data Warehousing" },
       { id: "etl-debugging", name: "ETL Debugging" }, { id: "performance-tuning", name: "Performance Tuning" },
       { id: "pipeline-design", name: "Pipeline Design" }, { id: "schema-migration", name: "Schema Migration" },
       { id: "sql-optimization", name: "SQL Optimization" }, { id: "streaming-data", name: "Streaming Data" },
-    ], cmds: ["run-pipeline", "optimize-sql", "migrate-schema"] },
+    ], cmds: ["run-pipeline", "optimize-sql", "migrate-schema"],
+    hooks: ["on-pipeline-fail", "on-schema-change", "pre-commit-validation"],
+    mcp: ["lineage-tools", "sql-tools"] },
   { name: "Founder / CEO", icon: "🚀", desc: "Fundraising, strategy, hiring, and growth.", color: "#f5b800",
     skills: [
       { id: "financial-planning", name: "Financial Planning" }, { id: "fundraising-strategy", name: "Fundraising Strategy" },
       { id: "go-to-market", name: "Go-to-Market Strategy" }, { id: "hiring-strategy", name: "Hiring Strategy" },
       { id: "investor-relations", name: "Investor Relations" }, { id: "market-analysis", name: "Market Analysis" },
       { id: "product-strategy", name: "Product Strategy" }, { id: "team-building", name: "Team Building" },
-    ], cmds: ["plan-fundraising", "analyze-market", "build-strategy"] },
+    ], cmds: ["pitch-deck-outline", "investor-tracker", "quarterly-review"],
+    hooks: ["pre-meeting-prep", "weekly-digest", "investor-outreach"],
+    mcp: ["crm-integration", "financial-tools"] },
   { name: "Content Marketing", icon: "📝", desc: "SEO, copywriting, social media, analytics.", color: "#b62ad9",
     skills: [
       { id: "analytics-sync", name: "Analytics Sync" }, { id: "audience-segmentation", name: "Audience Segmentation" },
       { id: "competitor-analysis", name: "Competitor Analysis" }, { id: "content-calendar", name: "Content Calendar" },
       { id: "copy-quality", name: "Copy Quality" }, { id: "email-campaign", name: "Email Campaign" },
       { id: "seo-optimization", name: "SEO Optimization" }, { id: "social-media", name: "Social Media" },
-    ], cmds: ["plan-content", "optimize-seo", "run-campaign"] },
+    ], cmds: ["generate-post", "publish-batch", "audit-seo"],
+    hooks: ["on-publish", "on-schedule", "on-analytics-sync"],
+    mcp: ["wordpress-plugin", "analytics-connector"] },
   { name: "Finance / CFO", icon: "💰", desc: "Financial modeling, reporting, compliance.", color: "#f1a82c",
     skills: [
       { id: "balance-sheet-analyst", name: "Balance Sheet Analyst" }, { id: "budget-analyzer", name: "Budget Analyzer" },
       { id: "cash-flow-forecaster", name: "Cash Flow Forecaster" }, { id: "cost-optimizer", name: "Cost Optimizer" },
       { id: "financial-modeler", name: "Financial Modeler" }, { id: "headcount-planner", name: "Headcount Planner" },
       { id: "investor-deck-builder", name: "Investor Deck Builder" }, { id: "variance-reporter", name: "Variance Reporter" },
-    ], cmds: ["build-model", "forecast-cash", "report-variance"] },
+    ], cmds: ["build-model", "forecast-cash", "report-variance"],
+    hooks: ["data-validation", "assumption-flagging", "scenario-review", "governance-logging"],
+    mcp: ["data-sources"] },
   { name: "Security Engineer", icon: "🔒", desc: "Threat modeling, pentesting, incident response.", color: "#da3633",
     skills: [
       { id: "audit-report-writer", name: "Audit Report Writer" }, { id: "compliance-checker", name: "Compliance Checker" },
       { id: "cve-analyzer", name: "CVE Analyzer" }, { id: "incident-classifier", name: "Incident Classifier" },
       { id: "penetration-planner", name: "Penetration Planner" }, { id: "secure-coding-validator", name: "Secure Coding Validator" },
       { id: "security-reviewer", name: "Security Reviewer" }, { id: "threat-modeler", name: "Threat Modeler" },
-    ], cmds: ["security-review", "threat-model", "triage-cves"] },
+    ], cmds: ["security-review", "threat-model", "triage-cves"],
+    hooks: ["compliance-enforcer", "finding-logger", "remediation-deadline-tracker"],
+    mcp: ["cve-feeds", "security-tools"] },
   { name: "Product Manager", icon: "📋", desc: "Roadmap planning, user research, PRDs.", color: "#a371f7",
     skills: [
       { id: "competitive-mapper", name: "Competitive Mapper" }, { id: "feature-spec-writer", name: "Feature Spec Writer" },
       { id: "prd-outliner", name: "PRD Outliner" }, { id: "requirements-analyzer", name: "Requirements Analyzer" },
       { id: "roadmap-prioritizer", name: "Roadmap Prioritizer" }, { id: "stakeholder-summarizer", name: "Stakeholder Summarizer" },
       { id: "success-metrics-definer", name: "Success Metrics Definer" }, { id: "user-story-generator", name: "User Story Generator" },
-    ], cmds: ["analyze-competitors", "prioritize-roadmap", "write-prd"] },
+    ], cmds: ["analyze-competitors", "prioritize-roadmap", "write-prd"],
+    hooks: ["acceptance-criteria-validator", "ambiguity-detector", "stakeholder-sync-reminder"],
+    mcp: ["firecrawl", "exa"] },
   { name: "GTM Engineer", icon: "🎯", desc: "CRM automation, pipeline ops, revenue intel.", color: "#f78166",
     skills: [
       { id: "account-researcher", name: "Account Researcher" }, { id: "battlecard", name: "Battlecard" },
       { id: "cold-email", name: "Cold Email" }, { id: "icp", name: "ICP Qualification" },
       { id: "linkedin-content", name: "LinkedIn Content" }, { id: "meeting-prep", name: "Meeting Prep" },
       { id: "output-reviewer", name: "Output Reviewer" }, { id: "post-call", name: "Post-Call" },
-    ], cmds: ["research-account", "prep-meeting", "write-cold"] },
+    ], cmds: ["research-account", "write-sequence", "review-output"],
+    hooks: ["icp-filter", "sequence-validator", "session-summary", "tone-enforcement"],
+    mcp: ["firecrawl", "exa"] },
   { name: "SRE", icon: "🛡️", desc: "SLOs, incident response, chaos engineering.", color: "#58a6ff",
     skills: [
       { id: "capacity-planner", name: "Capacity Planner" }, { id: "chaos-engineer", name: "Chaos Engineer" },
       { id: "error-budget-manager", name: "Error Budget Manager" }, { id: "incident-triage", name: "Incident Triage" },
       { id: "on-call-designer", name: "On-Call Designer" }, { id: "post-mortem-writer", name: "Post-Mortem Writer" },
       { id: "runbook-executor", name: "Runbook Executor" }, { id: "slo-monitor", name: "SLO Monitor" },
-    ], cmds: ["runbook-execute", "slo-status", "incident-check"] },
+    ], cmds: ["runbook-execute", "slo-status", "incident-check"],
+    hooks: ["incident-logger", "metric-collector", "runbook-auditor"],
+    mcp: ["incident-management", "monitoring-integration"] },
   { name: "ML/AI Engineer", icon: "🧠", desc: "Model training, MLOps, feature stores.", color: "#d2a8ff",
     skills: [
       { id: "ablation-study-planner", name: "Ablation Study Planner" }, { id: "bias-auditor", name: "Bias Auditor" },
       { id: "dataset-analyzer", name: "Dataset Analyzer" }, { id: "evaluation-framework-builder", name: "Evaluation Framework Builder" },
       { id: "experiment-designer", name: "Experiment Designer" }, { id: "hyperparameter-tuner", name: "Hyperparameter Tuner" },
       { id: "model-card-writer", name: "Model Card Writer" }, { id: "paper-summarizer", name: "Paper Summarizer" },
-    ], cmds: ["run-experiment", "tune-hyper", "write-model-card"] },
+    ], cmds: ["run-experiment", "tune-hyper", "write-model-card"],
+    hooks: ["bias-check", "experiment-tracker", "reproducibility-enforcer"],
+    mcp: ["hugging-face", "weights-and-biases"] },
   { name: "Community Manager", icon: "👥", desc: "Engagement, moderation, growth.", color: "#3fb950",
     skills: [
       { id: "community-health", name: "Community Health" }, { id: "content-planner", name: "Content Planner" },
@@ -108,7 +134,9 @@ const stacks: StackDef[] = [
       { id: "analytics-reporter", name: "Analytics Reporter" }, { id: "crisis-responder", name: "Crisis Responder" },
       { id: "gamification-designer", name: "Gamification Designer" }, { id: "influencer-outreach", name: "Influencer Outreach" },
       { id: "newsletter-curator", name: "Newsletter Curator" }, { id: "sentiment-analyzer", name: "Sentiment Analyzer" },
-    ], cmds: ["report-health", "plan-event", "moderate-content", "launch-campaign", "analyze-sentiment", "build-onboarding"] },
+    ], cmds: ["report-health", "plan-event", "moderate-content", "launch-campaign", "analyze-sentiment", "build-onboarding"],
+    hooks: ["brand-voice-enforcement", "engagement-alert", "engagement-logger", "guideline-enforcer", "member-milestone", "member-privacy-gate", "sentiment-monitor", "sentiment-threshold"],
+    mcp: ["discord", "slack", "airtable", "discourse"] },
   { name: "Sales Operations", icon: "💼", desc: "Pipeline, forecasting, territory planning.", color: "#f1a82c",
     skills: [
       { id: "pipeline-analyzer", name: "Pipeline Analyzer" }, { id: "deal-velocity-analyzer", name: "Deal Velocity Analyzer" },
@@ -118,248 +146,306 @@ const stacks: StackDef[] = [
       { id: "deal-analyzer", name: "Deal Analyzer" }, { id: "sales-enablement-creator", name: "Sales Enablement Creator" },
       { id: "forecast-builder", name: "Forecast Builder" }, { id: "ramp-tracker", name: "Ramp Tracker" },
       { id: "sales-metrics-reporter", name: "Sales Metrics Reporter" }, { id: "deal-stage-scorer", name: "Deal Stage Scorer" },
-    ], cmds: ["optimize-territory", "build-forecast", "analyze-pipeline"] },
+    ], cmds: ["optimize-territory", "build-forecast", "analyze-pipeline"],
+    hooks: ["compensation-audit", "deal-validation", "forecast-accuracy", "quota-pacing"],
+    mcp: ["hubspot", "salesforce"] },
   { name: "QA Testing Engineer", icon: "🧪", desc: "Test planning, automation, coverage.", color: "#79c0ff",
     skills: [
       { id: "test-planner", name: "Test Planner" }, { id: "bug-triage-classifier", name: "Bug Triage Classifier" },
       { id: "regression-risk-assessor", name: "Regression Risk Assessor" }, { id: "test-case-generator", name: "Test Case Generator" },
       { id: "test-suite-optimizer", name: "Test Suite Optimizer" }, { id: "automated-test-writer", name: "Automated Test Writer" },
       { id: "coverage-analyzer", name: "Coverage Analyzer" }, { id: "test-executor", name: "Test Executor" },
-    ], cmds: ["run-tests", "generate-tests", "plan-tests"] },
+    ], cmds: ["run-tests", "generate-tests", "plan-tests"],
+    hooks: ["coverage-enforcement", "performance-watcher", "regression-detector", "session-summary"],
+    mcp: ["ci-integrations", "code-coverage", "pytest-runner"] },
   { name: "Newsletter Writer", icon: "📬", desc: "Research, writing, growth, monetization.", color: "#d2a8ff",
     skills: [
       { id: "topic-researcher", name: "Topic Researcher" }, { id: "headline-writer", name: "Headline Writer" },
       { id: "content-drafter", name: "Content Drafter" }, { id: "editor-polisher", name: "Editor Polisher" },
       { id: "growth-strategist", name: "Growth Strategist" }, { id: "sponsor-manager", name: "Sponsor Manager" },
       { id: "analytics-interpreter", name: "Analytics Interpreter" }, { id: "archive-optimizer", name: "Archive Optimizer" },
-    ], cmds: ["draft-newsletter", "research-topic", "analyze-growth"] },
+    ], cmds: ["draft-newsletter", "research-topic", "review-draft"],
+    hooks: ["length-validator", "link-checker", "session-summary", "tone-enforcement"],
+    mcp: ["recommended-servers"] },
   { name: "YouTube Creator", icon: "🎬", desc: "Content planning, SEO, analytics.", color: "#FF0000",
     skills: [
       { id: "thumbnail-ideator", name: "Thumbnail Ideator" }, { id: "topic-analyzer", name: "Topic Analyzer" },
       { id: "analytics-tracker", name: "Analytics Tracker" }, { id: "competitor-analyzer", name: "Competitor Analyzer" },
       { id: "script-optimizer", name: "Script Optimizer" }, { id: "trend-scout", name: "Trend Scout" },
       { id: "metadata-writer", name: "Metadata Writer" }, { id: "seo-validator", name: "SEO Validator" },
-    ], cmds: ["script-draft", "content-batch", "analyze-topic"] },
+    ], cmds: ["script-draft", "content-batch", "analyze-topic"],
+    hooks: ["analytics-logger", "content-scheduler", "seo-validator", "trend-monitor"],
+    mcp: ["youtube-api", "exa"] },
   { name: "Technical Writer", icon: "✍️", desc: "Docs, API references, style guides.", color: "#8b949e",
     skills: [
       { id: "documentation-outliner", name: "Documentation Outliner" }, { id: "content-structure-auditor", name: "Content Structure Auditor" },
       { id: "localization-prep", name: "Localization Prep" }, { id: "style-guide-enforcer", name: "Style Guide Enforcer" },
       { id: "audience-mapper", name: "Audience Mapper" }, { id: "seo-optimizer", name: "SEO Optimizer" },
-    ], cmds: ["audit-clarity", "define-audience", "outline-docs"] },
+    ], cmds: ["audit-clarity", "define-audience", "outline-docs"],
+    hooks: ["audience-validator", "clarity-checker", "seo-audit"],
+    mcp: [] },
   { name: "B2B Consultant", icon: "🤝", desc: "Client advisory, proposals, delivery.", color: "#1078a3",
     skills: [
       { id: "proposal-writer", name: "Proposal Writer" }, { id: "client-interview-prep", name: "Client Interview Prep" },
       { id: "deliverable-outliner", name: "Deliverable Outliner" }, { id: "sow-generator", name: "SOW Generator" },
       { id: "case-study-builder", name: "Case Study Builder" }, { id: "engagement-manager", name: "Engagement Manager" },
-    ], cmds: ["write-proposal", "prep-interview", "build-case-study"] },
+    ], cmds: ["write-proposal", "prep-interview", "build-case-study"],
+    hooks: ["engagement-logger", "version-control"],
+    mcp: ["firecrawl"] },
   { name: "Investor / VC", icon: "📈", desc: "Deal sourcing, due diligence, portfolio.", color: "#f5b800",
     skills: [
       { id: "deal-flow-screener", name: "Deal Flow Screener" }, { id: "due-diligence-checklist", name: "Due Diligence Checklist" },
       { id: "market-sizer", name: "Market Sizer" }, { id: "founder-assessor", name: "Founder Assessor" },
       { id: "portfolio-tracker", name: "Portfolio Tracker" }, { id: "term-sheet-analyzer", name: "Term Sheet Analyzer" },
       { id: "thesis-builder", name: "Thesis Builder" }, { id: "memo-writer", name: "Memo Writer" },
-    ], cmds: ["screen-deal", "run-diligence", "track-portfolio"] },
+    ], cmds: ["screen-deal", "run-diligence", "track-portfolio"],
+    hooks: ["dd-gate", "decision-logger", "portfolio-monitor-scheduler"],
+    mcp: ["crunchbase", "pitchbook", "exa"] },
   { name: "Legal Operations", icon: "⚖️", desc: "Contract management, compliance, risk.", color: "#da3633",
     skills: [
       { id: "contract-reviewer", name: "Contract Reviewer" }, { id: "clause-drafter", name: "Clause Drafter" },
       { id: "risk-assessor", name: "Risk Assessor" }, { id: "compliance-tracker", name: "Compliance Tracker" },
       { id: "legal-research", name: "Legal Research" }, { id: "nda-generator", name: "NDA Generator" },
-    ], cmds: ["review-contract", "draft-clause", "track-compliance"] },
+    ], cmds: ["review-contract", "draft-clause", "track-compliance"],
+    hooks: ["compliance-gate", "document-audit-trail", "version-control"],
+    mcp: ["document-extraction"] },
   { name: "Agentic AI Engineer", icon: "🤖", desc: "Agent design, orchestration, observability.", color: "#b62ad9",
     skills: [
       { id: "agent-designer", name: "Agent Designer" }, { id: "error-recovery-planner", name: "Error Recovery Planner" },
       { id: "observability-framework", name: "Observability Framework" }, { id: "orchestrator-builder", name: "Orchestrator Builder" },
       { id: "prompt-framework", name: "Prompt Framework" },
-    ], cmds: ["design-agent", "design-prompt-framework", "build-orchestrator"] },
+    ], cmds: ["design-agent", "design-prompt-framework", "build-orchestrator"],
+    hooks: ["agent-verifier", "orchestration-monitor"],
+    mcp: ["anthropic-agents"] },
   { name: "AI Compliance & Risk", icon: "🛑", desc: "Regulatory mapping, model auditing.", color: "#da3633",
     skills: [
       { id: "compliance-framework-designer", name: "Compliance Framework Designer" }, { id: "risk-assessment-conductor", name: "Risk Assessment Conductor" },
       { id: "model-auditor", name: "Model Auditor" }, { id: "data-governance-validator", name: "Data Governance Validator" },
       { id: "regulatory-mapping-tool", name: "Regulatory Mapping Tool" },
-    ], cmds: ["design-compliance-framework", "conduct-risk-assessment", "audit-model"] },
+    ], cmds: ["design-compliance-framework", "conduct-risk-assessment", "audit-model"],
+    hooks: ["compliance-checkpoint", "incident-logger"],
+    mcp: ["audit-trail-integration"] },
   { name: "AI Ethics & Governance", icon: "🔬", desc: "Bias assessment, ethical frameworks.", color: "#a371f7",
     skills: [
       { id: "ethical-framework-designer", name: "Ethical Framework Designer" }, { id: "bias-assessor", name: "Bias Assessor" },
       { id: "governance-auditor", name: "Governance Auditor" }, { id: "compliance-tracker", name: "Compliance Tracker" },
       { id: "risk-framework-builder", name: "Risk Framework Builder" },
-    ], cmds: ["build-risk-framework", "audit-governance", "track-compliance"] },
+    ], cmds: ["build-risk-framework", "audit-governance", "track-compliance"],
+    hooks: ["bias-monitor", "governance-enforcer"],
+    mcp: ["compliance-apis"] },
   { name: "AI Product Manager", icon: "🧩", desc: "AI-specific product strategy and research.", color: "#d2a8ff",
     skills: [
       { id: "feature-prioritization", name: "Feature Prioritization" }, { id: "market-research", name: "Market Research" },
       { id: "competitive-analysis", name: "Competitive Analysis" }, { id: "roadmap-planning", name: "Roadmap Planning" },
       { id: "user-research-synthesis", name: "User Research Synthesis" },
-    ], cmds: [] },
+    ], cmds: ["prioritize-features", "analyze-market"],
+    hooks: ["competitive-monitoring", "user-feedback-digest"],
+    mcp: ["gpt4-research-connector"] },
   { name: "Analytics Engineer", icon: "📊", desc: "dbt, metrics, data quality, pipelines.", color: "#3fb950",
     skills: [
       { id: "dbt-model-builder", name: "dbt Model Builder" }, { id: "metric-definer", name: "Metric Definer" },
       { id: "data-quality-checker", name: "Data Quality Checker" }, { id: "warehouse-optimizer", name: "Warehouse Optimizer" },
       { id: "dashboard-designer", name: "Dashboard Designer" }, { id: "attribution-modeler", name: "Attribution Modeler" },
       { id: "cohort-analyzer", name: "Cohort Analyzer" }, { id: "experiment-analyzer", name: "Experiment Analyzer" },
-    ], cmds: ["build-model", "define-metrics", "check-quality"] },
+    ], cmds: ["build-model", "define-metrics", "check-quality"],
+    hooks: ["dbt-schema-check", "metric-alignment", "session-summary", "sql-validation"],
+    mcp: ["dbt-cloud", "warehouse-connector", "bi-tool-connector"] },
   { name: "Brand Manager", icon: "🎨", desc: "Brand strategy, messaging, guidelines.", color: "#f78166",
     skills: [
       { id: "brand-strategy", name: "Brand Strategy" }, { id: "messaging-framework", name: "Messaging Framework" },
       { id: "visual-guidelines", name: "Visual Guidelines" }, { id: "tone-voice", name: "Tone & Voice" },
       { id: "competitor-positioning", name: "Competitor Positioning" }, { id: "brand-audit", name: "Brand Audit" },
       { id: "campaign-brief", name: "Campaign Brief" }, { id: "narrative-builder", name: "Narrative Builder" },
-    ], cmds: ["audit-brand", "build-strategy", "define-positioning"] },
+    ], cmds: ["audit-brand", "build-strategy", "define-positioning"],
+    hooks: ["campaign-logger", "compliance-check", "tone-enforcement"],
+    mcp: ["firecrawl", "exa", "google-analytics"] },
   { name: "Cloud Architect", icon: "☁️", desc: "Multi-cloud design, migration, cost.", color: "#58a6ff",
     skills: [
       { id: "architecture-designer", name: "Architecture Designer" }, { id: "cost-optimizer", name: "Cost Optimizer" },
       { id: "migration-planner", name: "Migration Planner" }, { id: "disaster-recovery", name: "Disaster Recovery" },
       { id: "network-designer", name: "Network Designer" },
-    ], cmds: ["design-architecture", "plan-migration", "optimize-cost"] },
+    ], cmds: ["design-architecture", "plan-migration", "optimize-cost"],
+    hooks: ["compliance-validator", "cost-tracker"],
+    mcp: ["terraform-cloud"] },
   { name: "Customer Success", icon: "🤗", desc: "Onboarding, retention, expansion.", color: "#3fb950",
     skills: [
       { id: "onboarding-designer", name: "Onboarding Designer" }, { id: "health-scorer", name: "Health Scorer" },
       { id: "qbr-builder", name: "QBR Builder" }, { id: "churn-predictor", name: "Churn Predictor" },
       { id: "expansion-planner", name: "Expansion Planner" }, { id: "nps-analyzer", name: "NPS Analyzer" },
       { id: "playbook-writer", name: "Playbook Writer" }, { id: "escalation-handler", name: "Escalation Handler" },
-    ], cmds: ["score-health", "build-qbr", "plan-expansion"] },
+    ], cmds: ["score-health", "build-qbr", "plan-expansion"],
+    hooks: ["churn-alert", "nps-survey", "renewal-reminder"],
+    mcp: ["analytics-platform", "crm-integration"] },
   { name: "Database Admin", icon: "🗄️", desc: "DB ops, tuning, backup, migration.", color: "#79c0ff",
     skills: [
       { id: "query-optimizer", name: "Query Optimizer" }, { id: "backup-strategist", name: "Backup Strategist" },
       { id: "migration-planner", name: "Migration Planner" }, { id: "performance-tuner", name: "Performance Tuner" },
       { id: "replication-manager", name: "Replication Manager" }, { id: "schema-designer", name: "Schema Designer" },
       { id: "security-hardener", name: "Security Hardener" }, { id: "capacity-planner", name: "Capacity Planner" },
-    ], cmds: [] },
+    ], cmds: [],
+    hooks: [], mcp: [] },
   { name: "Distributed Systems", icon: "🌐", desc: "Consensus, CAP, fault tolerance.", color: "#58a6ff",
     skills: [
       { id: "system-designer", name: "System Designer" }, { id: "consensus-analyzer", name: "Consensus Analyzer" },
       { id: "fault-tolerance-reviewer", name: "Fault Tolerance Reviewer" }, { id: "scalability-planner", name: "Scalability Planner" },
       { id: "data-modeler", name: "Data Modeler" },
-    ], cmds: ["design-system", "analyze-consensus", "plan-scaling"] },
+    ], cmds: ["design-system", "analyze-consensus", "plan-scaling"],
+    hooks: ["consistency-checker", "failure-scenario-logger"],
+    mcp: ["jepsen-testing"] },
   { name: "Ecommerce Operator", icon: "🛒", desc: "Store ops, product, fulfillment.", color: "#f1a82c",
     skills: [
       { id: "product-listing-optimizer", name: "Product Listing Optimizer" }, { id: "pricing-strategist", name: "Pricing Strategist" },
       { id: "inventory-forecaster", name: "Inventory Forecaster" }, { id: "conversion-analyzer", name: "Conversion Analyzer" },
       { id: "review-manager", name: "Review Manager" }, { id: "email-automator", name: "Email Automator" },
       { id: "fulfillment-optimizer", name: "Fulfillment Optimizer" }, { id: "return-handler", name: "Return Handler" },
-    ], cmds: [] },
+    ], cmds: [],
+    hooks: [], mcp: [] },
   { name: "Embedded / IoT", icon: "📟", desc: "Firmware, protocols, edge computing.", color: "#8b949e",
     skills: [
       { id: "firmware-reviewer", name: "Firmware Reviewer" }, { id: "protocol-designer", name: "Protocol Designer" },
       { id: "memory-optimizer", name: "Memory Optimizer" }, { id: "power-analyzer", name: "Power Analyzer" },
       { id: "ota-planner", name: "OTA Update Planner" }, { id: "security-hardener", name: "Security Hardener" },
       { id: "test-harness-builder", name: "Test Harness Builder" }, { id: "edge-compute-designer", name: "Edge Compute Designer" },
-    ], cmds: [] },
+    ], cmds: [],
+    hooks: [], mcp: [] },
   { name: "Frontend Engineer", icon: "🎨", desc: "React, performance, accessibility.", color: "#58a6ff",
     skills: [
       { id: "component-designer", name: "Component Designer" }, { id: "performance-auditor", name: "Performance Auditor" },
       { id: "accessibility-checker", name: "Accessibility Checker" }, { id: "responsive-designer", name: "Responsive Designer" },
       { id: "state-manager", name: "State Manager" }, { id: "test-writer", name: "Test Writer" },
       { id: "animation-designer", name: "Animation Designer" },
-    ], cmds: [] },
+    ], cmds: [],
+    hooks: [], mcp: [] },
   { name: "Game Developer", icon: "🎮", desc: "Game design, physics, AI, multiplayer.", color: "#b62ad9",
     skills: [
       { id: "game-design-doc", name: "Game Design Doc" }, { id: "physics-system", name: "Physics System" },
       { id: "ai-behavior", name: "AI Behavior" }, { id: "level-designer", name: "Level Designer" },
       { id: "multiplayer-architect", name: "Multiplayer Architect" }, { id: "performance-profiler", name: "Performance Profiler" },
       { id: "narrative-designer", name: "Narrative Designer" }, { id: "ux-polish", name: "UX Polish" },
-    ], cmds: [] },
+    ], cmds: [],
+    hooks: [], mcp: [] },
   { name: "Growth Engineer", icon: "📈", desc: "A/B testing, funnels, experimentation.", color: "#3fb950",
     skills: [
       { id: "experiment-designer", name: "Experiment Designer" }, { id: "funnel-analyzer", name: "Funnel Analyzer" },
       { id: "feature-flag-manager", name: "Feature Flag Manager" }, { id: "cohort-builder", name: "Cohort Builder" },
       { id: "retention-modeler", name: "Retention Modeler" }, { id: "onboarding-optimizer", name: "Onboarding Optimizer" },
       { id: "pricing-tester", name: "Pricing Tester" }, { id: "growth-metrics", name: "Growth Metrics" },
-    ], cmds: [] },
+    ], cmds: [],
+    hooks: [], mcp: [] },
   { name: "Healthcare", icon: "🏥", desc: "Clinical workflows, HIPAA, EHR.", color: "#f78166",
     skills: [
       { id: "clinical-workflow", name: "Clinical Workflow" }, { id: "hipaa-compliance", name: "HIPAA Compliance" },
       { id: "ehr-integration", name: "EHR Integration" }, { id: "patient-communication", name: "Patient Communication" },
       { id: "care-pathway", name: "Care Pathway" }, { id: "medical-coding", name: "Medical Coding" },
       { id: "telehealth-designer", name: "Telehealth Designer" }, { id: "quality-metrics", name: "Quality Metrics" },
-    ], cmds: [] },
+    ], cmds: [],
+    hooks: [], mcp: [] },
   { name: "HR / People Ops", icon: "👤", desc: "Hiring, culture, compensation.", color: "#d2a8ff",
     skills: [
       { id: "job-description-writer", name: "Job Description Writer" }, { id: "interview-designer", name: "Interview Designer" },
       { id: "compensation-benchmarker", name: "Compensation Benchmarker" }, { id: "onboarding-designer", name: "Onboarding Designer" },
       { id: "performance-review", name: "Performance Review" }, { id: "culture-builder", name: "Culture Builder" },
       { id: "engagement-survey", name: "Engagement Survey" }, { id: "policy-drafter", name: "Policy Drafter" },
-    ], cmds: [] },
+    ], cmds: [],
+    hooks: [], mcp: [] },
   { name: "Infrastructure as Code", icon: "🏛️", desc: "Terraform, Pulumi, Ansible, CloudFormation.", color: "#1d4aff",
     skills: [
       { id: "module-designer", name: "Module Designer" }, { id: "state-manager", name: "State Manager" },
       { id: "cost-estimator", name: "Cost Estimator" }, { id: "security-scanner", name: "Security Scanner" },
       { id: "drift-detector", name: "Drift Detector" },
-    ], cmds: ["design-module", "scan-security", "detect-drift"] },
+    ], cmds: ["design-module", "scan-security", "detect-drift"],
+    hooks: ["drift-detector", "policy-enforcer"],
+    mcp: ["terraform-cloud"] },
   { name: "Mobile Developer", icon: "📱", desc: "iOS, Android, React Native, Flutter.", color: "#58a6ff",
     skills: [
       { id: "ui-designer", name: "UI Designer" }, { id: "performance-profiler", name: "Performance Profiler" },
       { id: "offline-strategist", name: "Offline Strategist" }, { id: "push-notification-designer", name: "Push Notification Designer" },
       { id: "app-store-optimizer", name: "App Store Optimizer" }, { id: "crash-analyzer", name: "Crash Analyzer" },
       { id: "accessibility-auditor", name: "Accessibility Auditor" }, { id: "test-automator", name: "Test Automator" },
-    ], cmds: [] },
+    ], cmds: [],
+    hooks: [], mcp: [] },
   { name: "Operations Manager", icon: "⚙️", desc: "Process optimization, SOPs, reporting.", color: "#8b949e",
     skills: [
       { id: "sop-writer", name: "SOP Writer" }, { id: "process-mapper", name: "Process Mapper" },
       { id: "kpi-dashboard", name: "KPI Dashboard" }, { id: "vendor-manager", name: "Vendor Manager" },
       { id: "capacity-planner", name: "Capacity Planner" }, { id: "risk-assessor", name: "Risk Assessor" },
       { id: "budget-tracker", name: "Budget Tracker" }, { id: "automation-identifier", name: "Automation Identifier" },
-    ], cmds: [] },
+    ], cmds: [],
+    hooks: [], mcp: [] },
   { name: "Platform Engineer", icon: "🔩", desc: "Internal dev platforms, service mesh.", color: "#1d4aff",
     skills: [
       { id: "service-mesh-designer", name: "Service Mesh Designer" }, { id: "ci-cd-architect", name: "CI/CD Architect" },
       { id: "developer-portal-builder", name: "Developer Portal Builder" }, { id: "observability-engineer", name: "Observability Engineer" },
       { id: "cost-governance", name: "Cost Governance" },
-    ], cmds: ["design-mesh", "build-portal", "setup-observability"] },
+    ], cmds: ["design-mesh", "build-portal", "setup-observability"],
+    hooks: ["deployment-reviewer", "infrastructure-cost-tracker"],
+    mcp: ["kubernetes-integration"] },
   { name: "Podcast Producer", icon: "🎙️", desc: "Recording, editing, distribution.", color: "#b62ad9",
     skills: [
       { id: "episode-planner", name: "Episode Planner" }, { id: "audio-editor", name: "Audio Editor" },
       { id: "show-notes-writer", name: "Show Notes Writer" }, { id: "guest-researcher", name: "Guest Researcher" },
       { id: "rss-feed-manager", name: "RSS Feed Manager" }, { id: "social-clip-writer", name: "Social Clip Writer" },
       { id: "sponsor-pitch-writer", name: "Sponsor Pitch Writer" }, { id: "transcript-generator", name: "Transcript Generator" },
-    ], cmds: [] },
+    ], cmds: [],
+    hooks: [], mcp: [] },
   { name: "Product Operations", icon: "🔄", desc: "Feedback loops, releases, tooling.", color: "#a371f7",
     skills: [
       { id: "customer-feedback-synthesizer", name: "Customer Feedback Synthesizer" }, { id: "metrics-analyzer", name: "Metrics Analyzer" },
       { id: "release-planning", name: "Release Planning" }, { id: "roadmap-prioritizer", name: "Roadmap Prioritizer" },
       { id: "launch-coordinator", name: "Launch Coordinator" }, { id: "stakeholder-mapper", name: "Stakeholder Mapper" },
       { id: "tooling-evaluator", name: "Tooling Evaluator" }, { id: "user-research-synthesizer", name: "User Research Synthesizer" },
-    ], cmds: ["plan-release", "analyze-roadmap", "synthesize-feedback"] },
+    ], cmds: ["plan-release", "analyze-roadmap", "synthesize-feedback"],
+    hooks: ["metrics-accuracy", "roadmap-validator", "session-auto-log", "stakeholder-validation"],
+    mcp: [] },
   { name: "Recruiter / TA", icon: "🎯", desc: "Sourcing, screening, employer brand.", color: "#f78166",
     skills: [
       { id: "sourcing-strategy", name: "Sourcing Strategy" }, { id: "candidate-screener", name: "Candidate Screener" },
       { id: "interview-scorecard", name: "Interview Scorecard" }, { id: "job-description-writer", name: "Job Description Writer" },
       { id: "employer-brand-writer", name: "Employer Brand Writer" }, { id: "diversity-pipeline", name: "Diversity Pipeline" },
       { id: "offer-letter-drafter", name: "Offer Letter Drafter" }, { id: "onboarding-checklist", name: "Onboarding Checklist" },
-    ], cmds: [] },
+    ], cmds: [],
+    hooks: [], mcp: [] },
   { name: "Solutions Architect", icon: "🏗️", desc: "System design, migrations, reviews.", color: "#1078a3",
     skills: [
       { id: "solution-architect", name: "Solution Architect" }, { id: "capacity-planning", name: "Capacity Planning" },
       { id: "api-contract-design", name: "API Contract Design" }, { id: "cost-modeling", name: "Cost Modeling" },
       { id: "requirements-discovery", name: "Requirements Discovery" }, { id: "technical-debt-assessment", name: "Technical Debt Assessment" },
       { id: "design-review", name: "Design Review" }, { id: "migration-planning", name: "Migration Planning" },
-    ], cmds: ["design-system", "design-review", "discover-requirements"] },
+    ], cmds: ["design-system", "design-review", "discover-requirements"],
+    hooks: ["architecture-validator", "security-checklist", "session-tracker"],
+    mcp: [] },
   { name: "User Research", icon: "🔍", desc: "Interviews, usability, personas.", color: "#d2a8ff",
     skills: [
       { id: "research-planner", name: "Research Planner" }, { id: "usability-test-designer", name: "Usability Test Designer" },
       { id: "persona-builder", name: "Persona Builder" }, { id: "interview-guide-writer", name: "Interview Guide Writer" },
       { id: "journey-mapper", name: "Journey Mapper" }, { id: "research-ops-coordinator", name: "Research Ops Coordinator" },
       { id: "screener-designer", name: "Screener Designer" }, { id: "synthesis-facilitator", name: "Synthesis Facilitator" },
-    ], cmds: [] },
+    ], cmds: [],
+    hooks: [], mcp: [] },
   { name: "Bio Research", icon: "🧬", desc: "Genomics, protocols, analysis.", color: "#3fb950",
     skills: [
       { id: "protocol-designer", name: "Protocol Designer" }, { id: "sequence-analyzer", name: "Sequence Analyzer" },
       { id: "experiment-tracker", name: "Experiment Tracker" }, { id: "literature-reviewer", name: "Literature Reviewer" },
       { id: "data-pipeline", name: "Data Pipeline" }, { id: "statistical-analyzer", name: "Statistical Analyzer" },
       { id: "lab-notebook", name: "Lab Notebook" }, { id: "grant-writer", name: "Grant Writer" },
-    ], cmds: [] },
+    ], cmds: [],
+    hooks: [], mcp: [] },
   { name: "Blockchain / Web3", icon: "⛓️", desc: "Smart contracts, DeFi, auditing.", color: "#f5b800",
     skills: [
       { id: "smart-contract-auditor", name: "Smart Contract Auditor" }, { id: "token-designer", name: "Token Designer" },
       { id: "defi-strategist", name: "DeFi Strategist" }, { id: "gas-optimizer", name: "Gas Optimizer" },
       { id: "governance-designer", name: "Governance Designer" }, { id: "security-reviewer", name: "Security Reviewer" },
       { id: "nft-architect", name: "NFT Architect" }, { id: "bridge-analyzer", name: "Bridge Analyzer" },
-    ], cmds: [] },
+    ], cmds: [],
+    hooks: [], mcp: [] },
   { name: "API Developer", icon: "🔌", desc: "REST, GraphQL, API design, docs.", color: "#58a6ff",
     skills: [
       { id: "api-designer", name: "API Designer" }, { id: "openapi-spec-writer", name: "OpenAPI Spec Writer" },
       { id: "rate-limit-planner", name: "Rate Limit Planner" }, { id: "auth-designer", name: "Auth Designer" },
       { id: "versioning-strategist", name: "Versioning Strategist" }, { id: "performance-tester", name: "Performance Tester" },
       { id: "documentation-generator", name: "Documentation Generator" }, { id: "error-handler", name: "Error Handler" },
-    ], cmds: [] },
+    ], cmds: [],
+    hooks: [], mcp: [] },
 ];
 
 /* ─── search + filter state ─── */
@@ -370,6 +456,7 @@ export function StacksApp() {
   const [copied, setCopied] = useState("");
   const [query, setQuery] = useState("");
   const [sort, setSort] = useState<SortKey>("name");
+  const [tab, setTab] = useState<"structure" | "skills">("structure");
 
   const filtered = useMemo(() => {
     let list = stacks.map((s, i) => ({ ...s, idx: i }));
@@ -405,11 +492,11 @@ export function StacksApp() {
           <input
             value={query}
             onChange={(e) => { setQuery(e.target.value); setActive(0); }}
-            placeholder="Search stacks or skills…"
+            placeholder="Search stacks or skills..."
             className="mt-2 w-full rounded-lg border border-hairline bg-white px-2.5 py-1.5 text-[12px] text-ink placeholder:text-mute/60 focus:outline-none focus:ring-1 focus:ring-brand-blue/40"
           />
           <div className="mt-1.5 flex gap-1">
-            <button onClick={() => setSort("name")} className={`flex-1 text-[10px] font-semibold rounded py-1 transition ${sort === "name" ? "bg-white border border-hairline text-ink" : "text-mute hover:text-body"}`}>A–Z</button>
+            <button onClick={() => setSort("name")} className={`flex-1 text-[10px] font-semibold rounded py-1 transition ${sort === "name" ? "bg-white border border-hairline text-ink" : "text-mute hover:text-body"}`}>A-Z</button>
             <button onClick={() => setSort("skills")} className={`flex-1 text-[10px] font-semibold rounded py-1 transition ${sort === "skills" ? "bg-white border border-hairline text-ink" : "text-mute hover:text-body"}`}>Most skills</button>
           </div>
         </div>
@@ -429,7 +516,7 @@ export function StacksApp() {
           ))}
         </div>
         <div className="px-3 py-2 border-t border-hairline text-[10px] text-mute">
-          {stacks.length} stacks · {stacks.reduce((a, s) => a + s.skills.length, 0)} skills total
+          {stacks.length} stacks &middot; {stacks.reduce((a, s) => a + s.skills.length, 0)} skills total
         </div>
       </aside>
 
@@ -443,67 +530,171 @@ export function StacksApp() {
             <div className="mt-1 flex flex-wrap items-center gap-2">
               <Tag color={stack.color}>{stack.skills.length} skills</Tag>
               {stack.cmds.length > 0 && <Tag color="#8b949e">{stack.cmds.length} commands</Tag>}
+              {stack.hooks.length > 0 && <Tag color="#f5b800">{stack.hooks.length} hooks</Tag>}
+              {stack.mcp.length > 0 && <Tag color="#1d4aff">{stack.mcp.length} MCP</Tag>}
             </div>
           </div>
         </div>
         <p className="mt-2 text-[13px] text-body max-w-lg leading-relaxed">{stack.desc}</p>
 
-        {/* Skills */}
-        <div className="mt-5">
-          <div className="text-[11px] font-bold text-mute uppercase tracking-wider mb-2">Skills Included</div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5">
-            {stack.skills.map((sk) => (
-              <div
-                key={sk.id}
-                className="flex items-center gap-2.5 rounded-lg border border-hairline bg-white px-3 py-2 text-[12.5px] font-medium text-ink hover:border-olive/60 transition"
-              >
-                <span className="grid place-items-center size-4.5 rounded-full text-white text-[10px] shrink-0" style={{ backgroundColor: stack.color }}>✓</span>
-                <span className="truncate">{sk.name}</span>
-              </div>
-            ))}
-          </div>
+        {/* Tabs */}
+        <div className="mt-5 flex gap-1 border-b border-hairline pb-0">
+          {(["structure", "skills"] as const).map((t) => (
+            <button
+              key={t}
+              onClick={() => setTab(t)}
+              className={`px-3 py-1.5 text-[12px] font-semibold rounded-t-lg transition border-b-2 -mb-px ${
+                tab === t
+                  ? "border-ink text-ink bg-white"
+                  : "border-transparent text-mute hover:text-body"
+              }`}
+            >
+              {t === "structure" ? "Structure" : `Skills (${stack.skills.length})`}
+            </button>
+          ))}
         </div>
 
-        {/* Commands */}
-        {stack.cmds.length > 0 && (
-          <div className="mt-5">
-            <div className="text-[11px] font-bold text-mute uppercase tracking-wider mb-2">Commands</div>
-            <div className="space-y-1.5">
-              {stack.cmds.map((c) => {
-                const full = `npx claudient ${stack.name.toLowerCase().replace(/[\s/]/g, "_")} ${c}`;
-                return (
-                  <div key={c} className="flex items-center gap-2">
-                    <pre className="flex-1 rounded-lg bg-[#1d1f27] text-[#e6e6e6] px-3 py-2 text-[11.5px] font-mono overflow-auto">
-                      <code>{full}</code>
-                    </pre>
-                    <button
-                      onClick={() => copy(full)}
-                      className="shrink-0 rounded-md border border-olive/50 bg-white px-2 py-1.5 text-[10px] font-semibold text-body hover:bg-cream transition"
-                    >
-                      {copied === full ? "✓" : "Copy"}
-                    </button>
-                  </div>
-                );
-              })}
+        {/* Structure tab */}
+        {tab === "structure" && (
+          <div className="mt-4 space-y-4">
+            {/* Files & Folders */}
+            <div>
+              <div className="text-[11px] font-bold text-mute uppercase tracking-wider mb-2">Files &amp; Folders</div>
+              <div className="rounded-xl border border-hairline bg-white overflow-hidden">
+                <table className="w-full text-[12.5px]">
+                  <thead>
+                    <tr className="bg-cream text-mute text-[11px] uppercase tracking-wider">
+                      <th className="text-left px-3 py-2 font-semibold">File/Folder</th>
+                      <th className="text-left px-3 py-2 font-semibold">Type</th>
+                      <th className="text-left px-3 py-2 font-semibold">Purpose</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-t border-hairline">
+                      <td className="px-3 py-2 font-mono text-[12px] text-ink">CLAUDE.md</td>
+                      <td className="px-3 py-2 text-mute">Config</td>
+                      <td className="px-3 py-2 text-body">Workspace rules, skills, commands, and guidelines. Start here.</td>
+                    </tr>
+                    <tr className="border-t border-hairline">
+                      <td className="px-3 py-2 font-mono text-[12px] text-ink">session-log.md</td>
+                      <td className="px-3 py-2 text-mute">Log</td>
+                      <td className="px-3 py-2 text-body">Auto-updated with every action and session notes.</td>
+                    </tr>
+                    <tr className="border-t border-hairline">
+                      <td className="px-3 py-2 font-mono text-[12px] text-ink">skills/</td>
+                      <td className="px-3 py-2 text-mute">Directory</td>
+                      <td className="px-3 py-2 text-body">{stack.skills.length} reusable skills for this stack.</td>
+                    </tr>
+                    {stack.cmds.length > 0 && (
+                      <tr className="border-t border-hairline">
+                        <td className="px-3 py-2 font-mono text-[12px] text-ink">commands/</td>
+                        <td className="px-3 py-2 text-mute">Directory</td>
+                        <td className="px-3 py-2 text-body">{stack.cmds.length} slash commands for the core workflow.</td>
+                      </tr>
+                    )}
+                    {stack.hooks.length > 0 && (
+                      <tr className="border-t border-hairline">
+                        <td className="px-3 py-2 font-mono text-[12px] text-ink">hooks/</td>
+                        <td className="px-3 py-2 text-mute">Directory</td>
+                        <td className="px-3 py-2 text-body">{stack.hooks.length} automation hooks for enforcement and validation.</td>
+                      </tr>
+                    )}
+                    {stack.mcp.length > 0 && (
+                      <tr className="border-t border-hairline">
+                        <td className="px-3 py-2 font-mono text-[12px] text-ink">mcp/</td>
+                        <td className="px-3 py-2 text-mute">Directory</td>
+                        <td className="px-3 py-2 text-body">{stack.mcp.length} MCP server configs and setup guides.</td>
+                      </tr>
+                    )}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            {/* Hooks */}
+            {stack.hooks.length > 0 && (
+              <div>
+                <div className="text-[11px] font-bold text-mute uppercase tracking-wider mb-2">Hooks ({stack.hooks.length})</div>
+                <div className="flex flex-wrap gap-1.5">
+                  {stack.hooks.map((h) => (
+                    <span key={h} className="inline-flex items-center gap-1 rounded-md border border-hairline bg-white px-2.5 py-1 text-[11.5px] font-medium text-body">
+                      <span className="text-[10px] text-brand-orange">&#x26A1;</span> {title(h)}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* MCP Integrations */}
+            {stack.mcp.length > 0 && (
+              <div>
+                <div className="text-[11px] font-bold text-mute uppercase tracking-wider mb-2">MCP Integrations ({stack.mcp.length})</div>
+                <div className="flex flex-wrap gap-1.5">
+                  {stack.mcp.map((m) => (
+                    <span key={m} className="inline-flex items-center gap-1 rounded-md border border-hairline bg-white px-2.5 py-1 text-[11.5px] font-medium text-body">
+                      <span className="text-[10px] text-brand-blue">&#x2B22;</span> {title(m)}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Commands */}
+            {stack.cmds.length > 0 && (
+              <div>
+                <div className="text-[11px] font-bold text-mute uppercase tracking-wider mb-2">Commands ({stack.cmds.length})</div>
+                <div className="space-y-1.5">
+                  {stack.cmds.map((c) => (
+                    <div key={c} className="flex items-center gap-2">
+                      <pre className="flex-1 rounded-lg bg-[#1d1f27] text-[#e6e6e6] px-3 py-2 text-[11.5px] font-mono overflow-auto">
+                        <code>{`/${c}`}</code>
+                      </pre>
+                      <button
+                        onClick={() => copy(`/${c}`)}
+                        className="shrink-0 rounded-md border border-olive/50 bg-white px-2 py-1.5 text-[10px] font-semibold text-body hover:bg-cream transition"
+                      >
+                        {copied === `/${c}` ? "✓" : "Copy"}
+                      </button>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Install */}
+            <div>
+              <div className="text-[11px] font-bold text-mute uppercase tracking-wider mb-2">Install Full Stack</div>
+              <div className="flex items-center gap-2">
+                <pre className="flex-1 rounded-xl bg-[#1d1f27] text-[#e6e6e6] px-4 py-3 text-[12px] font-mono overflow-auto">
+                  <code>{`npx claudient install ${stack.name.toLowerCase().replace(/[\s/]/g, "_")}_stack`}</code>
+                </pre>
+                <button
+                  onClick={() => copy(`npx claudient install ${stack.name.toLowerCase().replace(/[\s/]/g, "_")}_stack`)}
+                  className="shrink-0 rounded-lg border border-olive/50 bg-white px-3 py-2.5 text-[12px] font-semibold text-ink hover:bg-cream transition"
+                >
+                  {copied.includes("install") ? "✓ Copied!" : "Copy"}
+                </button>
+              </div>
             </div>
           </div>
         )}
 
-        {/* Install */}
-        <div className="mt-5">
-          <div className="text-[11px] font-bold text-mute uppercase tracking-wider mb-2">Install Full Stack</div>
-          <div className="flex items-center gap-2">
-            <pre className="flex-1 rounded-xl bg-[#1d1f27] text-[#e6e6e6] px-4 py-3 text-[12px] font-mono overflow-auto">
-              <code>{`npx claudient stack ${stack.name.toLowerCase().replace(/[\s/]/g, "_")}_stack`}</code>
-            </pre>
-            <button
-              onClick={() => copy(`npx claudient stack ${stack.name.toLowerCase().replace(/[\s/]/g, "_")}_stack`)}
-              className="shrink-0 rounded-lg border border-olive/50 bg-white px-3 py-2.5 text-[12px] font-semibold text-ink hover:bg-cream transition"
-            >
-              {copied.includes("stack") ? "✓ Copied!" : "Copy"}
-            </button>
+        {/* Skills tab */}
+        {tab === "skills" && (
+          <div className="mt-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5">
+              {stack.skills.map((sk) => (
+                <div
+                  key={sk.id}
+                  className="flex items-center gap-2.5 rounded-lg border border-hairline bg-white px-3 py-2 text-[12.5px] font-medium text-ink hover:border-olive/60 transition"
+                >
+                  <span className="grid place-items-center size-4.5 rounded-full text-white text-[10px] shrink-0" style={{ backgroundColor: stack.color }}>&#x2713;</span>
+                  <span className="truncate">{sk.name}</span>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </div>
   );
