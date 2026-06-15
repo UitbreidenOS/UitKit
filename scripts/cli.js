@@ -42,6 +42,13 @@ claudient — Claude Code knowledge system
 
 Usage:
   npx claudient init                          Interactive first-run setup
+  npx claudient doctor                        Check Claude Code setup health
+  npx claudient consult "<need>"             Recommend skills and stacks by keyword
+  npx claudient benchmark [skill-id]          Show eval scores for skills
+  npx claudient audit                         Deep compliance audit of your Claude Code setup
+  npx claudient score                         AI-Readiness Score (0–100) across 8 dimensions
+  npx claudient share                         Export your installed skills as a shareable bundle
+  npx claudient import <gist-url>            Import a shared skill bundle from GitHub Gist
   npx claudient search <query>               Search skills, agents, structures
   npx claudient add skills [category] [--lang <lang>]
   npx claudient add agents
@@ -866,6 +873,947 @@ function getFiles(dir, prefix = '') {
   return results
 }
 
+function doctorCommand() {
+  console.log()
+  console.log('🏥 Claude Code Health Check')
+  console.log('━'.repeat(50))
+  console.log()
+
+  let score = 5
+  const issues = []
+
+  const skillsDir = path.join(CLAUDE_DIR, 'skills')
+  const skillsCount = fs.existsSync(skillsDir) ? getFiles(skillsDir).length : 0
+  if (skillsCount > 0) {
+    console.log(`✅ Skills installed: ${skillsCount}`)
+  } else {
+    console.log(`❌ No skills installed`)
+    issues.push('Run "npx claudient add skills all" to install skills')
+    score -= 1
+  }
+
+  const agentsDir = path.join(CLAUDE_DIR, 'agents')
+  const agentsCount = fs.existsSync(agentsDir) ? getFiles(agentsDir).length : 0
+  if (agentsCount > 0) {
+    console.log(`✅ Agents: ${agentsCount} active`)
+  } else {
+    console.log(`⚠️  Agents: none installed (optional)`)
+    score -= 0.5
+  }
+
+  const claudeMdFile = fs.existsSync('CLAUDE.md') ? 'CLAUDE.md' : fs.existsSync(path.join(CLAUDE_DIR, 'CLAUDE.md')) ? path.join(CLAUDE_DIR, 'CLAUDE.md') : null
+  if (claudeMdFile) {
+    console.log(`✅ CLAUDE.md: Found`)
+  } else {
+    console.log(`⚠️  CLAUDE.md: Not found`)
+    issues.push('Run "claudient init" to create a CLAUDE.md')
+    score -= 0.5
+  }
+
+  const hooksDir = path.join(CLAUDE_DIR, 'hooks')
+  const hooksCount = fs.existsSync(hooksDir) ? fs.readdirSync(hooksDir, { withFileTypes: true }).filter(e => e.isFile() && e.name.endsWith('.sh')).length : 0
+  if (hooksCount > 0) {
+    console.log(`✅ Hooks: ${hooksCount} active`)
+  } else {
+    console.log(`⚠️  Hooks: none installed (automates repetitive tasks)`)
+    score -= 0.5
+  }
+
+  let staleCount = 0
+  if (skillsCount > 0) {
+    const now = Date.now()
+    const thirtyDaysMs = 30 * 24 * 60 * 60 * 1000
+    for (const file of getFiles(skillsDir)) {
+      const fullPath = path.join(skillsDir, file)
+      const stat = fs.statSync(fullPath)
+      if (now - stat.mtimeMs > thirtyDaysMs) {
+        staleCount++
+      }
+    }
+  }
+  if (staleCount > 0) {
+    console.log(`⚠️  Freshness: ${staleCount} skill(s) need update (>30 days old)`)
+    issues.push('Run "claudient update" to refresh stale skills')
+    score -= 0.5
+  } else if (skillsCount > 0) {
+    console.log(`✅ Freshness: All current`)
+  }
+
+  console.log()
+  console.log(`Health Score: ${Math.max(0, score).toFixed(1)}/5.0`)
+  console.log()
+
+  if (issues.length > 0) {
+    console.log('Recommendations:')
+    issues.forEach(issue => console.log(`  → ${issue}`))
+  } else {
+    console.log('✨ Your Claude Code setup is in great shape!')
+  }
+  console.log()
+}
+
+function consultCommand(need) {
+  if (!need || need.trim().length === 0) {
+    console.error('Usage: npx claudient consult "<skill or need>"')
+    console.error('Example: npx claudient consult "sales automation"')
+    process.exit(1)
+  }
+
+  const indexPath = path.join(REPO_ROOT, 'index.json')
+  if (!fs.existsSync(indexPath)) {
+    console.error('Error: index.json not found. Run "npm run build-index" first.')
+    process.exit(1)
+  }
+
+  const index = JSON.parse(fs.readFileSync(indexPath, 'utf8'))
+  const needLower = need.toLowerCase()
+
+  const matched = index.skills
+    .filter(skill =>
+      skill.title.toLowerCase().includes(needLower) ||
+      skill.description.toLowerCase().includes(needLower)
+    )
+    .slice(0, 5)
+
+  if (matched.length === 0) {
+    console.log()
+    console.log('No skills found matching: "' + need + '"')
+    console.log('Try a broader search or run: npx claudient list skills')
+    console.log()
+    return
+  }
+
+  console.log()
+  console.log(`Top ${matched.length} matching skills for: "${need}"`)
+  console.log('━'.repeat(60))
+  console.log()
+
+  matched.forEach((skill, i) => {
+    const skillId = skill.id.replace(/\//g, ' / ')
+    console.log(`${i + 1}. [${skill.title}]`)
+    console.log(`   ${skill.description}`)
+    console.log(`   Install: npx claudient add skill ${skill.category}/${skill.title.toLowerCase().replace(/ /g, '-')}`)
+    console.log()
+  })
+
+  const categoryKeywords = {
+    'gtm': 'ai_sdr_stack',
+    'sdr': 'ai_sdr_stack',
+    'sales': 'ai_sdr_stack',
+    'marketing': 'content_marketing_stack',
+    'backend': 'fullstack_developer_stack',
+    'devops': 'devops_platform_stack',
+    'finance': 'finance_cfo_stack',
+    'legal': 'legal_operations_stack',
+    'product': 'product_manager_stack'
+  }
+
+  let suggestedStack = null
+  for (const [keyword, stack] of Object.entries(categoryKeywords)) {
+    if (needLower.includes(keyword)) {
+      suggestedStack = stack
+      break
+    }
+  }
+
+  if (suggestedStack) {
+    console.log('Suggested stack:')
+    console.log(`  npx claudient add stack ${suggestedStack}`)
+  }
+
+  console.log()
+}
+
+function shareCommand() {
+  checkClaudeInstalled()
+
+  const skillsDir = path.join(CLAUDE_DIR, 'skills')
+  const agentsDir = path.join(CLAUDE_DIR, 'agents')
+  const hooksDir = path.join(CLAUDE_DIR, 'hooks')
+
+  // Count total skills
+  const totalSkills = fs.existsSync(skillsDir) ? getFiles(skillsDir).length : 0
+
+  // Count agents
+  const agentsCount = fs.existsSync(agentsDir) ? getFiles(agentsDir).length : 0
+
+  // Count hooks
+  const hooksCount = fs.existsSync(hooksDir)
+    ? fs.readdirSync(hooksDir, { withFileTypes: true }).filter(e => e.isFile() && e.name.endsWith('.sh')).length
+    : 0
+
+  // Detect skill categories installed
+  const categories = []
+  if (fs.existsSync(skillsDir)) {
+    for (const entry of fs.readdirSync(skillsDir, { withFileTypes: true })) {
+      if (entry.isDirectory()) {
+        categories.push(entry.name)
+      }
+    }
+  }
+
+  // Build bundle
+  const bundle = {
+    claudient: '1.10.1',
+    shared_at: new Date().toISOString(),
+    author: '',
+    description: 'My Claude Code setup',
+    skills: categories,
+    agents_count: agentsCount,
+    hooks_count: hooksCount,
+    total_skills: totalSkills
+  }
+
+  console.log()
+  console.log('📦 Your Claude Code Setup Bundle')
+  console.log('━'.repeat(60))
+  console.log()
+  console.log(JSON.stringify(bundle, null, 2))
+  console.log()
+  console.log('━'.repeat(60))
+  console.log()
+  console.log('To share this setup:')
+  console.log('  1. Copy the JSON above')
+  console.log('  2. Create a GitHub Gist: https://gist.github.com')
+  console.log('  3. Paste the JSON into the gist and save')
+  console.log('  4. Share the gist raw URL with others:')
+  console.log('     npx claudient import <gist-raw-url>')
+  console.log()
+}
+
+function importCommand(gistUrl) {
+  checkClaudeInstalled()
+
+  // Validate URL
+  if (!gistUrl.includes('gist.github.com') && !gistUrl.includes('gist.githubusercontent.com')) {
+    console.error('Error: Invalid gist URL. Must be from gist.github.com or gist.githubusercontent.com')
+    process.exit(1)
+  }
+
+  // Convert to raw URL if needed
+  let rawUrl = gistUrl
+  if (!rawUrl.endsWith('/raw')) {
+    if (rawUrl.includes('gist.github.com')) {
+      rawUrl = rawUrl.replace('gist.github.com', 'gist.githubusercontent.com')
+      rawUrl = rawUrl.replace(/\/(\w+)$/, '/$1/raw')
+    } else if (rawUrl.includes('gist.githubusercontent.com') && !rawUrl.endsWith('/raw')) {
+      rawUrl += '/raw'
+    }
+  }
+
+  console.log(`Fetching bundle from: ${rawUrl}`)
+  console.log()
+
+  // Fetch with Node 18 fetch
+  fetch(rawUrl)
+    .then(res => {
+      if (!res.ok) throw new Error(`HTTP ${res.status}`)
+      return res.json()
+    })
+    .then(bundle => {
+      // Validate bundle
+      if (!bundle.claudient) {
+        throw new Error('Invalid bundle: missing claudient version field')
+      }
+      if (!Array.isArray(bundle.skills)) {
+        throw new Error('Invalid bundle: skills must be an array')
+      }
+
+      console.log(`✓ Bundle loaded (claudient ${bundle.claudient})`)
+      if (bundle.description) console.log(`  ${bundle.description}`)
+      console.log()
+
+      // Import each skill category
+      if (bundle.skills.length === 0) {
+        console.log('No skills to import.')
+        return
+      }
+
+      console.log(`Installing ${bundle.skills.length} skill categories...\n`)
+      for (const category of bundle.skills) {
+        addSkills(category, null)
+      }
+
+      console.log()
+      console.log('━'.repeat(60))
+      console.log(`✅ Imported ${bundle.skills.length} skill categories from shared bundle`)
+      console.log('━'.repeat(60))
+      console.log()
+      console.log('Restart Claude Code to activate all imported skills.')
+      console.log()
+    })
+    .catch(err => {
+      console.error(`Error importing bundle: ${err.message}`)
+      process.exit(1)
+    })
+}
+
+function benchmarkCommand(skillId) {
+  const benchmarksPath = path.join(REPO_ROOT, 'benchmarks', 'results.json')
+  if (!fs.existsSync(benchmarksPath)) {
+    console.error('Error: benchmarks/results.json not found.')
+    process.exit(1)
+  }
+
+  let data
+  try {
+    data = JSON.parse(fs.readFileSync(benchmarksPath, 'utf-8'))
+  } catch (err) {
+    console.error('Error parsing benchmarks/results.json:', err.message)
+    process.exit(1)
+  }
+
+  const gradeEmoji = (grade) => {
+    switch (grade) {
+      case 'A': return '✅ A'
+      case 'B': return '🟦 B'
+      case 'C': return '🟨 C'
+      case 'F': return '❌ F'
+      default: return grade
+    }
+  }
+
+  if (!skillId) {
+    // Show top 10 skills by eval score
+    console.log()
+    console.log('🏆 Top 10 Skills by Eval Score')
+    console.log('━'.repeat(70))
+    console.log()
+
+    const sorted = [...data.results].sort((a, b) => b.score - a.score).slice(0, 10)
+
+    sorted.forEach((skill, i) => {
+      const score = Math.round(skill.score * 100)
+      const grade = gradeEmoji(skill.grade)
+      const tests = `${skill.tests_passed}/${skill.tests_run}`
+      console.log(`${i + 1}. ${skill.title} (${skill.category}) — ${score}% | ${grade} | Tests`)
+    })
+
+    console.log()
+    console.log(`Run: npx claudient benchmark <skill-id>  for details`)
+    console.log()
+  } else {
+    // Show detail card for a specific skill
+    const skill = data.results.find(s => s.id === skillId)
+
+    if (!skill) {
+      console.log()
+      console.log(`⚠️  Not yet benchmarked: "${skillId}"`)
+      console.log()
+      console.log('Run: npm run benchmark')
+      console.log()
+      return
+    }
+
+    console.log()
+    console.log('━'.repeat(70))
+    console.log(`📊 ${skill.title}`)
+    console.log('━'.repeat(70))
+    console.log()
+    console.log(`ID:          ${skill.id}`)
+    console.log(`Category:    ${skill.category}`)
+    console.log(`Score:       ${Math.round(skill.score * 100)}%`)
+    console.log(`Grade:       ${gradeEmoji(skill.grade)}`)
+    console.log(`Tests:       ${skill.tests_passed}/${skill.tests_run} passed`)
+    console.log(`Last tested: ${skill.last_tested}`)
+    if (skill.notes) {
+      console.log(`Notes:       ${skill.notes}`)
+    }
+    console.log()
+  }
+}
+
+// ── Enterprise Lead-Gen Commands ──────────────────────────────────────────────
+
+function writeReport(filename, content) {
+  const filepath = path.join(process.cwd(), filename)
+  fs.writeFileSync(filepath, content, 'utf-8')
+  console.log(`📄 Report saved to ./${filename}`)
+}
+
+function auditCommand() {
+  if (!fs.existsSync(CLAUDE_DIR)) {
+    console.error(`Error: ~/.claude directory not found. Claude Code must be installed.`)
+    process.exit(1)
+  }
+
+  const date = new Date().toISOString().split('T')[0]
+  const results = []
+  let totalScore = 0
+
+  // 1. Skills Coverage (count categories, not individual skills)
+  const skillsDir = path.join(CLAUDE_DIR, 'skills')
+  let skillsScore = 0
+  let skillCategories = 0
+  let skillCount = 0
+
+  if (fs.existsSync(skillsDir)) {
+    for (const entry of fs.readdirSync(skillsDir, { withFileTypes: true })) {
+      if (entry.isDirectory()) {
+        skillCategories++
+        const files = getFiles(path.join(skillsDir, entry.name))
+        skillCount += files.length
+      }
+    }
+  }
+
+  let skillsStatus = '❌ FAIL'
+  if (skillCount === 0) {
+    skillsScore = 0
+    results.push({ dim: 'Skills Coverage', status: skillsStatus, score: skillsScore, finding: 'No skills installed' })
+  } else if (skillCategories <= 3) {
+    skillsScore = 10
+    skillsStatus = '⚠️ WARN'
+    results.push({ dim: 'Skills Coverage', status: skillsStatus, score: skillsScore, finding: `${skillCount} skills across ${skillCategories} categories` })
+  } else {
+    skillsScore = 20
+    skillsStatus = '✅ PASS'
+    results.push({ dim: 'Skills Coverage', status: skillsStatus, score: skillsScore, finding: `${skillCount} skills across ${skillCategories} categories` })
+  }
+  totalScore += skillsScore
+
+  // 2. Agent Configuration
+  const agentsDir = path.join(CLAUDE_DIR, 'agents')
+  let agentsScore = 0
+  let agentCount = 0
+
+  if (fs.existsSync(agentsDir)) {
+    agentCount = getFiles(agentsDir).length
+  }
+
+  let agentsStatus = '❌ FAIL'
+  if (agentCount === 0) {
+    agentsScore = 0
+    results.push({ dim: 'Agent Configuration', status: agentsStatus, score: agentsScore, finding: 'No agents deployed' })
+  } else if (agentCount <= 5) {
+    agentsScore = 10
+    agentsStatus = '⚠️ WARN'
+    results.push({ dim: 'Agent Configuration', status: agentsStatus, score: agentsScore, finding: `${agentCount} agents deployed` })
+  } else {
+    agentsScore = 20
+    agentsStatus = '✅ PASS'
+    results.push({ dim: 'Agent Configuration', status: agentsStatus, score: agentsScore, finding: `${agentCount} agents deployed` })
+  }
+  totalScore += agentsScore
+
+  // 3. Hook Security
+  const hooksDir = path.join(CLAUDE_DIR, 'hooks')
+  let hooksScore = 0
+  let hookCount = 0
+  let hasRiskyPatterns = false
+
+  if (fs.existsSync(hooksDir)) {
+    for (const entry of fs.readdirSync(hooksDir, { withFileTypes: true })) {
+      if (entry.isFile() && entry.name.endsWith('.sh')) {
+        hookCount++
+        const content = fs.readFileSync(path.join(hooksDir, entry.name), 'utf-8')
+        if (/curl|rm\s+-rf|sudo|eval/.test(content)) {
+          hasRiskyPatterns = true
+        }
+      }
+    }
+  }
+
+  let hooksStatus = '❌ FAIL'
+  if (hookCount === 0) {
+    hooksScore = 0
+    hooksStatus = '⚠️ WARN'
+    results.push({ dim: 'Hook Security', status: hooksStatus, score: hooksScore, finding: 'No hooks installed' })
+  } else if (hookCount <= 2) {
+    hooksScore = 10
+    hooksStatus = '⚠️ WARN'
+    results.push({ dim: 'Hook Security', status: hooksStatus, score: hooksScore, finding: `${hookCount} hook(s)${hasRiskyPatterns ? ' with risky patterns' : ''}` })
+  } else {
+    hooksScore = 20
+    if (hasRiskyPatterns) {
+      hooksScore = 15
+      hooksStatus = '⚠️ WARN'
+    } else {
+      hooksStatus = '✅ PASS'
+    }
+    results.push({ dim: 'Hook Security', status: hooksStatus, score: hooksScore, finding: `${hookCount} hook(s)${hasRiskyPatterns ? ' (risky patterns detected)' : ''}` })
+  }
+  totalScore += hooksScore
+
+  // 4. CLAUDE.md Governance
+  const claudeMdPath = fs.existsSync('CLAUDE.md') ? 'CLAUDE.md' : path.join(CLAUDE_DIR, 'CLAUDE.md')
+  let claudeScore = 0
+  let claudeFinding = 'No CLAUDE.md found'
+  let claudeStatus = '❌ FAIL'
+
+  if (fs.existsSync(claudeMdPath)) {
+    const content = fs.readFileSync(claudeMdPath, 'utf-8')
+    const sectionCount = (content.match(/^##\s+/gm) || []).length
+    claudeScore = 20
+    claudeFinding = `CLAUDE.md with ${sectionCount} sections`
+    claudeStatus = '✅ PASS'
+    results.push({ dim: 'CLAUDE.md Governance', status: claudeStatus, score: claudeScore, finding: claudeFinding })
+  } else {
+    results.push({ dim: 'CLAUDE.md Governance', status: claudeStatus, score: claudeScore, finding: claudeFinding })
+  }
+  totalScore += claudeScore
+
+  // 5. Rules Compliance
+  const rulesDir = path.join(CLAUDE_DIR, 'rules')
+  let rulesScore = 0
+  let ruleCount = 0
+
+  if (fs.existsSync(rulesDir)) {
+    ruleCount = getFiles(rulesDir).length
+  }
+
+  let rulesStatus = '❌ FAIL'
+  if (ruleCount === 0) {
+    rulesScore = 0
+    results.push({ dim: 'Rules Compliance', status: rulesStatus, score: rulesScore, finding: 'No rules configured' })
+  } else if (ruleCount <= 4) {
+    rulesScore = 10
+    rulesStatus = '⚠️ WARN'
+    results.push({ dim: 'Rules Compliance', status: rulesStatus, score: rulesScore, finding: `${ruleCount} rule(s) configured` })
+  } else {
+    rulesScore = 20
+    rulesStatus = '✅ PASS'
+    results.push({ dim: 'Rules Compliance', status: rulesStatus, score: rulesScore, finding: `${ruleCount} rule(s) configured` })
+  }
+  totalScore += rulesScore
+
+  // 6. Freshness
+  let freshnessScore = 20
+  let staleCount = 0
+  let totalFiles = 0
+
+  if (fs.existsSync(skillsDir)) {
+    const now = Date.now()
+    const thirtyDaysMs = 30 * 24 * 60 * 60 * 1000
+    const files = getFiles(skillsDir)
+    totalFiles = files.length
+
+    for (const file of files) {
+      const fullPath = path.join(skillsDir, file)
+      const stat = fs.statSync(fullPath)
+      if (now - stat.mtimeMs > thirtyDaysMs) {
+        staleCount++
+      }
+    }
+  }
+
+  let freshnessStatus = '✅ PASS'
+  let freshnessFinding = 'All current'
+
+  if (totalFiles > 0 && staleCount / totalFiles > 0.5) {
+    freshnessScore = 0
+    freshnessStatus = '❌ FAIL'
+    freshnessFinding = `${staleCount}/${totalFiles} files stale (>30 days)`
+  } else if (staleCount > 0) {
+    freshnessScore = 10
+    freshnessStatus = '⚠️ WARN'
+    freshnessFinding = `${staleCount}/${totalFiles} files stale`
+  }
+
+  results.push({ dim: 'Freshness', status: freshnessStatus, score: freshnessScore, finding: freshnessFinding })
+  totalScore += freshnessScore
+
+  // 7. Permission Scope
+  let permScore = 20
+  let permFinding = 'Permission scope OK'
+  let permStatus = '✅ PASS'
+
+  const settingsPath = path.join(CLAUDE_DIR, 'settings.json')
+  if (fs.existsSync(settingsPath)) {
+    try {
+      const settings = JSON.parse(fs.readFileSync(settingsPath, 'utf-8'))
+      if (settings.allow && (settings.allow.includes('bash:*') || settings.allow.includes('*'))) {
+        permScore = 0
+        permFinding = 'Overly broad permissions detected'
+        permStatus = '❌ FAIL'
+      }
+    } catch {}
+  }
+
+  results.push({ dim: 'Permission Scope', status: permStatus, score: permScore, finding: permFinding })
+  totalScore += permScore
+
+  // 8. Benchmark Coverage
+  const benchmarksPath = path.join(REPO_ROOT, 'benchmarks', 'results.json')
+  let benchScore = 0
+  let benchFinding = 'No benchmark data'
+  let benchStatus = '❌ FAIL'
+
+  if (fs.existsSync(benchmarksPath) && skillCount > 0) {
+    try {
+      const benchData = JSON.parse(fs.readFileSync(benchmarksPath, 'utf-8'))
+      const benchedCount = benchData.results ? benchData.results.length : 0
+      const percentage = Math.round((benchedCount / skillCount) * 100)
+
+      if (percentage === 0) {
+        benchScore = 0
+        benchFinding = '0% of skills benchmarked'
+        benchStatus = '❌ FAIL'
+      } else if (percentage <= 10) {
+        benchScore = 5
+        benchFinding = `${percentage}% of skills benchmarked`
+        benchStatus = '⚠️ WARN'
+      } else if (percentage <= 50) {
+        benchScore = 10
+        benchFinding = `${percentage}% of skills benchmarked`
+        benchStatus = '⚠️ WARN'
+      } else {
+        benchScore = 20
+        benchFinding = `${percentage}% of skills benchmarked`
+        benchStatus = '✅ PASS'
+      }
+    } catch {}
+  } else if (skillCount === 0) {
+    benchFinding = 'No skills to benchmark'
+  }
+
+  results.push({ dim: 'Benchmark Coverage', status: benchStatus, score: benchScore, finding: benchFinding })
+  totalScore += benchScore
+
+  // Generate output
+  const percentage = Math.round((totalScore / 160) * 100)
+
+  let output = `🔍 Claude Code Compliance Audit\n`
+  output += `${'━'.repeat(50)}\n`
+  output += `Project: ${process.cwd()}\n`
+  output += `Date:    ${date}\n\n`
+  output += `DIMENSION              STATUS    SCORE    FINDING\n`
+
+  for (const r of results) {
+    const dimPad = r.dim.padEnd(22)
+    const statusPad = r.status.padEnd(9)
+    const scorePad = `${r.score}/20`.padEnd(8)
+    output += `${dimPad} ${statusPad} ${scorePad} ${r.finding}\n`
+  }
+
+  output += `\n${'━'.repeat(50)}\n`
+  output += `Audit Score: ${totalScore}/160 (${percentage}%)\n\n`
+
+  output += `Recommendations:\n`
+  for (const r of results) {
+    if (r.status.includes('FAIL') || r.status.includes('WARN')) {
+      let rec = ''
+      switch (r.dim) {
+        case 'Skills Coverage':
+          rec = 'Install more skill categories: npx claudient add skills all'
+          break
+        case 'Agent Configuration':
+          rec = 'Deploy agents: npx claudient add agents'
+          break
+        case 'Hook Security':
+          rec = 'Review and install hooks: npx claudient add hooks'
+          break
+        case 'CLAUDE.md Governance':
+          rec = 'Create CLAUDE.md: npx claudient init or add rules --write'
+          break
+        case 'Rules Compliance':
+          rec = 'Add rules to CLAUDE.md: npx claudient add rules --write'
+          break
+        case 'Freshness':
+          rec = 'Update stale skills: npx claudient update'
+          break
+        case 'Permission Scope':
+          rec = 'Review ~/.claude/settings.json for overly broad permissions'
+          break
+        case 'Benchmark Coverage':
+          rec = 'Run: npm run benchmark (in repo context)'
+          break
+      }
+      if (rec) output += `  → ${rec}\n`
+    }
+  }
+
+  output += `\n${'─'.repeat(65)}\n`
+  output += `🏢 Need a full governance audit with remediation support?\n`
+  output += `   Claudient Enterprise includes:\n`
+  output += `   • SOC2 / GDPR / EU-AI-Act compliance stacks\n`
+  output += `   • Audit trail hooks with SSO integration\n`
+  output += `   • Dedicated stack engineer\n`
+  output += `   → Book a demo: https://claudient.ai/enterprise\n`
+  output += `   → Email: enterprise@claudient.ai\n`
+  output += `${'─'.repeat(65)}\n`
+
+  console.log(output)
+  writeReport('claudient-audit-report.md', output)
+}
+
+function scoreCommand() {
+  if (!fs.existsSync(CLAUDE_DIR)) {
+    console.error(`Error: ~/.claude directory not found. Claude Code must be installed.`)
+    process.exit(1)
+  }
+
+  const scores = []
+  let totalScore = 0
+
+  // 1. Skills Installed (0-12.5)
+  const skillsDir = path.join(CLAUDE_DIR, 'skills')
+  let skillsScore = 0
+  let skillCategories = 0
+
+  if (fs.existsSync(skillsDir)) {
+    for (const entry of fs.readdirSync(skillsDir, { withFileTypes: true })) {
+      if (entry.isDirectory()) skillCategories++
+    }
+  }
+
+  if (skillCategories === 0) {
+    skillsScore = 0
+  } else if (skillCategories <= 3) {
+    skillsScore = 6.25
+  } else {
+    skillsScore = 12.5
+  }
+  scores.push({ dim: 'Skills Installed', score: skillsScore, level: skillCategories === 0 ? 'None' : skillCategories <= 3 ? `${skillCategories} categories` : `${skillCategories}+ categories` })
+  totalScore += skillsScore
+
+  // 2. Agents Deployed (0-12.5)
+  const agentsDir = path.join(CLAUDE_DIR, 'agents')
+  let agentCount = 0
+  if (fs.existsSync(agentsDir)) {
+    agentCount = getFiles(agentsDir).length
+  }
+
+  let agentsScore = 0
+  if (agentCount === 0) {
+    agentsScore = 0
+  } else if (agentCount <= 5) {
+    agentsScore = 6.25
+  } else {
+    agentsScore = 12.5
+  }
+  scores.push({ dim: 'Agents Deployed', score: agentsScore, level: agentCount === 0 ? 'None' : agentCount <= 5 ? `${agentCount} agents` : `${agentCount}+ agents` })
+  totalScore += agentsScore
+
+  // 3. Hooks Active (0-12.5)
+  const hooksDir = path.join(CLAUDE_DIR, 'hooks')
+  let hookCount = 0
+  if (fs.existsSync(hooksDir)) {
+    for (const entry of fs.readdirSync(hooksDir, { withFileTypes: true })) {
+      if (entry.isFile() && entry.name.endsWith('.sh')) hookCount++
+    }
+  }
+
+  let hooksScore = 0
+  if (hookCount === 0) {
+    hooksScore = 0
+  } else if (hookCount <= 2) {
+    hooksScore = 6.25
+  } else {
+    hooksScore = 12.5
+  }
+  scores.push({ dim: 'Hooks Active', score: hooksScore, level: hookCount === 0 ? 'None' : hookCount <= 2 ? `${hookCount} hooks` : `${hookCount}+ hooks` })
+  totalScore += hooksScore
+
+  // 4. Rules Configured (0-12.5)
+  const rulesDir = path.join(CLAUDE_DIR, 'rules')
+  let ruleCount = 0
+  if (fs.existsSync(rulesDir)) {
+    ruleCount = getFiles(rulesDir).length
+  }
+
+  let rulesScore = 0
+  if (ruleCount === 0) {
+    rulesScore = 0
+  } else if (ruleCount <= 4) {
+    rulesScore = 6.25
+  } else {
+    rulesScore = 12.5
+  }
+  scores.push({ dim: 'Rules Configured', score: rulesScore, level: ruleCount === 0 ? 'None' : ruleCount <= 4 ? `${ruleCount} rules` : `${ruleCount}+ rules` })
+  totalScore += rulesScore
+
+  // 5. CLAUDE.md Quality (0-12.5)
+  const claudeMdPath = fs.existsSync('CLAUDE.md') ? 'CLAUDE.md' : path.join(CLAUDE_DIR, 'CLAUDE.md')
+  let claudeScore = 0
+  let claudeLevel = 'Missing'
+
+  if (fs.existsSync(claudeMdPath)) {
+    const content = fs.readFileSync(claudeMdPath, 'utf-8')
+    if (content.length < 200) {
+      claudeScore = 6.25
+      claudeLevel = 'Basic'
+    } else {
+      claudeScore = 12.5
+      claudeLevel = 'Substantial'
+    }
+  }
+
+  scores.push({ dim: 'CLAUDE.md Quality', score: claudeScore, level: claudeLevel })
+  totalScore += claudeScore
+
+  // 6. Freshness (0-12.5)
+  let freshnessScore = 12.5
+  let freshnessLevel = 'All current'
+
+  if (fs.existsSync(skillsDir)) {
+    const now = Date.now()
+    const thirtyDaysMs = 30 * 24 * 60 * 60 * 1000
+    const files = getFiles(skillsDir)
+    let staleCount = 0
+
+    for (const file of files) {
+      const fullPath = path.join(skillsDir, file)
+      const stat = fs.statSync(fullPath)
+      if (now - stat.mtimeMs > thirtyDaysMs) staleCount++
+    }
+
+    if (files.length > 0 && staleCount / files.length > 0.5) {
+      freshnessScore = 0
+      freshnessLevel = 'Stale'
+    } else if (staleCount > 0) {
+      freshnessScore = 6.25
+      freshnessLevel = 'Some stale'
+    }
+  }
+
+  scores.push({ dim: 'Freshness', score: freshnessScore, level: freshnessLevel })
+  totalScore += freshnessScore
+
+  // 7. Benchmark Coverage (0-12.5)
+  const benchmarksPath = path.join(REPO_ROOT, 'benchmarks', 'results.json')
+  let benchScore = 0
+  let benchLevel = 'None'
+
+  if (fs.existsSync(benchmarksPath)) {
+    try {
+      const benchData = JSON.parse(fs.readFileSync(benchmarksPath, 'utf-8'))
+      const benchedCount = benchData.results ? benchData.results.length : 0
+      if (benchedCount === 0) {
+        benchScore = 0
+      } else if (benchedCount < 10) {
+        benchScore = 6.25
+        benchLevel = `${benchedCount} benchmarked`
+      } else {
+        benchScore = 12.5
+        benchLevel = `${benchedCount}+ benchmarked`
+      }
+    } catch {}
+  }
+
+  scores.push({ dim: 'Benchmark Coverage', score: benchScore, level: benchLevel })
+  totalScore += benchScore
+
+  // 8. Multi-language (0-12.5)
+  let langScore = 0
+  let langCount = 0
+  let langLevel = 'EN only'
+
+  // Check for language subdirectories in skills or other sections
+  if (fs.existsSync(skillsDir)) {
+    const entries = fs.readdirSync(skillsDir, { withFileTypes: true })
+    const langDirs = entries.filter(e => e.isDirectory() && SUPPORTED_LANGS.includes(e.name))
+    langCount = langDirs.length
+  }
+
+  if (langCount === 0) {
+    langScore = 0
+    langLevel = 'EN only'
+  } else if (langCount === 1) {
+    langScore = 6.25
+    langLevel = '1 extra language'
+  } else {
+    langScore = 12.5
+    langLevel = `${langCount} languages`
+  }
+
+  scores.push({ dim: 'Multi-language', score: langScore, level: langLevel })
+  totalScore += langScore
+
+  // Calculate tier
+  let tier, tierEmoji
+  if (totalScore <= 25) {
+    tier = 'Beginner'
+    tierEmoji = '🥉'
+  } else if (totalScore <= 50) {
+    tier = 'Intermediate'
+    tierEmoji = '🥈'
+  } else if (totalScore <= 75) {
+    tier = 'Advanced'
+    tierEmoji = '🥈'
+  } else {
+    tier = 'Expert'
+    tierEmoji = '🏆'
+  }
+
+  // Determine next tier
+  let nextTier = null
+  let nextThreshold = null
+  if (totalScore < 25) {
+    nextTier = 'Intermediate'
+    nextThreshold = 26
+  } else if (totalScore < 50) {
+    nextTier = 'Advanced'
+    nextThreshold = 51
+  } else if (totalScore < 75) {
+    nextTier = 'Expert'
+    nextThreshold = 76
+  }
+
+  // Generate output
+  let output = `🎯 AI-Readiness Score\n`
+  output += `${'━'.repeat(50)}\n\n`
+  output += `DIMENSION             SCORE   LEVEL\n`
+
+  for (const s of scores) {
+    const dimPad = s.dim.padEnd(21)
+    const scorePad = s.score.toFixed(1).padEnd(7)
+    const barCount = Math.round((s.score / 12.5) * 12)
+    const bar = '█'.repeat(barCount) + '░'.repeat(12 - barCount)
+    output += `${dimPad} ${scorePad} ${bar} ${s.level}\n`
+  }
+
+  output += `\n${'━'.repeat(50)}\n`
+  output += `Total: ${totalScore.toFixed(1)}/100 — ${tier} ${tierEmoji}\n\n`
+
+  if (nextTier) {
+    output += `Next steps to reach ${nextTier}:\n`
+    const gap = nextThreshold - totalScore
+    const recs = []
+
+    for (const s of scores) {
+      if (s.score < 12.5) {
+        switch (s.dim) {
+          case 'Skills Installed':
+            if (s.score < 12.5) recs.push(`Install additional skill categories: npx claudient add skills`)
+            break
+          case 'Agents Deployed':
+            if (s.score < 12.5) recs.push(`Deploy 6+ agents: npx claudient add agents`)
+            break
+          case 'Hooks Active':
+            if (s.score < 12.5) recs.push(`Install 3+ hooks: npx claudient add hooks`)
+            break
+          case 'Rules Configured':
+            if (s.score < 12.5) recs.push(`Add 5+ rules: npx claudient add rules --write`)
+            break
+          case 'CLAUDE.md Quality':
+            if (s.score < 12.5) recs.push(`Expand CLAUDE.md with substantial content`)
+            break
+          case 'Freshness':
+            if (s.score < 12.5) recs.push(`Update stale skills: npx claudient update`)
+            break
+          case 'Benchmark Coverage':
+            if (s.score < 12.5) recs.push(`Benchmark 10+ skills: npm run benchmark`)
+            break
+          case 'Multi-language':
+            if (s.score < 12.5) recs.push(`Add translations for 2+ languages`)
+            break
+        }
+      }
+    }
+
+    // Show only top recommendations
+    for (let i = 0; i < Math.min(3, recs.length); i++) {
+      output += `  → ${recs[i]}\n`
+    }
+  } else {
+    output += `Expert tier reached! Continue advancing your setup.\n`
+  }
+
+  console.log(output)
+  writeReport('claudient-score-report.md', output)
+}
+
 // ── Main ──────────────────────────────────────────────────────────────────────
 
 const [, , command, ...rawArgs] = process.argv
@@ -940,6 +1888,34 @@ switch (command) {
   case 'scan':
     recommend(positional[0] || '.')
     break
+  case 'doctor':
+    doctorCommand()
+    break
+  case 'consult': {
+    const need = positional.join(' ')
+    consultCommand(need)
+    break
+  }
+  case 'benchmark': {
+    const skillId = positional[0] || null
+    benchmarkCommand(skillId)
+    break
+  }
+  case 'audit':
+    auditCommand()
+    break
+  case 'score':
+    scoreCommand()
+    break
+  case 'share':
+    shareCommand()
+    break
+  case 'import': {
+    const url = positional[0]
+    if (!url) { console.error('Usage: claudient import <gist-url>'); process.exit(1) }
+    importCommand(url)
+    break
+  }
   case 'help':
   case '--help':
   case '-h':

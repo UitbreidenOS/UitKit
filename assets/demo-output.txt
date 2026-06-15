@@ -1,0 +1,49 @@
+
+╔════════════════════════════════════════════════════════════════════════════╗
+║                   CLAUDIENT — QUICK START DEMO                            ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+$ npx claudient add skills gtm
+
+Checking Claude Code installation...
+✅ Claude Code found at ~/.claude
+
+Scanning GTM skills...
+Installing 12 GTM skills to ~/.claude/skills/gtm/
+
+  ✅ sdr-research-brief.md
+  ✅ founder-operating-system.md
+  ✅ paid-ads-strategy.md
+  ✅ content-calendar.md
+  ✅ growth-loops.md
+
+📦 Done. 12 GTM skills installed.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+$ claudient doctor
+
+🏥 Claude Code Health Check
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ Skills installed: 67 (backend, gtm, devops, sdr, finance, legal, product)
+✅ Agents: 22 active
+✅ CLAUDE.md: Found
+✅ Hooks: 4 active
+✅ Skills freshness: All current
+
+Health Score: 5.0/5
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+$ claudient consult "sales outreach automation"
+
+Top 5 matching skills:
+  1. [sdr-research-brief] — SDR Research Brief: AI-driven lead research
+  2. [email-campaign] — Email Campaign: Bulk outreach sequences with Claude
+  3. [cold-outreach] — Cold Outreach: Personalized messaging at scale
+  4. [crm-sync] — CRM Sync: Link Claude Code with your sales stack
+  5. [lead-scoring] — Lead Scoring: Ranking prospects by fit
+
+Suggested stack: 'ai_sdr_stack' — everything you need for AI-native sales.
+Install with: npx claudient add stack ai_sdr_stack

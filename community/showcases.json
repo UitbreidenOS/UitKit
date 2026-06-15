@@ -1,0 +1,93 @@
+{
+  "version": "1.0.0",
+  "showcases": [
+    {
+      "id": "full-gtm-stack",
+      "title": "Full GTM Stack",
+      "author": "tushar2704",
+      "description": "Complete go-to-market setup: SDR research, sales ops, email automation, analytics, and pipeline management",
+      "skills": ["gtm", "sdr", "marketing"],
+      "agents_count": 8,
+      "gist_url": "https://gist.github.com/tushar2704/example-gtm-stack",
+      "stars": 12,
+      "tags": ["sales", "gtm", "startup", "revenue"]
+    },
+    {
+      "id": "backend-api-stack",
+      "title": "Backend API Stack",
+      "author": "community",
+      "description": "Full-stack REST API development: FastAPI/Express patterns, database design, migrations, API docs generation, testing",
+      "skills": ["backend", "database", "devops-infra"],
+      "agents_count": 6,
+      "gist_url": "https://gist.github.com/example-backend-stack",
+      "stars": 18,
+      "tags": ["backend", "api", "database", "engineering"]
+    },
+    {
+      "id": "devops-infra-stack",
+      "title": "DevOps Infrastructure Stack",
+      "author": "community",
+      "description": "Cloud-native ops: Kubernetes, Terraform, CI/CD pipelines, monitoring, cost optimization, disaster recovery",
+      "skills": ["devops-infra", "automation"],
+      "agents_count": 7,
+      "gist_url": "https://gist.github.com/example-devops-stack",
+      "stars": 24,
+      "tags": ["devops", "infrastructure", "cloud", "automation"]
+    },
+    {
+      "id": "fintech-stack",
+      "title": "Fintech & Compliance Stack",
+      "author": "community",
+      "description": "Financial tech stack: DCF models, regulatory compliance (GDPR/SOC2), payment processing, KYC automation, audit trails",
+      "skills": ["finance", "finance-payments", "legal"],
+      "agents_count": 5,
+      "gist_url": "https://gist.github.com/example-fintech-stack",
+      "stars": 8,
+      "tags": ["finance", "compliance", "payments", "regulated"]
+    },
+    {
+      "id": "legal-ops-stack",
+      "title": "Legal Operations Stack",
+      "author": "community",
+      "description": "Legal operations automation: contract review, GDPR compliance, SOC2 framework, legal research, vendor management",
+      "skills": ["legal", "automation"],
+      "agents_count": 4,
+      "gist_url": "https://gist.github.com/example-legal-stack",
+      "stars": 6,
+      "tags": ["legal", "compliance", "governance", "operations"]
+    },
+    {
+      "id": "small-biz-stack",
+      "title": "Small Business Stack",
+      "author": "community",
+      "description": "Small biz ops: invoicing, cash flow, bookkeeping, client management, SOPs, content marketing, analytics",
+      "skills": ["small-business", "marketing", "automation"],
+      "agents_count": 9,
+      "gist_url": "https://gist.github.com/example-smallbiz-stack",
+      "stars": 22,
+      "tags": ["small-business", "operations", "marketing", "productivity"]
+    },
+    {
+      "id": "ai-engineering-stack",
+      "title": "AI Engineering Stack",
+      "author": "community",
+      "description": "LLM development: agent orchestration, RAG patterns, prompt optimization, token management, model eval, monitoring",
+      "skills": ["ai-engineering", "data-ml"],
+      "agents_count": 10,
+      "gist_url": "https://gist.github.com/example-ai-eng-stack",
+      "stars": 31,
+      "tags": ["ai", "engineering", "llm", "agents"]
+    },
+    {
+      "id": "fullstack-saas-stack",
+      "title": "Full-Stack SaaS Stack",
+      "author": "community",
+      "description": "Complete SaaS development: frontend components, backend APIs, databases, auth, devops, testing, analytics, monitoring",
+      "skills": ["backend", "automation", "devops-infra", "marketing"],
+      "agents_count": 14,
+      "gist_url": "https://gist.github.com/example-saas-stack",
+      "stars": 35,
+      "tags": ["saas", "fullstack", "engineering", "startup"]
+    }
+  ]
+}

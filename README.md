@@ -19,6 +19,10 @@
 [![Reddit](https://img.shields.io/badge/Reddit-r%2Fuitbreiden-FF4500?logo=reddit&logoColor=white)](https://www.reddit.com/r/uitbreiden/)
 [![YouTube](https://img.shields.io/badge/YouTube-%40UITBREIDEN-FF0000?logo=youtube&logoColor=white)](https://www.youtube.com/@UITBREIDEN)
 
+**[FR](README.fr.md) · [DE](README.de.md) · [ES](README.es.md) · [NL](README.nl.md)**
+
+![Claudient Hero](assets/hero.png)
+
 **Stop explaining your stack to Claude every session.**
 
 Claudient is the largest open-source knowledge base for **Claude Code** — 400+ skills, 182+ specialist agents, 100+ slash commands, 100+ guides, 40 hooks, 45 workflows, 83 project structures, 42 workspace stacks, 10 personas, 32 rules, 41 MCP server configs, 10 automation routines, 20 annotated CLAUDE.md examples, cross-harness adapters (Cursor/Windsurf/Codex/Gemini/Copilot), plus output styles, themes, statuslines, keybindings, settings templates, and an Agent SDK pack — all installable in 30 seconds.
@@ -742,6 +746,28 @@ npx claudient add all --lang de   # German
 npx claudient add all --lang nl   # Dutch
 npx claudient add all --lang es   # Spanish
 ```
+
+---
+
+## Enterprise Edition
+
+**Need governance, compliance, or custom deployment?** Claudient Enterprise brings the full power to your organization.
+
+| Tier | Price | Best for |
+|---|---|---|
+| **Community** | Free | Individual developers, students, OSS |
+| **Team** | $15–25/seat/mo | Teams 5–50, agencies, startups |
+| **Business** | Custom | Teams 50–250, audit-required industries |
+| **Enterprise** | Custom (annual) | 250+, regulated sectors, self-hosted deployment |
+
+**Enterprise features:**
+- SOC2 / GDPR / EU-AI-Act compliance stacks
+- Self-hosted VPC deployment
+- SSO (SAML/OAuth)
+- Dedicated success engineer
+- Custom SLA & on-site training
+
+[View full pricing →](enterprise/PRICING.md) · [Book a demo →](https://calendly.com/claudient/demo)
 
 ---
 
