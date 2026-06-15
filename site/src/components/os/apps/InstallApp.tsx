@@ -16,6 +16,39 @@ const stats = [
   { label: "Commands", value: "80+", icon: "⌨️", color: "#f54e00" },
 ];
 
+const complianceStacks = [
+  {
+    name: "SOC2",
+    icon: "🛡️",
+    color: "#1d4aff",
+    desc: "Automate SOC2 Type II compliance checks and audit logging.",
+    skills: ["Access audit", "Change log", "Security reviewer", "Compliance reporter"],
+    hooks: ["Audit trail (PostToolUse)", "Access control validator (PreToolUse)", "Compliance alert (Stop)"],
+    controls: ["CC6.1 Logical access", "CC6.2 Access removal", "CC7.1 Change management", "CC7.2 Change testing"],
+    install: "npx claudient add stack enterprise/compliance_stacks/soc2",
+  },
+  {
+    name: "GDPR",
+    icon: "🇪🇺",
+    color: "#3fb950",
+    desc: "Automate GDPR data governance and consent tracking for EU teams.",
+    skills: ["Data processing", "Consent tracker", "Privacy impact assessor", "Data retention policy"],
+    hooks: ["Data deletion (PreToolUse)", "Consent validator (PostToolUse)", "Data residency enforcer (Stop)"],
+    controls: ["Art 5 Lawfulness", "Art 6 Legal basis", "Art 17 Right to delete", "Art 32 Security", "Art 35 DPIA"],
+    install: "npx claudient add stack enterprise/compliance_stacks/gdpr",
+  },
+  {
+    name: "EU-AI-Act",
+    icon: "⚖️",
+    color: "#b62ad9",
+    desc: "Automate EU AI Act compliance: transparency, risk classification, human oversight.",
+    skills: ["High-risk detector", "Transparency logger", "Human-in-the-loop enforcer", "Bias auditor"],
+    hooks: ["Prohibited use blocker (Stop)", "Transparency logger (PostToolUse)", "Risk classification (PreToolUse)"],
+    controls: ["Art 5 Prohibited uses", "Art 6 High-risk systems", "Art 13 Transparency", "Art 14 Human oversight", "Art 26 Bias mitigation"],
+    install: "npx claudient add stack enterprise/compliance_stacks/eu_ai_act",
+  },
+];
+
 const tiers = [
   { name: "Community", price: "Free", color: "#3fb950", desc: "All public skills, agents, stacks", features: ["400+ skills", "190+ agents", "50 workspace stacks", "41 MCP configs", "5 languages"] },
   { name: "Team", price: "$15–25/seat", color: "#1d4aff", desc: "Private stacks + weekly updates", features: ["Everything in Community", "Private stack hosting", "Weekly auto-updates", "Priority requests", "Email support (24h)"] },
@@ -120,7 +153,7 @@ export function InstallApp() {
                 ))}
               </ul>
               {t.name === "Enterprise" && (
-                <a href="mailto:enterprise@claudient.ai" className="mt-2 inline-flex items-center rounded-md bg-brand-purple px-2 py-1 text-[10px] font-bold text-white hover:bg-brand-purple/90 transition w-full text-center justify-center">
+                <a href="mailto:ceo@uitbreiden.com" className="mt-2 inline-flex items-center rounded-md bg-brand-purple px-2 py-1 text-[10px] font-bold text-white hover:bg-brand-purple/90 transition w-full text-center justify-center">
                   Contact Sales
                 </a>
               )}
@@ -131,6 +164,65 @@ export function InstallApp() {
               )}
             </div>
           ))}
+        </div>
+      </div>
+
+      {/* Compliance Stacks */}
+      <div className="mt-6 pt-5 border-t border-hairline">
+        <Eyebrow color="#1d4aff">Compliance Stacks</Eyebrow>
+        <p className="mt-1 text-[12px] text-mute">Pre-audited bundles for SOC2, GDPR, and EU-AI-Act. Install individually or all three.</p>
+        <div className="mt-3 space-y-3">
+          {complianceStacks.map((s) => (
+            <div key={s.name} className="rounded-xl border border-hairline bg-white p-4">
+              <div className="flex items-center gap-3 mb-2">
+                <span className="text-xl">{s.icon}</span>
+                <div>
+                  <span className="text-[14px] font-bold text-ink">{s.name}</span>
+                  <span className="text-[11px] text-mute ml-2">{s.desc}</span>
+                </div>
+              </div>
+              <div className="grid sm:grid-cols-3 gap-3 text-[11px]">
+                <div>
+                  <div className="font-bold text-mute uppercase tracking-wider mb-1">Skills ({s.skills.length})</div>
+                  <ul className="space-y-0.5 text-body">
+                    {s.skills.map((sk) => (
+                      <li key={sk} className="flex items-center gap-1"><span className="text-[#3fb950]">✓</span> {sk}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <div className="font-bold text-mute uppercase tracking-wider mb-1">Hooks ({s.hooks.length})</div>
+                  <ul className="space-y-0.5 text-body">
+                    {s.hooks.map((h) => (
+                      <li key={h} className="flex items-center gap-1"><span className="text-[#1d4aff]">⟶</span> {h}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <div className="font-bold text-mute uppercase tracking-wider mb-1">Controls</div>
+                  <ul className="space-y-0.5 text-body">
+                    {s.controls.map((c) => (
+                      <li key={c} className="flex items-center gap-1"><span className="text-[#f5b800]">■</span> {c}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+              <div className="mt-3 flex items-center gap-2">
+                <pre className="flex-1 rounded-lg bg-[#1d1f27] text-[#e6e6e6] px-3 py-2 text-[10px] font-mono overflow-auto">
+                  <code>{s.install}</code>
+                </pre>
+                <button
+                  onClick={() => { navigator.clipboard.writeText(s.install); }}
+                  className="shrink-0 rounded-md border border-olive/60 bg-white px-2.5 py-2 text-[10px] font-semibold text-ink hover:bg-cream transition"
+                >
+                  Copy
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="mt-3 rounded-lg border-l-4 border-[#b62ad9] bg-[#b62ad9]/10 px-4 py-3 text-[12px] text-body">
+          🏢 <strong>Setup all three at once:</strong> Run <code className="bg-white px-1.5 py-0.5 rounded text-[11px] font-mono">claudient init --enterprise</code> for the interactive wizard that configures SSO, RBAC, audit trails, and all compliance stacks.
         </div>
       </div>
     </div>

@@ -8,20 +8,23 @@ interface Showcase {
   description: string;
   skills: string[];
   agents_count: number;
-  gist_url: string;
   stars: number;
   tags: string[];
 }
 
+const SHOWCASE_URL = "https://github.com/Claudient/Claudient/tree/main/community";
+const PR_URL = "https://github.com/Claudient/Claudient/compare";
+const TEMPLATE_CMD = "cp -r community/template/stack-template/ my-stack && cd my-stack";
+
 const showcases: Showcase[] = [
-  { id: "fullstack-saas-stack", title: "Full-Stack SaaS Stack", author: "community", description: "Complete SaaS development: frontend components, backend APIs, databases, auth, devops, testing, analytics, monitoring", skills: ["backend", "automation", "devops-infra", "marketing"], agents_count: 14, gist_url: "https://gist.github.com/example-saas-stack", stars: 35, tags: ["saas", "fullstack", "engineering", "startup"] },
-  { id: "ai-engineering-stack", title: "AI Engineering Stack", author: "community", description: "LLM development: agent orchestration, RAG patterns, prompt optimization, token management, model eval, monitoring", skills: ["ai-engineering", "data-ml"], agents_count: 10, gist_url: "https://gist.github.com/example-ai-eng-stack", stars: 31, tags: ["ai", "engineering", "llm", "agents"] },
-  { id: "devops-infra-stack", title: "DevOps Infrastructure Stack", author: "community", description: "Cloud-native ops: Kubernetes, Terraform, CI/CD pipelines, monitoring, cost optimization, disaster recovery", skills: ["devops-infra", "automation"], agents_count: 7, gist_url: "https://gist.github.com/example-devops-stack", stars: 24, tags: ["devops", "infrastructure", "cloud", "automation"] },
-  { id: "small-biz-stack", title: "Small Business Stack", author: "community", description: "Small biz ops: invoicing, cash flow, bookkeeping, client management, SOPs, content marketing, analytics", skills: ["small-business", "marketing", "automation"], agents_count: 9, gist_url: "https://gist.github.com/example-smallbiz-stack", stars: 22, tags: ["small-business", "operations", "marketing", "productivity"] },
-  { id: "backend-api-stack", title: "Backend API Stack", author: "community", description: "Full-stack REST API development: FastAPI/Express patterns, database design, migrations, API docs generation, testing", skills: ["backend", "database", "devops-infra"], agents_count: 6, gist_url: "https://gist.github.com/example-backend-stack", stars: 18, tags: ["backend", "api", "database", "engineering"] },
-  { id: "full-gtm-stack", title: "Full GTM Stack", author: "tushar2704", description: "Complete go-to-market setup: SDR research, sales ops, email automation, analytics, and pipeline management", skills: ["gtm", "sdr", "marketing"], agents_count: 8, gist_url: "https://gist.github.com/tushar2704/example-gtm-stack", stars: 12, tags: ["sales", "gtm", "startup", "revenue"] },
-  { id: "fintech-stack", title: "Fintech & Compliance Stack", author: "community", description: "Financial tech stack: DCF models, regulatory compliance (GDPR/SOC2), payment processing, KYC automation, audit trails", skills: ["finance", "finance-payments", "legal"], agents_count: 5, gist_url: "https://gist.github.com/example-fintech-stack", stars: 8, tags: ["finance", "compliance", "payments", "regulated"] },
-  { id: "legal-ops-stack", title: "Legal Operations Stack", author: "community", description: "Legal operations automation: contract review, GDPR compliance, SOC2 framework, legal research, vendor management", skills: ["legal", "automation"], agents_count: 4, gist_url: "https://gist.github.com/example-legal-stack", stars: 6, tags: ["legal", "compliance", "governance", "operations"] },
+  { id: "fullstack-saas-stack", title: "Full-Stack SaaS Stack", author: "community", description: "Complete SaaS development: frontend components, backend APIs, databases, auth, devops, testing, analytics, monitoring", skills: ["backend", "automation", "devops-infra", "marketing"], agents_count: 14, stars: 35, tags: ["saas", "fullstack", "engineering", "startup"] },
+  { id: "ai-engineering-stack", title: "AI Engineering Stack", author: "community", description: "LLM development: agent orchestration, RAG patterns, prompt optimization, token management, model eval, monitoring", skills: ["ai-engineering", "data-ml"], agents_count: 10, stars: 31, tags: ["ai", "engineering", "llm", "agents"] },
+  { id: "devops-infra-stack", title: "DevOps Infrastructure Stack", author: "community", description: "Cloud-native ops: Kubernetes, Terraform, CI/CD pipelines, monitoring, cost optimization, disaster recovery", skills: ["devops-infra", "automation"], agents_count: 7, stars: 24, tags: ["devops", "infrastructure", "cloud", "automation"] },
+  { id: "small-biz-stack", title: "Small Business Stack", author: "community", description: "Small biz ops: invoicing, cash flow, bookkeeping, client management, SOPs, content marketing, analytics", skills: ["small-business", "marketing", "automation"], agents_count: 9, stars: 22, tags: ["small-business", "operations", "marketing", "productivity"] },
+  { id: "backend-api-stack", title: "Backend API Stack", author: "community", description: "Full-stack REST API development: FastAPI/Express patterns, database design, migrations, API docs generation, testing", skills: ["backend", "database", "devops-infra"], agents_count: 6, stars: 18, tags: ["backend", "api", "database", "engineering"] },
+  { id: "full-gtm-stack", title: "Full GTM Stack", author: "tushar2704", description: "Complete go-to-market setup: SDR research, sales ops, email automation, analytics, and pipeline management", skills: ["gtm", "sdr", "marketing"], agents_count: 8, stars: 12, tags: ["sales", "gtm", "startup", "revenue"] },
+  { id: "fintech-stack", title: "Fintech & Compliance Stack", author: "community", description: "Financial tech stack: DCF models, regulatory compliance (GDPR/SOC2), payment processing, KYC automation, audit trails", skills: ["finance", "finance-payments", "legal"], agents_count: 5, stars: 8, tags: ["finance", "compliance", "payments", "regulated"] },
+  { id: "legal-ops-stack", title: "Legal Operations Stack", author: "community", description: "Legal operations automation: contract review, GDPR compliance, SOC2 framework, legal research, vendor management", skills: ["legal", "automation"], agents_count: 4, stars: 6, tags: ["legal", "compliance", "governance", "operations"] },
 ];
 
 // Collect all unique tags
@@ -36,9 +39,9 @@ export function CommunityApp() {
     return showcases.filter((s) => s.tags.includes(tagFilter));
   }, [tagFilter]);
 
-  const copyImport = (gistUrl: string) => {
-    navigator.clipboard.writeText(`claudient import ${gistUrl}`);
-    setCopied(gistUrl);
+  const copyCmd = (text: string, key: string) => {
+    navigator.clipboard.writeText(text);
+    setCopied(key);
     setTimeout(() => setCopied(null), 2000);
   };
 
@@ -75,9 +78,16 @@ export function CommunityApp() {
             );
           })}
         </div>
-        <div className="px-3 py-2.5 border-t border-hairline space-y-0.5">
-          <div className="text-[11px] font-bold text-ink">{showcases.length} community stacks</div>
-          <div className="text-[10px] text-mute">Share yours: <code className="font-mono">claudient share --gist</code></div>
+        <div className="px-3 py-2.5 border-t border-hairline space-y-1">
+          <div className="text-[11px] font-bold text-ink">{showcases.length} showcase stacks</div>
+          <a
+            href={PR_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 rounded-md bg-brand-yellow px-2 py-1 text-[10px] font-bold text-ink border-b border-[#c79700] hover:brightness-105 transition w-full text-center justify-center"
+          >
+            Submit Yours →
+          </a>
         </div>
       </aside>
 
@@ -129,20 +139,20 @@ export function CommunityApp() {
                     ))}
                   </div>
                   <div className="mt-3 flex items-center gap-2">
-                    <button
-                      onClick={() => copyImport(s.gist_url)}
-                      className="inline-flex items-center gap-1.5 rounded-md bg-brand-yellow px-3 py-1.5 text-[11px] font-bold text-ink border-b border-[#c79700] hover:brightness-105 transition"
-                    >
-                      {copied === s.gist_url ? "✓ Copied!" : "Import"}
-                    </button>
                     <a
-                      href={s.gist_url}
+                      href={PR_URL}
                       target="_blank"
                       rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 rounded-md bg-brand-yellow px-3 py-1.5 text-[11px] font-bold text-ink border-b border-[#c79700] hover:brightness-105 transition"
+                    >
+                      Submit via PR
+                    </a>
+                    <button
+                      onClick={() => copyCmd(TEMPLATE_CMD, s.id)}
                       className="inline-flex items-center gap-1 rounded-md border border-olive/60 bg-white px-3 py-1.5 text-[11px] font-semibold text-ink hover:bg-cream transition"
                     >
-                      View Gist
-                    </a>
+                      {copied === s.id ? "✓ Copied!" : "Copy Template"}
+                    </button>
                   </div>
                 </div>
               ))}
@@ -150,20 +160,30 @@ export function CommunityApp() {
           )}
         </div>
 
-        {/* Footer */}
-        <div className="shrink-0 border-t border-hairline px-5 py-2.5 bg-cream/50 flex items-center justify-between flex-wrap gap-2">
-          <div className="text-[11px] text-mute">
-            💡 Share your stack: <code className="bg-white px-1.5 py-0.5 rounded font-mono text-[10px]">claudient share --gist</code>
+        {/* Footer — PR submission instructions */}
+        <div className="shrink-0 border-t border-hairline px-5 py-3 bg-cream/50">
+          <div className="text-[11px] text-mute mb-2">
+            <strong>How to submit your stack:</strong>
           </div>
-          <YellowButton
-            onClick={() => {
-              navigator.clipboard.writeText("claudient share --gist");
-              setCopied("share");
-              setTimeout(() => setCopied(null), 2000);
-            }}
-          >
-            {copied === "share" ? "✓ Copied!" : "Copy Share Command"}
-          </YellowButton>
+          <ol className="text-[11px] text-body space-y-1 list-decimal list-inside">
+            <li>Fork the repo and create a branch: <code className="bg-white px-1 py-0.5 rounded font-mono text-[10px]">git checkout -b stacks/your-stack-name</code></li>
+            <li>Copy the template: <code className="bg-white px-1 py-0.5 rounded font-mono text-[10px]">cp -r community/template/stack-template/ your-stack/</code></li>
+            <li>Add your skills, hooks, and a <code className="bg-white px-1 py-0.5 rounded font-mono text-[10px]">submission.json</code></li>
+            <li>Open a PR at <a href={PR_URL} target="_blank" rel="noopener noreferrer" className="text-brand-blue underline font-semibold">github.com/Claudient/Claudient/compare</a></li>
+          </ol>
+          <div className="mt-2 flex items-center gap-2">
+            <YellowButton onClick={() => copyCmd(TEMPLATE_CMD, "footer")}>
+              {copied === "footer" ? "✓ Copied!" : "Copy Template Command"}
+            </YellowButton>
+            <a
+              href={SHOWCASE_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center rounded-md border border-olive/60 bg-white px-3 py-1.5 text-[11px] font-semibold text-ink hover:bg-cream transition"
+            >
+              Read Full Guide
+            </a>
+          </div>
         </div>
       </div>
     </div>

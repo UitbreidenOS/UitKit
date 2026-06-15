@@ -71,6 +71,12 @@ export function MenuBar({ wm }: { wm: WindowManager }) {
 
       <div className="ml-auto flex items-center gap-3">
         <a
+          href="/pricing"
+          className="hidden sm:flex items-center gap-1.5 text-[12.5px] font-semibold text-brand-purple hover:underline"
+        >
+          💰 Pricing
+        </a>
+        <a
           href="https://github.com/Claudient/Claudient"
           target="_blank"
           rel="noopener noreferrer"

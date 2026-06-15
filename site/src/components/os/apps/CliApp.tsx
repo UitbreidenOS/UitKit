@@ -180,6 +180,105 @@ Projected after fixes: 99/100 (Grade A, Enterprise-ready)
 → Run claudient consult to find the right skills
 → Upgrade to Team for governance hooks + priority support`,
   },
+  {
+    id: "init",
+    name: "claudient init",
+    icon: "🚀",
+    desc: "Interactive first-run setup — walks through CLAUDE.md generation, skill selection, hook configuration, and MCP server setup.",
+    usage: "claudient init",
+    tier: "free",
+    output: `claudient init — First-Run Setup
+────────────────────────────────────────────
+Welcome to Claudient! Let's set up your Claude Code environment.
+
+[1/4] Project Detection
+  Detected: Next.js 15 + TypeScript + Tailwind
+  Stack: fullstack_developer_stack (recommended)
+
+[2/4] Skill Selection
+  ? Install recommended skills? (Y/n)
+  ✓ backend/fastapi-expert
+  ✓ frontend/react-components
+  ✓ devops-infra/ci-cd-pipeline
+  ✓ productivity/testing-suite
+  → 4 skills installed
+
+[3/4] Hook Configuration
+  ? Enable safety hooks? (Y/n)
+  ✓ test-coverage-enforcer (PreToolUse)
+  ✓ security-scanner (PostToolUse)
+  ✓ cost-cap-enforcer (Stop)
+  → 3 hooks activated
+
+[4/4] MCP Server Setup
+  ? Connect MCP servers? (Y/n)
+  ✓ postgres (pg-mcp-server)
+  ✓ github (github-mcp-server)
+  → 2 MCP servers connected
+────────────────────────────────────────────
+✓ Setup complete! Run claudient doctor to verify.
+
+For enterprise governance: claudient init --enterprise`,
+  },
+  {
+    id: "init-enterprise",
+    name: "claudient init --enterprise",
+    icon: "🏢",
+    desc: "Enterprise-scale setup wizard — configures SSO, RBAC, audit trails, compliance stacks (SOC2/GDPR/EU-AI-Act), PII scanning, and cost governance.",
+    usage: "claudient init --enterprise",
+    tier: "enterprise",
+    output: `claudient init --enterprise — Enterprise Governance Setup
+────────────────────────────────────────────
+Welcome to Claudient Enterprise. This wizard configures
+full governance, compliance, and security for your organization.
+
+[1/7] Organization Profile
+  Company: Acme Corp
+  Team size: 120 engineers
+  Compliance required: SOC2 ✓  GDPR ✓  EU-AI-Act ✓
+
+[2/7] Authentication & SSO
+  ? Configure SAML SSO? (Y/n)
+  ✓ IdP: Okta (SAML 2.0)
+  ✓ MFA enforcement: enabled
+  ✓ Session timeout: 8 hours
+
+[3/7] Role-Based Access Control (RBAC)
+  ✓ Roles created: admin, developer, auditor, viewer
+  ✓ Audit log access: auditor role only
+  ✓ Cost controller: admin role only
+
+[4/7] Compliance Stacks
+  ? Install compliance stacks? (Y/n)
+  ✓ SOC2 stack — audit trail + access control hooks
+  ✓ GDPR stack — consent tracker + data retention
+  ✓ EU-AI-Act stack — transparency + risk classification
+  → 3 compliance stacks installed (12 skills + 9 hooks)
+
+[5/7] Audit & Logging
+  ✓ Audit trail: enabled (append-only, 7-year retention)
+  ✓ PII scanning: enabled (6 patterns + custom)
+  ✓ Cost cap enforcer: $500/team/day
+  ✓ Encryption: AES-256 at rest, TLS 1.3 in transit
+
+[6/7] Evidence & Reporting
+  ✓ SOC2 evidence: ~/.claude/audit-logs/
+  ✓ GDPR logs: ~/.claude/gdpr-consent.jsonl
+  ✓ EU-AI-Act: ~/.claude/eu-ai-risk-log.jsonl
+  ✓ Monthly compliance reports: enabled
+
+[7/7] Verification
+  ✓ SSO configured
+  ✓ RBAC active
+  ✓ All compliance stacks loaded
+  ✓ Audit logging verified
+  ✓ PII scanning verified
+────────────────────────────────────────────
+✓ Enterprise governance ready! Score: 158/160
+
+Next: Run claudient audit for your first compliance report.
+Support: ceo@uitbreiden.com`,
+  },
 ];
 
 export function CliApp() {
@@ -205,7 +304,7 @@ export function CliApp() {
       <aside className="sm:w-56 shrink-0 border-r border-hairline bg-cream flex flex-col overflow-hidden">
         <div className="p-3">
           <Eyebrow color="#f54e00">CLI Commands</Eyebrow>
-          <div className="mt-1 text-[11px] text-mute">6 commands — 4 free, 2 enterprise</div>
+          <div className="mt-1 text-[11px] text-mute">8 commands — 5 free, 3 enterprise</div>
         </div>
         <div className="flex-1 overflow-auto px-2 pb-2 space-y-0.5">
           {commands.map((c) => (
@@ -225,7 +324,7 @@ export function CliApp() {
           ))}
         </div>
         <div className="px-3 py-2 border-t border-hairline text-[10px] text-mute">
-          Free tier: doctor, consult, share, import, score
+          Free tier: doctor, consult, share, import, score, init
         </div>
       </aside>
 
@@ -276,7 +375,7 @@ export function CliApp() {
           <YellowButton onClick={copyOutput}>{copied ? "✓ Copied!" : "Copy Output"}</YellowButton>
           {cmd.tier === "enterprise" && (
             <a
-              href="mailto:enterprise@claudient.ai"
+              href="mailto:ceo@uitbreiden.com"
               className="inline-flex items-center gap-1.5 rounded-md bg-brand-purple px-3 py-1.5 text-[12px] font-bold text-white hover:bg-brand-purple/90 transition"
             >
               Upgrade to Enterprise →
