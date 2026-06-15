@@ -21,7 +21,7 @@
 
 **[FR](README.fr.md) · [DE](README.de.md) · [ES](README.es.md) · [NL](README.nl.md)**
 
-![Claudient Hero](assets/hero.png)
+
 
 **Stop explaining your stack to Claude every session.**
 
