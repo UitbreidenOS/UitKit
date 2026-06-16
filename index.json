@@ -1,6 +1,6 @@
 {
   "version": "1.10.1",
-  "generated": "2026-06-16T21:34:23.145Z",
+  "generated": "2026-06-16T21:39:33.911Z",
   "skills": [
     {
       "id": "ai-engineering/advanced-tool-use",
@@ -5491,12 +5491,28 @@
       "file": "skills/devops-infra/github-actions.md"
     },
     {
+      "id": "devops-infra/heal-ci",
+      "category": "devops-infra",
+      "lang": "en",
+      "title": "Self-Healing CI Pipeline",
+      "description": "",
+      "file": "skills/devops-infra/heal-ci.md"
+    },
+    {
       "id": "devops-infra/helm",
       "category": "devops-infra",
       "lang": "en",
       "title": "Helm",
       "description": "Helm chart authoring and management: write charts from scratch, template best practices, values overrides, chart testing with helm-unittest, and Helmfile for multi-chart deployments",
       "file": "skills/devops-infra/helm.md"
+    },
+    {
+      "id": "devops-infra/incident-commander",
+      "category": "devops-infra",
+      "lang": "en",
+      "title": "The Incident Commander (PagerDuty Autonomy)",
+      "description": "",
+      "file": "skills/devops-infra/incident-commander.md"
     },
     {
       "id": "devops-infra/kubernetes",
@@ -9635,6 +9651,14 @@
       "file": "skills/productivity/api-test-builder.md"
     },
     {
+      "id": "productivity/archaeologist",
+      "category": "productivity",
+      "lang": "en",
+      "title": "The Archaeologist (Semantic Context Engine)",
+      "description": "",
+      "file": "skills/productivity/archaeologist.md"
+    },
+    {
       "id": "productivity/autofix-pr",
       "category": "productivity",
       "lang": "en",
@@ -9777,6 +9801,14 @@
       "title": "Context Engineering",
       "description": "User wants to optimize how context is provided to Claude, reduce token usage, improve response quality through better context design, or is hitting...",
       "file": "skills/productivity/context-engineering.md"
+    },
+    {
+      "id": "productivity/cross-talk",
+      "category": "productivity",
+      "lang": "en",
+      "title": "Cross-Talk (Agent Federation Protocol)",
+      "description": "",
+      "file": "skills/productivity/cross-talk.md"
     },
     {
       "id": "productivity/cursor-tandem",
@@ -11513,6 +11545,14 @@
       "title": "Grill Me (Requirement Hardening)",
       "description": "",
       "file": "skills/productivity/grill-me.md"
+    },
+    {
+      "id": "productivity/interrogator",
+      "category": "productivity",
+      "lang": "en",
+      "title": "The Interrogator (Automated Issue Triaging)",
+      "description": "",
+      "file": "skills/productivity/interrogator.md"
     },
     {
       "id": "productivity/interview-scorecard",
@@ -27948,7 +27988,7 @@
       "displayName": "Claudient — Productivity & Engineering",
       "description": "66 skills for daily engineering work: debugging, refactoring, code review, PR automation, test generation, ADR writing, security auditing, context engineering, MCP clients, and dozens more.",
       "version": "1.0.0",
-      "skills": 81,
+      "skills": 84,
       "file": "plugins/claudient-productivity/.claude-plugin/plugin.json"
     },
     {
@@ -28733,7 +28773,7 @@
     }
   ],
   "summary": {
-    "skills": 424,
+    "skills": 429,
     "agents": 205,
     "hooks": 52,
     "rules": 32,
