@@ -1,6 +1,6 @@
 {
   "version": "1.10.1",
-  "generated": "2026-06-16T21:54:32.244Z",
+  "generated": "2026-06-16T21:56:24.211Z",
   "skills": [
     {
       "id": "ai-engineering/advanced-tool-use",
@@ -27878,6 +27878,11 @@
       "file": "routines/security-scan.md"
     },
     {
+      "id": "shadow-pr",
+      "title": "Ghost in the Machine (Shadow PRs)",
+      "file": "routines/shadow-pr.md"
+    },
+    {
       "id": "sprint-planning",
       "title": "Sprint Planning Routine",
       "file": "routines/sprint-planning.md"
@@ -28022,7 +28027,7 @@
       "displayName": "Claudient — Productivity & Engineering",
       "description": "66 skills for daily engineering work: debugging, refactoring, code review, PR automation, test generation, ADR writing, security auditing, context engineering, MCP clients, and dozens more.",
       "version": "1.0.0",
-      "skills": 87,
+      "skills": 88,
       "file": "plugins/claudient-productivity/.claude-plugin/plugin.json"
     },
     {
@@ -28820,7 +28825,7 @@
     "themes": 12,
     "keybindings": 4,
     "settingsTemplates": 5,
-    "routines": 10,
+    "routines": 11,
     "plugins": 19,
     "commands": 100,
     "personas": 10,
