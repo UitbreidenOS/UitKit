@@ -64,3 +64,4 @@ coverage/
 # Root-level lockfile (web/ has its own)
 package-lock.json
 .vercel
+.env*

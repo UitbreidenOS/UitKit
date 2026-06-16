@@ -16,6 +16,49 @@ const features = [
   { icon: "🎭", name: "10 Personas", desc: "Role-optimized AI behavior profiles.", color: "#b62ad9", app: "personas" as const },
 ];
 
+const highlights = [
+  {
+    icon: "🟢",
+    title: "Context & Cost Optimization",
+    color: "#3fb950",
+    pitch: "Stop paying Claude to read your lockfiles. Our ecosystem templates slash your token costs by 40-70% per request.",
+    features: [".claudeignore Templates", "Context Compactor", "Caveman Mode"],
+    audience: "CTOs & Power Users",
+  },
+  {
+    icon: "🔵",
+    title: "Resilience & Zero-Hallucination",
+    color: "#1d4aff",
+    pitch: "Zero syntax hallucinations. Claudient intercepts AI edits, runs your actual compiler, and forces the AI to fix its own typos before returning control.",
+    features: ["Shadow Compiler", "Safe Commit Hook", "Spec-First Enforcer", "Chaos Monkey"],
+    audience: "DevSecOps & QA Leads",
+  },
+  {
+    icon: "🟣",
+    title: "Enterprise Architecture",
+    color: "#b62ad9",
+    pitch: "Enterprise-grade architecture at intern-grade API costs. Use Opus for the blueprints, and Haiku for the bricks.",
+    features: ["Grill Me", "Stunt Double", "Architect/Mason", "ADR Generator", "Historian", "Blast Radius", "Legacy Strangler"],
+    audience: "Architects & Staff Engineers",
+  },
+  {
+    icon: "🟠",
+    title: "Multi-Agent Swarms",
+    color: "#f54e00",
+    pitch: "You don't need a chatbot, you need a team. Spawn an entire virtual engineering department to execute massive epics.",
+    features: ["Night Shift", "Hive Orchestrator", "Tribunal Review", "Codebase Sweeper", "Time-Travel Debugger"],
+    audience: "Lead Developers",
+  },
+  {
+    icon: "🟡",
+    title: "Environment & Context Engineering",
+    color: "#f5b800",
+    pitch: "Context windows aren't a problem when the AI dynamically injects exactly the dependencies it needs, just in time.",
+    features: ["Auto-TDD Hook", "Dev Doctor", "JIT Context Injector"],
+    audience: "Onboarding & Daily Contributors",
+  },
+];
+
 export function HomeApp({ wm }: { wm: WindowManager }) {
   return (
     <div className="px-7 py-7 max-w-3xl mx-auto">
@@ -56,6 +99,39 @@ export function HomeApp({ wm }: { wm: WindowManager }) {
               <div>
                 <div className="text-[14px] font-bold text-ink">{f.name}</div>
                 <div className="text-[12.5px] text-mute mt-0.5">{f.desc}</div>
+              </div>
+            </div>
+          </button>
+        ))}
+      </div>
+
+      {/* 5 Feature Highlight Categories */}
+      <h2 className="mt-9 text-lg font-bold text-ink">Tier-1 Enterprise AI Orchestrator</h2>
+      <p className="mt-1 text-[12.5px] text-mute">22 advanced features that transform Claudient from a prompt library into a full orchestration platform.</p>
+      <div className="mt-4 space-y-3">
+        {highlights.map((h) => (
+          <button
+            key={h.title}
+            onClick={() => wm.open("showcase")}
+            className="w-full text-left rounded-xl border border-hairline bg-white p-4 hover:border-olive/70 hover:-translate-y-0.5 transition"
+          >
+            <div className="flex items-start gap-3">
+              <div className="grid place-items-center size-10 rounded-lg text-xl shrink-0" style={{ backgroundColor: h.color + "1a" }}>
+                {h.icon}
+              </div>
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center justify-between gap-2">
+                  <div className="text-[14px] font-bold text-ink">{h.title}</div>
+                  <span className="text-[10px] font-semibold text-mute whitespace-nowrap">🎯 {h.audience}</span>
+                </div>
+                <p className="mt-1 text-[12px] text-body leading-relaxed">{h.pitch}</p>
+                <div className="mt-2 flex flex-wrap gap-1.5">
+                  {h.features.map((f) => (
+                    <span key={f} className="inline-block rounded-full px-2 py-0.5 text-[10px] font-semibold" style={{ backgroundColor: h.color + "15", color: h.color }}>
+                      {f}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           </button>
