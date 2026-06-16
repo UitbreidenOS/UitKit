@@ -12,6 +12,14 @@ import { TrashApp } from "./apps/TrashApp";
 import { CliApp } from "./apps/CliApp";
 import { BenchmarksApp } from "./apps/BenchmarksApp";
 import { CommunityApp } from "./apps/CommunityApp";
+import { HooksApp } from "./apps/HooksApp";
+import { RulesApp } from "./apps/RulesApp";
+import { CommandsApp } from "./apps/CommandsApp";
+import { WorkflowsApp } from "./apps/WorkflowsApp";
+import { PluginsApp } from "./apps/PluginsApp";
+import { PersonasApp } from "./apps/PersonasApp";
+import { ToolkitApp } from "./apps/ToolkitApp";
+import { ShowcaseApp } from "./apps/ShowcaseApp";
 
 export function AppContent({ appId, wm }: { appId: AppId; wm: WindowManager }) {
   switch (appId) {
@@ -39,6 +47,22 @@ export function AppContent({ appId, wm }: { appId: AppId; wm: WindowManager }) {
       return <BenchmarksApp />;
     case "community":
       return <CommunityApp />;
+    case "hooks":
+      return <HooksApp />;
+    case "rules":
+      return <RulesApp />;
+    case "commands":
+      return <CommandsApp />;
+    case "workflows":
+      return <WorkflowsApp />;
+    case "plugins":
+      return <PluginsApp />;
+    case "personas":
+      return <PersonasApp />;
+    case "toolkit":
+      return <ToolkitApp />;
+    case "showcase":
+      return <ShowcaseApp />;
     default:
       return null;
   }

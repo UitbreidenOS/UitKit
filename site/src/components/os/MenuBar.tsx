@@ -57,14 +57,14 @@ export function MenuBar({ wm }: { wm: WindowManager }) {
         )}
       </div>
 
-      <nav className="hidden sm:flex items-center gap-0.5 ml-1">
-        {(["skills", "agents", "mcp", "guides", "cli", "benchmarks", "community"] as const).map((id) => (
+      <nav className="hidden lg:flex items-center gap-0.5 ml-1 overflow-x-auto max-w-[55vw]">
+        {(["skills", "agents", "mcp", "guides", "cli", "benchmarks", "community", "hooks", "rules", "commands", "workflows", "plugins", "personas", "showcase"] as const).map((id) => (
           <button
             key={id}
             onClick={() => wm.open(id)}
-            className="rounded-md px-2.5 py-1 text-[13px] font-semibold text-body hover:bg-white/70 capitalize"
+            className="rounded-md px-1.5 py-1 text-[12px] font-semibold text-body hover:bg-white/70 capitalize whitespace-nowrap"
           >
-            {id === "cli" ? "CLI" : id === "benchmarks" ? "Benchmarks" : id === "community" ? "Community" : APPS[id].title.split(" ")[0]}
+            {id === "cli" ? "CLI" : APPS[id].title.split(" ")[0]}
           </button>
         ))}
       </nav>

@@ -10,7 +10,15 @@ export type AppId =
   | "trash"
   | "cli"
   | "benchmarks"
-  | "community";
+  | "community"
+  | "hooks"
+  | "rules"
+  | "commands"
+  | "workflows"
+  | "plugins"
+  | "personas"
+  | "toolkit"
+  | "showcase";
 
 export interface AppMeta {
   id: AppId;

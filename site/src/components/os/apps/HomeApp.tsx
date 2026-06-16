@@ -2,12 +2,18 @@ import type { WindowManager } from "../useWindows";
 import { Eyebrow, YellowButton, GhostButton, Tag } from "./ui";
 
 const features = [
-  { icon: "⚡", name: "400+ Skills", desc: "Domain knowledge that activates automatically.", color: "#1d4aff" },
-  { icon: "🤖", name: "182+ Agents", desc: "Specialist agents with scoped tools.", color: "#b62ad9" },
-  { icon: "📦", name: "42 Stacks", desc: "Pre-wired workspaces for every role.", color: "#3fb950" },
-  { icon: "🔌", name: "41 MCP Configs", desc: "Ready-to-install server configs.", color: "#1078a3" },
-  { icon: "📚", name: "100+ Guides", desc: "In-depth docs for every feature.", color: "#f54e00" },
-  { icon: "🌍", name: "5 Languages", desc: "EN, FR, DE, NL, ES localization.", color: "#f97316" },
+  { icon: "⚡", name: "400+ Skills", desc: "Domain knowledge that activates automatically.", color: "#1d4aff", app: "skills" as const },
+  { icon: "🤖", name: "182+ Agents", desc: "Specialist agents with scoped tools.", color: "#b62ad9", app: "agents" as const },
+  { icon: "📦", name: "50 Stacks", desc: "Pre-wired workspaces for every role.", color: "#3fb950", app: "stacks" as const },
+  { icon: "🔌", name: "41 MCP Configs", desc: "Ready-to-install server configs.", color: "#1078a3", app: "mcp" as const },
+  { icon: "📚", name: "100+ Guides", desc: "In-depth docs for every feature.", color: "#f54e00", app: "guides" as const },
+  { icon: "🌍", name: "5 Languages", desc: "EN, FR, DE, NL, ES localization.", color: "#f97316", app: "about" as const },
+  { icon: "🪝", name: "48 Hooks", desc: "Event-driven automation for Claude Code.", color: "#1078a3", app: "hooks" as const },
+  { icon: "📜", name: "32 Rules", desc: "Behavioral rules for consistent output.", color: "#b62ad9", app: "rules" as const },
+  { icon: "⚡", name: "100 Commands", desc: "Slash commands for every workflow.", color: "#1d4aff", app: "commands" as const },
+  { icon: "🔄", name: "55 Workflows", desc: "Multi-step processes across domains.", color: "#3fb950", app: "workflows" as const },
+  { icon: "🧩", name: "22 Plugins", desc: "Bundle, domain & business extensions.", color: "#f5b800", app: "plugins" as const },
+  { icon: "🎭", name: "10 Personas", desc: "Role-optimized AI behavior profiles.", color: "#b62ad9", app: "personas" as const },
 ];
 
 export function HomeApp({ wm }: { wm: WindowManager }) {
@@ -19,7 +25,7 @@ export function HomeApp({ wm }: { wm: WindowManager }) {
       </h1>
       <p className="mt-4 text-[15px] text-body leading-relaxed">
         Claudient is the largest open-source knowledge base for Claude Code.
-        400+ skills, 182+ agents, 42 workspace stacks — all installable in 30 seconds.
+        400+ skills, 182+ agents, 50 workspace stacks — all installable in 30 seconds.
         Open any window below to explore. 🧠
       </p>
 
@@ -40,7 +46,7 @@ export function HomeApp({ wm }: { wm: WindowManager }) {
         {features.map((f) => (
           <button
             key={f.name}
-            onClick={() => wm.open(f.name.includes("Skills") ? "skills" : f.name.includes("Agent") ? "agents" : f.name.includes("Stack") ? "stacks" : f.name.includes("MCP") ? "mcp" : f.name.includes("Guide") ? "guides" : "about")}
+            onClick={() => wm.open(f.app)}
             className="text-left rounded-xl border border-hairline bg-white p-4 hover:border-olive/70 hover:-translate-y-0.5 transition"
           >
             <div className="flex items-start gap-3">
