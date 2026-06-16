@@ -1,6 +1,6 @@
 {
   "version": "1.10.1",
-  "generated": "2026-06-16T21:28:10.116Z",
+  "generated": "2026-06-16T21:34:23.145Z",
   "skills": [
     {
       "id": "ai-engineering/advanced-tool-use",
@@ -9723,6 +9723,14 @@
       "file": "skills/productivity/changelog-writer.md"
     },
     {
+      "id": "productivity/chaos-test",
+      "category": "productivity",
+      "lang": "en",
+      "title": "Chaos Test Workflow",
+      "description": "",
+      "file": "skills/productivity/chaos-test.md"
+    },
+    {
       "id": "productivity/chrome-relay",
       "category": "productivity",
       "lang": "en",
@@ -11499,6 +11507,14 @@
       "file": "skills/productivity/grants-writer.md"
     },
     {
+      "id": "productivity/grill-me",
+      "category": "productivity",
+      "lang": "en",
+      "title": "Grill Me (Requirement Hardening)",
+      "description": "",
+      "file": "skills/productivity/grill-me.md"
+    },
+    {
       "id": "productivity/interview-scorecard",
       "category": "productivity",
       "lang": "en",
@@ -12273,6 +12289,14 @@
       "title": "Student Feedback Analyzer",
       "description": "Analyse student feedback and assessment results: identify patterns, surface knowledge gaps, evaluate teaching effectiveness, and generate improvement recommendations",
       "file": "skills/productivity/student-feedback-analyzer.md"
+    },
+    {
+      "id": "productivity/stunt-double",
+      "category": "productivity",
+      "lang": "en",
+      "title": "The Stunt Double (Strict TDD Workflow)",
+      "description": "",
+      "file": "skills/productivity/stunt-double.md"
     },
     {
       "id": "productivity/team-onboarding",
@@ -15487,6 +15511,12 @@
       "file": "agents/core/code-reviewer.md"
     },
     {
+      "id": "core/codebase-sweeper",
+      "lang": "en",
+      "title": "Codebase Sweeper Agent",
+      "file": "agents/core/codebase-sweeper.md"
+    },
+    {
       "id": "core/architect",
       "lang": "de",
       "title": "Architect Agent",
@@ -15737,6 +15767,12 @@
       "lang": "en",
       "title": "Chaos Engineer",
       "file": "agents/roles/chaos-engineer.md"
+    },
+    {
+      "id": "roles/chaos-monkey",
+      "lang": "en",
+      "title": "Chaos Monkey Role",
+      "file": "agents/roles/chaos-monkey.md"
     },
     {
       "id": "roles/cli-developer",
@@ -18709,6 +18745,12 @@
       "file": "agents/roles/iam-specialist.md"
     },
     {
+      "id": "roles/implementation-engineer",
+      "lang": "en",
+      "title": "Implementation Engineer Role (Stunt Double)",
+      "file": "agents/roles/implementation-engineer.md"
+    },
+    {
       "id": "roles/incident-commander",
       "lang": "en",
       "title": "Incident Commander",
@@ -20029,6 +20071,12 @@
       "file": "agents/roles/test-architect.md"
     },
     {
+      "id": "roles/test-engineer",
+      "lang": "en",
+      "title": "Test Engineer Role (Stunt Double)",
+      "file": "agents/roles/test-engineer.md"
+    },
+    {
       "id": "roles/trend-analyst",
       "lang": "en",
       "title": "Trend Analyst",
@@ -20805,6 +20853,12 @@
       "file": "hooks/post-tool-use/agent-comms.md"
     },
     {
+      "id": "post-tool-use/atomic-commit",
+      "category": "post-tool-use",
+      "title": "Atomic Commit Hook",
+      "file": "hooks/post-tool-use/atomic-commit.md"
+    },
+    {
       "id": "post-tool-use/audit-log",
       "category": "post-tool-use",
       "title": "Hook: Audit Log",
@@ -20821,6 +20875,12 @@
       "category": "post-tool-use",
       "title": "Auto-TDD Hook",
       "file": "hooks/post-tool-use/auto-tdd.md"
+    },
+    {
+      "id": "post-tool-use/historian",
+      "category": "post-tool-use",
+      "title": "The Historian Hook (Zero-Drift Docs)",
+      "file": "hooks/post-tool-use/historian.md"
     },
     {
       "id": "post-tool-use/output-size-warn",
@@ -20905,6 +20965,12 @@
       "category": "pre-tool-use",
       "title": "Secret Scanner Hook",
       "file": "hooks/pre-tool-use/secret-scanner.md"
+    },
+    {
+      "id": "pre-tool-use/spec-enforcer",
+      "category": "pre-tool-use",
+      "title": "Spec-First Enforcer Hook",
+      "file": "hooks/pre-tool-use/spec-enforcer.md"
     },
     {
       "id": "pre-tool-use/whatsapp-permission",
@@ -27754,7 +27820,7 @@
       "displayName": "Claudient — AI Engineering",
       "description": "Claude API, agent construction, RAG, LangGraph, CrewAI, MCP server building, prompt caching, LLM eval, and AI-native development patterns.",
       "version": "1.0.0",
-      "skills": 17,
+      "skills": 37,
       "file": "plugins/claudient-ai-engineering/.claude-plugin/plugin.json"
     },
     {
@@ -27802,7 +27868,7 @@
       "displayName": "Claudient — DevOps & Infrastructure",
       "description": "36 skills covering AWS, Azure, GCP, Kubernetes, Helm, Terraform, Pulumi, ArgoCD, Docker, CI/CD, GitHub Actions, secrets management, observability, SLOs, and platform engineering.",
       "version": "1.0.0",
-      "skills": 36,
+      "skills": 40,
       "file": "plugins/claudient-devops-infra/.claude-plugin/plugin.json"
     },
     {
@@ -27834,7 +27900,7 @@
       "displayName": "Claudient — Git",
       "description": "Commit message writing, PR description generation, and changelog automation.",
       "version": "1.0.0",
-      "skills": 3,
+      "skills": 4,
       "file": "plugins/claudient-git/.claude-plugin/plugin.json"
     },
     {
@@ -27882,7 +27948,7 @@
       "displayName": "Claudient — Productivity & Engineering",
       "description": "66 skills for daily engineering work: debugging, refactoring, code review, PR automation, test generation, ADR writing, security auditing, context engineering, MCP clients, and dozens more.",
       "version": "1.0.0",
-      "skills": 66,
+      "skills": 81,
       "file": "plugins/claudient-productivity/.claude-plugin/plugin.json"
     },
     {
@@ -28667,9 +28733,9 @@
     }
   ],
   "summary": {
-    "skills": 421,
-    "agents": 201,
-    "hooks": 49,
+    "skills": 424,
+    "agents": 205,
+    "hooks": 52,
     "rules": 32,
     "workflows": 55,
     "prompts": 31,
