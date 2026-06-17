@@ -1,3 +1,9 @@
+---
+name: sonar
+description: "Claude Code sonar codebase cartographer: workflow guidelines, best practices, instructions, and integration examples"
+updated: 2026-06-17
+---
+
 # Sonar Codebase Cartographer
 
 ## When to activate

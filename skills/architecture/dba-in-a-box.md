@@ -1,3 +1,9 @@
+---
+name: dba-in-a-box
+description: "Claude Code dba-in-a-box (production query auditor): workflow guidelines, best practices, instructions, and integration examples"
+updated: 2026-06-17
+---
+
 # DBA-in-a-Box (Production Query Auditor)
 
 ## When to activate

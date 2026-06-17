@@ -1,6 +1,6 @@
 ---
-name: "Sonar Codebase Cartographer"
-description: "Activate when navigating a massive, unfamiliar, or legacy codebase (especially Enterprise monoliths) where reading entire files would quickly exhaust the token context limit. Invoked via `/sonar`."
+name: "sonar"
+description: "Claude Code sonar codebase cartographer: workflow guidelines, best practices, instructions, and integration examples"
 ---
 
 # Sonar Codebase Cartographer

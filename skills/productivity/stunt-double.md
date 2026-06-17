@@ -1,3 +1,9 @@
+---
+name: stunt-double
+description: "Claude Code the stunt double (strict tdd workflow): workflow guidelines, best practices, instructions, and integration examples"
+updated: 2026-06-17
+---
+
 # The Stunt Double (Strict TDD Workflow)
 
 ## When to activate

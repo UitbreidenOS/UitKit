@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "claudient-automation",
   "displayName": "Claudient — Automation",
-  "version": "1.0.0",
+  "version": "1.10.1",
   "description": "Browser automation, Playwright, SaaS scaffolding, spec-to-repo generation, IoT, embedded systems, game dev, and office document automation.",
   "author": {
     "name": "tushar2704",

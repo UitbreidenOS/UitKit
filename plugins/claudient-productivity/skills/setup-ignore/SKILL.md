@@ -1,6 +1,6 @@
 ---
-name: "Setup Ignore"
-description: "Activate when starting a new project session, when a user complains about high token usage/cost, or when Claude Code is reading too many irrelevant files (like `package-lock.json`, `dist/`, or `vendor"
+name: "setup-ignore"
+description: "Claude Code setup ignore: workflow guidelines, best practices, instructions, and integration examples"
 ---
 
 # Setup Ignore

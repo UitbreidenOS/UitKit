@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "claudient-personas",
   "displayName": "Claudient — Personas",
-  "version": "1.0.0",
+  "version": "1.10.1",
   "description": "10 operating personas for Claude: startup-cto, solo-founder, growth-marketer, indie-hacker, enterprise-architect, data-driven-pm, devrel-advocate, agency-operator, ai-product-builder, fractional-exec.",
   "author": {
     "name": "tushar2704",

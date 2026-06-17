@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "claudient-data-ml",
   "displayName": "Claudient — Data & ML",
-  "version": "1.0.0",
+  "version": "1.10.1",
   "description": "Data pipelines, dbt, Apache Spark, Kafka, MLOps, MLflow, PyTorch, TensorFlow, NLP pipelines, pandas/polars, reinforcement learning, and synthetic data generation.",
   "author": {
     "name": "tushar2704",

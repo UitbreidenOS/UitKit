@@ -1,3 +1,9 @@
+---
+name: memorize
+description: "Claude Code project memory bank: workflow guidelines, best practices, instructions, and integration examples"
+updated: 2026-06-17
+---
+
 # Project Memory Bank
 
 ## When to activate

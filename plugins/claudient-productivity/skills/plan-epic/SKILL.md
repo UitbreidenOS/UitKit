@@ -1,6 +1,6 @@
 ---
-name: "Epic Planner (Action Graph)"
-description: "Activate when starting a large, multi-file feature, refactor, or migration. It prevents hallucinations and context-loss by forcing Claude to map out dependencies before writing code. Invoked via `/pla"
+name: "plan-epic"
+description: "Claude Code epic planner (action graph): workflow guidelines, best practices, instructions, and integration examples"
 ---
 
 # Epic Planner (Action Graph)

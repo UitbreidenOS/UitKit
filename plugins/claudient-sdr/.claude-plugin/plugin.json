@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "claudient-sdr",
   "displayName": "Claudient — SDR",
-  "version": "1.0.0",
+  "version": "1.10.1",
   "description": "SDR-specific skills: cold call scripts, email sequences, ICP scoring, objection handling, LinkedIn SDR, MEDDPICC qualification, personalization, CRM hygiene, and prospect research.",
   "author": {
     "name": "tushar2704",

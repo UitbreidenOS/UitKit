@@ -1,6 +1,6 @@
 ---
-name: "Grill Me (Requirement Hardening)"
-description: "Activate when the user asks you to build a new feature, page, or system without providing a detailed specification, OR when explicitly invoked via `/grill-me`."
+name: "grill-me"
+description: "Claude Code grill me (requirement hardening): workflow guidelines, best practices, instructions, and integration examples"
 ---
 
 # Grill Me (Requirement Hardening)

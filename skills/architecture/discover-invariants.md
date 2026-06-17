@@ -1,3 +1,9 @@
+---
+name: discover-invariants
+description: "Claude Code invariant discovery (cultural adaptation): workflow guidelines, best practices, instructions, and integration examples"
+updated: 2026-06-17
+---
+
 # Invariant Discovery (Cultural Adaptation)
 
 ## When to activate

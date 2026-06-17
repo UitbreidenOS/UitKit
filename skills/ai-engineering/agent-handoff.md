@@ -232,7 +232,7 @@ def detect_handoff_conflict(new_handoff, previous_state):
 
 If a conflict is detected, escalate to supervisor before proceeding.
 
-### Example: Research → Analysis Handoff
+## Example
 
 ```python
 # Researcher agent (sender)

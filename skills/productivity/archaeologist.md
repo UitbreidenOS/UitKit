@@ -1,3 +1,9 @@
+---
+name: archaeologist
+description: "Claude Code the archaeologist (semantic context engine): workflow guidelines, best practices, instructions, and integration examples"
+updated: 2026-06-17
+---
+
 # The Archaeologist (Semantic Context Engine)
 
 ## When to activate

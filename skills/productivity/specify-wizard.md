@@ -1,3 +1,9 @@
+---
+name: specify-wizard
+description: "Claude Code specify wizard (spec kit automation): workflow guidelines, best practices, instructions, and integration examples"
+updated: 2026-06-17
+---
+
 # Specify Wizard (Spec Kit Automation)
 
 ## When to activate

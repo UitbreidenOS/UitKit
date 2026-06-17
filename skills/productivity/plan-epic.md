@@ -1,3 +1,9 @@
+---
+name: plan-epic
+description: "Claude Code epic planner (action graph): workflow guidelines, best practices, instructions, and integration examples"
+updated: 2026-06-17
+---
+
 # Epic Planner (Action Graph)
 
 ## When to activate

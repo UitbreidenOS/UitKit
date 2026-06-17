@@ -1,6 +1,6 @@
 ---
-name: "The Interrogator (Automated Issue Triaging)"
-description: "Activate when a user wants to triage the backlog, or when explicitly invoked via `/interrogator [issue-url]`. Requires a configured GitHub or Linear MCP server."
+name: "interrogator"
+description: "Claude Code the interrogator (automated issue triaging): workflow guidelines, best practices, instructions, and integration examples"
 ---
 
 # The Interrogator (Automated Issue Triaging)

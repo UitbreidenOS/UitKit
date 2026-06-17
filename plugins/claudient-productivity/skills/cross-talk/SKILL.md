@@ -1,6 +1,6 @@
 ---
-name: "Cross-Talk (Agent Federation Protocol)"
-description: "Activate when you encounter a highly specific, proprietary error or pattern that is not in your training data, and the user invokes `/cross-talk`."
+name: "cross-talk"
+description: "Claude Code cross-talk (agent federation protocol): workflow guidelines, best practices, instructions, and integration examples"
 ---
 
 # Cross-Talk (Agent Federation Protocol)

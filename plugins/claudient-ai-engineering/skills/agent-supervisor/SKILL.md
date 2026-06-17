@@ -275,7 +275,7 @@ async def supervise_workflow(user_request: str):
     return final_result
 ```
 
-### Example: Supervisor Managing Research Workflow
+## Example
 
 ```python
 # Supervisor breaks down the request

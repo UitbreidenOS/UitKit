@@ -1,6 +1,6 @@
 ---
-name: "Tribunal PR Review System"
-description: "Activate when the user asks you to \"review this code\", \"review my PR\", or invoked via `/tribunal-review`."
+name: "tribunal-review"
+description: "Claude Code tribunal pr review system: workflow guidelines, best practices, instructions, and integration examples"
 ---
 
 # Tribunal PR Review System

@@ -1,3 +1,9 @@
+---
+name: caveman-mode
+description: "Claude Code caveman mode (token optimizer): workflow guidelines, best practices, instructions, and integration examples"
+updated: 2026-06-17
+---
+
 # Caveman Mode (Token Optimizer)
 
 ## When to activate

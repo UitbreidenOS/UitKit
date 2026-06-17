@@ -1,3 +1,9 @@
+---
+name: figma-to-code
+description: "Claude Code figma-to-code bridge: workflow guidelines, best practices, instructions, and integration examples"
+updated: 2026-06-17
+---
+
 # Figma-to-Code Bridge
 
 ## When to activate

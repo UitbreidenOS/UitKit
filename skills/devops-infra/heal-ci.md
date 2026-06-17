@@ -1,3 +1,9 @@
+---
+name: heal-ci
+description: "Claude Code self-healing ci pipeline: workflow guidelines, best practices, instructions, and integration examples"
+updated: 2026-06-17
+---
+
 # Self-Healing CI Pipeline
 
 ## When to activate

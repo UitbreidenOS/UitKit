@@ -1,3 +1,9 @@
+---
+name: tribunal-review
+description: "Claude Code tribunal pr review system: workflow guidelines, best practices, instructions, and integration examples"
+updated: 2026-06-17
+---
+
 # Tribunal PR Review System
 
 ## When to activate

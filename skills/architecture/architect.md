@@ -1,3 +1,9 @@
+---
+name: architect
+description: "Claude Code architect role (system design): workflow guidelines, best practices, instructions, and integration examples"
+updated: 2026-06-17
+---
+
 # Architect Role (System Design)
 
 ## When to activate

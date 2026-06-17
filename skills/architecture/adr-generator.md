@@ -1,3 +1,9 @@
+---
+name: adr-generator
+description: "Claude Code architecture decision record (adr) generator: workflow guidelines, best practices, instructions, and integration examples"
+updated: 2026-06-17
+---
+
 # Architecture Decision Record (ADR) Generator
 
 ## When to activate

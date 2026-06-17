@@ -1,6 +1,6 @@
 ---
-name: "The Stunt Double (Strict TDD Workflow)"
-description: "Activate when the user asks for a new feature and explicitly requests Test-Driven Development, or invoked via `/stunt-double`."
+name: "stunt-double"
+description: "Claude Code the stunt double (strict tdd workflow): workflow guidelines, best practices, instructions, and integration examples"
 ---
 
 # The Stunt Double (Strict TDD Workflow)

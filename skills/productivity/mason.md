@@ -1,3 +1,9 @@
+---
+name: mason
+description: "Claude Code mason role (boilerplate builder): workflow guidelines, best practices, instructions, and integration examples"
+updated: 2026-06-17
+---
+
 # Mason Role (Boilerplate Builder)
 
 ## When to activate

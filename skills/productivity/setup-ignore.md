@@ -1,3 +1,9 @@
+---
+name: setup-ignore
+description: "Claude Code setup ignore: workflow guidelines, best practices, instructions, and integration examples"
+updated: 2026-06-17
+---
+
 # Setup Ignore
 
 ## When to activate

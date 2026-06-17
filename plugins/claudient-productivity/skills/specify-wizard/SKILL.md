@@ -1,6 +1,6 @@
 ---
-name: "Specify Wizard (Spec Kit Automation)"
-description: "Activate when the user is starting a new feature using the GitHub Spec Kit framework, or when explicitly invoked via `/specify-wi"
+name: "specify-wizard"
+description: "Claude Code specify wizard (spec kit automation): workflow guidelines, best practices, instructions, and integration examples"
 ---
 
 # Specify Wizard (Spec Kit Automation)

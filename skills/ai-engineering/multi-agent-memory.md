@@ -270,7 +270,7 @@ Log all blackboard operations for debugging:
 
 Location: `.claude/blackboard-audit.jsonl` (append-only).
 
-### Example: Shared Memory Workflow
+## Example
 
 ```python
 # Agent 1: Researcher

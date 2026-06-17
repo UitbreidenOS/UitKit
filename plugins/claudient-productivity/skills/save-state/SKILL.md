@@ -1,6 +1,6 @@
 ---
-name: "Save State"
-description: "Activate when the user has been working for a long session, token usage is getting high, the context window is near full, or the user is about to run the `/clear` command and wants to preserve their p"
+name: "save-state"
+description: "Claude Code save state: workflow guidelines, best practices, instructions, and integration examples"
 ---
 
 # Save State

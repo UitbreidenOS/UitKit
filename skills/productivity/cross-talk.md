@@ -1,3 +1,9 @@
+---
+name: cross-talk
+description: "Claude Code cross-talk (agent federation protocol): workflow guidelines, best practices, instructions, and integration examples"
+updated: 2026-06-17
+---
+
 # Cross-Talk (Agent Federation Protocol)
 
 ## When to activate

@@ -1,3 +1,9 @@
+---
+name: oracle
+description: "Claude Code the oracle (post-mortem pre-diction): workflow guidelines, best practices, instructions, and integration examples"
+updated: 2026-06-17
+---
+
 # The Oracle (Post-Mortem Pre-Diction)
 
 ## When to activate

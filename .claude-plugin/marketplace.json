@@ -15,7 +15,7 @@
       "source": "./plugins/claudient-ai-engineering",
       "description": "Claude API, agent construction, RAG, LangGraph, CrewAI, MCP server building, prompt caching, LLM eval, and AI-native development patterns.",
       "category": "ai-engineering",
-      "version": "1.0.0",
+      "version": "1.10.1",
       "author": {
         "name": "tushar2704"
       }
@@ -25,7 +25,7 @@
       "source": "./plugins/claudient-automation",
       "description": "Browser automation, Playwright, SaaS scaffolding, spec-to-repo generation, IoT, embedded systems, game dev, and office document automation.",
       "category": "automation",
-      "version": "1.0.0",
+      "version": "1.10.1",
       "author": {
         "name": "tushar2704"
       }
@@ -35,7 +35,7 @@
       "source": "./plugins/claudient-backend",
       "description": "41 framework-specific skills covering Python (FastAPI, Django), Node.js (Next.js, NestJS, Hono, tRPC), Go, Rust, Ruby on Rails, Java Spring Boot, Elixir, Flutter, Swift, Kotlin, .NET, and PHP Laravel.",
       "category": "backend",
-      "version": "1.0.0",
+      "version": "1.10.1",
       "author": {
         "name": "tushar2704"
       }
@@ -45,7 +45,7 @@
       "source": "./plugins/claudient-data-ml",
       "description": "Data pipelines, dbt, Apache Spark, Kafka, MLOps, MLflow, PyTorch, TensorFlow, NLP pipelines, pandas/polars, reinforcement learning, and synthetic data generation.",
       "category": "data-ml",
-      "version": "1.0.0",
+      "version": "1.10.1",
       "author": {
         "name": "tushar2704"
       }
@@ -55,7 +55,7 @@
       "source": "./plugins/claudient-database",
       "description": "PostgreSQL, MongoDB, Redis, Supabase, Neon, Turso, Prisma, Drizzle ORM, GraphQL, Elasticsearch, and blockchain/smart contracts.",
       "category": "database",
-      "version": "1.0.0",
+      "version": "1.10.1",
       "author": {
         "name": "tushar2704"
       }
@@ -65,7 +65,7 @@
       "source": "./plugins/claudient-devops-infra",
       "description": "36 skills covering AWS, Azure, GCP, Kubernetes, Helm, Terraform, Pulumi, ArgoCD, Docker, CI/CD, GitHub Actions, secrets management, observability, SLOs, and platform engineering.",
       "category": "devops-infra",
-      "version": "1.0.0",
+      "version": "1.10.1",
       "author": {
         "name": "tushar2704"
       }
@@ -75,7 +75,7 @@
       "source": "./plugins/claudient-finance",
       "description": "DCF models, 3-statement financial models, comps analysis, deal screening, IC memos, KYC/AML, pitch decks, earnings analysis, GL reconciliation, and financial planning.",
       "category": "finance",
-      "version": "1.0.0",
+      "version": "1.10.1",
       "author": {
         "name": "tushar2704"
       }
@@ -85,7 +85,7 @@
       "source": "./plugins/claudient-finance-payments",
       "description": "Stripe integration and webhook security patterns for payment processing.",
       "category": "finance-payments",
-      "version": "1.0.0",
+      "version": "1.10.1",
       "author": {
         "name": "tushar2704"
       }
@@ -95,7 +95,7 @@
       "source": "./plugins/claudient-git",
       "description": "Commit message writing, PR description generation, and changelog automation.",
       "category": "git",
-      "version": "1.0.0",
+      "version": "1.10.1",
       "author": {
         "name": "tushar2704"
       }
@@ -105,7 +105,7 @@
       "source": "./plugins/claudient-gtm",
       "description": "32 GTM skills: cold email, LinkedIn outreach, deal desk, revenue operations, HubSpot, channel economics, commercial forecasting, customer success, RFP response, and SDR workflows.",
       "category": "gtm",
-      "version": "1.0.0",
+      "version": "1.10.1",
       "author": {
         "name": "tushar2704"
       }
@@ -115,7 +115,7 @@
       "source": "./plugins/claudient-legal",
       "description": "Contract review, NDA analysis, GDPR compliance, SOC 2, ISO 27001, IP clearance, EU AI Act, legal research (CourtListener, Thomson Reuters), DSAR response, and diligence review.",
       "category": "legal",
-      "version": "1.0.0",
+      "version": "1.10.1",
       "author": {
         "name": "tushar2704"
       }
@@ -125,7 +125,7 @@
       "source": "./plugins/claudient-marketing",
       "description": "SEO (technical, AI, programmatic), content strategy, copywriting, email sequences, paid ads, brand guidelines, CRO, social media, churn prevention, schema markup, and referral programs.",
       "category": "marketing",
-      "version": "1.0.0",
+      "version": "1.10.1",
       "author": {
         "name": "tushar2704"
       }
@@ -135,7 +135,7 @@
       "source": "./plugins/claudient-product",
       "description": "Product discovery, roadmapping, PRD writing, competitive teardowns, UX research, product analytics, experiment design, and landing page generation.",
       "category": "product",
-      "version": "1.0.0",
+      "version": "1.10.1",
       "author": {
         "name": "tushar2704"
       }
@@ -145,7 +145,7 @@
       "source": "./plugins/claudient-productivity",
       "description": "66 skills for daily engineering work: debugging, refactoring, code review, PR automation, test generation, ADR writing, security auditing, context engineering, MCP clients, and dozens more.",
       "category": "productivity",
-      "version": "1.0.0",
+      "version": "1.10.1",
       "author": {
         "name": "tushar2704"
       }
@@ -155,7 +155,7 @@
       "source": "./plugins/claudient-sdr",
       "description": "SDR-specific skills: cold call scripts, email sequences, ICP scoring, objection handling, LinkedIn SDR, MEDDPICC qualification, personalization, CRM hygiene, and prospect research.",
       "category": "sdr",
-      "version": "1.0.0",
+      "version": "1.10.1",
       "author": {
         "name": "tushar2704"
       }
@@ -165,7 +165,7 @@
       "source": "./plugins/claudient-small-business",
       "description": "47 skills for small business operations: cash flow forecasting, invoicing, campaign briefs, QuickBooks workflows, Shopify operations, SOP writing, job descriptions, and weekly business pulse.",
       "category": "small-business",
-      "version": "1.0.0",
+      "version": "1.10.1",
       "author": {
         "name": "tushar2704"
       }
@@ -175,7 +175,7 @@
       "source": "./plugins/claudient-commands",
       "description": "100+ slash commands across git, testing, refactor, docs, debug, devops, database, security, frontend, api, ai-engineering, and productivity.",
       "category": "commands",
-      "version": "1.0.0",
+      "version": "1.10.1",
       "author": {
         "name": "tushar2704"
       }
@@ -185,7 +185,7 @@
       "source": "./plugins/claudient-personas",
       "description": "10 operating personas for Claude: startup-cto, solo-founder, growth-marketer, indie-hacker, enterprise-architect, data-driven-pm, devrel-advocate, agency-operator, ai-product-builder, fractional-exec.",
       "category": "personas",
-      "version": "1.0.0",
+      "version": "1.10.1",
       "author": {
         "name": "tushar2704"
       }
@@ -195,7 +195,7 @@
       "source": "./plugins/claudient-everything",
       "description": "Meta-bundle listing all Claudient domain plugins (377+ skills, 104 agents). Install individual plugins: claudient-ai-engineering, claudient-automation, claudient-backend, claudient-data-ml, claudient-database, claudient-devops-infra, claudient-finance, claudient-finance-payments, claudient-git, claudient-gtm, claudient-legal, claudient-marketing, claudient-product, claudient-productivity, claudient-sdr, claudient-small-business. See README.md for install commands.",
       "category": "meta",
-      "version": "1.0.0",
+      "version": "1.10.1",
       "author": {
         "name": "tushar2704"
       }

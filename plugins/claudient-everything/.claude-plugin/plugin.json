@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "claudient-everything",
   "displayName": "Claudient — Everything",
-  "version": "1.0.0",
+  "version": "1.10.1",
   "description": "Meta-bundle listing all Claudient domain plugins (377+ skills, 104 agents). Install individual plugins: claudient-ai-engineering, claudient-automation, claudient-backend, claudient-data-ml, claudient-database, claudient-devops-infra, claudient-finance, claudient-finance-payments, claudient-git, claudient-gtm, claudient-legal, claudient-marketing, claudient-product, claudient-productivity, claudient-sdr, claudient-small-business. See README.md for install commands.",
   "author": {
     "name": "tushar2704",

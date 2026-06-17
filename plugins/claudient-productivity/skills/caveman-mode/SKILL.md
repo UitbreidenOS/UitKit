@@ -1,6 +1,6 @@
 ---
-name: "Caveman Mode (Token Optimizer)"
-description: "Activate when the user invokes `/caveman`, explicitly asks to save tokens, or when you notice the context window is exceeding 70% capacity during a long session."
+name: "caveman-mode"
+description: "Claude Code caveman mode (token optimizer): workflow guidelines, best practices, instructions, and integration examples"
 ---
 
 # Caveman Mode (Token Optimizer)

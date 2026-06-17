@@ -1,6 +1,6 @@
 {
   "version": "1.10.1",
-  "generated": "2026-06-16T21:56:24.211Z",
+  "generated": "2026-06-17T15:14:17.666Z",
   "skills": [
     {
       "id": "ai-engineering/advanced-tool-use",
@@ -65,6 +65,14 @@
       "title": "Agent Tracing",
       "description": "Build observability into multi-agent systems with distributed traces, trace correlation, breakpoints, and execution replay",
       "file": "skills/ai-engineering/agent-tracing.md"
+    },
+    {
+      "id": "ai-engineering/artifact-first-workflow",
+      "category": "ai-engineering",
+      "lang": "en",
+      "title": "Artifact First Workflow",
+      "description": "Claude Code Artifact-First Workflow: single source of truth specifications. Draft, version, and edit specifications (SPEC.md) first, treating the actual codebase implementation as a compilable/generated output",
+      "file": "skills/ai-engineering/artifact-first-workflow.md"
     },
     {
       "id": "ai-engineering/autodream-goal-decomposition",
@@ -699,6 +707,14 @@
       "file": "skills/ai-engineering/fr/vercel-ai-sdk.md"
     },
     {
+      "id": "ai-engineering/graph-augmented-context",
+      "category": "ai-engineering",
+      "lang": "en",
+      "title": "Graph Augmented Context",
+      "description": "Claude Code Graph-Augmented Context (GAC): local SQLite codebase knowledge graph builder. Maps files, classes, functions, and import/dependency edges for advanced codebase RAG and contextual navigation",
+      "file": "skills/ai-engineering/graph-augmented-context.md"
+    },
+    {
       "id": "ai-engineering/langgraph",
       "category": "ai-engineering",
       "lang": "en",
@@ -737,6 +753,14 @@
       "title": "Mastra",
       "description": "Mastra AI: TypeScript agent framework — agents, workflows, tools, memory, RAG, evals — for building production-grade AI applications",
       "file": "skills/ai-engineering/mastra.md"
+    },
+    {
+      "id": "ai-engineering/mcp-dynamic-discovery",
+      "category": "ai-engineering",
+      "lang": "en",
+      "title": "Mcp Dynamic Discovery",
+      "description": "Claude Code MCP Dynamic Discovery: zero-config external tool integration. Automatically scans system configuration directories for active Model Context Protocol (MCP) servers and configures them locally",
+      "file": "skills/ai-engineering/mcp-dynamic-discovery.md"
     },
     {
       "id": "ai-engineering/mcp-server-builder",
@@ -4863,7 +4887,7 @@
       "category": "devops-infra",
       "lang": "en",
       "title": "Dev Doctor",
-      "description": "",
+      "description": "Claude Code dev doctor: workflow guidelines, best practices, instructions, and integration examples",
       "file": "skills/devops-infra/dev-doctor.md"
     },
     {
@@ -5494,8 +5518,8 @@
       "id": "devops-infra/heal-ci",
       "category": "devops-infra",
       "lang": "en",
-      "title": "Self-Healing CI Pipeline",
-      "description": "",
+      "title": "Heal Ci",
+      "description": "Claude Code self-healing ci pipeline: workflow guidelines, best practices, instructions, and integration examples",
       "file": "skills/devops-infra/heal-ci.md"
     },
     {
@@ -5510,8 +5534,8 @@
       "id": "devops-infra/incident-commander",
       "category": "devops-infra",
       "lang": "en",
-      "title": "The Incident Commander (PagerDuty Autonomy)",
-      "description": "",
+      "title": "Incident Commander",
+      "description": "Claude Code the incident commander (pagerduty autonomy): workflow guidelines, best practices, instructions, and integration examples",
       "file": "skills/devops-infra/incident-commander.md"
     },
     {
@@ -6806,8 +6830,8 @@
       "id": "git/safe-commit",
       "category": "git",
       "lang": "en",
-      "title": "Safe Commit (Lint-On-Commit Enforcer)",
-      "description": "",
+      "title": "Safe Commit",
+      "description": "Claude Code safe commit (lint-on-commit enforcer): workflow guidelines, best practices, instructions, and integration examples",
       "file": "skills/git/safe-commit.md"
     },
     {
@@ -9654,8 +9678,8 @@
       "id": "productivity/archaeologist",
       "category": "productivity",
       "lang": "en",
-      "title": "The Archaeologist (Semantic Context Engine)",
-      "description": "",
+      "title": "Archaeologist",
+      "description": "Claude Code the archaeologist (semantic context engine): workflow guidelines, best practices, instructions, and integration examples",
       "file": "skills/productivity/archaeologist.md"
     },
     {
@@ -9678,8 +9702,8 @@
       "id": "productivity/bisect-bug",
       "category": "productivity",
       "lang": "en",
-      "title": "Time-Travel Debugger (Git Bisect Integration)",
-      "description": "",
+      "title": "Bisect Bug",
+      "description": "Claude Code time-travel debugger (git bisect integration): workflow guidelines, best practices, instructions, and integration examples",
       "file": "skills/productivity/bisect-bug.md"
     },
     {
@@ -9710,8 +9734,8 @@
       "id": "productivity/build-skill",
       "category": "productivity",
       "lang": "en",
-      "title": "Skill Builder Wizard",
-      "description": "",
+      "title": "Build Skill",
+      "description": "Claude Code skill builder wizard: workflow guidelines, best practices, instructions, and integration examples",
       "file": "skills/productivity/build-skill.md"
     },
     {
@@ -9726,8 +9750,8 @@
       "id": "productivity/caveman-mode",
       "category": "productivity",
       "lang": "en",
-      "title": "Caveman Mode (Token Optimizer)",
-      "description": "",
+      "title": "Caveman Mode",
+      "description": "Claude Code caveman mode (token optimizer): workflow guidelines, best practices, instructions, and integration examples",
       "file": "skills/productivity/caveman-mode.md"
     },
     {
@@ -9750,8 +9774,8 @@
       "id": "productivity/chaos-test",
       "category": "productivity",
       "lang": "en",
-      "title": "Chaos Test Workflow",
-      "description": "",
+      "title": "Chaos Test",
+      "description": "Claude Code Chaos Test: adversarial test hardening. Spawns/orchestrates a Chaos Monkey agent to inject network drops, race conditions, and malformed inputs to harden infrastructure",
       "file": "skills/productivity/chaos-test.md"
     },
     {
@@ -9806,8 +9830,8 @@
       "id": "productivity/cross-talk",
       "category": "productivity",
       "lang": "en",
-      "title": "Cross-Talk (Agent Federation Protocol)",
-      "description": "",
+      "title": "Cross Talk",
+      "description": "Claude Code cross-talk (agent federation protocol): workflow guidelines, best practices, instructions, and integration examples",
       "file": "skills/productivity/cross-talk.md"
     },
     {
@@ -11542,16 +11566,16 @@
       "id": "productivity/grill-me",
       "category": "productivity",
       "lang": "en",
-      "title": "Grill Me (Requirement Hardening)",
-      "description": "",
+      "title": "Grill Me",
+      "description": "Claude Code grill me (requirement hardening): workflow guidelines, best practices, instructions, and integration examples",
       "file": "skills/productivity/grill-me.md"
     },
     {
       "id": "productivity/interrogator",
       "category": "productivity",
       "lang": "en",
-      "title": "The Interrogator (Automated Issue Triaging)",
-      "description": "",
+      "title": "Interrogator",
+      "description": "Claude Code the interrogator (automated issue triaging): workflow guidelines, best practices, instructions, and integration examples",
       "file": "skills/productivity/interrogator.md"
     },
     {
@@ -11587,6 +11611,14 @@
       "file": "skills/productivity/lean-claude.md"
     },
     {
+      "id": "productivity/learn-codebase",
+      "category": "productivity",
+      "lang": "en",
+      "title": "Learn Codebase",
+      "description": "Claude Code codebase custom rules generator. Scans frameworks, dependency structures, test frameworks, and builds customized project-rules.md and CLAUDE.md files",
+      "file": "skills/productivity/learn-codebase.md"
+    },
+    {
       "id": "productivity/lesson-planner",
       "category": "productivity",
       "lang": "en",
@@ -11614,8 +11646,8 @@
       "id": "productivity/mason",
       "category": "productivity",
       "lang": "en",
-      "title": "Mason Role (Boilerplate Builder)",
-      "description": "",
+      "title": "Mason",
+      "description": "Claude Code mason role (boilerplate builder): workflow guidelines, best practices, instructions, and integration examples",
       "file": "skills/productivity/mason.md"
     },
     {
@@ -11630,8 +11662,8 @@
       "id": "productivity/memorize",
       "category": "productivity",
       "lang": "en",
-      "title": "Project Memory Bank",
-      "description": "",
+      "title": "Memorize",
+      "description": "Claude Code project memory bank: workflow guidelines, best practices, instructions, and integration examples",
       "file": "skills/productivity/memorize.md"
     },
     {
@@ -12182,8 +12214,8 @@
       "id": "productivity/plan-epic",
       "category": "productivity",
       "lang": "en",
-      "title": "Epic Planner (Action Graph)",
-      "description": "",
+      "title": "Plan Epic",
+      "description": "Claude Code epic planner (action graph): workflow guidelines, best practices, instructions, and integration examples",
       "file": "skills/productivity/plan-epic.md"
     },
     {
@@ -12239,7 +12271,7 @@
       "category": "productivity",
       "lang": "en",
       "title": "Save State",
-      "description": "",
+      "description": "Claude Code save state: workflow guidelines, best practices, instructions, and integration examples",
       "file": "skills/productivity/save-state.md"
     },
     {
@@ -12267,11 +12299,19 @@
       "file": "skills/productivity/self-eval.md"
     },
     {
+      "id": "productivity/session-memory",
+      "category": "productivity",
+      "lang": "en",
+      "title": "Session Memory",
+      "description": "Claude Code session checkpoints and state restoration. Serialize working directory, uncommitted git status, recently modified files, and active task description into checkpoint.json to resume context later",
+      "file": "skills/productivity/session-memory.md"
+    },
+    {
       "id": "productivity/setup-ignore",
       "category": "productivity",
       "lang": "en",
       "title": "Setup Ignore",
-      "description": "",
+      "description": "Claude Code setup ignore: workflow guidelines, best practices, instructions, and integration examples",
       "file": "skills/productivity/setup-ignore.md"
     },
     {
@@ -12294,8 +12334,8 @@
       "id": "productivity/sonar",
       "category": "productivity",
       "lang": "en",
-      "title": "Sonar Codebase Cartographer",
-      "description": "",
+      "title": "Sonar",
+      "description": "Claude Code sonar codebase cartographer: workflow guidelines, best practices, instructions, and integration examples",
       "file": "skills/productivity/sonar.md"
     },
     {
@@ -12310,8 +12350,8 @@
       "id": "productivity/specify-wizard",
       "category": "productivity",
       "lang": "en",
-      "title": "Specify Wizard (Spec Kit Automation)",
-      "description": "",
+      "title": "Specify Wizard",
+      "description": "Claude Code specify wizard (spec kit automation): workflow guidelines, best practices, instructions, and integration examples",
       "file": "skills/productivity/specify-wizard.md"
     },
     {
@@ -12342,8 +12382,8 @@
       "id": "productivity/stunt-double",
       "category": "productivity",
       "lang": "en",
-      "title": "The Stunt Double (Strict TDD Workflow)",
-      "description": "",
+      "title": "Stunt Double",
+      "description": "Claude Code the stunt double (strict tdd workflow): workflow guidelines, best practices, instructions, and integration examples",
       "file": "skills/productivity/stunt-double.md"
     },
     {
@@ -12398,8 +12438,8 @@
       "id": "productivity/tribunal-review",
       "category": "productivity",
       "lang": "en",
-      "title": "Tribunal PR Review System",
-      "description": "",
+      "title": "Tribunal Review",
+      "description": "Claude Code tribunal pr review system: workflow guidelines, best practices, instructions, and integration examples",
       "file": "skills/productivity/tribunal-review.md"
     },
     {
@@ -20949,6 +20989,12 @@
       "file": "hooks/post-tool-use/prettier.md"
     },
     {
+      "id": "post-tool-use/recursive-reflection",
+      "category": "post-tool-use",
+      "title": "Recursive Reflection Hook",
+      "file": "hooks/post-tool-use/recursive-reflection.md"
+    },
+    {
       "id": "post-tool-use/shadow-compiler",
       "category": "post-tool-use",
       "title": "Shadow Compiler Hook",
@@ -27898,15 +27944,15 @@
       "id": "claudient-ai-engineering",
       "displayName": "Claudient — AI Engineering",
       "description": "Claude API, agent construction, RAG, LangGraph, CrewAI, MCP server building, prompt caching, LLM eval, and AI-native development patterns.",
-      "version": "1.0.0",
-      "skills": 37,
+      "version": "1.10.1",
+      "skills": 40,
       "file": "plugins/claudient-ai-engineering/.claude-plugin/plugin.json"
     },
     {
       "id": "claudient-automation",
       "displayName": "Claudient — Automation",
       "description": "Browser automation, Playwright, SaaS scaffolding, spec-to-repo generation, IoT, embedded systems, game dev, and office document automation.",
-      "version": "1.0.0",
+      "version": "1.10.1",
       "skills": 14,
       "file": "plugins/claudient-automation/.claude-plugin/plugin.json"
     },
@@ -27914,7 +27960,7 @@
       "id": "claudient-backend",
       "displayName": "Claudient — Backend & Fullstack",
       "description": "41 framework-specific skills covering Python (FastAPI, Django), Node.js (Next.js, NestJS, Hono, tRPC), Go, Rust, Ruby on Rails, Java Spring Boot, Elixir, Flutter, Swift, Kotlin, .NET, and PHP Laravel.",
-      "version": "1.0.0",
+      "version": "1.10.1",
       "skills": 41,
       "file": "plugins/claudient-backend/.claude-plugin/plugin.json"
     },
@@ -27922,7 +27968,7 @@
       "id": "claudient-commands",
       "displayName": "Claudient — Slash Commands",
       "description": "100+ slash commands across git, testing, refactor, docs, debug, devops, database, security, frontend, api, ai-engineering, and productivity.",
-      "version": "1.0.0",
+      "version": "1.10.1",
       "skills": 0,
       "file": "plugins/claudient-commands/.claude-plugin/plugin.json"
     },
@@ -27930,7 +27976,7 @@
       "id": "claudient-data-ml",
       "displayName": "Claudient — Data & ML",
       "description": "Data pipelines, dbt, Apache Spark, Kafka, MLOps, MLflow, PyTorch, TensorFlow, NLP pipelines, pandas/polars, reinforcement learning, and synthetic data generation.",
-      "version": "1.0.0",
+      "version": "1.10.1",
       "skills": 15,
       "file": "plugins/claudient-data-ml/.claude-plugin/plugin.json"
     },
@@ -27938,7 +27984,7 @@
       "id": "claudient-database",
       "displayName": "Claudient — Databases",
       "description": "PostgreSQL, MongoDB, Redis, Supabase, Neon, Turso, Prisma, Drizzle ORM, GraphQL, Elasticsearch, and blockchain/smart contracts.",
-      "version": "1.0.0",
+      "version": "1.10.1",
       "skills": 12,
       "file": "plugins/claudient-database/.claude-plugin/plugin.json"
     },
@@ -27946,7 +27992,7 @@
       "id": "claudient-devops-infra",
       "displayName": "Claudient — DevOps & Infrastructure",
       "description": "36 skills covering AWS, Azure, GCP, Kubernetes, Helm, Terraform, Pulumi, ArgoCD, Docker, CI/CD, GitHub Actions, secrets management, observability, SLOs, and platform engineering.",
-      "version": "1.0.0",
+      "version": "1.10.1",
       "skills": 42,
       "file": "plugins/claudient-devops-infra/.claude-plugin/plugin.json"
     },
@@ -27954,7 +28000,7 @@
       "id": "claudient-everything",
       "displayName": "Claudient — Everything",
       "description": "Meta-bundle listing all Claudient domain plugins (377+ skills, 104 agents). Install individual plugins: claudient-ai-engineering, claudient-automation, claudient-backend, claudient-data-ml, claudient-database, claudient-devops-infra, claudient-finance, claudient-finance-payments, claudient-git, claudient-gtm, claudient-legal, claudient-marketing, claudient-product, claudient-productivity, claudient-sdr, claudient-small-business. See README.md for install commands.",
-      "version": "1.0.0",
+      "version": "1.10.1",
       "skills": 0,
       "file": "plugins/claudient-everything/.claude-plugin/plugin.json"
     },
@@ -27962,7 +28008,7 @@
       "id": "claudient-finance",
       "displayName": "Claudient — Finance",
       "description": "DCF models, 3-statement financial models, comps analysis, deal screening, IC memos, KYC/AML, pitch decks, earnings analysis, GL reconciliation, and financial planning.",
-      "version": "1.0.0",
+      "version": "1.10.1",
       "skills": 16,
       "file": "plugins/claudient-finance/.claude-plugin/plugin.json"
     },
@@ -27970,7 +28016,7 @@
       "id": "claudient-finance-payments",
       "displayName": "Claudient — Finance & Payments",
       "description": "Stripe integration and webhook security patterns for payment processing.",
-      "version": "1.0.0",
+      "version": "1.10.1",
       "skills": 2,
       "file": "plugins/claudient-finance-payments/.claude-plugin/plugin.json"
     },
@@ -27978,7 +28024,7 @@
       "id": "claudient-git",
       "displayName": "Claudient — Git",
       "description": "Commit message writing, PR description generation, and changelog automation.",
-      "version": "1.0.0",
+      "version": "1.10.1",
       "skills": 4,
       "file": "plugins/claudient-git/.claude-plugin/plugin.json"
     },
@@ -27986,7 +28032,7 @@
       "id": "claudient-gtm",
       "displayName": "Claudient — Go-to-Market",
       "description": "32 GTM skills: cold email, LinkedIn outreach, deal desk, revenue operations, HubSpot, channel economics, commercial forecasting, customer success, RFP response, and SDR workflows.",
-      "version": "1.0.0",
+      "version": "1.10.1",
       "skills": 32,
       "file": "plugins/claudient-gtm/.claude-plugin/plugin.json"
     },
@@ -27994,7 +28040,7 @@
       "id": "claudient-legal",
       "displayName": "Claudient — Legal",
       "description": "Contract review, NDA analysis, GDPR compliance, SOC 2, ISO 27001, IP clearance, EU AI Act, legal research (CourtListener, Thomson Reuters), DSAR response, and diligence review.",
-      "version": "1.0.0",
+      "version": "1.10.1",
       "skills": 21,
       "file": "plugins/claudient-legal/.claude-plugin/plugin.json"
     },
@@ -28002,7 +28048,7 @@
       "id": "claudient-marketing",
       "displayName": "Claudient — Marketing",
       "description": "SEO (technical, AI, programmatic), content strategy, copywriting, email sequences, paid ads, brand guidelines, CRO, social media, churn prevention, schema markup, and referral programs.",
-      "version": "1.0.0",
+      "version": "1.10.1",
       "skills": 22,
       "file": "plugins/claudient-marketing/.claude-plugin/plugin.json"
     },
@@ -28010,7 +28056,7 @@
       "id": "claudient-personas",
       "displayName": "Claudient — Personas",
       "description": "10 operating personas for Claude: startup-cto, solo-founder, growth-marketer, indie-hacker, enterprise-architect, data-driven-pm, devrel-advocate, agency-operator, ai-product-builder, fractional-exec.",
-      "version": "1.0.0",
+      "version": "1.10.1",
       "skills": 0,
       "file": "plugins/claudient-personas/.claude-plugin/plugin.json"
     },
@@ -28018,7 +28064,7 @@
       "id": "claudient-product",
       "displayName": "Claudient — Product",
       "description": "Product discovery, roadmapping, PRD writing, competitive teardowns, UX research, product analytics, experiment design, and landing page generation.",
-      "version": "1.0.0",
+      "version": "1.10.1",
       "skills": 15,
       "file": "plugins/claudient-product/.claude-plugin/plugin.json"
     },
@@ -28026,15 +28072,15 @@
       "id": "claudient-productivity",
       "displayName": "Claudient — Productivity & Engineering",
       "description": "66 skills for daily engineering work: debugging, refactoring, code review, PR automation, test generation, ADR writing, security auditing, context engineering, MCP clients, and dozens more.",
-      "version": "1.0.0",
-      "skills": 88,
+      "version": "1.10.1",
+      "skills": 90,
       "file": "plugins/claudient-productivity/.claude-plugin/plugin.json"
     },
     {
       "id": "claudient-sdr",
       "displayName": "Claudient — SDR",
       "description": "SDR-specific skills: cold call scripts, email sequences, ICP scoring, objection handling, LinkedIn SDR, MEDDPICC qualification, personalization, CRM hygiene, and prospect research.",
-      "version": "1.0.0",
+      "version": "1.10.1",
       "skills": 18,
       "file": "plugins/claudient-sdr/.claude-plugin/plugin.json"
     },
@@ -28042,7 +28088,7 @@
       "id": "claudient-small-business",
       "displayName": "Claudient — Small Business",
       "description": "47 skills for small business operations: cash flow forecasting, invoicing, campaign briefs, QuickBooks workflows, Shopify operations, SOP writing, job descriptions, and weekly business pulse.",
-      "version": "1.0.0",
+      "version": "1.10.1",
       "skills": 47,
       "file": "plugins/claudient-small-business/.claude-plugin/plugin.json"
     }
@@ -28812,9 +28858,9 @@
     }
   ],
   "summary": {
-    "skills": 430,
+    "skills": 435,
     "agents": 206,
-    "hooks": 53,
+    "hooks": 54,
     "rules": 32,
     "workflows": 55,
     "prompts": 31,

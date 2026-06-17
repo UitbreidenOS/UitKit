@@ -1,6 +1,6 @@
 ---
-name: "Dev Doctor"
-description: "Activate when a user reports that \"the app won't start\", \"the database isn't connecting\", or when experiencing generic `ECONNREFUSED` or startup errors. Invoked via `/dev-doctor`."
+name: "dev-doctor"
+description: "Claude Code dev doctor: workflow guidelines, best practices, instructions, and integration examples"
 ---
 
 # Dev Doctor

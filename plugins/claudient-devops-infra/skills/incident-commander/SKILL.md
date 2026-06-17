@@ -1,6 +1,6 @@
 ---
-name: "The Incident Commander (PagerDuty Autonomy)"
-description: "Activate during an active production outage. Invoked via `/incident`. Requires PagerDuty and Datadog/Splunk MCP servers."
+name: "incident-commander"
+description: "Claude Code the incident commander (pagerduty autonomy): workflow guidelines, best practices, instructions, and integration examples"
 ---
 
 # The Incident Commander (PagerDuty Autonomy)

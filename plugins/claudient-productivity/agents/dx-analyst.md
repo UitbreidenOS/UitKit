@@ -205,7 +205,7 @@ claude-code --spawn agents/roles/dx-analyst.md --args='{"period":"2026-06-01/202
 {"period":"2026-07-01/2026-07-31","generated_at":"2026-08-01T09:15:00Z","metrics":{...},"summary":{...}}
 ```
 
-### Examples
+## Example
 
 **Example 1: Monthly DX Review**
 

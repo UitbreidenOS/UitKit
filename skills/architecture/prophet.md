@@ -1,3 +1,9 @@
+---
+name: prophet
+description: "Claude Code the prophet (predictive tech debt analyzer): workflow guidelines, best practices, instructions, and integration examples"
+updated: 2026-06-17
+---
+
 # The Prophet (Predictive Tech Debt Analyzer)
 
 ## When to activate

@@ -1,0 +1,244 @@
+// learn.js — scans project and generates custom CLAUDE.md guidelines and rules
+const fs = require('fs')
+const path = require('path')
+
+function learnCodebase(targetDir = '.') {
+  const absoluteDir = path.resolve(targetDir)
+  console.log(`\n🔍 Scoping codebase at: ${absoluteDir}\n`)
+
+  const diagnostics = {
+    languages: [],
+    frameworks: [],
+    testFrameworks: [],
+    configFiles: [],
+    hasGit: false,
+    rulesGenerated: []
+  }
+
+  // Check Git
+  if (fs.existsSync(path.join(absoluteDir, '.git'))) {
+    diagnostics.hasGit = true
+  }
+
+  // Files scanner helper
+  const exists = (p) => fs.existsSync(path.join(absoluteDir, p))
+
+  // Scan config files
+  const configs = {
+    'package.json': 'Node.js/JavaScript ecosystem',
+    'tsconfig.json': 'TypeScript configuration',
+    'requirements.txt': 'Python pip dependencies',
+    'pyproject.toml': 'Python packaging & lint configuration',
+    'Cargo.toml': 'Rust Cargo package manager',
+    'go.mod': 'Go modules manifest',
+    'gemfile': 'Ruby Gemfile dependencies',
+    'pom.xml': 'Java Maven build configuration',
+    'build.gradle': 'Java Gradle build configuration',
+    '.eslintrc.json': 'ESLint guidelines',
+    '.eslintrc': 'ESLint guidelines',
+    '.prettierrc': 'Prettier formatting rules',
+    'Makefile': 'Makefile automated routines',
+    'docker-compose.yml': 'Docker container orchestration',
+    'Dockerfile': 'Docker container definition'
+  }
+
+  for (const [file, name] of Object.entries(configs)) {
+    if (exists(file)) {
+      diagnostics.configFiles.push(file)
+    }
+  }
+
+  // Ecosystem deep-dives
+  // 1. JS/TS
+  if (exists('package.json')) {
+    diagnostics.languages.push('JavaScript')
+    try {
+      const pkg = JSON.parse(fs.readFileSync(path.join(absoluteDir, 'package.json'), 'utf-8'))
+      const deps = { ...pkg.dependencies, ...pkg.devDependencies }
+
+      if (deps['typescript']) diagnostics.languages.push('TypeScript')
+      if (deps['react']) diagnostics.frameworks.push('React')
+      if (deps['next']) diagnostics.frameworks.push('Next.js')
+      if (deps['vue']) diagnostics.frameworks.push('Vue')
+      if (deps['svelte']) diagnostics.frameworks.push('Svelte')
+      if (deps['express']) diagnostics.frameworks.push('Express')
+      if (deps['fastify']) diagnostics.frameworks.push('Fastify')
+
+      if (deps['jest']) diagnostics.testFrameworks.push('Jest')
+      if (deps['mocha']) diagnostics.testFrameworks.push('Mocha')
+      if (deps['cypress']) diagnostics.testFrameworks.push('Cypress')
+      if (deps['playwright']) diagnostics.testFrameworks.push('Playwright')
+      if (deps['vitest']) diagnostics.testFrameworks.push('Vitest')
+    } catch {}
+  }
+
+  // 2. Python
+  if (exists('requirements.txt') || exists('pyproject.toml') || exists('setup.py')) {
+    diagnostics.languages.push('Python')
+    const scanFile = exists('pyproject.toml') ? 'pyproject.toml' : (exists('requirements.txt') ? 'requirements.txt' : '')
+    if (scanFile) {
+      try {
+        const content = fs.readFileSync(path.join(absoluteDir, scanFile), 'utf-8')
+        if (content.includes('django')) diagnostics.frameworks.push('Django')
+        if (content.includes('flask')) diagnostics.frameworks.push('Flask')
+        if (content.includes('fastapi')) diagnostics.frameworks.push('FastAPI')
+        if (content.includes('pytest')) diagnostics.testFrameworks.push('Pytest')
+      } catch {}
+    }
+  }
+
+  // 3. Rust
+  if (exists('Cargo.toml')) {
+    diagnostics.languages.push('Rust')
+    try {
+      const content = fs.readFileSync(path.join(absoluteDir, 'Cargo.toml'), 'utf-8')
+      if (content.includes('tokio')) diagnostics.frameworks.push('Tokio Async')
+      if (content.includes('actix-web')) diagnostics.frameworks.push('Actix-Web')
+      if (content.includes('axum')) diagnostics.frameworks.push('Axum')
+      diagnostics.testFrameworks.push('Cargo Test')
+    } catch {}
+  }
+
+  // 4. Go
+  if (exists('go.mod')) {
+    diagnostics.languages.push('Go')
+    try {
+      const content = fs.readFileSync(path.join(absoluteDir, 'go.mod'), 'utf-8')
+      if (content.includes('gin-gonic')) diagnostics.frameworks.push('Gin')
+      if (content.includes('fiber')) diagnostics.frameworks.push('Fiber')
+      diagnostics.testFrameworks.push('Go Testing package')
+    } catch {}
+  }
+
+  // Deduplicate languages
+  diagnostics.languages = [...new Set(diagnostics.languages)]
+
+  if (diagnostics.languages.length === 0) {
+    diagnostics.languages.push('Generic (None detected)')
+  }
+
+  console.log(`Detected Languages:  ${diagnostics.languages.join(', ')}`)
+  console.log(`Detected Frameworks: ${diagnostics.frameworks.join(', ') || 'None'}`)
+  console.log(`Testing Suites:      ${diagnostics.testFrameworks.join(', ') || 'None'}`)
+  console.log(`Configuration Files: ${diagnostics.configFiles.join(', ') || 'None'}`)
+  console.log()
+
+  // Generate customized rule guidelines
+  let rulesContent = `# Project Custom Ruleset\n\n`
+  rulesContent += `> Generated by Claudient Learner on ${new Date().toISOString().split('T')[0]}\n\n`
+
+  rulesContent += `## Build Commands & Environments\n`
+  if (exists('package.json')) {
+    rulesContent += `- Build project: \`npm run build\`\n`
+    rulesContent += `- Development server: \`npm run dev\`\n`
+    if (diagnostics.testFrameworks.includes('Jest')) {
+      rulesContent += `- Run tests: \`npm test\` or \`npx jest\`\n`
+    } else if (diagnostics.testFrameworks.includes('Vitest')) {
+      rulesContent += `- Run tests: \`npx vitest run\`\n`
+    } else {
+      rulesContent += `- Run tests: \`npm test\`\n`
+    }
+  } else if (exists('Cargo.toml')) {
+    rulesContent += `- Build project: \`cargo build\`\n`
+    rulesContent += `- Check syntax: \`cargo check\`\n`
+    rulesContent += `- Run tests: \`cargo test\`\n`
+  } else if (exists('go.mod')) {
+    rulesContent += `- Build project: \`go build ./...\`\n`
+    rulesContent += `- Run tests: \`go test ./...\`\n`
+  } else if (exists('requirements.txt')) {
+    rulesContent += `- Install dependencies: \`pip install -r requirements.txt\`\n`
+    if (diagnostics.testFrameworks.includes('Pytest')) {
+      rulesContent += `- Run tests: \`pytest\`\n`
+    } else {
+      rulesContent += `- Run tests: \`python -m unittest\`\n`
+    }
+  } else {
+    rulesContent += `- No explicit build/test command detected. Run generic quality assertions.\n`
+  }
+  rulesContent += `\n`
+
+  rulesContent += `## Code Conventions\n`
+  for (const lang of diagnostics.languages) {
+    if (lang === 'TypeScript') {
+      rulesContent += `### TypeScript Guidelines\n`
+      rulesContent += `- Always prefer explicit type annotations over \`any\` or \`unknown\`.\n`
+      rulesContent += `- Interfaces should define API payloads and service contracts; types for unions/aliases.\n`
+      rulesContent += `- Use strict null checks: handle undefined/null outputs explicitly.\n\n`
+    }
+    if (lang === 'JavaScript') {
+      rulesContent += `### JavaScript Guidelines\n`
+      rulesContent += `- Use ESM (\`import\` / \`export\`) syntax unless parsing legacy CJS configurations.\n`
+      rulesContent += `- Enforce clean arrow functions for utilities, classes/named functions for architectural constructs.\n\n`
+    }
+    if (lang === 'Python') {
+      rulesContent += `### Python Guidelines\n`
+      rulesContent += `- Adhere strictly to PEP 8 syntax standards.\n`
+      rulesContent += `- Always provide type hints for function signatures (\`def func(param: str) -> None:\`).\n`
+      rulesContent += `- Use docstrings formatted as Google Style or Sphinx style documentation.\n\n`
+    }
+    if (lang === 'Rust') {
+      rulesContent += `### Rust Guidelines\n`
+      rulesContent += `- Handle all \`Result\` and \`Option\` patterns cleanly. Avoid \`unwrap()\` in production flows.\n`
+      rulesContent += `- Respect borrow checker constraints: pass references where possible, clone only when necessary.\n`
+      rulesContent += `- Format code using \`cargo fmt\` before final testing.\n\n`
+    }
+    if (lang === 'Go') {
+      rulesContent += `### Go Guidelines\n`
+      rulesContent += `- Handle errors explicitly as first-class values (\`if err != nil\`). Do not ignore error returns.\n`
+      rulesContent += `- Enforce Go standard format conventions (\`go fmt\`).\n`
+      rulesContent += `- Group imports into standard library first, then external modules.\n\n`
+    }
+  }
+
+  if (diagnostics.frameworks.includes('Next.js')) {
+    rulesContent += `### Next.js Architectural Design\n`
+    rulesContent += `- Always use Page Router or App Router conventions (App Router detected).\n`
+    rulesContent += `- Server components by default. Add \`'use client'\` directive only when state, hooks, or events are required.\n`
+    rulesContent += `- Perform server action payload validations using schemas (e.g. Zod).\n\n`
+  }
+  if (diagnostics.frameworks.includes('FastAPI')) {
+    rulesContent += `### FastAPI Guidelines\n`
+    rulesContent += `- Model validation must use Pydantic models.\n`
+    rulesContent += `- Use Depends() for dependency injections (DB sessions, authentication auth flows).\n`
+    rulesContent += `- Keep router modules small; isolate controller/business logic in a \`services/\` module.\n\n`
+  }
+
+  // Generate file paths
+  const claudeDir = path.join(absoluteDir, '.claude')
+  const rulesDir = path.join(claudeDir, 'rules')
+  
+  if (!fs.existsSync(claudeDir)) {
+    fs.mkdirSync(claudeDir)
+  }
+  if (!fs.existsSync(rulesDir)) {
+    fs.mkdirSync(rulesDir)
+  }
+
+  const customRulesPath = path.join(rulesDir, 'project-rules.md')
+  fs.writeFileSync(customRulesPath, rulesContent, 'utf-8')
+  console.log(`✅ Rule file generated: .claude/rules/project-rules.md`)
+
+  // Check if CLAUDE.md exists
+  const claudeMdPath = path.join(absoluteDir, 'CLAUDE.md')
+  const claudetTemplate = `# CLAUDE.md — Codebase Guidelines
+
+## Build Commands
+${exists('package.json') ? '- Build: `npm run build`\n- Dev server: `npm run dev`\n' : ''}${exists('Cargo.toml') ? '- Build: `cargo build`\n- Run: `cargo run`\n' : ''}${exists('go.mod') ? '- Build: `go build ./...`\n' : ''}
+## Test Commands
+${diagnostics.testFrameworks.length ? `- Run tests: \`${TEST_CMD = diagnostics.testFrameworks[0] === 'Jest' ? 'npm test' : (diagnostics.testFrameworks[0] === 'Pytest' ? 'pytest' : (diagnostics.testFrameworks[0] === 'Cargo Test' ? 'cargo test' : 'go test ./...'))}\`\n` : '- No tests configured\n'}
+## Code Style & Rules
+- Refer to custom rules located in \`.claude/rules/project-rules.md\` for complete instructions.
+- Ensure type safety and run linter commands before testing.
+`
+
+  if (!fs.existsSync(claudeMdPath)) {
+    fs.writeFileSync(claudeMdPath, claudetTemplate, 'utf-8')
+    console.log(`✅ CLAUDE.md generated at codebase root`)
+  } else {
+    console.log(`ℹ️  CLAUDE.md already exists. Customize it using .claude/rules/project-rules.md guidelines.`)
+  }
+
+  console.log(`\n🎉 Learn complete. Custom rules added to active workspace configs.`)
+}
+
+module.exports = { learnCodebase }

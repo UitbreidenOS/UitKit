@@ -1,3 +1,9 @@
+---
+name: bisect-bug
+description: "Claude Code time-travel debugger (git bisect integration): workflow guidelines, best practices, instructions, and integration examples"
+updated: 2026-06-17
+---
+
 # Time-Travel Debugger (Git Bisect Integration)
 
 ## When to activate

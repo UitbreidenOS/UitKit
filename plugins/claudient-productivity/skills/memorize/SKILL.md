@@ -1,6 +1,6 @@
 ---
-name: "Project Memory Bank"
-description: "Activate when you have successfully solved a difficult bug, established a new architectural pattern, or when the user explicitly tells you to \"remember this for the future\". Invoked via `/memori"
+name: "memorize"
+description: "Claude Code project memory bank: workflow guidelines, best practices, instructions, and integration examples"
 ---
 
 # Project Memory Bank

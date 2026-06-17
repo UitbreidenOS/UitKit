@@ -1,6 +1,6 @@
 ---
-name: "Mason Role (Boilerplate Builder)"
-description: "Activate when the user invokes `/mason`. This is Step 2 of the dual-model Handoff Workflow."
+name: "mason"
+description: "Claude Code mason role (boilerplate builder): workflow guidelines, best practices, instructions, and integration examples"
 ---
 
 # Mason Role (Boilerplate Builder)

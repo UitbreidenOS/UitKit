@@ -304,7 +304,7 @@ def replay_from_call(trace_id, call_id, modifications=None):
     }
 ```
 
-### Example: Debugging a Flaky Agent
+## Example
 
 ```python
 # Find all traces for the workflow

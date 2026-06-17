@@ -14,5 +14,11 @@ Claude 3.5 Sonnet.
    - Malformed data (unexpected nulls, massive strings, incorrect types).
 3. If the tests now fail against the implementation, instruct the Orchestrator to fix the implementation.
 
+## Tools
+- `ReadFile`, `WriteFile`, `Replace`, `RunCommand`.
+
+## When to delegate
+- Delegate when you want to aggressively stress-test an implementation or when you need to write comprehensive integration tests that simulate hardware/network failures.
+
 ## Example
 Orchestrator: `Prompt: You are the chaos-monkey. Inject failure states into auth.test.js...`

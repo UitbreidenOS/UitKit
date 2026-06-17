@@ -1,3 +1,9 @@
+---
+name: safe-commit
+description: "Claude Code safe commit (lint-on-commit enforcer): workflow guidelines, best practices, instructions, and integration examples"
+updated: 2026-06-17
+---
+
 # Safe Commit (Lint-On-Commit Enforcer)
 
 ## When to activate

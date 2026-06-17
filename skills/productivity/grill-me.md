@@ -1,3 +1,9 @@
+---
+name: grill-me
+description: "Claude Code grill me (requirement hardening): workflow guidelines, best practices, instructions, and integration examples"
+updated: 2026-06-17
+---
+
 # Grill Me (Requirement Hardening)
 
 ## When to activate

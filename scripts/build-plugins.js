@@ -7,6 +7,9 @@ const fs = require('fs')
 const path = require('path')
 
 const ROOT = path.resolve(__dirname, '..')
+const pkg = require(path.join(ROOT, 'package.json'))
+const version = pkg.version
+
 const PLUGINS_DIR = path.join(ROOT, 'plugins')
 const CLAUDE_PLUGIN_DIR = path.join(ROOT, '.claude-plugin')
 const LANG_DIRS = new Set(['fr', 'de', 'es', 'nl'])
@@ -339,7 +342,7 @@ for (const category of SKILL_CATEGORIES) {
     $schema: 'https://json.schemastore.org/claude-code-plugin-manifest.json',
     name: pluginName,
     displayName: `Claudient — ${meta.display}`,
-    version: '1.0.0',
+    version: version,
     description: meta.description,
     author: {
       name: 'tushar2704',
@@ -367,7 +370,7 @@ for (const category of SKILL_CATEGORIES) {
     source: `./plugins/${pluginName}`,
     description: meta.description,
     category: category,
-    version: '1.0.0',
+    version: version,
     author: { name: 'tushar2704' },
   })
 }
@@ -399,7 +402,7 @@ for (const category of SKILL_CATEGORIES) {
     $schema: 'https://json.schemastore.org/claude-code-plugin-manifest.json',
     name: 'claudient-commands',
     displayName: 'Claudient — Slash Commands',
-    version: '1.0.0',
+    version: version,
     description: `${cmdTotalFiles}+ slash commands across git, testing, refactor, docs, debug, devops, database, security, frontend, api, ai-engineering, and productivity.`,
     author: { name: 'tushar2704', email: 'ceo@uitbreiden.com', url: 'https://uitbreiden.com' },
     homepage: 'https://github.com/Claudient/Claudient',
@@ -415,7 +418,7 @@ for (const category of SKILL_CATEGORIES) {
     source: './plugins/claudient-commands',
     description: cmdPluginJson.description,
     category: 'commands',
-    version: '1.0.0',
+    version: version,
     author: { name: 'tushar2704' },
   })
 }
@@ -441,7 +444,7 @@ for (const category of SKILL_CATEGORIES) {
     $schema: 'https://json.schemastore.org/claude-code-plugin-manifest.json',
     name: 'claudient-personas',
     displayName: 'Claudient — Personas',
-    version: '1.0.0',
+    version: version,
     description: `10 operating personas for Claude: startup-cto, solo-founder, growth-marketer, indie-hacker, enterprise-architect, data-driven-pm, devrel-advocate, agency-operator, ai-product-builder, fractional-exec.`,
     author: { name: 'tushar2704', email: 'ceo@uitbreiden.com', url: 'https://uitbreiden.com' },
     homepage: 'https://github.com/Claudient/Claudient',
@@ -457,7 +460,7 @@ for (const category of SKILL_CATEGORIES) {
     source: './plugins/claudient-personas',
     description: pPluginJson.description,
     category: 'personas',
-    version: '1.0.0',
+    version: version,
     author: { name: 'tushar2704' },
   })
 }
@@ -489,7 +492,7 @@ const everythingJson = {
   $schema: 'https://json.schemastore.org/claude-code-plugin-manifest.json',
   name: 'claudient-everything',
   displayName: 'Claudient — Everything',
-  version: '1.0.0',
+  version: version,
   description: `Meta-bundle listing all Claudient domain plugins (377+ skills, 104 agents). Install individual plugins: ${allPluginNames.join(', ')}. See README.md for install commands.`,
   author: {
     name: 'tushar2704',
@@ -511,7 +514,7 @@ pluginSummaries.push({
   source: './plugins/claudient-everything',
   description: everythingJson.description,
   category: 'meta',
-  version: '1.0.0',
+  version: version,
   author: { name: 'tushar2704' },
 })
 

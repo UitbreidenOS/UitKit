@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "claudient-backend",
   "displayName": "Claudient — Backend & Fullstack",
-  "version": "1.0.0",
+  "version": "1.10.1",
   "description": "41 framework-specific skills covering Python (FastAPI, Django), Node.js (Next.js, NestJS, Hono, tRPC), Go, Rust, Ruby on Rails, Java Spring Boot, Elixir, Flutter, Swift, Kotlin, .NET, and PHP Laravel.",
   "author": {
     "name": "tushar2704",

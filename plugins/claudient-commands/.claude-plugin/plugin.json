@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "claudient-commands",
   "displayName": "Claudient — Slash Commands",
-  "version": "1.0.0",
+  "version": "1.10.1",
   "description": "100+ slash commands across git, testing, refactor, docs, debug, devops, database, security, frontend, api, ai-engineering, and productivity.",
   "author": {
     "name": "tushar2704",

@@ -1,6 +1,6 @@
 ---
-name: "Skill Builder Wizard"
-description: "Activate when the user says they want to create a new custom skill for their specific workflow, or when they invoke `/build-skill`."
+name: "build-skill"
+description: "Claude Code skill builder wizard: workflow guidelines, best practices, instructions, and integration examples"
 ---
 
 # Skill Builder Wizard

@@ -1,6 +1,6 @@
 ---
-name: "Self-Healing CI Pipeline"
-description: "Activate when a pull request fails a CI check (GitHub Actions, GitLab CI). Invoked via `/heal-ci`."
+name: "heal-ci"
+description: "Claude Code self-healing ci pipeline: workflow guidelines, best practices, instructions, and integration examples"
 ---
 
 # Self-Healing CI Pipeline

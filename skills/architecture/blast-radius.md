@@ -1,3 +1,9 @@
+---
+name: blast-radius
+description: "Claude Code blast radius (impact analyzer): workflow guidelines, best practices, instructions, and integration examples"
+updated: 2026-06-17
+---
+
 # Blast Radius (Impact Analyzer)
 
 ## When to activate

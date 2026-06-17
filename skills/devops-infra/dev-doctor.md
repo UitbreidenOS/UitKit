@@ -1,3 +1,9 @@
+---
+name: dev-doctor
+description: "Claude Code dev doctor: workflow guidelines, best practices, instructions, and integration examples"
+updated: 2026-06-17
+---
+
 # Dev Doctor
 
 ## When to activate

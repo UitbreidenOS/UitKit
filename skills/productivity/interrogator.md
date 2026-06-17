@@ -1,3 +1,9 @@
+---
+name: interrogator
+description: "Claude Code the interrogator (automated issue triaging): workflow guidelines, best practices, instructions, and integration examples"
+updated: 2026-06-17
+---
+
 # The Interrogator (Automated Issue Triaging)
 
 ## When to activate

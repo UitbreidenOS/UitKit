@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "claudient-marketing",
   "displayName": "Claudient — Marketing",
-  "version": "1.0.0",
+  "version": "1.10.1",
   "description": "SEO (technical, AI, programmatic), content strategy, copywriting, email sequences, paid ads, brand guidelines, CRO, social media, churn prevention, schema markup, and referral programs.",
   "author": {
     "name": "tushar2704",

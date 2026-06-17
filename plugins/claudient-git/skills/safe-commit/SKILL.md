@@ -1,6 +1,6 @@
 ---
-name: "Safe Commit (Lint-On-Commit Enforcer)"
-description: "Activate whenever the user asks you to \"commit the changes\", \"wrap this up\", or explicitly invokes `/safe-commit`."
+name: "safe-commit"
+description: "Claude Code safe commit (lint-on-commit enforcer): workflow guidelines, best practices, instructions, and integration examples"
 ---
 
 # Safe Commit (Lint-On-Commit Enforcer)

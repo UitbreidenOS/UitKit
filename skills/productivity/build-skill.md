@@ -1,3 +1,9 @@
+---
+name: build-skill
+description: "Claude Code skill builder wizard: workflow guidelines, best practices, instructions, and integration examples"
+updated: 2026-06-17
+---
+
 # Skill Builder Wizard
 
 ## When to activate

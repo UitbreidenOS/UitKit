@@ -1,3 +1,9 @@
+---
+name: save-state
+description: "Claude Code save state: workflow guidelines, best practices, instructions, and integration examples"
+updated: 2026-06-17
+---
+
 # Save State
 
 ## When to activate

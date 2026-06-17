@@ -1,6 +1,6 @@
 ---
-name: "The Archaeologist (Semantic Context Engine)"
-description: "Activate when navigating a massive, poorly documented legacy codebase where keyword searches (`grep`) fail due to bad variable naming conventions. Invoked via `/archaeologist`."
+name: "archaeologist"
+description: "Claude Code the archaeologist (semantic context engine): workflow guidelines, best practices, instructions, and integration examples"
 ---
 
 # The Archaeologist (Semantic Context Engine)

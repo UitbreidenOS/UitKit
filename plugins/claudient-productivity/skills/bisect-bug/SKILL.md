@@ -1,6 +1,6 @@
 ---
-name: "Time-Travel Debugger (Git Bisect Integration)"
-description: "Activate when the user reports a regression (\"this used to work, but now it's broken\") and they don't know which commit caused the issue. Invoked via `/bisect-bug`."
+name: "bisect-bug"
+description: "Claude Code time-travel debugger (git bisect integration): workflow guidelines, best practices, instructions, and integration examples"
 ---
 
 # Time-Travel Debugger (Git Bisect Integration)

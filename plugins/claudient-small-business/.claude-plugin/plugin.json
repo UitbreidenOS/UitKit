@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "claudient-small-business",
   "displayName": "Claudient — Small Business",
-  "version": "1.0.0",
+  "version": "1.10.1",
   "description": "47 skills for small business operations: cash flow forecasting, invoicing, campaign briefs, QuickBooks workflows, Shopify operations, SOP writing, job descriptions, and weekly business pulse.",
   "author": {
     "name": "tushar2704",

@@ -5,6 +5,8 @@ const path = require('path')
 const os = require('os')
 const { execSync } = require('child_process')
 const { recommend } = require('./recommend')
+const { learnCodebase } = require('./learn')
+const { createCheckpoint, restoreCheckpoint } = require('./checkpoint')
 
 const REPO_ROOT = path.resolve(__dirname, '..')
 const CLAUDE_DIR = path.join(os.homedir(), '.claude')
@@ -50,6 +52,9 @@ Usage:
   npx claudient score                         AI-Readiness Score (0–100) across 8 dimensions
   npx claudient share                         Export your installed skills as a shareable bundle
   npx claudient import <gist-url>            Import a shared skill bundle from GitHub Gist
+  npx claudient learn                         Scan project and generate custom rules
+  npx claudient checkpoint "<task>"          Create workspace state checkpoint
+  npx claudient restore                       Restore from latest checkpoint
   npx claudient search <query>               Search skills, agents, structures
   npx claudient add skills [category] [--lang <lang>]
   npx claudient add agents
@@ -2029,6 +2034,17 @@ switch (command) {
     importCommand(url)
     break
   }
+  case 'learn':
+    learnCodebase(positional[0] || '.')
+    break
+  case 'checkpoint': {
+    const taskSummary = positional.join(' ')
+    createCheckpoint(taskSummary)
+    break
+  }
+  case 'restore':
+    restoreCheckpoint()
+    break
   case 'help':
   case '--help':
   case '-h':

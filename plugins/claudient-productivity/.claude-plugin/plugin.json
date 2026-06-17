@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "claudient-productivity",
   "displayName": "Claudient — Productivity & Engineering",
-  "version": "1.0.0",
+  "version": "1.10.1",
   "description": "66 skills for daily engineering work: debugging, refactoring, code review, PR automation, test generation, ADR writing, security auditing, context engineering, MCP clients, and dozens more.",
   "author": {
     "name": "tushar2704",

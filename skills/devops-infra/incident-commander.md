@@ -1,3 +1,9 @@
+---
+name: incident-commander
+description: "Claude Code the incident commander (pagerduty autonomy): workflow guidelines, best practices, instructions, and integration examples"
+updated: 2026-06-17
+---
+
 # The Incident Commander (PagerDuty Autonomy)
 
 ## When to activate
