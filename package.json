@@ -84,7 +84,8 @@
     "changelog": "node scripts/generate-changelog.js --write",
     "benchmark": "node scripts/generate-benchmarks.js",
     "test": "node scripts/test-cli.js",
-    "add-descriptions": "node scripts/add-descriptions.js"
+    "add-descriptions": "node scripts/add-descriptions.js",
+    "translate": "node scripts/translate-assets.js"
   },
   "devDependencies": {
     "sharp": "^0.35.1"

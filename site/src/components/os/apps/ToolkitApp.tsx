@@ -83,6 +83,88 @@ export function ToolkitApp() {
     document.documentElement.setAttribute("data-theme", themeId);
   };
 
+  const [selectedStatusline, setSelectedStatusline] = useState("cost-watch");
+  const [simCost, setSimCost] = useState(0.42);
+  const [simAdded, setSimAdded] = useState(120);
+  const [simRemoved, setSimRemoved] = useState(40);
+  const [simCtx, setSimCtx] = useState(28);
+  const [simTokens, setSimTokens] = useState(56000);
+  const [simRateLimit, setSimRateLimit] = useState(15);
+  const [simBranch, setSimBranch] = useState("main");
+  const [simFile, setSimFile] = useState("index.ts");
+
+  const renderStatuslinePreview = () => {
+    const ctxColor = simCtx >= 80 ? "text-red-500 font-bold" : simCtx >= 50 ? "text-yellow-500" : "text-emerald-500";
+    
+    const makeBar = (pct: number, width = 10) => {
+      const filled = Math.round((pct / 100) * width);
+      const empty = width - filled;
+      return "▓".repeat(Math.max(0, filled)) + "░".repeat(Math.max(0, empty));
+    };
+
+    switch (selectedStatusline) {
+      case "minimal":
+        return (
+          <span>
+            [<span className="text-sky-400 font-medium">{simBranch}</span>] {simFile}
+          </span>
+        );
+      case "cost-watch":
+        return (
+          <span>
+            <span className="text-emerald-500 font-semibold">${simCost.toFixed(2)}</span>
+            {" | "}
+            <span className="text-cyan-400">+{simAdded}/-{simRemoved} lines</span>
+            {" | "}
+            <span className={ctxColor}>CTX {simCtx}%</span>
+          </span>
+        );
+      case "context-budget":
+        return (
+          <span>
+            CTX [<span className={ctxColor}>{makeBar(simCtx)}</span>] <span className={ctxColor}>{simCtx}%</span>
+            {" | "}
+            <span className="text-purple-400">{(simTokens / 1000).toFixed(0)}K</span>/200K tokens
+          </span>
+        );
+      case "git-focused":
+        return (
+          <span>
+            [<span className="text-sky-400 font-medium">{simBranch}</span>] <span className="text-yellow-500">●</span> 1 commit ahead | <span className="text-cyan-400">+{simAdded}/-{simRemoved}</span>
+          </span>
+        );
+      case "full":
+        return (
+          <span>
+            <span className="text-indigo-400">[sonnet]</span> claudient:<span className="text-sky-400">{simBranch}</span>
+            {" | "}
+            <span className="text-emerald-500 font-semibold">${simCost.toFixed(2)}</span>
+            {" | "}
+            <span className="text-cyan-400">+{simAdded}/-{simRemoved}</span>
+            {" | "}
+            <span className="text-slate-400">[{makeBar(simCtx)}] {simCtx}%</span>
+          </span>
+        );
+      case "rate-limit":
+        return (
+          <span>
+            5h: [<span className="text-amber-500">{makeBar(simRateLimit * 6.6, 10)}</span>] <span className="text-amber-500">{Math.round(simRateLimit * 6.6)}%</span>
+            {" | "}
+            <span className="text-indigo-400">[sonnet]</span> <span className="text-emerald-500">${simCost.toFixed(2)}</span>
+          </span>
+        );
+      case "pulse":
+        return (
+          <span>
+            Swarm: <span className="text-emerald-500 font-semibold">2 active</span> | Density: <span className="text-purple-400">84%</span> | Budget: <span className="text-emerald-500">${simCost.toFixed(2)}</span>
+          </span>
+        );
+      default:
+        return <span>Unknown statusline</span>;
+    }
+  };
+
+
   return (
     <div className="flex h-full">
       <div className="w-[170px] border-r border-hairline bg-cream/50 p-3 overflow-y-auto shrink-0">

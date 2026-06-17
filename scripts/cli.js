@@ -52,6 +52,7 @@ Usage:
   npx claudient score                         AI-Readiness Score (0–100) across 8 dimensions
   npx claudient share                         Export your installed skills as a shareable bundle
   npx claudient import <gist-url>            Import a shared skill bundle from GitHub Gist
+  npx claudient export <harness>              Export rules/guidelines to Cursor or Windsurf
   npx claudient learn                         Scan project and generate custom rules
   npx claudient checkpoint "<task>"          Create workspace state checkpoint
   npx claudient restore                       Restore from latest checkpoint
@@ -60,6 +61,7 @@ Usage:
   npx claudient add agents
   npx claudient add rules [--write]
   npx claudient add hooks
+  npx claudient add statusline <name>        Install a statusline script preset
   npx claudient add structure <name>         Copy a project structure to current dir
   npx claudient add all [--lang <lang>]
   npx claudient scaffold <name>              Print scaffold commands for a structure
@@ -324,6 +326,133 @@ See hook documentation at:
 
 Or browse online: https://github.com/Claudient/Claudient/tree/main/hooks
 `)
+}
+
+function addStatusline(name) {
+  checkClaudeInstalled()
+  const statuslinesDir = path.join(REPO_ROOT, 'statuslines')
+  const validStatuslines = ['minimal', 'cost-watch', 'context-budget', 'git-focused', 'full', 'rate-limit', 'pulse']
+
+  if (!name || !validStatuslines.includes(name)) {
+    console.error(`Error: Omit or specify a valid statusline name.
+Available statuslines:
+  ${validStatuslines.join('\n  ')}
+
+Example:
+  npx claudient add statusline cost-watch`)
+    process.exit(1)
+  }
+
+  const srcPath = path.join(statuslinesDir, `${name}.sh`)
+  if (!fs.existsSync(srcPath)) {
+    console.error(`Error: Statusline script not found at ${srcPath}`)
+    process.exit(1)
+  }
+
+  const destDir = path.join(CLAUDE_DIR, 'statuslines')
+  fs.mkdirSync(destDir, { recursive: true })
+  
+  const destPath = path.join(destDir, `${name}.sh`)
+  fs.copyFileSync(srcPath, destPath)
+  fs.chmodSync(destPath, '755')
+
+  console.log(`\nCopied statusline script to ${destPath}`)
+
+  const settingsPath = path.join(CLAUDE_DIR, 'settings.json')
+  let settings = {}
+  if (fs.existsSync(settingsPath)) {
+    try {
+      settings = JSON.parse(fs.readFileSync(settingsPath, 'utf-8'))
+    } catch (e) {
+      console.warn('Warning: Could not parse existing settings.json, creating clean config.')
+    }
+  }
+
+  settings.statusLine = {
+    command: destPath
+  }
+
+  fs.writeFileSync(settingsPath, JSON.stringify(settings, null, 2), 'utf-8')
+  console.log(`Configured settings.json to use the statusline.
+
+Verify ~/.claude/settings.json:
+  "statusLine": {
+    "command": "${destPath}"
+  }
+
+Ensure you have 'jq' installed on your system as the script uses it to format stats.
+Enjoy your custom Claude Code statusline!`)
+}
+
+function exportCommand(harness) {
+  const validHarnesses = ['cursor', 'windsurf']
+  if (!harness || !validHarnesses.includes(harness)) {
+    console.error(`Error: Specify a valid harness to export.
+Available harnesses:
+  cursor      Generates .cursorrules for Cursor IDE
+  windsurf    Generates .windsurfrules for Windsurf IDE
+
+Example:
+  npx claudient export cursor`)
+    process.exit(1)
+  }
+
+  const outputFileName = harness === 'cursor' ? '.cursorrules' : '.windsurfrules'
+  const outputPath = path.join(process.cwd(), outputFileName)
+
+  console.log(`Compiling rules for ${harness}...`)
+
+  let compiledContent = `# Claudient AI Rules for ${harness === 'cursor' ? 'Cursor' : 'Windsurf'}\n\n`
+  compiledContent += `This file configures custom instructions for the AI assistant inside this workspace.\n\n`
+
+  let rulesAdded = 0
+  const localRulesDir = path.join(process.cwd(), '.claude', 'rules')
+  const globalRulesDir = path.join(CLAUDE_DIR, 'rules')
+  const repoRulesDir = path.join(REPO_ROOT, 'rules', 'common')
+
+  let searchDirs = []
+  if (fs.existsSync(localRulesDir)) {
+    searchDirs.push({ dir: localRulesDir, label: 'Local Project Rules' })
+  }
+  if (fs.existsSync(globalRulesDir)) {
+    searchDirs.push({ dir: globalRulesDir, label: 'Global Rules' })
+  }
+  if (searchDirs.length === 0 && fs.existsSync(repoRulesDir)) {
+    searchDirs.push({ dir: repoRulesDir, label: 'Standard Repository Rules' })
+  }
+
+  for (const item of searchDirs) {
+    const files = fs.readdirSync(item.dir).filter(f => f.endsWith('.md'))
+    if (files.length > 0) {
+      compiledContent += `## ${item.label}\n\n`
+      for (const file of files) {
+        const filePath = path.join(item.dir, file)
+        const fileContent = fs.readFileSync(filePath, 'utf-8')
+        
+        let cleanContent = fileContent
+        if (fileContent.startsWith('---')) {
+          const secondYamlBoundary = fileContent.indexOf('---', 3)
+          if (secondYamlBoundary !== -1) {
+            cleanContent = fileContent.substring(secondYamlBoundary + 3).trim()
+          }
+        }
+        
+        const title = file.replace('.md', '').split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
+        compiledContent += `### ${title}\n\n${cleanContent}\n\n---\n\n`
+        rulesAdded++
+        console.log(`  + Compiled rule: ${file}`)
+      }
+    }
+  }
+
+  if (rulesAdded === 0) {
+    console.error('Error: No rules found to export. Install rules first using \`npx claudient add rules\`.')
+    process.exit(1)
+  }
+
+  fs.writeFileSync(outputPath, compiledContent, 'utf-8')
+  console.log(`\n✓ Success! Exported ${rulesAdded} rules to ${outputPath}`)
+  console.log(`AI assistants in ${harness === 'cursor' ? 'Cursor' : 'Windsurf'} will now automatically follow these guidelines.`)
 }
 
 function listStructures() {
@@ -2026,6 +2155,7 @@ switch (command) {
         else addRules()
         break
       case 'hooks': addHooks(); break
+      case 'statusline': addStatusline(arg2); break
       case 'structure': addStructure(arg2); break
       case 'stack': addStack(arg2); break
       case 'all':
@@ -2034,7 +2164,7 @@ switch (command) {
         addHooks()
         break
       case undefined:
-        console.error('Usage: claudient add <skills|agents|rules|hooks|all>')
+        console.error('Usage: claudient add <skills|agents|rules|hooks|statusline|all>')
         process.exit(1)
         break
       default:
@@ -2042,7 +2172,7 @@ switch (command) {
         if (SKILL_CATEGORIES.includes(type)) {
           addSkills(type, lang)
         } else {
-          console.error(`Unknown type: "${type}". Use: skills, agents, rules, hooks, all`)
+          console.error(`Unknown type: "${type}". Use: skills, agents, rules, hooks, statusline, all`)
           process.exit(1)
         }
     }
@@ -2098,6 +2228,11 @@ switch (command) {
   case 'audit':
     auditCommand()
     break
+  case 'export': {
+    const harness = positional[0]
+    exportCommand(harness)
+    break
+  }
   case 'score':
     scoreCommand()
     break
