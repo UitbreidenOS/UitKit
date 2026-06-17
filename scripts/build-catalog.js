@@ -197,7 +197,7 @@ function buildCatalog() {
       name: title || stackId.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase()),
       description: subtitle || `${stackId.replace(/_/g, ' ')} workspace stack`,
       category: category,
-      path: stackDir,
+      path: path.join('professional-stacks', stackDir),
       version: '1.0.0',
       author: {
         name: 'tushar2704',

@@ -93,7 +93,7 @@ jobs:
           node-version: 18
 
       - name: Check skill/agent freshness
-        run: node scripts/check-freshness.js --warn-only
+        run: node scripts/check-freshness.js
 
   stack-validation:
     name: Workspace Stacks

@@ -1,6 +1,7 @@
 ---
-name: "Spec Auditor Agent"
-description: "A speciali"
+name: spec-auditor
+description: "Spec auditor agent — performs final reviews after GitHub Spec Kit implementation to ensure alignment with specifications and prevent agent drift"
+updated: 2026-06-17
 ---
 
 # Spec Auditor Agent

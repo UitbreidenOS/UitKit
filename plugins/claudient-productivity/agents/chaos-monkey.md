@@ -1,6 +1,7 @@
 ---
-name: "Chaos Monkey Role"
-description: "Acts as an adversarial QA engineer. Injects extreme edge cases and failure modes into unit tests to ensure the implementation is resilient."
+name: chaos-monkey
+description: "Chaos monkey role — adversarial QA agent that injects extreme edge cases and failure modes into unit tests to ensure resilience"
+updated: 2026-06-17
 ---
 
 # Chaos Monkey Role

@@ -1,3 +1,9 @@
+---
+name: cost-controller
+description: "Cost controller agent — monitors session/team token spending, enforces budgets, generates cost reports, and recommends optimization"
+updated: 2026-06-17
+---
+
 # Agent: Cost Controller
 
 ## Purpose

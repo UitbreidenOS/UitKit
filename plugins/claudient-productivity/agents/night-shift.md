@@ -1,6 +1,7 @@
 ---
-name: "Night Shift (Autonomous Batch Processor)"
-description: "Executes massive, multi-file refactors or migrations unsupervised. It manages context limits and API rate limits by strictly processing files one by one from a queue, never attempting to solve the who"
+name: night-shift
+description: "Night shift agent — unsupervised batch execution runner for large multi-file migrations and updates with rate-limiting backoff"
+updated: 2026-06-17
 ---
 
 # Night Shift (Autonomous Batch Processor)

@@ -1,6 +1,7 @@
 ---
-name: "Agent: Enterprise Security Officer"
-description: "Reviews all tool calls for security compliance, flags PII exposure, detects RBAC violations, and recommends remediation. Acts as the compliance gatekeep for enterprise deployments."
+name: enterprise-security-officer
+description: "Enterprise security officer agent — reviews tool calls for security compliance, flags PII exposure, and detects RBAC violations"
+updated: 2026-06-17
 ---
 
 # Agent: Enterprise Security Officer

@@ -1,3 +1,9 @@
+---
+name: hive-orchestrator
+description: "Hive orchestrator agent — multi-agent coordinator for complex epics, decomposes high-level goals, spawns specialized subagents"
+updated: 2026-06-17
+---
+
 # Hive Orchestrator
 
 ## Purpose

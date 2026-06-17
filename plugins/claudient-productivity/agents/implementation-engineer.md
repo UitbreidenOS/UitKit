@@ -1,6 +1,7 @@
 ---
-name: "Implementation Engineer Role (Stunt Double)"
-description: "Acts as the second step in the Stunt Double TDD workflow. Writes business logic with the strict goal of making the Test Engineer's failing tests pass."
+name: implementation-engineer
+description: "Implementation engineer agent — writes minimal business logic to make the Test Engineer's failing tests pass in the Stunt Double TDD workflow"
+updated: 2026-06-17
 ---
 
 # Implementation Engineer Role (Stunt Double)

@@ -1,3 +1,9 @@
+---
+name: performance-junkie
+description: "Performance junkie agent — performance architect auditor that looks for Big-O complexity, memory leaks, and blocking I/O"
+updated: 2026-06-17
+---
+
 # Performance Junkie (Adversarial Reviewer)
 
 ## Purpose

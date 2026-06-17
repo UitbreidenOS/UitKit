@@ -1,3 +1,9 @@
+---
+name: test-engineer
+description: "Test engineer agent — writes comprehensive, failing unit and integration tests based on specs in the Stunt Double TDD workflow"
+updated: 2026-06-17
+---
+
 # Test Engineer Role (Stunt Double)
 
 ## Purpose

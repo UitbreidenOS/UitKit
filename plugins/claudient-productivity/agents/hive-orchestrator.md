@@ -1,6 +1,7 @@
 ---
-name: "Hive Orchestrator"
-description: "The primary router and multi-agent coordinator for complex, multi-domain epics. It decomposes high-level goals into sequential tasks and delegates them to speciali"
+name: hive-orchestrator
+description: "Hive orchestrator agent — multi-agent coordinator for complex epics, decomposes high-level goals, spawns specialized subagents"
+updated: 2026-06-17
 ---
 
 # Hive Orchestrator

@@ -1,3 +1,9 @@
+---
+name: codebase-sweeper
+description: "Codebase sweeper agent — scans codebase to reduce technical debt, removes unused variables/dead code, addresses resolved TODOs"
+updated: 2026-06-17
+---
+
 # Codebase Sweeper Agent
 
 ## Purpose

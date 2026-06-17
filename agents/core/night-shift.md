@@ -1,3 +1,9 @@
+---
+name: night-shift
+description: "Night shift agent — unsupervised batch execution runner for large multi-file migrations and updates with rate-limiting backoff"
+updated: 2026-06-17
+---
+
 # Night Shift (Autonomous Batch Processor)
 
 ## Purpose

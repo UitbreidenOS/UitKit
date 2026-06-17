@@ -1,6 +1,7 @@
 ---
-name: "Test Engineer Role (Stunt Double)"
-description: "Acts as the first step in the Stunt Double TDD workflow. Writes exhaustive, failing unit and integration tests based on a feature specification, WITHOUT writing the implementation."
+name: test-engineer
+description: "Test engineer agent — writes comprehensive, failing unit and integration tests based on specs in the Stunt Double TDD workflow"
+updated: 2026-06-17
 ---
 
 # Test Engineer Role (Stunt Double)

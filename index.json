@@ -1,6 +1,6 @@
 {
   "version": "1.10.1",
-  "generated": "2026-06-17T15:14:17.666Z",
+  "generated": "2026-06-17T16:05:56.989Z",
   "skills": [
     {
       "id": "ai-engineering/advanced-tool-use",
@@ -15601,7 +15601,7 @@
     {
       "id": "core/codebase-sweeper",
       "lang": "en",
-      "title": "Codebase Sweeper Agent",
+      "title": "Codebase Sweeper",
       "file": "agents/core/codebase-sweeper.md"
     },
     {
@@ -15685,7 +15685,7 @@
     {
       "id": "core/night-shift",
       "lang": "en",
-      "title": "Night Shift (Autonomous Batch Processor)",
+      "title": "Night Shift",
       "file": "agents/core/night-shift.md"
     },
     {
@@ -15859,7 +15859,7 @@
     {
       "id": "roles/chaos-monkey",
       "lang": "en",
-      "title": "Chaos Monkey Role",
+      "title": "Chaos Monkey",
       "file": "agents/roles/chaos-monkey.md"
     },
     {
@@ -15943,7 +15943,7 @@
     {
       "id": "roles/cost-controller",
       "lang": "en",
-      "title": "Agent: Cost Controller",
+      "title": "Cost Controller",
       "file": "agents/roles/cost-controller.md"
     },
     {
@@ -16963,7 +16963,7 @@
     {
       "id": "roles/enterprise-security-officer",
       "lang": "en",
-      "title": "Agent: Enterprise Security Officer",
+      "title": "Enterprise Security Officer",
       "file": "agents/roles/enterprise-security-officer.md"
     },
     {
@@ -18835,7 +18835,7 @@
     {
       "id": "roles/implementation-engineer",
       "lang": "en",
-      "title": "Implementation Engineer Role (Stunt Double)",
+      "title": "Implementation Engineer",
       "file": "agents/roles/implementation-engineer.md"
     },
     {
@@ -19921,7 +19921,7 @@
     {
       "id": "roles/performance-junkie",
       "lang": "en",
-      "title": "Performance Junkie (Adversarial Reviewer)",
+      "title": "Performance Junkie",
       "file": "agents/roles/performance-junkie.md"
     },
     {
@@ -20077,7 +20077,7 @@
     {
       "id": "roles/security-hacker",
       "lang": "en",
-      "title": "Security Hacker (Adversarial Reviewer)",
+      "title": "Security Hacker",
       "file": "agents/roles/security-hacker.md"
     },
     {
@@ -20095,7 +20095,7 @@
     {
       "id": "roles/senior-pedant",
       "lang": "en",
-      "title": "Senior Pedant (Adversarial Reviewer)",
+      "title": "Senior Pedant",
       "file": "agents/roles/senior-pedant.md"
     },
     {
@@ -20119,7 +20119,7 @@
     {
       "id": "roles/spec-auditor",
       "lang": "en",
-      "title": "Spec Auditor Agent",
+      "title": "Spec Auditor",
       "file": "agents/roles/spec-auditor.md"
     },
     {
@@ -20167,7 +20167,7 @@
     {
       "id": "roles/test-engineer",
       "lang": "en",
-      "title": "Test Engineer Role (Stunt Double)",
+      "title": "Test Engineer",
       "file": "agents/roles/test-engineer.md"
     },
     {

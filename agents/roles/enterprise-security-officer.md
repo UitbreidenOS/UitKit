@@ -1,3 +1,9 @@
+---
+name: enterprise-security-officer
+description: "Enterprise security officer agent — reviews tool calls for security compliance, flags PII exposure, and detects RBAC violations"
+updated: 2026-06-17
+---
+
 # Agent: Enterprise Security Officer
 
 ## Purpose
