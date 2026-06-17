@@ -418,7 +418,7 @@ Claudient/
 │   ├── go-cli-tool/          # Go CLI tool
 │   └── dbt-pipeline/         # dbt data pipeline
 ├── structures/               # 83 project structure templates
-├── *_stack/                  # 42 pre-wired workspace stacks (CLAUDE.md + 8 skills each)
+├── professional-stacks/      # 50 pre-wired workspace stacks (CLAUDE.md + 8 skills each)
 ├── scripts/                  # Build and utility scripts
 ├── docs/                     # ADRs and internal documentation
 └── index.json                # Full searchable index (npx claudient search)

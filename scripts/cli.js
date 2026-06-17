@@ -371,6 +371,81 @@ function listStructures() {
   console.log(`\nInstall: npx claudient add structure <name>`)
 }
 
+function addStack(nameOrPath) {
+  checkClaudeInstalled()
+  if (!nameOrPath) {
+    console.error('Usage: npx claudient add stack <stack-name-or-path>')
+    process.exit(1)
+  }
+
+  // Resolve path
+  let srcDir = nameOrPath
+  if (!fs.existsSync(srcDir)) {
+    // If it's a stack name like "ai_sdr_stack" or "ai_sdr", resolve under professional-stacks/
+    let target = nameOrPath
+    if (!target.endsWith('_stack')) {
+      target = `${target}_stack`
+    }
+    srcDir = path.join(REPO_ROOT, 'professional-stacks', target)
+  }
+
+  if (!fs.existsSync(srcDir)) {
+    console.error(`Error: Stack not found at: ${nameOrPath} or ${srcDir}`)
+    process.exit(1)
+  }
+
+  console.log(`Installing stack from: ${srcDir}\n`)
+
+  const destCwd = process.cwd()
+
+  // Helper to copy files or directory recursively to dest
+  const copyStackItem = (item, destParent) => {
+    const srcPath = path.join(srcDir, item)
+    if (!fs.existsSync(srcPath)) return
+
+    const destPath = path.join(destParent, item)
+    const stat = fs.statSync(srcPath)
+
+    if (stat.isDirectory()) {
+      fs.mkdirSync(destPath, { recursive: true })
+      for (const file of fs.readdirSync(srcPath)) {
+        copyStackItem(path.join(item, file), destParent)
+      }
+    } else {
+      fs.mkdirSync(path.dirname(destPath), { recursive: true })
+      fs.copyFileSync(srcPath, destPath)
+      console.log(`  + ${item}`)
+    }
+  }
+
+  // Files to copy to CWD
+  const cwdFiles = ['CLAUDE.md', 'README.md', 'session-log.md']
+  for (const f of cwdFiles) {
+    if (fs.existsSync(path.join(srcDir, f))) {
+      // Prompt user or warn if overwriting
+      if (fs.existsSync(path.join(destCwd, f))) {
+        console.log(`  ~ Overwriting existing ${f}`)
+      }
+      fs.copyFileSync(path.join(srcDir, f), path.join(destCwd, f))
+      console.log(`  + ${f}`)
+    }
+  }
+
+  // Folders to copy to local .claude/ directory
+  const localClaudeDir = path.join(destCwd, '.claude')
+  fs.mkdirSync(localClaudeDir, { recursive: true })
+
+  const folders = ['skills', 'commands', 'hooks', 'mcp']
+  for (const folder of folders) {
+    const srcFolder = path.join(srcDir, folder)
+    if (fs.existsSync(srcFolder) && fs.statSync(srcFolder).isDirectory()) {
+      copyStackItem(folder, localClaudeDir)
+    }
+  }
+
+  console.log(`\n✅ Stack installed successfully to: ${destCwd}`)
+}
+
 function addStructure(name) {
   const BOLD = '\x1b[1m'
   const GREEN = '\x1b[32m'
@@ -1952,6 +2027,7 @@ switch (command) {
         break
       case 'hooks': addHooks(); break
       case 'structure': addStructure(arg2); break
+      case 'stack': addStack(arg2); break
       case 'all':
         addSkills(null, lang)
         addAgents()
@@ -2045,6 +2121,15 @@ switch (command) {
   case 'restore':
     restoreCheckpoint()
     break
+  case 'install': {
+    const target = positional[0]
+    if (target && (target.endsWith('_stack') || target.endsWith('-stack'))) {
+      addStack(target)
+    } else {
+      addSkills(target || null, lang)
+    }
+    break
+  }
   case 'help':
   case '--help':
   case '-h':

@@ -9,7 +9,7 @@ const path = require('path')
 const ROOT = path.resolve(__dirname, '..')
 const MARKETPLACE_DIR = path.join(ROOT, 'marketplace')
 const CATALOG_FILE = path.join(MARKETPLACE_DIR, 'catalog.json')
-const STACKS_GLOB = path.join(ROOT, '*_stack')
+const STACKS_GLOB = path.join(ROOT, 'professional-stacks', '*_stack')
 
 // Category mapping rules from stack names
 const CATEGORY_MAP = {

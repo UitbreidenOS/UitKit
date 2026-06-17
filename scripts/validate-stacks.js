@@ -39,10 +39,11 @@ const stacks = []
 const issues = []
 
 // Find all *_stack/ directories
-for (const entry of fs.readdirSync(REPO_ROOT, { withFileTypes: true })) {
+const stacksParentDir = path.join(REPO_ROOT, 'professional-stacks')
+for (const entry of fs.readdirSync(stacksParentDir, { withFileTypes: true })) {
   if (!entry.isDirectory() || !entry.name.endsWith('_stack')) continue
 
-  const stackDir = path.join(REPO_ROOT, entry.name)
+  const stackDir = path.join(stacksParentDir, entry.name)
   const stack = {
     name: entry.name,
     complete: true,
