@@ -68,7 +68,7 @@ export function AppContent({ appId, wm }: { appId: AppId; wm: WindowManager }) {
       return <ToolkitApp />;
     case "showcase":
       return <ShowcaseApp />;
-    case "pricing":
+    case "enterprise":
       return <PricingApp />;
     case "compare":
       return <CompareApp />;

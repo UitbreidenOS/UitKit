@@ -141,11 +141,11 @@ export const APPS: Record<AppId, AppMeta> = {
     accent: "#f54e00",
     defaultSize: { width: 880, height: 600 },
   },
-  pricing: {
-    id: "pricing",
-    title: "Pricing & Enterprise",
-    icon: "💰",
-    accent: "#f54e00",
+  enterprise: {
+    id: "enterprise",
+    title: "Enterprise",
+    icon: "🏢",
+    accent: "#1d4aff",
     defaultSize: { width: 900, height: 660 },
   },
   compare: {
@@ -190,7 +190,7 @@ export const DESKTOP_ICONS: AppId[] = [
   "benchmarks",
   "community",
   "showcase",
-  "pricing",
+  "enterprise",
   "compare",
   "marketplace",
   "examples",

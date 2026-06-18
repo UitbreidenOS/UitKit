@@ -1,0 +1,1419 @@
+{
+  "nodes": [
+    {
+      "id": "examples/agent-sdk/python/agent.py",
+      "label": "agent.py",
+      "type": "file",
+      "ext": ".py",
+      "imports": [
+        "anthropic",
+        "subprocess"
+      ],
+      "classes": [],
+      "functions": [
+        "run_agent",
+        "_dispatch_tool",
+        "_pre_tool_use_hook"
+      ]
+    },
+    {
+      "id": "examples/agent-sdk/typescript/agent.ts",
+      "label": "agent.ts",
+      "type": "file",
+      "ext": ".ts",
+      "imports": [
+        "@anthropic-ai/sdk",
+        "child_process"
+      ],
+      "classes": [],
+      "functions": [
+        "preToolUseHook",
+        "dispatchTool"
+      ]
+    },
+    {
+      "id": "professional-stacks/ai_product_manager_stack/commands/ux-audit.py",
+      "label": "ux-audit.py",
+      "type": "file",
+      "ext": ".py",
+      "imports": [
+        "sys",
+        "argparse",
+        "datetime"
+      ],
+      "classes": [],
+      "functions": [
+        "format_bold",
+        "format_section",
+        "format_check",
+        "format_x",
+        "format_caution",
+        "print_header",
+        "print_dimension_comparison",
+        "print_recommendations",
+        "main"
+      ]
+    },
+    {
+      "id": "scripts/add-descriptions.js",
+      "label": "add-descriptions.js",
+      "type": "file",
+      "ext": ".js",
+      "imports": [
+        "path",
+        "child_process"
+      ],
+      "classes": [],
+      "functions": [
+        "generateDescription"
+      ]
+    },
+    {
+      "id": "scripts/add-frontmatter.js",
+      "label": "add-frontmatter.js",
+      "type": "file",
+      "ext": ".js",
+      "imports": [
+        "path"
+      ],
+      "classes": [],
+      "functions": []
+    },
+    {
+      "id": "scripts/audit-certified.js",
+      "label": "audit-certified.js",
+      "type": "file",
+      "ext": ".js",
+      "imports": [
+        "path"
+      ],
+      "classes": [],
+      "functions": [
+        "determineOverallStatus",
+        "generateAuditReport"
+      ]
+    },
+    {
+      "id": "scripts/auto-frontmatter.js",
+      "label": "auto-frontmatter.js",
+      "type": "file",
+      "ext": ".js",
+      "imports": [
+        "path"
+      ],
+      "classes": [],
+      "functions": [
+        "walkMarkdown"
+      ]
+    },
+    {
+      "id": "scripts/backfill-dates.js",
+      "label": "backfill-dates.js",
+      "type": "file",
+      "ext": ".js",
+      "imports": [
+        "path"
+      ],
+      "classes": [],
+      "functions": [
+        "walkMarkdown",
+        "processFile"
+      ]
+    },
+    {
+      "id": "scripts/build-catalog.js",
+      "label": "build-catalog.js",
+      "type": "file",
+      "ext": ".js",
+      "imports": [
+        "path"
+      ],
+      "classes": [],
+      "functions": [
+        "findAllStacks",
+        "extractMetadataFromCLAUDE",
+        "countDirItems",
+        "detectLanguages",
+        "getIconForCategory",
+        "buildCatalog"
+      ]
+    },
+    {
+      "id": "scripts/build-index.js",
+      "label": "build-index.js",
+      "type": "file",
+      "ext": ".js",
+      "imports": [
+        "path"
+      ],
+      "classes": [],
+      "functions": [
+        "getFiles",
+        "relPath",
+        "isTranslation",
+        "getLang",
+        "readFrontmatter",
+        "readTitle",
+        "en"
+      ]
+    },
+    {
+      "id": "scripts/build-plugins.js",
+      "label": "build-plugins.js",
+      "type": "file",
+      "ext": ".js",
+      "imports": [
+        "path"
+      ],
+      "classes": [],
+      "functions": [
+        "ensureDir",
+        "readFrontmatter",
+        "nameFromFilename",
+        "extractH1",
+        "extractDescription",
+        "capFrontmatter",
+        "collectSkillFiles",
+        "skillSlug"
+      ]
+    },
+    {
+      "id": "scripts/certify-stack.js",
+      "label": "certify-stack.js",
+      "type": "file",
+      "ext": ".js",
+      "imports": [
+        "path"
+      ],
+      "classes": [],
+      "functions": [
+        "calculateExpirationDate",
+        "isValidDate",
+        "generateBadge"
+      ]
+    },
+    {
+      "id": "scripts/chart.js",
+      "label": "chart.js",
+      "type": "file",
+      "ext": ".js",
+      "imports": [
+        "path"
+      ],
+      "classes": [],
+      "functions": [
+        "walk",
+        "parseFile",
+        "main"
+      ]
+    },
+    {
+      "id": "scripts/check-freshness.js",
+      "label": "check-freshness.js",
+      "type": "file",
+      "ext": ".js",
+      "imports": [
+        "path"
+      ],
+      "classes": [],
+      "functions": [
+        "walkMarkdown",
+        "parseFrontmatter",
+        "check"
+      ]
+    },
+    {
+      "id": "scripts/checkpoint.js",
+      "label": "checkpoint.js",
+      "type": "file",
+      "ext": ".js",
+      "imports": [
+        "path",
+        "child_process"
+      ],
+      "classes": [],
+      "functions": [
+        "createCheckpoint",
+        "restoreCheckpoint"
+      ]
+    },
+    {
+      "id": "scripts/cli.js",
+      "label": "cli.js",
+      "type": "file",
+      "ext": ".js",
+      "imports": [
+        "path",
+        "child_process",
+        "./recommend",
+        "./learn",
+        "./checkpoint",
+        "readline"
+      ],
+      "classes": [],
+      "functions": [
+        "usage",
+        "checkClaudeInstalled",
+        "parseArgs",
+        "copyDir",
+        "removeDir",
+        "addSkills",
+        "installCategory",
+        "copyLangFiles",
+        "addAgents",
+        "addRules",
+        "addRulesWrite",
+        "addHooks",
+        "addStatusline",
+        "exportCommand",
+        "dashboardCommand",
+        "listStructures",
+        "addStack",
+        "copyStackItem",
+        "addStructure",
+        "scaffoldStructure",
+        "removeCommand",
+        "updateCommand",
+        "loadIndex",
+        "listCommand",
+        "enOnly",
+        "listSkills",
+        "listAgents",
+        "listHooks",
+        "listRules",
+        "listAll",
+        "listSkillsFs",
+        "searchCommand",
+        "ask",
+        "getFiles",
+        "doctorCommand",
+        "consultCommand",
+        "shareCommand",
+        "importCommand",
+        "benchmarkCommand",
+        "gradeEmoji",
+        "writeReport",
+        "writeHtmlReport",
+        "auditCommand",
+        "scoreCommand",
+        "ask"
+      ]
+    },
+    {
+      "id": "scripts/council.js",
+      "label": "council.js",
+      "type": "file",
+      "ext": ".js",
+      "imports": [
+        "path",
+        "readline"
+      ],
+      "classes": [],
+      "functions": [
+        "getAvailableStacks",
+        "findStack",
+        "parseClaudeMd",
+        "processSection",
+        "makeProgressBar"
+      ]
+    },
+    {
+      "id": "scripts/dependency-graph.js",
+      "label": "dependency-graph.js",
+      "type": "file",
+      "ext": ".js",
+      "imports": [
+        "path"
+      ],
+      "classes": [],
+      "functions": [
+        "walkMarkdown",
+        "parseFrontmatter",
+        "collectNames",
+        "findReferences"
+      ]
+    },
+    {
+      "id": "scripts/generate-benchmarks.js",
+      "label": "generate-benchmarks.js",
+      "type": "file",
+      "ext": ".js",
+      "imports": [
+        "path"
+      ],
+      "classes": [],
+      "functions": [
+        "calculateStats",
+        "avgScore",
+        "main"
+      ]
+    },
+    {
+      "id": "scripts/generate-changelog.js",
+      "label": "generate-changelog.js",
+      "type": "file",
+      "ext": ".js",
+      "imports": [
+        "child_process",
+        "path"
+      ],
+      "classes": [],
+      "functions": []
+    },
+    {
+      "id": "scripts/generate-refresh-report.js",
+      "label": "generate-refresh-report.js",
+      "type": "file",
+      "ext": ".js",
+      "imports": [
+        "path"
+      ],
+      "classes": [],
+      "functions": [
+        "walkMarkdown",
+        "parseFrontmatter",
+        "estimateRefreshTime",
+        "categorizeFile",
+        "getTierAssignment",
+        "scan"
+      ]
+    },
+    {
+      "id": "scripts/learn.js",
+      "label": "learn.js",
+      "type": "file",
+      "ext": ".js",
+      "imports": [
+        "path"
+      ],
+      "classes": [],
+      "functions": [
+        "learnCodebase",
+        "exists"
+      ]
+    },
+    {
+      "id": "scripts/recommend.js",
+      "label": "recommend.js",
+      "type": "file",
+      "ext": ".js",
+      "imports": [
+        "path"
+      ],
+      "classes": [],
+      "functions": [
+        "fileExists",
+        "dirExists",
+        "globMatch",
+        "walkForPattern",
+        "hasPkgDep",
+        "hasPyDep",
+        "recommend"
+      ]
+    },
+    {
+      "id": "scripts/test-cli.js",
+      "label": "test-cli.js",
+      "type": "file",
+      "ext": ".js",
+      "imports": [
+        "child_process",
+        "path"
+      ],
+      "classes": [],
+      "functions": [
+        "run",
+        "runScript"
+      ]
+    },
+    {
+      "id": "scripts/translate-assets.js",
+      "label": "translate-assets.js",
+      "type": "file",
+      "ext": ".js",
+      "imports": [
+        "path",
+        "https"
+      ],
+      "classes": [],
+      "functions": [
+        "printUsage",
+        "parseArgs",
+        "scanForTranslations",
+        "callGemini"
+      ]
+    },
+    {
+      "id": "scripts/validate-catalog.js",
+      "label": "validate-catalog.js",
+      "type": "file",
+      "ext": ".js",
+      "imports": [
+        "path"
+      ],
+      "classes": [],
+      "functions": [
+        "loadJSON",
+        "validateEntry",
+        "validateCategories",
+        "validate"
+      ]
+    },
+    {
+      "id": "scripts/validate-frontmatter.js",
+      "label": "validate-frontmatter.js",
+      "type": "file",
+      "ext": ".js",
+      "imports": [
+        "path"
+      ],
+      "classes": [],
+      "functions": [
+        "walkMarkdown",
+        "parseFrontmatter",
+        "extractH2Sections",
+        "hasSectionMatching",
+        "report",
+        "validateSkill",
+        "validateAgent",
+        "validateHook"
+      ]
+    },
+    {
+      "id": "scripts/validate-manifests.js",
+      "label": "validate-manifests.js",
+      "type": "file",
+      "ext": ".js",
+      "imports": [
+        "path"
+      ],
+      "classes": [],
+      "functions": [
+        "report",
+        "loadJSON"
+      ]
+    },
+    {
+      "id": "scripts/validate-stacks.js",
+      "label": "validate-stacks.js",
+      "type": "file",
+      "ext": ".js",
+      "imports": [
+        "path"
+      ],
+      "classes": [],
+      "functions": [
+        "countMarkdownFiles"
+      ]
+    },
+    {
+      "id": "scripts/visualize-graph.js",
+      "label": "visualize-graph.js",
+      "type": "file",
+      "ext": ".js",
+      "imports": [],
+      "classes": [],
+      "functions": [
+        "generateHTML",
+        "getNodeColor",
+        "drag",
+        "dragstarted",
+        "dragged",
+        "dragended",
+        "highlightNode",
+        "showTooltip"
+      ]
+    },
+    {
+      "id": "site/src/components/os/AppContent.tsx",
+      "label": "AppContent.tsx",
+      "type": "file",
+      "ext": ".tsx",
+      "imports": [
+        "./types",
+        "./useWindows",
+        "./apps/HomeApp",
+        "./apps/SkillsApp",
+        "./apps/AgentsApp",
+        "./apps/McpApp",
+        "./apps/GuidesApp",
+        "./apps/StacksApp",
+        "./apps/InstallApp",
+        "./apps/AboutApp",
+        "./apps/TrashApp",
+        "./apps/CliApp",
+        "./apps/BenchmarksApp",
+        "./apps/CommunityApp",
+        "./apps/HooksApp",
+        "./apps/RulesApp",
+        "./apps/CommandsApp",
+        "./apps/WorkflowsApp",
+        "./apps/PluginsApp",
+        "./apps/PersonasApp",
+        "./apps/ToolkitApp",
+        "./apps/ShowcaseApp",
+        "./apps/PricingApp",
+        "./apps/CompareApp",
+        "./apps/SwarmApp"
+      ],
+      "classes": [],
+      "functions": [
+        "AppContent"
+      ]
+    },
+    {
+      "id": "site/src/components/os/ClaudientOS.tsx",
+      "label": "ClaudientOS.tsx",
+      "type": "file",
+      "ext": ".tsx",
+      "imports": [
+        "react",
+        "./useWindows",
+        "./Desktop",
+        "./MenuBar",
+        "./Taskbar",
+        "./Window"
+      ],
+      "classes": [],
+      "functions": []
+    },
+    {
+      "id": "site/src/components/os/Desktop.tsx",
+      "label": "Desktop.tsx",
+      "type": "file",
+      "ext": ".tsx",
+      "imports": [
+        "./apps",
+        "./useWindows"
+      ],
+      "classes": [],
+      "functions": [
+        "Desktop"
+      ]
+    },
+    {
+      "id": "site/src/components/os/MenuBar.tsx",
+      "label": "MenuBar.tsx",
+      "type": "file",
+      "ext": ".tsx",
+      "imports": [
+        "react",
+        "./useWindows",
+        "./apps"
+      ],
+      "classes": [],
+      "functions": [
+        "Clock",
+        "MenuBar",
+        "onDown"
+      ]
+    },
+    {
+      "id": "site/src/components/os/Taskbar.tsx",
+      "label": "Taskbar.tsx",
+      "type": "file",
+      "ext": ".tsx",
+      "imports": [
+        "./useWindows",
+        "./apps",
+        "../../utils/cn"
+      ],
+      "classes": [],
+      "functions": [
+        "Taskbar"
+      ]
+    },
+    {
+      "id": "site/src/components/os/Window.tsx",
+      "label": "Window.tsx",
+      "type": "file",
+      "ext": ".tsx",
+      "imports": [
+        "react",
+        "./types",
+        "./apps",
+        "./useWindows",
+        "../../utils/cn",
+        "./AppContent"
+      ],
+      "classes": [],
+      "functions": [
+        "Window",
+        "onTitleDown",
+        "onTitleMove",
+        "onTitleUp",
+        "onResizeDown",
+        "onResizeMove",
+        "onResizeUp"
+      ]
+    },
+    {
+      "id": "site/src/components/os/apps/AboutApp.tsx",
+      "label": "AboutApp.tsx",
+      "type": "file",
+      "ext": ".tsx",
+      "imports": [
+        "../useWindows",
+        "./ui"
+      ],
+      "classes": [],
+      "functions": [
+        "AboutApp"
+      ]
+    },
+    {
+      "id": "site/src/components/os/apps/AgentsApp.tsx",
+      "label": "AgentsApp.tsx",
+      "type": "file",
+      "ext": ".tsx",
+      "imports": [
+        "react",
+        "./ui"
+      ],
+      "classes": [],
+      "functions": [
+        "AgentsApp"
+      ]
+    },
+    {
+      "id": "site/src/components/os/apps/BenchmarksApp.tsx",
+      "label": "BenchmarksApp.tsx",
+      "type": "file",
+      "ext": ".tsx",
+      "imports": [
+        "react",
+        "./ui"
+      ],
+      "classes": [],
+      "functions": [
+        "gradeColor",
+        "BenchmarksApp"
+      ]
+    },
+    {
+      "id": "site/src/components/os/apps/CliApp.tsx",
+      "label": "CliApp.tsx",
+      "type": "file",
+      "ext": ".tsx",
+      "imports": [
+        "react",
+        "./ui"
+      ],
+      "classes": [],
+      "functions": [
+        "CliApp",
+        "copyOutput",
+        "copyUsage"
+      ]
+    },
+    {
+      "id": "site/src/components/os/apps/CommandsApp.tsx",
+      "label": "CommandsApp.tsx",
+      "type": "file",
+      "ext": ".tsx",
+      "imports": [
+        "react",
+        "./ui"
+      ],
+      "classes": [],
+      "functions": [
+        "CommandsApp"
+      ]
+    },
+    {
+      "id": "site/src/components/os/apps/CommunityApp.tsx",
+      "label": "CommunityApp.tsx",
+      "type": "file",
+      "ext": ".tsx",
+      "imports": [
+        "react",
+        "./ui"
+      ],
+      "classes": [],
+      "functions": [
+        "CommunityApp",
+        "copyCmd"
+      ]
+    },
+    {
+      "id": "site/src/components/os/apps/CompareApp.tsx",
+      "label": "CompareApp.tsx",
+      "type": "file",
+      "ext": ".tsx",
+      "imports": [
+        "react",
+        "./ui"
+      ],
+      "classes": [],
+      "functions": [
+        "CompareApp"
+      ]
+    },
+    {
+      "id": "site/src/components/os/apps/GuidesApp.tsx",
+      "label": "GuidesApp.tsx",
+      "type": "file",
+      "ext": ".tsx",
+      "imports": [
+        "react",
+        "./ui"
+      ],
+      "classes": [],
+      "functions": [
+        "GuidesApp"
+      ]
+    },
+    {
+      "id": "site/src/components/os/apps/HomeApp.tsx",
+      "label": "HomeApp.tsx",
+      "type": "file",
+      "ext": ".tsx",
+      "imports": [
+        "../useWindows",
+        "./ui"
+      ],
+      "classes": [],
+      "functions": [
+        "HomeApp"
+      ]
+    },
+    {
+      "id": "site/src/components/os/apps/HooksApp.tsx",
+      "label": "HooksApp.tsx",
+      "type": "file",
+      "ext": ".tsx",
+      "imports": [
+        "react",
+        "./ui"
+      ],
+      "classes": [],
+      "functions": [
+        "HooksApp"
+      ]
+    },
+    {
+      "id": "site/src/components/os/apps/InstallApp.tsx",
+      "label": "InstallApp.tsx",
+      "type": "file",
+      "ext": ".tsx",
+      "imports": [
+        "react",
+        "./ui"
+      ],
+      "classes": [],
+      "functions": [
+        "InstallApp",
+        "copy"
+      ]
+    },
+    {
+      "id": "site/src/components/os/apps/McpApp.tsx",
+      "label": "McpApp.tsx",
+      "type": "file",
+      "ext": ".tsx",
+      "imports": [
+        "react",
+        "./ui"
+      ],
+      "classes": [],
+      "functions": [
+        "McpApp",
+        "copyConfig"
+      ]
+    },
+    {
+      "id": "site/src/components/os/apps/PersonasApp.tsx",
+      "label": "PersonasApp.tsx",
+      "type": "file",
+      "ext": ".tsx",
+      "imports": [
+        "react",
+        "./ui"
+      ],
+      "classes": [],
+      "functions": [
+        "PersonasApp"
+      ]
+    },
+    {
+      "id": "site/src/components/os/apps/PluginsApp.tsx",
+      "label": "PluginsApp.tsx",
+      "type": "file",
+      "ext": ".tsx",
+      "imports": [
+        "react",
+        "./ui"
+      ],
+      "classes": [],
+      "functions": [
+        "PluginsApp"
+      ]
+    },
+    {
+      "id": "site/src/components/os/apps/PricingApp.tsx",
+      "label": "PricingApp.tsx",
+      "type": "file",
+      "ext": ".tsx",
+      "imports": [
+        "react",
+        "./ui"
+      ],
+      "classes": [],
+      "functions": [
+        "PricingApp"
+      ]
+    },
+    {
+      "id": "site/src/components/os/apps/RulesApp.tsx",
+      "label": "RulesApp.tsx",
+      "type": "file",
+      "ext": ".tsx",
+      "imports": [
+        "react",
+        "./ui"
+      ],
+      "classes": [],
+      "functions": [
+        "RulesApp"
+      ]
+    },
+    {
+      "id": "site/src/components/os/apps/ShowcaseApp.tsx",
+      "label": "ShowcaseApp.tsx",
+      "type": "file",
+      "ext": ".tsx",
+      "imports": [
+        "react",
+        "./ui"
+      ],
+      "classes": [],
+      "functions": [
+        "ShowcaseApp"
+      ]
+    },
+    {
+      "id": "site/src/components/os/apps/SkillsApp.tsx",
+      "label": "SkillsApp.tsx",
+      "type": "file",
+      "ext": ".tsx",
+      "imports": [
+        "react",
+        "./ui",
+        "../../../../../marketplace/catalog.json"
+      ],
+      "classes": [],
+      "functions": [
+        "SkillsApp"
+      ]
+    },
+    {
+      "id": "site/src/components/os/apps/StacksApp.tsx",
+      "label": "StacksApp.tsx",
+      "type": "file",
+      "ext": ".tsx",
+      "imports": [
+        "react",
+        "./ui"
+      ],
+      "classes": [],
+      "functions": [
+        "title",
+        "StacksApp",
+        "copy"
+      ]
+    },
+    {
+      "id": "site/src/components/os/apps/SwarmApp.tsx",
+      "label": "SwarmApp.tsx",
+      "type": "file",
+      "ext": ".tsx",
+      "imports": [
+        "react",
+        "./ui"
+      ],
+      "classes": [],
+      "functions": [
+        "SwarmApp",
+        "getCompiledInstructions"
+      ]
+    },
+    {
+      "id": "site/src/components/os/apps/ToolkitApp.tsx",
+      "label": "ToolkitApp.tsx",
+      "type": "file",
+      "ext": ".tsx",
+      "imports": [
+        "react",
+        "./ui"
+      ],
+      "classes": [],
+      "functions": [
+        "ToolkitApp",
+        "handleThemeSelect",
+        "renderPlaygroundLine",
+        "makeBar",
+        "renderStatuslinePreview",
+        "makeBar"
+      ]
+    },
+    {
+      "id": "site/src/components/os/apps/TrashApp.tsx",
+      "label": "TrashApp.tsx",
+      "type": "file",
+      "ext": ".tsx",
+      "imports": [],
+      "classes": [],
+      "functions": [
+        "TrashApp"
+      ]
+    },
+    {
+      "id": "site/src/components/os/apps/WorkflowsApp.tsx",
+      "label": "WorkflowsApp.tsx",
+      "type": "file",
+      "ext": ".tsx",
+      "imports": [
+        "react",
+        "./ui"
+      ],
+      "classes": [],
+      "functions": [
+        "WorkflowsApp"
+      ]
+    },
+    {
+      "id": "site/src/components/os/apps/ui.tsx",
+      "label": "ui.tsx",
+      "type": "file",
+      "ext": ".tsx",
+      "imports": [
+        "react",
+        "../../../utils/cn"
+      ],
+      "classes": [],
+      "functions": [
+        "Eyebrow",
+        "Card",
+        "YellowButton",
+        "GhostButton",
+        "Tag"
+      ]
+    },
+    {
+      "id": "site/src/components/os/apps.ts",
+      "label": "apps.ts",
+      "type": "file",
+      "ext": ".ts",
+      "imports": [
+        "./types"
+      ],
+      "classes": [],
+      "functions": []
+    },
+    {
+      "id": "site/src/components/os/types.ts",
+      "label": "types.ts",
+      "type": "file",
+      "ext": ".ts",
+      "imports": [],
+      "classes": [],
+      "functions": []
+    },
+    {
+      "id": "site/src/components/os/useWindows.ts",
+      "label": "useWindows.ts",
+      "type": "file",
+      "ext": ".ts",
+      "imports": [
+        "react",
+        "./types",
+        "./apps"
+      ],
+      "classes": [],
+      "functions": [
+        "useWindows"
+      ]
+    },
+    {
+      "id": "site/src/utils/cn.ts",
+      "label": "cn.ts",
+      "type": "file",
+      "ext": ".ts",
+      "imports": [
+        "clsx",
+        "tailwind-merge"
+      ],
+      "classes": [],
+      "functions": [
+        "cn"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "scripts/cli.js",
+      "target": "scripts/recommend.js",
+      "type": "imports"
+    },
+    {
+      "source": "scripts/cli.js",
+      "target": "scripts/learn.js",
+      "type": "imports"
+    },
+    {
+      "source": "scripts/cli.js",
+      "target": "scripts/checkpoint.js",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/AppContent.tsx",
+      "target": "site/src/components/os/types.ts",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/AppContent.tsx",
+      "target": "site/src/components/os/useWindows.ts",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/AppContent.tsx",
+      "target": "site/src/components/os/apps/HomeApp.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/AppContent.tsx",
+      "target": "site/src/components/os/apps/SkillsApp.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/AppContent.tsx",
+      "target": "site/src/components/os/apps/AgentsApp.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/AppContent.tsx",
+      "target": "site/src/components/os/apps/McpApp.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/AppContent.tsx",
+      "target": "site/src/components/os/apps/GuidesApp.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/AppContent.tsx",
+      "target": "site/src/components/os/apps/StacksApp.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/AppContent.tsx",
+      "target": "site/src/components/os/apps/InstallApp.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/AppContent.tsx",
+      "target": "site/src/components/os/apps/AboutApp.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/AppContent.tsx",
+      "target": "site/src/components/os/apps/TrashApp.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/AppContent.tsx",
+      "target": "site/src/components/os/apps/CliApp.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/AppContent.tsx",
+      "target": "site/src/components/os/apps/BenchmarksApp.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/AppContent.tsx",
+      "target": "site/src/components/os/apps/CommunityApp.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/AppContent.tsx",
+      "target": "site/src/components/os/apps/HooksApp.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/AppContent.tsx",
+      "target": "site/src/components/os/apps/RulesApp.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/AppContent.tsx",
+      "target": "site/src/components/os/apps/CommandsApp.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/AppContent.tsx",
+      "target": "site/src/components/os/apps/WorkflowsApp.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/AppContent.tsx",
+      "target": "site/src/components/os/apps/PluginsApp.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/AppContent.tsx",
+      "target": "site/src/components/os/apps/PersonasApp.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/AppContent.tsx",
+      "target": "site/src/components/os/apps/ToolkitApp.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/AppContent.tsx",
+      "target": "site/src/components/os/apps/ShowcaseApp.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/AppContent.tsx",
+      "target": "site/src/components/os/apps/PricingApp.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/AppContent.tsx",
+      "target": "site/src/components/os/apps/CompareApp.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/AppContent.tsx",
+      "target": "site/src/components/os/apps/SwarmApp.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/ClaudientOS.tsx",
+      "target": "site/src/components/os/useWindows.ts",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/ClaudientOS.tsx",
+      "target": "site/src/components/os/Desktop.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/ClaudientOS.tsx",
+      "target": "site/src/components/os/MenuBar.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/ClaudientOS.tsx",
+      "target": "site/src/components/os/Taskbar.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/ClaudientOS.tsx",
+      "target": "site/src/components/os/Window.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/Desktop.tsx",
+      "target": "site/src/components/os/apps.ts",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/Desktop.tsx",
+      "target": "site/src/components/os/useWindows.ts",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/MenuBar.tsx",
+      "target": "site/src/components/os/useWindows.ts",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/MenuBar.tsx",
+      "target": "site/src/components/os/apps.ts",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/Taskbar.tsx",
+      "target": "site/src/components/os/useWindows.ts",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/Taskbar.tsx",
+      "target": "site/src/components/os/apps.ts",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/Taskbar.tsx",
+      "target": "site/src/utils/cn.ts",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/Window.tsx",
+      "target": "site/src/components/os/types.ts",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/Window.tsx",
+      "target": "site/src/components/os/apps.ts",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/Window.tsx",
+      "target": "site/src/components/os/useWindows.ts",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/Window.tsx",
+      "target": "site/src/utils/cn.ts",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/Window.tsx",
+      "target": "site/src/components/os/AppContent.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/apps/AboutApp.tsx",
+      "target": "site/src/components/os/useWindows.ts",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/apps/AboutApp.tsx",
+      "target": "site/src/components/os/apps/ui.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/apps/AgentsApp.tsx",
+      "target": "site/src/components/os/apps/ui.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/apps/BenchmarksApp.tsx",
+      "target": "site/src/components/os/apps/ui.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/apps/CliApp.tsx",
+      "target": "site/src/components/os/apps/ui.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/apps/CommandsApp.tsx",
+      "target": "site/src/components/os/apps/ui.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/apps/CommunityApp.tsx",
+      "target": "site/src/components/os/apps/ui.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/apps/CompareApp.tsx",
+      "target": "site/src/components/os/apps/ui.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/apps/GuidesApp.tsx",
+      "target": "site/src/components/os/apps/ui.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/apps/HomeApp.tsx",
+      "target": "site/src/components/os/useWindows.ts",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/apps/HomeApp.tsx",
+      "target": "site/src/components/os/apps/ui.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/apps/HooksApp.tsx",
+      "target": "site/src/components/os/apps/ui.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/apps/InstallApp.tsx",
+      "target": "site/src/components/os/apps/ui.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/apps/McpApp.tsx",
+      "target": "site/src/components/os/apps/ui.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/apps/PersonasApp.tsx",
+      "target": "site/src/components/os/apps/ui.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/apps/PluginsApp.tsx",
+      "target": "site/src/components/os/apps/ui.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/apps/PricingApp.tsx",
+      "target": "site/src/components/os/apps/ui.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/apps/RulesApp.tsx",
+      "target": "site/src/components/os/apps/ui.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/apps/ShowcaseApp.tsx",
+      "target": "site/src/components/os/apps/ui.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/apps/SkillsApp.tsx",
+      "target": "site/src/components/os/apps/ui.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/apps/StacksApp.tsx",
+      "target": "site/src/components/os/apps/ui.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/apps/SwarmApp.tsx",
+      "target": "site/src/components/os/apps/ui.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/apps/ToolkitApp.tsx",
+      "target": "site/src/components/os/apps/ui.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/apps/WorkflowsApp.tsx",
+      "target": "site/src/components/os/apps/ui.tsx",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/apps/ui.tsx",
+      "target": "site/src/utils/cn.ts",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/apps.ts",
+      "target": "site/src/components/os/types.ts",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/useWindows.ts",
+      "target": "site/src/components/os/types.ts",
+      "type": "imports"
+    },
+    {
+      "source": "site/src/components/os/useWindows.ts",
+      "target": "site/src/components/os/apps.ts",
+      "type": "imports"
+    }
+  ]
+}

@@ -68,10 +68,10 @@ export function MenuBar({ wm }: { wm: WindowManager }) {
           Uitbreiden
         </a>
         <button
-          onClick={() => wm.open("pricing")}
-          className="hidden sm:flex items-center gap-1.5 text-[12.5px] font-semibold text-brand-purple hover:underline hover:bg-white/70 rounded-md px-2 py-1 transition"
+          onClick={() => wm.open("enterprise")}
+          className="hidden sm:flex items-center gap-1.5 text-[12.5px] font-semibold text-ink hover:text-body hover:bg-white/70 rounded-md px-2 py-1 transition"
         >
-          💰 Pricing
+          🏢 Enterprise
         </button>
         <button
           onClick={() => wm.open("compare")}

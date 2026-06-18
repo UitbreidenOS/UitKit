@@ -19,7 +19,7 @@ export type AppId =
   | "personas"
   | "toolkit"
   | "showcase"
-  | "pricing"
+  | "enterprise"
   | "compare"
   | "marketplace"
   | "examples"

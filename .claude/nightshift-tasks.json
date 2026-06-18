@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Verify frontmatter formatting",
+    "command": "node scripts/validate-frontmatter.js",
+    "required": false
+  },
+  {
+    "name": "Validate catalog structures",
+    "command": "node scripts/validate-catalog.js",
+    "required": false
+  },
+  {
+    "name": "Build project index",
+    "command": "node scripts/build-index.js",
+    "required": false
+  },
+  {
+    "name": "Build catalog references",
+    "command": "node scripts/build-catalog.js",
+    "required": false
+  }
+]

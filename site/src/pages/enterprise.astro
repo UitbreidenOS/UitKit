@@ -2,9 +2,9 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Pricing — Claudient" description="Claudient pricing: free open-source for everyone, paid tiers for teams and enterprises. 400+ skills, 190+ agents, compliance stacks, and dedicated support.">
+<Layout title="Enterprise — Claudient" description="Claudient Enterprise: pricing tiers, SOC2/GDPR/EU-AI-Act compliance frameworks, governance features, and settings templates. 447 skills, 206 agents, dedicated support.">
 
-<!-- Override body overflow for scrollable pricing page -->
+<!-- Override body overflow for scrollable enterprise page -->
 <style is:global>
   body { overflow: auto !important; }
   html { overflow: auto !important; }
@@ -16,7 +16,7 @@ import Layout from '../layouts/Layout.astro';
     <span class="size-7 grid place-items-center rounded-md bg-gradient-to-br from-brand-orange to-brand-red text-white text-[12px] font-extrabold">C</span>
     <span class="text-[15px] font-extrabold text-ink">Claudient</span>
   </a>
-  <span class="text-[13px] font-semibold text-mute ml-2">Pricing</span>
+  <span class="text-[13px] font-semibold text-mute ml-2">Enterprise</span>
   <div class="ml-auto flex items-center gap-4">
     <a href="/" class="text-[13px] font-semibold text-body hover:text-ink transition">Home</a>
     <a href="https://github.com/Claudient/Claudient" target="_blank" rel="noopener noreferrer" class="text-[13px] font-semibold text-body hover:text-ink transition">GitHub</a>
@@ -28,7 +28,7 @@ import Layout from '../layouts/Layout.astro';
 
 <!-- Hero -->
 <section class="text-center px-6 pt-16 pb-10 bg-canvas">
-  <p class="text-[12px] font-bold uppercase tracking-widest text-brand-purple mb-3">Plans & Pricing</p>
+  <p class="text-[12px] font-bold uppercase tracking-widest text-brand-purple mb-3">Enterprise Plans & Pricing</p>
   <h1 class="text-4xl sm:text-5xl font-extrabold text-ink max-w-2xl mx-auto leading-tight">
     Open source is always free.
     <br class="hidden sm:block" />
@@ -45,7 +45,7 @@ import Layout from '../layouts/Layout.astro';
   </div>
 </section>
 
-<!-- Pricing Cards -->
+<!-- Enterprise Pricing Cards -->
 <section class="px-6 py-12 bg-canvas">
   <div class="max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
 
@@ -350,6 +350,6 @@ import Layout from '../layouts/Layout.astro';
 </section>
 
 <!-- Schema.org JSON-LD -->
-<script type="application/ld+json" set:html={`{"@context":"https://schema.org","@type":"WebPage","name":"Pricing","headline":"Pricing — Claudient | Open Source Claude Code Knowledge Base","description":"Claudient pricing: free open-source for everyone, paid tiers for teams and enterprises. 400+ skills, 190+ agents, compliance stacks, and dedicated support.","url":"https://claudient.ai/pricing","isPartOf":{"@type":"WebSite","name":"Claudient","url":"https://claudient.ai"}}`} />
+<script type="application/ld+json" set:html={`{"@context":"https://schema.org","@type":"WebPage","name":"Enterprise","headline":"Enterprise — Claudient | Open Source Claude Code Knowledge Base","description":"Claudient Enterprise: pricing tiers, SOC2/GDPR/EU-AI-Act compliance frameworks, governance features, and settings templates. 447 skills, 206 agents, dedicated support.","url":"https://claudient.ai/enterprise","isPartOf":{"@type":"WebSite","name":"Claudient","url":"https://claudient.ai"}}`} />
 
 </Layout>
