@@ -66,6 +66,9 @@ Usage:
   npx claudient jit <file>                    Compile JIT import dependencies context payload
   npx claudient commit -m "<msg>"             Verify validations and tests before git commit
   npx claudient permissions [list|add|remove] Edit and track model tool auto-permissions
+  npx claudient handoff [--task "<task>"]    Orchestrate Architect/Mason design-to-code loop
+  npx claudient tdd [--file <f>] [--test <t>] Automate Red-Green-Refactor test loops
+  npx claudient enforce                       Audit changes against SPEC.md guidelines
   npx claudient learn                         Scan project and generate custom rules
   npx claudient checkpoint "<task>"          Create workspace state checkpoint
   npx claudient restore                       Restore from latest checkpoint
@@ -2633,6 +2636,24 @@ switch (command) {
   case 'permissions': {
     const { spawnSync } = require('child_process')
     const res = spawnSync('node', [path.join(__dirname, 'permissions.js'), ...process.argv.slice(3)], { stdio: 'inherit' })
+    if (res.status !== 0) process.exit(res.status || 1)
+    break
+  }
+  case 'handoff': {
+    const { spawnSync } = require('child_process')
+    const res = spawnSync('node', [path.join(__dirname, 'handoff.js'), ...process.argv.slice(3)], { stdio: 'inherit' })
+    if (res.status !== 0) process.exit(res.status || 1)
+    break
+  }
+  case 'tdd': {
+    const { spawnSync } = require('child_process')
+    const res = spawnSync('node', [path.join(__dirname, 'tdd.js'), ...process.argv.slice(3)], { stdio: 'inherit' })
+    if (res.status !== 0) process.exit(res.status || 1)
+    break
+  }
+  case 'enforce': {
+    const { spawnSync } = require('child_process')
+    const res = spawnSync('node', [path.join(__dirname, 'enforce.js'), ...process.argv.slice(3)], { stdio: 'inherit' })
     if (res.status !== 0) process.exit(res.status || 1)
     break
   }

@@ -187,6 +187,9 @@ try {
 }
 
 run('permissions list rules', 'permissions list', { expectContains: 'Allowed Permission Rules' });
+run('handoff design build loop', 'handoff --task "test task"', { expectContains: 'SUCCESS! Handoff loop completed' });
+run('tdd stunt double runner', 'tdd', { expectContains: 'TDD Loop completed successfully' });
+run('enforce spec first compliance', 'enforce', { expectContains: 'SPEC-FIRST COMPLIANCE ENFORCER' });
 
 // Summary
 console.log(`\nResults: ${passed} passed, ${failed} failed`);
