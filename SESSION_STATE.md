@@ -22,7 +22,11 @@
   - Implemented JIT Context Injector (`npx claudient jit <file>`) to build dependency signatures.
   - Implemented Safe Commit (`npx claudient commit`) checking validate tests before committing.
   - Implemented Permission Editor (`npx claudient permissions`) to list, allow, deny, and revoke Claude model permissions.
+- **Phase 22 Complete:**
+  - Implemented Architect / Mason Handoff Loop (`npx claudient handoff`) coordinating design-to-code iteration.
+  - Implemented Stunt Double TDD Runner (`npx claudient tdd`) automating Red-Green-Refactor verification cycles.
+  - Implemented Spec-First Enforcer Hook (`npx claudient enforce`) checking active diff additions against spec constraints.
 - **Repository Author:** tushar2704 <tushar.inseec@gmail.com>
 
 ## Next Steps
-1. Align with the user on the requirements and architecture for Phase 22.
+1. Align with the user on the requirements and architecture for Phase 23.
