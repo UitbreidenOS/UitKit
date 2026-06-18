@@ -17,7 +17,12 @@
   - Implemented Autonomous Git Bisect Debugger (`npx claudient bisect`) automatically isolating test regression commits.
   - Implemented AST-Based Outage Predictor (`npx claudient oracle`) mapping downstream blast radius and concurrency lockups.
   - Implemented Night Shift Autonomous Batch Refactoring Daemon (`npx claudient nightshift`) with rate-limit retries.
+- **Phase 21 Complete:**
+  - Implemented Caveman Mode (`npx claudient caveman`) rules enforcer to save API tokens.
+  - Implemented JIT Context Injector (`npx claudient jit <file>`) to build dependency signatures.
+  - Implemented Safe Commit (`npx claudient commit`) checking validate tests before committing.
+  - Implemented Permission Editor (`npx claudient permissions`) to list, allow, deny, and revoke Claude model permissions.
 - **Repository Author:** tushar2704 <tushar.inseec@gmail.com>
 
 ## Next Steps
-1. Align with the user on the requirements and architecture for Phase 21.
+1. Align with the user on the requirements and architecture for Phase 22.
