@@ -1,6 +1,6 @@
 {
   "version": "1.10.1",
-  "generated": "2026-06-19T08:49:13.477Z",
+  "generated": "2026-06-19T08:50:04.243Z",
   "skills": [
     {
       "id": "ai-engineering/advanced-tool-use",
@@ -10187,6 +10187,14 @@
       "file": "skills/productivity/de/process-mapper.md"
     },
     {
+      "id": "productivity/prune-context",
+      "category": "productivity",
+      "lang": "de",
+      "title": "Prune Context",
+      "description": "Claude Code Kontext-Pruner: Slash-Befehl zur Zusammenfassung der Sitzung und Zurücksetzung des Token-Overheads",
+      "file": "skills/productivity/de/prune-context.md"
+    },
+    {
       "id": "productivity/readme-generator",
       "category": "productivity",
       "lang": "de",
@@ -10779,6 +10787,14 @@
       "file": "skills/productivity/es/process-mapper.md"
     },
     {
+      "id": "productivity/prune-context",
+      "category": "productivity",
+      "lang": "es",
+      "title": "Prune Context",
+      "description": "Depurador de contexto de Claude Code: comando slash para resumir la sesión y restablecer la acumulación de tokens",
+      "file": "skills/productivity/es/prune-context.md"
+    },
+    {
       "id": "productivity/readme-generator",
       "category": "productivity",
       "lang": "es",
@@ -11337,6 +11353,14 @@
       "title": "Process Mapper",
       "description": "Cartographier et documenter les processus métier : organigramme, RACI, identification des goulots d'étranglement, recommandations d'amélioration",
       "file": "skills/productivity/fr/process-mapper.md"
+    },
+    {
+      "id": "productivity/prune-context",
+      "category": "productivity",
+      "lang": "fr",
+      "title": "Prune Context",
+      "description": "Nettoyeur de contexte Claude Code : commande slash pour résumer la session et réinitialiser l'encombrement des jetons",
+      "file": "skills/productivity/fr/prune-context.md"
     },
     {
       "id": "productivity/readme-generator",
@@ -12011,6 +12035,14 @@
       "file": "skills/productivity/nl/process-mapper.md"
     },
     {
+      "id": "productivity/prune-context",
+      "category": "productivity",
+      "lang": "nl",
+      "title": "Prune Context",
+      "description": "Claude Code context opschoner: slash-opdracht om sessie samen te vatten en token-overtolligheid te resetten",
+      "file": "skills/productivity/nl/prune-context.md"
+    },
+    {
       "id": "productivity/readme-generator",
       "category": "productivity",
       "lang": "nl",
@@ -12233,6 +12265,14 @@
       "title": "Process Mapper",
       "description": "Map and document business processes: flowchart, RACI, bottleneck identification, improvement recommendations",
       "file": "skills/productivity/process-mapper.md"
+    },
+    {
+      "id": "productivity/prune-context",
+      "category": "productivity",
+      "lang": "en",
+      "title": "Prune Context",
+      "description": "Claude Code context pruner: slash command to summarize session and reset token bloat",
+      "file": "skills/productivity/prune-context.md"
     },
     {
       "id": "productivity/readme-generator",
@@ -28930,7 +28970,7 @@
     }
   ],
   "summary": {
-    "skills": 435,
+    "skills": 436,
     "agents": 206,
     "hooks": 56,
     "rules": 34,
