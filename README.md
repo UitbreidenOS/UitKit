@@ -1,6 +1,6 @@
 # Claude Code Skills, Agents & Plugins — Claudient
 
-**Claudient** is the largest open-source knowledge base for **Claude Code** — Anthropic's AI coding CLI. It ships 400+ domain skills, 182+ specialist agents, 42 pre-wired workspace stacks, 41 MCP configs, 100+ slash commands, hooks, and workflows, all installable in 30 seconds. No stack re-explaining. Claude already knows your domain.
+**Claudient** is the definitive open-source **Claude Code CLI** knowledge base and ecosystem. Built for **Anthropic's Claude 3.7 Sonnet** and the **Model Context Protocol (MCP)**, Claudient supercharges your terminal with autonomous **AI coding agents**, robust **subagents**, and production-grade **AI developer workflows**. It ships 400+ domain skills, 182+ specialist agents, 42 pre-wired workspace stacks, 41 MCP configs, 100+ slash commands, hooks, and workflows, all installable in 30 seconds. No stack re-explaining. Claude already knows your domain.
 
 **New to Claude Code?** Claude Code is Anthropic's official command-line AI assistant for software development — it reads your codebase, runs commands, edits files, and completes tasks autonomously inside your terminal or IDE. Claudient is the open-source community library that extends it with expert-level skills across every stack and domain.
 
