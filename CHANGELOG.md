@@ -6,6 +6,7 @@ Generated: 2026-06-13 | 183 commits
 
 ## Features
 
+- feat: implement 3 missing features (matrix-theme, svg-map-inspector, swarm-sandbox) with translations — 2026-06-22
 - add workspace stack validator + CI job (`b582e11`) — 2026-06-13
 - add skill/agent dependency graph generator (`a140c60`) — 2026-06-13
 - add skill freshness tracking with updated dates (`d40b902`) — 2026-06-13

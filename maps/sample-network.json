@@ -1,0 +1,114 @@
+{
+  "type": "network",
+  "title": "Sample Network Map",
+  "description": "A sample network topology visualization",
+  "width": 800,
+  "height": 600,
+  "viewBox": "0 0 800 600",
+  "metadata": {
+    "created": "2026-06-22",
+    "version": "1.0",
+    "author": "Claudient"
+  },
+  "elements": [
+    {
+      "type": "rect",
+      "x": 50,
+      "y": 50,
+      "width": 150,
+      "height": 100,
+      "fill": "#3b82f6",
+      "stroke": "#1e40af",
+      "stroke-width": 2,
+      "layer": "nodes",
+      "label": "Server A"
+    },
+    {
+      "type": "rect",
+      "x": 250,
+      "y": 50,
+      "width": 150,
+      "height": 100,
+      "fill": "#10b981",
+      "stroke": "#047857",
+      "stroke-width": 2,
+      "layer": "nodes",
+      "label": "Server B"
+    },
+    {
+      "type": "rect",
+      "x": 450,
+      "y": 50,
+      "width": 150,
+      "height": 100,
+      "fill": "#f59e0b",
+      "stroke": "#d97706",
+      "stroke-width": 2,
+      "layer": "nodes",
+      "label": "Server C"
+    },
+    {
+      "type": "circle",
+      "cx": 150,
+      "cy": 300,
+      "r": 40,
+      "fill": "#ef4444",
+      "stroke": "#991b1b",
+      "stroke-width": 2,
+      "layer": "nodes",
+      "label": "Database"
+    },
+    {
+      "type": "circle",
+      "cx": 650,
+      "cy": 300,
+      "r": 40,
+      "fill": "#8b5cf6",
+      "stroke": "#5b21b6",
+      "stroke-width": 2,
+      "layer": "nodes",
+      "label": "Cache"
+    },
+    {
+      "type": "line",
+      "x1": 125,
+      "y1": 150,
+      "x2": 150,
+      "y2": 260,
+      "stroke": "#6b7280",
+      "stroke-width": 2,
+      "layer": "connections",
+      "label": "Link A-DB"
+    },
+    {
+      "type": "line",
+      "x1": 325,
+      "y1": 150,
+      "x2": 400,
+      "y2": 280,
+      "stroke": "#6b7280",
+      "stroke-width": 2,
+      "layer": "connections",
+      "label": "Link B-DB"
+    },
+    {
+      "type": "line",
+      "x1": 525,
+      "y1": 150,
+      "x2": 650,
+      "y2": 260,
+      "stroke": "#6b7280",
+      "stroke-width": 2,
+      "layer": "connections",
+      "label": "Link C-Cache"
+    },
+    {
+      "type": "text",
+      "x": 400,
+      "y": 500,
+      "fill": "#1f2937",
+      "layer": "labels",
+      "content": "Network Topology Diagram"
+    }
+  ]
+}

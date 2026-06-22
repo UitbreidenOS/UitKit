@@ -1,0 +1,187 @@
+================================================================================
+CLAUDIENT SVG INSPECTOR - QUICK REFERENCE
+================================================================================
+
+COMMANDS
+--------
+inspect <file>              - Analyze map metadata & structure
+render <file>               - Convert JSON to SVG
+export <file>               - Export to SVG or HTML
+serve <file>                - Start dev server (port 8080)
+validate <file>             - Check map validity
+list                        - List available maps
+help                        - Show this help
+
+OPTIONS
+-------
+--port <num>                - Server port (serve)
+--zoom <factor>             - Zoom multiplier (1.0)
+--output <path>             - Output file
+--format <svg|html>         - Output format
+--width <px>                - Canvas width (800)
+--height <px>               - Canvas height (600)
+--theme <light|dark>        - Color theme
+--show-grid                 - Display grid
+--interactive               - Interactive mode
+--export-html               - Wrap in HTML viewer
+
+EXAMPLES
+--------
+
+# Inspect map structure
+$ claudient svg-inspector inspect maps/network.json
+
+# Convert JSON to SVG
+$ claudient svg-inspector render map.json --zoom 2
+
+# Export with interactive viewer
+$ claudient svg-inspector export map.json --export-html
+
+# Start dev server (auto-opens browser)
+$ claudient svg-inspector serve map.json --port 3000
+
+# Validate map structure
+$ claudient svg-inspector validate map.json
+
+# List all maps
+$ claudient svg-inspector list
+
+JSON MAP FORMAT
+---------------
+
+{
+  "type": "network|layout|flowchart",
+  "width": 800,
+  "height": 600,
+  "elements": [
+    {
+      "type": "rect|circle|line|text|polygon|path",
+      "x": 50,
+      "y": 50,
+      "width": 150,
+      "height": 100,
+      "fill": "#3b82f6",
+      "stroke": "#1e40af",
+      "stroke-width": 2,
+      "layer": "nodes",
+      "label": "Node name"
+    }
+  ]
+}
+
+ELEMENT TYPES
+-------------
+
+rect:
+  - x, y, width, height
+  - fill, stroke, stroke-width, opacity
+
+circle:
+  - cx, cy, r (radius)
+  - fill, stroke, stroke-width, opacity
+
+line:
+  - x1, y1, x2, y2
+  - stroke, stroke-width, opacity
+
+text:
+  - x, y
+  - content
+  - fill, opacity
+
+polygon:
+  - points (comma-separated coordinates)
+  - fill, stroke, stroke-width, opacity
+
+path:
+  - d (SVG path data)
+  - fill, stroke, stroke-width, opacity
+
+VIEWER CONTROLS
+---------------
+
+Pan:        Drag mouse
+Zoom in:    Scroll up / "+" button
+Zoom out:   Scroll down / "-" button
+Reset:      "Reset" button
+Download:   "Download" button
+Info:       Hover over elements
+
+API ENDPOINTS (serve mode)
+--------------------------
+
+GET /                       - HTML viewer
+GET /map.svg                - SVG file
+GET /api/meta               - Metadata JSON
+GET /api/data               - Map data JSON
+GET /styles.css             - Styles
+GET /viewer.js              - Viewer script
+
+THEMES
+------
+
+Light (default):
+  - Background: white
+  - Text: black
+  - Grid: #e0e0e0
+
+Dark:
+  - Background: #1e1e1e
+  - Text: white
+  - Grid: #333333
+
+VALIDATION
+----------
+
+Checks for:
+- Required fields (type, width, height)
+- Valid element structure
+- Element-specific properties
+- Layer definitions
+- ViewBox configuration
+
+Exit code 0 = valid, 1 = errors
+
+WORKFLOW
+--------
+
+1. Create map.json
+2. Validate: claudient svg-inspector validate map.json
+3. Inspect: claudient svg-inspector inspect map.json
+4. Render: claudient svg-inspector render map.json
+5. Dev: claudient svg-inspector serve map.json
+6. Export: claudient svg-inspector export map.json --export-html
+
+TROUBLESHOOTING
+---------------
+
+Port in use?
+  → Use --port 3001 (or any other)
+
+Invalid JSON?
+  → Run validate command to see errors
+
+Colors not showing?
+  → Use valid hex: #3b82f6 or #fff
+
+Large map slow?
+  → Reduce elements, simplify paths
+
+Can't open browser?
+  → Manually open http://localhost:8080
+
+FILES
+-----
+
+Script:     /scripts/claudient-svg-inspector.js
+Maps dir:   /maps/
+Guide:      /scripts/SVG_INSPECTOR_GUIDE.md
+
+SEE ALSO
+--------
+
+claudient map           - Codebase dependency graphs
+claudient chart         - Statistical visualizations
+claudient list          - List available tools
+
+================================================================================

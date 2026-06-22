@@ -1,7 +1,7 @@
 # Codebase Sweeper Quality Report
 
-Generated: 2026-06-20T12:34:29.355Z | Target Workspace: `/Users/tushar/Desktop/Claudient`
-Total issues detected: **19**
+Generated: 2026-06-22T03:55:48.336Z | Target Workspace: `/Users/tushar/Desktop/Claudient`
+Total issues detected: **27**
 
 ### 📁 `scripts/audit-certified.js`
 #### Unused Variables
@@ -18,6 +18,17 @@ Total issues detected: **19**
 ### 📁 `scripts/chaos.js`
 #### Unused Variables
 - Line 19: `DIM`
+
+### 📁 `scripts/claudient-matrix.js`
+#### Unused Variables
+- Line 7: `CWD`
+
+### 📁 `scripts/claudient-swarm-sandbox.js`
+#### Unused Imports
+- Line 19: `execSync`
+- Line 19: `spawnSync`
+#### Unused Variables
+- Line 27: `MAGENTA`
 
 ### 📁 `scripts/council.js`
 #### Unused Variables
@@ -56,6 +67,16 @@ Total issues detected: **19**
 ### 📁 `scripts/prophet.js`
 #### Unused Variables
 - Line 19: `DIM`
+
+### 📁 `scripts/svg-map-render.js`
+#### Unused Variables
+- Line 16: `MAGENTA`
+- Line 123: `PADDING`
+- Line 267: `oldScale`
+
+### 📁 `scripts/swarm-sandbox-init.js`
+#### Unused Variables
+- Line 37: `MAGENTA`
 
 ### 📁 `scripts/sweep.js`
 #### Unused Variables

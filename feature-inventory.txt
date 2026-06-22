@@ -1,0 +1,61 @@
+claudeignore | cost | .claudeignore Templates | PRESENT
+save-state | cost | Context Compactor | PRESENT
+caveman | cost | Caveman Mode | PRESENT
+prune-context | cost | Context Pruner | PRESENT
+shadow-compiler | resilience | Shadow Compiler | PRESENT
+safe-commit | resilience | Safe Commit Hook | PRESENT
+spec-enforcer | resilience | Spec-First Enforcer | PRESENT
+chaos-monkey | resilience | Chaos Monkey | PRESENT
+repair-agent | resilience | Self-Healing CLI Repair Agent | PRESENT
+fail-fast | resilience | Fail-Fast Enforcer | PRESENT
+measure-twice | resilience | Measure Twice / Plan-First Hook | PRESENT
+grill-me | enterprise | Grill Me | PRESENT
+stunt-double | enterprise | Stunt Double | PRESENT
+architect-mason | enterprise | Architect / Mason | PRESENT
+adr | enterprise | ADR Generator | PRESENT
+blast-radius | enterprise | Blast Radius Analyzer | PRESENT
+legacy-strangler | enterprise | Legacy Strangler | PRESENT
+council | enterprise | Claude Council Swarm Launcher | PRESENT
+swarm-sandbox | enterprise | Swarm Sandbox Simulator | PRESENT
+night-shift | swarms | Night Shift | PRESENT
+hive-swarm | swarms | Hive Orchestrator | PRESENT
+tribunal | swarms | Tribunal Review | PRESENT
+sweeper | swarms | Codebase Sweeper | PRESENT
+bisect-bug | swarms | Time-Travel Debugger | PRESENT
+auto-tdd | context | Auto-TDD Hook | PRESENT
+dev-doctor | context | Dev Doctor | PRESENT
+jit-context | context | JIT Context Injector | PRESENT
+constitution | zero-trust | Constitution Guardrail | PRESENT
+auditor | zero-trust | The Auditor | PRESENT
+shadow-pr | zero-trust | Ghost in the Machine | PRESENT
+interrogator | zero-trust | The Interrogator | PRESENT
+archaeologist | zero-trust | The Archaeologist | PRESENT
+compliance-agent | zero-trust | Specify Wizard | PRESENT
+telemetry-optin | zero-trust | Privacy-First Telemetry Opt-in | PRESENT
+audit-html | zero-trust | Executive HTML Compliance Audit | PRESENT
+permissions-editor | zero-trust | Model Permission Editor | PRESENT
+sentinel | zero-trust | CLAUDE.md Sentinel | PRESENT
+historian | enterprise-intel | The Historian | PRESENT
+sonar | enterprise-intel | Sonar Codebase Cartographer | PRESENT
+prophet | enterprise-intel | The Prophet | PRESENT
+invariant | enterprise-intel | Invariant Discovery | PRESENT
+oracle | enterprise-intel | The Oracle | PRESENT
+graph-context | enterprise-intel | Graph-Augmented Context | PRESENT
+recursive-reflection | enterprise-intel | Recursive Reflection | PRESENT
+svg-map-inspector | enterprise-intel | SVG Interactive Map Inspector | PRESENT
+architect-federation | multi-agent | Architect / Mason Federation | PRESENT
+cross-talk | multi-agent | Cross-Talk | PRESENT
+dba-box | multi-agent | DBA-in-a-Box | PRESENT
+incident-cmdr | multi-agent | Incident Commander | PRESENT
+self-healing-ci | multi-agent | Self-Healing CI Pipeline | PRESENT
+mcp-discovery | multi-agent | MCP Dynamic Discovery | PRESENT
+vibe-verify | creative | Vibe & Verify | PRESENT
+figma-bridge | creative | Figma-to-Code Bridge | PRESENT
+artifact | creative | The Artifact | PRESENT
+atomic-commit | creative | Atomic Commit Hook | PRESENT
+design-extract | creative | Design System Extraction | PRESENT
+pulse-statusline | ux | The Pulse Statusline | PRESENT
+matrix-theme | ux | The Matrix Theme Pack | PRESENT
+power-keybindings | ux | Power-User Keybindings | PRESENT
+shell-aliases | ux | High-Speed Shell Aliases | PRESENT
+dashboard-launcher | ux | Offline GUI Desktop Dashboard | PRESENT

@@ -1,6 +1,6 @@
 {
   "version": "1.10.1",
-  "generated": "2026-06-20T12:45:26.315Z",
+  "generated": "2026-06-22T03:55:45.844Z",
   "skills": [
     {
       "id": "ai-engineering/advanced-tool-use",
@@ -577,6 +577,15 @@
       "description": "Descubrir habilidades relacionadas mediante análisis de gráficos de dependencia, encontrar caminos de aprendizaje e identificar clústeres de habilidades",
       "tier": "Bronze",
       "file": "skills/ai-engineering/es/skill-discovery.md"
+    },
+    {
+      "id": "ai-engineering/swarm-sandbox",
+      "category": "ai-engineering",
+      "lang": "es",
+      "title": "Swarm Sandbox",
+      "description": "Entorno de pruebas aislado y seguro para topologías de enjambres multi-agente antes del despliegue en producción",
+      "tier": "Bronze",
+      "file": "skills/ai-engineering/es/swarm-sandbox.md"
     },
     {
       "id": "ai-engineering/vercel-ai-sdk",
@@ -1162,6 +1171,15 @@
       "description": "Find related skills via dependency graph analysis, discover learning paths, and identify skill clusters",
       "tier": "Gold",
       "file": "skills/ai-engineering/skill-discovery.md"
+    },
+    {
+      "id": "ai-engineering/swarm-sandbox",
+      "category": "ai-engineering",
+      "lang": "en",
+      "title": "Swarm Sandbox",
+      "description": "Safe isolated testing environment for multi-agent swarm topologies before production deployment",
+      "tier": "Gold",
+      "file": "skills/ai-engineering/swarm-sandbox.md"
     },
     {
       "id": "ai-engineering/ultraplan",
@@ -22706,6 +22724,12 @@
       "file": "agents/specialists/small-business-advisor.md"
     },
     {
+      "id": "specialists/swarm-sandbox-orchestrator",
+      "lang": "en",
+      "title": "Swarm Sandbox Orchestrator",
+      "file": "agents/specialists/swarm-sandbox-orchestrator.md"
+    },
+    {
       "id": "specialists/vision-analyst",
       "lang": "en",
       "title": "Vision Analyst",
@@ -22784,6 +22808,12 @@
       "category": "lifecycle",
       "title": "Keep-Alive Poke Hook",
       "file": "hooks/lifecycle/keepalive-poke.md"
+    },
+    {
+      "id": "lifecycle/matrix-theme-apply",
+      "category": "lifecycle",
+      "title": "Hook: Matrix Theme Auto-Apply",
+      "file": "hooks/lifecycle/matrix-theme-apply.md"
     },
     {
       "id": "lifecycle/plannotator",
@@ -24896,6 +24926,12 @@
       "file": "workflows/incremental-build.md"
     },
     {
+      "id": "matrix-theme-setup",
+      "lang": "en",
+      "title": "Matrix Theme Setup Workflow",
+      "file": "workflows/matrix-theme-setup.md"
+    },
+    {
       "id": "multi-agent-debug",
       "lang": "en",
       "title": "Multi-Agent Debug Workflow",
@@ -26851,6 +26887,18 @@
       "file": "guides/enterprise/deployment-guide.md"
     },
     {
+      "id": "disaster-recovery",
+      "lang": "en",
+      "title": "Enterprise Disaster Recovery Plan",
+      "file": "guides/enterprise/disaster-recovery.md"
+    },
+    {
+      "id": "disaster-recovery",
+      "lang": "fr",
+      "title": "Plan de Récupération d'Urgence Entreprise",
+      "file": "guides/enterprise/fr/disaster-recovery.md"
+    },
+    {
       "id": "security-hardening",
       "lang": "en",
       "title": "Enterprise Security Hardening Checklist",
@@ -28303,6 +28351,24 @@
       "file": "guides/marketplace/submission-process.md"
     },
     {
+      "id": "matrix-theme-edge-cases",
+      "lang": "en",
+      "title": "Matrix Theme Edge Cases",
+      "file": "guides/matrix-theme-edge-cases.md"
+    },
+    {
+      "id": "matrix-theme-guide",
+      "lang": "en",
+      "title": "Matrix Theme Pack — Comprehensive Guide",
+      "file": "guides/matrix-theme-guide.md"
+    },
+    {
+      "id": "matrix-theme-installation",
+      "lang": "en",
+      "title": "Matrix Theme Pack Installation Guide",
+      "file": "guides/matrix-theme-installation.md"
+    },
+    {
       "id": "mcp-integration",
       "lang": "en",
       "title": "MCP Integration Guide",
@@ -29095,6 +29161,30 @@
       "file": "guides/subagent-patterns.md"
     },
     {
+      "id": "svg-inspector-edge-cases",
+      "lang": "en",
+      "title": "SVG Map Inspector — Edge Cases & Optimization Guide",
+      "file": "guides/svg-inspector-edge-cases.md"
+    },
+    {
+      "id": "svg-map-inspector-tutorial",
+      "lang": "en",
+      "title": "SVG Map Inspector — Interactive Tutorial",
+      "file": "guides/svg-map-inspector-tutorial.md"
+    },
+    {
+      "id": "swarm-sandbox-edge-cases",
+      "lang": "en",
+      "title": "Swarm Sandbox Edge Cases",
+      "file": "guides/swarm-sandbox-edge-cases.md"
+    },
+    {
+      "id": "swarm-sandbox-playbook",
+      "lang": "en",
+      "title": "Swarm Sandbox Playbook",
+      "file": "guides/swarm-sandbox-playbook.md"
+    },
+    {
       "id": "token-cost-reduction",
       "lang": "en",
       "title": "30-50% Token Cost Reduction",
@@ -29815,6 +29905,11 @@
       "file": "themes/dracula.json"
     },
     {
+      "id": "matrix",
+      "title": "Matrix",
+      "file": "themes/fr/matrix.json"
+    },
+    {
       "id": "ghost-shell",
       "title": "Ghost in the Shell",
       "file": "themes/ghost-shell.json"
@@ -29825,9 +29920,19 @@
       "file": "themes/gruvbox.json"
     },
     {
+      "id": "matrix",
+      "title": "Matrix",
+      "file": "themes/matrix.json"
+    },
+    {
       "id": "monokai",
       "title": "Monokai",
       "file": "themes/monokai.json"
+    },
+    {
+      "id": "matrix",
+      "title": "Matrix",
+      "file": "themes/nl/matrix.json"
     },
     {
       "id": "nord",
@@ -30871,17 +30976,17 @@
     }
   ],
   "summary": {
-    "skills": 437,
-    "agents": 206,
-    "hooks": 56,
+    "skills": 438,
+    "agents": 207,
+    "hooks": 57,
     "rules": 35,
-    "workflows": 55,
+    "workflows": 56,
     "prompts": 31,
-    "guides": 117,
+    "guides": 125,
     "structures": 82,
     "outputStyles": 8,
     "statuslines": 7,
-    "themes": 12,
+    "themes": 15,
     "keybindings": 4,
     "settingsTemplates": 5,
     "routines": 11,

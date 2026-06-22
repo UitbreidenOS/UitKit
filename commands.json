@@ -1,0 +1,168 @@
+{
+  "$schema": "https://code.claude.com/schema/commands.json",
+  "version": "1.10.1",
+  "metadata": {
+    "generated": "2026-06-22",
+    "totalCommands": 41,
+    "author": "tushar2704",
+    "maintainer": "claudient@uitbreiden.com"
+  },
+  "commands": [
+    {
+      "id": "context-lens",
+      "name": "claudient context-lens",
+      "icon": "🔍",
+      "category": "ai-engineering",
+      "description": "Analyzes the active Claude Code session to show exactly what context Claude is seeing — files loaded, memory state, hooks active, MCP connections.",
+      "usage": "claudient context-lens [--verbose] [--json]",
+      "options": [
+        {
+          "flag": "--verbose",
+          "description": "Show detailed breakdowns of each context layer (system prompt, memory, file state, tool availability)"
+        },
+        {
+          "flag": "--json",
+          "description": "Output in JSON format for programmatic consumption"
+        },
+        {
+          "flag": "--size-report",
+          "description": "Show token count per context component"
+        },
+        {
+          "flag": "--optimize",
+          "description": "Suggest ways to reduce context bloat and improve efficiency"
+        }
+      ],
+      "examples": [
+        {
+          "command": "claudient context-lens",
+          "description": "Show current session context snapshot"
+        },
+        {
+          "command": "claudient context-lens --verbose --size-report",
+          "description": "Detailed breakdown with token accounting"
+        },
+        {
+          "command": "claudient context-lens --json > context-dump.json",
+          "description": "Export full context state for analysis"
+        }
+      ],
+      "sampleOutput": "claudient context-lens — Session Context Analysis\n────────────────────────────────────────────\nSession: claude-code-2026-06-22\nModel: claude-haiku-4-5-20251001\nTokens used this session: 42,340 / 200,000\n\nContext Layers (58,240 tokens total):\n  1. System Prompt              12,400 tokens (21%)\n     • Core Claude Code harness\n     • Tool definitions (41 tools)\n     • Safety guidelines\n  \n  2. Project Memory             8,600 tokens (15%)\n     • CLAUDE.md (Claudient rules)\n     • MEMORY.md (persistent state)\n     • .claude/settings.json\n  \n  3. Loaded Files               18,900 tokens (32%)\n     • site/src/components/os/apps/CliApp.tsx  (8,240 tokens)\n     • plugins/claudient-commands/commands/git/ (6,100 tokens)\n     • .claude-plugin/marketplace.json (4,560 tokens)\n  \n  4. Active Hooks               3,200 tokens (5%)\n     • caveman-mode.md (token optimizer)\n     • project-rules.md (build conventions)\n     • security-reviewer hook\n  \n  5. MCP Connections            2,800 tokens (5%)\n     • postgres (pg-mcp-server)\n     • github (github-mcp-server)\n     • stripe (payments MCP)\n  \n  6. Task List                  4,100 tokens (7%)\n     • 3 active tasks in memory\n     • Dependencies tracked\n  \n  7. Tool Allowlist             6,240 tokens (11%)\n     • 32 whitelisted bash patterns\n     • 8 whitelisted MCP operations\n     • Git operations permitted\n────────────────────────────────────────────\nRecommendations:\n  • 4 files loaded that aren't referenced — consider unloading\n  • Task #1 is stale (>30 min) — mark completed or reset\n  • Caveman mode active: saving ~1,200 tokens/response\n  • Consider archiving MEMORY.md to a separate session\n\n→ Run: claudient context-lens --optimize",
+      "tier": "free",
+      "releaseDate": "2026-06-22",
+      "status": "stable"
+    },
+    {
+      "id": "vault",
+      "name": "claudient vault",
+      "icon": "🔐",
+      "category": "security",
+      "description": "Encrypts/decrypts secrets in .claude/settings.local.json and generates secure vaults for multi-team environments. Auto-rotates keys, audits access logs.",
+      "usage": "claudient vault <action> [options]",
+      "options": [
+        {
+          "flag": "encrypt",
+          "description": "Encrypt all secrets in settings.local.json using AES-256"
+        },
+        {
+          "flag": "decrypt",
+          "description": "Decrypt vault and temporarily expose secrets (one session only)"
+        },
+        {
+          "flag": "rotate",
+          "description": "Rotate all encryption keys and re-encrypt existing secrets"
+        },
+        {
+          "flag": "--ttl <hours>",
+          "description": "Set time-to-live for decrypted secrets (default: 1 hour)"
+        },
+        {
+          "flag": "--team <team-id>",
+          "description": "Create org-wide vault shared across team members"
+        },
+        {
+          "flag": "--audit",
+          "description": "Show access logs and who accessed secrets when"
+        }
+      ],
+      "examples": [
+        {
+          "command": "claudient vault encrypt",
+          "description": "Encrypt all secrets in .claude/settings.local.json"
+        },
+        {
+          "command": "claudient vault decrypt --ttl 2",
+          "description": "Decrypt secrets for 2 hours"
+        },
+        {
+          "command": "claudient vault rotate --team backend-team",
+          "description": "Rotate keys for entire team and re-encrypt"
+        },
+        {
+          "command": "claudient vault audit --days 30",
+          "description": "Show 30 days of access logs"
+        }
+      ],
+      "sampleOutput": "claudient vault — Secret Management\n────────────────────────────────────────────\nAction: encrypt\n\nScanning: .claude/settings.local.json\n  ✓ Found 8 secrets:\n    • ANTHROPIC_API_KEY\n    • GITHUB_TOKEN\n    • DATABASE_URL\n    • STRIPE_SECRET_KEY\n    • AWS_SECRET_ACCESS_KEY\n    • OPENAI_API_KEY (legacy)\n    • PG_PASSWORD\n    • JWT_SECRET\n\nEncrypting with AES-256...\n  ✓ Generated master key: vault-key-2026-06-22\n  ✓ Encrypted 8 secrets\n  ✓ Backed up original: .claude/settings.local.json.bak\n  ✓ Secured .claude/settings.local.json (chmod 600)\n\nVault Summary:\n  Status: ENCRYPTED\n  Secrets: 8/8 encrypted\n  Key rotation: due 2026-08-22 (90 days)\n  Last accessed: 2026-06-22 10:15 UTC\n\nMaster key stored in:\n  ~/.claude/.vault/master.key (permissions: 400)\n\nDecrypt secrets:\n  → claudient vault decrypt --ttl 1\n────────────────────────────────────────────\nTo use secrets this session:\n  Run: claudient vault decrypt\n  Secrets will auto-lock in 1 hour",
+      "tier": "enterprise",
+      "releaseDate": "2026-06-22",
+      "status": "stable"
+    },
+    {
+      "id": "mesh",
+      "name": "claudient mesh",
+      "icon": "🕸️",
+      "category": "devops-infra",
+      "description": "Multi-agent orchestrator — coordinates parallel Claude subagents to divide-and-conquer large codebases. Automatically partitions work, merges results, resolves conflicts.",
+      "usage": "claudient mesh <task> [--max-agents <n>] [--strategy <strategy>]",
+      "options": [
+        {
+          "flag": "--max-agents",
+          "description": "Maximum number of parallel agents (default: 4, max: 16)"
+        },
+        {
+          "flag": "--strategy",
+          "description": "Partitioning strategy: file-based, module-based, domain-based, or load-balanced (default: file-based)"
+        },
+        {
+          "flag": "--budget",
+          "description": "Max token spend across all agents (e.g., --budget 500000 for $15)"
+        },
+        {
+          "flag": "--merge-policy",
+          "description": "Conflict resolution: first-write, latest-write, consensus, manual (default: consensus)"
+        },
+        {
+          "flag": "--checkpoint",
+          "description": "Save progress snapshots every N agents complete (enables resume on failure)"
+        },
+        {
+          "flag": "--dry-run",
+          "description": "Show partition plan without executing agents"
+        }
+      ],
+      "examples": [
+        {
+          "command": "claudient mesh 'Refactor all utils/ to TypeScript' --max-agents 6",
+          "description": "Spawn 6 agents to parallelize refactoring"
+        },
+        {
+          "command": "claudient mesh 'Add logging to all API handlers' --strategy module-based --checkpoint 2",
+          "description": "Partition by module, save checkpoint every 2 agents"
+        },
+        {
+          "command": "claudient mesh 'Migrate ORM from Sequelize to Prisma' --dry-run",
+          "description": "See how task will be divided before running"
+        },
+        {
+          "command": "claudient mesh 'Security audit codebase' --max-agents 8 --budget 750000",
+          "description": "8 agents, $22.50 budget cap, domain-based partition"
+        }
+      ],
+      "sampleOutput": "claudient mesh — Multi-Agent Orchestration\n────────────────────────────────────────────\nTask: Refactor all utils/ to TypeScript\nStrategy: file-based\nMax agents: 6\n\n[Analyzing codebase...]\n  ✓ Found 18 .js files in utils/\n  ✓ Dependency graph: 23 edges\n  ✓ Estimated tokens: ~180,000\n  ✓ Partition plan: 6 batches\n\n[Spawning agents...]\n  🔵 Agent 1 — utils/auth.js → auth.ts           [████████░░] 85%\n  🔵 Agent 2 — utils/date.js → date.ts           [██████░░░░] 60%\n  🔵 Agent 3 — utils/cache.js → cache.ts         [██████████] 100% ✓\n  ⚪ Agent 4 — utils/email.js → email.ts         [pending]\n  ⚪ Agent 5 — utils/logger.js → logger.ts       [pending]\n  ⚪ Agent 6 — utils/api-client.js → api-client.ts [pending]\n\n[Progress]\n  Completed: 1/6 agents (16%)\n  Tokens used: 42,300 / 180,000 (24%)\n  ETA: 8 minutes\n  Cost: $1.27 / $5.40\n\n[Agent 3 output] ✓ MERGED\n  src/utils/cache.ts (145 lines, A+ grade)\n  Dependencies resolved: 3 imports\n  No conflicts detected\n\n[Watching for conflicts...]\n  ✓ No conflicts yet\n  → Manual merge required if consensus fails\n────────────────────────────────────────────\nNext: mesh will continue in background\n  → Monitor: claudient mesh status\n  → Cancel:  claudient mesh stop",
+      "tier": "enterprise",
+      "releaseDate": "2026-06-22",
+      "status": "beta"
+    }
+  ]
+}

@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG Map Inspector - Interactive Codebase Visualization</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: linear-gradient(135deg, #0f0f23 0%, #1a1a3a 100%);
+      color: #e0e0e0;
+      overflow: hidden;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .sidebar {
+      width: 300px;
+      background: rgba(30, 30, 50, 0.8);
+      border: 1px solid rgba(100, 150, 255, 0.3);
+      border-radius: 8px;
+      padding: 20px;
+      overflow-y: auto;
+      backdrop-filter: blur(10px);
+    }
+
+    .canvas-wrapper {
+      flex: 1;
+      background: rgba(20, 20, 35, 0.9);
+      border: 1px solid rgba(100, 150, 255, 0.3);
+      border-radius: 8px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    }
+
+    .map-container {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+      cursor: grab;
+    }
+
+    svg:active {
+      cursor: grabbing;
+    }
+
+    .node {
+      cursor: pointer;
+      transition: filter 0.2s ease;
+    }
+
+    .node:hover {
+      filter: drop-shadow(0 0 8px rgba(100, 200, 255, 0.8));
+    }
+
+    .node.selected {
+      filter: drop-shadow(0 0 12px rgba(255, 100, 100, 1));
+    }
+
+    .node-circle {
+      stroke-width: 2;
+    }
+
+    .node-text {
+      font-size: 12px;
+      pointer-events: none;
+      user-select: none;
+      text-anchor: middle;
+      dominant-baseline: middle;
+    }
+
+    .edge {
+      stroke-width: 1.5;
+      fill: none;
+      marker-end: url(#arrowhead);
+    }
+
+    .edge.high-risk {
+      stroke: rgba(255, 100, 100, 0.6);
+      stroke-dasharray: 5, 5;
+    }
+
+    .edge.medium-risk {
+      stroke: rgba(255, 200, 100, 0.5);
+    }
+
+    .edge.low-risk {
+      stroke: rgba(100, 200, 255, 0.4);
+    }
+
+    .controls {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: rgba(30, 30, 50, 0.9);
+      border: 1px solid rgba(100, 150, 255, 0.3);
+      border-radius: 8px;
+      padding: 15px;
+      z-index: 10;
+      backdrop-filter: blur(10px);
+    }
+
+    .control-button {
+      display: block;
+      background: rgba(100, 150, 255, 0.2);
+      border: 1px solid rgba(100, 150, 255, 0.5);
+      color: #a0d0ff;
+      padding: 8px 12px;
+      margin: 5px 0;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+      transition: all 0.2s ease;
+      width: 120px;
+      text-align: center;
+    }
+
+    .control-button:hover {
+      background: rgba(100, 150, 255, 0.4);
+      border-color: rgba(100, 150, 255, 0.8);
+    }
+
+    h2 {
+      color: #6fb3ff;
+      font-size: 16px;
+      margin-bottom: 12px;
+      border-bottom: 1px solid rgba(100, 150, 255, 0.3);
+      padding-bottom: 8px;
+    }
+
+    h3 {
+      color: #9ec3ff;
+      font-size: 13px;
+      margin-top: 15px;
+      margin-bottom: 8px;
+    }
+
+    .metric {
+      background: rgba(100, 150, 255, 0.1);
+      padding: 8px;
+      margin: 6px 0;
+      border-left: 3px solid rgba(100, 150, 255, 0.5);
+      border-radius: 2px;
+      font-size: 12px;
+    }
+
+    .metric-label {
+      color: #aac5ff;
+      display: block;
+      font-size: 11px;
+      opacity: 0.8;
+    }
+
+    .metric-value {
+      color: #6fb3ff;
+      font-weight: bold;
+      font-size: 13px;
+    }
+
+    .node-info {
+      background: rgba(100, 150, 255, 0.1);
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 4px;
+      border: 1px solid rgba(100, 150, 255, 0.3);
+      font-size: 12px;
+    }
+
+    .node-info-label {
+      color: #9ec3ff;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .risk-high {
+      color: #ff6464;
+    }
+
+    .risk-medium {
+      color: #ffc864;
+    }
+
+    .risk-low {
+      color: #64ff64;
+    }
+
+    .zoom-level {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      background: rgba(30, 30, 50, 0.9);
+      border: 1px solid rgba(100, 150, 255, 0.3);
+      border-radius: 4px;
+      padding: 8px 12px;
+      font-size: 12px;
+      color: #a0d0ff;
+      z-index: 10;
+    }
+
+    .legend {
+      background: rgba(30, 30, 50, 0.9);
+      border: 1px solid rgba(100, 150, 255, 0.3);
+      border-radius: 8px;
+      padding: 12px;
+      margin-top: 20px;
+      font-size: 11px;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      margin: 6px 0;
+    }
+
+    .legend-color {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      margin-right: 8px;
+      border: 1px solid rgba(100, 150, 255, 0.5);
+    }
+
+    .scrollable {
+      max-height: calc(100vh - 300px);
+      overflow-y: auto;
+    }
+
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: rgba(100, 150, 255, 0.1);
+      border-radius: 3px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: rgba(100, 150, 255, 0.4);
+      border-radius: 3px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(100, 150, 255, 0.6);
+    }
+
+    .header {
+      margin-bottom: 20px;
+    }
+
+    .header-title {
+      color: #6fb3ff;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    .header-subtitle {
+      color: #7a9fcc;
+      font-size: 12px;
+    }
+
+    .tooltip {
+      position: absolute;
+      background: rgba(20, 20, 35, 0.95);
+      border: 1px solid rgba(100, 150, 255, 0.5);
+      border-radius: 4px;
+      padding: 8px 12px;
+      font-size: 11px;
+      color: #a0d0ff;
+      pointer-events: none;
+      z-index: 20;
+      max-width: 200px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+      display: none;
+    }
+
+    .tooltip.visible {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <div class="header">
+        <div class="header-title">Codebase Map</div>
+        <div class="header-subtitle">Oracle & Prophet Analysis</div>
+      </div>
+
+      <h2>Metrics</h2>
+      <div class="metric">
+        <span class="metric-label">Total Modules</span>
+        <span class="metric-value" id="total-modules">12</span>
+      </div>
+      <div class="metric">
+        <span class="metric-label">Dependencies</span>
+        <span class="metric-value" id="total-edges">18</span>
+      </div>
+      <div class="metric">
+        <span class="metric-label">High Risk</span>
+        <span class="metric-value risk-high" id="high-risk-count">2</span>
+      </div>
+      <div class="metric">
+        <span class="metric-label">Avg Churn</span>
+        <span class="metric-value" id="avg-churn">4.3</span>
+      </div>
+
+      <h3>Prophet: Tech Debt Analysis</h3>
+      <div class="scrollable">
+        <div class="node-info">
+          <span class="node-info-label">api/auth.js</span>
+          <div>Churn: <strong>8</strong> | Lines: <strong>345</strong></div>
+          <div class="risk-high">Risk: 27.6</div>
+        </div>
+        <div class="node-info">
+          <span class="node-info-label">db/queries.ts</span>
+          <div>Churn: <strong>12</strong> | Lines: <strong>521</strong></div>
+          <div class="risk-high">Risk: 62.5</div>
+        </div>
+        <div class="node-info">
+          <span class="node-info-label">utils/helpers.js</span>
+          <div>Churn: <strong>5</strong> | Lines: <strong>203</strong></div>
+          <div class="risk-medium">Risk: 10.2</div>
+        </div>
+        <div class="node-info">
+          <span class="node-info-label">services/cache.ts</span>
+          <div>Churn: <strong>3</strong> | Lines: <strong>189</strong></div>
+          <div class="risk-low">Risk: 5.7</div>
+        </div>
+      </div>
+
+      <h3>Oracle: Blast Radius</h3>
+      <div class="scrollable">
+        <div class="node-info">
+          <span class="node-info-label">db/queries.ts</span>
+          <div style="font-size: 10px; color: #7a9fcc; margin-top: 4px;">Impacted by:</div>
+          <div style="font-size: 11px; color: #a0d0ff; margin-top: 2px;">
+            → api/auth.js<br/>
+            → services/user.ts<br/>
+            → controllers/admin.ts
+          </div>
+        </div>
+        <div class="node-info">
+          <span class="node-info-label">api/auth.js</span>
+          <div style="font-size: 10px; color: #7a9fcc; margin-top: 4px;">Downstream:</div>
+          <div style="font-size: 11px; color: #a0d0ff; margin-top: 2px;">
+            → api/users.js<br/>
+            → controllers/admin.ts<br/>
+            → middleware/auth.ts
+          </div>
+        </div>
+      </div>
+
+      <div class="legend">
+        <h3 style="margin-top: 0;">Legend</h3>
+        <div class="legend-item">
+          <div class="legend-color" style="background: #ff6464;"></div>
+          <span>High Risk (>5.0)</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color" style="background: #ffc864;"></div>
+          <span>Medium Risk (2-5)</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color" style="background: #64ff64;"></div>
+          <span>Low Risk (<2)</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color" style="background: #6fb3ff;"></div>
+          <span>Leaf Module</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="canvas-wrapper">
+      <div class="map-container" id="map-container">
+        <svg id="svg-map" viewBox="0 0 1200 800">
+          <defs>
+            <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+              <polygon points="0 0, 10 3, 0 6" fill="rgba(100, 150, 255, 0.4)" />
+            </marker>
+          </defs>
+
+          <!-- Edges (dependencies) -->
+          <g id="edges"></g>
+
+          <!-- Nodes -->
+          <g id="nodes"></g>
+        </svg>
+      </div>
+
+      <div class="controls">
+        <button class="control-button" onclick="resetZoom()">Reset View</button>
+        <button class="control-button" onclick="zoomIn()">Zoom In</button>
+        <button class="control-button" onclick="zoomOut()">Zoom Out</button>
+        <button class="control-button" onclick="toggleLayout()">Toggle Layout</button>
+      </div>
+
+      <div class="zoom-level" id="zoom-level">Zoom: 100%</div>
+      <div class="tooltip" id="tooltip"></div>
+    </div>
+  </div>
+
+  <script>
+    const SVG_NS = 'http://www.w3.org/2000/svg';
+    const svg = document.getElementById('svg-map');
+    const nodesGroup = document.getElementById('nodes');
+    const edgesGroup = document.getElementById('edges');
+    const tooltip = document.getElementById('tooltip');
+    const zoomLevelDisplay = document.getElementById('zoom-level');
+
+    let zoom = 1;
+    let panX = 0;
+    let panY = 0;
+    let isDragging = false;
+    let dragStartX = 0;
+    let dragStartY = 0;
+    let selectedNodeId = null;
+    let isCircleLayout = true;
+
+    // Sample data from prophet.js and oracle.js
+    const nodes = [
+      { id: 'api/auth.js', label: 'auth.js', risk: 27.6, churn: 8, lines: 345, type: 'high' },
+      { id: 'db/queries.ts', label: 'queries.ts', risk: 62.5, churn: 12, lines: 521, type: 'high' },
+      { id: 'utils/helpers.js', label: 'helpers.js', risk: 10.2, churn: 5, lines: 203, type: 'medium' },
+      { id: 'services/cache.ts', label: 'cache.ts', risk: 5.7, churn: 3, lines: 189, type: 'low' },
+      { id: 'api/users.js', label: 'users.js', risk: 8.1, churn: 4, lines: 278, type: 'medium' },
+      { id: 'controllers/admin.ts', label: 'admin.ts', risk: 15.3, churn: 6, lines: 412, type: 'high' },
+      { id: 'middleware/auth.ts', label: 'auth.ts', risk: 3.4, churn: 2, lines: 156, type: 'low' },
+      { id: 'services/user.ts', label: 'user.ts', risk: 7.2, churn: 4, lines: 198, type: 'medium' },
+      { id: 'models/user.ts', label: 'user.ts', risk: 2.1, churn: 1, lines: 89, type: 'low' },
+      { id: 'routes/index.ts', label: 'routes.ts', risk: 4.5, churn: 2, lines: 167, type: 'low' },
+      { id: 'config/env.js', label: 'env.js', risk: 1.2, churn: 1, lines: 64, type: 'low' },
+      { id: 'lib/logger.ts', label: 'logger.ts', risk: 2.8, churn: 2, lines: 134, type: 'low' }
+    ];
+
+    const edges = [
+      { source: 'api/auth.js', target: 'db/queries.ts', type: 'high' },
+      { source: 'api/auth.js', target: 'middleware/auth.ts', type: 'medium' },
+      { source: 'api/auth.js', target: 'lib/logger.ts', type: 'low' },
+      { source: 'db/queries.ts', target: 'utils/helpers.js', type: 'high' },
+      { source: 'db/queries.ts', target: 'models/user.ts', type: 'medium' },
+      { source: 'api/users.js', target: 'db/queries.ts', type: 'high' },
+      { source: 'api/users.js', target: 'services/user.ts', type: 'medium' },
+      { source: 'api/users.js', target: 'lib/logger.ts', type: 'low' },
+      { source: 'controllers/admin.ts', target: 'api/auth.js', type: 'medium' },
+      { source: 'controllers/admin.ts', target: 'db/queries.ts', type: 'high' },
+      { source: 'controllers/admin.ts', target: 'services/user.ts', type: 'medium' },
+      { source: 'services/user.ts', target: 'db/queries.ts', type: 'high' },
+      { source: 'services/user.ts', target: 'models/user.ts', type: 'low' },
+      { source: 'services/cache.ts', target: 'lib/logger.ts', type: 'low' },
+      { source: 'middleware/auth.ts', target: 'config/env.js', type: 'low' },
+      { source: 'routes/index.ts', target: 'api/auth.js', type: 'medium' },
+      { source: 'routes/index.ts', target: 'api/users.js', type: 'medium' },
+      { source: 'routes/index.ts', target: 'controllers/admin.ts', type: 'low' }
+    ];
+
+    function getNodeColor(type) {
+      switch (type) {
+        case 'high': return '#ff6464';
+        case 'medium': return '#ffc864';
+        case 'low': return '#64ff64';
+        default: return '#6fb3ff';
+      }
+    }
+
+    function getNodePosition(index, total) {
+      if (isCircleLayout) {
+        const angle = (index / total) * Math.PI * 2;
+        const radius = 250;
+        return {
+          x: 600 + radius * Math.cos(angle),
+          y: 400 + radius * Math.sin(angle)
+        };
+      } else {
+        const cols = Math.ceil(Math.sqrt(total));
+        const x = (index % cols) * 200 + 150;
+        const y = Math.floor(index / cols) * 200 + 150;
+        return { x, y };
+      }
+    }
+
+    function renderGraph() {
+      nodesGroup.innerHTML = '';
+      edgesGroup.innerHTML = '';
+
+      // Draw edges first
+      edges.forEach(edge => {
+        const sourceNode = nodes.find(n => n.id === edge.source);
+        const targetNode = nodes.find(n => n.id === edge.target);
+
+        const sourcePos = getNodePosition(nodes.indexOf(sourceNode), nodes.length);
+        const targetPos = getNodePosition(nodes.indexOf(targetNode), nodes.length);
+
+        const line = document.createElementNS(SVG_NS, 'line');
+        line.setAttribute('x1', sourcePos.x);
+        line.setAttribute('y1', sourcePos.y);
+        line.setAttribute('x2', targetPos.x);
+        line.setAttribute('y2', targetPos.y);
+        line.setAttribute('class', `edge edge-${edge.type}`);
+        line.classList.add(edge.type === 'high' ? 'high-risk' : edge.type === 'medium' ? 'medium-risk' : 'low-risk');
+        edgesGroup.appendChild(line);
+      });
+
+      // Draw nodes
+      nodes.forEach((node, index) => {
+        const pos = getNodePosition(index, nodes.length);
+        const color = getNodeColor(node.type);
+
+        const g = document.createElementNS(SVG_NS, 'g');
+        g.setAttribute('class', 'node');
+        g.setAttribute('data-node-id', node.id);
+
+        const circle = document.createElementNS(SVG_NS, 'circle');
+        circle.setAttribute('class', 'node-circle');
+        circle.setAttribute('cx', pos.x);
+        circle.setAttribute('cy', pos.y);
+        circle.setAttribute('r', 30);
+        circle.setAttribute('fill', color);
+        circle.setAttribute('opacity', '0.8');
+        circle.setAttribute('stroke', 'rgba(100, 150, 255, 0.6)');
+
+        const text = document.createElementNS(SVG_NS, 'text');
+        text.setAttribute('class', 'node-text');
+        text.setAttribute('x', pos.x);
+        text.setAttribute('y', pos.y);
+        text.textContent = node.label;
+        text.setAttribute('fill', '#000');
+
+        g.appendChild(circle);
+        g.appendChild(text);
+
+        g.addEventListener('click', (e) => selectNode(node.id, e));
+        g.addEventListener('mouseenter', (e) => showTooltip(node, e));
+        g.addEventListener('mouseleave', hideTooltip);
+
+        nodesGroup.appendChild(g);
+      });
+
+      updateMetrics();
+    }
+
+    function selectNode(nodeId, event) {
+      document.querySelectorAll('.node').forEach(n => n.classList.remove('selected'));
+
+      if (selectedNodeId === nodeId) {
+        selectedNodeId = null;
+      } else {
+        selectedNodeId = nodeId;
+        event.target.closest('.node').classList.add('selected');
+      }
+    }
+
+    function showTooltip(node, event) {
+      const riskClass = node.type === 'high' ? 'risk-high' : node.type === 'medium' ? 'risk-medium' : 'risk-low';
+      tooltip.innerHTML = `
+        <strong>${node.id}</strong><br/>
+        Risk: <span class="${riskClass}">${node.risk}</span><br/>
+        Churn: ${node.churn} | Lines: ${node.lines}
+      `;
+      tooltip.classList.add('visible');
+      tooltip.style.left = (event.clientX + 10) + 'px';
+      tooltip.style.top = (event.clientY - 10) + 'px';
+    }
+
+    function hideTooltip() {
+      tooltip.classList.remove('visible');
+    }
+
+    function updateMetrics() {
+      document.getElementById('total-modules').textContent = nodes.length;
+      document.getElementById('total-edges').textContent = edges.length;
+      const highRiskCount = nodes.filter(n => n.type === 'high').length;
+      document.getElementById('high-risk-count').textContent = highRiskCount;
+      const avgChurn = (nodes.reduce((sum, n) => sum + n.churn, 0) / nodes.length).toFixed(1);
+      document.getElementById('avg-churn').textContent = avgChurn;
+    }
+
+    function applyTransform() {
+      svg.setAttribute('transform', `translate(${panX}, ${panY}) scale(${zoom})`);
+      svg.style.transformOrigin = '0 0';
+      zoomLevelDisplay.textContent = `Zoom: ${Math.round(zoom * 100)}%`;
+    }
+
+    function zoomIn() {
+      zoom = Math.min(zoom + 0.2, 3);
+      applyTransform();
+    }
+
+    function zoomOut() {
+      zoom = Math.max(zoom - 0.2, 0.5);
+      applyTransform();
+    }
+
+    function resetZoom() {
+      zoom = 1;
+      panX = 0;
+      panY = 0;
+      applyTransform();
+    }
+
+    function toggleLayout() {
+      isCircleLayout = !isCircleLayout;
+      renderGraph();
+    }
+
+    // Pan/zoom interaction
+    document.addEventListener('wheel', (e) => {
+      if (e.ctrlKey || e.metaKey) {
+        e.preventDefault();
+        if (e.deltaY > 0) {
+          zoomOut();
+        } else {
+          zoomIn();
+        }
+      }
+    }, { passive: false });
+
+    svg.addEventListener('mousedown', (e) => {
+      isDragging = true;
+      dragStartX = e.clientX - panX;
+      dragStartY = e.clientY - panY;
+    });
+
+    document.addEventListener('mousemove', (e) => {
+      if (isDragging) {
+        panX = e.clientX - dragStartX;
+        panY = e.clientY - dragStartY;
+        applyTransform();
+      }
+    });
+
+    document.addEventListener('mouseup', () => {
+      isDragging = false;
+    });
+
+    // Initialize
+    renderGraph();
+    applyTransform();
+  </script>
+</body>
+</html>

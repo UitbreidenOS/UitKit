@@ -1,0 +1,422 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Swarm Sandbox Audit Event Schema",
+  "description": "Immutable, append-only audit trail for multi-agent orchestration events",
+  "type": "object",
+  "required": [
+    "event_id",
+    "event_timestamp",
+    "event_type",
+    "session_id"
+  ],
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Unique identifier for this audit event"
+    },
+    "session_id": {
+      "type": "string",
+      "description": "Session UUID linking related events"
+    },
+    "event_timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the event occurred (UTC, ISO 8601)"
+    },
+    "recorded_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When the event was recorded in audit trail"
+    },
+    "event_type": {
+      "type": "string",
+      "enum": [
+        "agent_spawn",
+        "agent_terminate",
+        "agent_state_change",
+        "message_sent",
+        "message_received",
+        "tool_call",
+        "tool_result",
+        "topology_start",
+        "topology_stop",
+        "topology_error",
+        "permission_check",
+        "rate_limit_hit",
+        "resource_warning",
+        "pii_detected",
+        "security_violation",
+        "config_change",
+        "deployment",
+        "health_check",
+        "circuit_breaker",
+        "retry_attempt",
+        "timeout"
+      ],
+      "description": "Classification of the audit event"
+    },
+    "severity": {
+      "type": "string",
+      "enum": ["INFO", "WARNING", "ERROR", "CRITICAL"],
+      "default": "INFO",
+      "description": "Impact severity of the event"
+    },
+    "user_id": {
+      "type": "string",
+      "description": "User email or identifier (sanitized)"
+    },
+    "api_key_id": {
+      "type": "string",
+      "description": "Which API key was used for authentication"
+    },
+    "agent_id": {
+      "type": "string",
+      "description": "Agent UUID involved in this event"
+    },
+    "topology_id": {
+      "type": "string",
+      "description": "Swarm topology name (pipeline, fanout, hierarchical, etc.)"
+    },
+    "request_id": {
+      "type": "string",
+      "description": "Parent request ID for tracing"
+    },
+    "correlation_id": {
+      "type": "string",
+      "description": "Correlation ID for distributed tracing"
+    },
+    "message_flow": {
+      "type": "object",
+      "description": "Inter-agent message metadata",
+      "properties": {
+        "from_agent": {
+          "type": "string",
+          "description": "Source agent identifier"
+        },
+        "to_agent": {
+          "type": "string",
+          "description": "Destination agent identifier"
+        },
+        "message_id": {
+          "type": "string",
+          "description": "Unique message identifier"
+        },
+        "message_size_bytes": {
+          "type": "integer",
+          "description": "Payload size in bytes"
+        },
+        "message_type": {
+          "type": "string",
+          "enum": ["request", "response", "event", "broadcast"],
+          "description": "Message classification"
+        }
+      }
+    },
+    "tool_execution": {
+      "type": "object",
+      "description": "Tool call metadata",
+      "properties": {
+        "tool_name": {
+          "type": "string",
+          "description": "Name of the tool invoked"
+        },
+        "tool_input_hash": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$",
+          "description": "SHA256 hash of sanitized tool input"
+        },
+        "tool_output_hash": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$",
+          "description": "SHA256 hash of sanitized tool output"
+        },
+        "duration_ms": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Tool execution time in milliseconds"
+        },
+        "exit_code": {
+          "type": "integer",
+          "description": "Exit status (0 = success)"
+        }
+      }
+    },
+    "resource_metrics": {
+      "type": "object",
+      "description": "Resource usage at time of event",
+      "properties": {
+        "cpu_usage_percent": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "CPU utilization percentage"
+        },
+        "memory_usage_bytes": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Memory usage in bytes"
+        },
+        "agent_count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of active agents"
+        },
+        "message_queue_depth": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Pending messages in queue"
+        }
+      }
+    },
+    "compliance_flags": {
+      "type": "object",
+      "description": "Compliance and security signals",
+      "properties": {
+        "pii_detected": {
+          "type": "boolean",
+          "default": false,
+          "description": "PII patterns found in event"
+        },
+        "encryption_mismatch": {
+          "type": "boolean",
+          "default": false,
+          "description": "Encryption status mismatch"
+        },
+        "policy_violation": {
+          "type": "boolean",
+          "default": false,
+          "description": "Security policy violation detected"
+        },
+        "cost_limit_exceeded": {
+          "type": "boolean",
+          "default": false,
+          "description": "Session cost exceeded limit"
+        },
+        "rbac_violation": {
+          "type": "boolean",
+          "default": false,
+          "description": "Authorization check failed"
+        },
+        "rate_limited": {
+          "type": "boolean",
+          "default": false,
+          "description": "Rate limit applied"
+        },
+        "suspicious_pattern": {
+          "type": "boolean",
+          "default": false,
+          "description": "Anomaly detection triggered"
+        }
+      }
+    },
+    "environment": {
+      "type": "object",
+      "description": "Deployment and environment metadata",
+      "properties": {
+        "deployment_env": {
+          "type": "string",
+          "enum": ["sandbox", "staging", "production"],
+          "default": "sandbox",
+          "description": "Environment where event occurred"
+        },
+        "region": {
+          "type": "string",
+          "description": "Geographic region (us-west-2, eu-central-1, etc.)"
+        },
+        "cluster_id": {
+          "type": "string",
+          "description": "Kubernetes cluster identifier"
+        },
+        "git_branch": {
+          "type": "string",
+          "description": "Git branch deployed"
+        },
+        "git_commit_hash": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{40}$",
+          "description": "Git commit SHA (40-char hex)"
+        }
+      }
+    },
+    "agent_state_change": {
+      "type": "object",
+      "description": "Agent state transition (for state_change events)",
+      "properties": {
+        "state_from": {
+          "type": "string",
+          "enum": [
+            "initializing",
+            "idle",
+            "executing",
+            "waiting",
+            "error",
+            "terminated",
+            "paused",
+            "draining"
+          ],
+          "description": "Previous agent state"
+        },
+        "state_to": {
+          "type": "string",
+          "enum": [
+            "initializing",
+            "idle",
+            "executing",
+            "waiting",
+            "error",
+            "terminated",
+            "paused",
+            "draining"
+          ],
+          "description": "New agent state"
+        },
+        "reason": {
+          "type": "string",
+          "description": "Why state changed"
+        },
+        "error_message": {
+          "type": "string",
+          "description": "Error details if transition due to error"
+        }
+      }
+    },
+    "access_control": {
+      "type": "object",
+      "description": "Access control and authorization metadata",
+      "properties": {
+        "action": {
+          "type": "string",
+          "enum": [
+            "agent_spawn",
+            "agent_terminate",
+            "topology_start",
+            "topology_stop",
+            "tool_invoke",
+            "secret_access",
+            "config_read",
+            "config_write",
+            "log_access",
+            "session_terminate"
+          ],
+          "description": "Action being authorized"
+        },
+        "decision": {
+          "type": "string",
+          "enum": ["allow", "deny", "challenge"],
+          "description": "Authorization decision"
+        },
+        "required_permission": {
+          "type": "string",
+          "description": "Permission required for action"
+        },
+        "mfa_verified": {
+          "type": "boolean",
+          "description": "Multi-factor authentication verified"
+        },
+        "mfa_method": {
+          "type": "string",
+          "enum": ["totp", "webauthn", "email", "sms"],
+          "description": "MFA method used"
+        }
+      }
+    },
+    "cost_tracking": {
+      "type": "object",
+      "description": "Cost and billing information",
+      "properties": {
+        "cost_usd": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Cost of this event in USD"
+        },
+        "session_cost_usd": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Cumulative session cost in USD"
+        },
+        "cost_category": {
+          "type": "string",
+          "enum": ["compute", "network", "storage", "api_calls"],
+          "description": "Cost category"
+        }
+      }
+    }
+  },
+  "additionalProperties": true,
+  "examples": [
+    {
+      "event_id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
+      "session_id": "sess-abc123",
+      "event_timestamp": "2026-06-22T14:30:45.123Z",
+      "recorded_at": "2026-06-22T14:30:45.500Z",
+      "event_type": "agent_spawn",
+      "severity": "INFO",
+      "user_id": "alice@company.com",
+      "agent_id": "validator-001",
+      "topology_id": "data-pipeline",
+      "correlation_id": "corr-xyz789",
+      "environment": {
+        "deployment_env": "sandbox",
+        "git_branch": "main",
+        "git_commit_hash": "abcdef1234567890abcdef1234567890abcdef12"
+      },
+      "resource_metrics": {
+        "cpu_usage_percent": 15.3,
+        "memory_usage_bytes": 524288000,
+        "agent_count": 4,
+        "message_queue_depth": 12
+      },
+      "compliance_flags": {
+        "pii_detected": false,
+        "policy_violation": false
+      }
+    },
+    {
+      "event_id": "a1b2c3d4-e5f6-47a8-9b0c-1d2e3f4a5b6c",
+      "session_id": "sess-def456",
+      "event_timestamp": "2026-06-22T14:31:20.456Z",
+      "recorded_at": "2026-06-22T14:31:20.789Z",
+      "event_type": "tool_call",
+      "severity": "WARNING",
+      "user_id": "bob@company.com",
+      "tool_execution": {
+        "tool_name": "search-api",
+        "tool_input_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "tool_output_hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+        "duration_ms": 234,
+        "exit_code": 0
+      },
+      "compliance_flags": {
+        "pii_detected": true,
+        "policy_violation": false
+      },
+      "cost_tracking": {
+        "cost_usd": 0.003,
+        "session_cost_usd": 0.045,
+        "cost_category": "api_calls"
+      }
+    },
+    {
+      "event_id": "d4c5b6a7-89e0-45f1-2b3c-4d5e6f7a8b9c",
+      "session_id": "sess-ghi789",
+      "event_timestamp": "2026-06-22T14:32:10.000Z",
+      "recorded_at": "2026-06-22T14:32:10.234Z",
+      "event_type": "security_violation",
+      "severity": "CRITICAL",
+      "user_id": "charlie@company.com",
+      "compliance_flags": {
+        "pii_detected": false,
+        "policy_violation": true,
+        "rbac_violation": true,
+        "suspicious_pattern": true
+      },
+      "access_control": {
+        "action": "secret_access",
+        "decision": "deny",
+        "required_permission": "secrets:read:production",
+        "mfa_verified": false
+      }
+    }
+  ]
+}

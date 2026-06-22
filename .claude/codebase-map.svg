@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <style>
+      .node { cursor: pointer; user-select: none; }
+      .node-circle { transition: r 0.2s, stroke-width 0.2s; }
+      .node-circle:hover { r: 18; stroke-width: 3; }
+      .node-label { font-size: 11px; font-family: monospace; pointer-events: none; }
+      .edge { stroke: #999; stroke-width: 1.5; fill: none; opacity: 0.6; }
+      .edge.highlight { stroke: #FF5722; stroke-width: 2.5; opacity: 1; }
+      .controls { font-family: Arial, sans-serif; font-size: 13px; }
+      .info-panel { background: #f5f5f5; border: 1px solid #ddd; padding: 10px; border-radius: 4px; }
+      text.info { font-family: monospace; font-size: 12px; }
+      .zoom-controls { cursor: pointer; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#999" />
+    </marker>
+    <marker id="arrowhead-highlight" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#FF5722" />
+    </marker>
+  </defs>
+
+  <!-- Background (for pan/zoom interaction) -->
+  <rect width="1200" height="800" fill="white" id="bg" />
+
+  <!-- SVG Group for pan/zoom -->
+  <g id="viewport">
+    <!-- Edges -->
+    <line class="edge" x1="10" y1="10" x2="990" y2="790" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="10" x2="990" y2="790" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="10" x2="990" y2="790" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="10" x2="10" y2="10" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="10" x2="10" y2="10" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="10" x2="990" y2="790" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="10" x2="10" y2="790" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="10" x2="10" y2="790" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="10" x2="990" y2="790" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="10" x2="10" y2="790" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="10" x2="990" y2="790" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="10" x2="10" y2="790" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="10" x2="10" y2="790" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="10" x2="990" y2="790" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="10" x2="990" y2="790" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="10" x2="10" y2="790" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="10" x2="990" y2="790" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="10" x2="10" y2="790" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="10" x2="990" y2="790" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="10" x2="10" y2="790" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="10" x2="10" y2="790" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="10" x2="10" y2="790" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="10" x2="10" y2="790" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="10" x2="990" y2="790" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="10" x2="990" y2="790" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="10" x2="990" y2="790" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="10" x2="990" y2="790" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="10" x2="10" y2="790" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="990" y1="10" x2="10" y2="10" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="990" y1="10" x2="990" y2="10" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="990" y1="10" x2="10" y2="790" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="990" y1="10" x2="990" y2="790" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="990" y1="10" x2="990" y2="790" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="990" y1="10" x2="990" y2="790" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="990" y1="10" x2="10" y2="10" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="790" x2="10" y2="10" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="790" x2="990" y2="790" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="990" y1="790" x2="10" y2="10" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="990" y1="790" x2="990" y2="790" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="990" y1="790" x2="10" y2="790" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="990" y1="790" x2="10" y2="10" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="990" y1="790" x2="990" y2="790" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="990" y1="790" x2="10" y2="10" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="990" y1="790" x2="10" y2="790" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="990" y1="790" x2="10" y2="10" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="790" x2="10" y2="10" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="790" x2="990" y2="10" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="790" x2="990" y2="10" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="790" x2="990" y2="10" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="990" y1="790" x2="990" y2="10" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="790" x2="990" y2="10" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="990" y1="790" x2="990" y2="10" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="990" y1="790" x2="990" y2="10" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="790" x2="990" y2="10" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="990" y1="790" x2="10" y2="10" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="990" y1="790" x2="990" y2="10" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="790" x2="990" y2="10" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="790" x2="990" y2="10" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="990" y1="790" x2="990" y2="10" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="790" x2="990" y2="10" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="790" x2="990" y2="10" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="990" y1="790" x2="990" y2="10" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="990" y1="790" x2="990" y2="10" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="990" y1="790" x2="990" y2="10" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="790" x2="990" y2="10" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="990" y1="790" x2="990" y2="10" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="790" x2="990" y2="10" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="990" y1="790" x2="990" y2="10" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="790" x2="990" y2="10" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="990" y1="10" x2="10" y2="790" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="990" y1="790" x2="10" y2="10" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="10" x2="10" y2="10" marker-end="url(#arrowhead)" />
+    <line class="edge" x1="10" y1="10" x2="990" y2="790" marker-end="url(#arrowhead)" />
+
+    <!-- Nodes -->
+    <g class="node" data-id="examples/agent-sdk/python/agent.py" data-label="agent.py" data-type="file" data-ext=".py">
+      <circle class="node-circle" cx="734.2078986548313" cy="525.4773793329513" r="12" fill="#3776AB" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="734.2078986548313" y="545.4773793329513" text-anchor="middle">agent.py</text>
+    </g>
+    <g class="node" data-id="examples/agent-sdk/typescript/agent.ts" data-label="agent.ts" data-type="file" data-ext=".ts">
+      <circle class="node-circle" cx="557.924165507408" cy="10" r="12" fill="#2196F3" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="557.924165507408" y="30" text-anchor="middle">agent.ts</text>
+    </g>
+    <g class="node" data-id="professional-stacks/ai_product_manager_stack/commands/ux-audit.py" data-label="ux-audit.py" data-type="file" data-ext=".py">
+      <circle class="node-circle" cx="553.2975358651759" cy="248.3379386087332" r="12" fill="#3776AB" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="553.2975358651759" y="268.3379386087332" text-anchor="middle">ux-audit.py</text>
+    </g>
+    <g class="node" data-id="scripts/add-descriptions.js" data-label="add-descriptions.js" data-type="file" data-ext=".js">
+      <circle class="node-circle" cx="728.9775001201953" cy="122.23736396848567" r="12" fill="#FFC107" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="728.9775001201953" y="142.23736396848568" text-anchor="middle">add-descriptions.js</text>
+    </g>
+    <g class="node" data-id="scripts/add-frontmatter.js" data-label="add-frontmatter.js" data-type="file" data-ext=".js">
+      <circle class="node-circle" cx="130.44641455412355" cy="356.7139912906272" r="12" fill="#FFC107" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="130.44641455412355" y="376.7139912906272" text-anchor="middle">add-frontmatter.js</text>
+    </g>
+    <g class="node" data-id="scripts/audit-certified.js" data-label="audit-certified.js" data-type="file" data-ext=".js">
+      <circle class="node-circle" cx="593.8916001528212" cy="60.89701387455605" r="12" fill="#FFC107" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="593.8916001528212" y="80.89701387455605" text-anchor="middle">audit-certified.js</text>
+    </g>
+    <g class="node" data-id="scripts/auto-frontmatter.js" data-label="auto-frontmatter.js" data-type="file" data-ext=".js">
+      <circle class="node-circle" cx="703.1083539727558" cy="10" r="12" fill="#FFC107" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="703.1083539727558" y="30" text-anchor="middle">auto-frontmatter.js</text>
+    </g>
+    <g class="node" data-id="scripts/backfill-dates.js" data-label="backfill-dates.js" data-type="file" data-ext=".js">
+      <circle class="node-circle" cx="16.7247495389051" cy="454.63865248729206" r="12" fill="#FFC107" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="16.7247495389051" y="474.63865248729206" text-anchor="middle">backfill-dates.js</text>
+    </g>
+    <g class="node" data-id="scripts/build-catalog.js" data-label="build-catalog.js" data-type="file" data-ext=".js">
+      <circle class="node-circle" cx="536.8135993397406" cy="147.13585168283993" r="12" fill="#FFC107" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="536.8135993397406" y="167.13585168283993" text-anchor="middle">build-catalog.js</text>
+    </g>
+    <g class="node" data-id="scripts/build-index.js" data-label="build-index.js" data-type="file" data-ext=".js">
+      <circle class="node-circle" cx="488.16885501131543" cy="482.577783407019" r="12" fill="#FFC107" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="488.16885501131543" y="502.577783407019" text-anchor="middle">build-index.js</text>
+    </g>
+    <g class="node" data-id="scripts/build-plugins.js" data-label="build-plugins.js" data-type="file" data-ext=".js">
+      <circle class="node-circle" cx="395.6349308162677" cy="382.9572041044048" r="12" fill="#FFC107" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="395.6349308162677" y="402.9572041044048" text-anchor="middle">build-plugins.js</text>
+    </g>
+    <g class="node" data-id="scripts/certify-stack.js" data-label="certify-stack.js" data-type="file" data-ext=".js">
+      <circle class="node-circle" cx="362.10116184360015" cy="133.34935636226726" r="12" fill="#FFC107" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="362.10116184360015" y="153.34935636226726" text-anchor="middle">certify-stack.js</text>
+    </g>
+    <g class="node" data-id="scripts/chart.js" data-label="chart.js" data-type="file" data-ext=".js">
+      <circle class="node-circle" cx="359.40145932218724" cy="275.3798567380749" r="12" fill="#FFC107" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="359.40145932218724" y="295.3798567380749" text-anchor="middle">chart.js</text>
+    </g>
+    <g class="node" data-id="scripts/check-freshness.js" data-label="check-freshness.js" data-type="file" data-ext=".js">
+      <circle class="node-circle" cx="279.2152973948402" cy="168.8067526631022" r="12" fill="#FFC107" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="279.2152973948402" y="188.8067526631022" text-anchor="middle">check-freshness.js</text>
+    </g>
+    <g class="node" data-id="scripts/checkpoint.js" data-label="checkpoint.js" data-type="file" data-ext=".js">
+      <circle class="node-circle" cx="990" cy="790" r="12" fill="#FFC107" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="990" y="810" text-anchor="middle">checkpoint.js</text>
+    </g>
+    <g class="node" data-id="scripts/cli.js" data-label="cli.js" data-type="file" data-ext=".js">
+      <circle class="node-circle" cx="10" cy="10" r="12" fill="#FFC107" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="10" y="30" text-anchor="middle">cli.js</text>
+    </g>
+    <g class="node" data-id="scripts/council.js" data-label="council.js" data-type="file" data-ext=".js">
+      <circle class="node-circle" cx="799.7499995002394" cy="596.3134981718157" r="12" fill="#FFC107" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="799.7499995002394" y="616.3134981718157" text-anchor="middle">council.js</text>
+    </g>
+    <g class="node" data-id="scripts/dependency-graph.js" data-label="dependency-graph.js" data-type="file" data-ext=".js">
+      <circle class="node-circle" cx="553.8623924303116" cy="410.6293558224391" r="12" fill="#FFC107" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="553.8623924303116" y="430.6293558224391" text-anchor="middle">dependency-graph.js</text>
+    </g>
+    <g class="node" data-id="scripts/generate-benchmarks.js" data-label="generate-benchmarks.js" data-type="file" data-ext=".js">
+      <circle class="node-circle" cx="661.786240916934" cy="85.47752017755435" r="12" fill="#FFC107" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="661.786240916934" y="105.47752017755435" text-anchor="middle">generate-benchmarks.js</text>
+    </g>
+    <g class="node" data-id="scripts/generate-changelog.js" data-label="generate-changelog.js" data-type="file" data-ext=".js">
+      <circle class="node-circle" cx="807.1319591601371" cy="106.33695144984122" r="12" fill="#FFC107" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="807.1319591601371" y="126.33695144984122" text-anchor="middle">generate-changelog.js</text>
+    </g>
+    <g class="node" data-id="scripts/generate-refresh-report.js" data-label="generate-refresh-report.js" data-type="file" data-ext=".js">
+      <circle class="node-circle" cx="215.60947858457095" cy="317.52194067014193" r="12" fill="#FFC107" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="215.60947858457095" y="337.52194067014193" text-anchor="middle">generate-refresh-report.js</text>
+    </g>
+    <g class="node" data-id="scripts/learn.js" data-label="learn.js" data-type="file" data-ext=".js">
+      <circle class="node-circle" cx="990" cy="790" r="12" fill="#FFC107" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="990" y="810" text-anchor="middle">learn.js</text>
+    </g>
+    <g class="node" data-id="scripts/recommend.js" data-label="recommend.js" data-type="file" data-ext=".js">
+      <circle class="node-circle" cx="990" cy="790" r="12" fill="#FFC107" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="990" y="810" text-anchor="middle">recommend.js</text>
+    </g>
+    <g class="node" data-id="scripts/test-cli.js" data-label="test-cli.js" data-type="file" data-ext=".js">
+      <circle class="node-circle" cx="680.6943514455381" cy="212.08490118255946" r="12" fill="#FFC107" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="680.6943514455381" y="232.08490118255946" text-anchor="middle">test-cli.js</text>
+    </g>
+    <g class="node" data-id="scripts/translate-assets.js" data-label="translate-assets.js" data-type="file" data-ext=".js">
+      <circle class="node-circle" cx="69.95383735303537" cy="191.3850192273132" r="12" fill="#FFC107" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="69.95383735303537" y="211.3850192273132" text-anchor="middle">translate-assets.js</text>
+    </g>
+    <g class="node" data-id="scripts/validate-catalog.js" data-label="validate-catalog.js" data-type="file" data-ext=".js">
+      <circle class="node-circle" cx="353.2549264237806" cy="481.7209050826576" r="12" fill="#FFC107" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="353.2549264237806" y="501.7209050826576" text-anchor="middle">validate-catalog.js</text>
+    </g>
+    <g class="node" data-id="scripts/validate-frontmatter.js" data-label="validate-frontmatter.js" data-type="file" data-ext=".js">
+      <circle class="node-circle" cx="436.0628797401349" cy="195.98455358260327" r="12" fill="#FFC107" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="436.0628797401349" y="215.98455358260327" text-anchor="middle">validate-frontmatter.js</text>
+    </g>
+    <g class="node" data-id="scripts/validate-manifests.js" data-label="validate-manifests.js" data-type="file" data-ext=".js">
+      <circle class="node-circle" cx="771.2775047552822" cy="274.21787973804027" r="12" fill="#FFC107" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="771.2775047552822" y="294.21787973804027" text-anchor="middle">validate-manifests.js</text>
+    </g>
+    <g class="node" data-id="scripts/validate-stacks.js" data-label="validate-stacks.js" data-type="file" data-ext=".js">
+      <circle class="node-circle" cx="338.00814393856973" cy="603.5829284130384" r="12" fill="#FFC107" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="338.00814393856973" y="623.5829284130384" text-anchor="middle">validate-stacks.js</text>
+    </g>
+    <g class="node" data-id="scripts/visualize-graph.js" data-label="visualize-graph.js" data-type="file" data-ext=".js">
+      <circle class="node-circle" cx="471.75018872307334" cy="10.012754797944478" r="12" fill="#FFC107" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="471.75018872307334" y="30.012754797944478" text-anchor="middle">visualize-graph.js</text>
+    </g>
+    <g class="node" data-id="site/src/components/os/AppContent.tsx" data-label="AppContent.tsx" data-type="file" data-ext=".tsx">
+      <circle class="node-circle" cx="10" cy="10" r="12" fill="#1976D2" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="10" y="30" text-anchor="middle">AppContent.tsx</text>
+    </g>
+    <g class="node" data-id="site/src/components/os/ClaudientOS.tsx" data-label="ClaudientOS.tsx" data-type="file" data-ext=".tsx">
+      <circle class="node-circle" cx="990" cy="10" r="12" fill="#1976D2" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="990" y="30" text-anchor="middle">ClaudientOS.tsx</text>
+    </g>
+    <g class="node" data-id="site/src/components/os/Desktop.tsx" data-label="Desktop.tsx" data-type="file" data-ext=".tsx">
+      <circle class="node-circle" cx="990" cy="10" r="12" fill="#1976D2" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="990" y="30" text-anchor="middle">Desktop.tsx</text>
+    </g>
+    <g class="node" data-id="site/src/components/os/MenuBar.tsx" data-label="MenuBar.tsx" data-type="file" data-ext=".tsx">
+      <circle class="node-circle" cx="10" cy="790" r="12" fill="#1976D2" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="10" y="810" text-anchor="middle">MenuBar.tsx</text>
+    </g>
+    <g class="node" data-id="site/src/components/os/Taskbar.tsx" data-label="Taskbar.tsx" data-type="file" data-ext=".tsx">
+      <circle class="node-circle" cx="990" cy="790" r="12" fill="#1976D2" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="990" y="810" text-anchor="middle">Taskbar.tsx</text>
+    </g>
+    <g class="node" data-id="site/src/components/os/Window.tsx" data-label="Window.tsx" data-type="file" data-ext=".tsx">
+      <circle class="node-circle" cx="990" cy="790" r="12" fill="#1976D2" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="990" y="810" text-anchor="middle">Window.tsx</text>
+    </g>
+    <g class="node" data-id="site/src/components/os/apps/AboutApp.tsx" data-label="AboutApp.tsx" data-type="file" data-ext=".tsx">
+      <circle class="node-circle" cx="10" cy="790" r="12" fill="#1976D2" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="10" y="810" text-anchor="middle">AboutApp.tsx</text>
+    </g>
+    <g class="node" data-id="site/src/components/os/apps/AgentsApp.tsx" data-label="AgentsApp.tsx" data-type="file" data-ext=".tsx">
+      <circle class="node-circle" cx="10" cy="790" r="12" fill="#1976D2" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="10" y="810" text-anchor="middle">AgentsApp.tsx</text>
+    </g>
+    <g class="node" data-id="site/src/components/os/apps/BenchmarksApp.tsx" data-label="BenchmarksApp.tsx" data-type="file" data-ext=".tsx">
+      <circle class="node-circle" cx="10" cy="790" r="12" fill="#1976D2" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="10" y="810" text-anchor="middle">BenchmarksApp.tsx</text>
+    </g>
+    <g class="node" data-id="site/src/components/os/apps/CliApp.tsx" data-label="CliApp.tsx" data-type="file" data-ext=".tsx">
+      <circle class="node-circle" cx="990" cy="790" r="12" fill="#1976D2" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="990" y="810" text-anchor="middle">CliApp.tsx</text>
+    </g>
+    <g class="node" data-id="site/src/components/os/apps/CommandsApp.tsx" data-label="CommandsApp.tsx" data-type="file" data-ext=".tsx">
+      <circle class="node-circle" cx="10" cy="790" r="12" fill="#1976D2" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="10" y="810" text-anchor="middle">CommandsApp.tsx</text>
+    </g>
+    <g class="node" data-id="site/src/components/os/apps/CommunityApp.tsx" data-label="CommunityApp.tsx" data-type="file" data-ext=".tsx">
+      <circle class="node-circle" cx="990" cy="790" r="12" fill="#1976D2" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="990" y="810" text-anchor="middle">CommunityApp.tsx</text>
+    </g>
+    <g class="node" data-id="site/src/components/os/apps/CompareApp.tsx" data-label="CompareApp.tsx" data-type="file" data-ext=".tsx">
+      <circle class="node-circle" cx="990" cy="790" r="12" fill="#1976D2" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="990" y="810" text-anchor="middle">CompareApp.tsx</text>
+    </g>
+    <g class="node" data-id="site/src/components/os/apps/GuidesApp.tsx" data-label="GuidesApp.tsx" data-type="file" data-ext=".tsx">
+      <circle class="node-circle" cx="10" cy="790" r="12" fill="#1976D2" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="10" y="810" text-anchor="middle">GuidesApp.tsx</text>
+    </g>
+    <g class="node" data-id="site/src/components/os/apps/HomeApp.tsx" data-label="HomeApp.tsx" data-type="file" data-ext=".tsx">
+      <circle class="node-circle" cx="990" cy="790" r="12" fill="#1976D2" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="990" y="810" text-anchor="middle">HomeApp.tsx</text>
+    </g>
+    <g class="node" data-id="site/src/components/os/apps/HooksApp.tsx" data-label="HooksApp.tsx" data-type="file" data-ext=".tsx">
+      <circle class="node-circle" cx="10" cy="790" r="12" fill="#1976D2" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="10" y="810" text-anchor="middle">HooksApp.tsx</text>
+    </g>
+    <g class="node" data-id="site/src/components/os/apps/InstallApp.tsx" data-label="InstallApp.tsx" data-type="file" data-ext=".tsx">
+      <circle class="node-circle" cx="10" cy="790" r="12" fill="#1976D2" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="10" y="810" text-anchor="middle">InstallApp.tsx</text>
+    </g>
+    <g class="node" data-id="site/src/components/os/apps/McpApp.tsx" data-label="McpApp.tsx" data-type="file" data-ext=".tsx">
+      <circle class="node-circle" cx="990" cy="790" r="12" fill="#1976D2" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="990" y="810" text-anchor="middle">McpApp.tsx</text>
+    </g>
+    <g class="node" data-id="site/src/components/os/apps/PersonasApp.tsx" data-label="PersonasApp.tsx" data-type="file" data-ext=".tsx">
+      <circle class="node-circle" cx="10" cy="790" r="12" fill="#1976D2" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="10" y="810" text-anchor="middle">PersonasApp.tsx</text>
+    </g>
+    <g class="node" data-id="site/src/components/os/apps/PluginsApp.tsx" data-label="PluginsApp.tsx" data-type="file" data-ext=".tsx">
+      <circle class="node-circle" cx="10" cy="790" r="12" fill="#1976D2" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="10" y="810" text-anchor="middle">PluginsApp.tsx</text>
+    </g>
+    <g class="node" data-id="site/src/components/os/apps/PricingApp.tsx" data-label="PricingApp.tsx" data-type="file" data-ext=".tsx">
+      <circle class="node-circle" cx="990" cy="790" r="12" fill="#1976D2" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="990" y="810" text-anchor="middle">PricingApp.tsx</text>
+    </g>
+    <g class="node" data-id="site/src/components/os/apps/RulesApp.tsx" data-label="RulesApp.tsx" data-type="file" data-ext=".tsx">
+      <circle class="node-circle" cx="990" cy="790" r="12" fill="#1976D2" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="990" y="810" text-anchor="middle">RulesApp.tsx</text>
+    </g>
+    <g class="node" data-id="site/src/components/os/apps/ShowcaseApp.tsx" data-label="ShowcaseApp.tsx" data-type="file" data-ext=".tsx">
+      <circle class="node-circle" cx="990" cy="790" r="12" fill="#1976D2" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="990" y="810" text-anchor="middle">ShowcaseApp.tsx</text>
+    </g>
+    <g class="node" data-id="site/src/components/os/apps/SkillsApp.tsx" data-label="SkillsApp.tsx" data-type="file" data-ext=".tsx">
+      <circle class="node-circle" cx="10" cy="790" r="12" fill="#1976D2" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="10" y="810" text-anchor="middle">SkillsApp.tsx</text>
+    </g>
+    <g class="node" data-id="site/src/components/os/apps/StacksApp.tsx" data-label="StacksApp.tsx" data-type="file" data-ext=".tsx">
+      <circle class="node-circle" cx="990" cy="790" r="12" fill="#1976D2" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="990" y="810" text-anchor="middle">StacksApp.tsx</text>
+    </g>
+    <g class="node" data-id="site/src/components/os/apps/SwarmApp.tsx" data-label="SwarmApp.tsx" data-type="file" data-ext=".tsx">
+      <circle class="node-circle" cx="10" cy="790" r="12" fill="#1976D2" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="10" y="810" text-anchor="middle">SwarmApp.tsx</text>
+    </g>
+    <g class="node" data-id="site/src/components/os/apps/ToolkitApp.tsx" data-label="ToolkitApp.tsx" data-type="file" data-ext=".tsx">
+      <circle class="node-circle" cx="990" cy="790" r="12" fill="#1976D2" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="990" y="810" text-anchor="middle">ToolkitApp.tsx</text>
+    </g>
+    <g class="node" data-id="site/src/components/os/apps/TrashApp.tsx" data-label="TrashApp.tsx" data-type="file" data-ext=".tsx">
+      <circle class="node-circle" cx="990" cy="790" r="12" fill="#1976D2" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="990" y="810" text-anchor="middle">TrashApp.tsx</text>
+    </g>
+    <g class="node" data-id="site/src/components/os/apps/WorkflowsApp.tsx" data-label="WorkflowsApp.tsx" data-type="file" data-ext=".tsx">
+      <circle class="node-circle" cx="10" cy="790" r="12" fill="#1976D2" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="10" y="810" text-anchor="middle">WorkflowsApp.tsx</text>
+    </g>
+    <g class="node" data-id="site/src/components/os/apps/ui.tsx" data-label="ui.tsx" data-type="file" data-ext=".tsx">
+      <circle class="node-circle" cx="990" cy="10" r="12" fill="#1976D2" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="990" y="30" text-anchor="middle">ui.tsx</text>
+    </g>
+    <g class="node" data-id="site/src/components/os/apps.ts" data-label="apps.ts" data-type="file" data-ext=".ts">
+      <circle class="node-circle" cx="990" cy="790" r="12" fill="#2196F3" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="990" y="810" text-anchor="middle">apps.ts</text>
+    </g>
+    <g class="node" data-id="site/src/components/os/types.ts" data-label="types.ts" data-type="file" data-ext=".ts">
+      <circle class="node-circle" cx="10" cy="10" r="12" fill="#2196F3" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="10" y="30" text-anchor="middle">types.ts</text>
+    </g>
+    <g class="node" data-id="site/src/components/os/useWindows.ts" data-label="useWindows.ts" data-type="file" data-ext=".ts">
+      <circle class="node-circle" cx="10" cy="10" r="12" fill="#2196F3" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="10" y="30" text-anchor="middle">useWindows.ts</text>
+    </g>
+    <g class="node" data-id="site/src/utils/cn.ts" data-label="cn.ts" data-type="file" data-ext=".ts">
+      <circle class="node-circle" cx="10" cy="790" r="12" fill="#2196F3" stroke="#333" stroke-width="1.5" />
+      <text class="node-label" x="10" y="810" text-anchor="middle">cn.ts</text>
+    </g>
+
+  </g>
+
+  <!-- Controls & Info Panel -->
+  <g class="controls">
+    <rect x="10" y="10" width="280" height="120" fill="white" stroke="#ccc" stroke-width="1" rx="4" />
+    <text class="info" x="20" y="28"><tspan font-weight="bold">SVG Map Render</tspan></text>
+    <text class="info" x="20" y="48">
+      <tspan>Nodes: 64 | Edges: 73</tspan>
+    </text>
+    <text class="info" x="20" y="65">
+      <tspan>Click node for details</tspan>
+    </text>
+    <text class="info zoom-controls" x="20" y="82">
+      <tspan fill="#2196F3" font-weight="bold">+ Zoom In</tspan>
+      <tspan x="120" fill="#2196F3" font-weight="bold">- Zoom Out</tspan>
+    </text>
+    <text class="info" x="20" y="102" fill="#666">
+      <tspan>Scroll to pan • Double-click to reset</tspan>
+    </text>
+  </g>
+
+  <!-- Info Box (hidden by default) -->
+  <rect id="infoBox" x="10" y="150" width="320" height="200" fill="white" stroke="#2196F3" stroke-width="2" rx="4" display="none" />
+  <text id="infoTitle" class="info" x="20" y="175" font-weight="bold" display="none"></text>
+  <text id="infoBody" class="info" x="20" y="200" display="none"></text>
+
+  <!-- JavaScript interaction handler (inline) -->
+  <script type="text/javascript"><![CDATA[
+(function() {
+  let scale = 1;
+  let panX = 0;
+  let panY = 0;
+  const MIN_SCALE = 0.5;
+  const MAX_SCALE = 3;
+  const viewport = document.getElementById('viewport');
+  const bg = document.getElementById('bg');
+  const infoBox = document.getElementById('infoBox');
+  const infoTitle = document.getElementById('infoTitle');
+  const infoBody = document.getElementById('infoBody');
+
+  function updateTransform() {
+    viewport.setAttribute('transform', `translate(${panX}, ${panY}) scale(${scale})`);
+  }
+
+  function showInfo(nodeId, label, ext) {
+    infoTitle.textContent = label;
+    infoBody.textContent = `ID: ${nodeId}\nExt: ${ext}`;
+    infoTitle.setAttribute('display', 'inline');
+    infoBody.setAttribute('display', 'inline');
+    infoBox.setAttribute('display', 'inline');
+  }
+
+  function hideInfo() {
+    infoBox.setAttribute('display', 'none');
+    infoTitle.setAttribute('display', 'none');
+    infoBody.setAttribute('display', 'none');
+  }
+
+  // Node click handler
+  document.querySelectorAll('.node').forEach(node => {
+    node.addEventListener('click', function(e) {
+      e.stopPropagation();
+      const nodeId = this.getAttribute('data-id');
+      const label = this.getAttribute('data-label');
+      const ext = this.getAttribute('data-ext');
+      showInfo(nodeId, label, ext);
+    });
+  });
+
+  // Zoom controls
+  document.querySelectorAll('.zoom-controls tspan').forEach((tspan, idx) => {
+    tspan.addEventListener('click', function() {
+      if (idx === 0) {
+        scale = Math.min(scale + 0.2, MAX_SCALE);
+      } else {
+        scale = Math.max(scale - 0.2, MIN_SCALE);
+      }
+      updateTransform();
+    });
+  });
+
+  // Mouse wheel zoom
+  bg.addEventListener('wheel', function(e) {
+    e.preventDefault();
+    const oldScale = scale;
+    scale += (e.deltaY > 0 ? -0.1 : 0.1);
+    scale = Math.max(MIN_SCALE, Math.min(MAX_SCALE, scale));
+    updateTransform();
+  });
+
+  // Pan on drag
+  let isDragging = false;
+  let dragStart = { x: 0, y: 0 };
+
+  bg.addEventListener('mousedown', function(e) {
+    isDragging = true;
+    dragStart = { x: e.clientX - panX, y: e.clientY - panY };
+    hideInfo();
+  });
+
+  document.addEventListener('mousemove', function(e) {
+    if (isDragging) {
+      panX = e.clientX - dragStart.x;
+      panY = e.clientY - dragStart.y;
+      updateTransform();
+    }
+  });
+
+  document.addEventListener('mouseup', function() {
+    isDragging = false;
+  });
+
+  // Double-click to reset
+  bg.addEventListener('dblclick', function() {
+    scale = 1;
+    panX = 0;
+    panY = 0;
+    updateTransform();
+    hideInfo();
+  });
+})();
+  ]]></script>
+</svg>

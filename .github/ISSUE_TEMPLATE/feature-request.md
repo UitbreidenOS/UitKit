@@ -6,13 +6,21 @@ labels: enhancement
 assignees: ''
 ---
 
-## What's the idea?
+## Feature Name
 
-<!-- One or two sentences describing the feature -->
+<!-- Concise, descriptive name for this feature -->
 
-## Why is this needed?
+## Use Case
 
-<!-- What problem does it solve? Who benefits? How often would it be used? -->
+<!-- What problem does this solve? Who benefits? How often would it be used? -->
+
+## Description
+
+<!-- One or two sentences describing the feature idea -->
+
+## Priority
+
+<!-- Select one: Low | Medium | High | Critical -->
 
 ## How should it work?
 
@@ -23,9 +31,19 @@ assignees: ''
 npx claudient ...
 ```
 
+## Related Features
+
+<!-- Links to similar features, related issues, or dependent features -->
+<!-- e.g., Related to #123, depends on #456 -->
+
 ## Alternatives considered
 
 <!-- Have you tried a workaround? What other approaches exist? -->
+
+## Willingness to Contribute
+
+- [ ] I am willing to work on this feature
+- [ ] I would appreciate guidance if I attempted this
 
 ## Scope check
 
@@ -35,4 +53,4 @@ npx claudient ...
 
 ## Additional context
 
-<!-- Screenshots, links, or references -->
+<!-- Screenshots, links, references, or any other relevant information -->

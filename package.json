@@ -84,6 +84,8 @@
     "changelog": "node scripts/generate-changelog.js --write",
     "benchmark": "node scripts/generate-benchmarks.js",
     "test": "node scripts/test-cli.js",
+    "test:regression": "node test/regression/backward-compatibility.test.js",
+    "test:all": "npm run test && npm run test:regression",
     "add-descriptions": "node scripts/add-descriptions.js",
     "translate": "node scripts/translate-assets.js",
     "prepare": "husky"

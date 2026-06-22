@@ -1,0 +1,61 @@
+claudeignore | cost | .claudeignore Templates | PRESENT | ./claudeignore-templates/node.claudeignore, ./claudeignore-templates/go.claudeignore, ./claudeignore-templates/python.claudeignore
+save-state | cost | Context Compactor | PRESENT | ./workflows/context-management-flow.md, ./workflows/nl/context-management-flow.md, ./workflows/de/context-management-flow.md, ./workflows/fr/context-management-flow.md, ./workflows/es/context-management-flow.md
+caveman | cost | Caveman Mode | PRESENT | ./scripts/caveman.js, ./skills/ai-engineering/caveman-token-reduction.md, ./skills/productivity/caveman-mode.md, ./skills/productivity/caveman.md, ./skills/productivity/nl/caveman.md
+prune-context | cost | Context Pruner | PRESENT | ./workflows/context-management-flow.md, ./workflows/nl/context-management-flow.md, ./workflows/de/context-management-flow.md, ./workflows/fr/context-management-flow.md, ./workflows/es/context-management-flow.md
+shadow-compiler | resilience | Shadow Compiler | PRESENT | ./hooks/post-tool-use/shadow-compiler.sh, ./hooks/post-tool-use/shadow-compiler.md
+safe-commit | resilience | Safe Commit Hook | PRESENT | ./hooks/post-tool-use/atomic-commit.md, ./hooks/post-tool-use/atomic-commit.sh, ./scripts/commit.js, ./rules/common/commit-conventions.md, ./rules/common/nl/commit-conventions.md
+spec-enforcer | resilience | Spec-First Enforcer | PRESENT | ./hooks/pre-tool-use/spec-enforcer.md, ./hooks/pre-tool-use/spec-enforcer.sh
+chaos-monkey | resilience | Chaos Monkey | PRESENT | ./workflows/chaos-game-day.md, ./workflows/nl/chaos-game-day.md, ./workflows/de/chaos-game-day.md, ./workflows/fr/chaos-game-day.md, ./workflows/es/chaos-game-day.md
+repair-agent | resilience | Self-Healing CLI Repair Agent | PRESENT | ./scripts/repair.js
+fail-fast | resilience | Fail-Fast Enforcer | PRESENT | ./hooks/cost-cap-enforcer.md, ./hooks/cost-cap-enforcer.sh, ./hooks/pre-tool-use/spec-enforcer.md, ./hooks/pre-tool-use/spec-enforcer.sh, ./hooks/post-tool-use/fail-fast.md
+measure-twice | resilience | Measure Twice / Plan-First Hook | PRESENT | ./guides/dx-measurement.md, ./guides/nl/dx-measurement.md, ./guides/de/dx-measurement.md, ./guides/fr/dx-measurement.md, ./guides/es/dx-measurement.md
+grill-me | enterprise | Grill Me | PRESENT | ./skills/productivity/grill-me.md
+stunt-double | enterprise | Stunt Double | PRESENT | ./skills/productivity/stunt-double.md
+architect-mason | enterprise | Architect / Mason | PRESENT | ./agents/core/architect.md, ./agents/core/nl/architect.md, ./agents/core/de/architect.md, ./agents/core/fr/architect.md, ./agents/core/es/architect.md
+adr | enterprise | ADR Generator | PRESENT | ./agents/roles/diagram-generator.md, ./agents/roles/adr-writer.md, ./agents/roles/nl/diagram-generator.md, ./agents/roles/nl/adr-writer.md, ./agents/roles/de/diagram-generator.md
+blast-radius | enterprise | Blast Radius Analyzer | PRESENT | ./skills/architecture/blast-radius.md, ./.claude/blast-radius-report.md
+legacy-strangler | enterprise | Legacy Strangler | PRESENT | ./workflows/strangle-legacy.md, ./agents/roles/legacy-modernizer.md, ./agents/roles/nl/legacy-modernizer.md, ./agents/roles/de/legacy-modernizer.md, ./agents/roles/fr/legacy-modernizer.md
+council | enterprise | Claude Council Swarm Launcher | PRESENT | ./scripts/council.js
+swarm-sandbox | enterprise | Swarm Sandbox Simulator | PRESENT | ./skills/ai-engineering/swarm-sandbox.md, ./agents/specialists/swarm-sandbox-orchestrator.md
+night-shift | swarms | Night Shift | PRESENT | ./agents/core/night-shift.md, ./scripts/nightshift.js
+hive-swarm | swarms | Hive Orchestrator | PRESENT | ./agents/core/hive-orchestrator.md, ./agents/roles/dag-orchestrator.md, ./agents/roles/workflow-orchestrator.md, ./agents/roles/it-ops-orchestrator.md, ./agents/roles/codebase-orchestrator.md
+tribunal | swarms | Tribunal Review | PRESENT | ./workflows/security-review.md, ./workflows/contract-review.md, ./workflows/pre-human-review.md, ./workflows/code-review.md, ./workflows/dx-review.md
+sweeper | swarms | Codebase Sweeper | PRESENT | ./agents/core/codebase-sweeper.md, ./agents/roles/codebase-orchestrator.md, ./agents/roles/nl/codebase-orchestrator.md, ./agents/roles/de/codebase-orchestrator.md, ./agents/roles/fr/codebase-orchestrator.md
+bisect-bug | swarms | Time-Travel Debugger | PRESENT | ./skills/productivity/bisect-bug.md
+auto-tdd | context | Auto-TDD Hook | PRESENT | ./hooks/post-tool-use/auto-tdd.sh, ./hooks/post-tool-use/auto-tdd.md
+dev-doctor | context | Dev Doctor | PRESENT | ./skills/devops-infra/dev-doctor.md, ./skills/productivity/env-doctor.md, ./skills/productivity/nl/env-doctor.md, ./skills/productivity/de/env-doctor.md, ./skills/productivity/fr/env-doctor.md
+jit-context | context | JIT Context Injector | PRESENT | ./workflows/context-management-flow.md, ./workflows/nl/context-management-flow.md, ./workflows/de/context-management-flow.md, ./workflows/fr/context-management-flow.md, ./workflows/es/context-management-flow.md
+constitution | zero-trust | Constitution Guardrail | PRESENT | ./hooks/pre-tool-use/constitution-guard.md, ./hooks/pre-tool-use/constitution-guard.sh
+auditor | zero-trust | The Auditor | PRESENT | ./agents/roles/ai-writing-auditor.md, ./agents/roles/security-auditor.md, ./agents/roles/compliance-auditor.md, ./agents/roles/code-quality-auditor.md, ./agents/roles/context-auditor.md
+shadow-pr | zero-trust | Ghost in the Machine | PRESENT | ./routines/shadow-pr.md
+interrogator | zero-trust | The Interrogator | PRESENT | ./skills/productivity/interrogator.md
+archaeologist | zero-trust | The Archaeologist | PRESENT | ./skills/productivity/archaeologist.md
+compliance-agent | zero-trust | Specify Wizard | PRESENT | ./skills/productivity/specify-wizard.md
+telemetry-optin | zero-trust | Privacy-First Telemetry Opt-in | PRESENT | ./rules/common/data-privacy.md, ./rules/common/nl/data-privacy.md, ./rules/common/de/data-privacy.md, ./rules/common/fr/data-privacy.md, ./rules/common/es/data-privacy.md
+audit-html | zero-trust | Executive HTML Compliance Audit | PRESENT | ./enterprise/audit_trail.md
+permissions-editor | zero-trust | Model Permission Editor | PRESENT | ./hooks/pre-tool-use/whatsapp-permission.md, ./hooks/permission/.DS_Store, ./hooks/permission/permission-denied-alert.md, ./hooks/permission/permission-denied-alert.sh, ./hooks/permission/permission-request-audit.md
+sentinel | zero-trust | CLAUDE.md Sentinel | PRESENT | ./scripts/sentinel.js
+historian | enterprise-intel | The Historian | PRESENT | ./hooks/post-tool-use/historian.sh, ./hooks/post-tool-use/historian.md
+sonar | enterprise-intel | Sonar Codebase Cartographer | PRESENT | ./agents/core/codebase-sweeper.md, ./agents/roles/codebase-orchestrator.md, ./agents/roles/nl/codebase-orchestrator.md, ./agents/roles/de/codebase-orchestrator.md, ./agents/roles/fr/codebase-orchestrator.md
+prophet | enterprise-intel | The Prophet | PRESENT | ./scripts/prophet.js, ./skills/architecture/prophet.md
+invariant | enterprise-intel | Invariant Discovery | PRESENT | ./skills/ai-engineering/skill-discovery.md, ./skills/ai-engineering/mcp-dynamic-discovery.md, ./skills/ai-engineering/nl/skill-discovery.md, ./skills/ai-engineering/de/skill-discovery.md, ./skills/ai-engineering/fr/skill-discovery.md
+oracle | enterprise-intel | The Oracle | PRESENT | ./scripts/oracle.js, ./skills/architecture/oracle.md
+graph-context | enterprise-intel | Graph-Augmented Context | PRESENT | ./workflows/context-management-flow.md, ./workflows/nl/context-management-flow.md, ./workflows/de/context-management-flow.md, ./workflows/fr/context-management-flow.md, ./workflows/es/context-management-flow.md
+recursive-reflection | enterprise-intel | Recursive Reflection | PRESENT | ./hooks/post-tool-use/recursive-reflection.sh, ./hooks/post-tool-use/recursive-reflection.md
+svg-map-inspector | enterprise-intel | SVG Interactive Map Inspector | PRESENT | ./skills/frontend/svg-map-inspector.md
+architect-federation | multi-agent | Architect / Mason Federation | PRESENT | ./agents/core/architect.md, ./agents/core/nl/architect.md, ./agents/core/de/architect.md, ./agents/core/fr/architect.md, ./agents/core/es/architect.md
+cross-talk | multi-agent | Cross-Talk | PRESENT | ./guides/cross-harness-guide.md, ./skills/productivity/cross-talk.md
+dba-box | multi-agent | DBA-in-a-Box | PRESENT | ./skills/architecture/dba-in-a-box.md
+incident-cmdr | multi-agent | Incident Commander | PRESENT | ./workflows/devops-incident.md, ./workflows/incident-response.md, ./workflows/nl/devops-incident.md, ./workflows/nl/incident-response.md, ./workflows/de/devops-incident.md
+self-healing-ci | multi-agent | Self-Healing CI Pipeline | PRESENT | ./skills/devops-infra/heal-ci.md
+mcp-discovery | multi-agent | MCP Dynamic Discovery | PRESENT | ./skills/ai-engineering/skill-discovery.md, ./skills/ai-engineering/mcp-dynamic-discovery.md, ./skills/ai-engineering/nl/skill-discovery.md, ./skills/ai-engineering/de/skill-discovery.md, ./skills/ai-engineering/fr/skill-discovery.md
+vibe-verify | creative | Vibe & Verify | PRESENT | ./skills/frontend/vibe-verify.md, ./skills/computer-use/screenshot-verify.md, ./skills/computer-use/nl/screenshot-verify.md, ./skills/computer-use/de/screenshot-verify.md, ./skills/computer-use/fr/screenshot-verify.md
+figma-bridge | creative | Figma-to-Code Bridge | PRESENT | ./mcp/figma.md, ./mcp/nl/figma.md, ./mcp/de/figma.md, ./mcp/fr/figma.md, ./mcp/es/figma.md
+artifact | creative | The Artifact | PRESENT | ./guides/live-artifacts.md, ./guides/nl/live-artifacts.md, ./guides/de/live-artifacts.md, ./guides/fr/live-artifacts.md, ./guides/es/live-artifacts.md
+atomic-commit | creative | Atomic Commit Hook | PRESENT | ./hooks/post-tool-use/atomic-commit.md, ./hooks/post-tool-use/atomic-commit.sh, ./scripts/commit.js, ./rules/common/commit-conventions.md, ./rules/common/nl/commit-conventions.md
+design-extract | creative | Design System Extraction | PRESENT | ./skills/frontend/design-system-extraction.md
+pulse-statusline | ux | The Pulse Statusline | PRESENT | ./guides/statusline-scripting-guide.md, ./skills/small-business/weekly-pulse.md, ./skills/small-business/nl/weekly-pulse.md, ./skills/small-business/de/weekly-pulse.md, ./skills/small-business/fr/weekly-pulse.md
+matrix-theme | ux | The Matrix Theme Pack | PRESENT | ./themes/matrix.json
+power-keybindings | ux | Power-User Keybindings | PRESENT | ./keybindings/power-user.json, ./keybindings/vim.json, ./keybindings/emacs.json, ./keybindings/README.md, ./keybindings/ergonomic.json
+shell-aliases | ux | High-Speed Shell Aliases | PRESENT | ./scripts/install-aliases.sh
+dashboard-launcher | ux | Offline GUI Desktop Dashboard | PRESENT | ./workflows/offline-validation.md, ./agents/roles/offline-validator.md, ./agents/roles/nl/offline-validator.md, ./agents/roles/de/offline-validator.md, ./agents/roles/fr/offline-validator.md
