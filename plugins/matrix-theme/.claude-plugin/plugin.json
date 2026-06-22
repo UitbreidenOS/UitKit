@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "matrix-theme",
+  "displayName": "Matrix Theme",
+  "version": "1.0.0",
+  "description": "Dark cyberpunk Matrix-inspired theme for Claude Code with green terminal aesthetics, customizable accent colors, and neon glow effects.",
+  "author": {
+    "name": "tushar2704",
+    "email": "ceo@uitbreiden.com",
+    "url": "https://uitbreiden.com"
+  },
+  "homepage": "https://github.com/Claudient/Claudient",
+  "repository": "https://github.com/Claudient/Claudient",
+  "license": "CC-BY-SA-4.0",
+  "keywords": [
+    "theme",
+    "matrix",
+    "dark",
+    "cyberpunk",
+    "green-terminal",
+    "ui-customization",
+    "neon"
+  ],
+  "permissions": [
+    "theme:read",
+    "theme:write",
+    "settings:read",
+    "settings:write",
+    "ui:customize"
+  ],
+  "commands": [
+    "./commands/"
+  ],
+  "mcp": [
+    {
+      "name": "theme-server",
+      "path": "./mcp/theme-server.js",
+      "description": "MCP server for dynamic theme management and customization"
+    }
+  ],
+  "hooks": {
+    "on-startup": "./hooks/apply-theme.sh",
+    "on-settings-change": "./hooks/sync-theme-settings.sh",
+    "on-workspace-open": "./hooks/initialize-theme.sh"
+  },
+  "settings": {
+    "accentColor": {
+      "type": "string",
+      "default": "#00ff00",
+      "description": "Primary neon accent color (hex code)"
+    },
+    "glowIntensity": {
+      "type": "number",
+      "default": 0.8,
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Intensity of neon glow effect (0.0-1.0)"
+    },
+    "terminalOpacity": {
+      "type": "number",
+      "default": 0.95,
+      "minimum": 0.5,
+      "maximum": 1,
+      "description": "Terminal background opacity (0.5-1.0)"
+    },
+    "enableAnimations": {
+      "type": "boolean",
+      "default": true,
+      "description": "Enable animated neon effects"
+    },
+    "fontSize": {
+      "type": "number",
+      "default": 12,
+      "minimum": 8,
+      "maximum": 24,
+      "description": "Terminal font size in pixels"
+    },
+    "fontFamily": {
+      "type": "string",
+      "default": "Courier New, monospace",
+      "description": "Terminal font family"
+    }
+  }
+}

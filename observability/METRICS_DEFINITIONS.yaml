@@ -1,0 +1,425 @@
+# Prometheus Metrics Definitions for Claudient
+# Version: 1.0
+# Last Updated: 2026-06-22
+
+---
+version: "1.0"
+namespace: "claudient"
+cardinality_limit: 1000
+
+# Counter Metrics - monotonically increasing
+counters:
+  feature_calls_total:
+    type: counter
+    description: "Total number of feature/skill invocations"
+    unit: "calls"
+    labels:
+      - skill_name
+      - skill_category
+      - status          # success, error, timeout, skipped
+      - user_id
+    help: "Tracks usage patterns and feature adoption"
+    exemplar: true
+
+  api_requests_total:
+    type: counter
+    description: "Total API requests handled"
+    unit: "requests"
+    labels:
+      - endpoint
+      - method            # GET, POST, PUT, DELETE, PATCH
+      - status_code
+      - source            # claude_code, mcp, webhook, cli
+    help: "Monitors API traffic and endpoints"
+    exemplar: true
+
+  tokens_processed_total:
+    type: counter
+    description: "Total tokens processed across all requests"
+    unit: "tokens"
+    labels:
+      - model_id
+      - operation_type    # inference, fine_tune, embeddings, completion
+      - direction         # input, output
+    help: "Tracks token consumption by model and direction"
+    exemplar: true
+
+  errors_total:
+    type: counter
+    description: "Total errors by category"
+    unit: "errors"
+    labels:
+      - error_type        # validation, permission, timeout, runtime, parse
+      - error_code
+      - severity          # low, medium, high, critical
+      - component
+    help: "Aggregates all error events for debugging"
+    exemplar: true
+
+  workflow_executions_total:
+    type: counter
+    description: "Total workflow execution attempts"
+    unit: "executions"
+    labels:
+      - workflow_name
+      - workflow_type     # sequential, parallel, conditional, loop
+      - result            # success, failure, partial
+    help: "Tracks workflow automation and success rates"
+    exemplar: true
+
+  hook_triggers_total:
+    type: counter
+    description: "Total hook trigger events"
+    unit: "triggers"
+    labels:
+      - hook_name
+      - hook_type         # pre_commit, post_push, on_schedule, on_file_change
+      - trigger_status    # executed, skipped, failed
+    help: "Monitors automation trigger patterns"
+    exemplar: true
+
+  mcp_calls_total:
+    type: counter
+    description: "Total MCP server calls"
+    unit: "calls"
+    labels:
+      - mcp_server
+      - tool_name
+      - invocation_status # success, timeout, error, partial
+    help: "Tracks MCP integration usage"
+    exemplar: true
+
+# Gauge Metrics - point-in-time values
+gauges:
+  active_tasks:
+    type: gauge
+    description: "Number of currently active tasks"
+    unit: "tasks"
+    labels:
+      - task_type         # skill_execution, workflow, api_request, background_job
+      - priority          # low, medium, high, critical
+      - status            # pending, in_progress, blocked
+    help: "Real-time visibility into active workload"
+
+  active_connections:
+    type: gauge
+    description: "Number of active WebSocket/streaming connections"
+    unit: "connections"
+    labels:
+      - connection_type   # api, mcp, webhook, stream
+      - client_type       # web, cli, mobile, bot
+    help: "Monitors active client connections"
+
+  queue_length:
+    type: gauge
+    description: "Length of processing queues"
+    unit: "messages"
+    labels:
+      - queue_name        # api_requests, workflows, hooks, mcp_calls
+      - priority
+    help: "Detects queue buildup and backpressure"
+
+  memory_usage_bytes:
+    type: gauge
+    description: "Memory used by component"
+    unit: "bytes"
+    labels:
+      - component         # cache, skill_engine, workflow_engine, mcp_gateway
+      - memory_type       # heap, non_heap, rss
+    help: "Tracks memory consumption per component"
+
+  cached_items:
+    type: gauge
+    description: "Number of items in cache"
+    unit: "items"
+    labels:
+      - cache_name        # skill_results, api_responses, feature_metadata
+      - ttl_bucket        # short (< 1m), medium (1-60m), long (> 1h)
+    help: "Monitors cache population and eviction"
+
+  concurrent_users:
+    type: gauge
+    description: "Number of concurrently active users"
+    unit: "users"
+    labels:
+      - user_tier         # free, pro, enterprise
+      - region            # us, eu, asia, other
+    help: "Tracks user engagement in real-time"
+
+  skill_availability:
+    type: gauge
+    description: "Availability status of each skill (1=available, 0=unavailable)"
+    unit: "boolean"
+    labels:
+      - skill_name
+      - skill_category
+      - unavailability_reason  # maintenance, error, timeout, disabled
+    help: "Monitors skill health and availability"
+
+  model_context_utilization:
+    type: gauge
+    description: "Current context window usage percentage"
+    unit: "percent"
+    labels:
+      - model_id
+      - context_type      # input, output, reserved
+    help: "Tracks context pressure and efficiency"
+
+# Histogram Metrics - distribution of values
+histograms:
+  latency_ms:
+    type: histogram
+    description: "Request latency distribution"
+    unit: "milliseconds"
+    labels:
+      - operation_type    # skill_call, api_request, workflow_step, mcp_call
+      - operation_name
+      - status            # success, error
+    buckets: [1, 5, 10, 25, 50, 100, 250, 500, 1000, 2500, 5000, 10000]
+    exemplar: true
+    help: "Measures end-to-end and component latencies"
+
+  token_usage:
+    type: histogram
+    description: "Tokens consumed per request"
+    unit: "tokens"
+    labels:
+      - model_id
+      - operation_type    # inference, completion, fine_tune
+      - direction         # input, output, total
+    buckets: [10, 50, 100, 500, 1000, 5000, 10000, 50000, 100000, 500000]
+    exemplar: true
+    help: "Tracks token consumption patterns"
+
+  workflow_duration_ms:
+    type: histogram
+    description: "End-to-end workflow execution duration"
+    unit: "milliseconds"
+    labels:
+      - workflow_name
+      - workflow_type
+      - result            # success, failure, partial
+    buckets: [100, 500, 1000, 5000, 10000, 30000, 60000, 300000, 600000]
+    exemplar: true
+    help: "Measures workflow performance"
+
+  cache_hit_latency_ms:
+    type: histogram
+    description: "Latency of cache hits"
+    unit: "milliseconds"
+    labels:
+      - cache_name
+      - hit_type          # hit, miss, partial
+    buckets: [0.1, 0.5, 1, 5, 10, 25, 50, 100]
+    exemplar: true
+    help: "Validates cache effectiveness"
+
+  skill_execution_time_ms:
+    type: histogram
+    description: "Individual skill execution time"
+    unit: "milliseconds"
+    labels:
+      - skill_name
+      - skill_category
+      - outcome           # success, partial_success, error, timeout
+    buckets: [10, 50, 100, 250, 500, 1000, 5000, 10000]
+    exemplar: true
+    help: "Profiles per-skill performance"
+
+  api_response_size_bytes:
+    type: histogram
+    description: "API response payload size distribution"
+    unit: "bytes"
+    labels:
+      - endpoint
+      - method
+      - compression       # none, gzip, brotli
+    buckets: [100, 1000, 10000, 100000, 1000000, 10000000]
+    exemplar: true
+    help: "Tracks payload sizes for optimization"
+
+  input_parsing_duration_ms:
+    type: histogram
+    description: "Time to parse and validate input"
+    unit: "milliseconds"
+    labels:
+      - parser_type       # json, yaml, markdown, custom
+      - input_size_bytes  # small (<1KB), medium (1-10KB), large (>10KB)
+    buckets: [1, 5, 10, 25, 50, 100, 250, 500]
+    exemplar: true
+    help: "Measures input processing efficiency"
+
+  mcp_roundtrip_ms:
+    type: histogram
+    description: "MCP server call round-trip latency"
+    unit: "milliseconds"
+    labels:
+      - mcp_server
+      - tool_name
+      - network_type      # local, remote
+    buckets: [1, 10, 50, 100, 250, 500, 1000, 5000]
+    exemplar: true
+    help: "Profiles MCP integration performance"
+
+# Summary Metrics (older style, for compatibility)
+summaries:
+  request_duration_seconds:
+    type: summary
+    description: "Request duration in seconds (for compatibility)"
+    unit: "seconds"
+    labels:
+      - endpoint
+      - method
+    quantiles: [0.5, 0.9, 0.95, 0.99]
+    max_age: 10m
+    help: "Legacy summary metric - use histograms for new code"
+
+# Derived/Composite Metrics (calculated from base metrics)
+derived_metrics:
+  success_rate_percent:
+    type: derived
+    description: "Success rate calculated from counters"
+    formula: "(feature_calls_total{status='success'} / feature_calls_total) * 100"
+    unit: "percent"
+    update_frequency: 30s
+    help: "Quality indicator derived from counters"
+
+  average_token_cost_per_call:
+    type: derived
+    description: "Average tokens per API call"
+    formula: "tokens_processed_total / api_requests_total"
+    unit: "tokens"
+    update_frequency: 60s
+    help: "Efficiency metric for cost optimization"
+
+  p95_latency_ms:
+    type: derived
+    description: "95th percentile latency from histogram"
+    formula: "histogram_quantile(0.95, latency_ms)"
+    unit: "milliseconds"
+    update_frequency: 30s
+    help: "SLA tracking metric"
+
+  error_rate_percent:
+    type: derived
+    description: "Percentage of requests resulting in error"
+    formula: "(errors_total / api_requests_total) * 100"
+    unit: "percent"
+    update_frequency: 30s
+    help: "System reliability indicator"
+
+  cache_hit_rate_percent:
+    type: derived
+    description: "Cache hit rate percentage"
+    formula: "(cache_hits_total / (cache_hits_total + cache_misses_total)) * 100"
+    unit: "percent"
+    update_frequency: 60s
+    help: "Cache efficiency metric"
+
+# Alert Thresholds (for Prometheus alerting rules)
+alert_thresholds:
+  high_error_rate:
+    metric: error_rate_percent
+    threshold: 5.0
+    duration: 5m
+    severity: warning
+    description: "Error rate exceeds 5% for 5 minutes"
+
+  high_latency_p95:
+    metric: p95_latency_ms
+    threshold: 5000
+    duration: 10m
+    severity: warning
+    description: "95th percentile latency exceeds 5 seconds"
+
+  queue_backlog:
+    metric: queue_length
+    threshold: 1000
+    duration: 5m
+    severity: critical
+    description: "Queue backlog exceeds 1000 items"
+
+  skill_unavailable:
+    metric: skill_availability
+    threshold: 0
+    duration: 1m
+    severity: high
+    description: "Skill becomes unavailable"
+
+  memory_pressure:
+    metric: memory_usage_bytes
+    threshold: 1073741824  # 1GB
+    duration: 5m
+    severity: warning
+    description: "Memory usage exceeds 1GB threshold"
+
+  token_budget_exhausted:
+    metric: tokens_processed_total
+    threshold: 1000000000  # 1B tokens/hour
+    duration: 1h
+    severity: critical
+    description: "Token consumption exceeds hourly budget"
+
+# Metric Retention & Aggregation
+retention_policy:
+  raw_data: 15d
+  aggregated_1h: 90d
+  aggregated_1d: 1y
+  cardinality_cleanup_interval: 1d
+  max_label_cardinality: 1000
+
+# SLI/SLO Definitions
+service_level_indicators:
+  api_availability:
+    description: "API uptime percentage"
+    metric: "1 - (errors_total{severity='high'} / api_requests_total)"
+    target_slo: 99.9
+    unit: "percent"
+
+  skill_success_rate:
+    description: "Percentage of successful skill invocations"
+    metric: "feature_calls_total{status='success'} / feature_calls_total"
+    target_slo: 98.0
+    unit: "percent"
+
+  p95_latency_sli:
+    description: "95th percentile latency under 2 seconds"
+    metric: "histogram_quantile(0.95, latency_ms) < 2000"
+    target_slo: 95.0
+    unit: "percent"
+
+  workflow_completion_rate:
+    description: "Workflows completing without errors"
+    metric: "workflow_executions_total{result='success'} / workflow_executions_total"
+    target_slo: 99.0
+    unit: "percent"
+
+# Cardinality Budget Distribution
+cardinality_budget:
+  feature_calls_total:
+    estimated: 450  # 50 skills × 3 statuses × 3 categories
+    max: 600
+
+  api_requests_total:
+    estimated: 200  # 20 endpoints × 4 methods × 2-3 status codes
+    max: 300
+
+  tokens_processed_total:
+    estimated: 30   # 3 models × 2 directions × 5 op types
+    max: 50
+
+  errors_total:
+    estimated: 150  # 5 error types × 5 error codes × 6 components
+    max: 250
+
+  skill_availability:
+    estimated: 100  # 50 skills × 2 categories
+    max: 150
+
+  latency_ms:
+    estimated: 150  # 30 operation types × 5 status variants
+    max: 250
+
+  total_estimated: 1080
+  total_limit: 1000
+  note: "Enforce cardinality cleanup to stay within limits; remove low-value dimensions if needed"

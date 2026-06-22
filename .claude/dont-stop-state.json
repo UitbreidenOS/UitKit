@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "goal": "Multi-task data processing pipeline",
+  "completedTasks": [
+    {
+      "id": "validate",
+      "name": "Validate input",
+      "tokens": 2000,
+      "status": "completed",
+      "completedAt": "2026-06-22T04:01:25.584Z"
+    },
+    {
+      "id": "transform",
+      "name": "Transform data",
+      "tokens": 8000,
+      "status": "completed",
+      "completedAt": "2026-06-22T04:01:25.585Z"
+    },
+    {
+      "id": "enrich",
+      "name": "Enrich records",
+      "tokens": 5000,
+      "status": "completed",
+      "completedAt": "2026-06-22T04:01:25.585Z"
+    },
+    {
+      "id": "export",
+      "name": "Export results",
+      "tokens": 3000,
+      "status": "completed",
+      "completedAt": "2026-06-22T04:01:25.585Z"
+    }
+  ],
+  "currentTask": null,
+  "tokenSpent": 18000,
+  "timestamp": "2026-06-22T04:01:25.586Z",
+  "errorLog": [],
+  "metadata": {}
+}

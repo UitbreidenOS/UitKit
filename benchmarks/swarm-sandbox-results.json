@@ -1,0 +1,84 @@
+{
+  "timestamp": "2026-06-22T04:03:16.457Z",
+  "configuration": {
+    "topologies": [
+      1
+    ],
+    "iterations": 1,
+    "timeout_ms": 60000
+  },
+  "suites": [
+    {
+      "topology": 1,
+      "iterations": [
+        {
+          "sandbox": "bench-1-agents-iter1-yfjue5b1",
+          "agents": 1,
+          "timestamp": "2026-06-22T04:03:16.457Z",
+          "measurements": [
+            {
+              "metric": "sandbox_creation",
+              "agents": 1,
+              "time_ms": 1.2603749999999998,
+              "per_agent_ms": 1.2603749999999998
+            },
+            {
+              "metric": "agent_startup",
+              "agents": 1,
+              "avg_time_ms": 0.2350829999999995,
+              "max_time_ms": 0.2350829999999995,
+              "min_time_ms": 0.2350829999999995,
+              "total_startup_ms": 0.2350829999999995
+            },
+            {
+              "metric": "isolation_overhead",
+              "agents": 1,
+              "avg_overhead_ms": 0.4271250000000002,
+              "total_overhead_ms": 0.4271250000000002,
+              "overhead_per_agent_ms": 0.4271250000000002
+            },
+            {
+              "metric": "cleanup",
+              "agents": 1,
+              "time_ms": 1.3442919999999994,
+              "per_agent_ms": 1.3442919999999994
+            }
+          ],
+          "status": "completed"
+        }
+      ],
+      "summary": {
+        "topology": 1,
+        "iterations": 1,
+        "completed": 1,
+        "failed": 0,
+        "metrics": {
+          "sandbox_creation": {
+            "avg_ms": 1.2603749999999998,
+            "min_ms": 1.2603749999999998,
+            "max_ms": 1.2603749999999998,
+            "stddev_ms": 0
+          },
+          "agent_startup": {
+            "avg_ms": 0.2350829999999995,
+            "min_ms": 0.2350829999999995,
+            "max_ms": 0.2350829999999995,
+            "stddev_ms": 0
+          },
+          "isolation_overhead": {
+            "avg_ms": 0.4271250000000002,
+            "min_ms": 0.4271250000000002,
+            "max_ms": 0.4271250000000002,
+            "stddev_ms": 0
+          },
+          "cleanup": {
+            "avg_ms": 1.3442919999999994,
+            "min_ms": 1.3442919999999994,
+            "max_ms": 1.3442919999999994,
+            "stddev_ms": 0
+          }
+        }
+      }
+    }
+  ]
+}

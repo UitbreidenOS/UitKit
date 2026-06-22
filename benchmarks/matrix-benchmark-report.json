@@ -1,0 +1,51 @@
+{
+  "timestamp": "2026-06-22T04:00:30.956Z",
+  "summary": {
+    "fileSize": "14.67 KB",
+    "gzipSize": "3.35 KB",
+    "compressionRatio": "77.2%",
+    "parsingTime": "62.28 μs",
+    "cssGenerationTime": "22.63 μs",
+    "compatibilityScore": "100/100"
+  },
+  "detailed": {
+    "fileSize": {
+      "uncompressed": 15020,
+      "gzip": 3426,
+      "colors": 55,
+      "components": 9,
+      "animations": 7
+    },
+    "parsing": {
+      "mean": 0.06228403099999993,
+      "median": 0.058541499999996915,
+      "min": 0.02270800000000861,
+      "max": 0.5109589999999997,
+      "stdDev": 0.028516299136003505
+    },
+    "colorComputation": {
+      "mean": 0.01510129999999991,
+      "median": 0.010334000000000287,
+      "min": 0.004582999999996673,
+      "max": 0.5283329999999893,
+      "stdDev": 0.024885966589425067
+    },
+    "cssGeneration": {
+      "mean": 0.02262735400000021,
+      "median": 0.010082999999994513,
+      "min": 0.00549999999999784,
+      "max": 5.455417000000011,
+      "stdDev": 0.17704224676069508
+    },
+    "memory": {
+      "heapUsedMean": "297.64 KB",
+      "heapUsedMax": "531.13 KB",
+      "rssMean": "0 B",
+      "rssMax": "0 B"
+    },
+    "compatibility": {
+      "score": 100,
+      "issues": []
+    }
+  }
+}

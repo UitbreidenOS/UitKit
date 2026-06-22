@@ -1,0 +1,792 @@
+# Claudient Structured Logging Configuration
+# Features: matrix-theme, svg-inspector, swarm-sandbox, dont-stop
+# Format: JSON | Log Levels: 10 | Updated: 2026-06-22
+
+logging:
+  version: 1
+  disable_existing_loggers: false
+
+  # 10 Log Levels (ordered by severity)
+  levels:
+    - CRITICAL: 50
+    - ERROR: 40
+    - WARNING: 30
+    - INFO: 20
+    - DEBUG: 10
+    - TRACE: 5
+    - NOTSET: 0
+    - SUCCESS: 25
+    - AUDIT: 15
+    - METRIC: 12
+
+  # Formatters - JSON structured output
+  formatters:
+    json_structured:
+      (): claudient.logging.JsonFormatter
+      format: |
+        {
+          "timestamp": "%(asctime)s",
+          "level": "%(levelname)s",
+          "logger": "%(name)s",
+          "service": "%(service)s",
+          "feature": "%(feature)s",
+          "user_id": "%(user_id)s",
+          "request_id": "%(request_id)s",
+          "session_id": "%(session_id)s",
+          "environment": "%(environment)s",
+          "version": "%(version)s",
+          "message": "%(message)s",
+          "context": %(context)s,
+          "error": %(error)s,
+          "error_code": "%(error_code)s",
+          "error_type": "%(error_type)s",
+          "stacktrace": "%(exc_info)s",
+          "duration_ms": %(duration_ms)d,
+          "memory_bytes": %(memory_bytes)d,
+          "cpu_percent": %(cpu_percent).2f,
+          "tags": %(tags)s,
+          "metadata": %(metadata)s
+        }
+      datefmt: "%Y-%m-%dT%H:%M:%S.%fZ"
+      default_service: "claudient"
+      default_feature: "core"
+      default_environment: "development"
+
+  # Handlers
+  handlers:
+    # Console handler
+    console:
+      class: logging.StreamHandler
+      level: INFO
+      formatter: json_structured
+      stream: ext://sys.stdout
+
+    # File handler - rolling
+    file_rotating:
+      class: logging.handlers.RotatingFileHandler
+      level: DEBUG
+      formatter: json_structured
+      filename: logs/claudient.log
+      maxBytes: 104857600  # 100MB
+      backupCount: 10
+      encoding: utf-8
+
+    # File handler - errors
+    file_errors:
+      class: logging.handlers.RotatingFileHandler
+      level: ERROR
+      formatter: json_structured
+      filename: logs/claudient-errors.log
+      maxBytes: 52428800  # 50MB
+      backupCount: 5
+      encoding: utf-8
+
+    # File handler - audit trail
+    file_audit:
+      class: logging.handlers.RotatingFileHandler
+      level: AUDIT
+      formatter: json_structured
+      filename: logs/claudient-audit.log
+      maxBytes: 262144000  # 250MB
+      backupCount: 20
+      encoding: utf-8
+
+    # File handler - metrics
+    file_metrics:
+      class: logging.handlers.RotatingFileHandler
+      level: METRIC
+      formatter: json_structured
+      filename: logs/claudient-metrics.log
+      maxBytes: 262144000  # 250MB
+      backupCount: 15
+      encoding: utf-8
+
+  # Loggers - per feature
+  loggers:
+    # Matrix Theme Logger
+    claudient.features.matrix_theme:
+      level: DEBUG
+      handlers:
+        - console
+        - file_rotating
+        - file_audit
+      propagate: false
+      extra:
+        service: "claudient"
+        feature: "matrix-theme"
+        feature_type: "ui-theme"
+        component: "matrix-theme"
+
+    claudient.features.matrix_theme.rendering:
+      level: DEBUG
+      handlers:
+        - console
+        - file_rotating
+      propagate: false
+      extra:
+        service: "claudient"
+        feature: "matrix-theme"
+        component: "rendering"
+
+    claudient.features.matrix_theme.performance:
+      level: METRIC
+      handlers:
+        - file_metrics
+      propagate: false
+      extra:
+        service: "claudient"
+        feature: "matrix-theme"
+        component: "performance"
+
+    # SVG Inspector Logger
+    claudient.features.svg_inspector:
+      level: DEBUG
+      handlers:
+        - console
+        - file_rotating
+        - file_audit
+      propagate: false
+      extra:
+        service: "claudient"
+        feature: "svg-inspector"
+        feature_type: "tool"
+        component: "svg-inspector"
+
+    claudient.features.svg_inspector.parsing:
+      level: DEBUG
+      handlers:
+        - console
+        - file_rotating
+      propagate: false
+      extra:
+        service: "claudient"
+        feature: "svg-inspector"
+        component: "parsing"
+
+    claudient.features.svg_inspector.validation:
+      level: DEBUG
+      handlers:
+        - file_rotating
+        - file_errors
+      propagate: false
+      extra:
+        service: "claudient"
+        feature: "svg-inspector"
+        component: "validation"
+
+    claudient.features.svg_inspector.optimization:
+      level: METRIC
+      handlers:
+        - file_metrics
+      propagate: false
+      extra:
+        service: "claudient"
+        feature: "svg-inspector"
+        component: "optimization"
+
+    # Swarm Sandbox Logger
+    claudient.features.swarm_sandbox:
+      level: DEBUG
+      handlers:
+        - console
+        - file_rotating
+        - file_audit
+      propagate: false
+      extra:
+        service: "claudient"
+        feature: "swarm-sandbox"
+        feature_type: "agent-runtime"
+        component: "swarm-sandbox"
+
+    claudient.features.swarm_sandbox.execution:
+      level: DEBUG
+      handlers:
+        - console
+        - file_rotating
+      propagate: false
+      extra:
+        service: "claudient"
+        feature: "swarm-sandbox"
+        component: "execution"
+
+    claudient.features.swarm_sandbox.coordination:
+      level: DEBUG
+      handlers:
+        - file_rotating
+      propagate: false
+      extra:
+        service: "claudient"
+        feature: "swarm-sandbox"
+        component: "coordination"
+
+    claudient.features.swarm_sandbox.communication:
+      level: DEBUG
+      handlers:
+        - file_rotating
+      propagate: false
+      extra:
+        service: "claudient"
+        feature: "swarm-sandbox"
+        component: "communication"
+
+    claudient.features.swarm_sandbox.performance:
+      level: METRIC
+      handlers:
+        - file_metrics
+      propagate: false
+      extra:
+        service: "claudient"
+        feature: "swarm-sandbox"
+        component: "performance"
+
+    # Don't Stop Logger
+    claudient.features.dont_stop:
+      level: DEBUG
+      handlers:
+        - console
+        - file_rotating
+        - file_audit
+      propagate: false
+      extra:
+        service: "claudient"
+        feature: "dont-stop"
+        feature_type: "orchestration"
+        component: "dont-stop"
+
+    claudient.features.dont_stop.workflow:
+      level: DEBUG
+      handlers:
+        - console
+        - file_rotating
+      propagate: false
+      extra:
+        service: "claudient"
+        feature: "dont-stop"
+        component: "workflow"
+
+    claudient.features.dont_stop.scheduling:
+      level: DEBUG
+      handlers:
+        - file_rotating
+      propagate: false
+      extra:
+        service: "claudient"
+        feature: "dont-stop"
+        component: "scheduling"
+
+    claudient.features.dont_stop.recovery:
+      level: DEBUG
+      handlers:
+        - file_rotating
+        - file_errors
+      propagate: false
+      extra:
+        service: "claudient"
+        feature: "dont-stop"
+        component: "recovery"
+
+    claudient.features.dont_stop.performance:
+      level: METRIC
+      handlers:
+        - file_metrics
+      propagate: false
+      extra:
+        service: "claudient"
+        feature: "dont-stop"
+        component: "performance"
+
+    # Root logger
+    root:
+      level: INFO
+      handlers:
+        - console
+        - file_rotating
+        - file_errors
+
+  # Root configuration
+  root:
+    level: INFO
+    handlers:
+      - console
+      - file_rotating
+
+---
+
+# Structured Field Definitions
+# All logs contain these standard fields
+
+fields:
+  timestamp:
+    type: ISO8601
+    description: "Timestamp in UTC (YYYY-MM-DDTHH:MM:SS.fffZ)"
+    required: true
+
+  level:
+    type: string
+    description: "Log level (CRITICAL, ERROR, WARNING, INFO, DEBUG, TRACE, SUCCESS, AUDIT, METRIC)"
+    required: true
+    enum:
+      - CRITICAL
+      - ERROR
+      - WARNING
+      - INFO
+      - DEBUG
+      - TRACE
+      - SUCCESS
+      - AUDIT
+      - METRIC
+      - NOTSET
+
+  logger:
+    type: string
+    description: "Logger name (e.g., claudient.features.matrix_theme)"
+    required: true
+
+  service:
+    type: string
+    description: "Service name (always 'claudient')"
+    required: true
+    default: "claudient"
+
+  feature:
+    type: string
+    description: "Feature identifier"
+    required: true
+    enum:
+      - "matrix-theme"
+      - "svg-inspector"
+      - "swarm-sandbox"
+      - "dont-stop"
+      - "core"
+
+  user_id:
+    type: string
+    description: "Unique user identifier (UUID or email)"
+    required: false
+    format: uuid|email
+
+  request_id:
+    type: string
+    description: "Unique request identifier (trace ID)"
+    required: true
+    format: uuid
+
+  session_id:
+    type: string
+    description: "Session identifier (persists across requests)"
+    required: false
+    format: uuid
+
+  environment:
+    type: string
+    description: "Deployment environment"
+    required: true
+    enum:
+      - "development"
+      - "staging"
+      - "production"
+    default: "development"
+
+  version:
+    type: string
+    description: "Feature/service version (semantic versioning)"
+    required: true
+
+  message:
+    type: string
+    description: "Log message"
+    required: true
+
+  context:
+    type: object
+    description: "Contextual data (varies by feature/component)"
+    required: false
+    example:
+      {
+        "action": "render",
+        "state": "processing",
+        "additional_field": "value"
+      }
+
+  error:
+    type: boolean
+    description: "Indicates if this log entry represents an error state"
+    required: false
+    default: false
+
+  error_code:
+    type: string
+    description: "Error code (alphanumeric, e.g., SVG_001, SWAP_002)"
+    required: false
+    pattern: "^[A-Z_]+_[0-9]{3}$"
+
+  error_type:
+    type: string
+    description: "Error type/class name"
+    required: false
+
+  stacktrace:
+    type: string
+    description: "Full Python stacktrace (on ERROR/CRITICAL)"
+    required: false
+
+  duration_ms:
+    type: integer
+    description: "Operation duration in milliseconds"
+    required: false
+    minimum: 0
+
+  memory_bytes:
+    type: integer
+    description: "Memory usage in bytes"
+    required: false
+    minimum: 0
+
+  cpu_percent:
+    type: float
+    description: "CPU usage as percentage (0.0-100.0)"
+    required: false
+    minimum: 0.0
+    maximum: 100.0
+
+  tags:
+    type: array
+    description: "Searchable tags for categorization"
+    required: false
+    items:
+      type: string
+    example: ["performance", "validation", "critical-path"]
+
+  metadata:
+    type: object
+    description: "Arbitrary additional structured data"
+    required: false
+
+---
+
+# Error Codes Registry
+# Standardized error codes per feature
+
+error_codes:
+  # Matrix Theme (MT_)
+  matrix_theme:
+    MT_001: "Invalid theme configuration"
+    MT_002: "Theme rendering failed"
+    MT_003: "Color palette mismatch"
+    MT_004: "CSS generation error"
+    MT_005: "DOM manipulation failed"
+    MT_006: "Animation frame dropped"
+    MT_007: "Performance threshold exceeded"
+    MT_008: "Theme persistence failed"
+    MT_009: "Fallback to default theme"
+    MT_010: "Memory overflow"
+
+  # SVG Inspector (SI_)
+  svg_inspector:
+    SI_001: "Invalid SVG syntax"
+    SI_002: "Parsing failed"
+    SI_003: "Namespace resolution error"
+    SI_004: "Element validation failed"
+    SI_005: "Attribute mismatch"
+    SI_006: "Accessibility check failed"
+    SI_007: "Optimization failed"
+    SI_008: "Size limit exceeded"
+    SI_009: "Unsupported SVG feature"
+    SI_010: "Transformation error"
+
+  # Swarm Sandbox (SS_)
+  swarm_sandbox:
+    SS_001: "Agent initialization failed"
+    SS_002: "Message queue overflow"
+    SS_003: "Agent timeout"
+    SS_004: "Coordination protocol error"
+    SS_005: "Deadlock detected"
+    SS_006: "Resource exhaustion"
+    SS_007: "Agent crash"
+    SS_008: "Communication channel error"
+    SS_009: "State synchronization failed"
+    SS_010: "Sandbox escape detected"
+
+  # Don't Stop (DS_)
+  dont_stop:
+    DS_001: "Workflow initialization failed"
+    DS_002: "Task queue exhaustion"
+    DS_003: "Recovery mechanism failed"
+    DS_004: "Checkpoint corruption"
+    DS_005: "Scheduling conflict"
+    DS_006: "Resource lock timeout"
+    DS_007: "State machine invalid transition"
+    DS_008: "Retry limit exceeded"
+    DS_009: "Persistence layer error"
+    DS_010: "Graceful shutdown timeout"
+
+---
+
+# Log Sampling Configuration
+# Control log volume in high-throughput scenarios
+
+sampling:
+  enabled: true
+
+  # Per-feature sampling rates (0.0 = none, 1.0 = all)
+  rates:
+    matrix_theme:
+      debug: 0.1  # 10% of DEBUG logs
+      info: 0.5   # 50% of INFO logs
+      warning: 1.0  # 100% of warnings
+      error: 1.0  # 100% of errors
+
+    svg_inspector:
+      debug: 0.15
+      info: 0.6
+      warning: 1.0
+      error: 1.0
+
+    swarm_sandbox:
+      debug: 0.05  # Lower rate for high-volume execution logs
+      info: 0.4
+      warning: 1.0
+      error: 1.0
+
+    dont_stop:
+      debug: 0.08
+      info: 0.5
+      warning: 1.0
+      error: 1.0
+
+  # Never sample these (always logged)
+  never_sample:
+    - error
+    - critical
+    - audit
+
+---
+
+# Retention Configuration
+# Log retention and archival policies
+
+retention:
+  # File rotation settings
+  rotation:
+    max_file_size_mb: 100
+    backup_count: 10
+
+    by_level:
+      debug: 10  # backups
+      info: 10
+      warning: 10
+      error: 5
+      critical: 20
+      audit: 20
+      metric: 15
+
+  # Archival
+  archival:
+    enabled: true
+    strategy: "gzip"  # gzip | tar.gz | zip
+    archive_after_days: 7
+    archive_path: "logs/archive"
+    delete_after_days: 90
+
+  # Per-feature retention
+  by_feature:
+    matrix_theme:
+      days: 30
+
+    svg_inspector:
+      days: 30
+
+    swarm_sandbox:
+      days: 60  # Longer retention for troubleshooting
+
+    dont_stop:
+      days: 60
+
+    audit:
+      days: 365  # 1 year for compliance
+
+    metrics:
+      days: 90
+
+---
+
+# Performance Thresholds
+# Trigger elevated logging when thresholds exceeded
+
+thresholds:
+  # Response time thresholds (ms)
+  response_time:
+    matrix_theme: 500
+    svg_inspector: 2000
+    swarm_sandbox: 5000
+    dont_stop: 3000
+
+  # Memory thresholds (MB)
+  memory:
+    matrix_theme: 256
+    svg_inspector: 512
+    swarm_sandbox: 2048
+    dont_stop: 1024
+
+  # CPU thresholds (%)
+  cpu:
+    matrix_theme: 50
+    svg_inspector: 60
+    swarm_sandbox: 75
+    dont_stop: 70
+
+  # Error rate thresholds (%)
+  error_rate:
+    matrix_theme: 5
+    svg_inspector: 2
+    swarm_sandbox: 1
+    dont_stop: 2
+
+---
+
+# Structured Context Examples
+# Reference implementations for context field
+
+context_examples:
+
+  matrix_theme:
+    render:
+      action: "render"
+      theme_name: "matrix"
+      color_count: 256
+      animation_fps: 60
+      dom_elements: 1024
+
+    error:
+      action: "render"
+      theme_name: "matrix"
+      error_stage: "css_generation"
+      failed_property: "background-color"
+
+  svg_inspector:
+    parse:
+      action: "parse"
+      file_size_bytes: 102400
+      element_count: 256
+      namespace_uris: ["http://www.w3.org/2000/svg"]
+
+    validate:
+      action: "validate"
+      rule_count: 42
+      violations: 3
+      severity_levels: ["error", "warning"]
+
+  swarm_sandbox:
+    execute:
+      action: "execute"
+      agent_count: 16
+      message_queue_depth: 128
+      coordination_round: 5
+
+    coordinate:
+      action: "coordinate"
+      protocol: "gossip"
+      peers: 8
+      consensus_achieved: true
+
+  dont_stop:
+    workflow:
+      action: "execute"
+      workflow_id: "wf-12345"
+      task_count: 32
+      current_task_index: 15
+      checkpoints_created: 3
+
+    recovery:
+      action: "recover"
+      from_checkpoint: "ckpt-0003"
+      tasks_replayed: 3
+      recovery_duration_ms: 250
+
+---
+
+# Integration Points
+# How to initialize and use this logging configuration
+
+integration:
+  python:
+    import: |
+      import logging.config
+      import yaml
+
+      with open('observability/LOGGING_CONFIG.yaml') as f:
+        config = yaml.safe_load(f)
+
+      logging.config.dictConfig(config['logging'])
+      logger = logging.getLogger('claudient.features.matrix_theme')
+
+    usage: |
+      logger.info(
+        "Theme rendered successfully",
+        extra={
+          'feature': 'matrix-theme',
+          'user_id': 'user-12345',
+          'request_id': str(uuid.uuid4()),
+          'duration_ms': 125,
+          'context': {'theme_name': 'matrix'},
+          'tags': ['render', 'success']
+        }
+      )
+
+  typescript:
+    import: |
+      import * as yaml from 'js-yaml';
+      import { createLogger } from 'winston';
+
+      const config = yaml.load(fs.readFileSync(
+        'observability/LOGGING_CONFIG.yaml', 'utf8'
+      ));
+
+    usage: |
+      logger.info('Theme rendered successfully', {
+        feature: 'matrix-theme',
+        user_id: 'user-12345',
+        request_id: uuidv4(),
+        duration_ms: 125,
+        context: { theme_name: 'matrix' },
+        tags: ['render', 'success']
+      });
+
+---
+
+# Alerting Configuration
+# Trigger alerts based on log patterns
+
+alerts:
+  enabled: true
+
+  rules:
+    - name: "High Error Rate"
+      condition: "error_rate > threshold for 5 minutes"
+      features: ["matrix-theme", "svg-inspector", "swarm-sandbox", "dont-stop"]
+      action: "notify"
+      severity: "warning"
+
+    - name: "Critical Error"
+      condition: "level = CRITICAL"
+      features: ["swarm-sandbox", "dont-stop"]
+      action: "page"
+      severity: "critical"
+
+    - name: "Memory Threshold Exceeded"
+      condition: "memory_bytes > threshold"
+      features: ["swarm-sandbox"]
+      action: "notify"
+      severity: "warning"
+
+    - name: "Performance Degradation"
+      condition: "duration_ms > threshold for 10 consecutive requests"
+      features: ["svg-inspector", "dont-stop"]
+      action: "notify"
+      severity: "info"
+
+    - name: "Audit Trail Gap"
+      condition: "no audit logs for 5 minutes"
+      features: ["all"]
+      action: "page"
+      severity: "critical"

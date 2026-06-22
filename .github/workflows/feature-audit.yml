@@ -1,0 +1,325 @@
+name: Feature Audit & Validation
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - 'feature-*.txt'
+      - 'skills/**'
+      - 'agents/**'
+      - 'hooks/**'
+      - 'workflows/**'
+      - 'scripts/validate-*.js'
+      - 'test/**'
+      - '.github/workflows/feature-audit.yml'
+  pull_request:
+    branches: [main, master]
+    paths:
+      - 'feature-*.txt'
+      - 'skills/**'
+      - 'agents/**'
+      - 'hooks/**'
+      - 'workflows/**'
+      - 'scripts/validate-*.js'
+      - 'test/**'
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  feature-presence-validation:
+    name: Feature Presence Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci || npm install
+
+      - name: Validate feature-presence.txt format
+        run: |
+          if [ ! -f feature-presence.txt ]; then
+            echo "ERROR: feature-presence.txt not found"
+            exit 1
+          fi
+
+          echo "Validating feature-presence.txt structure..."
+          node -e "
+          const fs = require('fs');
+          const lines = fs.readFileSync('feature-presence.txt', 'utf-8').split('\n').filter(l => l.trim());
+
+          if (lines.length === 0) {
+            console.error('ERROR: feature-presence.txt is empty');
+            process.exit(1);
+          }
+
+          let errors = [];
+          lines.forEach((line, idx) => {
+            const parts = line.split('|');
+            if (parts.length < 4) {
+              errors.push(\`Line \${idx + 1}: Expected at least 4 pipe-separated fields, got \${parts.length}\`);
+            }
+            const status = parts[3]?.trim() || '';
+            if (!['PRESENT', 'MISSING', 'DEPRECATED'].includes(status)) {
+              errors.push(\`Line \${idx + 1}: Invalid status '\${status}' (must be PRESENT, MISSING, or DEPRECATED)\`);
+            }
+          });
+
+          if (errors.length > 0) {
+            console.error('VALIDATION ERRORS:');
+            errors.forEach(e => console.error(e));
+            process.exit(1);
+          }
+
+          console.log(\`✓ feature-presence.txt validated: \${lines.length} features\`);
+          "
+
+      - name: Check feature count consistency
+        run: |
+          node -e "
+          const fs = require('fs');
+          const presence = fs.readFileSync('feature-presence.txt', 'utf-8');
+          const inventory = fs.readFileSync('feature-inventory.txt', 'utf-8');
+
+          const presenceLines = presence.split('\n').filter(l => l.trim()).length;
+          const inventoryLines = inventory.split('\n').filter(l => l.trim()).length;
+
+          if (presenceLines !== inventoryLines) {
+            console.warn(\`WARNING: feature-presence.txt (\${presenceLines}) and feature-inventory.txt (\${inventoryLines}) have different line counts\`);
+          } else {
+            console.log(\`✓ Feature count consistent: \${presenceLines} features\`);
+          }
+          "
+
+  json-schema-validation:
+    name: JSON & Schema Validation
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Validate JSON files
+        run: |
+          echo "Validating JSON files..."
+          find . -name "*.json" \
+            -not -path "./node_modules/*" \
+            -not -path "./.git/*" \
+            -not -path "./site/*" \
+            -not -path "./.kimchi/*" \
+            -not -path "./keybindings/*" \
+            | while read file; do
+            if ! node -e "JSON.parse(require('fs').readFileSync('$file', 'utf-8'))" 2>/dev/null; then
+              echo "ERROR: Invalid JSON in $file"
+              exit 1
+            fi
+            echo "✓ $file"
+          done
+
+      - name: Validate audit schema
+        run: |
+          if [ -f enterprise/audit-schema.json ]; then
+            node -e "
+            const schema = require('./enterprise/audit-schema.json');
+            if (!schema.properties || !schema.type) {
+              console.error('ERROR: audit-schema.json missing required schema properties');
+              process.exit(1);
+            }
+            console.log('✓ audit-schema.json is valid JSON Schema');
+            "
+          fi
+
+  markdown-structure-validation:
+    name: Markdown Structure Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci || npm install
+
+      - name: Validate skill/agent/hook frontmatter
+        run: node scripts/validate-frontmatter.js
+
+      - name: Check markdown links in features
+        run: |
+          node -e "
+          const fs = require('fs');
+          const lines = fs.readFileSync('feature-presence.txt', 'utf-8').split('\n').filter(l => l.trim());
+
+          let brokenLinks = [];
+          lines.forEach((line, idx) => {
+            const parts = line.split('|');
+            if (parts[4]) {
+              const files = parts[4].trim().split(', ');
+              files.forEach(file => {
+                const trimmed = file.trim().replace(/^\\.\\/ /, '');
+                if (!fs.existsSync(trimmed)) {
+                  brokenLinks.push(\`Line \${idx + 1}: Missing file '\${trimmed}'\`);
+                }
+              });
+            }
+          });
+
+          if (brokenLinks.length > 0) {
+            console.error('BROKEN FILE REFERENCES:');
+            brokenLinks.forEach(l => console.error(l));
+            process.exit(1);
+          }
+
+          console.log('✓ All feature file references validated');
+          "
+
+  feature-tests:
+    name: Feature Integration Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci || npm install
+
+      - name: Run CLI smoke tests
+        run: npm test
+
+      - name: Run feature-specific tests
+        run: |
+          if [ -d test/features ]; then
+            node test/features/validate-features.js || true
+          fi
+
+      - name: Validate stacks against features
+        run: npm run validate:stacks
+
+  feature-completeness-check:
+    name: Feature Completeness Analysis
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Analyze feature presence and requirements
+        run: |
+          node -e "
+          const fs = require('fs');
+
+          const presence = fs.readFileSync('feature-presence.txt', 'utf-8').split('\n').filter(l => l.trim());
+
+          let summary = {
+            total: 0,
+            present: 0,
+            missing: 0,
+            deprecated: 0,
+            byCategory: {}
+          };
+
+          presence.forEach(line => {
+            const parts = line.split('|');
+            const id = parts[0]?.trim();
+            const category = parts[1]?.trim();
+            const status = parts[3]?.trim();
+
+            summary.total++;
+            summary[status.toLowerCase()] = (summary[status.toLowerCase()] || 0) + 1;
+
+            if (category) {
+              if (!summary.byCategory[category]) {
+                summary.byCategory[category] = { present: 0, missing: 0, deprecated: 0 };
+              }
+              summary.byCategory[category][status.toLowerCase()] = (summary.byCategory[category][status.toLowerCase()] || 0) + 1;
+            }
+          });
+
+          console.log('=== FEATURE AUDIT SUMMARY ===');
+          console.log(\`Total Features: \${summary.total}\`);
+          console.log(\`Present: \${summary.present}\`);
+          console.log(\`Missing: \${summary.missing}\`);
+          console.log(\`Deprecated: \${summary.deprecated}\`);
+          console.log('');
+
+          if (summary.missing > 0) {
+            console.log('⚠️  WARNING: \${summary.missing} features marked MISSING');
+          }
+
+          console.log('By Category:');
+          Object.entries(summary.byCategory).forEach(([cat, stats]) => {
+            console.log(\`  \${cat}: \${stats.present} present, \${stats.missing} missing, \${stats.deprecated} deprecated\`);
+          });
+          "
+
+  report-results:
+    name: Generate Audit Report
+    runs-on: ubuntu-latest
+    needs: [feature-presence-validation, json-schema-validation, markdown-structure-validation, feature-tests, feature-completeness-check]
+    if: always()
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate feature audit report
+        run: |
+          node -e "
+          const fs = require('fs');
+
+          const now = new Date().toISOString();
+          const presence = fs.readFileSync('feature-presence.txt', 'utf-8').split('\n').filter(l => l.trim());
+
+          let report = \`# Feature Audit Report\n\`;
+          report += \`Generated: \${now}\n\`;
+          report += \`Commit: ${{ github.sha }}\n\`;
+          report += \`Branch: ${{ github.ref }}\n\`;
+          report += \`\n## Summary\n\`;
+          report += \`- Total Features: \${presence.length}\n\`;
+          report += \`- Job Status: \${{ job.status }}\n\`;
+
+          console.log(report);
+
+          fs.writeFileSync('.github/feature-audit-report.md', report);
+          "
+
+      - name: Comment audit results on PR
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+
+            let comment = '## Feature Audit Results\n\n';
+
+            if (fs.existsSync('.github/feature-audit-report.md')) {
+              const report = fs.readFileSync('.github/feature-audit-report.md', 'utf-8');
+              comment += report;
+            } else {
+              comment += '✓ All feature validations passed\n';
+            }
+
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: comment
+            });

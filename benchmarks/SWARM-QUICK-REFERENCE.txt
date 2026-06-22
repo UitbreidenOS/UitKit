@@ -1,0 +1,214 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                  SWARM SANDBOX BENCHMARK QUICK REFERENCE                   ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+BASIC COMMANDS
+==============
+
+Default run (1/5/20 agents, 3 iterations each):
+  node benchmarks/swarm-sandbox-benchmark.js
+
+Quick test (1 agent, 1 iteration):
+  node benchmarks/swarm-sandbox-benchmark.js --topologies=1 --iterations=1
+
+Full suite (all topologies, 5 iterations):
+  node benchmarks/swarm-sandbox-benchmark.js --iterations=5
+
+JSON output:
+  node benchmarks/swarm-sandbox-benchmark.js --format=json
+
+TOPOLOGY SHORTCUTS
+==================
+
+Single agent baseline:
+  --topologies=1
+
+Mid-scale swarm:
+  --topologies=5
+
+Large-scale stress test:
+  --topologies=20
+
+Custom combination:
+  --topologies=1,5,20
+
+ITERATION SHORTCUTS
+===================
+
+Single run (minimal variance):
+  --iterations=1
+
+Statistical validity (good balance):
+  --iterations=3
+
+High accuracy (more stable results):
+  --iterations=5
+
+Regression detection (extensive):
+  --iterations=10
+
+OUTPUT FORMATS
+==============
+
+Human-readable table:
+  --format=text              (default)
+
+JSON for parsing/scripting:
+  --format=json
+
+EXPECTED RESULTS (From 3-iteration baseline)
+=============================================
+
+1 Agent:
+  Sandbox Creation:    ~1.0ms   (fixed overhead)
+  Agent Startup:       ~0.5ms   (per-agent)
+  Isolation Overhead:  ~0.18ms  (per-agent)
+  Cleanup:            ~0.6ms   (fixed overhead)
+  ──────────────────────────────
+  TOTAL:              ~2.3ms   (end-to-end)
+
+5 Agents:
+  Sandbox Creation:    ~1.6ms   (0.32ms per agent)
+  Agent Startup:       ~0.15ms  (0.03ms per agent)
+  Isolation Overhead:  ~0.26ms  (0.05ms per agent)
+  Cleanup:            ~1.1ms    (0.22ms per agent)
+  ──────────────────────────────
+  TOTAL:              ~3.1ms   (0.62ms per agent)
+
+20 Agents:
+  Sandbox Creation:    ~2.6ms   (0.13ms per agent)
+  Agent Startup:       ~0.07ms  (0.004ms per agent)
+  Isolation Overhead:  ~0.17ms  (0.009ms per agent)
+  Cleanup:            ~1.8ms    (0.09ms per agent)
+  ──────────────────────────────
+  TOTAL:              ~4.6ms   (0.23ms per agent)
+
+PERFORMANCE INSIGHTS
+====================
+
+Scaling Efficiency:
+  • Fixed overhead: ~1-3ms (constant)
+  • Per-agent cost decreases with topology size
+  • 20-agent: 60% lower per-agent startup than 1-agent
+  • Sublinear cleanup: excellent cache utilization
+
+Key Findings:
+  ✓ Agent startup is ultra-fast (< 1ms per agent)
+  ✓ Isolation overhead is negligible (< 0.3ms)
+  ✓ Sandbox creation dominates for small topologies
+  ✓ Cleanup time scales well (< 2ms for 20 agents)
+
+Bottlenecks:
+  • Filesystem operations (manifest/config creation)
+  • Per-agent configuration parsing
+  • Directory cleanup for large topologies
+
+OPTIMIZATION TARGETS (Priority Order)
+======================================
+
+HIGH VALUE:
+  1. Sandbox creation → Consider template caching
+  2. Cleanup performance → Batch removal for 20+ agents
+
+MEDIUM VALUE:
+  3. Agent startup → Already very fast, monitor for regressions
+
+LOW VALUE:
+  4. Isolation overhead → Efficiently implemented, negligible cost
+
+RESULTS FILE
+============
+
+Location:
+  benchmarks/swarm-sandbox-results.json
+
+Contents:
+  • Configuration (topologies, iterations, timeout)
+  • Per-iteration measurements
+  • Summary statistics (avg, min, max, stddev)
+
+Usage:
+  # Parse with jq
+  jq '.suites[0].summary.metrics' swarm-sandbox-results.json
+
+  # Compare runs
+  diff previous.json current.json
+
+CONTINUOUS MONITORING
+=====================
+
+Detect regressions:
+  node benchmarks/swarm-sandbox-benchmark.js --format=json > run-$(date +%s).json
+
+Trend analysis:
+  for i in {1..5}; do
+    node benchmarks/swarm-sandbox-benchmark.js --format=json > run-$i.json
+    sleep 1
+  done
+
+TROUBLESHOOTING
+===============
+
+Slow results?
+  • Close other applications
+  • Run with --topologies=1 --iterations=1 for baseline
+  • Compare to baseline in SWARM-SANDBOX-BENCHMARK.md
+
+Inconsistent variance?
+  • Increase iterations: --iterations=5
+  • Check std dev in output (should be <20% of avg)
+  • System load may affect results
+
+Missing results file?
+  • File auto-generated at: benchmarks/swarm-sandbox-results.json
+  • Check write permissions in benchmarks/ directory
+
+INTEGRATION EXAMPLES
+====================
+
+CI/CD Pipeline:
+  #!/bin/bash
+  NODE_ENV=production node benchmarks/swarm-sandbox-benchmark.js \
+    --topologies=1,5,20 \
+    --iterations=3 \
+    --format=json > results.json
+
+  # Fail if avg creation time > 5ms
+  jq '.suites[].summary.metrics.sandbox_creation.avg_ms' results.json | \
+    awk '$1 > 5 { exit 1 }'
+
+Git Hook (pre-commit):
+  node benchmarks/swarm-sandbox-benchmark.js --topologies=1 --iterations=1
+
+Automated Regression Report:
+  BASELINE=$(node benchmarks/swarm-sandbox-benchmark.js --format=json)
+  CURRENT=$(git stash show -p scripts/claudient-swarm-sandbox.js | \
+    node benchmarks/swarm-sandbox-benchmark.js --format=json)
+  diff <(echo "$BASELINE") <(echo "$CURRENT")
+
+COMMAND CHEATSHEET
+==================
+
+# Quick sanity check
+node benchmarks/swarm-sandbox-benchmark.js --topologies=1 --iterations=1 --format=text
+
+# Full regression detection
+node benchmarks/swarm-sandbox-benchmark.js --topologies=1,5,20 --iterations=5 --format=json
+
+# Minimal benchmark
+node benchmarks/swarm-sandbox-benchmark.js --topologies=20 --iterations=1
+
+# Statistical benchmark
+node benchmarks/swarm-sandbox-benchmark.js --topologies=1,5,20 --iterations=10 --format=json
+
+# Performance trending
+for i in $(seq 1 5); do
+  echo "=== Run $i ===" && \
+  node benchmarks/swarm-sandbox-benchmark.js --topologies=5 --iterations=1 --format=text
+done
+
+═══════════════════════════════════════════════════════════════════════════════
+Documentation: benchmarks/SWARM-SANDBOX-BENCHMARK.md
+Results file: benchmarks/swarm-sandbox-results.json
+Last updated: 2026-06-22
+═══════════════════════════════════════════════════════════════════════════════

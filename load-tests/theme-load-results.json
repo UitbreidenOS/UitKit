@@ -1,0 +1,55 @@
+{
+  "timestamp": "2026-06-22T04:01:33.448Z",
+  "configuration": {
+    "sequentialIterations": 100,
+    "concurrentStores": 5,
+    "totalThemes": 12,
+    "rapidCycles": 500
+  },
+  "testResults": {
+    "sequential": {
+      "duration": 1.10825,
+      "throughput": 90232.34829686444
+    },
+    "concurrent": {
+      "duration": 0.6955419999999997,
+      "throughput": 718863.850062254,
+      "storeCount": 5
+    },
+    "rapid": {
+      "duration": 3.369041000000001,
+      "throughput": 148410.1855691278
+    }
+  },
+  "performance": {
+    "timings": {
+      "count": 700,
+      "min": 0.0030420000000006553,
+      "max": 0.468083,
+      "mean": 0.005123899999999999,
+      "median": 0.0034170000000006695,
+      "p95": 0.006000000000000227,
+      "p99": 0.02012500000000017
+    },
+    "memory": {
+      "readings": 6,
+      "heapMin": 4206672,
+      "heapMax": 4643464,
+      "heapAvg": 4432058.666666667,
+      "peakHeap": 4643464,
+      "initialHeap": 4206672,
+      "finalHeap": 4240880,
+      "heapGrowth": 34208
+    },
+    "errorCount": 0,
+    "errors": [],
+    "totalTimings": 700
+  },
+  "memorySpikes": [],
+  "metadata": {
+    "nodeVersion": "v22.16.0",
+    "platform": "darwin",
+    "arch": "arm64",
+    "uptime": 0.018048792
+  }
+}

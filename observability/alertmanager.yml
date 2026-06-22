@@ -1,0 +1,96 @@
+global:
+  resolve_timeout: 5m
+  slack_api_url: ${SLACK_WEBHOOK_URL}
+
+route:
+  receiver: 'slack-default'
+  group_by: ['alertname', 'cluster', 'service', 'component']
+  group_wait: 30s
+  group_interval: 5m
+  repeat_interval: 4h
+  routes:
+    # Critical Feature Errors
+    - match:
+        severity: critical
+        component: features
+      receiver: 'slack-critical'
+      group_wait: 10s
+      repeat_interval: 1h
+
+    # Don't Stop Budget
+    - match:
+        component: dont-stop
+      receiver: 'slack-warnings'
+      group_wait: 2m
+
+    # SVG Inspector
+    - match:
+        component: svg-inspector
+      receiver: 'slack-warnings'
+      group_wait: 1m
+
+    # Swarm Sandbox
+    - match:
+        component: swarm-sandbox
+      receiver: 'slack-critical'
+      group_wait: 30s
+      repeat_interval: 30m
+
+receivers:
+  - name: 'slack-default'
+    slack_configs:
+      - api_url: ${SLACK_WEBHOOK_URL}
+        channel: '#alerts'
+        title: '[{{ .Status | toUpper }}] {{ .CommonAnnotations.summary }}'
+        text: '{{ .CommonAnnotations.description }}'
+        send_resolved: true
+        actions:
+          - type: button
+            text: 'View Alert'
+            url: '{{ .ExternalURL }}'
+
+  - name: 'slack-critical'
+    slack_configs:
+      - api_url: ${SLACK_WEBHOOK_URL}
+        channel: '#alerts-critical'
+        title: '🚨 [CRITICAL] {{ .CommonAnnotations.summary }}'
+        text: |
+          {{ .CommonAnnotations.description }}
+
+          Affected Components:
+          {{ range .Alerts }}
+            • {{ .Labels.component }} ({{ .Labels.alertname }})
+          {{ end }}
+        send_resolved: true
+        color: 'danger'
+        actions:
+          - type: button
+            text: 'View in Prometheus'
+            url: '{{ .ExternalURL }}'
+          - type: button
+            text: 'Acknowledge'
+            url: '{{ .AcknowledgeURL }}'
+
+  - name: 'slack-warnings'
+    slack_configs:
+      - api_url: ${SLACK_WEBHOOK_URL}
+        channel: '#alerts-warnings'
+        title: '⚠️ [WARNING] {{ .CommonAnnotations.summary }}'
+        text: '{{ .CommonAnnotations.description }}'
+        send_resolved: true
+        color: 'warning'
+
+inhibit_rules:
+  # Suppress warning alerts if critical alert exists for same component
+  - source_match:
+      severity: 'critical'
+    target_match:
+      severity: 'warning'
+    equal: ['component', 'instance']
+
+  # Suppress DontStopBudgetExceeded if DontStopBudgetCritical fires
+  - source_match:
+      alertname: 'DontStopBudgetCritical'
+    target_match:
+      alertname: 'DontStopBudgetExceeded'
+    equal: ['job', 'instance']

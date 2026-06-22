@@ -1,0 +1,189 @@
+{
+  "timestamp": "2026-06-22T04:01:46.079Z",
+  "platform": {
+    "node": "v22.16.0",
+    "platform": "darwin",
+    "arch": "arm64",
+    "cpus": 10
+  },
+  "suites": {
+    "rendering": {
+      "name": "SVG Rendering Performance",
+      "tests": [
+        {
+          "name": "Render 1000 nodes",
+          "nodeCount": 1000,
+          "inputSizeKb": 176.9,
+          "mean": 0.28,
+          "median": 0.22,
+          "stdev": 0.12,
+          "min": 0.18,
+          "max": 0.49
+        },
+        {
+          "name": "Render 10000 nodes",
+          "nodeCount": 10000,
+          "inputSizeKb": 1776.75,
+          "mean": 4.22,
+          "median": 5.66,
+          "stdev": 2.41,
+          "min": 1.25,
+          "max": 6.75
+        },
+        {
+          "name": "Render 100000 nodes",
+          "nodeCount": 100000,
+          "inputSizeKb": 17863.54,
+          "mean": 103.78,
+          "median": 115.83,
+          "stdev": 29.41,
+          "min": 58.03,
+          "max": 143.27
+        }
+      ]
+    },
+    "pan_zoom": {
+      "name": "Pan/Zoom Performance",
+      "tests": [
+        {
+          "name": "Pan/Zoom 1000 nodes (100 ops)",
+          "nodeCount": 1000,
+          "operationCount": 100,
+          "opsPerSecond": 10000000,
+          "mean": 0.01,
+          "median": 0.01,
+          "stdev": 0,
+          "min": 0.01,
+          "max": 0.01
+        },
+        {
+          "name": "Pan/Zoom 10000 nodes (100 ops)",
+          "nodeCount": 10000,
+          "operationCount": 100,
+          "opsPerSecond": 10000000,
+          "mean": 0.01,
+          "median": 0.01,
+          "stdev": 0,
+          "min": 0.01,
+          "max": 0.01
+        },
+        {
+          "name": "Pan/Zoom 100000 nodes (50 ops)",
+          "nodeCount": 100000,
+          "operationCount": 50,
+          "opsPerSecond": null,
+          "mean": 0,
+          "median": 0,
+          "stdev": 0,
+          "min": 0,
+          "max": 0
+        }
+      ]
+    },
+    "memory": {
+      "name": "Memory Usage",
+      "tests": [
+        {
+          "name": "Memory 1000 nodes (5 instances)",
+          "nodeCount": 1000,
+          "heapUsedMb": "2.77",
+          "externalMemMb": "0.00",
+          "rssChangeMb": "1.14",
+          "jsonSizeKb": "176.90",
+          "svgSizeKb": "113.21"
+        },
+        {
+          "name": "Memory 10000 nodes (5 instances)",
+          "nodeCount": 10000,
+          "heapUsedMb": "21.85",
+          "externalMemMb": "0.00",
+          "rssChangeMb": "26.42",
+          "jsonSizeKb": "1776.85",
+          "svgSizeKb": "1140.71"
+        },
+        {
+          "name": "Memory 100000 nodes (5 instances)",
+          "nodeCount": 100000,
+          "heapUsedMb": "-127.15",
+          "externalMemMb": "0.00",
+          "rssChangeMb": "154.05",
+          "jsonSizeKb": "17863.89",
+          "svgSizeKb": "11503.60"
+        }
+      ]
+    },
+    "click_detection": {
+      "name": "Click Detection Latency",
+      "tests": [
+        {
+          "name": "Click Detection 1000 nodes (100 clicks)",
+          "nodeCount": 1000,
+          "clickCount": 100,
+          "latencyPerClickMs": "0.0056",
+          "mean": 0.56,
+          "median": 0.48,
+          "stdev": 0.14,
+          "min": 0.45,
+          "max": 0.83
+        },
+        {
+          "name": "Click Detection 10000 nodes (100 clicks)",
+          "nodeCount": 10000,
+          "clickCount": 100,
+          "latencyPerClickMs": "0.0004",
+          "mean": 0.04,
+          "median": 0.04,
+          "stdev": 0.01,
+          "min": 0.03,
+          "max": 0.06
+        },
+        {
+          "name": "Click Detection 100000 nodes (50 clicks)",
+          "nodeCount": 100000,
+          "clickCount": 50,
+          "latencyPerClickMs": "0.0004",
+          "mean": 0.02,
+          "median": 0.02,
+          "stdev": 0,
+          "min": 0.01,
+          "max": 0.02
+        }
+      ]
+    },
+    "json_conversion": {
+      "name": "JSON to SVG Conversion",
+      "tests": [
+        {
+          "name": "JSON→SVG 1000 nodes",
+          "nodeCount": 1000,
+          "mean": 0.85,
+          "median": 0.08,
+          "stdev": 1.53,
+          "min": 0.08,
+          "max": 3.91,
+          "nodesPerMs": "1176.5"
+        },
+        {
+          "name": "JSON→SVG 10000 nodes",
+          "nodeCount": 10000,
+          "mean": 1.88,
+          "median": 1.12,
+          "stdev": 2.18,
+          "min": 0.4,
+          "max": 6.19,
+          "nodesPerMs": "5319.1"
+        },
+        {
+          "name": "JSON→SVG 100000 nodes",
+          "nodeCount": 100000,
+          "mean": 109.83,
+          "median": 88.53,
+          "stdev": 39.68,
+          "min": 73.97,
+          "max": 184.39,
+          "nodesPerMs": "910.5"
+        }
+      ]
+    }
+  }
+}

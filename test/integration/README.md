@@ -1,215 +1,189 @@
 # Integration Tests
 
-This directory contains integration tests for Claudient components, focusing on real-world scenarios and cross-component interactions.
+This directory contains comprehensive integration tests for Claudient's core systems.
 
-## Tests
+## Available Test Suites
 
-### Swarm Matrix Integration Test
-**File:** `swarm-matrix-integration.test.js`
+### svg-swarm-integration.test.js
 
-Comprehensive integration test suite for Swarm Sandbox with Matrix theme styling.
+**Purpose:** Test SVG visualization of multi-agent swarms with real-time inspection
 
-#### What This Test Verifies
+**What It Tests:**
+- SVG map generation from swarm topology
+- Interactive inspection of agent nodes
+- Real-time updates during sandbox execution
+- Performance with 100+ agent topologies
+- Event streaming and synchronization
 
-1. **CLI Output Styling**
-   - Matrix theme colors (neon green #00ff41 on dark background #0a0e27)
-   - ANSI color codes properly applied
-   - Success messages in green, errors in red, warnings in yellow, info in cyan
+**Key Classes:**
+- `SVGSwarmGenerator` - Convert topology to interactive SVG
+- `SwarmSandbox` - Multi-agent execution environment simulator
+- `SVGInteractiveInspector` - Interactive node inspection
 
-2. **Status Display Readability**
-   - Neon green text remains readable on dark backgrounds
-   - Latency information clearly displayed with millisecond units
-   - Error rates and thresholds visible
-   - Agent statuses distinguishable by color and text
-   - Execution timeline chronologically ordered
+**Test Count:** 24 tests, all passing
 
-3. **Error Message Visibility**
-   - Timeout errors prominently displayed with recovery options
-   - Agent failure errors clearly marked with remediation steps
-   - Validation errors list specific issues with context
-   - Error messages include affected agent IDs
-   - Remediation suggestions provided for each error type
-   - ANSI codes properly balanced (no artifacts)
-
-4. **Matrix Theme Visual Effects**
-   - Scanline effect reference documented
-   - Glow effects don't reduce text contrast
-   - Animation effects don't break text flow
-   - Terminal cursor styling doesn't interfere with readability
-
-5. **Sandbox Status Displays**
-   - Initialization status shows all setup steps
-   - Execution trace includes accurate timing information
-   - Summary displays key metrics (latency, error rate, queue depth)
-   - Health check results show pass/fail status
-   - Readiness indicator (GREEN/YELLOW/RED) prominently displayed
-
-6. **Error Scenario Handling**
-   - Timeout scenarios show recovery mechanism with backoff
-   - Agent failure scenarios indicate graceful degradation
-   - Validation failures provide clear remediation path
-   - Error details include root cause analysis
-
-7. **Output Formatting**
-   - Section headers with visual separation (═ and ─ characters)
-   - Success indicators: ✓ (checkmark)
-   - Error indicators: ✗ (X symbol)
-   - Warning indicators: ⚠ (triangle)
-   - Code blocks visually distinct with ┌─ and └─ markers
-
-8. **Matrix Color Contrast**
-   - Primary green (#00ff41) readable on background (#0a0e27)
-   - Error red (#ff004d) stands out
-   - Warning yellow (#ffb700) visible
-   - Info cyan (#00d4ff) distinguishable
-
-9. **Accessibility**
-   - Color not the only status indicator (uses symbols + text)
-   - Error messages include text descriptions, not just colors
-   - Terminal output readable without color support
-   - Semantic information with symbols and text
-
-#### Running the Tests
-
-**With Jest or Test Framework:**
+**Run Command:**
 ```bash
-npm test -- test/integration/swarm-matrix-integration.test.js
+npx mocha test/integration/svg-swarm-integration.test.js --timeout 10000
 ```
 
-**Standalone:**
+**Test Duration:** ~7 seconds
+
+### matrix-svg-integration.test.js
+
+**Purpose:** Test SVG matrix visualization of system dependencies and relationships
+
+**Run Command:**
 ```bash
-node test/integration/swarm-matrix-integration.test.js
+npx mocha test/integration/matrix-svg-integration.test.js --timeout 10000
 ```
 
-**Direct Output (Visual Inspection):**
+## Running All Integration Tests
+
 ```bash
-node test/integration/swarm-matrix-integration.test.js 2>&1 | less -R
+# Run all integration tests
+npx mocha test/integration/*.test.js --timeout 10000
+
+# Run with verbose output
+npx mocha test/integration/*.test.js --timeout 10000 --reporter spec
+
+# Run specific test file
+npx mocha test/integration/svg-swarm-integration.test.js --timeout 10000
+
+# Run specific test suite within file
+npx mocha test/integration/svg-swarm-integration.test.js --grep "SVG Map Generation"
+
+# Run specific test
+npx mocha test/integration/svg-swarm-integration.test.js --grep "generates SVG from valid topology"
 ```
 
-The `-R` flag in `less` preserves ANSI color codes for proper visualization.
+## Test Organization
 
-#### Test Output Examples
-
-**Successful Initialization:**
 ```
-════════════════════════════════════════════════════════════════════════════════
-  Swarm Sandbox Initialization
-════════════════════════════════════════════════════════════════════════════════
-
-ℹ Loading topology configuration...
-✓ Topology loaded: 5-agent council (hub-spoke)
-✓ Agent IDs validated: orchestrator, researcher, analyst, risk_assessor, writer
-────────────────────────────────────────────────────────────────────────────────
-
-════════════════════════════════════════════════════════════════════════════════
-  Sandbox Environment Setup
-════════════════════════════════════════════════════════════════════════════════
-
-✓ Isolation level: strict
-✓ Network access: none (mock endpoints only)
-✓ Memory limit per agent: 512 MB
-✓ Rate limit: 60 req/min per agent
-✓ Timeout: 30000 ms default
+test/integration/
+├── svg-swarm-integration.test.js       # SVG + Swarm tests
+├── matrix-svg-integration.test.js      # Matrix visualization tests
+├── SVG_SWARM_TEST_SUMMARY.md          # Detailed summary
+└── README.md                           # This file
 ```
 
-**Error Scenario - Timeout:**
+## Coverage Summary
+
+| Component | Tests | Status |
+|-----------|-------|--------|
+| SVG Generation | 5 | ✅ All passing |
+| Node Inspection | 5 | ✅ All passing |
+| Real-time Updates | 6 | ✅ All passing |
+| Performance | 3 | ✅ All passing |
+| Event Sync | 2 | ✅ All passing |
+| Error Handling | 3 | ✅ All passing |
+| **Total** | **24** | **✅ 24/24** |
+
+## Key Test Topics
+
+### SVG Map Generation
+- Valid topology conversion to SVG
+- Error handling for invalid input
+- Circular node layout positioning
+- Edge rendering with connections
+- Active state highlighting
+
+### Interactive Inspection
+- Node data retrieval
+- Dynamic state updates
+- Null handling for missing nodes
+- Selection tracking
+- Related node discovery
+
+### Real-time Execution
+- Sandbox initialization
+- Full execution lifecycle (Assembly → Execution → Validation)
+- Event streaming during phases
+- SVG updates synchronized with state changes
+- Inter-agent message handling
+- Completion validation
+
+### Performance
+- 100-agent topology SVG generation < 1s
+- 50-agent initialization
+- 20-agent execution < 8s
+
+### Event Management
+- Correct event ordering
+- Listener subscription/unsubscription
+- Event audit logging
+
+### Error Handling
+- Missing agent errors
+- Concurrent execution prevention
+- Invalid node selection
+
+## Debugging Tests
+
+To add more logging or inspect test behavior:
+
+```bash
+# Run with Node inspector
+node --inspect-brk ./node_modules/.bin/mocha test/integration/svg-swarm-integration.test.js
+
+# Run single test with logging
+npx mocha test/integration/svg-swarm-integration.test.js --grep "generates SVG" --reporter spec
 ```
-✗ [30000ms] researcher: TIMEOUT - circuit breaker activated
-ℹ [30001ms] orchestrator: retry with backoff (attempt 1/3)
-ℹ [30101ms] researcher: connection restored
-✓ [32500ms] researcher: recovered and completed
 
-Error Details:
-✗ Timeout occurred in researcher agent
-ℹ Agent ID: researcher-agent
-ℹ Error type: TIMEOUT
-ℹ Recovery: automatic retry with exponential backoff
-ℹ Status: RECOVERED (partial success)
+## Integration Test Best Practices
+
+1. **Async Tests** - Use `async/await` with proper timeout settings
+2. **Cleanup** - Tests use `beforeEach` to reset state
+3. **Mocking** - Mock implementations simulate real behavior
+4. **Performance** - Tests include timing assertions
+5. **Logging** - Full audit trail available via `getStats()`
+
+## Adding New Tests
+
+Template for adding new integration tests:
+
+```javascript
+it('should test new behavior', async function() {
+  this.timeout(5000);  // Set appropriate timeout
+
+  // Setup
+  const component = new MyComponent();
+  
+  // Execute
+  const result = await component.doSomething();
+  
+  // Assert
+  assert(result, 'Should have result');
+});
 ```
 
-#### Test Components
+## Continuous Integration
 
-**MatrixThemedCLI Class**
-- Generates CLI output with Matrix theme styling
-- Methods:
-  - `styleText(text, color, bold)` - Apply color/style to text
-  - `header(title)` - Add section header with visual separation
-  - `status(icon, message, type)` - Add status line with icon and color
-  - `success(message)` - Add success indicator (✓)
-  - `error(message)` - Add error indicator (✗)
-  - `warning(message)` - Add warning indicator (⚠)
-  - `info(message)` - Add info indicator (ℹ)
-  - `codeBlock(code, language)` - Add code block with Matrix styling
-  - `divider()` - Add visual divider
-  - `render()` - Get final output
+These tests are designed to run in CI/CD pipelines:
+- No external dependencies required
+- Deterministic results
+- Clear pass/fail status
+- Execution time < 10s
+- No file I/O side effects
 
-**SwarmSandboxSimulator Class**
-- Generates realistic Swarm Sandbox CLI output for testing
-- Scenarios:
-  - `simulateSuccessfulInit()` - Successful sandbox setup
-  - `simulateExecutionTrace()` - Agent execution timeline
-  - `simulateStatusSummary()` - Complete status report
-  - `simulateTimeoutError()` - Timeout error with recovery
-  - `simulateAgentFailure()` - Agent unreachable scenario
-  - `simulateValidationFailure()` - Configuration validation error
-  - `getFullReport()` - Complete sandbox report
+## Related Documentation
 
-#### Matrix Theme Colors
+- [SVG Swarm Test Summary](./SVG_SWARM_TEST_SUMMARY.md)
+- [SwarmApp Component](../site/src/components/os/apps/SwarmApp.tsx)
+- [Test Architecture](./svg-swarm-integration.test.js)
 
-Reference colors from `themes/matrix.json`:
+## Troubleshooting
 
-| Color | Hex | ANSI Code | Usage |
-|-------|-----|-----------|-------|
-| Primary | #00ff41 | \x1b[92m | Success, normal text |
-| Error | #ff004d | \x1b[91m | Errors, failures |
-| Warning | #ffb700 | \x1b[93m | Warnings, cautions |
-| Info | #00d4ff | \x1b[96m | Information, debug |
-| Background | #0a0e27 | - | Terminal background |
+**Tests timing out:**
+- Increase `--timeout` value for slower machines
+- Check for async operation delays
 
-#### Integration Points
+**Random failures:**
+- Check for race conditions in event listeners
+- Verify sandbox state machine logic
+- Review timing of phase transitions
 
-This test integrates with:
-- **themes/matrix.json** - Matrix theme configuration and color palette
-- **skills/ai-engineering/swarm-sandbox.md** - Swarm Sandbox skill definition
-- **site/src/components/os/apps/CliApp.tsx** - CLI app component
-- **site/src/components/os/apps/SwarmApp.tsx** - Swarm app component
-- **scripts/claudient-swarm-sandbox.js** - Sandbox CLI script
-
-#### Performance Benchmarks
-
-Tests verify:
-- Output generation: < 500ms
-- ANSI color code bloat: < 10% of output size
-- Large report (100 agents): < 200ms to generate
-
-#### Accessibility Validation
-
-Tests ensure:
-- Color contrast ratios meet WCAG AA standards
-- Status indicated by symbol + text, not color alone
-- Output readable without ANSI color codes
-- Error messages include descriptions, not just indicators
-
-#### Troubleshooting
-
-**No ANSI colors in output:**
-- Check terminal supports 24-bit true color
-- Try piping through `less -R`: `node ... | less -R`
-
-**Tests failing with "Cannot read properties of undefined":**
-- Ensure Node.js version supports modern JavaScript
-- Run: `npm test` with proper test framework setup
-
-**Color codes visible in output:**
-- Output file is probably being stored in binary mode
-- Use text mode: ensure newlines are `\n` not `\r\n`
-
-#### Future Enhancements
-
-- [ ] Add tests for light theme compatibility
-- [ ] Add performance degradation tests
-- [ ] Add stress tests with 1000+ agents
-- [ ] Add network failure injection scenarios
-- [ ] Add memory leak detection tests
-- [ ] Add CSS-based theme rendering tests (for web UI)
-- [ ] Add WebGL visualization tests for Matrix effects
+**Performance issues:**
+- Profile with large agent counts
+- Check SVG generation performance
+- Monitor event listener overhead

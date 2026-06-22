@@ -1,0 +1,960 @@
+{
+  "$schema": "https://code.claude.com/schema/plugins.json",
+  "version": "1.0.0",
+  "timestamp": "2026-06-22T12:00:00Z",
+  "total": 21,
+  "entries": [
+    {
+      "id": "claudient-ai-engineering",
+      "name": "Claudient AI Engineering Stack",
+      "version": "1.10.1",
+      "description": "Claude API, agent construction, RAG, LangGraph, CrewAI, MCP server building, prompt caching, LLM eval, and AI-native development patterns.",
+      "author": {
+        "name": "tushar2704",
+        "verified": true
+      },
+      "repo": "https://github.com/tushar2704/claudient",
+      "downloads": {
+        "total": 28450,
+        "thisMonth": 1203,
+        "thisWeek": 287
+      },
+      "rating": {
+        "average": 4.9,
+        "count": 234,
+        "verified": true
+      },
+      "price": {
+        "model": "free",
+        "amount": 0,
+        "currency": "USD"
+      },
+      "tags": ["ai-engineering", "agents", "langchain", "langgraph", "crewai", "mcp", "prompt-engineering"],
+      "category": "ai-engineering",
+      "status": "active",
+      "certification": {
+        "level": "gold",
+        "verifiedAt": "2026-06-15T10:00:00Z",
+        "expiresAt": "2027-06-15T10:00:00Z"
+      },
+      "metadata": {
+        "icon": "🤖",
+        "source": "claudient-ai-engineering",
+        "languages": ["en"],
+        "assets": {
+          "skills": 28,
+          "agents": 5,
+          "hooks": 4,
+          "commands": 12,
+          "mcp": 3,
+          "guides": 6
+        },
+        "dependencies": [],
+        "compatibility": {
+          "minClaudeVersion": "0.3.0",
+          "maxClaudeVersion": null,
+          "supportedPlatforms": ["darwin", "linux", "win32"]
+        },
+        "keywords": ["anthropic", "openai", "rag", "vector-db", "embeddings", "llm-eval"]
+      },
+      "stats": {
+        "publishedAt": "2024-02-01T08:00:00Z",
+        "updatedAt": "2026-06-22T03:55:46Z",
+        "lastReviewedAt": "2026-06-15T10:00:00Z",
+        "issuesOpen": 5,
+        "issuesResolved": 89,
+        "prsMerged": 34
+      },
+      "support": {
+        "documentationUrl": "https://github.com/tushar2704/claudient/tree/main/plugins/claudient-ai-engineering",
+        "issuesUrl": "https://github.com/tushar2704/claudient/issues",
+        "licenseType": "MIT",
+        "licenseUrl": "https://github.com/tushar2704/claudient/blob/main/LICENSE"
+      }
+    },
+    {
+      "id": "claudient-automation",
+      "name": "Claudient Automation Stack",
+      "version": "1.10.1",
+      "description": "Browser automation, Playwright, SaaS scaffolding, spec-to-repo generation, IoT, embedded systems, game dev, and office document automation.",
+      "author": {
+        "name": "tushar2704",
+        "verified": true
+      },
+      "repo": "https://github.com/tushar2704/claudient",
+      "downloads": {
+        "total": 19340,
+        "thisMonth": 876,
+        "thisWeek": 203
+      },
+      "rating": {
+        "average": 4.7,
+        "count": 156,
+        "verified": true
+      },
+      "price": {
+        "model": "free",
+        "amount": 0,
+        "currency": "USD"
+      },
+      "tags": ["automation", "playwright", "browser", "rpa", "saas", "iot", "gamedev"],
+      "category": "automation",
+      "status": "active",
+      "certification": {
+        "level": "gold",
+        "verifiedAt": "2026-06-15T10:00:00Z",
+        "expiresAt": "2027-06-15T10:00:00Z"
+      },
+      "metadata": {
+        "icon": "🤖",
+        "source": "claudient-automation",
+        "languages": ["en"],
+        "assets": {
+          "skills": 22,
+          "agents": 3,
+          "hooks": 3,
+          "commands": 8,
+          "mcp": 2,
+          "guides": 5
+        },
+        "dependencies": [],
+        "compatibility": {
+          "minClaudeVersion": "0.3.0",
+          "maxClaudeVersion": null,
+          "supportedPlatforms": ["darwin", "linux", "win32"]
+        },
+        "keywords": ["selenium", "cypress", "puppeteer", "office-automation", "macro"]
+      },
+      "stats": {
+        "publishedAt": "2024-03-10T09:30:00Z",
+        "updatedAt": "2026-06-20T15:22:00Z",
+        "lastReviewedAt": "2026-06-15T10:00:00Z",
+        "issuesOpen": 3,
+        "issuesResolved": 67,
+        "prsMerged": 28
+      },
+      "support": {
+        "documentationUrl": "https://github.com/tushar2704/claudient/tree/main/plugins/claudient-automation",
+        "issuesUrl": "https://github.com/tushar2704/claudient/issues",
+        "licenseType": "MIT",
+        "licenseUrl": "https://github.com/tushar2704/claudient/blob/main/LICENSE"
+      }
+    },
+    {
+      "id": "claudient-backend",
+      "name": "Claudient Backend Stack",
+      "version": "1.10.1",
+      "description": "41 framework-specific skills covering Python (FastAPI, Django), Node.js (Next.js, NestJS), Go, Rust, Ruby, Java, Elixir, Flutter, Swift, Kotlin, .NET, and PHP.",
+      "author": {
+        "name": "tushar2704",
+        "verified": true
+      },
+      "repo": "https://github.com/tushar2704/claudient",
+      "downloads": {
+        "total": 45230,
+        "thisMonth": 2156,
+        "thisWeek": 487
+      },
+      "rating": {
+        "average": 4.8,
+        "count": 312,
+        "verified": true
+      },
+      "price": {
+        "model": "free",
+        "amount": 0,
+        "currency": "USD"
+      },
+      "tags": ["backend", "frameworks", "python", "nodejs", "golang", "rust", "rest-api"],
+      "category": "backend",
+      "status": "active",
+      "certification": {
+        "level": "gold",
+        "verifiedAt": "2026-06-15T10:00:00Z",
+        "expiresAt": "2027-06-15T10:00:00Z"
+      },
+      "metadata": {
+        "icon": "🔙",
+        "source": "claudient-backend",
+        "languages": ["en"],
+        "assets": {
+          "skills": 41,
+          "agents": 4,
+          "hooks": 5,
+          "commands": 15,
+          "mcp": 2,
+          "guides": 9
+        },
+        "dependencies": [],
+        "compatibility": {
+          "minClaudeVersion": "0.3.0",
+          "maxClaudeVersion": null,
+          "supportedPlatforms": ["darwin", "linux", "win32"]
+        },
+        "keywords": ["fastapi", "django", "nextjs", "nestjs", "hono", "golang", "actix", "phoenix"]
+      },
+      "stats": {
+        "publishedAt": "2024-01-10T08:30:00Z",
+        "updatedAt": "2026-06-22T03:55:46Z",
+        "lastReviewedAt": "2026-06-15T10:00:00Z",
+        "issuesOpen": 8,
+        "issuesResolved": 156,
+        "prsMerged": 47
+      },
+      "support": {
+        "documentationUrl": "https://github.com/tushar2704/claudient/tree/main/plugins/claudient-backend",
+        "issuesUrl": "https://github.com/tushar2704/claudient/issues",
+        "licenseType": "MIT",
+        "licenseUrl": "https://github.com/tushar2704/claudient/blob/main/LICENSE"
+      }
+    },
+    {
+      "id": "claudient-database",
+      "name": "Claudient Database Stack",
+      "version": "1.10.1",
+      "description": "PostgreSQL, MongoDB, Redis, Supabase, Neon, Turso, Prisma, Drizzle ORM, GraphQL, Elasticsearch, and blockchain/smart contracts.",
+      "author": {
+        "name": "tushar2704",
+        "verified": true
+      },
+      "repo": "https://github.com/tushar2704/claudient",
+      "downloads": {
+        "total": 38120,
+        "thisMonth": 1834,
+        "thisWeek": 421
+      },
+      "rating": {
+        "average": 4.7,
+        "count": 267,
+        "verified": true
+      },
+      "price": {
+        "model": "free",
+        "amount": 0,
+        "currency": "USD"
+      },
+      "tags": ["database", "postgresql", "mongodb", "redis", "orm", "graphql", "sql"],
+      "category": "database",
+      "status": "active",
+      "certification": {
+        "level": "gold",
+        "verifiedAt": "2026-06-15T10:00:00Z",
+        "expiresAt": "2027-06-15T10:00:00Z"
+      },
+      "metadata": {
+        "icon": "💾",
+        "source": "claudient-database",
+        "languages": ["en"],
+        "assets": {
+          "skills": 24,
+          "agents": 3,
+          "hooks": 4,
+          "commands": 11,
+          "mcp": 2,
+          "guides": 7
+        },
+        "dependencies": [],
+        "compatibility": {
+          "minClaudeVersion": "0.3.0",
+          "maxClaudeVersion": null,
+          "supportedPlatforms": ["darwin", "linux", "win32"]
+        },
+        "keywords": ["prisma", "drizzle", "typeorm", "sequelize", "elasticsearch", "solidity"]
+      },
+      "stats": {
+        "publishedAt": "2024-02-15T10:15:00Z",
+        "updatedAt": "2026-06-21T12:30:00Z",
+        "lastReviewedAt": "2026-06-15T10:00:00Z",
+        "issuesOpen": 6,
+        "issuesResolved": 142,
+        "prsMerged": 41
+      },
+      "support": {
+        "documentationUrl": "https://github.com/tushar2704/claudient/tree/main/plugins/claudient-database",
+        "issuesUrl": "https://github.com/tushar2704/claudient/issues",
+        "licenseType": "MIT",
+        "licenseUrl": "https://github.com/tushar2704/claudient/blob/main/LICENSE"
+      }
+    },
+    {
+      "id": "claudient-devops-infra",
+      "name": "Claudient DevOps & Infrastructure Stack",
+      "version": "1.10.1",
+      "description": "36 skills covering AWS, Azure, GCP, Kubernetes, Helm, Terraform, Pulumi, ArgoCD, Docker, CI/CD, GitHub Actions, and platform engineering.",
+      "author": {
+        "name": "tushar2704",
+        "verified": true
+      },
+      "repo": "https://github.com/tushar2704/claudient",
+      "downloads": {
+        "total": 32480,
+        "thisMonth": 1567,
+        "thisWeek": 356
+      },
+      "rating": {
+        "average": 4.8,
+        "count": 289,
+        "verified": true
+      },
+      "price": {
+        "model": "free",
+        "amount": 0,
+        "currency": "USD"
+      },
+      "tags": ["devops", "kubernetes", "terraform", "aws", "azure", "gcp", "ci-cd"],
+      "category": "devops-infra",
+      "status": "active",
+      "certification": {
+        "level": "gold",
+        "verifiedAt": "2026-06-15T10:00:00Z",
+        "expiresAt": "2027-06-15T10:00:00Z"
+      },
+      "metadata": {
+        "icon": "⚙️",
+        "source": "claudient-devops-infra",
+        "languages": ["en"],
+        "assets": {
+          "skills": 36,
+          "agents": 4,
+          "hooks": 6,
+          "commands": 14,
+          "mcp": 2,
+          "guides": 8
+        },
+        "dependencies": [],
+        "compatibility": {
+          "minClaudeVersion": "0.3.0",
+          "maxClaudeVersion": null,
+          "supportedPlatforms": ["darwin", "linux", "win32"]
+        },
+        "keywords": ["helm", "argocd", "pulumi", "docker", "helm-chart", "observability", "prometheus"]
+      },
+      "stats": {
+        "publishedAt": "2024-01-20T11:00:00Z",
+        "updatedAt": "2026-06-20T14:45:00Z",
+        "lastReviewedAt": "2026-06-15T10:00:00Z",
+        "issuesOpen": 7,
+        "issuesResolved": 178,
+        "prsMerged": 52
+      },
+      "support": {
+        "documentationUrl": "https://github.com/tushar2704/claudient/tree/main/plugins/claudient-devops-infra",
+        "issuesUrl": "https://github.com/tushar2704/claudient/issues",
+        "licenseType": "MIT",
+        "licenseUrl": "https://github.com/tushar2704/claudient/blob/main/LICENSE"
+      }
+    },
+    {
+      "id": "claudient-data-ml",
+      "name": "Claudient Data & ML Stack",
+      "version": "1.10.1",
+      "description": "Data pipelines, dbt, Apache Spark, Kafka, MLOps, MLflow, PyTorch, TensorFlow, NLP, reinforcement learning, and synthetic data.",
+      "author": {
+        "name": "tushar2704",
+        "verified": true
+      },
+      "repo": "https://github.com/tushar2704/claudient",
+      "downloads": {
+        "total": 22890,
+        "thisMonth": 1045,
+        "thisWeek": 234
+      },
+      "rating": {
+        "average": 4.9,
+        "count": 198,
+        "verified": true
+      },
+      "price": {
+        "model": "free",
+        "amount": 0,
+        "currency": "USD"
+      },
+      "tags": ["data", "machine-learning", "mlops", "dbt", "spark", "pytorch", "tensorflow"],
+      "category": "data-ml",
+      "status": "active",
+      "certification": {
+        "level": "gold",
+        "verifiedAt": "2026-06-15T10:00:00Z",
+        "expiresAt": "2027-06-15T10:00:00Z"
+      },
+      "metadata": {
+        "icon": "📊",
+        "source": "claudient-data-ml",
+        "languages": ["en"],
+        "assets": {
+          "skills": 27,
+          "agents": 4,
+          "hooks": 4,
+          "commands": 12,
+          "mcp": 2,
+          "guides": 6
+        },
+        "dependencies": [],
+        "compatibility": {
+          "minClaudeVersion": "0.3.0",
+          "maxClaudeVersion": null,
+          "supportedPlatforms": ["darwin", "linux", "win32"]
+        },
+        "keywords": ["mlflow", "huggingface", "scikit-learn", "polars", "pandas", "kubeflow", "airflow"]
+      },
+      "stats": {
+        "publishedAt": "2024-03-01T09:45:00Z",
+        "updatedAt": "2026-06-19T16:20:00Z",
+        "lastReviewedAt": "2026-06-15T10:00:00Z",
+        "issuesOpen": 4,
+        "issuesResolved": 96,
+        "prsMerged": 36
+      },
+      "support": {
+        "documentationUrl": "https://github.com/tushar2704/claudient/tree/main/plugins/claudient-data-ml",
+        "issuesUrl": "https://github.com/tushar2704/claudient/issues",
+        "licenseType": "MIT",
+        "licenseUrl": "https://github.com/tushar2704/claudient/blob/main/LICENSE"
+      }
+    },
+    {
+      "id": "claudient-gtm",
+      "name": "Claudient Go-To-Market Stack",
+      "version": "1.10.1",
+      "description": "32 GTM skills: cold email, LinkedIn outreach, deal desk, RevOps, HubSpot, channel economics, forecasting, customer success, RFP response.",
+      "author": {
+        "name": "tushar2704",
+        "verified": true
+      },
+      "repo": "https://github.com/tushar2704/claudient",
+      "downloads": {
+        "total": 18670,
+        "thisMonth": 923,
+        "thisWeek": 198
+      },
+      "rating": {
+        "average": 4.6,
+        "count": 145,
+        "verified": true
+      },
+      "price": {
+        "model": "free",
+        "amount": 0,
+        "currency": "USD"
+      },
+      "tags": ["gtm", "sales", "marketing", "revenue-ops", "hubspot", "sdr", "customer-success"],
+      "category": "gtm",
+      "status": "active",
+      "certification": {
+        "level": "silver",
+        "verifiedAt": "2026-05-20T12:00:00Z",
+        "expiresAt": "2027-05-20T12:00:00Z"
+      },
+      "metadata": {
+        "icon": "📈",
+        "source": "claudient-gtm",
+        "languages": ["en"],
+        "assets": {
+          "skills": 32,
+          "agents": 5,
+          "hooks": 5,
+          "commands": 13,
+          "mcp": 1,
+          "guides": 8
+        },
+        "dependencies": [],
+        "compatibility": {
+          "minClaudeVersion": "0.3.0",
+          "maxClaudeVersion": null,
+          "supportedPlatforms": ["darwin", "linux", "win32"]
+        },
+        "keywords": ["crm", "salesforce", "outreach", "apollo", "pipeline-management", "churn-prevention"]
+      },
+      "stats": {
+        "publishedAt": "2024-04-10T08:15:00Z",
+        "updatedAt": "2026-06-18T11:30:00Z",
+        "lastReviewedAt": "2026-05-20T12:00:00Z",
+        "issuesOpen": 5,
+        "issuesResolved": 87,
+        "prsMerged": 32
+      },
+      "support": {
+        "documentationUrl": "https://github.com/tushar2704/claudient/tree/main/plugins/claudient-gtm",
+        "issuesUrl": "https://github.com/tushar2704/claudient/issues",
+        "licenseType": "MIT",
+        "licenseUrl": "https://github.com/tushar2704/claudient/blob/main/LICENSE"
+      }
+    },
+    {
+      "id": "claudient-finance",
+      "name": "Claudient Finance Stack",
+      "version": "1.10.1",
+      "description": "DCF models, 3-statement financial models, comps analysis, deal screening, IC memos, KYC/AML, pitch decks, earnings analysis.",
+      "author": {
+        "name": "tushar2704",
+        "verified": true
+      },
+      "repo": "https://github.com/tushar2704/claudient",
+      "downloads": {
+        "total": 16450,
+        "thisMonth": 789,
+        "thisWeek": 167
+      },
+      "rating": {
+        "average": 4.7,
+        "count": 123,
+        "verified": true
+      },
+      "price": {
+        "model": "free",
+        "amount": 0,
+        "currency": "USD"
+      },
+      "tags": ["finance", "financial-modeling", "equity-research", "investment-banking", "private-equity"],
+      "category": "finance",
+      "status": "active",
+      "certification": {
+        "level": "silver",
+        "verifiedAt": "2026-05-15T14:30:00Z",
+        "expiresAt": "2027-05-15T14:30:00Z"
+      },
+      "metadata": {
+        "icon": "💰",
+        "source": "claudient-finance",
+        "languages": ["en"],
+        "assets": {
+          "skills": 18,
+          "agents": 3,
+          "hooks": 3,
+          "commands": 9,
+          "mcp": 1,
+          "guides": 5
+        },
+        "dependencies": [],
+        "compatibility": {
+          "minClaudeVersion": "0.3.0",
+          "maxClaudeVersion": null,
+          "supportedPlatforms": ["darwin", "linux", "win32"]
+        },
+        "keywords": ["valuation", "modeling", "excel", "capital-markets", "derivatives", "aum"]
+      },
+      "stats": {
+        "publishedAt": "2024-05-05T10:30:00Z",
+        "updatedAt": "2026-06-17T13:15:00Z",
+        "lastReviewedAt": "2026-05-15T14:30:00Z",
+        "issuesOpen": 3,
+        "issuesResolved": 64,
+        "prsMerged": 22
+      },
+      "support": {
+        "documentationUrl": "https://github.com/tushar2704/claudient/tree/main/plugins/claudient-finance",
+        "issuesUrl": "https://github.com/tushar2704/claudient/issues",
+        "licenseType": "MIT",
+        "licenseUrl": "https://github.com/tushar2704/claudient/blob/main/LICENSE"
+      }
+    },
+    {
+      "id": "claudient-marketing",
+      "name": "Claudient Marketing Stack",
+      "version": "1.10.1",
+      "description": "SEO, content strategy, copywriting, email sequences, paid ads, brand guidelines, CRO, social media, churn prevention, schema markup.",
+      "author": {
+        "name": "tushar2704",
+        "verified": true
+      },
+      "repo": "https://github.com/tushar2704/claudient",
+      "downloads": {
+        "total": 21340,
+        "thisMonth": 1012,
+        "thisWeek": 226
+      },
+      "rating": {
+        "average": 4.5,
+        "count": 167,
+        "verified": true
+      },
+      "price": {
+        "model": "free",
+        "amount": 0,
+        "currency": "USD"
+      },
+      "tags": ["marketing", "seo", "content", "copywriting", "email-marketing", "growth-hacking"],
+      "category": "marketing",
+      "status": "active",
+      "certification": {
+        "level": "silver",
+        "verifiedAt": "2026-05-25T09:00:00Z",
+        "expiresAt": "2027-05-25T09:00:00Z"
+      },
+      "metadata": {
+        "icon": "📢",
+        "source": "claudient-marketing",
+        "languages": ["en"],
+        "assets": {
+          "skills": 26,
+          "agents": 3,
+          "hooks": 4,
+          "commands": 10,
+          "mcp": 1,
+          "guides": 6
+        },
+        "dependencies": [],
+        "compatibility": {
+          "minClaudeVersion": "0.3.0",
+          "maxClaudeVersion": null,
+          "supportedPlatforms": ["darwin", "linux", "win32"]
+        },
+        "keywords": ["analytics", "amplitude", "heap", "ga4", "meta-ads", "linkedin-ads", "brand-voice"]
+      },
+      "stats": {
+        "publishedAt": "2024-04-20T11:45:00Z",
+        "updatedAt": "2026-06-19T10:20:00Z",
+        "lastReviewedAt": "2026-05-25T09:00:00Z",
+        "issuesOpen": 4,
+        "issuesResolved": 78,
+        "prsMerged": 29
+      },
+      "support": {
+        "documentationUrl": "https://github.com/tushar2704/claudient/tree/main/plugins/claudient-marketing",
+        "issuesUrl": "https://github.com/tushar2704/claudient/issues",
+        "licenseType": "MIT",
+        "licenseUrl": "https://github.com/tushar2704/claudient/blob/main/LICENSE"
+      }
+    },
+    {
+      "id": "claudient-legal",
+      "name": "Claudient Legal Stack",
+      "version": "1.10.1",
+      "description": "Contract review, NDA analysis, GDPR compliance, SOC 2, ISO 27001, IP clearance, EU AI Act, legal research, DSAR, and diligence.",
+      "author": {
+        "name": "tushar2704",
+        "verified": true
+      },
+      "repo": "https://github.com/tushar2704/claudient",
+      "downloads": {
+        "total": 12560,
+        "thisMonth": 612,
+        "thisWeek": 134
+      },
+      "rating": {
+        "average": 4.8,
+        "count": 94,
+        "verified": true
+      },
+      "price": {
+        "model": "free",
+        "amount": 0,
+        "currency": "USD"
+      },
+      "tags": ["legal", "compliance", "contract-law", "gdpr", "data-privacy", "intellectual-property"],
+      "category": "legal",
+      "status": "active",
+      "certification": {
+        "level": "bronze",
+        "verifiedAt": "2026-06-01T08:30:00Z",
+        "expiresAt": "2027-06-01T08:30:00Z"
+      },
+      "metadata": {
+        "icon": "⚖️",
+        "source": "claudient-legal",
+        "languages": ["en"],
+        "assets": {
+          "skills": 20,
+          "agents": 2,
+          "hooks": 2,
+          "commands": 8,
+          "mcp": 1,
+          "guides": 4
+        },
+        "dependencies": [],
+        "compatibility": {
+          "minClaudeVersion": "0.3.0",
+          "maxClaudeVersion": null,
+          "supportedPlatforms": ["darwin", "linux", "win32"]
+        },
+        "keywords": ["courtlistener", "thomson-reuters", "dpa", "terms-of-service", "regulatory-risk"]
+      },
+      "stats": {
+        "publishedAt": "2024-06-10T09:00:00Z",
+        "updatedAt": "2026-06-21T14:00:00Z",
+        "lastReviewedAt": "2026-06-01T08:30:00Z",
+        "issuesOpen": 2,
+        "issuesResolved": 48,
+        "prsMerged": 18
+      },
+      "support": {
+        "documentationUrl": "https://github.com/tushar2704/claudient/tree/main/plugins/claudient-legal",
+        "issuesUrl": "https://github.com/tushar2704/claudient/issues",
+        "licenseType": "MIT",
+        "licenseUrl": "https://github.com/tushar2704/claudient/blob/main/LICENSE"
+      }
+    },
+    {
+      "id": "claudient-product",
+      "name": "Claudient Product Stack",
+      "version": "1.10.1",
+      "description": "Product discovery, roadmapping, PRD writing, competitive teardowns, UX research, product analytics, experiment design, landing pages.",
+      "author": {
+        "name": "tushar2704",
+        "verified": true
+      },
+      "repo": "https://github.com/tushar2704/claudient",
+      "downloads": {
+        "total": 24680,
+        "thisMonth": 1156,
+        "thisWeek": 256
+      },
+      "rating": {
+        "average": 4.7,
+        "count": 189,
+        "verified": true
+      },
+      "price": {
+        "model": "free",
+        "amount": 0,
+        "currency": "USD"
+      },
+      "tags": ["product-management", "discovery", "roadmap", "ux-research", "analytics", "experimentation"],
+      "category": "product",
+      "status": "active",
+      "certification": {
+        "level": "silver",
+        "verifiedAt": "2026-05-30T10:15:00Z",
+        "expiresAt": "2027-05-30T10:15:00Z"
+      },
+      "metadata": {
+        "icon": "📦",
+        "source": "claudient-product",
+        "languages": ["en"],
+        "assets": {
+          "skills": 23,
+          "agents": 3,
+          "hooks": 3,
+          "commands": 10,
+          "mcp": 1,
+          "guides": 5
+        },
+        "dependencies": [],
+        "compatibility": {
+          "minClaudeVersion": "0.3.0",
+          "maxClaudeVersion": null,
+          "supportedPlatforms": ["darwin", "linux", "win32"]
+        },
+        "keywords": ["prd", "wireframe", "user-research", "competitive-analysis", "segment", "mixpanel"]
+      },
+      "stats": {
+        "publishedAt": "2024-05-15T08:45:00Z",
+        "updatedAt": "2026-06-20T12:30:00Z",
+        "lastReviewedAt": "2026-05-30T10:15:00Z",
+        "issuesOpen": 5,
+        "issuesResolved": 92,
+        "prsMerged": 34
+      },
+      "support": {
+        "documentationUrl": "https://github.com/tushar2704/claudient/tree/main/plugins/claudient-product",
+        "issuesUrl": "https://github.com/tushar2704/claudient/issues",
+        "licenseType": "MIT",
+        "licenseUrl": "https://github.com/tushar2704/claudient/blob/main/LICENSE"
+      }
+    },
+    {
+      "id": "claudient-productivity",
+      "name": "Claudient Productivity Stack",
+      "version": "1.10.1",
+      "description": "66 skills for engineering work: debugging, refactoring, code review, PR automation, test generation, ADR writing, security auditing, context engineering.",
+      "author": {
+        "name": "tushar2704",
+        "verified": true
+      },
+      "repo": "https://github.com/tushar2704/claudient",
+      "downloads": {
+        "total": 52340,
+        "thisMonth": 2456,
+        "thisWeek": 578
+      },
+      "rating": {
+        "average": 4.9,
+        "count": 389,
+        "verified": true
+      },
+      "price": {
+        "model": "free",
+        "amount": 0,
+        "currency": "USD"
+      },
+      "tags": ["productivity", "code-review", "debugging", "testing", "refactoring", "engineering-excellence"],
+      "category": "productivity",
+      "status": "active",
+      "certification": {
+        "level": "gold",
+        "verifiedAt": "2026-06-15T10:00:00Z",
+        "expiresAt": "2027-06-15T10:00:00Z"
+      },
+      "metadata": {
+        "icon": "⚡",
+        "source": "claudient-productivity",
+        "languages": ["en"],
+        "assets": {
+          "skills": 66,
+          "agents": 6,
+          "hooks": 8,
+          "commands": 18,
+          "mcp": 3,
+          "guides": 10
+        },
+        "dependencies": [],
+        "compatibility": {
+          "minClaudeVersion": "0.3.0",
+          "maxClaudeVersion": null,
+          "supportedPlatforms": ["darwin", "linux", "win32"]
+        },
+        "keywords": ["jest", "vitest", "pytest", "ruff", "eslint", "security-audit", "performance-optimization"]
+      },
+      "stats": {
+        "publishedAt": "2024-01-05T07:00:00Z",
+        "updatedAt": "2026-06-22T05:15:00Z",
+        "lastReviewedAt": "2026-06-15T10:00:00Z",
+        "issuesOpen": 9,
+        "issuesResolved": 234,
+        "prsMerged": 68
+      },
+      "support": {
+        "documentationUrl": "https://github.com/tushar2704/claudient/tree/main/plugins/claudient-productivity",
+        "issuesUrl": "https://github.com/tushar2704/claudient/issues",
+        "licenseType": "MIT",
+        "licenseUrl": "https://github.com/tushar2704/claudient/blob/main/LICENSE"
+      }
+    },
+    {
+      "id": "claudient-commands",
+      "name": "Claudient Commands Stack",
+      "version": "1.10.1",
+      "description": "Slash command builders and workflow automation for common development tasks.",
+      "author": {
+        "name": "tushar2704",
+        "verified": true
+      },
+      "repo": "https://github.com/tushar2704/claudient",
+      "downloads": {
+        "total": 8920,
+        "thisMonth": 423,
+        "thisWeek": 98
+      },
+      "rating": {
+        "average": 4.6,
+        "count": 67,
+        "verified": true
+      },
+      "price": {
+        "model": "free",
+        "amount": 0,
+        "currency": "USD"
+      },
+      "tags": ["commands", "slash-commands", "workflow", "automation", "scripting"],
+      "category": "commands",
+      "status": "active",
+      "certification": {
+        "level": "uncertified",
+        "verifiedAt": null,
+        "expiresAt": null
+      },
+      "metadata": {
+        "icon": "⌘",
+        "source": "claudient-commands",
+        "languages": ["en"],
+        "assets": {
+          "skills": 14,
+          "agents": 2,
+          "hooks": 3,
+          "commands": 8,
+          "mcp": 0,
+          "guides": 2
+        },
+        "dependencies": [],
+        "compatibility": {
+          "minClaudeVersion": "0.3.0",
+          "maxClaudeVersion": null,
+          "supportedPlatforms": ["darwin", "linux", "win32"]
+        },
+        "keywords": ["scripting", "automation", "workflow", "custom-commands"]
+      },
+      "stats": {
+        "publishedAt": "2024-07-01T06:30:00Z",
+        "updatedAt": "2026-06-15T09:45:00Z",
+        "lastReviewedAt": null,
+        "issuesOpen": 2,
+        "issuesResolved": 23,
+        "prsMerged": 9
+      },
+      "support": {
+        "documentationUrl": "https://github.com/tushar2704/claudient/tree/main/plugins/claudient-commands",
+        "issuesUrl": "https://github.com/tushar2704/claudient/issues",
+        "licenseType": "MIT",
+        "licenseUrl": "https://github.com/tushar2704/claudient/blob/main/LICENSE"
+      }
+    },
+    {
+      "id": "matrix-theme",
+      "name": "Matrix Theme Plugin",
+      "version": "1.2.0",
+      "description": "Dark retro Matrix-inspired UI theme for Claude Code with terminal aesthetics and green monospace typography.",
+      "author": {
+        "name": "tushar2704",
+        "verified": true
+      },
+      "repo": "https://github.com/tushar2704/claudient",
+      "downloads": {
+        "total": 5420,
+        "thisMonth": 234,
+        "thisWeek": 52
+      },
+      "rating": {
+        "average": 4.4,
+        "count": 38,
+        "verified": true
+      },
+      "price": {
+        "model": "free",
+        "amount": 0,
+        "currency": "USD"
+      },
+      "tags": ["theme", "ui", "dark-mode", "retro", "aesthetics", "customization"],
+      "category": "productivity",
+      "status": "active",
+      "certification": {
+        "level": "uncertified",
+        "verifiedAt": null,
+        "expiresAt": null
+      },
+      "metadata": {
+        "icon": "🟢",
+        "source": "matrix-theme",
+        "languages": ["en"],
+        "assets": {
+          "skills": 0,
+          "agents": 0,
+          "hooks": 0,
+          "commands": 0,
+          "mcp": 0,
+          "guides": 1
+        },
+        "dependencies": [],
+        "compatibility": {
+          "minClaudeVersion": "0.3.0",
+          "maxClaudeVersion": null,
+          "supportedPlatforms": ["darwin", "linux", "win32"]
+        },
+        "keywords": ["theme", "ui", "dark-theme", "retro", "matrix", "customization"]
+      },
+      "stats": {
+        "publishedAt": "2026-04-10T12:00:00Z",
+        "updatedAt": "2026-06-10T08:20:00Z",
+        "lastReviewedAt": null,
+        "issuesOpen": 1,
+        "issuesResolved": 12,
+        "prsMerged": 5
+      },
+      "support": {
+        "documentationUrl": "https://github.com/tushar2704/claudient/tree/main/plugins/matrix-theme",
+        "issuesUrl": "https://github.com/tushar2704/claudient/issues",
+        "licenseType": "MIT",
+        "licenseUrl": "https://github.com/tushar2704/claudient/blob/main/LICENSE"
+      }
+    }
+  ]
+}

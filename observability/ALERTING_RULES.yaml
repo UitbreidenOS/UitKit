@@ -1,0 +1,214 @@
+groups:
+  - name: claudient_alerts
+    interval: 30s
+    rules:
+      # Feature Error Rate Alert
+      - alert: FeatureHighErrorRate
+        expr: |
+          (
+            sum(rate(feature_requests_total{status=~"5.."}[5m])) by (feature)
+            /
+            sum(rate(feature_requests_total[5m])) by (feature)
+          ) > 0.05
+        for: 5m
+        labels:
+          severity: critical
+          component: features
+        annotations:
+          summary: "Feature {{ $labels.feature }} error rate exceeds 5%"
+          description: |
+            Feature: {{ $labels.feature }}
+            Error rate: {{ $value | humanizePercentage }}
+            Threshold: 5%
+
+            This alert fires when the error rate for a specific feature exceeds 5%
+            over a 5-minute window, indicating degraded service quality.
+          slack_channel: "#alerts"
+
+      # Don't Stop Budget Exceeded Alert
+      - alert: DontStopBudgetExceeded
+        expr: |
+          (
+            sum(increase(dont_stop_budget_spent_seconds[1h])) by (job, instance)
+            /
+            sum(dont_stop_budget_limit_seconds) by (job, instance)
+          ) > 0.9
+        for: 3m
+        labels:
+          severity: warning
+          component: dont-stop
+        annotations:
+          summary: "Don't Stop budget utilization above 90%"
+          description: |
+            Job: {{ $labels.job }}
+            Instance: {{ $labels.instance }}
+            Budget utilization: {{ $value | humanizePercentage }}
+
+            The don't-stop budget is being consumed faster than expected.
+            Consider optimizing long-running operations or increasing budget allocation.
+          slack_channel: "#alerts"
+
+      # Don't Stop Budget Critical Alert
+      - alert: DontStopBudgetCritical
+        expr: |
+          (
+            sum(increase(dont_stop_budget_spent_seconds[1h])) by (job, instance)
+            /
+            sum(dont_stop_budget_limit_seconds) by (job, instance)
+          ) >= 1.0
+        for: 1m
+        labels:
+          severity: critical
+          component: dont-stop
+        annotations:
+          summary: "Don't Stop budget completely exhausted"
+          description: |
+            Job: {{ $labels.job }}
+            Instance: {{ $labels.instance }}
+
+            The don't-stop budget is completely exhausted.
+            Long-running operations will not be protected until budget is reset.
+          slack_channel: "#alerts"
+
+      # SVG Inspector Rendering Time Alert
+      - alert: SvgInspectorRenderingOverThreshold
+        expr: |
+          histogram_quantile(0.95,
+            sum(rate(svg_inspector_render_duration_seconds_bucket[5m])) by (le, operation)
+          ) > 10
+        for: 5m
+        labels:
+          severity: warning
+          component: svg-inspector
+        annotations:
+          summary: "SVG Inspector rendering time exceeds 10 seconds"
+          description: |
+            Operation: {{ $labels.operation }}
+            P95 render time: {{ $value | humanizeDuration }}
+            Threshold: 10s
+
+            SVG rendering is experiencing performance degradation.
+            Check for large/complex SVG files or resource constraints.
+          slack_channel: "#alerts"
+
+      # SVG Inspector Critical Rendering Time Alert
+      - alert: SvgInspectorRenderingCritical
+        expr: |
+          histogram_quantile(0.99,
+            sum(rate(svg_inspector_render_duration_seconds_bucket[5m])) by (le, operation)
+          ) > 30
+        for: 3m
+        labels:
+          severity: critical
+          component: svg-inspector
+        annotations:
+          summary: "SVG Inspector rendering severely degraded (>30s)"
+          description: |
+            Operation: {{ $labels.operation }}
+            P99 render time: {{ $value | humanizeDuration }}
+
+            SVG rendering is critically slow. User experience is impacted.
+            Immediate investigation required.
+          slack_channel: "#alerts"
+
+      # Swarm Sandbox Failure Rate Alert
+      - alert: SwarmSandboxHighFailureRate
+        expr: |
+          (
+            sum(rate(swarm_sandbox_executions_total{status="failure"}[5m])) by (sandbox_id, region)
+            /
+            sum(rate(swarm_sandbox_executions_total[5m])) by (sandbox_id, region)
+          ) > 0.02
+        for: 5m
+        labels:
+          severity: critical
+          component: swarm-sandbox
+        annotations:
+          summary: "Swarm Sandbox failure rate exceeds 2%"
+          description: |
+            Sandbox ID: {{ $labels.sandbox_id }}
+            Region: {{ $labels.region }}
+            Failure rate: {{ $value | humanizePercentage }}
+            Threshold: 2%
+
+            Swarm sandbox is experiencing elevated failure rates.
+            Check resource availability, network connectivity, and sandbox logs.
+          slack_channel: "#alerts"
+
+      # Swarm Sandbox Health Status Alert
+      - alert: SwarmSandboxUnhealthy
+        expr: |
+          swarm_sandbox_health_status != 1
+        for: 2m
+        labels:
+          severity: critical
+          component: swarm-sandbox
+        annotations:
+          summary: "Swarm Sandbox health check failed"
+          description: |
+            Sandbox ID: {{ $labels.sandbox_id }}
+            Region: {{ $labels.region }}
+            Health status: {{ $value }}
+
+            One or more swarm sandboxes have failed health checks.
+            Immediate remediation may be required.
+          slack_channel: "#alerts"
+
+alerting:
+  slack_configs:
+    - api_url: ${SLACK_WEBHOOK_URL}
+      channel: "{{ .GroupLabels.slack_channel }}"
+      title: "{{ .GroupLabels.severity | toUpper }}: {{ .CommonAnnotations.summary }}"
+      text: |
+        {{ .CommonAnnotations.description }}
+
+        Alerts: {{ range .Alerts }}
+          • {{ .Labels.alertname }} ({{ .Labels.severity }})
+        {{ end }}
+
+        Triggered: {{ .GroupLabels.alertname }}
+        Time: {{ .GroupLabels.timestamp }}
+      send_resolved: true
+      color: |
+        {{ if eq .GroupLabels.severity "critical" }}#FF0000
+        {{ else if eq .GroupLabels.severity "warning" }}#FFA500
+        {{ else }}#36A64B{{ end }}
+      actions:
+        - type: button
+          text: "View in Prometheus"
+          url: "{{ .ExternalURL }}"
+        - type: button
+          text: "View Logs"
+          url: "{{ .LogURL }}"
+
+# Prometheus Global Settings (to be included in prometheus.yml)
+# global:
+#   scrape_interval: 15s
+#   evaluation_interval: 15s
+#   external_labels:
+#     cluster: 'claudient-prod'
+#     environment: 'production'
+#
+# alertmanager_config:
+#   - static_configs:
+#       - targets: ['alertmanager:9093']
+#
+# scrape_configs:
+#   - job_name: 'claudient-services'
+#     static_configs:
+#       - targets: ['localhost:8080']
+#     relabel_configs:
+#       - source_labels: [__address__]
+#         target_label: instance
+#
+#   - job_name: 'dont-stop'
+#     static_configs:
+#       - targets: ['dont-stop-exporter:9100']
+#
+#   - job_name: 'svg-inspector'
+#     static_configs:
+#       - targets: ['svg-inspector-exporter:9101']
+#
+#   - job_name: 'swarm-sandbox'
+#     static_configs:
+#       - targets: ['swarm-sandbox-exporter:9102']

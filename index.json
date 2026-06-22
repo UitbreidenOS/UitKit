@@ -1,6 +1,6 @@
 {
   "version": "1.10.1",
-  "generated": "2026-06-22T03:55:45.844Z",
+  "generated": "2026-06-22T04:05:20.170Z",
   "skills": [
     {
       "id": "ai-engineering/advanced-tool-use",
@@ -24290,6 +24290,12 @@
       "file": "workflows/de/incremental-build.md"
     },
     {
+      "id": "matrix-theme-setup",
+      "lang": "de",
+      "title": "Einrichtungs-Workflow für Matrix-Design",
+      "file": "workflows/de/matrix-theme-setup.md"
+    },
+    {
       "id": "multi-agent-debug",
       "lang": "de",
       "title": "Multi-Agent-Debug-Workflow",
@@ -24546,6 +24552,12 @@
       "lang": "es",
       "title": "Construcción incremental con compuertas de confirmación",
       "file": "workflows/es/incremental-build.md"
+    },
+    {
+      "id": "matrix-theme-setup",
+      "lang": "es",
+      "title": "Flujo de trabajo de configuración del tema Matrix",
+      "file": "workflows/es/matrix-theme-setup.md"
     },
     {
       "id": "multi-agent-debug",
@@ -24822,6 +24834,12 @@
       "lang": "fr",
       "title": "Construire de manière incrémentale avec des portes de confirmation",
       "file": "workflows/fr/incremental-build.md"
+    },
+    {
+      "id": "matrix-theme-setup",
+      "lang": "fr",
+      "title": "Flux de travail de configuration du thème Matrix",
+      "file": "workflows/fr/matrix-theme-setup.md"
     },
     {
       "id": "multi-agent-debug",
@@ -25110,6 +25128,12 @@
       "lang": "nl",
       "title": "Incrementele constructie met bevestigingspoorten",
       "file": "workflows/nl/incremental-build.md"
+    },
+    {
+      "id": "matrix-theme-setup",
+      "lang": "nl",
+      "title": "Matrix Theme Setup Workflow",
+      "file": "workflows/nl/matrix-theme-setup.md"
     },
     {
       "id": "multi-agent-debug",
@@ -26053,6 +26077,18 @@
   ],
   "guides": [
     {
+      "id": "FAQ_MATRIX_THEME",
+      "lang": "en",
+      "title": "Matrix Theme FAQ",
+      "file": "guides/FAQ_MATRIX_THEME.md"
+    },
+    {
+      "id": "FAQ_SVG_INSPECTOR",
+      "lang": "en",
+      "title": "SVG Map Inspector — Frequently Asked Questions",
+      "file": "guides/FAQ_SVG_INSPECTOR.md"
+    },
+    {
       "id": "advanced-tool-use",
       "lang": "en",
       "title": "Advanced Tool Use in Claude API",
@@ -26881,6 +26917,18 @@
       "file": "guides/dx-measurement.md"
     },
     {
+      "id": "disaster-recovery",
+      "lang": "de",
+      "title": "Enterprise Disaster Recovery Plan",
+      "file": "guides/enterprise/de/disaster-recovery.md"
+    },
+    {
+      "id": "multi-region-deployment",
+      "lang": "de",
+      "title": "Unternehmens-Multi-Region-Bereitstellung",
+      "file": "guides/enterprise/de/multi-region-deployment.md"
+    },
+    {
       "id": "deployment-guide",
       "lang": "en",
       "title": "Enterprise Deployment Guide",
@@ -26894,9 +26942,45 @@
     },
     {
       "id": "disaster-recovery",
+      "lang": "es",
+      "title": "Plan de Recuperación ante Desastres Empresarial",
+      "file": "guides/enterprise/es/disaster-recovery.md"
+    },
+    {
+      "id": "multi-region-deployment",
+      "lang": "es",
+      "title": "Implementación Empresarial Multi-Región",
+      "file": "guides/enterprise/es/multi-region-deployment.md"
+    },
+    {
+      "id": "disaster-recovery",
       "lang": "fr",
       "title": "Plan de Récupération d'Urgence Entreprise",
       "file": "guides/enterprise/fr/disaster-recovery.md"
+    },
+    {
+      "id": "multi-region-deployment",
+      "lang": "fr",
+      "title": "Déploiement Entreprise Multi-Région",
+      "file": "guides/enterprise/fr/multi-region-deployment.md"
+    },
+    {
+      "id": "multi-region-deployment",
+      "lang": "en",
+      "title": "Enterprise Multi-Region Deployment",
+      "file": "guides/enterprise/multi-region-deployment.md"
+    },
+    {
+      "id": "disaster-recovery",
+      "lang": "nl",
+      "title": "Enterprise Rampenplan",
+      "file": "guides/enterprise/nl/disaster-recovery.md"
+    },
+    {
+      "id": "multi-region-deployment",
+      "lang": "nl",
+      "title": "Enterprise Multi-Region Implementatie",
+      "file": "guides/enterprise/nl/multi-region-deployment.md"
     },
     {
       "id": "security-hardening",
@@ -30209,6 +30293,14 @@
       "version": "1.10.1",
       "skills": 47,
       "file": "plugins/claudient-small-business/.claude-plugin/plugin.json"
+    },
+    {
+      "id": "matrix-theme",
+      "displayName": "Matrix Theme",
+      "description": "Dark cyberpunk Matrix-inspired theme for Claude Code with green terminal aesthetics, customizable accent colors, and neon glow effects.",
+      "version": "1.0.0",
+      "skills": 0,
+      "file": "plugins/matrix-theme/.claude-plugin/plugin.json"
     }
   ],
   "commands": [
@@ -30982,7 +31074,7 @@
     "rules": 35,
     "workflows": 56,
     "prompts": 31,
-    "guides": 125,
+    "guides": 128,
     "structures": 82,
     "outputStyles": 8,
     "statuslines": 7,
@@ -30990,7 +31082,7 @@
     "keybindings": 4,
     "settingsTemplates": 5,
     "routines": 11,
-    "plugins": 19,
+    "plugins": 20,
     "commands": 100,
     "personas": 10,
     "languages": [
