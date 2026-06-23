@@ -74,3 +74,4 @@ internal/
 **/STRATEGY_*.md
 **/ROADMAP_INTERNAL.md
 **/*CONFIDENTIAL*.md
+/internal/
