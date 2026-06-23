@@ -2,7 +2,7 @@ import type { WindowManager } from "../useWindows";
 import { Eyebrow, YellowButton, GhostButton, Tag } from "./ui";
 
 const features = [
-  { icon: "⚡", name: "447 Skills", desc: "Domain knowledge that activates automatically.", color: "#1d4aff", app: "skills" as const },
+  { icon: "⚡", name: "1000+ Skills", desc: "Domain knowledge that activates automatically.", color: "#1d4aff", app: "skills" as const },
   { icon: "🤖", name: "206 Agents", desc: "Specialist agents with scoped tools.", color: "#b62ad9", app: "agents" as const },
   { icon: "📦", name: "50 Stacks", desc: "Pre-wired workspaces for every role.", color: "#3fb950", app: "stacks" as const },
   { icon: "🔌", name: "41 MCP Configs", desc: "Ready-to-install server configs.", color: "#1078a3", app: "mcp" as const },
@@ -112,13 +112,13 @@ export function HomeApp({ wm }: { wm: WindowManager }) {
       </h1>
       <p className="mt-4 text-[15px] text-body leading-relaxed">
         Claudient is the largest open-source knowledge base for Claude Code.
-        447 skills, 206 agents, 50 workspace stacks, 38 CLI scripts — all installable in 30 seconds.
+        1000+ skills, 206 agents, 50 workspace stacks, 38 CLI scripts — all installable in 30 seconds.
         Open any window below to explore. 🧠
       </p>
 
       <div className="mt-6 flex flex-wrap gap-3">
         <YellowButton onClick={() => wm.open("install")}>Get Started →</YellowButton>
-        <GhostButton onClick={() => wm.open("skills")}>Browse Skills</GhostButton>
+        <GhostButton onClick={() => wm.open("showcase")}>Browse Skills</GhostButton>
         <GhostButton onClick={() => wm.open("agents")}>See Agents 🤖</GhostButton>
       </div>
 

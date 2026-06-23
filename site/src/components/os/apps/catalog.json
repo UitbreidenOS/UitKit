@@ -1,0 +1,1266 @@
+{
+  "$schema": "https://code.claude.com/schema/catalog.json",
+  "version": "1.0.0",
+  "timestamp": "2026-06-22T10:46:04.370Z",
+  "total": 50,
+  "entries": [
+    {
+      "id": "agentic_ai_engineer",
+      "name": "Agentic AI Engineer Stack",
+      "description": "Autonomous systems design, agent architecture patterns, and multi-agent orchestration for production AI applications.",
+      "category": "ai-engineering",
+      "path": "professional-stacks/agentic_ai_engineer_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "🤖",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 5,
+        "commands": 3,
+        "hooks": 2,
+        "mcp": 1
+      },
+      "install": "claudient-agentic-ai-engineer"
+    },
+    {
+      "id": "ai_compliance_risk",
+      "name": "AI Compliance & Risk Officer Stack",
+      "description": "Governance, audit, and risk management for AI systems in production environments.",
+      "category": "compliance",
+      "path": "professional-stacks/ai_compliance_risk_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "📋",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 5,
+        "commands": 3,
+        "hooks": 2,
+        "mcp": 1
+      },
+      "install": "claudient-ai-compliance-risk"
+    },
+    {
+      "id": "ai_ethics_governance",
+      "name": "AI Ethics & Governance Officer Stack",
+      "description": "Risk assessment, compliance auditing, bias detection, and ethical framework implementation for responsible AI systems.",
+      "category": "compliance",
+      "path": "professional-stacks/ai_ethics_governance_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "📋",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 5,
+        "commands": 3,
+        "hooks": 2,
+        "mcp": 1
+      },
+      "install": "claudient-ai-ethics-governance"
+    },
+    {
+      "id": "ai_product_manager",
+      "name": "AI Product Manager Stack — CLAUDE.md",
+      "description": "This stack equips AI product managers with **research tools, prioritization frameworks, competitive intelligence, and user synthesis** for data-driven product decisions in the AI/ML space.",
+      "category": "product",
+      "path": "professional-stacks/ai_product_manager_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "📦",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 5,
+        "commands": 3,
+        "hooks": 2,
+        "mcp": 1
+      },
+      "install": "claudient-ai-product-manager"
+    },
+    {
+      "id": "ai_sdr",
+      "name": "AI SDR Stack",
+      "description": "Autonomous sales development with human-in-the-loop approval gates on every outbound message.",
+      "category": "sales",
+      "path": "professional-stacks/ai_sdr_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "💡",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 8,
+        "commands": 3,
+        "hooks": 4,
+        "mcp": 2
+      },
+      "install": "claudient-ai-sdr"
+    },
+    {
+      "id": "analytics_engineer",
+      "name": "Analytics Engineer Stack",
+      "description": "Autonomous analytics infrastructure management — SQL optimization, dbt project scaffolding, metrics definition, dashboard QA, data quality auditing, and production troubleshooting for modern data warehouses.",
+      "category": "data-ml",
+      "path": "professional-stacks/analytics_engineer_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "📊",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 8,
+        "commands": 3,
+        "hooks": 4,
+        "mcp": 3
+      },
+      "install": "claudient-analytics-engineer"
+    },
+    {
+      "id": "api_developer",
+      "name": "API Developer Stack",
+      "description": "End-to-end API design, development, and operations — RESTful and GraphQL API design, authentication, rate limiting, versioning, testing, and SDK generation for developer-centric API platforms.",
+      "category": "backend",
+      "path": "professional-stacks/api_developer_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "⚙️",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 8,
+        "commands": 0,
+        "hooks": 0,
+        "mcp": 0
+      },
+      "install": "claudient-api-developer"
+    },
+    {
+      "id": "b2b_consultant",
+      "name": "B2B Consultant Stack",
+      "description": "Strategic advisory, deal structuring, and organizational transformation guidance for enterprise clients.",
+      "category": "consulting",
+      "path": "professional-stacks/b2b_consultant_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "💼",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 6,
+        "commands": 3,
+        "hooks": 2,
+        "mcp": 1
+      },
+      "install": "claudient-b2b-consultant"
+    },
+    {
+      "id": "bio_research",
+      "name": "Bio-Research Stack",
+      "description": "Rigorous, reproducible biological research workflow — from hypothesis to publication.",
+      "category": "specialized",
+      "path": "professional-stacks/bio_research_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "🔬",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 8,
+        "commands": 0,
+        "hooks": 0,
+        "mcp": 0
+      },
+      "install": "claudient-bio-research"
+    },
+    {
+      "id": "blockchain_web3",
+      "name": "Blockchain & Web3 Developer Stack",
+      "description": "Decentralized application development — smart contracts, DeFi protocols, NFTs, DAOs, cross-chain bridges, wallet integration, gas optimization, and token economics.",
+      "category": "web3",
+      "path": "professional-stacks/blockchain_web3_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "⛓️",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 8,
+        "commands": 0,
+        "hooks": 0,
+        "mcp": 0
+      },
+      "install": "claudient-blockchain-web3"
+    },
+    {
+      "id": "brand_manager",
+      "name": "Brand Manager Stack",
+      "description": "Autonomous brand strategy and content engine — competitive intelligence, messaging architecture, campaign creation, and reputation monitoring for multi-channel brand campaigns.",
+      "category": "marketing",
+      "path": "professional-stacks/brand_manager_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "📈",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 8,
+        "commands": 3,
+        "hooks": 3,
+        "mcp": 3
+      },
+      "install": "claudient-brand-manager"
+    },
+    {
+      "id": "cloud_architect",
+      "name": "Cloud Architect Stack",
+      "description": "Multi-cloud infrastructure design with cost optimization, disaster recovery, and zero-trust security.",
+      "category": "devops",
+      "path": "professional-stacks/cloud_architect_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "🚀",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 5,
+        "commands": 3,
+        "hooks": 2,
+        "mcp": 1
+      },
+      "install": "claudient-cloud-architect"
+    },
+    {
+      "id": "community_manager",
+      "name": "Community Manager Stack",
+      "description": "Autonomous community platform management engine — audience analysis, content planning, engagement tracking, moderation, crisis response, and member lifecycle for high-growth online communities.",
+      "category": "operations",
+      "path": "professional-stacks/community_manager_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "🔧",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 14,
+        "commands": 6,
+        "hooks": 8,
+        "mcp": 4
+      },
+      "install": "claudient-community-manager"
+    },
+    {
+      "id": "content_marketing",
+      "name": "Content Marketing Stack — Workspace Config",
+      "description": "1. **Content Quality First** — All generated content undergoes SEO validation and brand voice review before publication.",
+      "category": "marketing",
+      "path": "professional-stacks/content_marketing_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "📈",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 8,
+        "commands": 3,
+        "hooks": 3,
+        "mcp": 2
+      },
+      "install": "claudient-content-marketing"
+    },
+    {
+      "id": "customer_success",
+      "name": "Customer Success Stack — CLAUDE.md",
+      "description": "1. **Customer context first** — All tools and skills prioritize understanding customer state, history, and needs before action.",
+      "category": "sales",
+      "path": "professional-stacks/customer_success_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "💡",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 8,
+        "commands": 3,
+        "hooks": 3,
+        "mcp": 2
+      },
+      "install": "claudient-customer-success"
+    },
+    {
+      "id": "data_engineer",
+      "name": "Data Engineer Stack — CLAUDE.md",
+      "description": "1. **Pipeline as Code** — All data transformations must be declarative, version-controlled, and reproducible.",
+      "category": "data-ml",
+      "path": "professional-stacks/data_engineer_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "📊",
+      "languages": [
+        "de",
+        "en",
+        "es",
+        "fr",
+        "nl"
+      ],
+      "assets": {
+        "skills": 13,
+        "commands": 3,
+        "hooks": 3,
+        "mcp": 2
+      },
+      "install": "claudient-data-engineer"
+    },
+    {
+      "id": "database_admin",
+      "name": "Database Admin Stack",
+      "description": "Autonomous database operations and optimization engine — user/role management, performance tuning, backup/recovery, and compliance monitoring for enterprise database administration.",
+      "category": "database",
+      "path": "professional-stacks/database_admin_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "🗄️",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 9,
+        "commands": 1,
+        "hooks": 1,
+        "mcp": 1
+      },
+      "install": "claudient-database-admin"
+    },
+    {
+      "id": "devops_platform",
+      "name": "DevOps/Platform Stack — Workspace Configuration",
+      "description": "- **Infrastructure as Code First**: All infrastructure changes must be version-controlled and reviewable before deployment",
+      "category": "devops",
+      "path": "professional-stacks/devops_platform_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "🚀",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 8,
+        "commands": 3,
+        "hooks": 3,
+        "mcp": 2
+      },
+      "install": "claudient-devops-platform"
+    },
+    {
+      "id": "distributed_systems_engineer",
+      "name": "Distributed Systems Engineer Stack",
+      "description": "Fault tolerance by design. Build systems that scale, survive failure, and maintain consistency under adversity.",
+      "category": "backend",
+      "path": "professional-stacks/distributed_systems_engineer_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "⚙️",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 5,
+        "commands": 3,
+        "hooks": 2,
+        "mcp": 1
+      },
+      "install": "claudient-distributed-systems-engineer"
+    },
+    {
+      "id": "ecommerce_operator",
+      "name": "E-commerce Operator Stack",
+      "description": "Autonomous e-commerce operations — inventory, pricing, fulfillment, and order management with real-time monitoring and escalation.",
+      "category": "operations",
+      "path": "professional-stacks/ecommerce_operator_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "🔧",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 9,
+        "commands": 1,
+        "hooks": 1,
+        "mcp": 1
+      },
+      "install": "claudient-ecommerce-operator"
+    },
+    {
+      "id": "embedded_iot",
+      "name": "Embedded & IoT Developer Stack",
+      "description": "Embedded systems and IoT development — firmware architecture, RTOS, BLE, sensor integration, low-power design, cloud connectivity, and OTA updates.",
+      "category": "specialized",
+      "path": "professional-stacks/embedded_iot_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "🔬",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 8,
+        "commands": 0,
+        "hooks": 0,
+        "mcp": 0
+      },
+      "install": "claudient-embedded-iot"
+    },
+    {
+      "id": "finance_cfo",
+      "name": "Finance/CFO Stack",
+      "description": "Autonomous financial operations and strategic planning engine — budget analysis, financial forecasting, cash flow management, and CFO-level reporting for enterprise financial planning.",
+      "category": "finance",
+      "path": "professional-stacks/finance_cfo_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "💰",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 8,
+        "commands": 3,
+        "hooks": 4,
+        "mcp": 1
+      },
+      "install": "claudient-finance-cfo"
+    },
+    {
+      "id": "founder_ceo",
+      "name": "Founder/CEO Stack — Workspace Config",
+      "description": "A curated set of skills, commands, hooks, and MCP tools for founders and CEOs managing startups, fundraising, team building, and strategic operations.",
+      "category": "operations",
+      "path": "professional-stacks/founder_ceo_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "🔧",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 8,
+        "commands": 3,
+        "hooks": 3,
+        "mcp": 2
+      },
+      "install": "claudient-founder-ceo"
+    },
+    {
+      "id": "frontend_engineer",
+      "name": "Frontend Engineer Stack",
+      "description": "Component-driven UI/UX development with performance-first architecture, accessibility compliance, and design system integration.",
+      "category": "frontend",
+      "path": "professional-stacks/frontend_engineer_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "🎨",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 7,
+        "commands": 0,
+        "hooks": 0,
+        "mcp": 0
+      },
+      "install": "claudient-frontend-engineer"
+    },
+    {
+      "id": "fullstack_developer",
+      "name": "Full-Stack Developer Stack — Workspace Configuration",
+      "description": "Workspace instructions for full-stack development projects requiring test coverage >80%, architectural decision records, security scanning, and performance regression detection.",
+      "category": "backend",
+      "path": "professional-stacks/fullstack_developer_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "⚙️",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 8,
+        "commands": 3,
+        "hooks": 3,
+        "mcp": 2
+      },
+      "install": "claudient-fullstack-developer"
+    },
+    {
+      "id": "game_developer",
+      "name": "Game Developer Stack",
+      "description": "Game development across engines — Unity, Unreal, Godot, game architecture, networking, physics, level design, and performance optimization.",
+      "category": "specialized",
+      "path": "professional-stacks/game_developer_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "🔬",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 8,
+        "commands": 0,
+        "hooks": 0,
+        "mcp": 0
+      },
+      "install": "claudient-game-developer"
+    },
+    {
+      "id": "growth_engineer",
+      "name": "Growth Engineer Stack",
+      "description": "Autonomous growth execution engine — product-led growth (PLG) metrics, viral loops, retention analysis, and growth channel optimization for SaaS and B2B companies.",
+      "category": "marketing",
+      "path": "professional-stacks/growth_engineer_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "📈",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 8,
+        "commands": 1,
+        "hooks": 1,
+        "mcp": 1
+      },
+      "install": "claudient-growth-engineer"
+    },
+    {
+      "id": "gtm_engineer",
+      "name": "GTM Engineer Stack",
+      "description": "Autonomous go-to-market execution engine — B2B account research, sequence drafting, LinkedIn content, and meeting prep for high-velocity outreach campaigns.",
+      "category": "sales",
+      "path": "professional-stacks/gtm_engineer_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "💡",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 8,
+        "commands": 3,
+        "hooks": 4,
+        "mcp": 2
+      },
+      "install": "claudient-gtm-engineer"
+    },
+    {
+      "id": "healthcare",
+      "name": "Healthcare Stack",
+      "description": "Clinical operations, compliance, and patient care workflow — from intake to outcomes.",
+      "category": "specialized",
+      "path": "professional-stacks/healthcare_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "🔬",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 8,
+        "commands": 0,
+        "hooks": 0,
+        "mcp": 0
+      },
+      "install": "claudient-healthcare"
+    },
+    {
+      "id": "hr_people_operations",
+      "name": "HR/People Operations Stack",
+      "description": "Autonomous human resources and people operations execution engine — talent acquisition, employee development, compensation planning, culture assessment, and workforce analytics for scalable people teams.",
+      "category": "hr",
+      "path": "professional-stacks/hr_people_operations_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "👥",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 8,
+        "commands": 3,
+        "hooks": 0,
+        "mcp": 0
+      },
+      "install": "claudient-hr-people-operations"
+    },
+    {
+      "id": "infrastructure_as_code",
+      "name": "Infrastructure as Code Specialist Stack",
+      "description": "Declarative, auditable, version-controlled infrastructure with policy enforcement and disaster recovery planning.",
+      "category": "devops",
+      "path": "professional-stacks/infrastructure_as_code_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "🚀",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 5,
+        "commands": 3,
+        "hooks": 2,
+        "mcp": 1
+      },
+      "install": "claudient-infrastructure-as-code"
+    },
+    {
+      "id": "investor_vc",
+      "name": "Investor / VC Stack",
+      "description": "Deal sourcing, due diligence automation, and portfolio company monitoring for venture capital and growth equity investors.",
+      "category": "finance",
+      "path": "professional-stacks/investor_vc_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "💰",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 8,
+        "commands": 3,
+        "hooks": 3,
+        "mcp": 3
+      },
+      "install": "claudient-investor-vc"
+    },
+    {
+      "id": "legal_operations",
+      "name": "Legal Operations Stack",
+      "description": "Intelligent contract management, compliance automation, and legal workflow optimization with audit trails on every document action.",
+      "category": "legal",
+      "path": "professional-stacks/legal_operations_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "⚖️",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 6,
+        "commands": 3,
+        "hooks": 3,
+        "mcp": 1
+      },
+      "install": "claudient-legal-operations"
+    },
+    {
+      "id": "mlai_engineer",
+      "name": "ML/AI Engineer Stack",
+      "description": "Experiment-to-production workflow with reproducibility enforcement and bias assessment.",
+      "category": "ai-engineering",
+      "path": "professional-stacks/mlai_engineer_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "🤖",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 8,
+        "commands": 3,
+        "hooks": 3,
+        "mcp": 2
+      },
+      "install": "claudient-mlai-engineer"
+    },
+    {
+      "id": "mobile_developer",
+      "name": "Mobile Developer Stack",
+      "description": "Cross-platform and native mobile development — React Native, Flutter, SwiftUI, Jetpack Compose, app architecture, offline-first patterns, and store deployment.",
+      "category": "frontend",
+      "path": "professional-stacks/mobile_developer_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "🎨",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 8,
+        "commands": 0,
+        "hooks": 0,
+        "mcp": 0
+      },
+      "install": "claudient-mobile-developer"
+    },
+    {
+      "id": "newsletter_writer",
+      "name": "Newsletter Writer Stack",
+      "description": "Autonomous newsletter creation and distribution engine — research, draft, edit, and track performance of high-impact newsletters that drive subscriber engagement and conversions.",
+      "category": "marketing",
+      "path": "professional-stacks/newsletter_writer_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "📈",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 8,
+        "commands": 3,
+        "hooks": 4,
+        "mcp": 1
+      },
+      "install": "claudient-newsletter-writer"
+    },
+    {
+      "id": "operations_manager",
+      "name": "Operations Manager Stack",
+      "description": "End-to-end operations management — process optimization, vendor management, SOP creation, resource allocation, and cross-functional coordination for business operations leaders.",
+      "category": "operations",
+      "path": "professional-stacks/operations_manager_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "🔧",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 8,
+        "commands": 0,
+        "hooks": 0,
+        "mcp": 0
+      },
+      "install": "claudient-operations-manager"
+    },
+    {
+      "id": "platform_engineer",
+      "name": "Platform Engineer Stack",
+      "description": "Infrastructure automation, Kubernetes orchestration, observability, and production reliability engineering.",
+      "category": "devops",
+      "path": "professional-stacks/platform_engineer_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "🚀",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 5,
+        "commands": 3,
+        "hooks": 2,
+        "mcp": 1
+      },
+      "install": "claudient-platform-engineer"
+    },
+    {
+      "id": "podcast_producer",
+      "name": "Podcast Producer Stack",
+      "description": "End-to-end podcast production workflow — episode planning, guest research, audio editing, show notes, transcripts, social clips, sponsor pitches, and RSS feed management.",
+      "category": "marketing",
+      "path": "professional-stacks/podcast_producer_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "📈",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 8,
+        "commands": 0,
+        "hooks": 0,
+        "mcp": 0
+      },
+      "install": "claudient-podcast-producer"
+    },
+    {
+      "id": "product_manager",
+      "name": "Product Manager Stack",
+      "description": "PRD-to-roadmap pipeline that enforces clear acceptance criteria and stakeholder alignment.",
+      "category": "product",
+      "path": "professional-stacks/product_manager_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "📦",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 8,
+        "commands": 3,
+        "hooks": 3,
+        "mcp": 2
+      },
+      "install": "claudient-product-manager"
+    },
+    {
+      "id": "product_operations",
+      "name": "Product Operations Stack",
+      "description": "Autonomous product operations engine — roadmap prioritization, customer feedback synthesis, stakeholder alignment, metrics analysis, and release planning for data-driven product decisions.",
+      "category": "product",
+      "path": "professional-stacks/product_operations_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "📦",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 8,
+        "commands": 3,
+        "hooks": 4,
+        "mcp": 0
+      },
+      "install": "claudient-product-operations"
+    },
+    {
+      "id": "qa_testing_engineer",
+      "name": "QA Testing Engineer Stack",
+      "description": "Autonomous quality assurance and testing execution engine — test planning, automated test generation, test execution reporting, bug triage, and test coverage analysis for high-velocity product development.",
+      "category": "qa",
+      "path": "professional-stacks/qa_testing_engineer_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "✅",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 8,
+        "commands": 3,
+        "hooks": 4,
+        "mcp": 3
+      },
+      "install": "claudient-qa-testing-engineer"
+    },
+    {
+      "id": "recruiter_ta",
+      "name": "Recruiter/TA Stack — CLAUDE.md",
+      "description": "This directory contains skills, agents, workflows, and hooks for talent acquisition and recruitment workflows.",
+      "category": "hr",
+      "path": "professional-stacks/recruiter_ta_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "👥",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 9,
+        "commands": 1,
+        "hooks": 1,
+        "mcp": 1
+      },
+      "install": "claudient-recruiter-ta"
+    },
+    {
+      "id": "sales_operations",
+      "name": "Sales Operations Stack",
+      "description": "Autonomous sales operations execution engine — pipeline analytics, territory management, sales forecasting, quota tracking, deal velocity analysis, and revenue intelligence for high-performance sales teams.",
+      "category": "sales",
+      "path": "professional-stacks/sales_operations_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "💡",
+      "languages": [
+        "de",
+        "en",
+        "es",
+        "fr",
+        "nl"
+      ],
+      "assets": {
+        "skills": 18,
+        "commands": 7,
+        "hooks": 8,
+        "mcp": 6
+      },
+      "install": "claudient-sales-operations"
+    },
+    {
+      "id": "security_engineer",
+      "name": "Security Engineer Stack",
+      "description": "Threat-to-remediation workflow with mandatory severity classification and remediation deadline tracking.",
+      "category": "security",
+      "path": "professional-stacks/security_engineer_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "🔐",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 8,
+        "commands": 3,
+        "hooks": 3,
+        "mcp": 2
+      },
+      "install": "claudient-security-engineer"
+    },
+    {
+      "id": "solutions_architect",
+      "name": "Solutions Architect Stack",
+      "description": "Autonomous enterprise solution design engine — Requirements discovery, system architecture design, design review, technical debt assessment, API contract design, capacity planning, and migration planning for scalable, production-ready systems.",
+      "category": "consulting",
+      "path": "professional-stacks/solutions_architect_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "💼",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 8,
+        "commands": 3,
+        "hooks": 3,
+        "mcp": 0
+      },
+      "install": "claudient-solutions-architect"
+    },
+    {
+      "id": "sre",
+      "name": "SRE Stack",
+      "description": "Site Reliability Engineering — infrastructure, observability, incident response, and runbook automation.",
+      "category": "devops",
+      "path": "professional-stacks/sre_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "🚀",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 8,
+        "commands": 3,
+        "hooks": 3,
+        "mcp": 2
+      },
+      "install": "claudient-sre"
+    },
+    {
+      "id": "technical_writer",
+      "name": "Technical Writer Stack",
+      "description": "User-facing documentation pipeline that enforces clarity, consistency, and audience-appropriate language.",
+      "category": "operations",
+      "path": "professional-stacks/technical_writer_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "🔧",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 6,
+        "commands": 3,
+        "hooks": 3,
+        "mcp": 0
+      },
+      "install": "claudient-technical-writer"
+    },
+    {
+      "id": "user_research",
+      "name": "User Research Stack",
+      "description": "End-to-end user research workflow — study design, participant recruitment, interview facilitation, synthesis, insight generation, and research operations for UX researchers and product teams.",
+      "category": "product",
+      "path": "professional-stacks/user_research_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "📦",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 8,
+        "commands": 0,
+        "hooks": 0,
+        "mcp": 0
+      },
+      "install": "claudient-user-research"
+    },
+    {
+      "id": "youtube_creator",
+      "name": "YouTube Creator Stack",
+      "description": "Strategic content planning, research, SEO optimization, and growth analytics for YouTube creators.",
+      "category": "marketing",
+      "path": "professional-stacks/youtube_creator_stack",
+      "version": "1.0.0",
+      "author": {
+        "name": "tushar2704",
+        "type": "official"
+      },
+      "status": "official",
+      "certified": false,
+      "icon": "📈",
+      "languages": [
+        "en"
+      ],
+      "assets": {
+        "skills": 8,
+        "commands": 3,
+        "hooks": 4,
+        "mcp": 2
+      },
+      "install": "claudient-youtube-creator"
+    }
+  ]
+}

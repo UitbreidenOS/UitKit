@@ -19,7 +19,7 @@ interface CompareRow {
 }
 
 const ROWS: CompareRow[] = [
-  { feature: "Skills", claudient: "400+", ecc: "~150", volt: "~30", alireza: "~20", aider: "✗", cursor: "✗", copilot: "✗", sweep: "✗", opendevin: "✗", melty: "✗", gptpilot: "✗", mentat: "✗" },
+  { feature: "Skills", claudient: "1000+", ecc: "~150", volt: "~30", alireza: "~20", aider: "✗", cursor: "✗", copilot: "✗", sweep: "✗", opendevin: "✗", melty: "✗", gptpilot: "✗", mentat: "✗" },
   { feature: "Agents", claudient: "182+", ecc: "~50", volt: "~15", alireza: "~10", aider: "✗", cursor: "✗", copilot: "✗", sweep: "✗", opendevin: "✓ (Multiple)", melty: "✗", gptpilot: "✓ (Role-based)", mentat: "✗" },
   { feature: "Slash Commands", claudient: "100+", ecc: "~40", volt: "~10", alireza: "~5", aider: "Basic (CLI)", cursor: "✗", copilot: "✗", sweep: "✗", opendevin: "✗", melty: "✗", gptpilot: "✗", mentat: "Basic" },
   { feature: "Hooks", claudient: "48", ecc: "~20", volt: "~5", alireza: "~3", aider: "✗", cursor: "✗", copilot: "✗", sweep: "Basic (Actions)", opendevin: "✗", melty: "✗", gptpilot: "✗", mentat: "✗" },
@@ -43,7 +43,7 @@ const ROWS: CompareRow[] = [
 
 const FEATURE_DETAILS: Record<string, { value: string; alt: string; impact: string }> = {
   "Skills": {
-    value: "400+ discrete, modular skills organized in nested directories (e.g. backend, database, frontend, DevOps) that can be imported individually without prompt length exhaustion.",
+    value: "1000+ discrete, modular skills organized in nested directories (e.g. backend, database, frontend, DevOps) that can be imported individually without prompt length exhaustion.",
     alt: "Competitors bundle prompts in unstructured markdown repositories. You must manually copy-paste or load a giant rules file containing everything, wasting tokens.",
     impact: "Reduces token usage by ~60% by selectively importing only the instructions relevant to the active context."
   },

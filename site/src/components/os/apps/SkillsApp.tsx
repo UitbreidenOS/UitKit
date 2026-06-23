@@ -1,6 +1,6 @@
 import { useState, useMemo, useEffect } from "react";
 import { Eyebrow, Tag } from "./ui";
-import catalogData from "../../../../../marketplace/catalog.json";
+import catalogData from "./catalog.json";
 
 interface CatalogEntry {
   id: string;

@@ -2,7 +2,7 @@ import type { WindowManager } from "../useWindows";
 import { Eyebrow, YellowButton } from "./ui";
 
 const stats = [
-  { v: "447", l: "Skills" },
+  { v: "1000+", l: "Skills" },
   { v: "206", l: "Agents" },
   { v: "50", l: "Stacks" },
   { v: "41", l: "MCP Configs" },
