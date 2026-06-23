@@ -1,0 +1,503 @@
+{
+  "version": "1.0.0",
+  "createdAt": "2026-06-22T09:36:00.614Z",
+  "lastUpdated": "2026-06-22T10:15:37.783Z",
+  "events": [
+    {
+      "id": "evt_1782120960613_68rmj7j7j",
+      "name": "June Monthly Skill Showcase",
+      "type": "showcase",
+      "date": "2026-06-28T18:00:00Z",
+      "duration": "90 minutes",
+      "format": "virtual",
+      "location": null,
+      "description": "Showcase latest Claude Code skills and community contributions",
+      "speakers": [],
+      "maxAttendees": null,
+      "registrationUrl": null,
+      "recordingUrl": "https://www.youtube.com/watch?v=testRec123",
+      "createdAt": "2026-06-22T09:36:00.613Z",
+      "status": "completed",
+      "attendees": [
+        {
+          "id": "evt_1782121048472_gzzyswbjk",
+          "name": "Alice Johnson",
+          "email": "alice@example.com",
+          "organization": "TechCorp",
+          "role": "Engineer",
+          "registeredAt": "2026-06-22T09:37:28.472Z",
+          "attended": false
+        },
+        {
+          "id": "evt_1782121069183_vtf3azcha",
+          "name": "Bob Smith",
+          "email": "bob@example.com",
+          "organization": "StartupXYZ",
+          "role": "Founder",
+          "registeredAt": "2026-06-22T09:37:49.183Z",
+          "attended": false
+        },
+        {
+          "id": "evt_1782121490803_h388tc118",
+          "name": "Test Attendee",
+          "email": "test@example.com",
+          "organization": "Test Corp",
+          "role": "Engineer",
+          "registeredAt": "2026-06-22T09:44:50.803Z",
+          "attended": false
+        }
+      ],
+      "resources": {
+        "slides": [],
+        "notes": [],
+        "materials": [
+          {
+            "id": "evt_1782121123145_l2u7557uu",
+            "url": "https://www.youtube.com/watch?v=skillShowcase2026",
+            "title": "June Skill Showcase - Highlights",
+            "platform": "youtube",
+            "thumbnail": null,
+            "addedAt": "2026-06-22T09:38:43.145Z",
+            "views": 0
+          },
+          {
+            "id": "evt_1782121490863_sny5lq7xk",
+            "url": "https://www.youtube.com/watch?v=testRec123",
+            "title": "Test Recording",
+            "platform": "youtube",
+            "thumbnail": null,
+            "addedAt": "2026-06-22T09:44:50.863Z",
+            "views": 0
+          }
+        ]
+      }
+    },
+    {
+      "id": "evt_1782120972733_22jj1cow0",
+      "name": "Q2 Hackathon Challenge",
+      "type": "hackathon",
+      "date": "2026-07-15T10:00:00Z",
+      "duration": "24 hours",
+      "format": "hybrid",
+      "location": "San Francisco & Online",
+      "description": "Community event",
+      "speakers": [],
+      "maxAttendees": 200,
+      "registrationUrl": null,
+      "recordingUrl": null,
+      "createdAt": "2026-06-22T09:36:12.733Z",
+      "status": "scheduled",
+      "attendees": [],
+      "resources": {
+        "slides": [],
+        "notes": [],
+        "materials": []
+      }
+    },
+    {
+      "id": "evt_1782120982935_cicm4jtl4",
+      "name": "Advanced Workflow Automation Workshop",
+      "type": "workshop",
+      "date": "2026-07-10T14:00:00Z",
+      "duration": "120 minutes",
+      "format": "in-person",
+      "location": "Claude HQ, San Francisco",
+      "description": "Community event",
+      "speakers": [],
+      "maxAttendees": null,
+      "registrationUrl": null,
+      "recordingUrl": null,
+      "createdAt": "2026-06-22T09:36:22.935Z",
+      "status": "scheduled",
+      "attendees": [],
+      "resources": {
+        "slides": [],
+        "notes": [],
+        "materials": []
+      }
+    },
+    {
+      "id": "evt_1782120990112_xv1i8nhjq",
+      "name": "Founder AMA - Building with Claude Code",
+      "type": "ama",
+      "date": "2026-06-25T19:00:00Z",
+      "duration": "60 minutes",
+      "format": "virtual",
+      "location": null,
+      "description": "Community event",
+      "speakers": [],
+      "maxAttendees": null,
+      "registrationUrl": null,
+      "recordingUrl": null,
+      "createdAt": "2026-06-22T09:36:30.112Z",
+      "status": "scheduled",
+      "attendees": [],
+      "resources": {
+        "slides": [],
+        "notes": [],
+        "materials": []
+      }
+    },
+    {
+      "id": "evt_1782121424297_zj0bkvh8p",
+      "name": "Test Event",
+      "type": "showcase",
+      "date": "2026-06-28T18:00:00Z",
+      "duration": "90 minutes",
+      "format": "virtual",
+      "location": null,
+      "description": "Community event",
+      "speakers": [],
+      "maxAttendees": null,
+      "registrationUrl": null,
+      "recordingUrl": null,
+      "createdAt": "2026-06-22T09:43:44.297Z",
+      "status": "scheduled",
+      "attendees": [],
+      "resources": {
+        "slides": [],
+        "notes": [],
+        "materials": []
+      }
+    },
+    {
+      "id": "evt_1782121424318_ygut39oj4",
+      "name": "Upcoming Event",
+      "type": "showcase",
+      "date": "2026-07-28T18:00:00Z",
+      "duration": "60 minutes",
+      "format": "virtual",
+      "location": null,
+      "description": "Community event",
+      "speakers": [],
+      "maxAttendees": null,
+      "registrationUrl": null,
+      "recordingUrl": null,
+      "createdAt": "2026-06-22T09:43:44.319Z",
+      "status": "scheduled",
+      "attendees": [],
+      "resources": {
+        "slides": [],
+        "notes": [],
+        "materials": []
+      }
+    },
+    {
+      "id": "evt_1782121424340_b8tegn348",
+      "name": "Past Event",
+      "type": "hackathon",
+      "date": "2024-06-28T18:00:00Z",
+      "duration": "24 hours",
+      "format": "hybrid",
+      "location": null,
+      "description": "Community event",
+      "speakers": [],
+      "maxAttendees": null,
+      "registrationUrl": null,
+      "recordingUrl": null,
+      "createdAt": "2026-06-22T09:43:44.340Z",
+      "status": "scheduled",
+      "attendees": [],
+      "resources": {
+        "slides": [],
+        "notes": [],
+        "materials": []
+      }
+    },
+    {
+      "id": "evt_1782121424401_la98852ol",
+      "name": "SHOWCASE Test",
+      "type": "showcase",
+      "date": "2026-07-15T10:00:00Z",
+      "duration": "60 minutes",
+      "format": "virtual",
+      "location": null,
+      "description": "Community event",
+      "speakers": [],
+      "maxAttendees": null,
+      "registrationUrl": null,
+      "recordingUrl": null,
+      "createdAt": "2026-06-22T09:43:44.401Z",
+      "status": "scheduled",
+      "attendees": [],
+      "resources": {
+        "slides": [],
+        "notes": [],
+        "materials": []
+      }
+    },
+    {
+      "id": "evt_1782121424421_5txy6dfh9",
+      "name": "HACKATHON Test",
+      "type": "hackathon",
+      "date": "2026-07-15T10:00:00Z",
+      "duration": "60 minutes",
+      "format": "virtual",
+      "location": null,
+      "description": "Community event",
+      "speakers": [],
+      "maxAttendees": null,
+      "registrationUrl": null,
+      "recordingUrl": null,
+      "createdAt": "2026-06-22T09:43:44.421Z",
+      "status": "scheduled",
+      "attendees": [],
+      "resources": {
+        "slides": [],
+        "notes": [],
+        "materials": []
+      }
+    },
+    {
+      "id": "evt_1782121424443_hxd25hkp9",
+      "name": "WORKSHOP Test",
+      "type": "workshop",
+      "date": "2026-07-15T10:00:00Z",
+      "duration": "60 minutes",
+      "format": "virtual",
+      "location": null,
+      "description": "Community event",
+      "speakers": [],
+      "maxAttendees": null,
+      "registrationUrl": null,
+      "recordingUrl": null,
+      "createdAt": "2026-06-22T09:43:44.443Z",
+      "status": "scheduled",
+      "attendees": [],
+      "resources": {
+        "slides": [],
+        "notes": [],
+        "materials": []
+      }
+    },
+    {
+      "id": "evt_1782121424463_gmufhto72",
+      "name": "AMA Test",
+      "type": "ama",
+      "date": "2026-07-15T10:00:00Z",
+      "duration": "60 minutes",
+      "format": "virtual",
+      "location": null,
+      "description": "Community event",
+      "speakers": [],
+      "maxAttendees": null,
+      "registrationUrl": null,
+      "recordingUrl": null,
+      "createdAt": "2026-06-22T09:43:44.463Z",
+      "status": "scheduled",
+      "attendees": [],
+      "resources": {
+        "slides": [],
+        "notes": [],
+        "materials": []
+      }
+    },
+    {
+      "id": "evt_1782121490655_8byevlz09",
+      "name": "Integration Test Event",
+      "type": "showcase",
+      "date": "2026-06-28T18:00:00Z",
+      "duration": "90 minutes",
+      "format": "virtual",
+      "location": null,
+      "description": "Community event",
+      "speakers": [],
+      "maxAttendees": null,
+      "registrationUrl": null,
+      "recordingUrl": null,
+      "createdAt": "2026-06-22T09:44:50.655Z",
+      "status": "scheduled",
+      "attendees": [],
+      "resources": {
+        "slides": [],
+        "notes": [],
+        "materials": []
+      }
+    },
+    {
+      "id": "evt_1782121490699_w950qolzt",
+      "name": "hackathon Test",
+      "type": "hackathon",
+      "date": "2026-07-15T10:00:00Z",
+      "duration": "60 minutes",
+      "format": "virtual",
+      "location": null,
+      "description": "Community event",
+      "speakers": [],
+      "maxAttendees": null,
+      "registrationUrl": null,
+      "recordingUrl": null,
+      "createdAt": "2026-06-22T09:44:50.699Z",
+      "status": "scheduled",
+      "attendees": [],
+      "resources": {
+        "slides": [],
+        "notes": [],
+        "materials": []
+      }
+    },
+    {
+      "id": "evt_1782121490721_5inivqcyv",
+      "name": "workshop Test",
+      "type": "workshop",
+      "date": "2026-07-15T10:00:00Z",
+      "duration": "60 minutes",
+      "format": "virtual",
+      "location": null,
+      "description": "Community event",
+      "speakers": [],
+      "maxAttendees": null,
+      "registrationUrl": null,
+      "recordingUrl": null,
+      "createdAt": "2026-06-22T09:44:50.721Z",
+      "status": "scheduled",
+      "attendees": [],
+      "resources": {
+        "slides": [],
+        "notes": [],
+        "materials": []
+      }
+    },
+    {
+      "id": "evt_1782121490744_gssa44jdx",
+      "name": "ama Test",
+      "type": "ama",
+      "date": "2026-07-15T10:00:00Z",
+      "duration": "60 minutes",
+      "format": "virtual",
+      "location": null,
+      "description": "Community event",
+      "speakers": [],
+      "maxAttendees": null,
+      "registrationUrl": null,
+      "recordingUrl": null,
+      "createdAt": "2026-06-22T09:44:50.744Z",
+      "status": "scheduled",
+      "attendees": [],
+      "resources": {
+        "slides": [],
+        "notes": [],
+        "materials": []
+      }
+    },
+    {
+      "id": "evt_1782121490765_8026n7nw4",
+      "name": "in-person event",
+      "type": "workshop",
+      "date": "2026-07-20T14:00:00Z",
+      "duration": "120 minutes",
+      "format": "in-person",
+      "location": null,
+      "description": "Community event",
+      "speakers": [],
+      "maxAttendees": null,
+      "registrationUrl": null,
+      "recordingUrl": null,
+      "createdAt": "2026-06-22T09:44:50.765Z",
+      "status": "scheduled",
+      "attendees": [],
+      "resources": {
+        "slides": [],
+        "notes": [],
+        "materials": []
+      }
+    },
+    {
+      "id": "evt_1782121490784_uu5365wax",
+      "name": "hybrid event",
+      "type": "workshop",
+      "date": "2026-07-20T14:00:00Z",
+      "duration": "120 minutes",
+      "format": "hybrid",
+      "location": null,
+      "description": "Community event",
+      "speakers": [],
+      "maxAttendees": null,
+      "registrationUrl": null,
+      "recordingUrl": null,
+      "createdAt": "2026-06-22T09:44:50.784Z",
+      "status": "scheduled",
+      "attendees": [],
+      "resources": {
+        "slides": [],
+        "notes": [],
+        "materials": []
+      }
+    },
+    {
+      "id": "evt_1782123331684_596240rvj",
+      "name": "Untitled Event",
+      "type": "showcase",
+      "date": "2026-06-22T10:15:31.498Z",
+      "duration": "60 minutes",
+      "format": "virtual",
+      "location": null,
+      "description": "Community event",
+      "speakers": [],
+      "maxAttendees": null,
+      "registrationUrl": null,
+      "recordingUrl": null,
+      "createdAt": "2026-06-22T10:15:31.684Z",
+      "status": "scheduled",
+      "attendees": [
+        {
+          "id": "evt_1782123335230_muspssik1",
+          "name": "Attendee",
+          "email": "",
+          "organization": null,
+          "role": null,
+          "registeredAt": "2026-06-22T10:15:35.231Z",
+          "attended": false
+        },
+        {
+          "id": "evt_1782123337781_g1cegwakn",
+          "name": "Attendee",
+          "email": "",
+          "organization": null,
+          "role": null,
+          "registeredAt": "2026-06-22T10:15:37.781Z",
+          "attended": false
+        }
+      ],
+      "resources": {
+        "slides": [],
+        "notes": [],
+        "materials": []
+      }
+    }
+  ],
+  "series": {
+    "monthlyShowcase": [
+      "evt_1782120960613_68rmj7j7j",
+      "evt_1782121424297_zj0bkvh8p",
+      "evt_1782121424318_ygut39oj4",
+      "evt_1782121424401_la98852ol",
+      "evt_1782121490655_8byevlz09",
+      "evt_1782123331684_596240rvj"
+    ],
+    "quarterlyHackathon": [
+      "evt_1782120972733_22jj1cow0",
+      "evt_1782121424340_b8tegn348",
+      "evt_1782121424421_5txy6dfh9",
+      "evt_1782121490699_w950qolzt"
+    ],
+    "expertWorkshops": [
+      "evt_1782120982935_cicm4jtl4",
+      "evt_1782121424443_hxd25hkp9",
+      "evt_1782121490721_5inivqcyv",
+      "evt_1782121490765_8026n7nw4",
+      "evt_1782121490784_uu5365wax"
+    ],
+    "amas": [
+      "evt_1782120990112_xv1i8nhjq",
+      "evt_1782121424463_gmufhto72",
+      "evt_1782121490744_gssa44jdx"
+    ]
+  },
+  "statistics": {
+    "totalEvents": 18,
+    "totalAttendees": 5,
+    "totalRecordings": 2,
+    "upcomingEvents": 0
+  }
+}

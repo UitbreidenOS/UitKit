@@ -1,0 +1,42 @@
+{
+  "coordinatorId": "411f9676c107",
+  "isRunning": false,
+  "nodes": [
+    {
+      "nodeId": "node1",
+      "role": "worker",
+      "region": "us-west",
+      "isHealthy": true,
+      "lastHeartbeat": 1782121269748,
+      "metrics": {
+        "tasksExecuted": 0,
+        "tasksSuccessful": 0,
+        "tasksFailed": 0,
+        "totalExecutionTime": 0,
+        "cloudSyncCount": 0,
+        "lastSyncTime": null
+      },
+      "latency": {
+        "p50": 0,
+        "p95": 0,
+        "p99": 0,
+        "avg": 0,
+        "min": 0,
+        "max": 0
+      },
+      "queue": {
+        "pending": 0,
+        "active": 0,
+        "completed": 0
+      }
+    }
+  ],
+  "globalMetrics": {
+    "totalTasksSubmitted": 0,
+    "totalTasksCompleted": 0,
+    "totalTasksFailed": 0,
+    "syncEvents": 0,
+    "averageLatency": 0
+  },
+  "timestamp": 1782121269748
+}

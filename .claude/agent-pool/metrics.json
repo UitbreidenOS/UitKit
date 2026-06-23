@@ -1,0 +1,163 @@
+{
+  "poolId": "b6033d6b27f4281b",
+  "isRunning": false,
+  "createdAt": 1782103347451,
+  "stats": {
+    "goalsProcessed": 0,
+    "goalsSuccessful": 0,
+    "goalsFailed": 0,
+    "totalDuration": 0,
+    "totalTokensSpent": 0
+  },
+  "queue": {
+    "size": 3,
+    "jobs": [
+      {
+        "id": "goal_e3f73329e700",
+        "goal": "Test goal 1",
+        "priority": 4,
+        "state": "queued"
+      },
+      {
+        "id": "goal_57899fc3f298",
+        "goal": "Test goal 2",
+        "priority": 3,
+        "state": "queued"
+      },
+      {
+        "id": "goal_865e402e9ff4",
+        "goal": "Test goal 3",
+        "priority": 2,
+        "state": "queued"
+      }
+    ]
+  },
+  "active": {
+    "count": 0,
+    "availableSlots": 2,
+    "goals": []
+  },
+  "cost": {
+    "spent": 0,
+    "budget": 50000,
+    "remaining": 50000,
+    "percent": 0
+  },
+  "topCosts": [],
+  "loadBalance": {
+    "agents": {},
+    "average": 0,
+    "variance": 0,
+    "balanced": true
+  },
+  "allGoals": [
+    {
+      "id": "goal_e3f73329e700",
+      "goal": "Test goal 1",
+      "priority": 4,
+      "state": "queued",
+      "progress": 0,
+      "createdAt": 1782103347458,
+      "startedAt": null,
+      "completedAt": null,
+      "duration": 0,
+      "metrics": {
+        "tokensUsed": 0,
+        "tasksCompleted": 0,
+        "tasksFailed": 0,
+        "retries": 0
+      },
+      "quota": {
+        "tokens": {
+          "used": 0,
+          "max": 10000,
+          "percent": 0
+        },
+        "duration": {
+          "elapsed": 9,
+          "max": 600000,
+          "percent": 0
+        },
+        "retries": {
+          "used": 0,
+          "max": 3,
+          "percent": 0
+        }
+      },
+      "result": null,
+      "error": null
+    },
+    {
+      "id": "goal_57899fc3f298",
+      "goal": "Test goal 2",
+      "priority": 3,
+      "state": "queued",
+      "progress": 0,
+      "createdAt": 1782103347458,
+      "startedAt": null,
+      "completedAt": null,
+      "duration": 0,
+      "metrics": {
+        "tokensUsed": 0,
+        "tasksCompleted": 0,
+        "tasksFailed": 0,
+        "retries": 0
+      },
+      "quota": {
+        "tokens": {
+          "used": 0,
+          "max": 50000,
+          "percent": 0
+        },
+        "duration": {
+          "elapsed": 9,
+          "max": 600000,
+          "percent": 0
+        },
+        "retries": {
+          "used": 0,
+          "max": 3,
+          "percent": 0
+        }
+      },
+      "result": null,
+      "error": null
+    },
+    {
+      "id": "goal_865e402e9ff4",
+      "goal": "Test goal 3",
+      "priority": 2,
+      "state": "queued",
+      "progress": 0,
+      "createdAt": 1782103347459,
+      "startedAt": null,
+      "completedAt": null,
+      "duration": 0,
+      "metrics": {
+        "tokensUsed": 0,
+        "tasksCompleted": 0,
+        "tasksFailed": 0,
+        "retries": 0
+      },
+      "quota": {
+        "tokens": {
+          "used": 0,
+          "max": 50000,
+          "percent": 0
+        },
+        "duration": {
+          "elapsed": 8,
+          "max": 600000,
+          "percent": 0
+        },
+        "retries": {
+          "used": 0,
+          "max": 3,
+          "percent": 0
+        }
+      },
+      "result": null,
+      "error": null
+    }
+  ]
+}

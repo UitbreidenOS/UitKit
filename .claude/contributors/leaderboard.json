@@ -1,0 +1,1376 @@
+{
+  "testuser": {
+    "handle": "testuser",
+    "contributions": 2,
+    "prs": [
+      {
+        "number": 123,
+        "mergedAt": "2026-06-22T10:13:43.598Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 123,
+        "mergedAt": "2026-06-22T10:14:13.009Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      }
+    ],
+    "tier": "bronze",
+    "joinDate": "2026-06-22T10:13:43.593Z",
+    "rewards": [],
+    "lastUpdate": "2026-06-22T10:14:13.020Z",
+    "stats": {
+      "skills": 2,
+      "agents": 0,
+      "translations": 0,
+      "guides": 0,
+      "tests": 0,
+      "reviews": 0
+    }
+  },
+  "testuser2": {
+    "handle": "testuser2",
+    "contributions": 4,
+    "prs": [
+      {
+        "number": 124,
+        "mergedAt": "2026-06-22T10:13:43.598Z",
+        "title": "PR Title",
+        "type": "agent",
+        "labels": []
+      },
+      {
+        "number": 125,
+        "mergedAt": "2026-06-22T10:13:43.599Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 124,
+        "mergedAt": "2026-06-22T10:14:13.036Z",
+        "title": "PR Title",
+        "type": "agent",
+        "labels": []
+      },
+      {
+        "number": 125,
+        "mergedAt": "2026-06-22T10:14:13.036Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      }
+    ],
+    "tier": "bronze",
+    "joinDate": "2026-06-22T10:13:43.598Z",
+    "rewards": [],
+    "lastUpdate": "2026-06-22T10:14:13.036Z",
+    "stats": {
+      "skills": 2,
+      "agents": 2,
+      "translations": 0,
+      "guides": 0,
+      "tests": 0,
+      "reviews": 0
+    }
+  },
+  "promouser": {
+    "handle": "promouser",
+    "contributions": 12,
+    "prs": [
+      {
+        "number": 201,
+        "mergedAt": "2026-06-22T10:13:43.599Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 202,
+        "mergedAt": "2026-06-22T10:13:43.599Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 203,
+        "mergedAt": "2026-06-22T10:13:43.599Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 204,
+        "mergedAt": "2026-06-22T10:13:43.599Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 205,
+        "mergedAt": "2026-06-22T10:13:43.600Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 206,
+        "mergedAt": "2026-06-22T10:13:43.603Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 201,
+        "mergedAt": "2026-06-22T10:14:13.038Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 202,
+        "mergedAt": "2026-06-22T10:14:13.038Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 203,
+        "mergedAt": "2026-06-22T10:14:13.039Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 204,
+        "mergedAt": "2026-06-22T10:14:13.039Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 205,
+        "mergedAt": "2026-06-22T10:14:13.039Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 206,
+        "mergedAt": "2026-06-22T10:14:13.039Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      }
+    ],
+    "tier": "silver",
+    "joinDate": "2026-06-22T10:13:43.599Z",
+    "rewards": [
+      {
+        "type": "tier-promotion",
+        "tier": "silver",
+        "githubHandle": "promouser",
+        "timestamp": "2026-06-22T10:13:43.600Z",
+        "items": [
+          "Premium Sticker Set (10x)",
+          "t-shirt (s/m/l/xl/xxl)",
+          "Digital Badge"
+        ],
+        "message": "Congratulations! You've reached Silver Badge + Swag!",
+        "status": "pending-fulfillment",
+        "fulfillmentDate": null,
+        "trackingNumber": null
+      }
+    ],
+    "lastUpdate": "2026-06-22T10:14:13.039Z",
+    "stats": {
+      "skills": 12,
+      "agents": 0,
+      "translations": 0,
+      "guides": 0,
+      "tests": 0,
+      "reviews": 0
+    }
+  },
+  "fulfilluser": {
+    "handle": "fulfilluser",
+    "contributions": 2,
+    "prs": [
+      {
+        "number": 301,
+        "mergedAt": "2026-06-22T10:13:43.608Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 301,
+        "mergedAt": "2026-06-22T10:14:13.040Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      }
+    ],
+    "tier": "bronze",
+    "joinDate": "2026-06-22T10:13:43.608Z",
+    "rewards": [],
+    "lastUpdate": "2026-06-22T10:14:13.040Z",
+    "stats": {
+      "skills": 2,
+      "agents": 0,
+      "translations": 0,
+      "guides": 0,
+      "tests": 0,
+      "reviews": 0
+    }
+  },
+  "leader1": {
+    "handle": "leader1",
+    "contributions": 4,
+    "prs": [
+      {
+        "number": 401,
+        "mergedAt": "2026-06-22T10:13:43.608Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 402,
+        "mergedAt": "2026-06-22T10:13:43.608Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 401,
+        "mergedAt": "2026-06-22T10:14:13.041Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 402,
+        "mergedAt": "2026-06-22T10:14:13.042Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      }
+    ],
+    "tier": "bronze",
+    "joinDate": "2026-06-22T10:13:43.608Z",
+    "rewards": [],
+    "lastUpdate": "2026-06-22T10:14:13.042Z",
+    "stats": {
+      "skills": 4,
+      "agents": 0,
+      "translations": 0,
+      "guides": 0,
+      "tests": 0,
+      "reviews": 0
+    }
+  },
+  "leader2": {
+    "handle": "leader2",
+    "contributions": 2,
+    "prs": [
+      {
+        "number": 403,
+        "mergedAt": "2026-06-22T10:13:43.608Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 403,
+        "mergedAt": "2026-06-22T10:14:13.042Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      }
+    ],
+    "tier": "bronze",
+    "joinDate": "2026-06-22T10:13:43.608Z",
+    "rewards": [],
+    "lastUpdate": "2026-06-22T10:14:13.042Z",
+    "stats": {
+      "skills": 2,
+      "agents": 0,
+      "translations": 0,
+      "guides": 0,
+      "tests": 0,
+      "reviews": 0
+    }
+  },
+  "pendinguser": {
+    "handle": "pendinguser",
+    "contributions": 2,
+    "prs": [
+      {
+        "number": 501,
+        "mergedAt": "2026-06-22T10:13:43.611Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 501,
+        "mergedAt": "2026-06-22T10:14:13.043Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      }
+    ],
+    "tier": "bronze",
+    "joinDate": "2026-06-22T10:13:43.611Z",
+    "rewards": [],
+    "lastUpdate": "2026-06-22T10:14:13.043Z",
+    "stats": {
+      "skills": 2,
+      "agents": 0,
+      "translations": 0,
+      "guides": 0,
+      "tests": 0,
+      "reviews": 0
+    }
+  },
+  "savetest": {
+    "handle": "savetest",
+    "contributions": 2,
+    "prs": [
+      {
+        "number": 601,
+        "mergedAt": "2026-06-22T10:13:43.611Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 601,
+        "mergedAt": "2026-06-22T10:14:13.045Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      }
+    ],
+    "tier": "bronze",
+    "joinDate": "2026-06-22T10:13:43.611Z",
+    "rewards": [],
+    "lastUpdate": "2026-06-22T10:14:13.045Z",
+    "stats": {
+      "skills": 2,
+      "agents": 0,
+      "translations": 0,
+      "guides": 0,
+      "tests": 0,
+      "reviews": 0
+    }
+  },
+  "persisttest": {
+    "handle": "persisttest",
+    "contributions": 3,
+    "prs": [
+      {
+        "number": 701,
+        "mergedAt": "2026-06-22T10:13:43.611Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 702,
+        "mergedAt": "2026-06-22T10:13:43.612Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 701,
+        "mergedAt": "2026-06-22T10:14:13.047Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      }
+    ],
+    "tier": "bronze",
+    "joinDate": "2026-06-22T10:13:43.611Z",
+    "rewards": [],
+    "lastUpdate": "2026-06-22T10:14:13.048Z",
+    "stats": {
+      "skills": 3,
+      "agents": 0,
+      "translations": 0,
+      "guides": 0,
+      "tests": 0,
+      "reviews": 0
+    }
+  },
+  "testuser-1782123565652": {
+    "handle": "testuser-1782123565652",
+    "contributions": 1,
+    "prs": [
+      {
+        "number": 123,
+        "mergedAt": "2026-06-22T10:19:25.670Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      }
+    ],
+    "tier": "bronze",
+    "joinDate": "2026-06-22T10:19:25.656Z",
+    "rewards": [],
+    "lastUpdate": "2026-06-22T10:19:25.670Z",
+    "stats": {
+      "skills": 1,
+      "agents": 0,
+      "translations": 0,
+      "guides": 0,
+      "tests": 0,
+      "reviews": 0
+    }
+  },
+  "testuser2-1782123565673": {
+    "handle": "testuser2-1782123565673",
+    "contributions": 2,
+    "prs": [
+      {
+        "number": 124,
+        "mergedAt": "2026-06-22T10:19:25.673Z",
+        "title": "PR Title",
+        "type": "agent",
+        "labels": []
+      },
+      {
+        "number": 125,
+        "mergedAt": "2026-06-22T10:19:25.673Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      }
+    ],
+    "tier": "bronze",
+    "joinDate": "2026-06-22T10:19:25.673Z",
+    "rewards": [],
+    "lastUpdate": "2026-06-22T10:19:25.673Z",
+    "stats": {
+      "skills": 1,
+      "agents": 1,
+      "translations": 0,
+      "guides": 0,
+      "tests": 0,
+      "reviews": 0
+    }
+  },
+  "promouser-1782123565677": {
+    "handle": "promouser-1782123565677",
+    "contributions": 6,
+    "prs": [
+      {
+        "number": 201,
+        "mergedAt": "2026-06-22T10:19:25.677Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 202,
+        "mergedAt": "2026-06-22T10:19:25.679Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 203,
+        "mergedAt": "2026-06-22T10:19:25.679Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 204,
+        "mergedAt": "2026-06-22T10:19:25.679Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 205,
+        "mergedAt": "2026-06-22T10:19:25.681Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 206,
+        "mergedAt": "2026-06-22T10:19:25.683Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      }
+    ],
+    "tier": "silver",
+    "joinDate": "2026-06-22T10:19:25.677Z",
+    "rewards": [
+      {
+        "type": "tier-promotion",
+        "tier": "silver",
+        "githubHandle": "promouser-1782123565677",
+        "timestamp": "2026-06-22T10:19:25.681Z",
+        "items": [
+          "Premium Sticker Set (10x)",
+          "t-shirt (s/m/l/xl/xxl)",
+          "Digital Badge"
+        ],
+        "message": "Congratulations! You've reached Silver Badge + Swag!",
+        "status": "pending-fulfillment",
+        "fulfillmentDate": null,
+        "trackingNumber": null
+      }
+    ],
+    "lastUpdate": "2026-06-22T10:19:25.683Z",
+    "stats": {
+      "skills": 6,
+      "agents": 0,
+      "translations": 0,
+      "guides": 0,
+      "tests": 0,
+      "reviews": 0
+    }
+  },
+  "fulfilluser-1782123565685": {
+    "handle": "fulfilluser-1782123565685",
+    "contributions": 1,
+    "prs": [
+      {
+        "number": 301,
+        "mergedAt": "2026-06-22T10:19:25.685Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      }
+    ],
+    "tier": "bronze",
+    "joinDate": "2026-06-22T10:19:25.685Z",
+    "rewards": [],
+    "lastUpdate": "2026-06-22T10:19:25.685Z",
+    "stats": {
+      "skills": 1,
+      "agents": 0,
+      "translations": 0,
+      "guides": 0,
+      "tests": 0,
+      "reviews": 0
+    }
+  },
+  "leader1-1782123565685": {
+    "handle": "leader1-1782123565685",
+    "contributions": 2,
+    "prs": [
+      {
+        "number": 401,
+        "mergedAt": "2026-06-22T10:19:25.685Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 402,
+        "mergedAt": "2026-06-22T10:19:25.687Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      }
+    ],
+    "tier": "bronze",
+    "joinDate": "2026-06-22T10:19:25.685Z",
+    "rewards": [],
+    "lastUpdate": "2026-06-22T10:19:25.687Z",
+    "stats": {
+      "skills": 2,
+      "agents": 0,
+      "translations": 0,
+      "guides": 0,
+      "tests": 0,
+      "reviews": 0
+    }
+  },
+  "leader2-1782123565685": {
+    "handle": "leader2-1782123565685",
+    "contributions": 1,
+    "prs": [
+      {
+        "number": 403,
+        "mergedAt": "2026-06-22T10:19:25.687Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      }
+    ],
+    "tier": "bronze",
+    "joinDate": "2026-06-22T10:19:25.687Z",
+    "rewards": [],
+    "lastUpdate": "2026-06-22T10:19:25.687Z",
+    "stats": {
+      "skills": 1,
+      "agents": 0,
+      "translations": 0,
+      "guides": 0,
+      "tests": 0,
+      "reviews": 0
+    }
+  },
+  "pendinguser-1782123565689": {
+    "handle": "pendinguser-1782123565689",
+    "contributions": 1,
+    "prs": [
+      {
+        "number": 501,
+        "mergedAt": "2026-06-22T10:19:25.691Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      }
+    ],
+    "tier": "bronze",
+    "joinDate": "2026-06-22T10:19:25.691Z",
+    "rewards": [],
+    "lastUpdate": "2026-06-22T10:19:25.691Z",
+    "stats": {
+      "skills": 1,
+      "agents": 0,
+      "translations": 0,
+      "guides": 0,
+      "tests": 0,
+      "reviews": 0
+    }
+  },
+  "savetest-1782123565691": {
+    "handle": "savetest-1782123565691",
+    "contributions": 1,
+    "prs": [
+      {
+        "number": 601,
+        "mergedAt": "2026-06-22T10:19:25.691Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      }
+    ],
+    "tier": "bronze",
+    "joinDate": "2026-06-22T10:19:25.691Z",
+    "rewards": [],
+    "lastUpdate": "2026-06-22T10:19:25.691Z",
+    "stats": {
+      "skills": 1,
+      "agents": 0,
+      "translations": 0,
+      "guides": 0,
+      "tests": 0,
+      "reviews": 0
+    }
+  },
+  "persisttest-1782123565692": {
+    "handle": "persisttest-1782123565692",
+    "contributions": 2,
+    "prs": [
+      {
+        "number": 701,
+        "mergedAt": "2026-06-22T10:19:25.692Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 702,
+        "mergedAt": "2026-06-22T10:19:25.692Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      }
+    ],
+    "tier": "bronze",
+    "joinDate": "2026-06-22T10:19:25.692Z",
+    "rewards": [],
+    "lastUpdate": "2026-06-22T10:19:25.692Z",
+    "stats": {
+      "skills": 2,
+      "agents": 0,
+      "translations": 0,
+      "guides": 0,
+      "tests": 0,
+      "reviews": 0
+    }
+  },
+  "testuser-1782123630328": {
+    "handle": "testuser-1782123630328",
+    "contributions": 1,
+    "prs": [
+      {
+        "number": 123,
+        "mergedAt": "2026-06-22T10:20:30.333Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      }
+    ],
+    "tier": "bronze",
+    "joinDate": "2026-06-22T10:20:30.328Z",
+    "rewards": [],
+    "lastUpdate": "2026-06-22T10:20:30.333Z",
+    "stats": {
+      "skills": 1,
+      "agents": 0,
+      "translations": 0,
+      "guides": 0,
+      "tests": 0,
+      "reviews": 0
+    }
+  },
+  "testuser2-1782123630334": {
+    "handle": "testuser2-1782123630334",
+    "contributions": 2,
+    "prs": [
+      {
+        "number": 124,
+        "mergedAt": "2026-06-22T10:20:30.334Z",
+        "title": "PR Title",
+        "type": "agent",
+        "labels": []
+      },
+      {
+        "number": 125,
+        "mergedAt": "2026-06-22T10:20:30.334Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      }
+    ],
+    "tier": "bronze",
+    "joinDate": "2026-06-22T10:20:30.334Z",
+    "rewards": [],
+    "lastUpdate": "2026-06-22T10:20:30.334Z",
+    "stats": {
+      "skills": 1,
+      "agents": 1,
+      "translations": 0,
+      "guides": 0,
+      "tests": 0,
+      "reviews": 0
+    }
+  },
+  "promouser-1782123630335": {
+    "handle": "promouser-1782123630335",
+    "contributions": 5,
+    "prs": [
+      {
+        "number": 200,
+        "mergedAt": "2026-06-22T10:20:30.335Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 201,
+        "mergedAt": "2026-06-22T10:20:30.335Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 202,
+        "mergedAt": "2026-06-22T10:20:30.335Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 203,
+        "mergedAt": "2026-06-22T10:20:30.336Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 204,
+        "mergedAt": "2026-06-22T10:20:30.336Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      }
+    ],
+    "tier": "silver",
+    "joinDate": "2026-06-22T10:20:30.335Z",
+    "rewards": [
+      {
+        "type": "tier-promotion",
+        "tier": "silver",
+        "githubHandle": "promouser-1782123630335",
+        "timestamp": "2026-06-22T10:20:30.336Z",
+        "items": [
+          "Premium Sticker Set (10x)",
+          "t-shirt (s/m/l/xl/xxl)",
+          "Digital Badge"
+        ],
+        "message": "Congratulations! You've reached Silver Badge + Swag!",
+        "status": "pending-fulfillment",
+        "fulfillmentDate": null,
+        "trackingNumber": null
+      }
+    ],
+    "lastUpdate": "2026-06-22T10:20:30.337Z",
+    "stats": {
+      "skills": 5,
+      "agents": 0,
+      "translations": 0,
+      "guides": 0,
+      "tests": 0,
+      "reviews": 0
+    }
+  },
+  "fulfilluser-1782123630337": {
+    "handle": "fulfilluser-1782123630337",
+    "contributions": 1,
+    "prs": [
+      {
+        "number": 301,
+        "mergedAt": "2026-06-22T10:20:30.337Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      }
+    ],
+    "tier": "bronze",
+    "joinDate": "2026-06-22T10:20:30.337Z",
+    "rewards": [],
+    "lastUpdate": "2026-06-22T10:20:30.337Z",
+    "stats": {
+      "skills": 1,
+      "agents": 0,
+      "translations": 0,
+      "guides": 0,
+      "tests": 0,
+      "reviews": 0
+    }
+  },
+  "leader1-1782123630338": {
+    "handle": "leader1-1782123630338",
+    "contributions": 2,
+    "prs": [
+      {
+        "number": 401,
+        "mergedAt": "2026-06-22T10:20:30.342Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 402,
+        "mergedAt": "2026-06-22T10:20:30.398Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      }
+    ],
+    "tier": "bronze",
+    "joinDate": "2026-06-22T10:20:30.342Z",
+    "rewards": [],
+    "lastUpdate": "2026-06-22T10:20:30.398Z",
+    "stats": {
+      "skills": 2,
+      "agents": 0,
+      "translations": 0,
+      "guides": 0,
+      "tests": 0,
+      "reviews": 0
+    }
+  },
+  "leader2-1782123630338": {
+    "handle": "leader2-1782123630338",
+    "contributions": 1,
+    "prs": [
+      {
+        "number": 403,
+        "mergedAt": "2026-06-22T10:20:30.464Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      }
+    ],
+    "tier": "bronze",
+    "joinDate": "2026-06-22T10:20:30.464Z",
+    "rewards": [],
+    "lastUpdate": "2026-06-22T10:20:30.464Z",
+    "stats": {
+      "skills": 1,
+      "agents": 0,
+      "translations": 0,
+      "guides": 0,
+      "tests": 0,
+      "reviews": 0
+    }
+  },
+  "pendinguser-1782123630465": {
+    "handle": "pendinguser-1782123630465",
+    "contributions": 5,
+    "prs": [
+      {
+        "number": 500,
+        "mergedAt": "2026-06-22T10:20:30.466Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 501,
+        "mergedAt": "2026-06-22T10:20:30.473Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 502,
+        "mergedAt": "2026-06-22T10:20:30.475Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 503,
+        "mergedAt": "2026-06-22T10:20:30.475Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 504,
+        "mergedAt": "2026-06-22T10:20:30.476Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      }
+    ],
+    "tier": "silver",
+    "joinDate": "2026-06-22T10:20:30.466Z",
+    "rewards": [
+      {
+        "type": "tier-promotion",
+        "tier": "silver",
+        "githubHandle": "pendinguser-1782123630465",
+        "timestamp": "2026-06-22T10:20:30.476Z",
+        "items": [
+          "Premium Sticker Set (10x)",
+          "t-shirt (s/m/l/xl/xxl)",
+          "Digital Badge"
+        ],
+        "message": "Congratulations! You've reached Silver Badge + Swag!",
+        "status": "pending-fulfillment",
+        "fulfillmentDate": null,
+        "trackingNumber": null
+      }
+    ],
+    "lastUpdate": "2026-06-22T10:20:30.476Z",
+    "stats": {
+      "skills": 5,
+      "agents": 0,
+      "translations": 0,
+      "guides": 0,
+      "tests": 0,
+      "reviews": 0
+    }
+  },
+  "savetest-1782123630479": {
+    "handle": "savetest-1782123630479",
+    "contributions": 1,
+    "prs": [
+      {
+        "number": 601,
+        "mergedAt": "2026-06-22T10:20:30.479Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      }
+    ],
+    "tier": "bronze",
+    "joinDate": "2026-06-22T10:20:30.479Z",
+    "rewards": [],
+    "lastUpdate": "2026-06-22T10:20:30.479Z",
+    "stats": {
+      "skills": 1,
+      "agents": 0,
+      "translations": 0,
+      "guides": 0,
+      "tests": 0,
+      "reviews": 0
+    }
+  },
+  "persisttest-1782123630480": {
+    "handle": "persisttest-1782123630480",
+    "contributions": 2,
+    "prs": [
+      {
+        "number": 701,
+        "mergedAt": "2026-06-22T10:20:30.486Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 702,
+        "mergedAt": "2026-06-22T10:20:30.487Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      }
+    ],
+    "tier": "bronze",
+    "joinDate": "2026-06-22T10:20:30.486Z",
+    "rewards": [],
+    "lastUpdate": "2026-06-22T10:20:30.487Z",
+    "stats": {
+      "skills": 2,
+      "agents": 0,
+      "translations": 0,
+      "guides": 0,
+      "tests": 0,
+      "reviews": 0
+    }
+  },
+  "testuser-1782125087120": {
+    "handle": "testuser-1782125087120",
+    "contributions": 1,
+    "prs": [
+      {
+        "number": 123,
+        "mergedAt": "2026-06-22T10:44:47.124Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      }
+    ],
+    "tier": "bronze",
+    "joinDate": "2026-06-22T10:44:47.123Z",
+    "rewards": [],
+    "lastUpdate": "2026-06-22T10:44:47.124Z",
+    "stats": {
+      "skills": 1,
+      "agents": 0,
+      "translations": 0,
+      "guides": 0,
+      "tests": 0,
+      "reviews": 0
+    }
+  },
+  "testuser2-1782125087127": {
+    "handle": "testuser2-1782125087127",
+    "contributions": 2,
+    "prs": [
+      {
+        "number": 124,
+        "mergedAt": "2026-06-22T10:44:47.127Z",
+        "title": "PR Title",
+        "type": "agent",
+        "labels": []
+      },
+      {
+        "number": 125,
+        "mergedAt": "2026-06-22T10:44:47.127Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      }
+    ],
+    "tier": "bronze",
+    "joinDate": "2026-06-22T10:44:47.127Z",
+    "rewards": [],
+    "lastUpdate": "2026-06-22T10:44:47.127Z",
+    "stats": {
+      "skills": 1,
+      "agents": 1,
+      "translations": 0,
+      "guides": 0,
+      "tests": 0,
+      "reviews": 0
+    }
+  },
+  "promouser-1782125087128": {
+    "handle": "promouser-1782125087128",
+    "contributions": 5,
+    "prs": [
+      {
+        "number": 200,
+        "mergedAt": "2026-06-22T10:44:47.128Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 201,
+        "mergedAt": "2026-06-22T10:44:47.129Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 202,
+        "mergedAt": "2026-06-22T10:44:47.129Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 203,
+        "mergedAt": "2026-06-22T10:44:47.133Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 204,
+        "mergedAt": "2026-06-22T10:44:47.134Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      }
+    ],
+    "tier": "silver",
+    "joinDate": "2026-06-22T10:44:47.128Z",
+    "rewards": [
+      {
+        "type": "tier-promotion",
+        "tier": "silver",
+        "githubHandle": "promouser-1782125087128",
+        "timestamp": "2026-06-22T10:44:47.134Z",
+        "items": [
+          "Premium Sticker Set (10x)",
+          "t-shirt (s/m/l/xl/xxl)",
+          "Digital Badge"
+        ],
+        "message": "Congratulations! You've reached Silver Badge + Swag!",
+        "status": "pending-fulfillment",
+        "fulfillmentDate": null,
+        "trackingNumber": null
+      }
+    ],
+    "lastUpdate": "2026-06-22T10:44:47.135Z",
+    "stats": {
+      "skills": 5,
+      "agents": 0,
+      "translations": 0,
+      "guides": 0,
+      "tests": 0,
+      "reviews": 0
+    }
+  },
+  "fulfilluser-1782125087136": {
+    "handle": "fulfilluser-1782125087136",
+    "contributions": 1,
+    "prs": [
+      {
+        "number": 301,
+        "mergedAt": "2026-06-22T10:44:47.136Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      }
+    ],
+    "tier": "bronze",
+    "joinDate": "2026-06-22T10:44:47.136Z",
+    "rewards": [],
+    "lastUpdate": "2026-06-22T10:44:47.136Z",
+    "stats": {
+      "skills": 1,
+      "agents": 0,
+      "translations": 0,
+      "guides": 0,
+      "tests": 0,
+      "reviews": 0
+    }
+  },
+  "leader1-1782125087137": {
+    "handle": "leader1-1782125087137",
+    "contributions": 2,
+    "prs": [
+      {
+        "number": 401,
+        "mergedAt": "2026-06-22T10:44:47.137Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 402,
+        "mergedAt": "2026-06-22T10:44:47.137Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      }
+    ],
+    "tier": "bronze",
+    "joinDate": "2026-06-22T10:44:47.137Z",
+    "rewards": [],
+    "lastUpdate": "2026-06-22T10:44:47.137Z",
+    "stats": {
+      "skills": 2,
+      "agents": 0,
+      "translations": 0,
+      "guides": 0,
+      "tests": 0,
+      "reviews": 0
+    }
+  },
+  "leader2-1782125087137": {
+    "handle": "leader2-1782125087137",
+    "contributions": 1,
+    "prs": [
+      {
+        "number": 403,
+        "mergedAt": "2026-06-22T10:44:47.137Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      }
+    ],
+    "tier": "bronze",
+    "joinDate": "2026-06-22T10:44:47.137Z",
+    "rewards": [],
+    "lastUpdate": "2026-06-22T10:44:47.137Z",
+    "stats": {
+      "skills": 1,
+      "agents": 0,
+      "translations": 0,
+      "guides": 0,
+      "tests": 0,
+      "reviews": 0
+    }
+  },
+  "pendinguser-1782125087138": {
+    "handle": "pendinguser-1782125087138",
+    "contributions": 5,
+    "prs": [
+      {
+        "number": 500,
+        "mergedAt": "2026-06-22T10:44:47.140Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 501,
+        "mergedAt": "2026-06-22T10:44:47.148Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 502,
+        "mergedAt": "2026-06-22T10:44:47.158Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 503,
+        "mergedAt": "2026-06-22T10:44:47.165Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 504,
+        "mergedAt": "2026-06-22T10:44:47.166Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      }
+    ],
+    "tier": "silver",
+    "joinDate": "2026-06-22T10:44:47.140Z",
+    "rewards": [
+      {
+        "type": "tier-promotion",
+        "tier": "silver",
+        "githubHandle": "pendinguser-1782125087138",
+        "timestamp": "2026-06-22T10:44:47.166Z",
+        "items": [
+          "Premium Sticker Set (10x)",
+          "t-shirt (s/m/l/xl/xxl)",
+          "Digital Badge"
+        ],
+        "message": "Congratulations! You've reached Silver Badge + Swag!",
+        "status": "pending-fulfillment",
+        "fulfillmentDate": null,
+        "trackingNumber": null
+      }
+    ],
+    "lastUpdate": "2026-06-22T10:44:47.166Z",
+    "stats": {
+      "skills": 5,
+      "agents": 0,
+      "translations": 0,
+      "guides": 0,
+      "tests": 0,
+      "reviews": 0
+    }
+  },
+  "savetest-1782125087167": {
+    "handle": "savetest-1782125087167",
+    "contributions": 1,
+    "prs": [
+      {
+        "number": 601,
+        "mergedAt": "2026-06-22T10:44:47.167Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      }
+    ],
+    "tier": "bronze",
+    "joinDate": "2026-06-22T10:44:47.167Z",
+    "rewards": [],
+    "lastUpdate": "2026-06-22T10:44:47.167Z",
+    "stats": {
+      "skills": 1,
+      "agents": 0,
+      "translations": 0,
+      "guides": 0,
+      "tests": 0,
+      "reviews": 0
+    }
+  },
+  "persisttest-1782125087168": {
+    "handle": "persisttest-1782125087168",
+    "contributions": 2,
+    "prs": [
+      {
+        "number": 701,
+        "mergedAt": "2026-06-22T10:44:47.168Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      },
+      {
+        "number": 702,
+        "mergedAt": "2026-06-22T10:44:47.184Z",
+        "title": "PR Title",
+        "type": "skill",
+        "labels": []
+      }
+    ],
+    "tier": "bronze",
+    "joinDate": "2026-06-22T10:44:47.168Z",
+    "rewards": [],
+    "lastUpdate": "2026-06-22T10:44:47.184Z",
+    "stats": {
+      "skills": 2,
+      "agents": 0,
+      "translations": 0,
+      "guides": 0,
+      "tests": 0,
+      "reviews": 0
+    }
+  }
+}

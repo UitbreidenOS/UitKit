@@ -1,0 +1,32 @@
+{
+  "id": "ver-40627e655427",
+  "cloneId": "clone-d181c2e6bc45",
+  "label": "v1.0-production",
+  "timestamp": 1782124983693,
+  "config": {
+    "name": "SecurityAgent",
+    "description": "",
+    "purpose": "",
+    "model": "claude-opus-4-1",
+    "tools": [
+      "code-analyzer",
+      "vulnerability-scanner"
+    ],
+    "maxTokens": 150000,
+    "temperature": 0.25,
+    "systemPrompt": "",
+    "environment": {},
+    "permissions": [],
+    "timeout": 300000,
+    "retryPolicy": {
+      "maxAttempts": 3,
+      "backoffMs": 1000
+    },
+    "monitoring": {
+      "enabled": true,
+      "logLevel": "info"
+    },
+    "customFields": {}
+  },
+  "notes": "Production-ready configuration"
+}

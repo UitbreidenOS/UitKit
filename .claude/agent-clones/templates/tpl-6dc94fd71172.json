@@ -1,0 +1,35 @@
+{
+  "id": "tpl-6dc94fd71172",
+  "name": "BaseTemplate",
+  "config": {
+    "name": "BaseAgent",
+    "description": "",
+    "purpose": "",
+    "model": "claude-opus-4-1",
+    "tools": [],
+    "maxTokens": 100000,
+    "temperature": 0.5,
+    "systemPrompt": "",
+    "environment": {},
+    "permissions": [],
+    "timeout": 300000,
+    "retryPolicy": {
+      "maxAttempts": 3,
+      "backoffMs": 1000
+    },
+    "monitoring": {
+      "enabled": true,
+      "logLevel": "info"
+    },
+    "customFields": {}
+  },
+  "metadata": {
+    "created": 1782125114918,
+    "updated": 1782125114918,
+    "author": "test-runner",
+    "description": "",
+    "tags": [],
+    "version": "1.0.0"
+  },
+  "variants": []
+}

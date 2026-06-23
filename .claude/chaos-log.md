@@ -1,6 +1,6 @@
 # Chaos Monkey Resilience Audit Log
 
-Generated: 2026-06-22T04:26:06.668Z | Reference Workspace: `/Users/tushar/Desktop/Claudient`
+Generated: 2026-06-22T10:45:38.040Z | Reference Workspace: `/Users/tushar/Desktop/Claudient`
 Chaos Mode: **Network Latency & Boundary Failures**
 Test Suite Stability: DEGRADED 🔴
 
@@ -27,7 +27,7 @@ CLI Smoke Tests
   ✓ validate-stacks passes
   ✓ rejects unknown category
   ✓ tribunal PR adversarial review
-  ✓ bisect regression finder
+  ✗ bisect regression finder: [31mError during git bisect:[0m fatal: Unable to create '/Users/tushar/Desktop/Claudient/.git/inde
   ✓ oracle impact analysis
   ✓ nightshift daemon
   ✓ caveman token optimizer
@@ -37,13 +37,12 @@ CLI Smoke Tests
   
   ✓ permissions list rules
   ✓ handoff design build loop
-  ✗ tdd stunt double runner: [1m[36m══════════════════════════════════════════════════════════════════════════════════[0m
-  [
+  ✗ tdd stunt double runner: node:internal/modules/cjs/loader:1404
+  throw err;
+  ^
+
+Error: Cannot find module '/Users/tushar/Des
   ✓ enforce spec first compliance
   ✓ sweep codebase audit
-  ✓ documentation sync reference
-  ✓ prophet risk analyzer
-  ✓ ci pipeline generator
-  ✓ incident commander alert triage
-  ✓ 
+  ✓ documentation sync 
 ```

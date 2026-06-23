@@ -1,0 +1,40 @@
+{
+  "id": "var-8ae7f872c60e",
+  "name": "Variant",
+  "config": {
+    "name": "Agent",
+    "description": "",
+    "purpose": "",
+    "model": "claude-opus-4-1",
+    "tools": [],
+    "maxTokens": 100000,
+    "temperature": 0.7,
+    "systemPrompt": "",
+    "environment": {},
+    "permissions": [],
+    "timeout": 300000,
+    "retryPolicy": {
+      "maxAttempts": 3,
+      "backoffMs": 1000
+    },
+    "monitoring": {
+      "enabled": true,
+      "logLevel": "info"
+    },
+    "customFields": {}
+  },
+  "metadata": {
+    "created": 1782125115507,
+    "updated": 1782125115507,
+    "author": "test-runner",
+    "description": "",
+    "tags": [],
+    "version": "1.0.0",
+    "sourceClone": "clone-4e03be3f3aee"
+  },
+  "lineage": {
+    "parent": "clone-4e03be3f3aee",
+    "grandparent": "tpl-7a35bf5b76a6",
+    "branch": "main"
+  }
+}

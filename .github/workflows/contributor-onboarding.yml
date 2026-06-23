@@ -1,0 +1,272 @@
+name: Contributor Onboarding & Rewards
+
+on:
+  pull_request:
+    types: [opened, closed]
+  issues:
+    types: [opened]
+
+jobs:
+  welcome-new-contributor:
+    name: Welcome New Contributors
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request' && github.event.action == 'opened'
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Check if first contribution
+        id: first-contribution
+        run: |
+          AUTHOR=${{ github.event.pull_request.user.login }}
+          PR_COUNT=$(gh pr list --author "$AUTHOR" --state all --json number | jq 'length')
+
+          if [ "$PR_COUNT" -eq 1 ]; then
+            echo "is_first=true" >> $GITHUB_OUTPUT
+          else
+            echo "is_first=false" >> $GITHUB_OUTPUT
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Post welcome comment
+        if: steps.first-contribution.outputs.is_first == 'true'
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const { data: pullRequest } = await github.rest.pulls.get({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.issue.number,
+            });
+
+            const welcomeMessage = `
+Welcome to Claudient! 🎉
+
+Thanks for your first contribution, @${pullRequest.user.login}! We're excited to have you join our community.
+
+### Getting Started
+1. **Read the Contributor Guide**: Check out [CONTRIBUTING.md](https://github.com/Claudient/Claudient/blob/main/CONTRIBUTING.md)
+2. **Join Our Community**: Connect with us on [Discord](https://discord.gg/claudient)
+3. **Track Your Progress**: Run \`npm run contributor-onboarding\` to see your contributor profile
+
+### Contribution Paths
+- 🛠️ **Skill Creator**: Build reusable skills for Claude Code
+- 🤖 **Agent Builder**: Design specialized agents
+- 🌍 **Translator**: Help translate content to French, German, Dutch, Spanish
+- 📚 **Documenter**: Write guides and documentation
+- 🧪 **Tester**: Contribute tests and quality assurance
+- 👀 **Reviewer**: Review PRs and provide feedback
+
+### Swag Rewards 🎁
+Every contribution earns you progress toward exclusive rewards:
+- 🥉 **Bronze**: 1st contribution → Sticker Pack
+- 🥈 **Silver**: 5th contribution → t-shirt + Stickers
+- 🥇 **Gold**: 15th contribution → Limited Edition Items
+- 💎 **Platinum**: 30th contribution → Collector Edition
+- 👑 **Legend**: 100th contribution → All-Star Status
+
+Keep contributing and level up! Questions? Reach out to our maintainers.
+            `;
+
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: welcomeMessage
+            });
+
+  process-merged-pr:
+    name: Process Merged PR & Update Rewards
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Determine PR type
+        id: pr-type
+        run: |
+          LABELS="${{ join(github.event.pull_request.labels.*.name) }}"
+
+          if [[ "$LABELS" == *"type:skill"* ]]; then
+            echo "type=skill" >> $GITHUB_OUTPUT
+          elif [[ "$LABELS" == *"type:agent"* ]]; then
+            echo "type=agent" >> $GITHUB_OUTPUT
+          elif [[ "$LABELS" == *"type:translation"* ]]; then
+            echo "type=translation" >> $GITHUB_OUTPUT
+          elif [[ "$LABELS" == *"type:guide"* ]]; then
+            echo "type=guide" >> $GITHUB_OUTPUT
+          elif [[ "$LABELS" == *"type:test"* ]]; then
+            echo "type=test" >> $GITHUB_OUTPUT
+          else
+            echo "type=other" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Process contribution and update rewards
+        run: |
+          node scripts/process-contributor-rewards.js \
+            --github-handle ${{ github.event.pull_request.user.login }} \
+            --pr-number ${{ github.event.pull_request.number }} \
+            --merged true \
+            --type ${{ steps.pr-type.outputs.type }}
+
+      - name: Check for tier promotion
+        id: check-tier
+        run: |
+          STATS=$(node scripts/process-contributor-rewards.js --stats ${{ github.event.pull_request.user.login }} 2>/dev/null || echo "{}")
+          echo "stats=$STATS" >> $GITHUB_OUTPUT
+
+      - name: Post contribution celebration comment
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const author = '${{ github.event.pull_request.user.login }}';
+            const prNumber = ${{ github.event.pull_request.number }};
+
+            let message = `
+Great work, @${author}! ✨
+
+Your contribution has been recorded and you're on your way to earning exclusive Claudient swag!
+
+**Progress Update:**
+- Type: \`${{ steps.pr-type.outputs.type }}\`
+- PR: #${prNumber}
+
+Keep up the awesome contributions! 🚀
+            `;
+
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: message
+            });
+
+  monthly-leaderboard:
+    name: Generate Monthly Leaderboard
+    runs-on: ubuntu-latest
+    # Run on the first day of each month at midnight UTC
+    if: ${{ github.event_name == 'schedule' }}
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Generate monthly report
+        run: |
+          MONTH=$(date -u +%Y-%m)
+          node scripts/process-contributor-rewards.js --generate-report --month $MONTH
+
+      - name: Upload report
+        uses: actions/upload-artifact@v3
+        with:
+          name: contributor-report-${{ github.run_id }}
+          path: .claude/contributors/reports/
+
+      - name: Post leaderboard to discussions
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const fs = require('fs');
+            const month = new Date().toISOString().slice(0, 7);
+            const reportPath = `.claude/contributors/reports/report-${month}.json`;
+
+            if (fs.existsSync(reportPath)) {
+              const report = JSON.parse(fs.readFileSync(reportPath, 'utf8'));
+
+              const leaderboardMessage = `
+## 🏆 Contributor Leaderboard - ${month}
+
+### Top Contributors
+${report.summary.topContributors.map((c, i) =>
+  `${i + 1}. **@${c.handle}** - ${c.contributions} contributions (${c.tier})`
+).join('\n')}
+
+### New Members
+Welcome to our newest contributors! 👋
+${report.summary.newContributors.map(h => `- @${h}`).join('\n')}
+
+### Tier Distribution
+- Bronze: ${report.summary.tierDistribution.bronze || 0}
+- Silver: ${report.summary.tierDistribution.silver || 0}
+- Gold: ${report.summary.tierDistribution.gold || 0}
+- Platinum: ${report.summary.tierDistribution.platinum || 0}
+- Legend: ${report.summary.tierDistribution.legend || 0}
+
+${report.summary.tierPromotions.length > 0 ? `### 🎉 Tier Promotions\n${report.summary.tierPromotions.map(p => `- @${p.handle} advanced to ${p.promotions[0].tier}`).join('\n')}` : ''}
+              `;
+
+              // Post to discussions or create issue
+              github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: `📊 Contributor Leaderboard - ${month}`,
+                body: leaderboardMessage,
+                labels: ['leaderboard', 'monthly-report'],
+              });
+            }
+
+  assign-mentor:
+    name: Assign Mentor to New Contributors
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request' && github.event.action == 'opened'
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Determine contributor roles
+        id: roles
+        run: |
+          LABELS="${{ join(github.event.pull_request.labels.*.name) }}"
+
+          if [[ "$LABELS" == *"type:skill"* ]] || [[ "$LABELS" == *"type:agent"* ]]; then
+            echo "roles=skill-creator,agent-builder" >> $GITHUB_OUTPUT
+          else
+            echo "roles=documenter,reviewer" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Check if first contribution and assign mentor
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const { data: pullRequests } = await github.rest.pulls.list({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              creator: '${{ github.event.pull_request.user.login }}',
+              state: 'all',
+            });
+
+            if (pullRequests.length === 1) {
+              const mentors = {
+                'skill-creator': 'tushar2704',
+                'agent-builder': 'tushar2704',
+                'documenter': 'tushar2704',
+                'translator': 'tushar2704',
+                'tester': 'tushar2704',
+              };
+
+              const roles = '${{ steps.roles.outputs.roles }}'.split(',');
+              const mentor = mentors[roles[0]] || 'tushar2704';
+
+              github.rest.issues.addAssignees({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                assignees: [mentor],
+              });
+
+              const comment = `@${mentor} - This is a first-time contribution. Could you please review and mentor @${{ github.event.pull_request.user.login }}? Thanks! 🙏`;
+
+              github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body: comment,
+              });
+            }

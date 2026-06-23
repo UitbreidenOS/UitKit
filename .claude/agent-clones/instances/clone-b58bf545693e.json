@@ -1,0 +1,41 @@
+{
+  "id": "clone-b58bf545693e",
+  "name": "Clone2",
+  "config": {
+    "name": "Agent",
+    "description": "",
+    "purpose": "",
+    "model": "claude-opus-4-1",
+    "tools": [],
+    "maxTokens": 100000,
+    "temperature": 0.7,
+    "systemPrompt": "",
+    "environment": {},
+    "permissions": [],
+    "timeout": 300000,
+    "retryPolicy": {
+      "maxAttempts": 3,
+      "backoffMs": 1000
+    },
+    "monitoring": {
+      "enabled": true,
+      "logLevel": "info"
+    },
+    "customFields": {}
+  },
+  "metadata": {
+    "created": 1782124565805,
+    "updated": 1782124565805,
+    "author": "test-runner",
+    "description": "",
+    "tags": [],
+    "version": "1.0.0",
+    "parentTemplate": "tpl-d1a41c965966"
+  },
+  "lineage": {
+    "parent": "tpl-d1a41c965966",
+    "baseTemplate": "1.0.0",
+    "branch": "main"
+  },
+  "overrides": []
+}

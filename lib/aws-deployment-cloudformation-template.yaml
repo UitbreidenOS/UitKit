@@ -1,0 +1,562 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'Claudient AWS Deployment Stack - Complete Infrastructure as Code'
+
+Parameters:
+  Environment:
+    Type: String
+    Default: production
+    AllowedValues: [development, staging, production]
+    Description: Deployment environment
+
+  SkillsBucketName:
+    Type: String
+    Default: claudient-skills-storage
+    Description: S3 bucket name for skills storage
+
+  StateTableName:
+    Type: String
+    Default: claudient-deployment-state
+    Description: DynamoDB table name for state management
+
+  LambdaFunctionName:
+    Type: String
+    Default: claudient-dont-stop-task
+    Description: Lambda function name for dont-stop tasks
+
+  ECSClusterName:
+    Type: String
+    Default: claudient-ecs-cluster
+    Description: ECS cluster name
+
+  VPCCIDRBlock:
+    Type: String
+    Default: 10.0.0.0/16
+    Description: VPC CIDR block
+
+  PrivateSubnet1CIDR:
+    Type: String
+    Default: 10.0.1.0/24
+    Description: Private subnet 1 CIDR
+
+  PrivateSubnet2CIDR:
+    Type: String
+    Default: 10.0.2.0/24
+    Description: Private subnet 2 CIDR
+
+  PublicSubnet1CIDR:
+    Type: String
+    Default: 10.0.100.0/24
+    Description: Public subnet 1 CIDR
+
+  PublicSubnet2CIDR:
+    Type: String
+    Default: 10.0.101.0/24
+    Description: Public subnet 2 CIDR
+
+Mappings:
+  RegionMap:
+    us-east-1:
+      AMI: ami-0c55b159cbfafe1f0
+    us-west-2:
+      AMI: ami-0d1cd67c26f5fca19
+    eu-west-1:
+      AMI: ami-0d2a4a5d69e46ea0b
+
+Resources:
+  # ============ VPC and Networking ============
+  ClaudientVPC:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: !Ref VPCCIDRBlock
+      EnableDnsHostnames: true
+      EnableDnsSupport: true
+      Tags:
+        - Key: Name
+          Value: claudient-vpc
+        - Key: Environment
+          Value: !Ref Environment
+
+  PublicSubnet1:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref ClaudientVPC
+      CidrBlock: !Ref PublicSubnet1CIDR
+      AvailabilityZone: !Select [0, !GetAZs '']
+      MapPublicIpOnLaunch: true
+      Tags:
+        - Key: Name
+          Value: claudient-public-subnet-1
+
+  PublicSubnet2:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref ClaudientVPC
+      CidrBlock: !Ref PublicSubnet2CIDR
+      AvailabilityZone: !Select [1, !GetAZs '']
+      MapPublicIpOnLaunch: true
+      Tags:
+        - Key: Name
+          Value: claudient-public-subnet-2
+
+  PrivateSubnet1:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref ClaudientVPC
+      CidrBlock: !Ref PrivateSubnet1CIDR
+      AvailabilityZone: !Select [0, !GetAZs '']
+      Tags:
+        - Key: Name
+          Value: claudient-private-subnet-1
+
+  PrivateSubnet2:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref ClaudientVPC
+      CidrBlock: !Ref PrivateSubnet2CIDR
+      AvailabilityZone: !Select [1, !GetAZs '']
+      Tags:
+        - Key: Name
+          Value: claudient-private-subnet-2
+
+  InternetGateway:
+    Type: AWS::EC2::InternetGateway
+    Properties:
+      Tags:
+        - Key: Name
+          Value: claudient-igw
+
+  AttachGateway:
+    Type: AWS::EC2::VPCGatewayAttachment
+    Properties:
+      VpcId: !Ref ClaudientVPC
+      InternetGatewayId: !Ref InternetGateway
+
+  PublicRouteTable:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId: !Ref ClaudientVPC
+      Tags:
+        - Key: Name
+          Value: claudient-public-rt
+
+  PublicRoute:
+    Type: AWS::EC2::Route
+    DependsOn: AttachGateway
+    Properties:
+      RouteTableId: !Ref PublicRouteTable
+      DestinationCidrBlock: 0.0.0.0/0
+      GatewayId: !Ref InternetGateway
+
+  PublicSubnet1RouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref PublicSubnet1
+      RouteTableId: !Ref PublicRouteTable
+
+  PublicSubnet2RouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      SubnetId: !Ref PublicSubnet2
+      RouteTableId: !Ref PublicRouteTable
+
+  # ============ Security Groups ============
+  ALBSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Security group for ALB
+      VpcId: !Ref ClaudientVPC
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 80
+          ToPort: 80
+          CidrIp: 0.0.0.0/0
+        - IpProtocol: tcp
+          FromPort: 443
+          ToPort: 443
+          CidrIp: 0.0.0.0/0
+      Tags:
+        - Key: Name
+          Value: claudient-alb-sg
+
+  ECSSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Security group for ECS tasks
+      VpcId: !Ref ClaudientVPC
+      SecurityGroupIngress:
+        - IpProtocol: tcp
+          FromPort: 3000
+          ToPort: 3000
+          SourceSecurityGroupId: !Ref ALBSecurityGroup
+      Tags:
+        - Key: Name
+          Value: claudient-ecs-sg
+
+  # ============ S3 Bucket for Skills Storage ============
+  SkillsStorageBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Sub '${SkillsBucketName}-${AWS::AccountId}'
+      VersioningConfiguration:
+        Status: Enabled
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      Tags:
+        - Key: Name
+          Value: claudient-skills
+        - Key: Environment
+          Value: !Ref Environment
+
+  SkillsStorageBucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref SkillsStorageBucket
+      PolicyText:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action:
+              - s3:GetObject
+              - s3:ListBucket
+            Resource:
+              - !GetAtt SkillsStorageBucket.Arn
+              - !Sub '${SkillsStorageBucket.Arn}/*'
+
+  SkillsStorageLifecyclePolicy:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Ref SkillsStorageBucket
+      LifecycleConfiguration:
+        Rules:
+          - Id: TransitionToGlacier
+            Status: Enabled
+            Transitions:
+              - StorageClass: GLACIER
+                TransitionInDays: 90
+              - StorageClass: DEEP_ARCHIVE
+                TransitionInDays: 365
+            ExpirationInDays: 2555
+
+  # ============ DynamoDB Table for State Management ============
+  DeploymentStateTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: !Ref StateTableName
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: deploymentId
+          AttributeType: S
+        - AttributeName: timestamp
+          AttributeType: N
+        - AttributeName: status
+          AttributeType: S
+      KeySchema:
+        - AttributeName: deploymentId
+          KeyType: HASH
+        - AttributeName: timestamp
+          KeyType: RANGE
+      GlobalSecondaryIndexes:
+        - IndexName: StatusIndex
+          KeySchema:
+            - AttributeName: status
+              KeyType: HASH
+            - AttributeName: timestamp
+              KeyType: RANGE
+          Projection:
+            ProjectionType: ALL
+      StreamSpecification:
+        StreamViewType: NEW_AND_OLD_IMAGES
+      TimeToLiveSpecification:
+        AttributeName: expirationTime
+        Enabled: true
+      Tags:
+        - Key: Name
+          Value: claudient-state
+        - Key: Environment
+          Value: !Ref Environment
+
+  # ============ IAM Roles ============
+  LambdaExecutionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+      Policies:
+        - PolicyName: ClaudientS3DynamoDBAccess
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - s3:GetObject
+                  - s3:ListBucket
+                Resource:
+                  - !GetAtt SkillsStorageBucket.Arn
+                  - !Sub '${SkillsStorageBucket.Arn}/*'
+              - Effect: Allow
+                Action:
+                  - dynamodb:GetItem
+                  - dynamodb:PutItem
+                  - dynamodb:UpdateItem
+                  - dynamodb:Query
+                  - dynamodb:Scan
+                Resource: !GetAtt DeploymentStateTable.Arn
+
+  ECSTaskExecutionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: ecs-tasks.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AmazonECSTaskExecutionRolePolicy
+
+  ECSTaskRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: ecs-tasks.amazonaws.com
+            Action: sts:AssumeRole
+      Policies:
+        - PolicyName: ClaudientS3DynamoDBAccess
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - s3:GetObject
+                  - s3:ListBucket
+                Resource:
+                  - !GetAtt SkillsStorageBucket.Arn
+                  - !Sub '${SkillsStorageBucket.Arn}/*'
+              - Effect: Allow
+                Action:
+                  - dynamodb:GetItem
+                  - dynamodb:PutItem
+                  - dynamodb:UpdateItem
+                Resource: !GetAtt DeploymentStateTable.Arn
+
+  # ============ Lambda Function ============
+  DontStopTaskFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: !Ref LambdaFunctionName
+      Runtime: nodejs18.x
+      Handler: index.handler
+      Role: !GetAtt LambdaExecutionRole.Arn
+      Timeout: 300
+      MemorySize: 256
+      EphemeralStorage:
+        Size: 512
+      Environment:
+        Variables:
+          SKILLS_BUCKET: !Ref SkillsStorageBucket
+          STATE_TABLE: !Ref DeploymentStateTable
+          ENVIRONMENT: !Ref Environment
+      Code:
+        ZipFile: |
+          exports.handler = async (event) => {
+            console.log('Claudient dont-stop task triggered');
+            console.log('Event:', JSON.stringify(event, null, 2));
+
+            return {
+              statusCode: 200,
+              body: JSON.stringify({
+                message: 'Claudient dont-stop task executed successfully',
+                timestamp: new Date().toISOString(),
+              }),
+            };
+          };
+      Tags:
+        - Key: Name
+          Value: claudient-dont-stop
+        - Key: Environment
+          Value: !Ref Environment
+
+  # ============ EventBridge Rule ============
+  DontStopTaskScheduleRule:
+    Type: AWS::Events::Rule
+    Properties:
+      Name: claudient-dont-stop-schedule
+      Description: Trigger Claudient dont-stop task every 5 minutes
+      ScheduleExpression: rate(5 minutes)
+      State: ENABLED
+      Targets:
+        - Arn: !GetAtt DontStopTaskFunction.Arn
+          Id: ClaudientDontStopTarget
+          RetryPolicy:
+            MaximumEventAge: 3600
+            MaximumRetryAttempts: 2
+
+  LambdaInvokePermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      FunctionName: !Ref DontStopTaskFunction
+      Action: lambda:InvokeFunction
+      Principal: events.amazonaws.com
+      SourceArn: !GetAtt DontStopTaskScheduleRule.Arn
+
+  # ============ ECS Cluster ============
+  ECSCluster:
+    Type: AWS::ECS::Cluster
+    Properties:
+      ClusterName: !Ref ECSClusterName
+      ClusterSettings:
+        - Name: containerInsights
+          Value: enabled
+      Tags:
+        - Key: Name
+          Value: claudient-cluster
+        - Key: Environment
+          Value: !Ref Environment
+
+  # ============ CloudWatch Log Groups ============
+  LambdaLogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: !Sub '/aws/lambda/${LambdaFunctionName}'
+      RetentionInDays: 30
+
+  ECSLogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: !Sub '/ecs/claudient/${ECSClusterName}'
+      RetentionInDays: 7
+
+  # ============ CloudWatch Alarms ============
+  LambdaErrorAlarm:
+    Type: AWS::CloudWatch::Alarm
+    Properties:
+      AlarmName: claudient-lambda-errors
+      AlarmDescription: Alert when Lambda function has errors
+      MetricName: Errors
+      Namespace: AWS/Lambda
+      Statistic: Sum
+      Period: 300
+      EvaluationPeriods: 1
+      Threshold: 5
+      ComparisonOperator: GreaterThanThreshold
+      Dimensions:
+        - Name: FunctionName
+          Value: !Ref DontStopTaskFunction
+      TreatMissingData: notBreaching
+
+  DynamoDBThrottleAlarm:
+    Type: AWS::CloudWatch::Alarm
+    Properties:
+      AlarmName: claudient-dynamodb-throttle
+      AlarmDescription: Alert when DynamoDB is being throttled
+      MetricName: UserErrors
+      Namespace: AWS/DynamoDB
+      Statistic: Sum
+      Period: 300
+      EvaluationPeriods: 1
+      Threshold: 1
+      ComparisonOperator: GreaterThanOrEqualToThreshold
+      Dimensions:
+        - Name: TableName
+          Value: !Ref DeploymentStateTable
+      TreatMissingData: notBreaching
+
+Outputs:
+  VPCId:
+    Description: VPC ID
+    Value: !Ref ClaudientVPC
+    Export:
+      Name: !Sub '${AWS::StackName}-VPC-ID'
+
+  PrivateSubnet1Id:
+    Description: Private Subnet 1 ID
+    Value: !Ref PrivateSubnet1
+    Export:
+      Name: !Sub '${AWS::StackName}-PrivateSubnet1'
+
+  PrivateSubnet2Id:
+    Description: Private Subnet 2 ID
+    Value: !Ref PrivateSubnet2
+    Export:
+      Name: !Sub '${AWS::StackName}-PrivateSubnet2'
+
+  PublicSubnet1Id:
+    Description: Public Subnet 1 ID
+    Value: !Ref PublicSubnet1
+    Export:
+      Name: !Sub '${AWS::StackName}-PublicSubnet1'
+
+  PublicSubnet2Id:
+    Description: Public Subnet 2 ID
+    Value: !Ref PublicSubnet2
+    Export:
+      Name: !Sub '${AWS::StackName}-PublicSubnet2'
+
+  SkillsBucketName:
+    Description: S3 Skills Storage Bucket Name
+    Value: !Ref SkillsStorageBucket
+    Export:
+      Name: !Sub '${AWS::StackName}-Skills-Bucket'
+
+  SkillsBucketArn:
+    Description: S3 Skills Storage Bucket ARN
+    Value: !GetAtt SkillsStorageBucket.Arn
+    Export:
+      Name: !Sub '${AWS::StackName}-Skills-Bucket-ARN'
+
+  DeploymentStateTableName:
+    Description: DynamoDB Deployment State Table Name
+    Value: !Ref DeploymentStateTable
+    Export:
+      Name: !Sub '${AWS::StackName}-State-Table'
+
+  DeploymentStateTableArn:
+    Description: DynamoDB Deployment State Table ARN
+    Value: !GetAtt DeploymentStateTable.Arn
+    Export:
+      Name: !Sub '${AWS::StackName}-State-Table-ARN'
+
+  LambdaFunctionArn:
+    Description: Lambda Function ARN
+    Value: !GetAtt DontStopTaskFunction.Arn
+    Export:
+      Name: !Sub '${AWS::StackName}-Lambda-Function-ARN'
+
+  ECSClusterArn:
+    Description: ECS Cluster ARN
+    Value: !GetAtt ECSCluster.Arn
+    Export:
+      Name: !Sub '${AWS::StackName}-ECS-Cluster-ARN'
+
+  LambdaExecutionRoleArn:
+    Description: Lambda Execution Role ARN
+    Value: !GetAtt LambdaExecutionRole.Arn
+    Export:
+      Name: !Sub '${AWS::StackName}-Lambda-Role-ARN'
+
+  ECSTaskRoleArn:
+    Description: ECS Task Role ARN
+    Value: !GetAtt ECSTaskRole.Arn
+    Export:
+      Name: !Sub '${AWS::StackName}-ECS-Task-Role-ARN'

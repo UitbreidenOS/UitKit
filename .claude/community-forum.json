@@ -1,0 +1,217 @@
+{
+  "schemaVersion": 1,
+  "posts": [
+    {
+      "id": "fea7036f141139e8",
+      "userId": "bob",
+      "userName": "Bob Junior",
+      "category": "questions",
+      "title": "How to handle state in React?",
+      "content": "I am confused about useState vs useContext",
+      "tags": [
+        "react",
+        "state"
+      ],
+      "replies": [
+        {
+          "id": "b74c46ad30f0f0d0",
+          "userId": "alice",
+          "userName": "Alice Dev",
+          "content": "useState is for component-level state, useContext for shared state",
+          "upvotes": 2,
+          "upvoters": [
+            "bob",
+            "charlie"
+          ],
+          "accepted": true,
+          "createdAt": "2026-06-22T10:44:46.674Z",
+          "updatedAt": "2026-06-22T10:44:46.674Z"
+        },
+        {
+          "id": "b825087b97bf5187",
+          "userId": "charlie",
+          "userName": "Charlie DevOps",
+          "content": "Consider Redux for complex apps",
+          "upvotes": 0,
+          "upvoters": [],
+          "accepted": false,
+          "createdAt": "2026-06-22T10:44:46.674Z",
+          "updatedAt": "2026-06-22T10:44:46.674Z"
+        }
+      ],
+      "upvotes": 0,
+      "upvoters": [],
+      "helpful": 0,
+      "helpfulMarkers": [],
+      "createdAt": "2026-06-22T10:44:46.674Z",
+      "updatedAt": "2026-06-22T10:44:46.674Z",
+      "views": 0
+    },
+    {
+      "id": "5ea9adfacca71bb0",
+      "userId": "charlie",
+      "userName": "Charlie DevOps",
+      "category": "skills-showcase",
+      "title": "Deploying Node.js to Kubernetes",
+      "content": "Here are best practices...",
+      "tags": [
+        "devops",
+        "k8s"
+      ],
+      "replies": [],
+      "upvotes": 0,
+      "upvoters": [],
+      "helpful": 0,
+      "helpfulMarkers": [],
+      "createdAt": "2026-06-22T10:44:46.676Z",
+      "updatedAt": "2026-06-22T10:44:46.676Z",
+      "views": 0
+    },
+    {
+      "id": "21ad28c40c773b38",
+      "userId": "alice",
+      "userName": "Alice Dev",
+      "category": "feature-requests",
+      "title": "Add real-time collaboration",
+      "content": "Would be great for team projects",
+      "tags": [],
+      "replies": [],
+      "upvotes": 0,
+      "upvoters": [],
+      "helpful": 0,
+      "helpfulMarkers": [],
+      "createdAt": "2026-06-22T10:44:46.677Z",
+      "updatedAt": "2026-06-22T10:44:46.677Z",
+      "views": 0
+    },
+    {
+      "id": "28b804421f052992",
+      "userId": "bob",
+      "userName": "Bob Junior",
+      "category": "bug-reports",
+      "title": "Performance degradation on large lists",
+      "content": "App slows down with 10k+ items",
+      "tags": [],
+      "replies": [],
+      "upvotes": 2,
+      "upvoters": [
+        "alice",
+        "charlie"
+      ],
+      "helpful": 0,
+      "helpfulMarkers": [],
+      "createdAt": "2026-06-22T10:44:46.678Z",
+      "updatedAt": "2026-06-22T10:44:46.678Z",
+      "views": 0
+    }
+  ],
+  "users": {
+    "alice": {
+      "id": "alice",
+      "name": "Alice Dev",
+      "avatar": null,
+      "bio": "Senior Engineer",
+      "joinedAt": "2026-06-22T10:44:46.673Z",
+      "reputation": 94,
+      "postCount": 1,
+      "replyCount": 1,
+      "badges": [
+        "first-post"
+      ],
+      "badges_earned": [
+        {
+          "type": "first-post",
+          "label": "First Post",
+          "awardedAt": "2026-06-22T10:44:46.677Z"
+        }
+      ],
+      "followers": [],
+      "following": []
+    },
+    "bob": {
+      "id": "bob",
+      "name": "Bob Junior",
+      "avatar": null,
+      "bio": "Learning React",
+      "joinedAt": "2026-06-22T10:44:46.674Z",
+      "reputation": 76,
+      "postCount": 2,
+      "replyCount": 0,
+      "badges": [
+        "first-post"
+      ],
+      "badges_earned": [
+        {
+          "type": "first-post",
+          "label": "First Post",
+          "awardedAt": "2026-06-22T10:44:46.674Z"
+        }
+      ],
+      "followers": [],
+      "following": []
+    },
+    "charlie": {
+      "id": "charlie",
+      "name": "Charlie DevOps",
+      "avatar": null,
+      "bio": "Infrastructure",
+      "joinedAt": "2026-06-22T10:44:46.674Z",
+      "reputation": 65,
+      "postCount": 1,
+      "replyCount": 1,
+      "badges": [
+        "first-post"
+      ],
+      "badges_earned": [
+        {
+          "type": "first-post",
+          "label": "First Post",
+          "awardedAt": "2026-06-22T10:44:46.676Z"
+        }
+      ],
+      "followers": [],
+      "following": []
+    }
+  },
+  "badges": {
+    "first-post": {
+      "type": "first-post",
+      "label": "First Post",
+      "holders": [
+        "bob",
+        "charlie",
+        "alice"
+      ]
+    }
+  },
+  "leaderboard": [
+    {
+      "userId": "alice",
+      "name": "Alice Dev",
+      "reputation": 94,
+      "postCount": 1,
+      "replyCount": 1,
+      "badgeCount": 1,
+      "joinedAt": "2026-06-22T10:44:46.673Z"
+    },
+    {
+      "userId": "bob",
+      "name": "Bob Junior",
+      "reputation": 76,
+      "postCount": 2,
+      "replyCount": 0,
+      "badgeCount": 1,
+      "joinedAt": "2026-06-22T10:44:46.674Z"
+    },
+    {
+      "userId": "charlie",
+      "name": "Charlie DevOps",
+      "reputation": 65,
+      "postCount": 1,
+      "replyCount": 1,
+      "badgeCount": 1,
+      "joinedAt": "2026-06-22T10:44:46.674Z"
+    }
+  ],
+  "timestamp": "2026-06-22T10:44:46.679Z"
+}

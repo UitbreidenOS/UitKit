@@ -1,0 +1,43 @@
+{
+  "id": "var-4efc5e5dd5d5",
+  "name": "SecurityBot-Conservative",
+  "config": {
+    "name": "SecurityAgent",
+    "description": "",
+    "purpose": "",
+    "model": "claude-opus-4-1",
+    "tools": [
+      "code-analyzer",
+      "vulnerability-scanner"
+    ],
+    "maxTokens": 120000,
+    "temperature": 0.1,
+    "systemPrompt": "",
+    "environment": {},
+    "permissions": [],
+    "timeout": 300000,
+    "retryPolicy": {
+      "maxAttempts": 3,
+      "backoffMs": 1000
+    },
+    "monitoring": {
+      "enabled": true,
+      "logLevel": "info"
+    },
+    "customFields": {}
+  },
+  "metadata": {
+    "created": 1782125116069,
+    "updated": 1782125116069,
+    "author": "bob",
+    "description": "",
+    "tags": [],
+    "version": "1.0.0",
+    "sourceClone": "clone-35be6b03cc8a"
+  },
+  "lineage": {
+    "parent": "clone-35be6b03cc8a",
+    "grandparent": "tpl-4a18a670c777",
+    "branch": "main"
+  }
+}

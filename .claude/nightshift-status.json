@@ -1,12 +1,12 @@
 {
-  "timestamp": "2026-06-22T04:26:13.819Z",
+  "timestamp": "2026-06-22T10:46:04.623Z",
   "allSuccessful": true,
   "results": [
     {
       "task": "Verify frontmatter formatting",
       "command": "node scripts/validate-frontmatter.js",
       "success": true,
-      "output": "Validating skill files...\nValidating agent files...\nValidating hook files...\n\nChecked 719 files.\nAll files pass format validation.\n",
+      "output": "Validating skill files...\nValidating agent files...\nValidating hook files...\n\nChecked 720 files.\nAll files pass format validation.\n",
       "attempts": 1
     },
     {
@@ -20,7 +20,7 @@
       "task": "Build project index",
       "command": "node scripts/build-index.js",
       "success": true,
-      "output": "Generated index.json — 438 skills, 207 agents, 58 hooks, 82 structures, 20 plugins, 100 commands, 10 personas, 15 themes, 8 output-styles\n",
+      "output": "Generated index.json — 438 skills, 207 agents, 58 hooks, 82 structures, 20 plugins, 100 commands, 10 personas, 16 themes, 8 output-styles\n",
       "attempts": 1
     },
     {

@@ -1,0 +1,498 @@
+# GCP Deployment Terraform Configuration Template
+# This template provides production-ready infrastructure as code for GCP deployments
+
+terraform {
+  required_version = ">= 1.0"
+  required_providers {
+    google = {
+      source  = "hashicorp/google"
+      version = "~> 5.0"
+    }
+    google-beta = {
+      source  = "hashicorp/google-beta"
+      version = "~> 5.0"
+    }
+  }
+
+  backend "gcs" {
+    bucket = "terraform-state-bucket"
+    prefix = "gcp-deployment"
+  }
+}
+
+provider "google" {
+  project = var.gcp_project_id
+  region  = var.gcp_region
+}
+
+provider "google-beta" {
+  project = var.gcp_project_id
+  region  = var.gcp_region
+}
+
+# ============ Variables ============
+
+variable "gcp_project_id" {
+  type        = string
+  description = "GCP Project ID"
+}
+
+variable "gcp_region" {
+  type        = string
+  default     = "us-central1"
+  description = "Primary GCP region"
+}
+
+variable "gcp_zone" {
+  type        = string
+  default     = "us-central1-a"
+  description = "Primary GCP zone"
+}
+
+variable "environment" {
+  type        = string
+  default     = "production"
+  description = "Environment name"
+}
+
+variable "app_name" {
+  type        = string
+  description = "Application name"
+}
+
+# ============ Cloud Run Services ============
+
+resource "google_cloud_run_service" "api_backend" {
+  name     = "${var.app_name}-api-backend"
+  location = var.gcp_region
+
+  template {
+    spec {
+      containers {
+        image = "gcr.io/${var.gcp_project_id}/api-backend:latest"
+
+        resources {
+          limits = {
+            cpu    = "2"
+            memory = "1Gi"
+          }
+        }
+
+        env {
+          name  = "ENVIRONMENT"
+          value = var.environment
+        }
+
+        env {
+          name  = "FIRESTORE_COLLECTION"
+          value = "users"
+        }
+
+        env {
+          name  = "CLOUD_STORAGE_BUCKET"
+          value = google_storage_bucket.app_data.name
+        }
+      }
+
+      service_account_email = google_service_account.cloud_run_service.email
+      timeout_seconds       = 3600
+      concurrency          = 80
+    }
+
+    metadata {
+      annotations = {
+        "autoscaling.knative.dev/minScale" = "2"
+        "autoscaling.knative.dev/maxScale" = "50"
+      }
+    }
+  }
+
+  traffic {
+    percent         = 100
+    latest_revision = true
+  }
+
+  depends_on = [google_project_service.required_apis]
+}
+
+resource "google_cloud_run_service" "frontend_ui" {
+  name     = "${var.app_name}-frontend"
+  location = var.gcp_region
+
+  template {
+    spec {
+      containers {
+        image = "gcr.io/${var.gcp_project_id}/frontend:latest"
+
+        resources {
+          limits = {
+            cpu    = "1"
+            memory = "512Mi"
+          }
+        }
+
+        env {
+          name  = "REACT_APP_API_URL"
+          value = google_cloud_run_service.api_backend.status[0].url
+        }
+
+        env {
+          name  = "REACT_APP_ENV"
+          value = var.environment
+        }
+      }
+
+      service_account_email = google_service_account.cloud_run_service.email
+    }
+
+    metadata {
+      annotations = {
+        "autoscaling.knative.dev/minScale" = "1"
+        "autoscaling.knative.dev/maxScale" = "30"
+      }
+    }
+  }
+
+  traffic {
+    percent         = 100
+    latest_revision = true
+  }
+
+  depends_on = [google_project_service.required_apis]
+}
+
+resource "google_cloud_run_service_iam_member" "frontend_public" {
+  service  = google_cloud_run_service.frontend_ui.name
+  location = google_cloud_run_service.frontend_ui.location
+  role     = "roles/run.invoker"
+  member   = "allUsers"
+}
+
+# ============ Compute Engine Instances ============
+
+resource "google_compute_instance" "background_worker" {
+  count        = 3
+  name         = "${var.app_name}-worker-${count.index + 1}"
+  machine_type = "e2-medium"
+  zone         = var.gcp_zone
+
+  boot_disk {
+    initialize_params {
+      image = "debian-11"
+      size  = 50
+    }
+  }
+
+  service_account {
+    email  = google_service_account.compute_engine_service.email
+    scopes = ["cloud-platform"]
+  }
+
+  metadata_startup_script = file("${path.module}/startup-scripts/worker-startup.sh")
+
+  tags = ["worker", "internal"]
+
+  labels = {
+    role        = "background-processor"
+    environment = var.environment
+  }
+
+  preemptible = true
+  automatic_restart = false
+
+  scheduling {
+    automatic_restart = false
+  }
+
+  depends_on = [google_project_service.required_apis]
+}
+
+resource "google_compute_instance" "redis_cache" {
+  name         = "${var.app_name}-redis-cache"
+  machine_type = "e2-highcpu-4"
+  zone         = var.gcp_zone
+
+  boot_disk {
+    initialize_params {
+      image = "debian-11"
+      size  = 100
+    }
+  }
+
+  service_account {
+    email  = google_service_account.compute_engine_service.email
+    scopes = ["cloud-platform"]
+  }
+
+  metadata_startup_script = file("${path.module}/startup-scripts/redis-startup.sh")
+
+  tags = ["cache", "internal"]
+
+  labels = {
+    role    = "cache"
+    service = "redis"
+  }
+
+  depends_on = [google_project_service.required_apis]
+}
+
+# ============ Cloud Storage Buckets ============
+
+resource "google_storage_bucket" "app_data" {
+  name          = "${var.gcp_project_id}-app-data"
+  location      = "US"
+  storage_class = "STANDARD"
+  force_destroy = false
+
+  uniform_bucket_level_access = true
+
+  versioning {
+    enabled = true
+  }
+
+  lifecycle_rule {
+    condition {
+      age = 90
+    }
+    action {
+      type = "Delete"
+    }
+  }
+
+  lifecycle_rule {
+    condition {
+      age = 30
+    }
+    action {
+      type          = "SetStorageClass"
+      storage_class = "COLDLINE"
+    }
+  }
+
+  cors {
+    origin          = ["https://*"]
+    method          = ["GET", "PUT", "POST"]
+    response_header = ["Content-Type"]
+    max_age_seconds = 3600
+  }
+
+  labels = {
+    environment = var.environment
+  }
+
+  depends_on = [google_project_service.required_apis]
+}
+
+resource "google_storage_bucket" "app_backups" {
+  name          = "${var.gcp_project_id}-app-backups"
+  location      = "US"
+  storage_class = "COLDLINE"
+  force_destroy = false
+
+  uniform_bucket_level_access = true
+
+  versioning {
+    enabled = true
+  }
+
+  lifecycle_rule {
+    condition {
+      age = 365
+    }
+    action {
+      type = "Delete"
+    }
+  }
+
+  labels = {
+    environment = var.environment
+  }
+
+  depends_on = [google_project_service.required_apis]
+}
+
+# ============ Firestore Database ============
+
+resource "google_firestore_database" "main" {
+  provider                = google-beta
+  name                    = "(default)"
+  location_id             = var.gcp_region
+  type                    = "FIRESTORE_NATIVE"
+  concurrency_mode        = "OPTIMISTIC"
+  point_in_time_recovery_enablement = "POINT_IN_TIME_RECOVERY_ENABLED"
+
+  delete_protection_state = "DELETE_PROTECTION_ENABLED"
+
+  depends_on = [google_project_service.required_apis]
+}
+
+# ============ Firestore Security Rules ============
+
+resource "google_firebaserules_ruleset" "firestore_rules" {
+  provider = google-beta
+  source {
+    files {
+      name    = "firestore.rules"
+      content = file("${path.module}/firestore-rules.txt")
+    }
+  }
+
+  depends_on = [google_firestore_database.main]
+}
+
+resource "google_firebaserules_release" "firestore_release" {
+  provider     = google-beta
+  name         = "cloud.firestore"
+  ruleset_name = google_firebaserules_ruleset.firestore_rules.name
+  project      = var.gcp_project_id
+
+  lifecycle {
+    ignore_changes = [ruleset_name]
+  }
+}
+
+# ============ Service Accounts ============
+
+resource "google_service_account" "cloud_run_service" {
+  account_id   = "${var.app_name}-cloud-run"
+  display_name = "Cloud Run Service Account"
+}
+
+resource "google_service_account" "compute_engine_service" {
+  account_id   = "${var.app_name}-compute-engine"
+  display_name = "Compute Engine Service Account"
+}
+
+resource "google_service_account" "vertex_ai_service" {
+  account_id   = "${var.app_name}-vertex-ai"
+  display_name = "Vertex AI Service Account"
+}
+
+# ============ IAM Roles ============
+
+resource "google_project_iam_member" "cloud_run_firestore" {
+  project = var.gcp_project_id
+  role    = "roles/datastore.user"
+  member  = "serviceAccount:${google_service_account.cloud_run_service.email}"
+}
+
+resource "google_project_iam_member" "cloud_run_storage" {
+  project = var.gcp_project_id
+  role    = "roles/storage.objectAdmin"
+  member  = "serviceAccount:${google_service_account.cloud_run_service.email}"
+}
+
+resource "google_project_iam_member" "compute_engine_logging" {
+  project = var.gcp_project_id
+  role    = "roles/logging.logWriter"
+  member  = "serviceAccount:${google_service_account.compute_engine_service.email}"
+}
+
+resource "google_project_iam_member" "compute_engine_monitoring" {
+  project = var.gcp_project_id
+  role    = "roles/monitoring.metricWriter"
+  member  = "serviceAccount:${google_service_account.compute_engine_service.email}"
+}
+
+resource "google_project_iam_member" "vertex_ai_user" {
+  project = var.gcp_project_id
+  role    = "roles/aiplatform.user"
+  member  = "serviceAccount:${google_service_account.vertex_ai_service.email}"
+}
+
+# ============ Vertex AI Endpoints ============
+
+resource "google_vertex_ai_endpoint" "text_generation" {
+  provider      = google-beta
+  display_name  = "${var.app_name}-text-generation"
+  location      = var.gcp_region
+  network       = google_compute_network.vpc.id
+
+  depends_on = [google_project_service.required_apis]
+}
+
+# ============ VPC and Networking ============
+
+resource "google_compute_network" "vpc" {
+  name                    = "${var.app_name}-vpc"
+  auto_create_subnetworks = false
+}
+
+resource "google_compute_subnetwork" "main" {
+  name          = "${var.app_name}-subnet"
+  ip_cidr_range = "10.0.0.0/16"
+  region        = var.gcp_region
+  network       = google_compute_network.vpc.id
+}
+
+resource "google_compute_firewall" "allow_internal" {
+  name    = "${var.app_name}-allow-internal"
+  network = google_compute_network.vpc.name
+
+  allow {
+    protocol = "tcp"
+    ports    = ["0-65535"]
+  }
+
+  source_ranges = ["10.0.0.0/16"]
+}
+
+# ============ APIs ============
+
+resource "google_project_service" "required_apis" {
+  for_each = toset([
+    "run.googleapis.com",
+    "compute.googleapis.com",
+    "storage.googleapis.com",
+    "firestore.googleapis.com",
+    "logging.googleapis.com",
+    "monitoring.googleapis.com",
+    "aiplatform.googleapis.com",
+    "containerregistry.googleapis.com",
+  ])
+
+  service            = each.key
+  disable_on_destroy = false
+}
+
+# ============ Outputs ============
+
+output "cloud_run_api_backend_url" {
+  value       = google_cloud_run_service.api_backend.status[0].url
+  description = "Cloud Run API backend URL"
+}
+
+output "cloud_run_frontend_url" {
+  value       = google_cloud_run_service.frontend_ui.status[0].url
+  description = "Cloud Run frontend URL"
+}
+
+output "app_data_bucket_name" {
+  value       = google_storage_bucket.app_data.name
+  description = "App data bucket name"
+}
+
+output "app_backups_bucket_name" {
+  value       = google_storage_bucket.app_backups.name
+  description = "App backups bucket name"
+}
+
+output "worker_instance_ips" {
+  value       = [for instance in google_compute_instance.background_worker : instance.network_interface[0].network_ip]
+  description = "Internal IPs of worker instances"
+}
+
+output "redis_cache_ip" {
+  value       = google_compute_instance.redis_cache.network_interface[0].network_ip
+  description = "Internal IP of Redis cache"
+}
+
+output "firestore_database_name" {
+  value       = google_firestore_database.main.name
+  description = "Firestore database name"
+}
+
+output "vertex_ai_endpoint_name" {
+  value       = google_vertex_ai_endpoint.text_generation.name
+  description = "Vertex AI endpoint name"
+}

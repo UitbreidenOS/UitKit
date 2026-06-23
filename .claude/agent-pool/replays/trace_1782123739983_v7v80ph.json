@@ -1,0 +1,21 @@
+{
+  "traceId": "trace_1782123739983_v7v80ph",
+  "goalId": "goal_test_123",
+  "poolId": null,
+  "startTime": 1782123739983,
+  "endTime": 1782123739985,
+  "duration": 2,
+  "status": "completed",
+  "error": null,
+  "result": {
+    "taskId": 1,
+    "output": "success"
+  },
+  "frameCount": 10,
+  "decisionCount": 4,
+  "metadata": {
+    "priority": null,
+    "resourceQuota": null,
+    "isolationLevel": null
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "ver-fae7b8ea8023",
+  "cloneId": "clone-35be6b03cc8a",
+  "label": "v0.9-beta",
+  "timestamp": 1782125116071,
+  "config": {
+    "name": "SecurityAgent",
+    "description": "",
+    "purpose": "",
+    "model": "claude-opus-4-1",
+    "tools": [
+      "code-analyzer",
+      "vulnerability-scanner"
+    ],
+    "maxTokens": 120000,
+    "temperature": 0.2,
+    "systemPrompt": "",
+    "environment": {},
+    "permissions": [],
+    "timeout": 300000,
+    "retryPolicy": {
+      "maxAttempts": 3,
+      "backoffMs": 1000
+    },
+    "monitoring": {
+      "enabled": true,
+      "logLevel": "info"
+    },
+    "customFields": {}
+  },
+  "notes": "Beta release for testing"
+}

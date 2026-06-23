@@ -1,0 +1,16 @@
+{
+  "eventId": "evt_1782120960613_68rmj7j7j",
+  "eventName": "June Monthly Skill Showcase",
+  "eventType": "showcase",
+  "date": "2026-06-28T18:00:00Z",
+  "recording": {
+    "id": "evt_1782121490863_sny5lq7xk",
+    "url": "https://www.youtube.com/watch?v=testRec123",
+    "title": "Test Recording",
+    "platform": "youtube",
+    "thumbnail": null,
+    "addedAt": "2026-06-22T09:44:50.863Z",
+    "views": 0
+  },
+  "archivedAt": "2026-06-22T09:44:50.863Z"
+}

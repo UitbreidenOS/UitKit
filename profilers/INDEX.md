@@ -1,10 +1,20 @@
 # Profiler Suite Index
 
-Complete profiling toolkit for sandbox performance analysis.
+Complete profiling toolkit for sandbox performance analysis and multi-agent system optimization.
 
 ## Files
 
-### Core Profiler
+### Core Profilers
+
+#### Swarm Profiler (Multi-Agent Systems)
+- **swarm-profiler.js** — Multi-agent performance profiling
+  - Measures agent startup time, message latency, throughput
+  - Profiles 5 load scenarios: standard, stress, latency, throughput, degradation
+  - Detects bottlenecks and performance anomalies
+  - Comprehensive memory and CPU analysis
+  - Exports JSON/text reports with recommendations
+
+#### Sandbox Profiler (Process Operations)
 - **swarm-sandbox-profiler.js** — Main profiler executable
   - Measures fork/spawn time, IPC overhead, cleanup time
   - Detects memory and file descriptor leaks
@@ -21,6 +31,8 @@ Complete profiling toolkit for sandbox performance analysis.
 ### Documentation
 - **README.md** — Profiler overview and reference
 - **USAGE.md** — Practical examples and troubleshooting
+- **SWARM-PROFILER.md** — Complete multi-agent profiler documentation
+- **SWARM-PROFILER-EXAMPLES.md** — Multi-agent profiler usage examples
 - **INDEX.md** — This file
 
 ### Runtime
@@ -30,7 +42,25 @@ Complete profiling toolkit for sandbox performance analysis.
 
 ## Quick Reference
 
-### Run Profiler
+### Run Swarm Profiler (Multi-Agent)
+```bash
+# Default (5 agents, 1000 messages, standard scenario)
+node profilers/swarm-profiler.js
+
+# Stress test (high throughput)
+node profilers/swarm-profiler.js --agents=10 --messages=5000 --scenario=stress
+
+# Latency analysis (measure individual message times)
+node profilers/swarm-profiler.js --scenario=latency --agents=5 --messages=500
+
+# JSON output
+node profilers/swarm-profiler.js --output=json
+
+# Analyze saved results
+node profilers/swarm-profiler.js --analyze=profilers/results/swarm-profile-standard-*.json
+```
+
+### Run Sandbox Profiler (Process Operations)
 ```bash
 # Default (fork + spawn, 5 iterations)
 node profilers/swarm-sandbox-profiler.js
@@ -59,7 +89,62 @@ const alert = config.getAlert('memoryGrowth', 150000, 100000);
 // { metric, change, severity, ... } or null
 ```
 
-## Profiler Classes
+## Swarm Profiler API
+
+### SwarmProfiler Class
+- `constructor(options)` — Initialize with agent/message configuration
+- `async run()` — Execute full profiling workflow
+- `async initialize()` — Spawn agent workers
+- `async sendMessage(agentIndex, message)` — Send message to agent
+- `async runBenchmark()` — Execute configured scenario
+- `async collectMetrics()` — Gather performance data
+- `async cleanup()` — Terminate workers and release resources
+
+### Configuration Options
+```javascript
+{
+  agents: 5,                // Number of worker agents
+  messages: 1000,           // Total messages to send
+  duration: 30000,          // Profiling duration (ms)
+  scenario: 'standard',     // 'standard'|'stress'|'latency'|'throughput'|'degradation'
+  verbose: false            // Enable detailed logging
+}
+```
+
+### Scenarios
+1. **standard** — Balanced load, mixed message types
+2. **stress** — Rapid bursts, maximum throughput
+3. **latency** — Few messages, measure individual times
+4. **throughput** — Continuous stream, async processing
+5. **degradation** — Graduated phases (100→200→500→1000)
+
+### Report Structure
+```javascript
+{
+  timestamp,                // ISO timestamp
+  scenario,                 // Profiling scenario name
+  summary: {
+    totalDuration,          // Total execution time (ms)
+    agentCount,             // Number of agents
+    messageCount,           // Messages processed
+    messagesPerSecond,      // Throughput metric
+    successRate,            // % successful messages
+    errorCount              // Failed messages
+  },
+  performance: {
+    startup: { ... },       // Agent startup metrics
+    messageLatency: { ... } // End-to-end latency stats
+  },
+  memory: {
+    before, after, delta    // Heap and RSS measurements
+  },
+  agentPerformance: [ ... ],// Per-agent breakdown
+  errors: { ... },          // Error analysis
+  bottlenecks: [ ... ]      // Auto-detected issues
+}
+```
+
+## Sandbox Profiler Classes
 
 ### MemoryProfiler
 - `start()` — Begin heap tracking

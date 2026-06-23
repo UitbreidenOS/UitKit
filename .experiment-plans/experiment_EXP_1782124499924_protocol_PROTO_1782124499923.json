@@ -1,0 +1,282 @@
+{
+  "experiment": {
+    "id": "EXP_1782124499924",
+    "title": "BRAF Inhibitor XY-451 Dose-Response Study in Melanoma Cells",
+    "description": "In vitro investigation of novel BRAF inhibitor compound XY-451 efficacy in A375 melanoma cells",
+    "hypothesis": "H1",
+    "protocol": "PROTO_1782124499923",
+    "researchField": "molecular_biology",
+    "status": "planning",
+    "createdAt": "2026-06-22T10:34:59.924Z",
+    "metrics": {},
+    "logs": []
+  },
+  "protocol": {
+    "id": "PROTO_1782124499923",
+    "hypothesisId": "H1",
+    "title": "Protocol for testing H1",
+    "experimentalDesign": "dose-response",
+    "studyPopulation": {
+      "type": "cells",
+      "species": "human",
+      "cellType": "fibroblasts",
+      "age": "not applicable",
+      "gender": "mixed",
+      "inclusionCriteria": [],
+      "exclusionCriteria": [],
+      "sourceOrigin": "primary culture"
+    },
+    "sampleSize": {
+      "perGroup": 25,
+      "totalGroups": 2,
+      "total": 50,
+      "rationale": "Based on effect size 0.8, alpha 0.05, power 0.8",
+      "justification": "Sample size sufficient to detect 0.8 effect size"
+    },
+    "randomization": {
+      "type": "randomized",
+      "method": "random number generator",
+      "seed": 240063,
+      "stratificationVariables": []
+    },
+    "interventions": [
+      {
+        "group": "Treatment",
+        "intervention": "Test compound",
+        "dose": "10 μM",
+        "route": "direct addition",
+        "duration": "24 hours",
+        "frequency": "single dose"
+      },
+      {
+        "group": "Control",
+        "intervention": "Vehicle control",
+        "dose": "Equivalent volume",
+        "route": "direct addition",
+        "duration": "24 hours",
+        "frequency": "single dose"
+      }
+    ],
+    "measurements": {
+      "primary": "Melanoma cell death via propidium iodide staining",
+      "secondary": [
+        "BRAF phosphorylation levels (pMEK/pERK)",
+        "Caspase-3 activation (apoptosis marker)",
+        "Cell cycle arrest (flow cytometry)",
+        "IC50 determination"
+      ],
+      "timepoints": [
+        "0h",
+        "2h",
+        "6h",
+        "24h",
+        "48h",
+        "72h"
+      ]
+    },
+    "materials": [
+      {
+        "name": "XY-451 compound",
+        "catalog": "SYN-451",
+        "quantity": "10 mg",
+        "storage": "RT",
+        "supplier": "SynthLab"
+      },
+      {
+        "name": "A375 melanoma cells",
+        "catalog": "ATCC CRL-1619",
+        "quantity": "2 vials",
+        "storage": "RT",
+        "supplier": "unknown"
+      },
+      {
+        "name": "DMEM media",
+        "catalog": "Gibco 11965",
+        "quantity": "500 mL",
+        "storage": "RT",
+        "supplier": "unknown"
+      },
+      {
+        "name": "Propidium iodide",
+        "catalog": "Sigma P4864",
+        "quantity": "1 mg",
+        "storage": "RT",
+        "supplier": "unknown"
+      },
+      {
+        "name": "Antibody: pERK",
+        "catalog": "CST 4370",
+        "quantity": "100 μL",
+        "storage": "RT",
+        "supplier": "unknown"
+      }
+    ],
+    "methods": [
+      {
+        "stepNumber": 1,
+        "title": "Cell culture preparation",
+        "description": "Culture A375 melanoma cells in DMEM + 10% FBS at 37°C, 5% CO2",
+        "duration": "48 hours",
+        "equipment": [
+          "CO2 incubator",
+          "Biosafety cabinet"
+        ],
+        "notes": []
+      },
+      {
+        "stepNumber": 2,
+        "title": "Dose-response treatment",
+        "description": "Treat cells with XY-451 at concentrations: 0, 0.1, 1, 10, 100 μM",
+        "duration": "72 hours",
+        "equipment": [
+          "96-well plate reader"
+        ],
+        "notes": []
+      },
+      {
+        "stepNumber": 3,
+        "title": "Viability assay",
+        "description": "Measure cell death using propidium iodide staining via flow cytometry",
+        "duration": "2 hours",
+        "equipment": [
+          "Flow cytometer",
+          "Centrifuge"
+        ],
+        "notes": []
+      },
+      {
+        "stepNumber": 4,
+        "title": "Western blot analysis",
+        "description": "Extract proteins and quantify phosphorylated BRAF pathway markers",
+        "duration": "6 hours",
+        "equipment": [
+          "Protein extraction kit",
+          "Western blot apparatus"
+        ],
+        "notes": []
+      }
+    ],
+    "dataCollection": {
+      "primary": {
+        "outcome": "Melanoma cell death via propidium iodide staining",
+        "method": "Quantitative measurement",
+        "frequency": "At each timepoint",
+        "quality": "Technical replicates"
+      },
+      "secondary": [
+        {
+          "outcome": "BRAF phosphorylation levels (pMEK/pERK)",
+          "method": "Quantitative or qualitative",
+          "frequency": "As applicable"
+        },
+        {
+          "outcome": "Caspase-3 activation (apoptosis marker)",
+          "method": "Quantitative or qualitative",
+          "frequency": "As applicable"
+        },
+        {
+          "outcome": "Cell cycle arrest (flow cytometry)",
+          "method": "Quantitative or qualitative",
+          "frequency": "As applicable"
+        },
+        {
+          "outcome": "IC50 determination",
+          "method": "Quantitative or qualitative",
+          "frequency": "As applicable"
+        }
+      ],
+      "monitoring": {
+        "frequency": "Real-time or daily",
+        "parameters": [
+          "Cell viability",
+          "Growth rate",
+          "Morphology"
+        ]
+      }
+    },
+    "analysis": {
+      "approach": "parametric",
+      "primaryAnalysis": {
+        "approach": "parametric",
+        "test": "t-test or ANOVA",
+        "pValue": 0.05,
+        "confidence": "95%",
+        "adjustments": [
+          "Multiple comparison correction if applicable"
+        ]
+      },
+      "secondaryAnalysis": [
+        {
+          "outcome": "BRAF phosphorylation levels (pMEK/pERK)",
+          "test": "Exploratory",
+          "adjustments": [
+            "Bonferroni correction"
+          ]
+        },
+        {
+          "outcome": "Caspase-3 activation (apoptosis marker)",
+          "test": "Exploratory",
+          "adjustments": [
+            "Bonferroni correction"
+          ]
+        },
+        {
+          "outcome": "Cell cycle arrest (flow cytometry)",
+          "test": "Exploratory",
+          "adjustments": [
+            "Bonferroni correction"
+          ]
+        },
+        {
+          "outcome": "IC50 determination",
+          "test": "Exploratory",
+          "adjustments": [
+            "Bonferroni correction"
+          ]
+        }
+      ]
+    },
+    "quality": {
+      "blindingStatus": "Double-blind",
+      "controlGroups": [
+        "Vehicle",
+        "Positive control"
+      ],
+      "replicates": 4
+    },
+    "timeline": {
+      "setup": "1 week",
+      "execution": "1 week",
+      "analysis": "1 week"
+    },
+    "risks": [
+      {
+        "risk": "Sample contamination",
+        "probability": "Medium",
+        "mitigation": "Sterile technique, regular quality checks"
+      },
+      {
+        "risk": "Equipment failure",
+        "probability": "Low",
+        "mitigation": "Maintenance schedule, backup equipment"
+      },
+      {
+        "risk": "Dropout/attrition",
+        "probability": "Medium",
+        "mitigation": "Clear inclusion criteria, participant engagement"
+      },
+      {
+        "risk": "Data quality issues",
+        "probability": "Medium",
+        "mitigation": "Standard operating procedures, staff training"
+      }
+    ],
+    "contingencies": [
+      "If sample size not achieved: Extended recruitment period",
+      "If equipment fails: Switch to backup facility",
+      "If high dropout rate: Use sensitivity analysis",
+      "If unexpected adverse events: Stop-rule protocol"
+    ]
+  },
+  "generatedAt": "2026-06-22T10:34:59.924Z"
+}

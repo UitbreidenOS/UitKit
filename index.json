@@ -1,6 +1,6 @@
 {
   "version": "1.1.0",
-  "generated": "2026-06-22T04:26:09.410Z",
+  "generated": "2026-06-22T10:45:35.714Z",
   "skills": [
     {
       "id": "ai-engineering/advanced-tool-use",
@@ -26299,6 +26299,12 @@
       "file": "guides/context-management.md"
     },
     {
+      "id": "contributor-onboarding-guide",
+      "lang": "en",
+      "title": "Contributor Onboarding Guide",
+      "file": "guides/contributor-onboarding-guide.md"
+    },
+    {
       "id": "cost-optimisation",
       "lang": "en",
       "title": "Cost Optimisation Guide",
@@ -26909,6 +26915,12 @@
       "lang": "en",
       "title": "Claude Code Desktop App",
       "file": "guides/desktop-app.md"
+    },
+    {
+      "id": "discord-bot-setup",
+      "lang": "en",
+      "title": "Claudient Discord Bot Setup Guide",
+      "file": "guides/discord-bot-setup.md"
     },
     {
       "id": "dispatch-and-channels",
@@ -29311,6 +29323,18 @@
       "file": "guides/swarm-sandbox-playbook.md"
     },
     {
+      "id": "theme-builder-complete",
+      "lang": "en",
+      "title": "Theme Builder Complete Guide",
+      "file": "guides/theme-builder-complete.md"
+    },
+    {
+      "id": "theme-builder-guide",
+      "lang": "en",
+      "title": "Theme Builder Guide",
+      "file": "guides/theme-builder-guide.md"
+    },
+    {
       "id": "token-cost-reduction",
       "lang": "en",
       "title": "30-50% Token Cost Reduction",
@@ -30079,6 +30103,11 @@
       "id": "solarized-light",
       "title": "Solarized Light",
       "file": "themes/solarized-light.json"
+    },
+    {
+      "id": "synthwave-neon-generated",
+      "title": "Synthwave Neon",
+      "file": "themes/synthwave-neon-generated.json"
     },
     {
       "id": "tokyo-night",
@@ -31116,11 +31145,11 @@
     "rules": 35,
     "workflows": 56,
     "prompts": 31,
-    "guides": 130,
+    "guides": 134,
     "structures": 82,
     "outputStyles": 8,
     "statuslines": 7,
-    "themes": 15,
+    "themes": 16,
     "keybindings": 4,
     "settingsTemplates": 5,
     "routines": 11,

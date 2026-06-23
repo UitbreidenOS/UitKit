@@ -1,0 +1,16 @@
+{
+  "name": "Synthwave Neon",
+  "description": "80s synthwave inspired theme with magenta and cyan neon colors",
+  "type": "dark",
+  "author": "theme-builder",
+  "palette": "cyberpunk",
+  "typography": "monospace",
+  "effects": "moderate",
+  "spacing": "default",
+  "components": true,
+  "animations": true,
+  "states": true,
+  "production": false,
+  "tags": ["synthwave", "cyberpunk", "neon", "custom"],
+  "filename": "synthwave-neon-generated.json"
+}

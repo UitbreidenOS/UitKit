@@ -1,0 +1,48 @@
+{
+  "id": "clone-64bd370cf0c6",
+  "name": "DataProcessor-ProdA",
+  "config": {
+    "name": "DataProcessingAgent",
+    "description": "",
+    "purpose": "",
+    "model": "claude-opus-4-1",
+    "tools": [
+      "sql-executor",
+      "pandas-runner",
+      "visualization",
+      "prod-a-db"
+    ],
+    "maxTokens": 100000,
+    "temperature": 0.5,
+    "systemPrompt": "",
+    "environment": {},
+    "permissions": [],
+    "timeout": 300000,
+    "retryPolicy": {
+      "maxAttempts": 3,
+      "backoffMs": 1000
+    },
+    "monitoring": {
+      "enabled": true,
+      "logLevel": "info"
+    },
+    "customFields": {}
+  },
+  "metadata": {
+    "created": 1782124666135,
+    "updated": 1782124666135,
+    "author": "data-team",
+    "description": "",
+    "tags": [],
+    "version": "1.0.0",
+    "parentTemplate": "tpl-2bba774ebaa9"
+  },
+  "lineage": {
+    "parent": "tpl-2bba774ebaa9",
+    "baseTemplate": "1.0.0",
+    "branch": "main"
+  },
+  "overrides": [
+    "tools"
+  ]
+}

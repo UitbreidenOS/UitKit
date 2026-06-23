@@ -4,6 +4,34 @@ ML-based adaptive task sequencing with confidence scoring, duration estimation, 
 
 ## Files Overview
 
+### Community Forum (New)
+
+| File | Purpose |
+|------|---------|
+| `community-forum.js` | Main library (600+ lines) - Forum, posts, replies, gamification |
+| `community-forum.test.js` | Comprehensive tests (29 test suites) |
+| `community-forum-integration-example.js` | Express API, CLI, events, analytics |
+
+### GCP Deployment (New)
+
+| File | Purpose |
+|------|---------|
+| `gcp-deployment.js` | Main library (900+ lines) - Cloud Run, Compute Engine, Storage, Firestore, Vertex AI |
+| `gcp-deployment.test.js` | Comprehensive tests (50+ test cases) |
+| `gcp-deployment-integration-example.js` | Full deployment workflow examples |
+| `gcp-deployment-cli.js` | Command-line interface for deployments |
+| `gcp-deployment-terraform.tf.template` | Production-ready Terraform template |
+| `GCP_DEPLOYMENT_README.md` | Complete API reference & guide |
+
+### SVG Layout Analyzer (New)
+
+| File | Purpose |
+|------|---------|
+| `svg-layout-analyzer.js` | Main library (600+ lines) - Layout optimization & clustering |
+| `svg-layout-analyzer.test.js` | Comprehensive tests (11 test suites) |
+| `svg-layout-analyzer-integration-example.js` | Express API, CLI, batch processing |
+| `SVG_LAYOUT_ANALYZER_README.md` | Complete API reference & algorithms |
+
 ### Task Optimizer (Core)
 
 | File | Purpose |
@@ -42,6 +70,19 @@ ML-based adaptive task sequencing with confidence scoring, duration estimation, 
 | `INDEX.md` | This file |
 
 ## Quick Links
+
+### GCP Deployment (NEW)
+1. Start with [GCP_DEPLOYMENT_README.md](./GCP_DEPLOYMENT_README.md) - Overview & features
+2. Run tests: `npm test -- lib/gcp-deployment.test.js`
+3. CLI usage: `node lib/gcp-deployment-cli.js help`
+4. Integration: See `gcp-deployment-integration-example.js` for complete workflow
+5. Terraform: See `gcp-deployment-terraform.tf.template` for production configs
+
+### SVG Layout Analyzer (NEW)
+1. Start with [SVG_LAYOUT_ANALYZER_README.md](./SVG_LAYOUT_ANALYZER_README.md) - Overview & examples
+2. Run tests: `node lib/svg-layout-analyzer.test.js`
+3. CLI usage: `node lib/svg-layout-analyzer-integration-example.js analyze <file.svg> --verbose`
+4. Key algorithms: Force-directed, Hierarchical, Circular layouts
 
 ### Resume Engine (NEW)
 1. Start with [RESUME_ENGINE_QUICK_REFERENCE.md](./RESUME_ENGINE_QUICK_REFERENCE.md) for quick snippets

@@ -1,0 +1,22 @@
+{
+  "id": "share-da742b13897a",
+  "cloneId": "clone-35be6b03cc8a",
+  "cloneName": "SecurityBot-Prod",
+  "shared": {
+    "at": 1782125116070,
+    "by": "alice",
+    "with": [
+      "security-team@company.com",
+      "dev-lead@company.com"
+    ],
+    "accessLevel": "edit",
+    "expiry": null
+  },
+  "description": "Shared for security review cycle",
+  "terms": {
+    "canModify": true,
+    "canShare": false,
+    "canDelete": false,
+    "canVersion": true
+  }
+}

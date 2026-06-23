@@ -1,0 +1,35 @@
+{
+  "id": "tpl-e5430c7d8b25",
+  "name": "SourceTemplate",
+  "config": {
+    "name": "SourceAgent",
+    "description": "",
+    "purpose": "",
+    "model": "claude-opus-4-1",
+    "tools": [],
+    "maxTokens": 100000,
+    "temperature": 0.7,
+    "systemPrompt": "",
+    "environment": {},
+    "permissions": [],
+    "timeout": 300000,
+    "retryPolicy": {
+      "maxAttempts": 3,
+      "backoffMs": 1000
+    },
+    "monitoring": {
+      "enabled": true,
+      "logLevel": "info"
+    },
+    "customFields": {}
+  },
+  "metadata": {
+    "created": 1782125114897,
+    "updated": 1782125114897,
+    "author": "test-runner",
+    "description": "",
+    "tags": [],
+    "version": "1.0.0"
+  },
+  "variants": []
+}

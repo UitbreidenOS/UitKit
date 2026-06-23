@@ -1,0 +1,46 @@
+{
+  "id": "var-6a484bdfda87",
+  "name": "DataProcessor-Analytics",
+  "config": {
+    "name": "DataProcessingAgent",
+    "description": "",
+    "purpose": "",
+    "model": "claude-opus-4-1",
+    "tools": [
+      "sql-executor",
+      "pandas-runner",
+      "visualization",
+      "analytics-db",
+      "tableau"
+    ],
+    "maxTokens": 100000,
+    "temperature": 0.5,
+    "systemPrompt": "",
+    "environment": {},
+    "permissions": [],
+    "timeout": 300000,
+    "retryPolicy": {
+      "maxAttempts": 3,
+      "backoffMs": 1000
+    },
+    "monitoring": {
+      "enabled": true,
+      "logLevel": "info"
+    },
+    "customFields": {}
+  },
+  "metadata": {
+    "created": 1782124666137,
+    "updated": 1782124666137,
+    "author": "analytics-team",
+    "description": "",
+    "tags": [],
+    "version": "1.0.0",
+    "sourceClone": "clone-c2393dc73b8f"
+  },
+  "lineage": {
+    "parent": "clone-c2393dc73b8f",
+    "grandparent": "tpl-2bba774ebaa9",
+    "branch": "main"
+  }
+}

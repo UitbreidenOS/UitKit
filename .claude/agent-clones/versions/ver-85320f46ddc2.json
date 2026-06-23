@@ -1,0 +1,29 @@
+{
+  "id": "ver-85320f46ddc2",
+  "cloneId": "clone-64c6fe38067e",
+  "label": "v1.0-approved",
+  "timestamp": 1782124666130,
+  "config": {
+    "name": "ComplianceAgent",
+    "description": "",
+    "purpose": "",
+    "model": "claude-opus-4-1",
+    "tools": [],
+    "maxTokens": 80000,
+    "temperature": 0.2,
+    "systemPrompt": "",
+    "environment": {},
+    "permissions": [],
+    "timeout": 300000,
+    "retryPolicy": {
+      "maxAttempts": 3,
+      "backoffMs": 1000
+    },
+    "monitoring": {
+      "enabled": true,
+      "logLevel": "info"
+    },
+    "customFields": {}
+  },
+  "notes": "Approved for production by legal team"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "tpl-9602a6dde6a5",
+  "name": "SharedTemplate",
+  "config": {
+    "name": "SharedAgent",
+    "description": "",
+    "purpose": "",
+    "model": "claude-opus-4-1",
+    "tools": [],
+    "maxTokens": 100000,
+    "temperature": 0.7,
+    "systemPrompt": "",
+    "environment": {},
+    "permissions": [],
+    "timeout": 300000,
+    "retryPolicy": {
+      "maxAttempts": 3,
+      "backoffMs": 1000
+    },
+    "monitoring": {
+      "enabled": true,
+      "logLevel": "info"
+    },
+    "customFields": {}
+  },
+  "metadata": {
+    "created": 1782125114921,
+    "updated": 1782125114921,
+    "author": "test-runner",
+    "description": "",
+    "tags": [],
+    "version": "1.0.0"
+  },
+  "variants": []
+}

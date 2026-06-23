@@ -1,6 +1,6 @@
 # The Prophet: Predictive Outage & Tech Debt Report
 
-Generated: 2026-06-22T04:26:13.676Z | Target Workspace: `/Users/tushar/Desktop/Claudient`
+Generated: 2026-06-22T10:46:04.670Z | Target Workspace: `/Users/tushar/Desktop/Claudient`
 
 This report ranks codebase files by **Outage Risk Score**, which is calculated as:
 $$\text{Risk Score} = \text{Git Churn (last 100 commits)} \times \frac{\text{Line Count}}{100}$$

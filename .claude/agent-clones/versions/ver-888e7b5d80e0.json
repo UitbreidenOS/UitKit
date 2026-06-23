@@ -1,0 +1,29 @@
+{
+  "id": "ver-888e7b5d80e0",
+  "cloneId": "clone-6e297bdbb35a",
+  "label": "v1.0-release",
+  "timestamp": 1782125115201,
+  "config": {
+    "name": "Agent",
+    "description": "",
+    "purpose": "",
+    "model": "claude-opus-4-1",
+    "tools": [],
+    "maxTokens": 100000,
+    "temperature": 0.7,
+    "systemPrompt": "",
+    "environment": {},
+    "permissions": [],
+    "timeout": 300000,
+    "retryPolicy": {
+      "maxAttempts": 3,
+      "backoffMs": 1000
+    },
+    "monitoring": {
+      "enabled": true,
+      "logLevel": "info"
+    },
+    "customFields": {}
+  },
+  "notes": "Production ready"
+}

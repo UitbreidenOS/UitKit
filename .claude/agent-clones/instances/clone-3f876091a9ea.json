@@ -1,0 +1,46 @@
+{
+  "id": "clone-3f876091a9ea",
+  "name": "TeamX-CodeReviewer",
+  "config": {
+    "name": "CodeReviewerExperimental",
+    "description": "",
+    "purpose": "",
+    "model": "claude-opus-4-1",
+    "tools": [
+      "code-parser",
+      "lint-checker",
+      "security-scanner",
+      "dependency-checker"
+    ],
+    "maxTokens": 150000,
+    "temperature": 0.35,
+    "systemPrompt": "",
+    "environment": {},
+    "permissions": [],
+    "timeout": 300000,
+    "retryPolicy": {
+      "maxAttempts": 3,
+      "backoffMs": 1000
+    },
+    "monitoring": {
+      "enabled": true,
+      "logLevel": "info"
+    },
+    "customFields": {}
+  },
+  "metadata": {
+    "created": 1782124666132,
+    "updated": 1782124666132,
+    "author": "team-x",
+    "description": "",
+    "tags": [],
+    "version": "1.0.0",
+    "parentTemplate": "tpl-bf5c800087be"
+  },
+  "lineage": {
+    "parent": "tpl-bf5c800087be",
+    "baseTemplate": "1.0.0",
+    "branch": "main"
+  },
+  "overrides": []
+}

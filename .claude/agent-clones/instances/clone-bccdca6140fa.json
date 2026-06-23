@@ -1,0 +1,43 @@
+{
+  "id": "clone-bccdca6140fa",
+  "name": "Clone",
+  "config": {
+    "name": "Agent",
+    "description": "",
+    "purpose": "",
+    "model": "claude-opus-4-1",
+    "tools": [],
+    "maxTokens": 100000,
+    "temperature": 0.8,
+    "systemPrompt": "",
+    "environment": {},
+    "permissions": [],
+    "timeout": 300000,
+    "retryPolicy": {
+      "maxAttempts": 3,
+      "backoffMs": 1000
+    },
+    "monitoring": {
+      "enabled": true,
+      "logLevel": "info"
+    },
+    "customFields": {}
+  },
+  "metadata": {
+    "created": 1782125115509,
+    "updated": 1782125115509,
+    "author": "test-runner",
+    "description": "",
+    "tags": [],
+    "version": "1.0.0",
+    "parentTemplate": "tpl-6943054656e0"
+  },
+  "lineage": {
+    "parent": "tpl-6943054656e0",
+    "baseTemplate": "1.0.0",
+    "branch": "main"
+  },
+  "overrides": [
+    "temperature"
+  ]
+}

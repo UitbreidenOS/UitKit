@@ -1,0 +1,21 @@
+{
+  "id": "share-f6a45caca811",
+  "cloneId": "clone-5d56797d167f",
+  "cloneName": "TeamB-DataAgent",
+  "shared": {
+    "at": 1782124666113,
+    "by": "platform-team",
+    "with": [
+      "team-b@company.com"
+    ],
+    "accessLevel": "edit",
+    "expiry": null
+  },
+  "description": "Data team agent - can modify and create variants",
+  "terms": {
+    "canModify": true,
+    "canShare": false,
+    "canDelete": false,
+    "canVersion": true
+  }
+}

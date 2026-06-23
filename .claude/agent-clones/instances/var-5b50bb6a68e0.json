@@ -1,0 +1,44 @@
+{
+  "id": "var-5b50bb6a68e0",
+  "name": "Experiment-Precise",
+  "config": {
+    "name": "ExperimentalAgent",
+    "description": "",
+    "purpose": "",
+    "model": "claude-opus-4-1",
+    "tools": [
+      "search",
+      "calculator",
+      "code-exec"
+    ],
+    "maxTokens": 100000,
+    "temperature": 0.1,
+    "systemPrompt": "",
+    "environment": {},
+    "permissions": [],
+    "timeout": 300000,
+    "retryPolicy": {
+      "maxAttempts": 3,
+      "backoffMs": 1000
+    },
+    "monitoring": {
+      "enabled": true,
+      "logLevel": "info"
+    },
+    "customFields": {}
+  },
+  "metadata": {
+    "created": 1782124666124,
+    "updated": 1782124666124,
+    "author": "research-team",
+    "description": "",
+    "tags": [],
+    "version": "1.0.0",
+    "sourceClone": "clone-dbd83b19b73e"
+  },
+  "lineage": {
+    "parent": "clone-dbd83b19b73e",
+    "grandparent": "tpl-bfe0c6772506",
+    "branch": "main"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "share-74b441636af7",
+  "cloneId": "clone-59a8d00b1f84",
+  "cloneName": "Clone",
+  "shared": {
+    "at": 1782124565817,
+    "by": "test-runner",
+    "with": [
+      "alice@example.com"
+    ],
+    "accessLevel": "read",
+    "expiry": null
+  },
+  "description": "",
+  "terms": {
+    "canModify": true,
+    "canShare": false,
+    "canDelete": false,
+    "canVersion": true
+  }
+}

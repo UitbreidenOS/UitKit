@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-06-22T04:44:05.120Z",
+  "stats": {
+    "inputTokens": 113,
+    "outputTokens": 55,
+    "redundancyRemoved": 0,
+    "keyFactsExtracted": 0,
+    "passages": 1,
+    "compressionRatio": 0,
+    "duration": 0
+  },
+  "cacheSize": 0
+}

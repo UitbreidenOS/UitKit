@@ -1,0 +1,21 @@
+{
+  "id": "share-81d4ea438329",
+  "cloneId": "clone-bc190274f1e5",
+  "cloneName": "TeamA-ProductAgent",
+  "shared": {
+    "at": 1782124666112,
+    "by": "platform-team",
+    "with": [
+      "team-a@company.com"
+    ],
+    "accessLevel": "edit",
+    "expiry": null
+  },
+  "description": "Product team agent - can modify and create variants",
+  "terms": {
+    "canModify": true,
+    "canShare": false,
+    "canDelete": false,
+    "canVersion": true
+  }
+}

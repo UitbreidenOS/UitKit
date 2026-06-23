@@ -1,0 +1,43 @@
+{
+  "id": "clone-64c6fe38067e",
+  "name": "ComplianceBot-Prod",
+  "config": {
+    "name": "ComplianceAgent",
+    "description": "",
+    "purpose": "",
+    "model": "claude-opus-4-1",
+    "tools": [],
+    "maxTokens": 80000,
+    "temperature": 0.2,
+    "systemPrompt": "",
+    "environment": {},
+    "permissions": [],
+    "timeout": 300000,
+    "retryPolicy": {
+      "maxAttempts": 3,
+      "backoffMs": 1000
+    },
+    "monitoring": {
+      "enabled": true,
+      "logLevel": "info"
+    },
+    "customFields": {}
+  },
+  "metadata": {
+    "created": 1782124666129,
+    "updated": 1782124666129,
+    "author": "legal-team",
+    "description": "",
+    "tags": [],
+    "version": "1.0.0",
+    "parentTemplate": "tpl-17a4ced6914c"
+  },
+  "lineage": {
+    "parent": "tpl-17a4ced6914c",
+    "baseTemplate": "1.0.0",
+    "branch": "main"
+  },
+  "overrides": [
+    "temperature"
+  ]
+}

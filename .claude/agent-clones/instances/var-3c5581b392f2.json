@@ -1,0 +1,45 @@
+{
+  "id": "var-3c5581b392f2",
+  "name": "TeamA-Urgent-Mode",
+  "config": {
+    "name": "CompanyStandard",
+    "description": "",
+    "purpose": "",
+    "model": "claude-opus-4-1",
+    "tools": [
+      "search",
+      "code-analyzer",
+      "teamA-jira",
+      "teamA-github"
+    ],
+    "maxTokens": 150000,
+    "temperature": 0.95,
+    "systemPrompt": "You are a company-standard assistant agent",
+    "environment": {},
+    "permissions": [],
+    "timeout": 300000,
+    "retryPolicy": {
+      "maxAttempts": 3,
+      "backoffMs": 1000
+    },
+    "monitoring": {
+      "enabled": true,
+      "logLevel": "info"
+    },
+    "customFields": {}
+  },
+  "metadata": {
+    "created": 1782124666114,
+    "updated": 1782124666114,
+    "author": "alice",
+    "description": "",
+    "tags": [],
+    "version": "1.0.0",
+    "sourceClone": "clone-bc190274f1e5"
+  },
+  "lineage": {
+    "parent": "clone-bc190274f1e5",
+    "grandparent": "tpl-a9ed92ba2b03",
+    "branch": "team-a/main"
+  }
+}

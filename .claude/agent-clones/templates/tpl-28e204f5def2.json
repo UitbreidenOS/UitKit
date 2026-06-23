@@ -1,0 +1,35 @@
+{
+  "id": "tpl-28e204f5def2",
+  "name": "Template",
+  "config": {
+    "name": "Agent",
+    "description": "",
+    "purpose": "",
+    "model": "claude-opus-4-1",
+    "tools": [],
+    "maxTokens": 100000,
+    "temperature": 0.6,
+    "systemPrompt": "",
+    "environment": {},
+    "permissions": [],
+    "timeout": 300000,
+    "retryPolicy": {
+      "maxAttempts": 3,
+      "backoffMs": 1000
+    },
+    "monitoring": {
+      "enabled": true,
+      "logLevel": "info"
+    },
+    "customFields": {}
+  },
+  "metadata": {
+    "created": 1782124565816,
+    "updated": 1782124565816,
+    "author": "test-runner",
+    "description": "Test template",
+    "tags": [],
+    "version": "1.0.0"
+  },
+  "variants": []
+}

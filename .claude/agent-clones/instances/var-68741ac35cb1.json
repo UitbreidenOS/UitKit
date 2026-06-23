@@ -1,0 +1,44 @@
+{
+  "id": "var-68741ac35cb1",
+  "name": "SecurityBot-Aggressive",
+  "config": {
+    "name": "SecurityAgent",
+    "description": "",
+    "purpose": "",
+    "model": "claude-opus-4-1",
+    "tools": [
+      "code-analyzer",
+      "vulnerability-scanner",
+      "compliance-checker"
+    ],
+    "maxTokens": 120000,
+    "temperature": 0.5,
+    "systemPrompt": "",
+    "environment": {},
+    "permissions": [],
+    "timeout": 300000,
+    "retryPolicy": {
+      "maxAttempts": 3,
+      "backoffMs": 1000
+    },
+    "monitoring": {
+      "enabled": true,
+      "logLevel": "info"
+    },
+    "customFields": {}
+  },
+  "metadata": {
+    "created": 1782124983685,
+    "updated": 1782124983685,
+    "author": "bob",
+    "description": "",
+    "tags": [],
+    "version": "1.0.0",
+    "sourceClone": "clone-d181c2e6bc45"
+  },
+  "lineage": {
+    "parent": "clone-d181c2e6bc45",
+    "grandparent": "tpl-0053c4a615cc",
+    "branch": "main"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "share-86051f68f9fc",
+  "cloneId": "clone-64c6fe38067e",
+  "cloneName": "ComplianceBot-Prod",
+  "shared": {
+    "at": 1782124666130,
+    "by": "legal-team",
+    "with": [
+      "compliance@company.com"
+    ],
+    "accessLevel": "read",
+    "expiry": null
+  },
+  "description": "Production compliance bot - read-only access",
+  "terms": {
+    "canModify": true,
+    "canShare": false,
+    "canDelete": false,
+    "canVersion": true
+  }
+}

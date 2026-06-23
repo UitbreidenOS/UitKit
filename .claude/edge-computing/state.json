@@ -1,0 +1,39 @@
+{
+  "timestamp": "2026-06-22T09:41:09.748Z",
+  "coordinatorId": "9d2d346ccedb",
+  "nodes": [
+    {
+      "nodeId": "node1",
+      "role": "worker",
+      "region": "us-west",
+      "metrics": {
+        "nodeId": "node1",
+        "role": "worker",
+        "region": "us-west",
+        "isHealthy": true,
+        "lastHeartbeat": 1782121269748,
+        "metrics": {
+          "tasksExecuted": 0,
+          "tasksSuccessful": 0,
+          "tasksFailed": 0,
+          "totalExecutionTime": 0,
+          "cloudSyncCount": 0,
+          "lastSyncTime": null
+        },
+        "latency": {
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "avg": 0,
+          "min": 0,
+          "max": 0
+        },
+        "queue": {
+          "pending": 0,
+          "active": 0,
+          "completed": 0
+        }
+      }
+    }
+  ]
+}

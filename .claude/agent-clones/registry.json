@@ -1,0 +1,1745 @@
+{
+  "templates": {
+    "tpl-8d1563bff4b2": {
+      "name": "TestTemplate",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-8d1563bff4b2.json",
+      "created": 1782124565599,
+      "instances": []
+    },
+    "tpl-48ea4c22768c": {
+      "name": "SourceTemplate",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-48ea4c22768c.json",
+      "created": 1782124565607,
+      "instances": [
+        "clone-dbe6fb5bb113"
+      ]
+    },
+    "tpl-95f83e762bb0": {
+      "name": "BaseTemplate",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-95f83e762bb0.json",
+      "created": 1782124565609,
+      "instances": [
+        "clone-1132b745209a"
+      ]
+    },
+    "tpl-b96250a19f43": {
+      "name": "SharedTemplate",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-b96250a19f43.json",
+      "created": 1782124565611,
+      "instances": [
+        "clone-c5aac63ffd39"
+      ]
+    },
+    "tpl-b9fd262c8935": {
+      "name": "Template0",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-b9fd262c8935.json",
+      "created": 1782124565614,
+      "instances": []
+    },
+    "tpl-a04c497e858d": {
+      "name": "Template1",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-a04c497e858d.json",
+      "created": 1782124565614,
+      "instances": []
+    },
+    "tpl-3ad0cdf91d53": {
+      "name": "Template2",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-3ad0cdf91d53.json",
+      "created": 1782124565615,
+      "instances": []
+    },
+    "tpl-bb42174beedb": {
+      "name": "TestTemplate",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-bb42174beedb.json",
+      "created": 1782124565616,
+      "instances": [
+        "clone-90fa4bd8f79e",
+        "clone-7a1fd81e3e75"
+      ]
+    },
+    "tpl-4b0c83766caa": {
+      "name": "Template",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-4b0c83766caa.json",
+      "created": 1782124565617,
+      "instances": [
+        "clone-bae91ae83be7"
+      ]
+    },
+    "tpl-dfdf2c118992": {
+      "name": "Template",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-dfdf2c118992.json",
+      "created": 1782124565619,
+      "instances": [
+        "clone-1b9828e6ccaf"
+      ]
+    },
+    "tpl-24406ea8d6fa": {
+      "name": "Template",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-24406ea8d6fa.json",
+      "created": 1782124565786,
+      "instances": [
+        "clone-4d05596e347d"
+      ]
+    },
+    "tpl-08a6f930e615": {
+      "name": "Template",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-08a6f930e615.json",
+      "created": 1782124565792,
+      "instances": [
+        "clone-7d203a893a84"
+      ]
+    },
+    "tpl-e6f81ec47b41": {
+      "name": "Template",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-e6f81ec47b41.json",
+      "created": 1782124565799,
+      "instances": [
+        "clone-d3dac56bd3d9"
+      ]
+    },
+    "tpl-99552e61ac1a": {
+      "name": "NewTemplate",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-99552e61ac1a.json",
+      "created": 1782124565802,
+      "instances": []
+    },
+    "tpl-6ed8b4c61506": {
+      "name": "Template",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-6ed8b4c61506.json",
+      "created": 1782124565803,
+      "instances": [
+        "clone-dc501afc93f3"
+      ]
+    },
+    "tpl-d1a41c965966": {
+      "name": "Template",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-d1a41c965966.json",
+      "created": 1782124565805,
+      "instances": [
+        "clone-bb1f30ead4bb",
+        "clone-b58bf545693e"
+      ]
+    },
+    "tpl-1abdb618a44c": {
+      "name": "Template",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-1abdb618a44c.json",
+      "created": 1782124565806,
+      "instances": [
+        "clone-a724c3232c8e"
+      ]
+    },
+    "tpl-0437964630e6": {
+      "name": "Template",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-0437964630e6.json",
+      "created": 1782124565810,
+      "instances": [
+        "clone-8eb1b54a3d0d"
+      ]
+    },
+    "tpl-28e204f5def2": {
+      "name": "Template",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-28e204f5def2.json",
+      "created": 1782124565816,
+      "instances": []
+    },
+    "tpl-121529b09408": {
+      "name": "Template",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-121529b09408.json",
+      "created": 1782124565817,
+      "instances": [
+        "clone-59a8d00b1f84"
+      ]
+    },
+    "tpl-27038474327b": {
+      "name": "Template",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-27038474327b.json",
+      "created": 1782124565818,
+      "instances": [
+        "clone-32fc84003c31"
+      ]
+    },
+    "tpl-a9ed92ba2b03": {
+      "name": "CompanyStandard",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-a9ed92ba2b03.json",
+      "created": 1782124666082,
+      "instances": [
+        "clone-bc190274f1e5",
+        "clone-5d56797d167f"
+      ]
+    },
+    "tpl-bfe0c6772506": {
+      "name": "ExperimentalBase",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-bfe0c6772506.json",
+      "created": 1782124666116,
+      "instances": [
+        "clone-dbd83b19b73e"
+      ]
+    },
+    "tpl-17a4ced6914c": {
+      "name": "ComplianceReviewer",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-17a4ced6914c.json",
+      "created": 1782124666128,
+      "instances": [
+        "clone-64c6fe38067e"
+      ]
+    },
+    "tpl-7a7740c3503e": {
+      "name": "CodeReviewerV0",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-7a7740c3503e.json",
+      "created": 1782124666131,
+      "instances": [
+        "clone-490b6dc8a5fa"
+      ]
+    },
+    "tpl-bf5c800087be": {
+      "name": "CodeReviewerV1",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-bf5c800087be.json",
+      "created": 1782124666132,
+      "instances": [
+        "clone-3f876091a9ea"
+      ]
+    },
+    "tpl-2bba774ebaa9": {
+      "name": "DataProcessor",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-2bba774ebaa9.json",
+      "created": 1782124666133,
+      "instances": [
+        "clone-64bd370cf0c6"
+      ]
+    },
+    "tpl-0053c4a615cc": {
+      "name": "SecurityReviewer",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-0053c4a615cc.json",
+      "created": 1782124983619,
+      "instances": [
+        "clone-d181c2e6bc45"
+      ]
+    },
+    "tpl-9df9fe5663a6": {
+      "name": "SecurityBotOptimized",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-9df9fe5663a6.json",
+      "created": 1782124983696,
+      "instances": [
+        "clone-317ad65f1f93"
+      ]
+    },
+    "tpl-31cecd0f090f": {
+      "name": "TestTemplate",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-31cecd0f090f.json",
+      "created": 1782125114892,
+      "instances": []
+    },
+    "tpl-e5430c7d8b25": {
+      "name": "SourceTemplate",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-e5430c7d8b25.json",
+      "created": 1782125114897,
+      "instances": [
+        "clone-60fb8e4476db"
+      ]
+    },
+    "tpl-6dc94fd71172": {
+      "name": "BaseTemplate",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-6dc94fd71172.json",
+      "created": 1782125114918,
+      "instances": [
+        "clone-6bd32c7c44d4"
+      ]
+    },
+    "tpl-9602a6dde6a5": {
+      "name": "SharedTemplate",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-9602a6dde6a5.json",
+      "created": 1782125114921,
+      "instances": [
+        "clone-2d2b4323fcd2"
+      ]
+    },
+    "tpl-579318ba6b66": {
+      "name": "Template0",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-579318ba6b66.json",
+      "created": 1782125114924,
+      "instances": []
+    },
+    "tpl-4e6f904c221e": {
+      "name": "Template1",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-4e6f904c221e.json",
+      "created": 1782125114924,
+      "instances": []
+    },
+    "tpl-59aa7ae096df": {
+      "name": "Template2",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-59aa7ae096df.json",
+      "created": 1782125115074,
+      "instances": []
+    },
+    "tpl-dfbe7a797758": {
+      "name": "TestTemplate",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-dfbe7a797758.json",
+      "created": 1782125115098,
+      "instances": [
+        "clone-fa18be263482",
+        "clone-625e8e3a8dff"
+      ]
+    },
+    "tpl-c4237f885bd1": {
+      "name": "Template",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-c4237f885bd1.json",
+      "created": 1782125115166,
+      "instances": [
+        "clone-ea882be2a630"
+      ]
+    },
+    "tpl-2095f42f0b34": {
+      "name": "Template",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-2095f42f0b34.json",
+      "created": 1782125115184,
+      "instances": [
+        "clone-6e297bdbb35a"
+      ]
+    },
+    "tpl-a2370df3ce33": {
+      "name": "Template",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-a2370df3ce33.json",
+      "created": 1782125115202,
+      "instances": [
+        "clone-517b8028cfe9"
+      ]
+    },
+    "tpl-c884d1d43786": {
+      "name": "Template",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-c884d1d43786.json",
+      "created": 1782125115439,
+      "instances": [
+        "clone-be766f9749d3"
+      ]
+    },
+    "tpl-ad201b4c83bc": {
+      "name": "Template",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-ad201b4c83bc.json",
+      "created": 1782125115479,
+      "instances": [
+        "clone-bbdbd4c99cd4"
+      ]
+    },
+    "tpl-85f2a41e5ba5": {
+      "name": "NewTemplate",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-85f2a41e5ba5.json",
+      "created": 1782125115481,
+      "instances": []
+    },
+    "tpl-b693cdd1be33": {
+      "name": "Template",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-b693cdd1be33.json",
+      "created": 1782125115488,
+      "instances": [
+        "clone-c56f96ab8368"
+      ]
+    },
+    "tpl-50ed1f3c4153": {
+      "name": "Template",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-50ed1f3c4153.json",
+      "created": 1782125115501,
+      "instances": [
+        "clone-4a30cf2f48b8",
+        "clone-96c1e5e9a620"
+      ]
+    },
+    "tpl-7a35bf5b76a6": {
+      "name": "Template",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-7a35bf5b76a6.json",
+      "created": 1782125115504,
+      "instances": [
+        "clone-4e03be3f3aee"
+      ]
+    },
+    "tpl-6943054656e0": {
+      "name": "Template",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-6943054656e0.json",
+      "created": 1782125115508,
+      "instances": [
+        "clone-bccdca6140fa"
+      ]
+    },
+    "tpl-ed243e944a3e": {
+      "name": "Template",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-ed243e944a3e.json",
+      "created": 1782125115516,
+      "instances": []
+    },
+    "tpl-dcd01538d8a6": {
+      "name": "Template",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-dcd01538d8a6.json",
+      "created": 1782125115520,
+      "instances": [
+        "clone-06393457d458"
+      ]
+    },
+    "tpl-e0a2094883e2": {
+      "name": "Template",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-e0a2094883e2.json",
+      "created": 1782125115534,
+      "instances": [
+        "clone-b281c8075423"
+      ]
+    },
+    "tpl-4a18a670c777": {
+      "name": "SecurityReviewer",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-4a18a670c777.json",
+      "created": 1782125115999,
+      "instances": [
+        "clone-35be6b03cc8a"
+      ]
+    },
+    "tpl-1b8e638b26a1": {
+      "name": "SecurityBotOptimized",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/templates/tpl-1b8e638b26a1.json",
+      "created": 1782125116075,
+      "instances": [
+        "clone-9d0193cda73a"
+      ]
+    }
+  },
+  "instances": {
+    "clone-dbe6fb5bb113": {
+      "name": "MyClone",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-dbe6fb5bb113.json",
+      "created": 1782124565608,
+      "templateId": "tpl-48ea4c22768c",
+      "shared": false
+    },
+    "clone-1132b745209a": {
+      "name": "BaseClone",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-1132b745209a.json",
+      "created": 1782124565609,
+      "templateId": "tpl-95f83e762bb0",
+      "shared": false
+    },
+    "var-bca4b0c980d6": {
+      "name": "HighCreative",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/var-bca4b0c980d6.json",
+      "created": 1782124565610,
+      "isVariant": true,
+      "sourceClone": "clone-1132b745209a"
+    },
+    "clone-c5aac63ffd39": {
+      "name": "SharedClone",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-c5aac63ffd39.json",
+      "created": 1782124565612,
+      "templateId": "tpl-b96250a19f43",
+      "shared": true
+    },
+    "clone-90fa4bd8f79e": {
+      "name": "Clone0",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-90fa4bd8f79e.json",
+      "created": 1782124565616,
+      "templateId": "tpl-bb42174beedb",
+      "shared": false
+    },
+    "clone-7a1fd81e3e75": {
+      "name": "Clone1",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-7a1fd81e3e75.json",
+      "created": 1782124565616,
+      "templateId": "tpl-bb42174beedb",
+      "shared": false
+    },
+    "clone-bae91ae83be7": {
+      "name": "Clone1",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-bae91ae83be7.json",
+      "created": 1782124565618,
+      "templateId": "tpl-4b0c83766caa",
+      "shared": false
+    },
+    "var-09ff41ace6ac": {
+      "name": "Variant",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/var-09ff41ace6ac.json",
+      "created": 1782124565618,
+      "isVariant": true,
+      "sourceClone": "clone-bae91ae83be7"
+    },
+    "clone-1b9828e6ccaf": {
+      "name": "Clone",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-1b9828e6ccaf.json",
+      "created": 1782124565619,
+      "templateId": "tpl-dfdf2c118992",
+      "shared": false
+    },
+    "clone-4d05596e347d": {
+      "name": "Clone",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-4d05596e347d.json",
+      "created": 1782124565787,
+      "templateId": "tpl-24406ea8d6fa",
+      "shared": false
+    },
+    "clone-7d203a893a84": {
+      "name": "Clone",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-7d203a893a84.json",
+      "created": 1782124565793,
+      "templateId": "tpl-08a6f930e615",
+      "shared": false
+    },
+    "clone-71102eab64dd": {
+      "name": "Clone",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-71102eab64dd.json",
+      "created": 1782124565796,
+      "imported": true
+    },
+    "clone-d3dac56bd3d9": {
+      "name": "Clone",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-d3dac56bd3d9.json",
+      "created": 1782124565801,
+      "templateId": "tpl-e6f81ec47b41",
+      "shared": false
+    },
+    "clone-dc501afc93f3": {
+      "name": "Clone",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-dc501afc93f3.json",
+      "created": 1782124565804,
+      "templateId": "tpl-6ed8b4c61506",
+      "shared": false
+    },
+    "clone-bb1f30ead4bb": {
+      "name": "Clone1",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-bb1f30ead4bb.json",
+      "created": 1782124565805,
+      "templateId": "tpl-d1a41c965966",
+      "shared": false
+    },
+    "clone-b58bf545693e": {
+      "name": "Clone2",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-b58bf545693e.json",
+      "created": 1782124565805,
+      "templateId": "tpl-d1a41c965966",
+      "shared": false
+    },
+    "clone-a724c3232c8e": {
+      "name": "Clone",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-a724c3232c8e.json",
+      "created": 1782124565806,
+      "templateId": "tpl-1abdb618a44c",
+      "shared": false
+    },
+    "var-3707111e1162": {
+      "name": "Variant",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/var-3707111e1162.json",
+      "created": 1782124565806,
+      "isVariant": true,
+      "sourceClone": "clone-a724c3232c8e"
+    },
+    "clone-8eb1b54a3d0d": {
+      "name": "Clone",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-8eb1b54a3d0d.json",
+      "created": 1782124565814,
+      "templateId": "tpl-0437964630e6",
+      "shared": false
+    },
+    "clone-59a8d00b1f84": {
+      "name": "Clone",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-59a8d00b1f84.json",
+      "created": 1782124565817,
+      "templateId": "tpl-121529b09408",
+      "shared": true
+    },
+    "clone-32fc84003c31": {
+      "name": "Clone",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-32fc84003c31.json",
+      "created": 1782124565818,
+      "templateId": "tpl-27038474327b",
+      "shared": false
+    },
+    "clone-bc190274f1e5": {
+      "name": "TeamA-ProductAgent",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-bc190274f1e5.json",
+      "created": 1782124666111,
+      "templateId": "tpl-a9ed92ba2b03",
+      "shared": true
+    },
+    "clone-5d56797d167f": {
+      "name": "TeamB-DataAgent",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-5d56797d167f.json",
+      "created": 1782124666111,
+      "templateId": "tpl-a9ed92ba2b03",
+      "shared": true
+    },
+    "var-3c5581b392f2": {
+      "name": "TeamA-Urgent-Mode",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/var-3c5581b392f2.json",
+      "created": 1782124666114,
+      "isVariant": true,
+      "sourceClone": "clone-bc190274f1e5"
+    },
+    "clone-dbd83b19b73e": {
+      "name": "Experiment-Control",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-dbd83b19b73e.json",
+      "created": 1782124666119,
+      "templateId": "tpl-bfe0c6772506",
+      "shared": false
+    },
+    "var-c464ada24ea2": {
+      "name": "Experiment-HighCreativity",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/var-c464ada24ea2.json",
+      "created": 1782124666123,
+      "isVariant": true,
+      "sourceClone": "clone-dbd83b19b73e"
+    },
+    "var-5b50bb6a68e0": {
+      "name": "Experiment-Precise",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/var-5b50bb6a68e0.json",
+      "created": 1782124666124,
+      "isVariant": true,
+      "sourceClone": "clone-dbd83b19b73e"
+    },
+    "clone-64c6fe38067e": {
+      "name": "ComplianceBot-Prod",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-64c6fe38067e.json",
+      "created": 1782124666129,
+      "templateId": "tpl-17a4ced6914c",
+      "shared": true
+    },
+    "clone-490b6dc8a5fa": {
+      "name": "CodeReviewer-TestRun",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-490b6dc8a5fa.json",
+      "created": 1782124666131,
+      "templateId": "tpl-7a7740c3503e",
+      "shared": false
+    },
+    "clone-3f876091a9ea": {
+      "name": "TeamX-CodeReviewer",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-3f876091a9ea.json",
+      "created": 1782124666132,
+      "templateId": "tpl-bf5c800087be",
+      "shared": false
+    },
+    "clone-64bd370cf0c6": {
+      "name": "DataProcessor-ProdA",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-64bd370cf0c6.json",
+      "created": 1782124666135,
+      "templateId": "tpl-2bba774ebaa9",
+      "shared": false
+    },
+    "clone-c2393dc73b8f": {
+      "name": "DataProcessor-ProdA",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-c2393dc73b8f.json",
+      "created": 1782124666136,
+      "imported": true
+    },
+    "var-6a484bdfda87": {
+      "name": "DataProcessor-Analytics",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/var-6a484bdfda87.json",
+      "created": 1782124666137,
+      "isVariant": true,
+      "sourceClone": "clone-c2393dc73b8f"
+    },
+    "clone-d181c2e6bc45": {
+      "name": "SecurityBot-Prod",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-d181c2e6bc45.json",
+      "created": 1782124983648,
+      "templateId": "tpl-0053c4a615cc",
+      "shared": true
+    },
+    "var-604b690740e1": {
+      "name": "SecurityBot-Conservative",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/var-604b690740e1.json",
+      "created": 1782124983684,
+      "isVariant": true,
+      "sourceClone": "clone-d181c2e6bc45"
+    },
+    "var-68741ac35cb1": {
+      "name": "SecurityBot-Aggressive",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/var-68741ac35cb1.json",
+      "created": 1782124983685,
+      "isVariant": true,
+      "sourceClone": "clone-d181c2e6bc45"
+    },
+    "clone-9076283fc34a": {
+      "name": "SecurityBot-Prod",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-9076283fc34a.json",
+      "created": 1782124983694,
+      "imported": true
+    },
+    "clone-317ad65f1f93": {
+      "name": "SecurityBot-FromPromoted",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-317ad65f1f93.json",
+      "created": 1782124983697,
+      "templateId": "tpl-9df9fe5663a6",
+      "shared": false
+    },
+    "clone-60fb8e4476db": {
+      "name": "MyClone",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-60fb8e4476db.json",
+      "created": 1782125114899,
+      "templateId": "tpl-e5430c7d8b25",
+      "shared": false
+    },
+    "clone-6bd32c7c44d4": {
+      "name": "BaseClone",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-6bd32c7c44d4.json",
+      "created": 1782125114919,
+      "templateId": "tpl-6dc94fd71172",
+      "shared": false
+    },
+    "var-877c9f4f673b": {
+      "name": "HighCreative",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/var-877c9f4f673b.json",
+      "created": 1782125114920,
+      "isVariant": true,
+      "sourceClone": "clone-6bd32c7c44d4"
+    },
+    "clone-2d2b4323fcd2": {
+      "name": "SharedClone",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-2d2b4323fcd2.json",
+      "created": 1782125114922,
+      "templateId": "tpl-9602a6dde6a5",
+      "shared": true
+    },
+    "clone-fa18be263482": {
+      "name": "Clone0",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-fa18be263482.json",
+      "created": 1782125115103,
+      "templateId": "tpl-dfbe7a797758",
+      "shared": false
+    },
+    "clone-625e8e3a8dff": {
+      "name": "Clone1",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-625e8e3a8dff.json",
+      "created": 1782125115107,
+      "templateId": "tpl-dfbe7a797758",
+      "shared": false
+    },
+    "clone-ea882be2a630": {
+      "name": "Clone1",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-ea882be2a630.json",
+      "created": 1782125115170,
+      "templateId": "tpl-c4237f885bd1",
+      "shared": false
+    },
+    "var-920a494ef928": {
+      "name": "Variant",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/var-920a494ef928.json",
+      "created": 1782125115178,
+      "isVariant": true,
+      "sourceClone": "clone-ea882be2a630"
+    },
+    "clone-6e297bdbb35a": {
+      "name": "Clone",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-6e297bdbb35a.json",
+      "created": 1782125115185,
+      "templateId": "tpl-2095f42f0b34",
+      "shared": false
+    },
+    "clone-517b8028cfe9": {
+      "name": "Clone",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-517b8028cfe9.json",
+      "created": 1782125115206,
+      "templateId": "tpl-a2370df3ce33",
+      "shared": false
+    },
+    "clone-be766f9749d3": {
+      "name": "Clone",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-be766f9749d3.json",
+      "created": 1782125115469,
+      "templateId": "tpl-c884d1d43786",
+      "shared": false
+    },
+    "clone-f001edff1877": {
+      "name": "Clone",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-f001edff1877.json",
+      "created": 1782125115478,
+      "imported": true
+    },
+    "clone-bbdbd4c99cd4": {
+      "name": "Clone",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-bbdbd4c99cd4.json",
+      "created": 1782125115481,
+      "templateId": "tpl-ad201b4c83bc",
+      "shared": false
+    },
+    "clone-c56f96ab8368": {
+      "name": "Clone",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-c56f96ab8368.json",
+      "created": 1782125115494,
+      "templateId": "tpl-b693cdd1be33",
+      "shared": false
+    },
+    "clone-4a30cf2f48b8": {
+      "name": "Clone1",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-4a30cf2f48b8.json",
+      "created": 1782125115501,
+      "templateId": "tpl-50ed1f3c4153",
+      "shared": false
+    },
+    "clone-96c1e5e9a620": {
+      "name": "Clone2",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-96c1e5e9a620.json",
+      "created": 1782125115501,
+      "templateId": "tpl-50ed1f3c4153",
+      "shared": false
+    },
+    "clone-4e03be3f3aee": {
+      "name": "Clone",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-4e03be3f3aee.json",
+      "created": 1782125115505,
+      "templateId": "tpl-7a35bf5b76a6",
+      "shared": false
+    },
+    "var-8ae7f872c60e": {
+      "name": "Variant",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/var-8ae7f872c60e.json",
+      "created": 1782125115507,
+      "isVariant": true,
+      "sourceClone": "clone-4e03be3f3aee"
+    },
+    "clone-bccdca6140fa": {
+      "name": "Clone",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-bccdca6140fa.json",
+      "created": 1782125115509,
+      "templateId": "tpl-6943054656e0",
+      "shared": false
+    },
+    "clone-06393457d458": {
+      "name": "Clone",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-06393457d458.json",
+      "created": 1782125115521,
+      "templateId": "tpl-dcd01538d8a6",
+      "shared": true
+    },
+    "clone-b281c8075423": {
+      "name": "Clone",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-b281c8075423.json",
+      "created": 1782125115535,
+      "templateId": "tpl-e0a2094883e2",
+      "shared": false
+    },
+    "clone-35be6b03cc8a": {
+      "name": "SecurityBot-Prod",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-35be6b03cc8a.json",
+      "created": 1782125116062,
+      "templateId": "tpl-4a18a670c777",
+      "shared": true
+    },
+    "var-4efc5e5dd5d5": {
+      "name": "SecurityBot-Conservative",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/var-4efc5e5dd5d5.json",
+      "created": 1782125116069,
+      "isVariant": true,
+      "sourceClone": "clone-35be6b03cc8a"
+    },
+    "var-72c3f845ec58": {
+      "name": "SecurityBot-Aggressive",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/var-72c3f845ec58.json",
+      "created": 1782125116070,
+      "isVariant": true,
+      "sourceClone": "clone-35be6b03cc8a"
+    },
+    "clone-79abec91a6e8": {
+      "name": "SecurityBot-Prod",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-79abec91a6e8.json",
+      "created": 1782125116074,
+      "imported": true
+    },
+    "clone-9d0193cda73a": {
+      "name": "SecurityBot-FromPromoted",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/instances/clone-9d0193cda73a.json",
+      "created": 1782125116077,
+      "templateId": "tpl-1b8e638b26a1",
+      "shared": false
+    }
+  },
+  "sharing": {
+    "share-fea6258b651c": {
+      "cloneId": "clone-c5aac63ffd39",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/sharing/share-fea6258b651c.json",
+      "recipients": [
+        "alice@example.com",
+        "bob@example.com"
+      ],
+      "created": 1782124565613
+    },
+    "share-74b441636af7": {
+      "cloneId": "clone-59a8d00b1f84",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/sharing/share-74b441636af7.json",
+      "recipients": [
+        "alice@example.com"
+      ],
+      "created": 1782124565817
+    },
+    "share-81d4ea438329": {
+      "cloneId": "clone-bc190274f1e5",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/sharing/share-81d4ea438329.json",
+      "recipients": [
+        "team-a@company.com"
+      ],
+      "created": 1782124666112
+    },
+    "share-f6a45caca811": {
+      "cloneId": "clone-5d56797d167f",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/sharing/share-f6a45caca811.json",
+      "recipients": [
+        "team-b@company.com"
+      ],
+      "created": 1782124666113
+    },
+    "share-86051f68f9fc": {
+      "cloneId": "clone-64c6fe38067e",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/sharing/share-86051f68f9fc.json",
+      "recipients": [
+        "compliance@company.com"
+      ],
+      "created": 1782124666130
+    },
+    "share-54db8b22fb37": {
+      "cloneId": "clone-d181c2e6bc45",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/sharing/share-54db8b22fb37.json",
+      "recipients": [
+        "security-team@company.com",
+        "dev-lead@company.com"
+      ],
+      "created": 1782124983690
+    },
+    "share-4bcd42576ddb": {
+      "cloneId": "clone-2d2b4323fcd2",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/sharing/share-4bcd42576ddb.json",
+      "recipients": [
+        "alice@example.com",
+        "bob@example.com"
+      ],
+      "created": 1782125114923
+    },
+    "share-3d3b01bd74b8": {
+      "cloneId": "clone-06393457d458",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/sharing/share-3d3b01bd74b8.json",
+      "recipients": [
+        "alice@example.com"
+      ],
+      "created": 1782125115521
+    },
+    "share-da742b13897a": {
+      "cloneId": "clone-35be6b03cc8a",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/sharing/share-da742b13897a.json",
+      "recipients": [
+        "security-team@company.com",
+        "dev-lead@company.com"
+      ],
+      "created": 1782125116070
+    }
+  },
+  "lineage": {
+    "clone-dbe6fb5bb113": [
+      {
+        "cloneId": "clone-dbe6fb5bb113",
+        "parentId": "tpl-48ea4c22768c",
+        "operation": "clone",
+        "timestamp": 1782124565608,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "clone-1132b745209a": [
+      {
+        "cloneId": "clone-1132b745209a",
+        "parentId": "tpl-95f83e762bb0",
+        "operation": "clone",
+        "timestamp": 1782124565610,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "var-bca4b0c980d6": [
+      {
+        "cloneId": "var-bca4b0c980d6",
+        "parentId": "clone-1132b745209a",
+        "operation": "variant",
+        "timestamp": 1782124565610,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "clone-c5aac63ffd39": [
+      {
+        "cloneId": "clone-c5aac63ffd39",
+        "parentId": "tpl-b96250a19f43",
+        "operation": "clone",
+        "timestamp": 1782124565612,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "clone-90fa4bd8f79e": [
+      {
+        "cloneId": "clone-90fa4bd8f79e",
+        "parentId": "tpl-bb42174beedb",
+        "operation": "clone",
+        "timestamp": 1782124565616,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "clone-7a1fd81e3e75": [
+      {
+        "cloneId": "clone-7a1fd81e3e75",
+        "parentId": "tpl-bb42174beedb",
+        "operation": "clone",
+        "timestamp": 1782124565616,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "clone-bae91ae83be7": [
+      {
+        "cloneId": "clone-bae91ae83be7",
+        "parentId": "tpl-4b0c83766caa",
+        "operation": "clone",
+        "timestamp": 1782124565618,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "var-09ff41ace6ac": [
+      {
+        "cloneId": "var-09ff41ace6ac",
+        "parentId": "clone-bae91ae83be7",
+        "operation": "variant",
+        "timestamp": 1782124565618,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "clone-1b9828e6ccaf": [
+      {
+        "cloneId": "clone-1b9828e6ccaf",
+        "parentId": "tpl-dfdf2c118992",
+        "operation": "clone",
+        "timestamp": 1782124565619,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "clone-4d05596e347d": [
+      {
+        "cloneId": "clone-4d05596e347d",
+        "parentId": "tpl-24406ea8d6fa",
+        "operation": "clone",
+        "timestamp": 1782124565787,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "clone-7d203a893a84": [
+      {
+        "cloneId": "clone-7d203a893a84",
+        "parentId": "tpl-08a6f930e615",
+        "operation": "clone",
+        "timestamp": 1782124565793,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "clone-d3dac56bd3d9": [
+      {
+        "cloneId": "clone-d3dac56bd3d9",
+        "parentId": "tpl-e6f81ec47b41",
+        "operation": "clone",
+        "timestamp": 1782124565802,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "clone-dc501afc93f3": [
+      {
+        "cloneId": "clone-dc501afc93f3",
+        "parentId": "tpl-6ed8b4c61506",
+        "operation": "clone",
+        "timestamp": 1782124565804,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      },
+      {
+        "cloneId": "clone-dc501afc93f3",
+        "parentId": "tpl-6ed8b4c61506",
+        "operation": "update",
+        "timestamp": 1782124565804,
+        "author": "test-runner",
+        "reason": "Tuning parameters",
+        "branch": "main"
+      }
+    ],
+    "clone-bb1f30ead4bb": [
+      {
+        "cloneId": "clone-bb1f30ead4bb",
+        "parentId": "tpl-d1a41c965966",
+        "operation": "clone",
+        "timestamp": 1782124565805,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "clone-b58bf545693e": [
+      {
+        "cloneId": "clone-b58bf545693e",
+        "parentId": "tpl-d1a41c965966",
+        "operation": "clone",
+        "timestamp": 1782124565805,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "clone-a724c3232c8e": [
+      {
+        "cloneId": "clone-a724c3232c8e",
+        "parentId": "tpl-1abdb618a44c",
+        "operation": "clone",
+        "timestamp": 1782124565806,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "var-3707111e1162": [
+      {
+        "cloneId": "var-3707111e1162",
+        "parentId": "clone-a724c3232c8e",
+        "operation": "variant",
+        "timestamp": 1782124565807,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "clone-8eb1b54a3d0d": [
+      {
+        "cloneId": "clone-8eb1b54a3d0d",
+        "parentId": "tpl-0437964630e6",
+        "operation": "clone",
+        "timestamp": 1782124565815,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "clone-59a8d00b1f84": [
+      {
+        "cloneId": "clone-59a8d00b1f84",
+        "parentId": "tpl-121529b09408",
+        "operation": "clone",
+        "timestamp": 1782124565817,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "clone-32fc84003c31": [
+      {
+        "cloneId": "clone-32fc84003c31",
+        "parentId": "tpl-27038474327b",
+        "operation": "clone",
+        "timestamp": 1782124565818,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      },
+      {
+        "cloneId": "clone-32fc84003c31",
+        "parentId": "tpl-27038474327b",
+        "operation": "update",
+        "timestamp": 1782124565826,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "clone-bc190274f1e5": [
+      {
+        "cloneId": "clone-bc190274f1e5",
+        "parentId": "tpl-a9ed92ba2b03",
+        "operation": "clone",
+        "timestamp": 1782124666111,
+        "author": "alice",
+        "reason": "",
+        "branch": "team-a/main"
+      }
+    ],
+    "clone-5d56797d167f": [
+      {
+        "cloneId": "clone-5d56797d167f",
+        "parentId": "tpl-a9ed92ba2b03",
+        "operation": "clone",
+        "timestamp": 1782124666111,
+        "author": "bob",
+        "reason": "",
+        "branch": "team-b/main"
+      }
+    ],
+    "var-3c5581b392f2": [
+      {
+        "cloneId": "var-3c5581b392f2",
+        "parentId": "clone-bc190274f1e5",
+        "operation": "variant",
+        "timestamp": 1782124666114,
+        "author": "alice",
+        "reason": "For high-priority incident response",
+        "branch": "main"
+      }
+    ],
+    "clone-dbd83b19b73e": [
+      {
+        "cloneId": "clone-dbd83b19b73e",
+        "parentId": "tpl-bfe0c6772506",
+        "operation": "clone",
+        "timestamp": 1782124666119,
+        "author": "research-team",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "var-c464ada24ea2": [
+      {
+        "cloneId": "var-c464ada24ea2",
+        "parentId": "clone-dbd83b19b73e",
+        "operation": "variant",
+        "timestamp": 1782124666123,
+        "author": "research-team",
+        "reason": "Test high creativity",
+        "branch": "main"
+      },
+      {
+        "cloneId": "var-c464ada24ea2",
+        "parentId": "clone-dbd83b19b73e",
+        "operation": "update",
+        "timestamp": 1782124666127,
+        "author": "research-team",
+        "reason": "Add web browser based on Round 1 results",
+        "branch": "main"
+      }
+    ],
+    "var-5b50bb6a68e0": [
+      {
+        "cloneId": "var-5b50bb6a68e0",
+        "parentId": "clone-dbd83b19b73e",
+        "operation": "variant",
+        "timestamp": 1782124666124,
+        "author": "research-team",
+        "reason": "Test precise behavior",
+        "branch": "main"
+      }
+    ],
+    "clone-64c6fe38067e": [
+      {
+        "cloneId": "clone-64c6fe38067e",
+        "parentId": "tpl-17a4ced6914c",
+        "operation": "clone",
+        "timestamp": 1782124666129,
+        "author": "legal-team",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "clone-490b6dc8a5fa": [
+      {
+        "cloneId": "clone-490b6dc8a5fa",
+        "parentId": "tpl-7a7740c3503e",
+        "operation": "clone",
+        "timestamp": 1782124666131,
+        "author": "eng-team",
+        "reason": "",
+        "branch": "main"
+      },
+      {
+        "cloneId": "clone-490b6dc8a5fa",
+        "parentId": "tpl-7a7740c3503e",
+        "operation": "update",
+        "timestamp": 1782124666131,
+        "author": "eng-team",
+        "reason": "Added dependency checker, reduced temperature",
+        "branch": "main"
+      }
+    ],
+    "clone-3f876091a9ea": [
+      {
+        "cloneId": "clone-3f876091a9ea",
+        "parentId": "tpl-bf5c800087be",
+        "operation": "clone",
+        "timestamp": 1782124666133,
+        "author": "team-x",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "clone-64bd370cf0c6": [
+      {
+        "cloneId": "clone-64bd370cf0c6",
+        "parentId": "tpl-2bba774ebaa9",
+        "operation": "clone",
+        "timestamp": 1782124666135,
+        "author": "data-team",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "var-6a484bdfda87": [
+      {
+        "cloneId": "var-6a484bdfda87",
+        "parentId": "clone-c2393dc73b8f",
+        "operation": "variant",
+        "timestamp": 1782124666137,
+        "author": "analytics-team",
+        "reason": "Customized for analytics workflow",
+        "branch": "main"
+      }
+    ],
+    "clone-d181c2e6bc45": [
+      {
+        "cloneId": "clone-d181c2e6bc45",
+        "parentId": "tpl-0053c4a615cc",
+        "operation": "clone",
+        "timestamp": 1782124983648,
+        "author": "alice",
+        "reason": "",
+        "branch": "main"
+      },
+      {
+        "cloneId": "clone-d181c2e6bc45",
+        "parentId": "tpl-0053c4a615cc",
+        "operation": "update",
+        "timestamp": 1782124983693,
+        "author": "alice",
+        "reason": "Tuning for production",
+        "branch": "main"
+      }
+    ],
+    "var-604b690740e1": [
+      {
+        "cloneId": "var-604b690740e1",
+        "parentId": "clone-d181c2e6bc45",
+        "operation": "variant",
+        "timestamp": 1782124983684,
+        "author": "bob",
+        "reason": "Very conservative for critical reviews",
+        "branch": "main"
+      }
+    ],
+    "var-68741ac35cb1": [
+      {
+        "cloneId": "var-68741ac35cb1",
+        "parentId": "clone-d181c2e6bc45",
+        "operation": "variant",
+        "timestamp": 1782124983685,
+        "author": "bob",
+        "reason": "Comprehensive security checks",
+        "branch": "main"
+      }
+    ],
+    "clone-317ad65f1f93": [
+      {
+        "cloneId": "clone-317ad65f1f93",
+        "parentId": "tpl-9df9fe5663a6",
+        "operation": "clone",
+        "timestamp": 1782124983697,
+        "author": "alice",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "clone-60fb8e4476db": [
+      {
+        "cloneId": "clone-60fb8e4476db",
+        "parentId": "tpl-e5430c7d8b25",
+        "operation": "clone",
+        "timestamp": 1782125114899,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "clone-6bd32c7c44d4": [
+      {
+        "cloneId": "clone-6bd32c7c44d4",
+        "parentId": "tpl-6dc94fd71172",
+        "operation": "clone",
+        "timestamp": 1782125114919,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "var-877c9f4f673b": [
+      {
+        "cloneId": "var-877c9f4f673b",
+        "parentId": "clone-6bd32c7c44d4",
+        "operation": "variant",
+        "timestamp": 1782125114920,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "clone-2d2b4323fcd2": [
+      {
+        "cloneId": "clone-2d2b4323fcd2",
+        "parentId": "tpl-9602a6dde6a5",
+        "operation": "clone",
+        "timestamp": 1782125114922,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "clone-fa18be263482": [
+      {
+        "cloneId": "clone-fa18be263482",
+        "parentId": "tpl-dfbe7a797758",
+        "operation": "clone",
+        "timestamp": 1782125115103,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "clone-625e8e3a8dff": [
+      {
+        "cloneId": "clone-625e8e3a8dff",
+        "parentId": "tpl-dfbe7a797758",
+        "operation": "clone",
+        "timestamp": 1782125115107,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "clone-ea882be2a630": [
+      {
+        "cloneId": "clone-ea882be2a630",
+        "parentId": "tpl-c4237f885bd1",
+        "operation": "clone",
+        "timestamp": 1782125115170,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "var-920a494ef928": [
+      {
+        "cloneId": "var-920a494ef928",
+        "parentId": "clone-ea882be2a630",
+        "operation": "variant",
+        "timestamp": 1782125115178,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "clone-6e297bdbb35a": [
+      {
+        "cloneId": "clone-6e297bdbb35a",
+        "parentId": "tpl-2095f42f0b34",
+        "operation": "clone",
+        "timestamp": 1782125115196,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "clone-517b8028cfe9": [
+      {
+        "cloneId": "clone-517b8028cfe9",
+        "parentId": "tpl-a2370df3ce33",
+        "operation": "clone",
+        "timestamp": 1782125115206,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "clone-be766f9749d3": [
+      {
+        "cloneId": "clone-be766f9749d3",
+        "parentId": "tpl-c884d1d43786",
+        "operation": "clone",
+        "timestamp": 1782125115469,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "clone-bbdbd4c99cd4": [
+      {
+        "cloneId": "clone-bbdbd4c99cd4",
+        "parentId": "tpl-ad201b4c83bc",
+        "operation": "clone",
+        "timestamp": 1782125115481,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "clone-c56f96ab8368": [
+      {
+        "cloneId": "clone-c56f96ab8368",
+        "parentId": "tpl-b693cdd1be33",
+        "operation": "clone",
+        "timestamp": 1782125115494,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      },
+      {
+        "cloneId": "clone-c56f96ab8368",
+        "parentId": "tpl-b693cdd1be33",
+        "operation": "update",
+        "timestamp": 1782125115495,
+        "author": "test-runner",
+        "reason": "Tuning parameters",
+        "branch": "main"
+      }
+    ],
+    "clone-4a30cf2f48b8": [
+      {
+        "cloneId": "clone-4a30cf2f48b8",
+        "parentId": "tpl-50ed1f3c4153",
+        "operation": "clone",
+        "timestamp": 1782125115501,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "clone-96c1e5e9a620": [
+      {
+        "cloneId": "clone-96c1e5e9a620",
+        "parentId": "tpl-50ed1f3c4153",
+        "operation": "clone",
+        "timestamp": 1782125115503,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "clone-4e03be3f3aee": [
+      {
+        "cloneId": "clone-4e03be3f3aee",
+        "parentId": "tpl-7a35bf5b76a6",
+        "operation": "clone",
+        "timestamp": 1782125115505,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "var-8ae7f872c60e": [
+      {
+        "cloneId": "var-8ae7f872c60e",
+        "parentId": "clone-4e03be3f3aee",
+        "operation": "variant",
+        "timestamp": 1782125115507,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "clone-bccdca6140fa": [
+      {
+        "cloneId": "clone-bccdca6140fa",
+        "parentId": "tpl-6943054656e0",
+        "operation": "clone",
+        "timestamp": 1782125115509,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "clone-06393457d458": [
+      {
+        "cloneId": "clone-06393457d458",
+        "parentId": "tpl-dcd01538d8a6",
+        "operation": "clone",
+        "timestamp": 1782125115521,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "clone-b281c8075423": [
+      {
+        "cloneId": "clone-b281c8075423",
+        "parentId": "tpl-e0a2094883e2",
+        "operation": "clone",
+        "timestamp": 1782125115536,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      },
+      {
+        "cloneId": "clone-b281c8075423",
+        "parentId": "tpl-e0a2094883e2",
+        "operation": "update",
+        "timestamp": 1782125115536,
+        "author": "test-runner",
+        "reason": "",
+        "branch": "main"
+      }
+    ],
+    "clone-35be6b03cc8a": [
+      {
+        "cloneId": "clone-35be6b03cc8a",
+        "parentId": "tpl-4a18a670c777",
+        "operation": "clone",
+        "timestamp": 1782125116064,
+        "author": "alice",
+        "reason": "",
+        "branch": "main"
+      },
+      {
+        "cloneId": "clone-35be6b03cc8a",
+        "parentId": "tpl-4a18a670c777",
+        "operation": "update",
+        "timestamp": 1782125116071,
+        "author": "alice",
+        "reason": "Tuning for production",
+        "branch": "main"
+      }
+    ],
+    "var-4efc5e5dd5d5": [
+      {
+        "cloneId": "var-4efc5e5dd5d5",
+        "parentId": "clone-35be6b03cc8a",
+        "operation": "variant",
+        "timestamp": 1782125116069,
+        "author": "bob",
+        "reason": "Very conservative for critical reviews",
+        "branch": "main"
+      }
+    ],
+    "var-72c3f845ec58": [
+      {
+        "cloneId": "var-72c3f845ec58",
+        "parentId": "clone-35be6b03cc8a",
+        "operation": "variant",
+        "timestamp": 1782125116070,
+        "author": "bob",
+        "reason": "Comprehensive security checks",
+        "branch": "main"
+      }
+    ],
+    "clone-9d0193cda73a": [
+      {
+        "cloneId": "clone-9d0193cda73a",
+        "parentId": "tpl-1b8e638b26a1",
+        "operation": "clone",
+        "timestamp": 1782125116077,
+        "author": "alice",
+        "reason": "",
+        "branch": "main"
+      }
+    ]
+  },
+  "versions": {
+    "ver-39e2604f2f4b": {
+      "cloneId": "clone-1b9828e6ccaf",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/versions/ver-39e2604f2f4b.json",
+      "label": "v1.0-beta",
+      "created": 1782124565620
+    },
+    "ver-79f2176c9f91": {
+      "cloneId": "clone-1b9828e6ccaf",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/versions/ver-79f2176c9f91.json",
+      "label": "v1.0-release",
+      "created": 1782124565621
+    },
+    "ver-1149913b8e6f": {
+      "cloneId": "clone-32fc84003c31",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/versions/ver-1149913b8e6f.json",
+      "label": "v1.0",
+      "created": 1782124565825
+    },
+    "ver-9e14ecd11107": {
+      "cloneId": "clone-dbd83b19b73e",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/versions/ver-9e14ecd11107.json",
+      "label": "baseline",
+      "created": 1782124666120
+    },
+    "ver-f8d7c552bdfc": {
+      "cloneId": "var-c464ada24ea2",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/versions/ver-f8d7c552bdfc.json",
+      "label": "round-1",
+      "created": 1782124666125
+    },
+    "ver-d43e5aa8d40c": {
+      "cloneId": "var-5b50bb6a68e0",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/versions/ver-d43e5aa8d40c.json",
+      "label": "round-1",
+      "created": 1782124666126
+    },
+    "ver-11ad9312f799": {
+      "cloneId": "var-c464ada24ea2",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/versions/ver-11ad9312f799.json",
+      "label": "round-2",
+      "created": 1782124666127
+    },
+    "ver-85320f46ddc2": {
+      "cloneId": "clone-64c6fe38067e",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/versions/ver-85320f46ddc2.json",
+      "label": "v1.0-approved",
+      "created": 1782124666130
+    },
+    "ver-63152b5156db": {
+      "cloneId": "clone-490b6dc8a5fa",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/versions/ver-63152b5156db.json",
+      "label": "v1.0-stable",
+      "created": 1782124666131
+    },
+    "ver-298150c0ac5f": {
+      "cloneId": "clone-d181c2e6bc45",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/versions/ver-298150c0ac5f.json",
+      "label": "v0.9-beta",
+      "created": 1782124983691
+    },
+    "ver-40627e655427": {
+      "cloneId": "clone-d181c2e6bc45",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/versions/ver-40627e655427.json",
+      "label": "v1.0-production",
+      "created": 1782124983693
+    },
+    "ver-e1357ef90b81": {
+      "cloneId": "clone-6e297bdbb35a",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/versions/ver-e1357ef90b81.json",
+      "label": "v1.0-beta",
+      "created": 1782125115200
+    },
+    "ver-888e7b5d80e0": {
+      "cloneId": "clone-6e297bdbb35a",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/versions/ver-888e7b5d80e0.json",
+      "label": "v1.0-release",
+      "created": 1782125115201
+    },
+    "ver-be32b0559096": {
+      "cloneId": "clone-b281c8075423",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/versions/ver-be32b0559096.json",
+      "label": "v1.0",
+      "created": 1782125115536
+    },
+    "ver-fae7b8ea8023": {
+      "cloneId": "clone-35be6b03cc8a",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/versions/ver-fae7b8ea8023.json",
+      "label": "v0.9-beta",
+      "created": 1782125116071
+    },
+    "ver-f44dc9160512": {
+      "cloneId": "clone-35be6b03cc8a",
+      "path": "/Users/tushar/Desktop/Claudient/.claude/agent-clones/versions/ver-f44dc9160512.json",
+      "label": "v1.0-production",
+      "created": 1782125116073
+    }
+  }
+}

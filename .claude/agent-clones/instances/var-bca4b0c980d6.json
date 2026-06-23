@@ -1,0 +1,40 @@
+{
+  "id": "var-bca4b0c980d6",
+  "name": "HighCreative",
+  "config": {
+    "name": "BaseAgent",
+    "description": "",
+    "purpose": "",
+    "model": "claude-opus-4-1",
+    "tools": [],
+    "maxTokens": 100000,
+    "temperature": 1.5,
+    "systemPrompt": "",
+    "environment": {},
+    "permissions": [],
+    "timeout": 300000,
+    "retryPolicy": {
+      "maxAttempts": 3,
+      "backoffMs": 1000
+    },
+    "monitoring": {
+      "enabled": true,
+      "logLevel": "info"
+    },
+    "customFields": {}
+  },
+  "metadata": {
+    "created": 1782124565610,
+    "updated": 1782124565610,
+    "author": "test-runner",
+    "description": "",
+    "tags": [],
+    "version": "1.0.0",
+    "sourceClone": "clone-1132b745209a"
+  },
+  "lineage": {
+    "parent": "clone-1132b745209a",
+    "grandparent": "tpl-95f83e762bb0",
+    "branch": "main"
+  }
+}

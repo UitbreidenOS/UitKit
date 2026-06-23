@@ -1,0 +1,18 @@
+{
+  "traceId": "trace_1782123880270_dsbcplt",
+  "goalId": "goal_1",
+  "poolId": null,
+  "startTime": 1782123880270,
+  "endTime": 1782123880270,
+  "duration": 0,
+  "status": "completed",
+  "error": null,
+  "result": null,
+  "frameCount": 0,
+  "decisionCount": 0,
+  "metadata": {
+    "priority": null,
+    "resourceQuota": null,
+    "isolationLevel": null
+  }
+}

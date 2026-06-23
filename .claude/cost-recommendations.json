@@ -1,0 +1,473 @@
+{
+  "timestamp": "2026-06-22T10:22:02.765Z",
+  "poolId": "c7535527702f67f9",
+  "summary": {
+    "baseline": 0,
+    "projectedSavings": 75790.65082608334,
+    "savingsPercent": null,
+    "recommendationCount": 27,
+    "optimizationCount": 26,
+    "topOpportunities": [
+      {
+        "type": "caching",
+        "pattern": "testing tasks",
+        "count": 4,
+        "estimatedSavings": 59521.8,
+        "strategy": "Cache results by goal pattern hash"
+      },
+      {
+        "type": "batching",
+        "scope": "low-priority goals",
+        "count": 3,
+        "estimatedSavings": 15229,
+        "strategy": "Combine multiple goals into single API call"
+      },
+      {
+        "goalId": "goal_9f7e657993d4",
+        "type": "token-reduction",
+        "technique": [
+          "Add output format specification (reduces clarification rounds)"
+        ],
+        "estimatedSavings": 135
+      },
+      {
+        "goalId": "goal_04469b620ef2",
+        "type": "token-reduction",
+        "technique": [
+          "Add output format specification (reduces clarification rounds)"
+        ],
+        "estimatedSavings": 135
+      },
+      {
+        "goalId": "goal_16c4e899a255",
+        "type": "token-reduction",
+        "technique": [
+          "Add output format specification (reduces clarification rounds)"
+        ],
+        "estimatedSavings": 135
+      }
+    ]
+  },
+  "recommendations": [
+    {
+      "type": "caching",
+      "pattern": "testing tasks",
+      "count": 4,
+      "estimatedSavings": 59521.8,
+      "strategy": "Cache results by goal pattern hash"
+    },
+    {
+      "type": "batching",
+      "scope": "low-priority goals",
+      "count": 3,
+      "estimatedSavings": 15229,
+      "strategy": "Combine multiple goals into single API call"
+    },
+    {
+      "goalId": "goal_9f7e657993d4",
+      "type": "token-reduction",
+      "technique": [
+        "Add output format specification (reduces clarification rounds)"
+      ],
+      "estimatedSavings": 135
+    },
+    {
+      "goalId": "goal_04469b620ef2",
+      "type": "token-reduction",
+      "technique": [
+        "Add output format specification (reduces clarification rounds)"
+      ],
+      "estimatedSavings": 135
+    },
+    {
+      "goalId": "goal_16c4e899a255",
+      "type": "token-reduction",
+      "technique": [
+        "Add output format specification (reduces clarification rounds)"
+      ],
+      "estimatedSavings": 135
+    },
+    {
+      "goalId": "goal_29c23d5c1407",
+      "type": "token-reduction",
+      "technique": [
+        "Add output format specification (reduces clarification rounds)"
+      ],
+      "estimatedSavings": 113
+    },
+    {
+      "goalId": "goal_0c24cb36a38e",
+      "type": "token-reduction",
+      "technique": [
+        "Use more specific, focused language"
+      ],
+      "estimatedSavings": 113
+    },
+    {
+      "goalId": "goal_d68b95650e1f",
+      "type": "token-reduction",
+      "technique": [
+        "Add output format specification (reduces clarification rounds)"
+      ],
+      "estimatedSavings": 113
+    },
+    {
+      "goalId": "goal_3d4cca1487ce",
+      "type": "token-reduction",
+      "technique": [
+        "Add output format specification (reduces clarification rounds)"
+      ],
+      "estimatedSavings": 90
+    },
+    {
+      "goalId": "goal_c0f60b3ac235",
+      "type": "token-reduction",
+      "technique": [
+        "Add output format specification (reduces clarification rounds)"
+      ],
+      "estimatedSavings": 68
+    },
+    {
+      "goalId": "goal_0523698d579d",
+      "type": "token-reduction",
+      "technique": [
+        "Add output format specification (reduces clarification rounds)"
+      ],
+      "estimatedSavings": 68
+    },
+    {
+      "goalId": "goal_6c85e8d783a3",
+      "type": "token-reduction",
+      "technique": [
+        "Add output format specification (reduces clarification rounds)"
+      ],
+      "estimatedSavings": 68
+    },
+    {
+      "goalId": "goal_3d4cca1487ce",
+      "type": "model-downgrade",
+      "from": "claude-3-sonnet",
+      "to": "claude-3-haiku",
+      "reasoning": "deployment task typically needs claude-3-haiku",
+      "estimatedSavings": 0.34596925,
+      "goalType": "deployment"
+    },
+    {
+      "goalId": "goal_9f7e657993d4",
+      "type": "model-downgrade",
+      "from": "claude-3-sonnet",
+      "to": "claude-3-haiku",
+      "reasoning": "testing task typically needs claude-3-haiku",
+      "estimatedSavings": 0.31686875000000003,
+      "goalType": "testing"
+    },
+    {
+      "goalId": "goal_16c4e899a255",
+      "type": "model-downgrade",
+      "from": "claude-3-sonnet",
+      "to": "claude-3-haiku",
+      "reasoning": "testing task typically needs claude-3-haiku",
+      "estimatedSavings": 0.31431766666666666,
+      "goalType": "testing"
+    },
+    {
+      "goalId": "goal_c0f60b3ac235",
+      "type": "model-downgrade",
+      "from": "claude-3-sonnet",
+      "to": "claude-3-haiku",
+      "reasoning": "documentation task typically needs claude-3-haiku",
+      "estimatedSavings": 0.2999388333333333,
+      "goalType": "documentation"
+    },
+    {
+      "goalId": "goal_04469b620ef2",
+      "type": "model-downgrade",
+      "from": "claude-3-sonnet",
+      "to": "claude-3-haiku",
+      "reasoning": "testing task typically needs claude-3-haiku",
+      "estimatedSavings": 0.2819400833333333,
+      "goalType": "testing"
+    },
+    {
+      "goalId": "goal_0523698d579d",
+      "type": "model-downgrade",
+      "from": "claude-3-sonnet",
+      "to": "claude-3-haiku",
+      "reasoning": "validation task typically needs claude-3-haiku",
+      "estimatedSavings": 0.13369491666666666,
+      "goalType": "validation"
+    },
+    {
+      "goalId": "goal_d68b95650e1f",
+      "type": "model-downgrade",
+      "from": "claude-3-sonnet",
+      "to": "claude-3-haiku",
+      "reasoning": "testing task typically needs claude-3-haiku",
+      "estimatedSavings": 0.08717041666666667,
+      "goalType": "testing"
+    },
+    {
+      "goalId": "goal_6c85e8d783a3",
+      "type": "model-downgrade",
+      "from": "claude-3-sonnet",
+      "to": "claude-3-haiku",
+      "reasoning": "monitoring task typically needs claude-3-haiku",
+      "estimatedSavings": 0.07092616666666667,
+      "goalType": "monitoring"
+    },
+    {
+      "goalId": "goal_29c23d5c1407",
+      "type": "quota-adjustment",
+      "current": 50000,
+      "suggested": 15966
+    },
+    {
+      "goalId": "goal_0523698d579d",
+      "type": "quota-adjustment",
+      "current": 50000,
+      "suggested": 19889
+    },
+    {
+      "goalId": "goal_0c24cb36a38e",
+      "type": "quota-adjustment",
+      "current": 50000,
+      "suggested": 36201
+    },
+    {
+      "goalId": "goal_6c85e8d783a3",
+      "type": "quota-adjustment",
+      "current": 50000,
+      "suggested": 10551
+    },
+    {
+      "goalId": "goal_d68b95650e1f",
+      "type": "quota-adjustment",
+      "current": 50000,
+      "suggested": 12968
+    },
+    {
+      "type": "pool-config",
+      "issue": "Low average concurrency",
+      "current": 4,
+      "suggested": 3,
+      "rationale": "Reduce concurrency to lower infrastructure overhead"
+    },
+    {
+      "type": "pool-config",
+      "issue": "Budget underutilized",
+      "current": 500000,
+      "utilization": 0,
+      "rationale": "Consider reducing global budget to prevent waste"
+    }
+  ],
+  "optimizations": [
+    {
+      "name": "Downgrade goal_9f7e657993d4 to claude-3-haiku",
+      "category": "model-selection",
+      "impact": null,
+      "difficulty": "easy",
+      "autoApply": false,
+      "applied": false
+    },
+    {
+      "name": "Reduce tokens for goal_9f7e657993d4",
+      "category": "token-optimization",
+      "impact": null,
+      "difficulty": "moderate",
+      "autoApply": false,
+      "applied": false
+    },
+    {
+      "name": "Downgrade goal_04469b620ef2 to claude-3-haiku",
+      "category": "model-selection",
+      "impact": null,
+      "difficulty": "easy",
+      "autoApply": false,
+      "applied": false
+    },
+    {
+      "name": "Reduce tokens for goal_04469b620ef2",
+      "category": "token-optimization",
+      "impact": null,
+      "difficulty": "moderate",
+      "autoApply": false,
+      "applied": false
+    },
+    {
+      "name": "Downgrade goal_16c4e899a255 to claude-3-haiku",
+      "category": "model-selection",
+      "impact": null,
+      "difficulty": "easy",
+      "autoApply": false,
+      "applied": false
+    },
+    {
+      "name": "Reduce tokens for goal_16c4e899a255",
+      "category": "token-optimization",
+      "impact": null,
+      "difficulty": "moderate",
+      "autoApply": false,
+      "applied": false
+    },
+    {
+      "name": "Reduce tokens for goal_29c23d5c1407",
+      "category": "token-optimization",
+      "impact": null,
+      "difficulty": "moderate",
+      "autoApply": false,
+      "applied": false
+    },
+    {
+      "name": "Adjust quota for goal_29c23d5c1407",
+      "category": "resource-allocation",
+      "impact": 5,
+      "difficulty": "trivial",
+      "autoApply": false,
+      "applied": false
+    },
+    {
+      "name": "Downgrade goal_c0f60b3ac235 to claude-3-haiku",
+      "category": "model-selection",
+      "impact": null,
+      "difficulty": "easy",
+      "autoApply": false,
+      "applied": false
+    },
+    {
+      "name": "Reduce tokens for goal_c0f60b3ac235",
+      "category": "token-optimization",
+      "impact": null,
+      "difficulty": "moderate",
+      "autoApply": false,
+      "applied": false
+    },
+    {
+      "name": "Downgrade goal_0523698d579d to claude-3-haiku",
+      "category": "model-selection",
+      "impact": null,
+      "difficulty": "easy",
+      "autoApply": false,
+      "applied": false
+    },
+    {
+      "name": "Reduce tokens for goal_0523698d579d",
+      "category": "token-optimization",
+      "impact": null,
+      "difficulty": "moderate",
+      "autoApply": false,
+      "applied": false
+    },
+    {
+      "name": "Adjust quota for goal_0523698d579d",
+      "category": "resource-allocation",
+      "impact": 5,
+      "difficulty": "trivial",
+      "autoApply": false,
+      "applied": false
+    },
+    {
+      "name": "Reduce tokens for goal_0c24cb36a38e",
+      "category": "token-optimization",
+      "impact": null,
+      "difficulty": "moderate",
+      "autoApply": false,
+      "applied": false
+    },
+    {
+      "name": "Adjust quota for goal_0c24cb36a38e",
+      "category": "resource-allocation",
+      "impact": 5,
+      "difficulty": "trivial",
+      "autoApply": false,
+      "applied": false
+    },
+    {
+      "name": "Downgrade goal_6c85e8d783a3 to claude-3-haiku",
+      "category": "model-selection",
+      "impact": null,
+      "difficulty": "easy",
+      "autoApply": false,
+      "applied": false
+    },
+    {
+      "name": "Reduce tokens for goal_6c85e8d783a3",
+      "category": "token-optimization",
+      "impact": null,
+      "difficulty": "moderate",
+      "autoApply": false,
+      "applied": false
+    },
+    {
+      "name": "Adjust quota for goal_6c85e8d783a3",
+      "category": "resource-allocation",
+      "impact": 5,
+      "difficulty": "trivial",
+      "autoApply": false,
+      "applied": false
+    },
+    {
+      "name": "Downgrade goal_3d4cca1487ce to claude-3-haiku",
+      "category": "model-selection",
+      "impact": null,
+      "difficulty": "easy",
+      "autoApply": false,
+      "applied": false
+    },
+    {
+      "name": "Reduce tokens for goal_3d4cca1487ce",
+      "category": "token-optimization",
+      "impact": null,
+      "difficulty": "moderate",
+      "autoApply": false,
+      "applied": false
+    },
+    {
+      "name": "Downgrade goal_d68b95650e1f to claude-3-haiku",
+      "category": "model-selection",
+      "impact": null,
+      "difficulty": "easy",
+      "autoApply": false,
+      "applied": false
+    },
+    {
+      "name": "Reduce tokens for goal_d68b95650e1f",
+      "category": "token-optimization",
+      "impact": null,
+      "difficulty": "moderate",
+      "autoApply": false,
+      "applied": false
+    },
+    {
+      "name": "Adjust quota for goal_d68b95650e1f",
+      "category": "resource-allocation",
+      "impact": 5,
+      "difficulty": "trivial",
+      "autoApply": false,
+      "applied": false
+    },
+    {
+      "name": "Reduce global budget allocation",
+      "category": "budget-management",
+      "impact": 30,
+      "difficulty": "easy",
+      "autoApply": true,
+      "applied": false
+    },
+    {
+      "name": "Implement testing result caching",
+      "category": "caching",
+      "impact": null,
+      "difficulty": "moderate",
+      "autoApply": false,
+      "applied": false
+    },
+    {
+      "name": "Batch process low-priority goals",
+      "category": "batching",
+      "impact": null,
+      "difficulty": "moderate",
+      "autoApply": false,
+      "applied": false
+    }
+  ]
+}
