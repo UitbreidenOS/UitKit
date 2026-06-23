@@ -33,7 +33,7 @@ Introducing **Don't-Stop Mode** in Claudient — the first autonomous feature de
 
 Available now on npm and as a Claude Code plugin marketplace.
 
-**[GitHub](https://github.com/Claudient/Claudient) · [Plugin Marketplace](#) · [Docs](#)**
+**[GitHub](https://github.com/UitbreidenOS/Claudient) · [Plugin Marketplace](#) · [Docs](#)**
 
 ---
 
@@ -49,7 +49,7 @@ Multi-agent orchestration. Error recovery. Test generation. Documentation. Deplo
 
 Claudient 1.1 is live.
 
-github.com/Claudient/Claudient
+github.com/UitbreidenOS/Claudient
 ```
 
 ### Post 2 (Value proposition)
@@ -87,7 +87,7 @@ Don't-Stop Mode + multi-agent orchestration means your team's throughput is now 
 
 Humans do strategy. Claude does shipping.
 
-github.com/Claudient/Claudient
+github.com/UitbreidenOS/Claudient
 ```
 
 ### Thread Version
@@ -124,9 +124,9 @@ It's autonomous feature development for Claude Code. One config. One command. Wa
 - Quality gates + rollback guarantees
 - Full audit logs
 
-Available now: github.com/Claudient/Claudient
+Available now: github.com/UitbreidenOS/Claudient
 npm install claudient
-/plugin marketplace add Claudient/Claudient
+/plugin marketplace add UitbreidenOS/Claudient
 
 6/ Early benchmarks from dogfooding:
 - Feature shipping time: 5-8x faster
@@ -136,7 +136,7 @@ npm install claudient
 
 Ready to stop shipping features manually?
 
-github.com/Claudient/Claudient
+github.com/UitbreidenOS/Claudient
 ```
 
 ---
@@ -162,7 +162,7 @@ Key features:
 
 Claudient is a 400+ skill, 182+ agent ecosystem already built into Claude Code. Don't-Stop Mode is the orchestration layer that connects them.
 
-GitHub: https://github.com/Claudient/Claudient
+GitHub: https://github.com/UitbreidenOS/Claudient
 NPM: https://www.npmjs.com/package/claudient
 
 Feedback welcome. We're dogfooding this internally and seeing 5-8x faster feature shipping.
@@ -223,7 +223,7 @@ Agents work in parallel. Errors trigger retry logic. No human loops.
 - Integrates with any CI/CD (GitHub Actions, GitLab, etc.)
 - Works with any codebase (monorepo, microservices, etc.)
 
-**GitHub:** https://github.com/Claudient/Claudient
+**GitHub:** https://github.com/UitbreidenOS/Claudient
 **NPM:** `npm install claudient`
 **Docs:** [Full guide](#)
 
@@ -292,7 +292,7 @@ From our internal dogfooding:
 npm install claudient
 
 # Or add as a Claude Code plugin
-/plugin marketplace add Claudient/Claudient
+/plugin marketplace add UitbreidenOS/Claudient
 /plugin install claudient-everything@claudient
 
 # Write your feature spec
@@ -322,7 +322,7 @@ Claudient 1.1 ships with:
 
 ## Next steps
 
-- **GitHub:** https://github.com/Claudient/Claudient
+- **GitHub:** https://github.com/UitbreidenOS/Claudient
 - **Docs:** [Full guide & examples](#)
 - **Community:** Join our Discord [link]
 - **Questions?** Reply to this email.
@@ -355,7 +355,7 @@ npm install claudient
 claudient run --dont-stop features/my-feature.yaml
 ```
 
-**GitHub:** https://github.com/Claudient/Claudient
+**GitHub:** https://github.com/UitbreidenOS/Claudient
 **Docs:** [link]
 **Plugin Marketplace:** Available now
 
@@ -399,7 +399,7 @@ For teams of any size, this changes the equation: **How do you stay competitive 
 
 Claudient is the foundation. Don't-Stop Mode is the multiplier.
 
-Available now: github.com/Claudient/Claudient
+Available now: github.com/UitbreidenOS/Claudient
 
 #SoftwareDevelopment #AI #Engineering #ProductivityTools #ClaudeCode #DevOps
 ```

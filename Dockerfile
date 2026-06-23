@@ -33,8 +33,8 @@ WORKDIR /app
 
 LABEL org.opencontainers.image.title="Claudient"
 LABEL org.opencontainers.image.description="The Claude Code knowledge system - skills, agents, hooks, workflows, and more"
-LABEL org.opencontainers.image.source="https://github.com/Claudient/Claudient"
-LABEL org.opencontainers.image.documentation="https://github.com/Claudient/Claudient#readme"
+LABEL org.opencontainers.image.source="https://github.com/UitbreidenOS/Claudient"
+LABEL org.opencontainers.image.documentation="https://github.com/UitbreidenOS/Claudient#readme"
 
 # Install runtime dependencies
 RUN apk add --no-cache git curl

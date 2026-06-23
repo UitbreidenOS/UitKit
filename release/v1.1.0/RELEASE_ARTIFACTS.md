@@ -2,7 +2,7 @@
 
 **Release Date:** 2026-06-22  
 **Version:** 1.1.0  
-**Repository:** [github.com/Claudient/Claudient](https://github.com/Claudient/Claudient)  
+**Repository:** [github.com/UitbreidenOS/Claudient](https://github.com/UitbreidenOS/Claudient)  
 **Package:** [npmjs.com/package/claudient](https://www.npmjs.com/package/claudient)
 
 ---
@@ -249,7 +249,7 @@ npx claudient list
 
 ```bash
 # Clone repository
-git clone https://github.com/Claudient/Claudient.git
+git clone https://github.com/UitbreidenOS/Claudient.git
 cd Claudient
 git checkout v1.1.0
 
@@ -270,7 +270,7 @@ claudient list
 Inside Claude Code:
 
 ```
-/plugin marketplace add Claudient/Claudient
+/plugin marketplace add UitbreidenOS/Claudient
 /plugin install claudient-everything@claudient
 ```
 
@@ -565,14 +565,14 @@ cat ~/.claude/logs/mcp.log
 ## Support & Resources
 
 ### Documentation
-- **README:** [github.com/Claudient/Claudient](https://github.com/Claudient/Claudient)
+- **README:** [github.com/UitbreidenOS/Claudient](https://github.com/UitbreidenOS/Claudient)
 - **Full Docs:** [claudient.dev](https://claudient.dev) (if available)
 - **CLAUDE.md Guide:** See `claude-md-examples/` for 20 annotated templates
 
 ### Community
 - **Reddit:** [r/uitbreiden](https://www.reddit.com/r/uitbreiden/)
 - **YouTube:** [@UITBREIDEN](https://www.youtube.com/@UITBREIDEN)
-- **GitHub Issues:** [Claudient/Claudient/issues](https://github.com/Claudient/Claudient/issues)
+- **GitHub Issues:** [UitbreidenOS/Claudient/issues](https://github.com/UitbreidenOS/Claudient/issues)
 
 ### Reporting Issues
 
@@ -624,7 +624,7 @@ For detailed release notes, see [CHANGELOG.md](../../CHANGELOG.md)
 ### Previous Versions
 
 - **v1.10.1** — Previous stable release (ship full Claude Code plugin marketplace)
-- Older versions available at [releases page](https://github.com/Claudient/Claudient/releases)
+- Older versions available at [releases page](https://github.com/UitbreidenOS/Claudient/releases)
 
 ---
 
@@ -637,7 +637,7 @@ Git Commit:      [latest-commit-hash]
 Node Version:    18.0.0+
 npm Version:     9.0.0+
 License:         AGPL-3.0-or-later (code), CC-BY-SA-4.0 (content)
-Repository:      github.com/Claudient/Claudient
+Repository:      github.com/UitbreidenOS/Claudient
 NPM Package:     npmjs.com/package/claudient
 ```
 

@@ -370,4 +370,4 @@ _Your sales org here._ This stack is designed to be customized and integrated in
 
 ---
 
-Built by [tushar2704](https://uitbreiden.com/) · [Claudient](https://github.com/Claudient/Claudient) · [Claude Code](https://claude.com/claude-code)
+Built by [tushar2704](https://uitbreiden.com/) · [Claudient](https://github.com/UitbreidenOS/Claudient) · [Claude Code](https://claude.com/claude-code)

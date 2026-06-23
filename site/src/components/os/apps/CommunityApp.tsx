@@ -12,8 +12,8 @@ interface Showcase {
   tags: string[];
 }
 
-const SHOWCASE_URL = "https://github.com/Claudient/Claudient/tree/main/community";
-const PR_URL = "https://github.com/Claudient/Claudient/compare";
+const SHOWCASE_URL = "https://github.com/UitbreidenOS/Claudient/tree/main/community";
+const PR_URL = "https://github.com/UitbreidenOS/Claudient/compare";
 const TEMPLATE_CMD = "cp -r community/template/stack-template/ my-stack && cd my-stack";
 
 const showcases: Showcase[] = [
@@ -169,7 +169,7 @@ export function CommunityApp() {
             <li>Fork the repo and create a branch: <code className="bg-white px-1 py-0.5 rounded font-mono text-[10px]">git checkout -b stacks/your-stack-name</code></li>
             <li>Copy the template: <code className="bg-white px-1 py-0.5 rounded font-mono text-[10px]">cp -r community/template/stack-template/ your-stack/</code></li>
             <li>Add your skills, hooks, and a <code className="bg-white px-1 py-0.5 rounded font-mono text-[10px]">submission.json</code></li>
-            <li>Open a PR at <a href={PR_URL} target="_blank" rel="noopener noreferrer" className="text-brand-blue underline font-semibold">github.com/Claudient/Claudient/compare</a></li>
+            <li>Open a PR at <a href={PR_URL} target="_blank" rel="noopener noreferrer" className="text-brand-blue underline font-semibold">github.com/UitbreidenOS/Claudient/compare</a></li>
           </ol>
           <div className="mt-2 flex items-center gap-2">
             <YellowButton onClick={() => copyCmd(TEMPLATE_CMD, "footer")}>

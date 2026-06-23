@@ -342,7 +342,7 @@ Node: 18+
 License: AGPL-3.0-or-later + CC-BY-SA-4.0
 
 Maintainer: Claudient Core Team
-GitHub: github.com/Claudient/Claudient
+GitHub: github.com/UitbreidenOS/Claudient
 
 ================================================================================
 BUILD COMPLETION

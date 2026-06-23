@@ -350,7 +350,7 @@ Next step — add hooks to your settings.json:
 See hook documentation at:
   ${path.join(REPO_ROOT, 'hooks')}
 
-Or browse online: https://github.com/Claudient/Claudient/tree/main/hooks
+Or browse online: https://github.com/UitbreidenOS/Claudient/tree/main/hooks
 `)
 }
 
@@ -1233,12 +1233,12 @@ ${BOLD}╔═══════════════════════�
   console.log('Next steps:')
   if (summary.hooks) {
     console.log(`  1. Add hook entries to .claude/settings.json`)
-    console.log(`     See: https://github.com/Claudient/Claudient/tree/main/hooks`)
+    console.log(`     See: https://github.com/UitbreidenOS/Claudient/tree/main/hooks`)
   }
   console.log(`  2. Restart Claude Code to activate all installed content`)
   console.log(`  3. Try a skill — type /fastapi or /kubernetes in Claude Code`)
   console.log()
-  console.log(`  Full docs: https://github.com/Claudient/Claudient`)
+  console.log(`  Full docs: https://github.com/UitbreidenOS/Claudient`)
 }
 
 function getFiles(dir, prefix = '') {

@@ -29,7 +29,7 @@ The most comprehensive Claude Code knowledge base — choose the tier that fits 
 **Free forever.**
 
 - Install via npm: `npx claudient add all`
-- Or via Claude Code plugin system: `/plugin marketplace add Claudient/Claudient`
+- Or via Claude Code plugin system: `/plugin marketplace add UitbreidenOS/Claudient`
 - All 400+ open-source skills, 182+ agents, 42 stacks
 - AGPL-3.0 / CC-BY-SA-4.0 licensed
 - Support: GitHub Discussions + Reddit (r/uitbreiden)
@@ -154,4 +154,4 @@ Enterprise (annual contract)
 
 - **Pricing:** [pricing@claudient.ai](mailto:pricing@claudient.ai)
 - **Sales:** [sales@claudient.ai](mailto:sales@claudient.ai)
-- **Support:** [support@claudient.ai](mailto:support@claudient.ai) or [GitHub Discussions](https://github.com/Claudient/Claudient/discussions)
+- **Support:** [support@claudient.ai](mailto:support@claudient.ai) or [GitHub Discussions](https://github.com/UitbreidenOS/Claudient/discussions)

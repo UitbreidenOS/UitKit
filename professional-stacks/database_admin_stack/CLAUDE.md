@@ -124,4 +124,4 @@ database_admin_stack/
 
 ---
 
-Built with [Claudient](https://github.com/Claudient/Claudient) · [Claude Code](https://claude.com/claude-code)
+Built with [Claudient](https://github.com/UitbreidenOS/Claudient) · [Claude Code](https://claude.com/claude-code)

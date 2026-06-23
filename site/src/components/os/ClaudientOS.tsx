@@ -46,7 +46,7 @@ export default function ClaudientOS() {
         {/* Uitbreiden branding */}
         <div className="absolute bottom-2 right-4 z-[9997] flex items-center gap-2.5 no-select">
           <a
-            href="https://github.com/Claudient/Claudient"
+            href="https://github.com/UitbreidenOS/Claudient"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 rounded-lg bg-white/80 backdrop-blur border border-hairline px-3 py-1.5 hover:bg-white hover:border-olive/70 hover:-translate-y-0.5 transition shadow-sm"

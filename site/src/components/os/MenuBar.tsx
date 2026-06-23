@@ -80,7 +80,7 @@ export function MenuBar({ wm }: { wm: WindowManager }) {
           ⚖️ Compare
         </button>
         <a
-          href="https://github.com/Claudient/Claudient"
+          href="https://github.com/UitbreidenOS/Claudient"
           target="_blank"
           rel="noopener noreferrer"
           className="hidden sm:flex items-center gap-1.5 text-[12.5px] font-semibold text-ink hover:text-body hover:bg-white/70 rounded-md px-2 py-1 transition"

@@ -429,7 +429,7 @@ export default class RollbackCommand extends Command {
       { name: 'NPM registry', cmd: `npm info claudient@latest | grep "latest"` },
       { name: 'Installation test', cmd: `cd /tmp && npm install claudient@1.10.0 --silent` },
       { name: 'Git tag removal', cmd: `git ls-remote --tags origin v${version} | wc -l` },
-      { name: 'GitHub release removal', cmd: `curl -s -o /dev/null -w "%{http_code}" https://github.com/Claudient/Claudient/releases/tag/v${version}` },
+      { name: 'GitHub release removal', cmd: `curl -s -o /dev/null -w "%{http_code}" https://github.com/UitbreidenOS/Claudient/releases/tag/v${version}` },
     ];
 
     for (const check of checks) {

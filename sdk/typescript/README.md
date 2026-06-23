@@ -556,5 +556,5 @@ This SDK is part of Claudient and follows the same license: AGPL-3.0-or-later AN
 ## Support
 
 For issues, questions, or contributions:
-- GitHub: https://github.com/Claudient/Claudient
+- GitHub: https://github.com/UitbreidenOS/Claudient
 - Docs: https://claudient.dev

@@ -212,7 +212,7 @@ Added 3 npm commands:
       "name": "API Docs Generator",
       "file": "/path/to/skills/api-docs-generator.md",
       "status": "submitted",
-      "prUrl": "https://github.com/Claudient/Claudient/pull/1234",
+      "prUrl": "https://github.com/UitbreidenOS/Claudient/pull/1234",
       "date": "2026-06-22T11:45:00Z"
     }
   ],

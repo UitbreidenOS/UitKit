@@ -382,7 +382,7 @@ const commands = [
           },
           {
             name: 'Resources',
-            value: '[GitHub](https://github.com/Claudient/Claudient) • [Docs](https://claudient.dev) • [Discord](https://discord.gg/claudient)',
+            value: '[GitHub](https://github.com/UitbreidenOS/Claudient) • [Docs](https://claudient.dev) • [Discord](https://discord.gg/claudient)',
             inline: false
           }
         ])

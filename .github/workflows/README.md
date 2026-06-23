@@ -75,7 +75,7 @@ npm test
 ## Workflow Status
 
 All workflows run independently but can be viewed in the Actions tab:
-https://github.com/Claudient/Claudient/actions
+https://github.com/UitbreidenOS/Claudient/actions
 
 ## Common Tasks
 

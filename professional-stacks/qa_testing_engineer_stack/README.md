@@ -251,4 +251,4 @@ Track and report on:
 
 ---
 
-Built by [tushar2704](https://github.com/tushar2704) · [Claudient](https://github.com/Claudient/Claudient) · [Claude Code](https://claude.com/claude-code)
+Built by [tushar2704](https://github.com/tushar2704) · [Claudient](https://github.com/UitbreidenOS/Claudient) · [Claude Code](https://claude.com/claude-code)

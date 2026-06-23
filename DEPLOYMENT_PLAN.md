@@ -145,7 +145,7 @@ git show v1.10.1 | head -20
 git push origin v1.10.1
 
 # 2.1.4 Verify tag exists on GitHub
-# (Manual: check https://github.com/Claudient/Claudient/releases)
+# (Manual: check https://github.com/UitbreidenOS/Claudient/releases)
 ```
 
 **Duration:** 3 minutes  
@@ -193,7 +193,7 @@ gh release view v1.10.1
 # (Already set by default; if needed: gh release edit v1.10.1 --draft=false)
 
 # 2.3.4 Verify release on GitHub
-# (Manual: https://github.com/Claudient/Claudient/releases/tag/v1.10.1)
+# (Manual: https://github.com/UitbreidenOS/Claudient/releases/tag/v1.10.1)
 ```
 
 **Duration:** 2 minutes  
@@ -374,7 +374,7 @@ grep -r "1.10.1" guides/ || echo "Version not in guides (OK if not required)"
 cat > /tmp/deployment-summary.txt << 'EOF'
 ✓ Claudient v1.10.1 Deployment Complete
   - NPM Package: https://www.npmjs.com/package/claudient
-  - GitHub Release: https://github.com/Claudient/Claudient/releases/tag/v1.10.1
+  - GitHub Release: https://github.com/UitbreidenOS/Claudient/releases/tag/v1.10.1
   - Marketplace: Available in Claude Code
   - Features: 61 showcase features, 400+ skills, 182+ agents, full translations
   - Status: Production ✓
@@ -619,11 +619,11 @@ npx claudient@1.10.1 list > /dev/null && echo "✓" || echo "✗"
 
 # 4. GitHub release visibility
 echo "[4/5] GitHub release..."
-curl -s https://api.github.com/repos/Claudient/Claudient/releases/tags/v1.10.1 | jq '.tag_name' | grep -q v1.10.1 && echo "✓" || echo "✗"
+curl -s https://api.github.com/repos/UitbreidenOS/Claudient/releases/tags/v1.10.1 | jq '.tag_name' | grep -q v1.10.1 && echo "✓" || echo "✗"
 
 # 5. Git tag existence
 echo "[5/5] Git tag..."
-git ls-remote --tags https://github.com/Claudient/Claudient.git v1.10.1 | grep -q v1.10.1 && echo "✓" || echo "✗"
+git ls-remote --tags https://github.com/UitbreidenOS/Claudient.git v1.10.1 | grep -q v1.10.1 && echo "✓" || echo "✗"
 
 echo "=== Health check complete ==="
 ```

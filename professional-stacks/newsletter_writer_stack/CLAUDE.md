@@ -180,4 +180,4 @@ Before send, confirm:
 
 ---
 
-Built with [Claudient](https://github.com/Claudient/Claudient) · [uitbreiden.com](https://uitbreiden.com/)
+Built with [Claudient](https://github.com/UitbreidenOS/Claudient) · [uitbreiden.com](https://uitbreiden.com/)

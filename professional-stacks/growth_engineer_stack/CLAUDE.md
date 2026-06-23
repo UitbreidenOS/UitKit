@@ -80,4 +80,4 @@ growth_engineer_stack/
 
 ---
 
-Built with [Claudient](https://github.com/Claudient/Claudient)
+Built with [Claudient](https://github.com/UitbreidenOS/Claudient)

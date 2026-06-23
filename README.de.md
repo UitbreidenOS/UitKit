@@ -6,7 +6,7 @@
 
 [![npm version](https://img.shields.io/npm/v/claudient?color=f97316&label=npm)](https://www.npmjs.com/package/claudient)
 [![npm downloads](https://img.shields.io/npm/dm/claudient?color=f97316)](https://www.npmjs.com/package/claudient)
-[![GitHub Stars](https://img.shields.io/github/stars/Claudient/Claudient?color=f97316&label=stars)](https://github.com/Claudient/Claudient)
+[![GitHub Stars](https://img.shields.io/github/stars/UitbreidenOS/Claudient?color=f97316&label=stars)](https://github.com/UitbreidenOS/Claudient)
 [![License: AGPL-3.0](https://img.shields.io/badge/code-AGPL--3.0-3b82f6.svg)](LICENSE-CODE)
 [![Content License: CC-BY-SA-4.0](https://img.shields.io/badge/content-CC--BY--SA--4.0-ec4899.svg)](LICENSE-CONTENT)
 [![Skills](https://img.shields.io/badge/skills-400+-f97316)](#skills-by-category)
@@ -29,7 +29,7 @@ Claudient ist die größte Open-Source-Wissensdatenbank für **Claude Code** —
 
 ```bash
 # Installation als Claude Code Plugin Marketplace (empfohlen)
-/plugin marketplace add Claudient/Claudient
+/plugin marketplace add UitbreidenOS/Claudient
 /plugin install claudient-everything@claudient
 
 # Oder über npm
@@ -47,7 +47,7 @@ Claudient wird als natives Claude Code **Plugin Marketplace** bereitgestellt. F�
 
 ```bash
 # 1. Marketplace hinzufügen
-/plugin marketplace add Claudient/Claudient
+/plugin marketplace add UitbreidenOS/Claudient
 
 # 2. Ein Domain-Plugin installieren (oder das Everything-Bundle)
 /plugin install claudient-gtm@claudient
@@ -168,7 +168,7 @@ Eine `CLAUDE.md` setzt Projekt-Level-Kontext für ein Repo. Claudient-Fähigkeit
 Claudient ist für Claude Code (CLI und IDE-Erweiterungen) konzipiert. Cross-Harness-Adapter in [`compatibility/`](compatibility/) unterstützen auch Cursor, Windsurf, Codex CLI, Gemini Code Assist und GitHub Copilot.
 
 ### Wie installiere ich Claude Code Fähigkeiten von Claudient?
-Führen Sie `npx claudient add all` aus, um alles zu installieren, oder verwenden Sie das Claude Code Plugin-System: `/plugin marketplace add Claudient/Claudient` gefolgt von `/plugin install claudient-everything@claudient`. Installieren Sie nach Domain mit `npx claudient add skills backend` oder `npx claudient add skills devops-infra`.
+Führen Sie `npx claudient add all` aus, um alles zu installieren, oder verwenden Sie das Claude Code Plugin-System: `/plugin marketplace add UitbreidenOS/Claudient` gefolgt von `/plugin install claudient-everything@claudient`. Installieren Sie nach Domain mit `npx claudient add skills backend` oder `npx claudient add skills devops-infra`.
 
 ---
 
@@ -758,7 +758,7 @@ Claudient wird von der Community angetrieben. Jede Fähigkeit lebt in einer Mark
 
 **Empfohlene GitHub-Themen für Claude Code Projekte:** `claude` · `claude-code` · `anthropic` · `llm-tools` · `mcp` · `developer-tools` · `prompt-engineering` · `ai-assistant`
 
-**[GitHub Discussions](https://github.com/Claudient/Claudient/discussions) · [CONTRIBUTING.md](CONTRIBUTING.md) · [Reddit](https://www.reddit.com/r/uitbreiden/)**
+**[GitHub Discussions](https://github.com/UitbreidenOS/Claudient/discussions) · [CONTRIBUTING.md](CONTRIBUTING.md) · [Reddit](https://www.reddit.com/r/uitbreiden/)**
 
 ---
 

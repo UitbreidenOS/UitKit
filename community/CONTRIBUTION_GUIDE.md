@@ -35,7 +35,7 @@ All contributors must:
 
 2. **Fork the Claudient repository**
    ```bash
-   git clone https://github.com/Claudient/Claudient
+   git clone https://github.com/UitbreidenOS/Claudient
    cd Claudient
    ```
 

@@ -147,7 +147,7 @@ Contributor state is saved to `.claude/contributor-state.json`:
       "name": "API Documentation Generator",
       "file": "/path/to/skills/api-docs-generator.md",
       "status": "submitted",
-      "prUrl": "https://github.com/Claudient/Claudient/pull/1234",
+      "prUrl": "https://github.com/UitbreidenOS/Claudient/pull/1234",
       "date": "2026-06-22T11:45:00.000Z"
     }
   ],

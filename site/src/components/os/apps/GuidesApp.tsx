@@ -9,7 +9,7 @@ interface Guide {
   excerpt?: string;
 }
 
-const REPO_GUIDES_URL = "https://github.com/Claudient/Claudient/blob/main/guides";
+const REPO_GUIDES_URL = "https://github.com/UitbreidenOS/Claudient/blob/main/guides";
 
 const guides: Guide[] = [
   // Getting Started

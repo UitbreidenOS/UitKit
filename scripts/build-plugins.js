@@ -349,8 +349,8 @@ for (const category of SKILL_CATEGORIES) {
       email: 'ceo@uitbreiden.com',
       url: 'https://uitbreiden.com',
     },
-    homepage: 'https://github.com/Claudient/Claudient',
-    repository: 'https://github.com/Claudient/Claudient',
+    homepage: 'https://github.com/UitbreidenOS/Claudient',
+    repository: 'https://github.com/UitbreidenOS/Claudient',
     license: 'CC-BY-SA-4.0',
     keywords: ['claudient', 'claude-code', ...meta.keywords],
     skills: ['./skills/'],
@@ -405,8 +405,8 @@ for (const category of SKILL_CATEGORIES) {
     version: version,
     description: `${cmdTotalFiles}+ slash commands across git, testing, refactor, docs, debug, devops, database, security, frontend, api, ai-engineering, and productivity.`,
     author: { name: 'tushar2704', email: 'ceo@uitbreiden.com', url: 'https://uitbreiden.com' },
-    homepage: 'https://github.com/Claudient/Claudient',
-    repository: 'https://github.com/Claudient/Claudient',
+    homepage: 'https://github.com/UitbreidenOS/Claudient',
+    repository: 'https://github.com/UitbreidenOS/Claudient',
     license: 'CC-BY-SA-4.0',
     keywords: ['claudient', 'claude-code', 'commands', 'slash-commands'],
     commands: ['./commands/'],
@@ -447,8 +447,8 @@ for (const category of SKILL_CATEGORIES) {
     version: version,
     description: `10 operating personas for Claude: startup-cto, solo-founder, growth-marketer, indie-hacker, enterprise-architect, data-driven-pm, devrel-advocate, agency-operator, ai-product-builder, fractional-exec.`,
     author: { name: 'tushar2704', email: 'ceo@uitbreiden.com', url: 'https://uitbreiden.com' },
-    homepage: 'https://github.com/Claudient/Claudient',
-    repository: 'https://github.com/Claudient/Claudient',
+    homepage: 'https://github.com/UitbreidenOS/Claudient',
+    repository: 'https://github.com/UitbreidenOS/Claudient',
     license: 'CC-BY-SA-4.0',
     keywords: ['claudient', 'claude-code', 'personas', 'roles'],
     agents: personaFiles,
@@ -484,7 +484,7 @@ Install each domain plugin directly:
 ${allPluginNames.map(n => `- \`/plugin install ${n}\``).join('\n')}
 
 Or install from the marketplace registry:
-  /plugin marketplace add Claudient/Claudient
+  /plugin marketplace add UitbreidenOS/Claudient
 `
 fs.writeFileSync(path.join(everythingDir, 'README.md'), everythingReadme)
 
@@ -499,8 +499,8 @@ const everythingJson = {
     email: 'ceo@uitbreiden.com',
     url: 'https://uitbreiden.com',
   },
-  homepage: 'https://github.com/Claudient/Claudient',
-  repository: 'https://github.com/Claudient/Claudient',
+  homepage: 'https://github.com/UitbreidenOS/Claudient',
+  repository: 'https://github.com/UitbreidenOS/Claudient',
   license: 'CC-BY-SA-4.0',
   keywords: ['claudient', 'claude-code', 'all', 'meta-bundle'],
 }
@@ -556,7 +556,7 @@ console.log('  plugins/                         <- all per-category plugin dirs'
 console.log('  .claude-plugin/marketplace.json  <- root marketplace manifest')
 console.log()
 console.log('Install commands:')
-console.log('  /plugin marketplace add Claudient/Claudient')
+console.log('  /plugin marketplace add UitbreidenOS/Claudient')
 console.log('  # then install any domain plugin, e.g.:')
 console.log('  /plugin install claudient-productivity')
 console.log('  /plugin install claudient-backend')

@@ -272,4 +272,4 @@ Before finalizing your CTA:
 
 ---
 
-Built with [Claudient](https://github.com/Claudient/Claudient) · [Newsletter Writer Stack](./README.md)
+Built with [Claudient](https://github.com/UitbreidenOS/Claudient) · [Newsletter Writer Stack](./README.md)

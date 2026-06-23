@@ -354,7 +354,7 @@ cat ~/.claude/settings.json | jq '.permissions'
 
 ## Feature 3: Plugin Marketplace Installation
 
-### Issue: `/plugin marketplace add Claudient/Claudient` fails
+### Issue: `/plugin marketplace add UitbreidenOS/Claudient` fails
 
 **Symptom:** Error: `Invalid marketplace URL` or `Not found`.
 
@@ -364,7 +364,7 @@ cat ~/.claude/settings.json | jq '.permissions'
 cat ~/.claude/settings.json | jq '.plugin'
 
 # Test marketplace.json accessibility
-curl -s https://raw.githubusercontent.com/Claudient/Claudient/main/.claude-plugin/marketplace.json | jq '.name'
+curl -s https://raw.githubusercontent.com/UitbreidenOS/Claudient/main/.claude-plugin/marketplace.json | jq '.name'
 
 # Check Claude Code version supports plugins (requires 2.5+)
 claude --version
@@ -392,9 +392,9 @@ claude --version
 
 3. **Retry marketplace add:**
    ```bash
-   /plugin marketplace add Claudient/Claudient
+   /plugin marketplace add UitbreidenOS/Claudient
    # Or via CLI:
-   npx claudient plugin:marketplace:add Claudient/Claudient
+   npx claudient plugin:marketplace:add UitbreidenOS/Claudient
    ```
 
 4. **If GitHub is unreachable:**
@@ -405,7 +405,7 @@ claude --version
 
    # Try with explicit timeout
    npm config set fetch-timeout 60000
-   /plugin marketplace add Claudient/Claudient
+   /plugin marketplace add UitbreidenOS/Claudient
    ```
 
 ---
@@ -420,7 +420,7 @@ claude --version
 ls -la ~/.claude/plugin-cache/
 
 # Test individual plugin manifest
-curl -s https://raw.githubusercontent.com/Claudient/Claudient/main/plugins/claudient-everything/manifest.json | jq '.name'
+curl -s https://raw.githubusercontent.com/UitbreidenOS/Claudient/main/plugins/claudient-everything/manifest.json | jq '.name'
 
 # Monitor disk usage
 df -h ~
@@ -885,7 +885,7 @@ time npx claudient list            # Measure command latency
 - **Skill Format:** [Skills Frontmatter Reference](guides/skills-frontmatter.md)
 - **Agent Format:** [Agent Frontmatter Reference](guides/agent-frontmatter.md)
 - **Plugin Authoring:** [Plugin Authoring Guide](guides/plugin-authoring.md)
-- **GitHub Issues:** [Claudient/Claudient Issues](https://github.com/Claudient/Claudient/issues)
+- **GitHub Issues:** [UitbreidenOS/Claudient Issues](https://github.com/UitbreidenOS/Claudient/issues)
 - **Reddit:** [r/uitbreiden](https://www.reddit.com/r/uitbreiden/)
 
 ---

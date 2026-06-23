@@ -139,4 +139,4 @@ Track and report on:
 
 ---
 
-Built with [Claudient](https://github.com/Claudient/Claudient) · [Product Operations Stack](https://github.com/Claudient/Claudient)
+Built with [Claudient](https://github.com/UitbreidenOS/Claudient) · [Product Operations Stack](https://github.com/UitbreidenOS/Claudient)

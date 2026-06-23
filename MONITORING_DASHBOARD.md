@@ -1255,7 +1255,7 @@ commonLabels:
 
 ```bash
 # Clone & navigate
-git clone https://github.com/Claudient/Claudient.git
+git clone https://github.com/UitbreidenOS/Claudient.git
 cd Claudient
 
 # Start Docker Compose stack
@@ -1387,4 +1387,4 @@ du -sh /prometheus/wal
 
 ---
 
-**Support:** [GitHub Issues](https://github.com/Claudient/Claudient/issues) · [Discussions](https://github.com/Claudient/Claudient/discussions)
+**Support:** [GitHub Issues](https://github.com/UitbreidenOS/Claudient/issues) · [Discussions](https://github.com/UitbreidenOS/Claudient/discussions)

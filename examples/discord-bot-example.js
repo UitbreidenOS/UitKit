@@ -261,7 +261,7 @@ const fetchLatestReleaseCommand = {
 
     try {
       const response = await fetch(
-        'https://api.github.com/repos/Claudient/Claudient/releases/latest'
+        'https://api.github.com/repos/UitbreidenOS/Claudient/releases/latest'
       );
       const release = await response.json();
 

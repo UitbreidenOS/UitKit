@@ -316,7 +316,7 @@ export function HomeApp({ wm }: { wm: WindowManager }) {
           </p>
           <div className="mt-3 flex flex-wrap gap-2.5">
             <a
-              href="https://github.com/Claudient/Claudient"
+              href="https://github.com/UitbreidenOS/Claudient"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 rounded-md bg-ink px-3 py-1.5 text-[12px] font-bold text-white hover:bg-body transition"

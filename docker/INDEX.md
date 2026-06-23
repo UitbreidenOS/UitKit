@@ -418,4 +418,4 @@ Same as Claudient: AGPL-3.0-or-later AND CC-BY-SA-4.0
 
 **Last Updated:** 2026-06-22  
 **Maintainer:** tushar2704  
-**Repository:** https://github.com/Claudient/Claudient
+**Repository:** https://github.com/UitbreidenOS/Claudient

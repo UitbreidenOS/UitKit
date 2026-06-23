@@ -2,9 +2,9 @@ import { useState } from "react";
 import { Eyebrow, YellowButton, GhostButton } from "./ui";
 
 const methods = [
-  { title: "Plugin Marketplace", cmd: "/plugin marketplace add Claudient/Claudient", desc: "Recommended — installs all plugins", recommended: true },
+  { title: "Plugin Marketplace", cmd: "/plugin marketplace add UitbreidenOS/Claudient", desc: "Recommended — installs all plugins", recommended: true },
   { title: "npm CLI", cmd: "npx claudient add skills backend", desc: "Cherry-pick specific categories" },
-  { title: "Git Clone", cmd: "git clone https://github.com/Claudient/Claudient.git", desc: "Full repository access" },
+  { title: "Git Clone", cmd: "git clone https://github.com/UitbreidenOS/Claudient.git", desc: "Full repository access" },
 ];
 
 const stats = [
@@ -125,10 +125,10 @@ export function InstallApp() {
       </div>
 
       <div className="mt-4 flex gap-2">
-        <YellowButton onClick={() => copy(99, "/plugin marketplace add Claudient/Claudient")}>
+        <YellowButton onClick={() => copy(99, "/plugin marketplace add UitbreidenOS/Claudient")}>
           {copied === 99 ? "✓ Copied!" : "Quick Install →"}
         </YellowButton>
-        <GhostButton onClick={() => window.open("https://github.com/Claudient/Claudient", "_blank")}>
+        <GhostButton onClick={() => window.open("https://github.com/UitbreidenOS/Claudient", "_blank")}>
           GitHub
         </GhostButton>
       </div>
@@ -158,7 +158,7 @@ export function InstallApp() {
                 </a>
               )}
               {t.name === "Team" && (
-                <a href="https://github.com/Claudient/Claudient" target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex items-center rounded-md border border-olive/60 bg-white px-2 py-1 text-[10px] font-semibold text-ink hover:bg-cream transition w-full text-center justify-center">
+                <a href="https://github.com/UitbreidenOS/Claudient" target="_blank" rel="noopener noreferrer" className="mt-2 inline-flex items-center rounded-md border border-olive/60 bg-white px-2 py-1 text-[10px] font-semibold text-ink hover:bg-cream transition w-full text-center justify-center">
                   Learn More
                 </a>
               )}

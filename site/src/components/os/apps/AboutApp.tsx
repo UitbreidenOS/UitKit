@@ -57,7 +57,7 @@ export function AboutApp({ wm }: { wm: WindowManager }) {
       <div className="mt-6 flex gap-3">
         <YellowButton onClick={() => wm.open("install")}>Get Started →</YellowButton>
         <button
-          onClick={() => window.open("https://github.com/Claudient/Claudient", "_blank")}
+          onClick={() => window.open("https://github.com/UitbreidenOS/Claudient", "_blank")}
           className="inline-flex items-center gap-1.5 rounded-md border border-olive/60 bg-white px-4 py-2 text-[13px] font-semibold text-ink hover:bg-cream transition"
         >
           GitHub

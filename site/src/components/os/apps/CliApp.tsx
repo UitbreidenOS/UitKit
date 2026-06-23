@@ -1121,7 +1121,7 @@ export function CliApp() {
           )}
           {cmd.tier === "free" && (
             <a
-              href="https://github.com/Claudient/Claudient"
+              href="https://github.com/UitbreidenOS/Claudient"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 rounded-md border border-olive/60 bg-white px-3 py-1.5 text-[12px] font-semibold text-ink hover:bg-cream transition"

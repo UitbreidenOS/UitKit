@@ -22,4 +22,4 @@ Install each domain plugin directly:
 - `/plugin install claudient-small-business`
 
 Or install from the marketplace registry:
-  /plugin marketplace add Claudient/Claudient
+  /plugin marketplace add UitbreidenOS/Claudient

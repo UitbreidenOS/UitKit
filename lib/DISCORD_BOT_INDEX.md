@@ -353,7 +353,7 @@ npm test -- discord-bot.test.js
 - [Node.js Documentation](https://nodejs.org/)
 
 ### Community Support
-- GitHub Issues: https://github.com/Claudient/Claudient/issues
+- GitHub Issues: https://github.com/UitbreidenOS/Claudient/issues
 - Discord Server: https://discord.gg/claudient
 
 ---
@@ -414,7 +414,7 @@ Same as Claudient: AGPL-3.0-or-later + CC-BY-SA-4.0
 **External:**
 - Discord Developers: https://discord.com/developers
 - Discord.js Docs: https://discord.js.org/
-- GitHub: https://github.com/Claudient/Claudient
+- GitHub: https://github.com/UitbreidenOS/Claudient
 
 ---
 

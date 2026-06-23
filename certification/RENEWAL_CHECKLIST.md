@@ -73,7 +73,7 @@ npm run badge:score <your-github-username>
 - [ ] Active community standing? (No flagged issues)
 
 **Tracking your contributions:**
-1. Visit: https://github.com/Claudient/Claudient/pulls?q=author:<YOUR-USERNAME>+merged
+1. Visit: https://github.com/UitbreidenOS/Claudient/pulls?q=author:<YOUR-USERNAME>+merged
 2. Filter by date (18 months back to today)
 3. Count merged PRs
 
@@ -249,7 +249,7 @@ Don't worry! Renewal denials are usually fixable.
 
 ### Common reasons for denial:
 1. **Incomplete evidence:** Missing links or dates
-   - **Fix:** Resubmit with detailed PR links (e.g., github.com/Claudient/Claudient/pull/123)
+   - **Fix:** Resubmit with detailed PR links (e.g., github.com/UitbreidenOS/Claudient/pull/123)
 
 2. **Contributions don't meet threshold:** Fewer than required
    - **Fix:** Make additional contributions and reapply after 30 days

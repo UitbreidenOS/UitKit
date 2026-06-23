@@ -201,4 +201,4 @@ VOLUME ["/root/.claude"]
 LABEL org.opencontainers.image.title="Claudient" \
       org.opencontainers.image.description="Claude Code Knowledge System - Skills, Agents, Hooks, Workflows" \
       org.opencontainers.image.authors="tushar2704" \
-      org.opencontainers.image.url="https://github.com/Claudient/Claudient"
+      org.opencontainers.image.url="https://github.com/UitbreidenOS/Claudient"

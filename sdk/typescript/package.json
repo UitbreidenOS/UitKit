@@ -50,13 +50,13 @@
   "license": "(AGPL-3.0-or-later AND CC-BY-SA-4.0)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Claudient/Claudient.git",
+    "url": "https://github.com/UitbreidenOS/Claudient.git",
     "directory": "sdk/typescript"
   },
   "bugs": {
-    "url": "https://github.com/Claudient/Claudient/issues"
+    "url": "https://github.com/UitbreidenOS/Claudient/issues"
   },
-  "homepage": "https://github.com/Claudient/Claudient#readme",
+  "homepage": "https://github.com/UitbreidenOS/Claudient#readme",
   "engines": {
     "node": ">=18.0.0"
   },

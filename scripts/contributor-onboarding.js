@@ -275,7 +275,7 @@ async function stageForkSetup() {
   printInfo('You need to create your own copy of the Claudient repository.');
 
   console.log(`\n${Colors.bright}Manual Fork Steps:${Colors.reset}`);
-  console.log(`1. Go to: ${Colors.cyan}https://github.com/Claudient/Claudient${Colors.reset}`);
+  console.log(`1. Go to: ${Colors.cyan}https://github.com/UitbreidenOS/Claudient${Colors.reset}`);
   console.log(`2. Click the ${Colors.bright}"Fork"${Colors.reset} button (top-right)`);
   console.log(`3. Select your account as the destination`);
   console.log(`4. Wait for the fork to complete\n`);
@@ -300,7 +300,7 @@ async function stageForkSetup() {
 
     // Add upstream remote
     console.log(`\n${Colors.dim}Adding upstream remote...${Colors.reset}`);
-    execSync('git remote add upstream https://github.com/Claudient/Claudient.git');
+    execSync('git remote add upstream https://github.com/UitbreidenOS/Claudient.git');
     printSuccess('Upstream remote added');
 
   } catch (error) {
@@ -419,7 +419,7 @@ async function stageSubmitPR() {
 
   console.log(prTemplate);
 
-  const prUrl = await prompt('\nPaste your PR URL (github.com/Claudient/Claudient/pull/XXX)');
+  const prUrl = await prompt('\nPaste your PR URL (github.com/UitbreidenOS/Claudient/pull/XXX)');
 
   if (prUrl.includes('github.com')) {
     printSuccess(`PR submitted: ${prUrl}`);

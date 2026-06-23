@@ -46,7 +46,7 @@ Claudient is a game-changing knowledge system for Claude Code — 400+ skills, 1
 
 ### Download Link
 ```
-https://github.com/Claudient/Claudient/tree/main/press-kit
+https://github.com/UitbreidenOS/Claudient/tree/main/press-kit
 ```
 
 ### Press Kit Contents (Create at `/Users/tushar/Desktop/Claudient/press-kit/`)
@@ -116,7 +116,7 @@ I have:
 
 Availability: [Your availability]
 
-Press kit: https://github.com/Claudient/Claudient/tree/main/press-kit
+Press kit: https://github.com/UitbreidenOS/Claudient/tree/main/press-kit
 
 Best,
 Tushar Aggarwal
@@ -197,16 +197,16 @@ npx claudient add skills devops-infra
 npx claudient add agents
 
 # Or as a Claude Code plugin
-/plugin marketplace add Claudient/Claudient
+/plugin marketplace add UitbreidenOS/Claudient
 /plugin install claudient-gtm@claudient
 ```
 
 **Open Source + Community**
 
-- GitHub: https://github.com/Claudient/Claudient
+- GitHub: https://github.com/UitbreidenOS/Claudient
 - Reddit: https://www.reddit.com/r/uitbreiden/
 - Discord: [Link]
-- Press Kit: https://github.com/Claudient/Claudient/tree/main/press-kit
+- Press Kit: https://github.com/UitbreidenOS/Claudient/tree/main/press-kit
 
 **What's Next**
 
@@ -233,7 +233,7 @@ GitHub: @Claudient
 ```
 Title: Claudient: 400+ Claude Code Skills, 182 Agents, Plugin Marketplace — Open Source, Install in 30 Seconds
 
-Story URL: https://github.com/Claudient/Claudient
+Story URL: https://github.com/UitbreidenOS/Claudient
 
 Text:
 
@@ -259,7 +259,7 @@ Install: `npx claudient add all` or use the Claude Code plugin system
 
 Open source, dual licensed (AGPL-3.0 code + CC-BY-SA-4.0 content).
 
-Contributors welcome. Press kit: https://github.com/Claudient/Claudient/tree/main/press-kit
+Contributors welcome. Press kit: https://github.com/UitbreidenOS/Claudient/tree/main/press-kit
 ```
 
 ### Template 4: Reddit Post (r/Claude, r/SideProject)
@@ -319,10 +319,10 @@ Institutional knowledge shouldn't be locked in private repos. Developers benefit
 
 ## Get Started
 
-- GitHub: https://github.com/Claudient/Claudient
+- GitHub: https://github.com/UitbreidenOS/Claudient
 - Install: `npx claudient add all`
-- Plugin system: `/plugin marketplace add Claudient/Claudient`
-- Press kit (screenshots, stats, video demo): https://github.com/Claudient/Claudient/tree/main/press-kit
+- Plugin system: `/plugin marketplace add UitbreidenOS/Claudient`
+- Press kit (screenshots, stats, video demo): https://github.com/UitbreidenOS/Claudient/tree/main/press-kit
 - Join the community: r/uitbreiden
 
 Would love your feedback. Ask me anything!
@@ -356,7 +356,7 @@ npx claudient add all
 
 Or use Claude Code's plugin system:
 ```
-/plugin marketplace add Claudient/Claudient
+/plugin marketplace add UitbreidenOS/Claudient
 /plugin install claudient-everything@claudient
 ```
 
@@ -368,9 +368,9 @@ Or use Claude Code's plugin system:
 - `/kubernetes-architect` → K8s manifests + Helm charts
 
 **Links:**
-📦 GitHub: https://github.com/Claudient/Claudient
-📘 Docs: https://github.com/Claudient/Claudient/tree/main/guides
-🎥 Press Kit (video + screenshots): https://github.com/Claudient/Claudient/tree/main/press-kit
+📦 GitHub: https://github.com/UitbreidenOS/Claudient
+📘 Docs: https://github.com/UitbreidenOS/Claudient/tree/main/guides
+🎥 Press Kit (video + screenshots): https://github.com/UitbreidenOS/Claudient/tree/main/press-kit
 💬 Community: r/uitbreiden
 
 Made by @Tushar2704 (Uitbreiden). Questions? Ask in thread!
@@ -526,7 +526,7 @@ A: 15K+ monthly npm installs. GitHub stars growing. Plugin marketplace live with
 **GitHub**: @Claudient / @tushar2704
 **Twitter**: @tushar2704
 **Website**: https://uitbreiden.com
-**Press Kit**: https://github.com/Claudient/Claudient/tree/main/press-kit
+**Press Kit**: https://github.com/UitbreidenOS/Claudient/tree/main/press-kit
 
 ---
 

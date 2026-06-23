@@ -46,4 +46,4 @@ Connects Claude Code to Discord for community management, message monitoring, an
 
 ---
 
-Built with [Claudient](https://github.com/Claudient/Claudient) · [Claude Code](https://claude.com/claude-code)
+Built with [Claudient](https://github.com/UitbreidenOS/Claudient) · [Claude Code](https://claude.com/claude-code)

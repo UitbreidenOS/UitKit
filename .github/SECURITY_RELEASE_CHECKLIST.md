@@ -80,7 +80,7 @@ Use this checklist when releasing a security patch or addressing a vulnerability
 ## Post-Release Disclosure
 
 - [ ] **Advisory publication** (after embargo if applicable)
-  - [ ] Publish to [GitHub Security Advisories](https://github.com/Claudient/Claudient/security/advisories)
+  - [ ] Publish to [GitHub Security Advisories](https://github.com/UitbreidenOS/Claudient/security/advisories)
   - [ ] Include:
     - [ ] CVE ID (if assigned)
     - [ ] CVSS score

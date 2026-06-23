@@ -45,4 +45,4 @@ Connects Claude Code to Redis instances for cache inspection, key management, an
 
 ---
 
-Built with [Claudient](https://github.com/Claudient/Claudient) · [Claude Code](https://claude.com/claude-code)
+Built with [Claudient](https://github.com/UitbreidenOS/Claudient) · [Claude Code](https://claude.com/claude-code)

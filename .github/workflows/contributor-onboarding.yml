@@ -45,7 +45,7 @@ Welcome to Claudient! 🎉
 Thanks for your first contribution, @${pullRequest.user.login}! We're excited to have you join our community.
 
 ### Getting Started
-1. **Read the Contributor Guide**: Check out [CONTRIBUTING.md](https://github.com/Claudient/Claudient/blob/main/CONTRIBUTING.md)
+1. **Read the Contributor Guide**: Check out [CONTRIBUTING.md](https://github.com/UitbreidenOS/Claudient/blob/main/CONTRIBUTING.md)
 2. **Join Our Community**: Connect with us on [Discord](https://discord.gg/claudient)
 3. **Track Your Progress**: Run \`npm run contributor-onboarding\` to see your contributor profile
 

@@ -12,7 +12,7 @@ DO NOT use this template for non-security issues.
 For general bugs, use the standard issue template.
 
 PLEASE report security issues privately using one of these methods:
-1. GitHub Private Security Advisory (preferred): https://github.com/Claudient/Claudient/security/advisories/new
+1. GitHub Private Security Advisory (preferred): https://github.com/UitbreidenOS/Claudient/security/advisories/new
 2. Email: security@claudient.dev
 3. Email fallback: security@uitbreiden.com
 
@@ -38,7 +38,7 @@ This form is public and should NOT be used for detailed vulnerability informatio
 Instead of detailing the vulnerability here, please report it privately using one of these methods:
 
 ### Method 1: GitHub Private Security Advisory (Recommended)
-Go to: https://github.com/Claudient/Claudient/security/advisories/new
+Go to: https://github.com/UitbreidenOS/Claudient/security/advisories/new
 
 Include:
 - Vulnerability description

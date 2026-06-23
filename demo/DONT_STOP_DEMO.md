@@ -229,7 +229,7 @@ Creating pull request for main into main
 remote: Resolving deltas: 100% (12/12), completed with 9 local objects.
 
 ✓ Created pull request #247
-  https://github.com/Claudient/Claudient/pull/247
+  https://github.com/UitbreidenOS/Claudient/pull/247
 
 PR SUMMARY:
 ┌─────────────────────────────────────────────────────────┐
@@ -282,11 +282,11 @@ Error rate: ~20%                   Error rate: <1%
 **Call-to-action**:
 ```
 $ npm install -g claudient
-$ /plugin marketplace add Claudient/Claudient
+$ /plugin marketplace add UitbreidenOS/Claudient
 $ /plugin install claudient-everything@claudient
 
 Ready to automate? Start with /help or visit:
-https://github.com/Claudient/Claudient
+https://github.com/UitbreidenOS/Claudient
 ```
 
 ---

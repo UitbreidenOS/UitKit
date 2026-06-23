@@ -199,4 +199,4 @@ hr_people_operations_stack/
 
 ---
 
-Built with [Claudient](https://github.com/Claudient/Claudient) · [claude.com/claude-code](https://claude.com/claude-code)
+Built with [Claudient](https://github.com/UitbreidenOS/Claudient) · [claude.com/claude-code](https://claude.com/claude-code)

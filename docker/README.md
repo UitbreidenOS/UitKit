@@ -344,5 +344,5 @@ Same as Claudient: AGPL-3.0-or-later AND CC-BY-SA-4.0
 
 ## Support
 
-- GitHub Issues: https://github.com/Claudient/Claudient/issues
-- Documentation: https://github.com/Claudient/Claudient/blob/main/README.md
+- GitHub Issues: https://github.com/UitbreidenOS/Claudient/issues
+- Documentation: https://github.com/UitbreidenOS/Claudient/blob/main/README.md

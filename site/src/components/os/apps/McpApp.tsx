@@ -304,7 +304,7 @@ export function McpApp() {
               {copied ? "✓ Copied!" : "Copy Config JSON"}
             </YellowButton>
             <a
-              href={`https://github.com/Claudient/Claudient/blob/main/mcp/${cfg.id}.md`}
+              href={`https://github.com/UitbreidenOS/Claudient/blob/main/mcp/${cfg.id}.md`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 rounded-md border border-olive/60 bg-white px-4 py-2 text-[13px] font-semibold text-ink hover:bg-cream transition"

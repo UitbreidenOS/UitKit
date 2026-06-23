@@ -11,7 +11,7 @@ If you discover a security vulnerability in Claudient, please **do not** open a 
 ### Reporting Methods
 
 **Option 1: GitHub Security Advisory (Recommended)**
-- Navigate to [Claudient/Claudient Security Advisory](https://github.com/Claudient/Claudient/security/advisories/new)
+- Navigate to [UitbreidenOS/Claudient Security Advisory](https://github.com/UitbreidenOS/Claudient/security/advisories/new)
 - Fill out the vulnerability form with:
   - **Title**: Brief, non-specific description (e.g., "Potential credential exposure in configuration parsing")
   - **Description**: Detailed explanation, affected versions, CVSS score (if known)
@@ -64,8 +64,8 @@ Upon receipt of a vulnerability report:
 |---|---|---|
 | **Security Lead** | `security@claudient.dev` | Primary contact; responds within 24 hours |
 | **Fallback Contact** | `security@uitbreiden.com` | Escalation; 48-hour response |
-| **GitHub Security** | [Private advisory form](https://github.com/Claudient/Claudient/security/advisories/new) | Integrated GitHub alert system |
-| **Public Disclosure** | [GitHub Security Advisories](https://github.com/Claudient/Claudient/security/advisories) | Published advisories appear here |
+| **GitHub Security** | [Private advisory form](https://github.com/UitbreidenOS/Claudient/security/advisories/new) | Integrated GitHub alert system |
+| **Public Disclosure** | [GitHub Security Advisories](https://github.com/UitbreidenOS/Claudient/security/advisories) | Published advisories appear here |
 
 ---
 
@@ -73,11 +73,11 @@ Upon receipt of a vulnerability report:
 
 ### Active Issues
 
-**None currently disclosed.** Check the [GitHub Security Advisories](https://github.com/Claudient/Claudient/security/advisories) page for the authoritative list.
+**None currently disclosed.** Check the [GitHub Security Advisories](https://github.com/UitbreidenOS/Claudient/security/advisories) page for the authoritative list.
 
 ### Historical Issues
 
-All resolved security issues are published in the [Security Advisories](https://github.com/Claudient/Claudient/security/advisories) archive after the embargo period expires.
+All resolved security issues are published in the [Security Advisories](https://github.com/UitbreidenOS/Claudient/security/advisories) archive after the embargo period expires.
 
 ---
 
@@ -229,15 +229,15 @@ Claudient is provided **as-is** under the terms of its [LICENSE](LICENSE) and [L
 ## Historical Security Advisories
 
 All published advisories are archived at:
-**[github.com/Claudient/Claudient/security/advisories](https://github.com/Claudient/Claudient/security/advisories)**
+**[github.com/UitbreidenOS/Claudient/security/advisories](https://github.com/UitbreidenOS/Claudient/security/advisories)**
 
 ---
 
 ## Questions?
 
 - **Security questions** → `security@claudient.dev`
-- **General support** → [GitHub Discussions](https://github.com/Claudient/Claudient/discussions)
-- **Bug reports** → [GitHub Issues](https://github.com/Claudient/Claudient/issues)
+- **General support** → [GitHub Discussions](https://github.com/UitbreidenOS/Claudient/discussions)
+- **Bug reports** → [GitHub Issues](https://github.com/UitbreidenOS/Claudient/issues)
 - **Community** → [Reddit r/uitbreiden](https://www.reddit.com/r/uitbreiden/)
 
 ---

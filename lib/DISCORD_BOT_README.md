@@ -47,7 +47,7 @@ Automatically create and manage:
 
 1. **Clone repository**
    ```bash
-   git clone https://github.com/Claudient/Claudient.git
+   git clone https://github.com/UitbreidenOS/Claudient.git
    cd Claudient
    ```
 
@@ -454,7 +454,7 @@ Tested with:
 ### Community
 - [Discord.js Server](https://discord.gg/djs)
 - [Claudient Discord](https://discord.gg/claudient)
-- [GitHub Issues](https://github.com/Claudient/Claudient/issues)
+- [GitHub Issues](https://github.com/UitbreidenOS/Claudient/issues)
 
 ## Maintenance
 
@@ -499,7 +499,7 @@ Same as Claudient: AGPL-3.0-or-later + CC-BY-SA-4.0
 For issues or questions:
 
 1. Check [Troubleshooting](#troubleshooting) section
-2. Search [GitHub Issues](https://github.com/Claudient/Claudient/issues)
+2. Search [GitHub Issues](https://github.com/UitbreidenOS/Claudient/issues)
 3. Create new issue with:
    - Discord.js version
    - Node.js version
