@@ -65,8 +65,11 @@ export function Window({ win, wm, isTop }: Props) {
   return (
     <div
       className={cn(
-        "absolute flex flex-col rounded-xl border bg-white overflow-hidden win-shadow",
-        isTop ? "border-olive/70" : "border-hairline"
+        "absolute flex flex-col bg-white overflow-hidden",
+        win.maximized
+          ? "rounded-none border-t-0 border-x-0 border-b border-hairline"
+          : "rounded-xl border win-shadow",
+        !win.maximized && isTop ? "border-olive/70" : "border-hairline"
       )}
       style={{ left: win.x, top: win.y, width: win.width, height: win.height, zIndex: win.z }}
       onPointerDown={() => wm.focus(win.key)}

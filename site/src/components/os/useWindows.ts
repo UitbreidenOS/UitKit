@@ -39,14 +39,16 @@ export function useWindows() {
             ? { w: window.innerWidth, h: window.innerHeight }
             : { w: 1280, h: 800 };
 
-        const width = Math.min(meta.defaultSize.width, area.w - 40);
-        const height = Math.min(meta.defaultSize.height, area.h - 90);
+        const isMobile = area.w < 640;
+
+        const width = isMobile ? area.w : Math.min(meta.defaultSize.width, area.w - 40);
+        const height = isMobile ? area.h - 36 : Math.min(meta.defaultSize.height, area.h - 90);
 
         const off = openOffset.current;
         openOffset.current = (off + 1) % 6;
 
-        const baseX = Math.max(20, (area.w - width) / 2 - 60);
-        const baseY = Math.max(46, (area.h - height) / 2 - 30);
+        const baseX = isMobile ? 0 : Math.max(20, (area.w - width) / 2 - 60);
+        const baseY = isMobile ? 36 : Math.max(46, (area.h - height) / 2 - 30);
 
         const next = topZ + 1;
         setTopZ(next);
@@ -54,13 +56,13 @@ export function useWindows() {
         const win: WinState = {
           key: `${appId}-${counter++}`,
           appId,
-          x: baseX + off * 28,
-          y: baseY + off * 26,
+          x: isMobile ? 0 : baseX + off * 28,
+          y: isMobile ? 36 : baseY + off * 26,
           width,
           height,
           z: next,
           minimized: false,
-          maximized: false,
+          maximized: isMobile,
         };
         return [...ws, win];
       });
@@ -80,20 +82,22 @@ export function useWindows() {
 
   const toggleMax = useCallback((key: string) => {
     const area = { w: window.innerWidth, h: window.innerHeight };
+    const isMobile = area.w < 640;
     setWindows((ws) =>
       ws.map((w) => {
         if (w.key !== key) return w;
         if (w.maximized && w.prev) {
+          if (isMobile) return w; // Don't unmaximize on mobile
           return { ...w, maximized: false, ...w.prev, prev: undefined };
         }
         return {
           ...w,
           maximized: true,
           prev: { x: w.x, y: w.y, width: w.width, height: w.height },
-          x: 8,
-          y: 44,
-          width: area.w - 16,
-          height: area.h - 96,
+          x: isMobile ? 0 : 8,
+          y: isMobile ? 36 : 44,
+          width: isMobile ? area.w : area.w - 16,
+          height: isMobile ? area.h - 36 : area.h - 96,
         };
       })
     );
