@@ -579,10 +579,10 @@ Repaired: 3/3 | All tests passing`,
     tier: "free",
     output: `claudient dependency-graph — Analysis
 ────────────────────────────────────────────
-Scanning 447 skills + 206 agents...
+Scanning 1400+ skills + 700+ agents...
 
 Graph generated:
-  Nodes: 653 (skills + agents)
+  Nodes: 2100+ (skills + agents)
   Edges: 1,847 (cross-references)
   Clusters: 28 (domain groups)
 
@@ -606,7 +606,7 @@ Output: .claudient/dependency-graph.json
 Source: English (en)
 Targets: de, fr, nl, es
 
-Translating 447 skills...
+Translating 1400+ skills...
   ✓ de/ — 6 files (initial batch)
   ✓ es/ — 3 files (initial batch)
   ○ fr/ — pending
@@ -635,7 +635,7 @@ Translated: 383 files across 4 languages`,
   ✓ Category mapping valid
 
 2/5: Frontmatter Validation
-  ✓ 447 skills checked
+  ✓ 1400+ skills checked
   ✓ All have title, description, tags
   ⚠ 3 skills missing 'date' field
 

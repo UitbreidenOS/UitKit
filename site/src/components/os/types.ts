@@ -24,7 +24,8 @@ export type AppId =
   | "marketplace"
   | "examples"
   | "swarm"
-  | "feature-flags";
+  | "feature-flags"
+  | "graph";
 
 export interface AppMeta {
   id: AppId;

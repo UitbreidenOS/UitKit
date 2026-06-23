@@ -26,11 +26,14 @@ import { SwarmApp } from "./apps/SwarmApp";
 import { MarketplaceApp } from "./apps/MarketplaceApp";
 import { ExamplesApp } from "./apps/ExamplesApp";
 import { FeatureFlagsApp } from "./apps/FeatureFlagsApp";
+import { GraphApp } from "./apps/GraphApp";
 
 export function AppContent({ appId, wm }: { appId: AppId; wm: WindowManager }) {
   switch (appId) {
     case "home":
       return <HomeApp wm={wm} />;
+    case "graph":
+      return <GraphApp />;
     case "skills":
       return <SkillsApp />;
     case "agents":

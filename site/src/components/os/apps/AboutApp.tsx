@@ -3,7 +3,7 @@ import { Eyebrow, YellowButton } from "./ui";
 
 const stats = [
   { v: "1000+", l: "Skills" },
-  { v: "206", l: "Agents" },
+  { v: "700+", l: "Agents" },
   { v: "50", l: "Stacks" },
   { v: "41", l: "MCP Configs" },
   { v: "117", l: "Guides" },

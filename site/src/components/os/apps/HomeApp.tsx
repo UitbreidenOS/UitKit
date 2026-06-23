@@ -3,7 +3,7 @@ import { Eyebrow, YellowButton, GhostButton, Tag } from "./ui";
 
 const features = [
   { icon: "⚡", name: "1000+ Skills", desc: "Domain knowledge that activates automatically.", color: "#1d4aff", app: "skills" as const },
-  { icon: "🤖", name: "206 Agents", desc: "Specialist agents with scoped tools.", color: "#b62ad9", app: "agents" as const },
+  { icon: "🤖", name: "700+ Agents", desc: "Specialist agents with scoped tools.", color: "#b62ad9", app: "agents" as const },
   { icon: "📦", name: "50 Stacks", desc: "Pre-wired workspaces for every role.", color: "#3fb950", app: "stacks" as const },
   { icon: "🔌", name: "41 MCP Configs", desc: "Ready-to-install server configs.", color: "#1078a3", app: "mcp" as const },
   { icon: "📚", name: "117 Guides", desc: "In-depth docs for every feature.", color: "#f54e00", app: "guides" as const },
@@ -112,7 +112,7 @@ export function HomeApp({ wm }: { wm: WindowManager }) {
       </h1>
       <p className="mt-4 text-[15px] text-body leading-relaxed">
         Claudient is the largest open-source knowledge base for Claude Code.
-        1000+ skills, 206 agents, 50 workspace stacks, 38 CLI scripts — all installable in 30 seconds.
+        1000+ skills, 700+ agents, 50 workspace stacks, 38 CLI scripts — all installable in 30 seconds.
         Open any window below to explore. 🧠
       </p>
 

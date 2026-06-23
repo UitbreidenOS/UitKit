@@ -24,7 +24,7 @@ const TIERS: Tier[] = [
     color: "#3fb950",
     highlighted: false,
     features: [
-      "447 public skills & 206 agents",
+      "1400+ public skills & 700+ agents",
       "50 workspace stacks",
       "41 MCP configurations",
       "100+ slash commands",
@@ -237,7 +237,7 @@ export function PricingApp() {
               From open source to enterprise-grade
             </h2>
             <p className="mt-2 text-[13.5px] text-body leading-relaxed max-w-2xl">
-              Start free with 447 skills, 206 agents, and 50 workspace stacks.
+              Start free with 1400+ skills, 700+ agents, and 50 workspace stacks.
               Scale to private hosting, governance hooks, and dedicated engineering support.
             </p>
 

@@ -25,7 +25,7 @@ export function SkillsApp() {
   const [search, setSearch] = useState("");
 
   useEffect(() => {
-    const entries = (catalogData as any).entries || [];
+    const entries = (catalogData as any).entries || (catalogData as any).default?.entries || [];
     const grouped: Record<string, SkillDef> = {};
 
     entries.forEach((entry: CatalogEntry) => {
@@ -53,8 +53,9 @@ export function SkillsApp() {
 
   if (categories.length === 0) return <div className="p-6">Loading...</div>;
 
-  const cat = categories[active];
+  const cat = categories[active] || categories[0] || { name: "", icon: "📚", count: 0, items: [] };
   const filtered = useMemo(() => {
+    if (!cat || !cat.items) return [];
     if (!search) return cat.items;
     return cat.items.filter(s =>
       s.name.toLowerCase().includes(search.toLowerCase()) ||

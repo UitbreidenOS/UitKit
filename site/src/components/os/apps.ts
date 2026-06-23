@@ -183,10 +183,18 @@ export const APPS: Record<AppId, AppMeta> = {
     accent: "#8b5cf6",
     defaultSize: { width: 900, height: 620 },
   },
+  graph: {
+    id: "graph",
+    title: "Knowledge Network",
+    icon: "🕸️",
+    accent: "#a855f7",
+    defaultSize: { width: 920, height: 640 },
+  },
 };
 
 export const DESKTOP_ICONS: AppId[] = [
   "home",
+  "graph",
   "swarm",
   "skills",
   "agents",

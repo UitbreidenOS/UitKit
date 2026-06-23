@@ -20,7 +20,8 @@ interface CompareRow {
 
 const ROWS: CompareRow[] = [
   { feature: "Skills", claudient: "1000+", ecc: "~150", volt: "~30", alireza: "~20", aider: "✗", cursor: "✗", copilot: "✗", sweep: "✗", opendevin: "✗", melty: "✗", gptpilot: "✗", mentat: "✗" },
-  { feature: "Agents", claudient: "182+", ecc: "~50", volt: "~15", alireza: "~10", aider: "✗", cursor: "✗", copilot: "✗", sweep: "✗", opendevin: "✓ (Multiple)", melty: "✗", gptpilot: "✓ (Role-based)", mentat: "✗" },
+  { feature: "Agents", claudient: "700+", ecc: "~50", volt: "~15", alireza: "~10", aider: "✗", cursor: "✗", copilot: "✗", sweep: "✗", opendevin: "✓ (Multiple)", melty: "✗", gptpilot: "✓ (Role-based)", mentat: "✗" },
+  { feature: "Coworker Agents", claudient: "510+", ecc: "✗", volt: "✗", alireza: "✗", aider: "✗", cursor: "✗", copilot: "✗", sweep: "✗", opendevin: "✗", melty: "✗", gptpilot: "✗", mentat: "✗", moat: true },
   { feature: "Slash Commands", claudient: "100+", ecc: "~40", volt: "~10", alireza: "~5", aider: "Basic (CLI)", cursor: "✗", copilot: "✗", sweep: "✗", opendevin: "✗", melty: "✗", gptpilot: "✗", mentat: "Basic" },
   { feature: "Hooks", claudient: "48", ecc: "~20", volt: "~5", alireza: "~3", aider: "✗", cursor: "✗", copilot: "✗", sweep: "Basic (Actions)", opendevin: "✗", melty: "✗", gptpilot: "✗", mentat: "✗" },
   { feature: "Personas", claudient: "10", ecc: "3", volt: "0", alireza: "0", aider: "✗", cursor: "✗", copilot: "✗", sweep: "✗", opendevin: "✗", melty: "✗", gptpilot: "✗", mentat: "✗" },
@@ -48,9 +49,14 @@ const FEATURE_DETAILS: Record<string, { value: string; alt: string; impact: stri
     impact: "Reduces token usage by ~60% by selectively importing only the instructions relevant to the active context."
   },
   "Agents": {
-    value: "182+ dedicated specialist agents configured with tailored system instructions, model routing preferences, and limited tool configurations.",
+    value: "700+ dedicated specialist agents configured with tailored system instructions, model routing preferences, and limited tool configurations.",
     alt: "Other repositories provide basic, generic prompts or a single generalist agent, leading to high hallucination rates during complex refactorings.",
     impact: "Guarantees high task accuracy by routing frontend code to style specialists, schema migrations to database experts, etc."
+  },
+  "Coworker Agents": {
+    value: "510+ specialized coworker agents mirroring real-world developer roles, equipped with specific guidelines to integrate as team members.",
+    alt: "Standard tools offer no specialized role delegation profiles or contextual team integration blueprints.",
+    impact: "Facilitates seamless division of labor between developers and specialized AI agents matching key roles."
   },
   "Slash Commands": {
     value: "Over 100 customized interactive commands (e.g. `/goal`, `/grill-me`, `/schedule`) configured to trigger automated workflows, planning reviews, or diagnostic sweeps.",
