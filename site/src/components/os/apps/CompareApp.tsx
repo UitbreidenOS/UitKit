@@ -9,30 +9,36 @@ interface CompareRow {
   alireza: string;
   aider: string;
   cursor: string;
+  copilot: string;
+  sweep: string;
+  opendevin: string;
+  melty: string;
+  gptpilot: string;
+  mentat: string;
   moat?: boolean;
 }
 
 const ROWS: CompareRow[] = [
-  { feature: "Skills", claudient: "400+", ecc: "~150", volt: "~30", alireza: "~20", aider: "✗", cursor: "✗" },
-  { feature: "Agents", claudient: "182+", ecc: "~50", volt: "~15", alireza: "~10", aider: "✗ (Dual mode)", cursor: "✗" },
-  { feature: "Slash Commands", claudient: "100+", ecc: "~40", volt: "~10", alireza: "~5", aider: "Basic (CLI)", cursor: "✗" },
-  { feature: "Hooks", claudient: "48", ecc: "~20", volt: "~5", alireza: "~3", aider: "✗", cursor: "✗" },
-  { feature: "Personas", claudient: "10", ecc: "3", volt: "0", alireza: "0", aider: "✗", cursor: "✗" },
-  { feature: "Rules", claudient: "32", ecc: "~15", volt: "~5", alireza: "~2", aider: "✗", cursor: "1 (Single file)" },
-  { feature: "MCP Configs", claudient: "41", ecc: "~10", volt: "~8", alireza: "~3", aider: "✓ (via config)", cursor: "✗" },
-  { feature: "Workspace Stacks", claudient: "50", ecc: "~12", volt: "0", alireza: "0", aider: "✗", cursor: "✗" },
-  { feature: "Plugins", claudient: "22", ecc: "~8", volt: "0", alireza: "0", aider: "✗", cursor: "✗" },
-  { feature: "Localization", claudient: "5 languages", ecc: "English only", volt: "English only", alireza: "English only", aider: "English only", cursor: "English only", moat: true },
-  { feature: "Business-domain Stacks", claudient: "42 domains", ecc: "~5", volt: "0", alireza: "0", aider: "✗", cursor: "✗", moat: true },
-  { feature: "Artifact-type Span", claudient: "Widest (15+)", ecc: "~8", volt: "~4", alireza: "~3", aider: "✗", cursor: "✗", moat: true },
-  { feature: "Dual Distribution", claudient: "Marketplace + npm", ecc: "GitHub only", volt: "GitHub only", alireza: "GitHub only", aider: "✗", cursor: "✗", moat: true },
-  { feature: "Cross-harness Export", claudient: "✓ .cursorrules, .windsurfrules", ecc: "✗", volt: "✗", alireza: "✗", aider: "✗", cursor: "✗", moat: true },
-  { feature: "Statuslines & Themes", claudient: "6 presets + themes", ecc: "✗", volt: "✗", alireza: "✗", aider: "✗", cursor: "✗" },
-  { feature: "B2B Pricing Tiers", claudient: "4 tiers", ecc: "✗", volt: "✗", alireza: "✗", aider: "✗", cursor: "✗" },
-  { feature: "AI-Readiness Scorecard", claudient: "✓ (claudient score)", ecc: "✗", volt: "✗", alireza: "✗", aider: "✗", cursor: "✗" },
-  { feature: "Compliance Stacks", claudient: "✓ SOC2, GDPR, HIPAA", ecc: "✗", volt: "✗", alireza: "✗", aider: "✗", cursor: "✗" },
-  { feature: "Multi-agent Swarms", claudient: "✓ 5 swarm patterns", ecc: "✗", volt: "✗", alireza: "✗", aider: "✗", cursor: "✗" },
-  { feature: "CLI Tooling", claudient: "9 commands", ecc: "~3", volt: "✗", alireza: "✗", aider: "Basic", cursor: "✗" },
+  { feature: "Skills", claudient: "400+", ecc: "~150", volt: "~30", alireza: "~20", aider: "✗", cursor: "✗", copilot: "✗", sweep: "✗", opendevin: "✗", melty: "✗", gptpilot: "✗", mentat: "✗" },
+  { feature: "Agents", claudient: "182+", ecc: "~50", volt: "~15", alireza: "~10", aider: "✗", cursor: "✗", copilot: "✗", sweep: "✗", opendevin: "✓ (Multiple)", melty: "✗", gptpilot: "✓ (Role-based)", mentat: "✗" },
+  { feature: "Slash Commands", claudient: "100+", ecc: "~40", volt: "~10", alireza: "~5", aider: "Basic (CLI)", cursor: "✗", copilot: "✗", sweep: "✗", opendevin: "✗", melty: "✗", gptpilot: "✗", mentat: "Basic" },
+  { feature: "Hooks", claudient: "48", ecc: "~20", volt: "~5", alireza: "~3", aider: "✗", cursor: "✗", copilot: "✗", sweep: "Basic (Actions)", opendevin: "✗", melty: "✗", gptpilot: "✗", mentat: "✗" },
+  { feature: "Personas", claudient: "10", ecc: "3", volt: "0", alireza: "0", aider: "✗", cursor: "✗", copilot: "✗", sweep: "✗", opendevin: "✗", melty: "✗", gptpilot: "✗", mentat: "✗" },
+  { feature: "Rules", claudient: "32", ecc: "~15", volt: "~5", alireza: "~2", aider: "✗", cursor: "1 (Single file)", copilot: "✗", sweep: "✗", opendevin: "✗", melty: "✗", gptpilot: "✗", mentat: "✗" },
+  { feature: "MCP Configs", claudient: "41", ecc: "~10", volt: "~8", alireza: "~3", aider: "✓ (via config)", cursor: "✗", copilot: "✗", sweep: "✗", opendevin: "✗", melty: "✗", gptpilot: "✗", mentat: "✗" },
+  { feature: "Workspace Stacks", claudient: "50", ecc: "~12", volt: "0", alireza: "0", aider: "✗", cursor: "✗", copilot: "✗", sweep: "✗", opendevin: "✗", melty: "✗", gptpilot: "✗", mentat: "✗" },
+  { feature: "Plugins", claudient: "22", ecc: "~8", volt: "0", alireza: "0", aider: "✗", cursor: "✗", copilot: "✗", sweep: "✗", opendevin: "✗", melty: "✗", gptpilot: "✗", mentat: "✗" },
+  { feature: "Localization", claudient: "5 languages", ecc: "English only", volt: "English only", alireza: "English only", aider: "English only", cursor: "English only", copilot: "English only", sweep: "English only", opendevin: "English only", melty: "English only", gptpilot: "English only", mentat: "English only", moat: true },
+  { feature: "Business-domain Stacks", claudient: "42 domains", ecc: "~5", volt: "0", alireza: "0", aider: "✗", cursor: "✗", copilot: "✗", sweep: "✗", opendevin: "✗", melty: "✗", gptpilot: "✗", mentat: "✗", moat: true },
+  { feature: "Artifact-type Span", claudient: "Widest (15+)", ecc: "~8", volt: "~4", alireza: "~3", aider: "✗", cursor: "✗", copilot: "Basic", sweep: "✗", opendevin: "✗", melty: "✗", gptpilot: "✗", mentat: "✗", moat: true },
+  { feature: "Dual Distribution", claudient: "Marketplace + npm", ecc: "GitHub only", volt: "GitHub only", alireza: "GitHub only", aider: "✗", cursor: "✗", copilot: "✗", sweep: "✗", opendevin: "✗", melty: "✗", gptpilot: "✗", mentat: "✗", moat: true },
+  { feature: "Cross-harness Export", claudient: "✓ .cursorrules, .windsurfrules", ecc: "✗", volt: "✗", alireza: "✗", aider: "✗", cursor: "✗", copilot: "✗", sweep: "✗", opendevin: "✗", melty: "✗", gptpilot: "✗", mentat: "✗", moat: true },
+  { feature: "Statuslines & Themes", claudient: "6 presets + themes", ecc: "✗", volt: "✗", alireza: "✗", aider: "✗", cursor: "✗", copilot: "✗", sweep: "✗", opendevin: "✗", melty: "✗", gptpilot: "✗", mentat: "✗" },
+  { feature: "B2B Pricing Tiers", claudient: "4 tiers", ecc: "✗", volt: "✗", alireza: "✗", aider: "✗", cursor: "✗", copilot: "✗", sweep: "✗", opendevin: "✗", melty: "✗", gptpilot: "✗", mentat: "✗" },
+  { feature: "AI-Readiness Scorecard", claudient: "✓ (claudient score)", ecc: "✗", volt: "✗", alireza: "✗", aider: "✗", cursor: "✗", copilot: "✗", sweep: "✗", opendevin: "✗", melty: "✗", gptpilot: "✗", mentat: "✗" },
+  { feature: "Compliance Stacks", claudient: "✓ SOC2, GDPR, HIPAA", ecc: "✗", volt: "✗", alireza: "✗", aider: "✗", cursor: "✗", copilot: "✗", sweep: "✗", opendevin: "✗", melty: "✗", gptpilot: "✗", mentat: "✗" },
+  { feature: "Multi-agent Swarms", claudient: "✓ 5 swarm patterns", ecc: "✗", volt: "✗", alireza: "✗", aider: "✗", cursor: "✗", copilot: "✗", sweep: "✗", opendevin: "✗", melty: "✗", gptpilot: "✗", mentat: "✗" },
+  { feature: "CLI Tooling", claudient: "9 commands", ecc: "~3", volt: "✗", alireza: "✗", aider: "Basic", cursor: "✗", copilot: "✗", sweep: "✗", opendevin: "✗", melty: "✗", gptpilot: "✗", mentat: "Basic" },
 ];
 
 const FEATURE_DETAILS: Record<string, { value: string; alt: string; impact: string }> = {
@@ -145,6 +151,12 @@ const COMPETITORS = [
   { id: "alireza", label: "alirezarezvani", color: "#6b7280" },
   { id: "aider", label: "Aider CLI", color: "#6b7280" },
   { id: "cursor", label: "Cursor/Windsurf Rules", color: "#6b7280" },
+  { id: "copilot", label: "Copilot Workspace", color: "#6b7280" },
+  { id: "sweep", label: "Sweep AI", color: "#6b7280" },
+  { id: "opendevin", label: "OpenDevin", color: "#6b7280" },
+  { id: "melty", label: "Melty AI", color: "#6b7280" },
+  { id: "gptpilot", label: "GPT Pilot", color: "#6b7280" },
+  { id: "mentat", label: "Mentat", color: "#6b7280" }
 ];
 
 type Filter = "all" | "moats";
@@ -191,7 +203,7 @@ export function CompareApp() {
       {/* Main Table + Detail Panel */}
       <div className="flex-1 flex flex-col p-4 min-h-0 overflow-y-auto">
         <div className="rounded-lg border border-hairline overflow-hidden overflow-x-auto shrink-0 mb-4">
-          <table className="w-full text-[12px] min-w-[720px]">
+          <table className="w-full text-[12px] min-w-[1100px]">
             <thead>
               <tr className="bg-cream border-b border-hairline">
                 <th className="text-left px-3 py-2.5 font-bold text-ink w-[180px]">Feature</th>
@@ -201,6 +213,12 @@ export function CompareApp() {
                 <th className="text-left px-3 py-2.5 font-semibold text-mute">alirezarezvani</th>
                 <th className="text-left px-3 py-2.5 font-semibold text-mute">Aider CLI</th>
                 <th className="text-left px-3 py-2.5 font-semibold text-mute">Cursor Rules</th>
+                <th className="text-left px-3 py-2.5 font-semibold text-mute">Copilot Workspace</th>
+                <th className="text-left px-3 py-2.5 font-semibold text-mute">Sweep AI</th>
+                <th className="text-left px-3 py-2.5 font-semibold text-mute">OpenDevin</th>
+                <th className="text-left px-3 py-2.5 font-semibold text-mute">Melty AI</th>
+                <th className="text-left px-3 py-2.5 font-semibold text-mute">GPT Pilot</th>
+                <th className="text-left px-3 py-2.5 font-semibold text-mute">Mentat</th>
               </tr>
             </thead>
             <tbody>
@@ -230,6 +248,12 @@ export function CompareApp() {
                     <td className="px-3 py-2 text-mute">{row.alireza}</td>
                     <td className="px-3 py-2 text-mute">{row.aider}</td>
                     <td className="px-3 py-2 text-mute">{row.cursor}</td>
+                    <td className="px-3 py-2 text-mute">{row.copilot}</td>
+                    <td className="px-3 py-2 text-mute">{row.sweep}</td>
+                    <td className="px-3 py-2 text-mute">{row.opendevin}</td>
+                    <td className="px-3 py-2 text-mute">{row.melty}</td>
+                    <td className="px-3 py-2 text-mute">{row.gptpilot}</td>
+                    <td className="px-3 py-2 text-mute">{row.mentat}</td>
                   </tr>
                 );
               })}
