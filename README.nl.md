@@ -779,6 +779,6 @@ Duaal gelicentieerd:
 - **Code** — [AGPL-3.0](LICENSE-CODE). De Astro-site, hook-scripts, npm-pakketbron, alles wat kan worden uitgevoerd.
 - **Inhoud** — [CC-BY-SA-4.0](LICENSE-CONTENT). Alle markdown-vaardigheden, agents, hooks, MCP-configs, werkstromen, gidsen, prompts, regels en documentatie.
 
-Zie [LICENSE](LICENSE) voor de grondslag en volledige details. Voor commerciële licentieaanvragen, schrijf naar [hello@uitbreiden.com](mailto:hello@uitbreiden.com).
+Zie [LICENSE](LICENSE) voor de grondslag en volledige details. Voor commerciële licentieaanvragen, schrijf naar [ceo@uitbreiden.com](mailto:ceo@uitbreiden.com).
 
 © 2026 [Uitbreiden](https://uitbreiden.com/) · Tushar Aggarwal

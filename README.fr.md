@@ -779,6 +779,6 @@ Double licence :
 - **Code** — [AGPL-3.0](LICENSE-CODE). Le site Astro, scripts de hooks, source du package npm, tout ce qui est exécutable.
 - **Contenu** — [CC-BY-SA-4.0](LICENSE-CONTENT). Tous les fichiers markdown skills, agents, hooks, configurations MCP, workflows, guides, prompts, règles et documentation.
 
-Voir [LICENSE](LICENSE) pour la justification et les détails complets. Pour les demandes de licences commerciales, écrivez à [hello@uitbreiden.com](mailto:hello@uitbreiden.com).
+Voir [LICENSE](LICENSE) pour la justification et les détails complets. Pour les demandes de licences commerciales, écrivez à [ceo@uitbreiden.com](mailto:ceo@uitbreiden.com).
 
 © 2026 [Uitbreiden](https://uitbreiden.com/) · Tushar Aggarwal

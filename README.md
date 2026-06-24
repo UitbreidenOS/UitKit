@@ -895,6 +895,6 @@ Dual licensed:
 - **Code** — [AGPL-3.0](LICENSE-CODE). The Astro site, hook scripts, npm package source, anything executable.
 - **Content** — [CC-BY-SA-4.0](LICENSE-CONTENT). All markdown skills, agents, hooks, MCP configs, workflows, guides, prompts, rules, and documentation.
 
-See [LICENSE](LICENSE) for the rationale and full details. For commercial licensing inquiries, write to [hello@uitbreiden.com](mailto:hello@uitbreiden.com).
+See [LICENSE](LICENSE) for the rationale and full details. For commercial licensing inquiries, write to [ceo@uitbreiden.com](mailto:ceo@uitbreiden.com).
 
 © 2026 [Uitbreiden](https://uitbreiden.com/) · Tushar Aggarwal

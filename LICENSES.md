@@ -236,7 +236,7 @@ When distributing UitKit (npm package, Docker image, etc.), include:
 
 - **Code:** Requires compliance with AGPL-3.0 (network copyleft)
 - **Content:** Requires attribution + share-alike (CC-BY-SA-4.0)
-- For alternate arrangements, contact [hello@uitbreiden.com](mailto:hello@uitbreiden.com)
+- For alternate arrangements, contact [ceo@uitbreiden.com](mailto:ceo@uitbreiden.com)
 
 ---
 
