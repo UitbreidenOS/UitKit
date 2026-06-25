@@ -253,6 +253,13 @@ export const APPS: Record<AppId, AppMeta> = {
     accent: "#6366f1",
     defaultSize: { width: 880, height: 600 },
   },
+  "clean-slate": {
+    id: "clean-slate",
+    title: "Clean Slate Boot",
+    icon: "🧹",
+    accent: "#76786c",
+    defaultSize: { width: 680, height: 500 },
+  },
 };
 
 export const DESKTOP_ICONS: AppId[] = [
@@ -291,5 +298,6 @@ export const DESKTOP_ICONS: AppId[] = [
   "jarvis",
   "token-saver",
   "fusion",
+  "clean-slate",
   "trash",
 ];

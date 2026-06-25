@@ -36,6 +36,7 @@ import { LearnEngineApp } from "./apps/LearnEngineApp";
 import { JarvisApp } from "./apps/JarvisApp";
 import { TokenSaverApp } from "./apps/TokenSaverApp";
 import { FusionApp } from "./apps/FusionApp";
+import { CleanSlateApp } from "./apps/CleanSlateApp";
 
 export function AppContent({ appId, wm }: { appId: AppId; wm: WindowManager }) {
   switch (appId) {
@@ -112,6 +113,8 @@ export function AppContent({ appId, wm }: { appId: AppId; wm: WindowManager }) {
       return <TokenSaverApp />;
     case "fusion":
       return <FusionApp />;
+    case "clean-slate":
+      return <CleanSlateApp />;
     default:
       return null;
   }
