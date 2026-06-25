@@ -178,6 +178,13 @@ const categories = [...new Set(guides.map(g => g.category))];
 export function GuidesApp() {
   const [active, setActive] = useState("auto-mode");
   const [search, setSearch] = useState("");
+  const [readGuides, setReadGuides] = useState<string[]>(() => {
+    if (typeof window !== "undefined") {
+      const saved = localStorage.getItem("uitkit_read_guides");
+      return saved ? JSON.parse(saved) : [];
+    }
+    return [];
+  });
 
   const filteredGuides = useMemo(() => {
     if (!search.trim()) return guides;
@@ -190,18 +197,54 @@ export function GuidesApp() {
   }, [filteredGuides]);
 
   const doc = filteredGuides.find(g => g.id === active) ?? filteredGuides[0];
+
+  const handleToggleRead = (id: string) => {
+    const nextRead = readGuides.includes(id)
+      ? readGuides.filter((x) => x !== id)
+      : [...readGuides, id];
+    setReadGuides(nextRead);
+    localStorage.setItem("uitkit_read_guides", JSON.stringify(nextRead));
+
+    // Update Sidekick Pet
+    window.dispatchEvent(new CustomEvent("sidekick_status_change", {
+      detail: {
+        status: "happy",
+        message: nextRead.includes(id) ? `Completed reading: ${id}` : `Marked unread: ${id}`
+      }
+    }));
+  };
+
+  const totalGuidesCount = guides.length;
+  const readGuidesCount = guides.filter(g => readGuides.includes(g.id)).length;
+  const readPercent = totalGuidesCount > 0 ? Math.round((readGuidesCount / totalGuidesCount) * 100) : 0;
+
   if (!doc) return <div className="p-6 text-mute text-sm">No guides found.</div>;
 
   return (
     <div className="h-full flex">
-      <aside className="w-52 shrink-0 border-r border-hairline bg-cream flex flex-col overflow-hidden">
-        <div className="p-3 pb-2">
+      <aside className="w-56 shrink-0 border-r border-hairline bg-cream flex flex-col overflow-hidden">
+        <div className="p-3 pb-2 border-b border-hairline">
           <Eyebrow color="#1078a3">Knowledge Base</Eyebrow>
+          
+          {/* Progress bar */}
+          <div className="mt-2 mb-3 bg-zinc-100 p-2 rounded-lg border border-hairline">
+            <div className="flex justify-between items-center text-[10px] font-bold text-ink mb-1">
+              <span>Read Tracker</span>
+              <span>{readPercent}% ({readGuidesCount}/{totalGuidesCount})</span>
+            </div>
+            <div className="w-full bg-zinc-200 h-1.5 rounded-full overflow-hidden">
+              <div
+                style={{ width: `${readPercent}%` }}
+                className="bg-brand-blue h-full transition-all duration-300"
+              />
+            </div>
+          </div>
+
           <input
             value={search}
             onChange={(e) => { setSearch(e.target.value); setActive(""); }}
             placeholder="Search guides..."
-            className="mt-2 w-full rounded-lg border border-hairline bg-white px-2.5 py-1.5 text-[12px] text-ink placeholder:text-mute/60 focus:outline-none focus:ring-1 focus:ring-brand-blue/40"
+            className="w-full rounded-lg border border-hairline bg-white px-2.5 py-1.5 text-[12px] text-ink placeholder:text-mute/60 focus:outline-none focus:ring-1 focus:ring-brand-blue/40"
           />
         </div>
         <div className="flex-1 overflow-auto px-2 pb-2">
@@ -209,39 +252,67 @@ export function GuidesApp() {
             <div key={topic} className="mt-2 first:mt-0">
               <div className="text-[10px] font-bold text-mute uppercase tracking-wider px-2.5 py-1">{topic}</div>
               <div className="space-y-0.5">
-                {filteredGuides.filter(g => g.category === topic).map(g => (
-                  <button
-                    key={g.id}
-                    onClick={() => setActive(g.id)}
-                    className={`w-full text-left rounded-md px-2.5 py-1.5 text-[12px] transition ${
-                      g.id === active ? "bg-white border border-hairline font-semibold text-brand-teal" : "text-body hover:bg-white/60"
-                    }`}
-                  >
-                    {g.title}
-                  </button>
-                ))}
+                {filteredGuides.filter(g => g.category === topic).map(g => {
+                  const isRead = readGuides.includes(g.id);
+                  return (
+                    <button
+                      key={g.id}
+                      onClick={() => setActive(g.id)}
+                      className={`w-full text-left rounded-md px-2.5 py-1.5 text-[12px] transition flex justify-between items-center ${
+                        g.id === active ? "bg-white border border-hairline font-semibold text-brand-teal" : "text-body hover:bg-white/60"
+                      }`}
+                    >
+                      <span className="truncate mr-1">{g.title}</span>
+                      {isRead && <span className="text-emerald-500 font-bold text-[11px]">✓</span>}
+                    </button>
+                  );
+                })}
               </div>
             </div>
           ))}
         </div>
-        <div className="px-3 py-2 border-t border-hairline text-[10px] text-mute">
-          {guides.length} guides
+        <div className="px-3 py-2 border-t border-hairline text-[10px] text-mute flex justify-between">
+          <span>{guides.length} guides</span>
+          <button
+            onClick={() => {
+              setReadGuides([]);
+              localStorage.removeItem("uitkit_read_guides");
+            }}
+            className="hover:text-red-500 font-semibold"
+          >
+            Reset
+          </button>
         </div>
       </aside>
 
-      <article className="flex-1 min-w-0 overflow-auto p-6">
-        <Tag color="#1078a3">{doc.category}</Tag>
-        <h1 className="mt-2 text-xl font-extrabold text-ink">{doc.title}</h1>
-        <p className="mt-3 text-[13px] text-body leading-relaxed max-w-xl">{doc.body}</p>
-
-        {doc.excerpt && (
-          <div className="mt-4 rounded-lg border border-hairline bg-cream/50 p-4 max-w-xl">
-            <div className="text-[11px] font-bold text-mute uppercase tracking-wider mb-2">From the guide</div>
-            <p className="text-[12.5px] text-body leading-relaxed">{doc.excerpt}</p>
+      <article className="flex-1 min-w-0 overflow-auto p-6 flex flex-col justify-between">
+        <div>
+          <div className="flex items-center justify-between">
+            <Tag color="#1078a3">{doc.category}</Tag>
+            <button
+              onClick={() => handleToggleRead(doc.id)}
+              className={`px-3 py-1 rounded-lg text-[11px] font-bold border transition ${
+                readGuides.includes(doc.id)
+                  ? "bg-emerald-50 border-emerald-200 text-emerald-600"
+                  : "bg-white border-hairline text-mute hover:bg-zinc-50 hover:text-ink"
+              }`}
+            >
+              {readGuides.includes(doc.id) ? "✓ Completed" : "Mark as Read"}
+            </button>
           </div>
-        )}
 
-        <div className="mt-5 flex flex-wrap gap-3">
+          <h1 className="mt-2 text-xl font-extrabold text-ink">{doc.title}</h1>
+          <p className="mt-3 text-[13px] text-body leading-relaxed max-w-xl">{doc.body}</p>
+
+          {doc.excerpt && (
+            <div className="mt-4 rounded-lg border border-hairline bg-cream/50 p-4 max-w-xl">
+              <div className="text-[11px] font-bold text-mute uppercase tracking-wider mb-2">From the guide</div>
+              <p className="text-[12.5px] text-body leading-relaxed">{doc.excerpt}</p>
+            </div>
+          )}
+        </div>
+
+        <div className="mt-8 border-t border-hairline pt-5 flex flex-wrap gap-3">
           <a
             href={`${REPO_GUIDES_URL}/${doc.id}.md`}
             target="_blank"
