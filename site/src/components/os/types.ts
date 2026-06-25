@@ -26,7 +26,8 @@ export type AppId =
   | "swarm"
   | "feature-flags"
   | "graph"
-  | "sidekick-settings";
+  | "sidekick-settings"
+  | "loop-eng";
 
 export interface AppMeta {
   id: AppId;

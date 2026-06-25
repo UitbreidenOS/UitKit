@@ -197,6 +197,13 @@ export const APPS: Record<AppId, AppMeta> = {
     accent: "#10b981",
     defaultSize: { width: 560, height: 520 },
   },
+  "loop-eng": {
+    id: "loop-eng",
+    title: "Loop Engineering",
+    icon: "🔁",
+    accent: "#ef4444",
+    defaultSize: { width: 880, height: 600 },
+  },
 };
 
 export const DESKTOP_ICONS: AppId[] = [
@@ -227,5 +234,6 @@ export const DESKTOP_ICONS: AppId[] = [
   "install",
   "about",
   "sidekick-settings",
+  "loop-eng",
   "trash",
 ];

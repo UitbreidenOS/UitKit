@@ -28,6 +28,7 @@ import { ExamplesApp } from "./apps/ExamplesApp";
 import { FeatureFlagsApp } from "./apps/FeatureFlagsApp";
 import { GraphApp } from "./apps/GraphApp";
 import { SidekickSettingsApp } from "./apps/SidekickSettingsApp";
+import { LoopApp } from "./apps/LoopApp";
 
 export function AppContent({ appId, wm }: { appId: AppId; wm: WindowManager }) {
   switch (appId) {
@@ -88,6 +89,8 @@ export function AppContent({ appId, wm }: { appId: AppId; wm: WindowManager }) {
       return <FeatureFlagsApp />;
     case "sidekick-settings":
       return <SidekickSettingsApp />;
+    case "loop-eng":
+      return <LoopApp />;
     default:
       return null;
   }
