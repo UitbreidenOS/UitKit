@@ -31,6 +31,7 @@ import { SidekickSettingsApp } from "./apps/SidekickSettingsApp";
 import { LoopApp } from "./apps/LoopApp";
 import { GoalModeApp } from "./apps/GoalModeApp";
 import { KanbanApp } from "./apps/KanbanApp";
+import { OracleApp } from "./apps/OracleApp";
 
 export function AppContent({ appId, wm }: { appId: AppId; wm: WindowManager }) {
   switch (appId) {
@@ -97,6 +98,8 @@ export function AppContent({ appId, wm }: { appId: AppId; wm: WindowManager }) {
       return <GoalModeApp />;
     case "kanban":
       return <KanbanApp />;
+    case "oracle":
+      return <OracleApp />;
     default:
       return null;
   }

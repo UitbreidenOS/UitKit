@@ -218,6 +218,13 @@ export const APPS: Record<AppId, AppMeta> = {
     accent: "#6366f1",
     defaultSize: { width: 880, height: 600 },
   },
+  "oracle": {
+    id: "oracle",
+    title: "AI Oracle Radar",
+    icon: "📡",
+    accent: "#06b6d4",
+    defaultSize: { width: 780, height: 560 },
+  },
 };
 
 export const DESKTOP_ICONS: AppId[] = [
@@ -251,5 +258,6 @@ export const DESKTOP_ICONS: AppId[] = [
   "loop-eng",
   "goals",
   "kanban",
+  "oracle",
   "trash",
 ];

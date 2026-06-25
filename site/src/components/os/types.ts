@@ -29,7 +29,8 @@ export type AppId =
   | "sidekick-settings"
   | "loop-eng"
   | "goals"
-  | "kanban";
+  | "kanban"
+  | "oracle";
 
 export interface AppMeta {
   id: AppId;
