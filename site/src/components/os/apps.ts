@@ -246,6 +246,13 @@ export const APPS: Record<AppId, AppMeta> = {
     accent: "#10b981",
     defaultSize: { width: 740, height: 540 },
   },
+  "fusion": {
+    id: "fusion",
+    title: "Fusion Boardroom",
+    icon: "⚖️",
+    accent: "#6366f1",
+    defaultSize: { width: 880, height: 600 },
+  },
 };
 
 export const DESKTOP_ICONS: AppId[] = [
@@ -283,5 +290,6 @@ export const DESKTOP_ICONS: AppId[] = [
   "learn-eng",
   "jarvis",
   "token-saver",
+  "fusion",
   "trash",
 ];
