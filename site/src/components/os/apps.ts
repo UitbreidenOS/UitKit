@@ -204,6 +204,13 @@ export const APPS: Record<AppId, AppMeta> = {
     accent: "#ef4444",
     defaultSize: { width: 880, height: 600 },
   },
+  "goals": {
+    id: "goals",
+    title: "Goal Tracker",
+    icon: "🎯",
+    accent: "#f59e0b",
+    defaultSize: { width: 680, height: 500 },
+  },
 };
 
 export const DESKTOP_ICONS: AppId[] = [
@@ -235,5 +242,6 @@ export const DESKTOP_ICONS: AppId[] = [
   "about",
   "sidekick-settings",
   "loop-eng",
+  "goals",
   "trash",
 ];

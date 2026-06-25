@@ -27,7 +27,8 @@ export type AppId =
   | "feature-flags"
   | "graph"
   | "sidekick-settings"
-  | "loop-eng";
+  | "loop-eng"
+  | "goals";
 
 export interface AppMeta {
   id: AppId;

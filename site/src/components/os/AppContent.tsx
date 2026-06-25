@@ -29,6 +29,7 @@ import { FeatureFlagsApp } from "./apps/FeatureFlagsApp";
 import { GraphApp } from "./apps/GraphApp";
 import { SidekickSettingsApp } from "./apps/SidekickSettingsApp";
 import { LoopApp } from "./apps/LoopApp";
+import { GoalModeApp } from "./apps/GoalModeApp";
 
 export function AppContent({ appId, wm }: { appId: AppId; wm: WindowManager }) {
   switch (appId) {
@@ -91,6 +92,8 @@ export function AppContent({ appId, wm }: { appId: AppId; wm: WindowManager }) {
       return <SidekickSettingsApp />;
     case "loop-eng":
       return <LoopApp />;
+    case "goals":
+      return <GoalModeApp />;
     default:
       return null;
   }
