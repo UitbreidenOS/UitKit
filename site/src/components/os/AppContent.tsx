@@ -44,6 +44,7 @@ import { StudiosApp } from "./apps/StudiosApp";
 import { PipelineApp } from "./apps/PipelineApp";
 import { RadarFeedApp } from "./apps/RadarFeedApp";
 import { RoadmapApp } from "./apps/RoadmapApp";
+import { MastermindApp } from "./apps/MastermindApp";
 
 export function AppContent({ appId, wm }: { appId: AppId; wm: WindowManager }) {
   switch (appId) {
@@ -136,6 +137,8 @@ export function AppContent({ appId, wm }: { appId: AppId; wm: WindowManager }) {
       return <RadarFeedApp />;
     case "roadmap":
       return <RoadmapApp />;
+    case "mastermind":
+      return <MastermindApp />;
     default:
       return null;
   }

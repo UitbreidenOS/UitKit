@@ -309,6 +309,13 @@ export const APPS: Record<AppId, AppMeta> = {
     accent: "#f59e0b",
     defaultSize: { width: 780, height: 540 },
   },
+  "mastermind": {
+    id: "mastermind",
+    title: "Agent Mastermind",
+    icon: "🏛️",
+    accent: "#b62ad9",
+    defaultSize: { width: 780, height: 560 },
+  },
 };
 
 export const DESKTOP_ICONS: AppId[] = [
@@ -355,5 +362,6 @@ export const DESKTOP_ICONS: AppId[] = [
   "pipeline",
   "radar-feed",
   "roadmap",
+  "mastermind",
   "trash",
 ];

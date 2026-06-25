@@ -42,7 +42,8 @@ export type AppId =
   | "studios"
   | "pipeline"
   | "radar-feed"
-  | "roadmap";
+  | "roadmap"
+  | "mastermind";
 
 export interface AppMeta {
   id: AppId;
