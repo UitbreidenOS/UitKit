@@ -30,6 +30,7 @@ import { GraphApp } from "./apps/GraphApp";
 import { SidekickSettingsApp } from "./apps/SidekickSettingsApp";
 import { LoopApp } from "./apps/LoopApp";
 import { GoalModeApp } from "./apps/GoalModeApp";
+import { KanbanApp } from "./apps/KanbanApp";
 
 export function AppContent({ appId, wm }: { appId: AppId; wm: WindowManager }) {
   switch (appId) {
@@ -94,6 +95,8 @@ export function AppContent({ appId, wm }: { appId: AppId; wm: WindowManager }) {
       return <LoopApp />;
     case "goals":
       return <GoalModeApp />;
+    case "kanban":
+      return <KanbanApp />;
     default:
       return null;
   }

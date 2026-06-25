@@ -28,7 +28,8 @@ export type AppId =
   | "graph"
   | "sidekick-settings"
   | "loop-eng"
-  | "goals";
+  | "goals"
+  | "kanban";
 
 export interface AppMeta {
   id: AppId;

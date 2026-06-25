@@ -211,6 +211,13 @@ export const APPS: Record<AppId, AppMeta> = {
     accent: "#f59e0b",
     defaultSize: { width: 680, height: 500 },
   },
+  "kanban": {
+    id: "kanban",
+    title: "Agent Kanban",
+    icon: "📋",
+    accent: "#6366f1",
+    defaultSize: { width: 880, height: 600 },
+  },
 };
 
 export const DESKTOP_ICONS: AppId[] = [
@@ -243,5 +250,6 @@ export const DESKTOP_ICONS: AppId[] = [
   "sidekick-settings",
   "loop-eng",
   "goals",
+  "kanban",
   "trash",
 ];
