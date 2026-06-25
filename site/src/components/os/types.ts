@@ -37,7 +37,8 @@ export type AppId =
   | "fusion"
   | "clean-slate"
   | "takeover"
-  | "lead-gen";
+  | "lead-gen"
+  | "search-console";
 
 export interface AppMeta {
   id: AppId;

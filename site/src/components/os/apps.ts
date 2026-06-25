@@ -274,6 +274,13 @@ export const APPS: Record<AppId, AppMeta> = {
     accent: "#1078a3",
     defaultSize: { width: 820, height: 580 },
   },
+  "search-console": {
+    id: "search-console",
+    title: "Search Console SEO",
+    icon: "🔍",
+    accent: "#f59e0b",
+    defaultSize: { width: 860, height: 600 },
+  },
 };
 
 export const DESKTOP_ICONS: AppId[] = [
@@ -315,5 +322,6 @@ export const DESKTOP_ICONS: AppId[] = [
   "clean-slate",
   "takeover",
   "lead-gen",
+  "search-console",
   "trash",
 ];

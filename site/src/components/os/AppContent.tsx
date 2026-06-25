@@ -39,6 +39,7 @@ import { FusionApp } from "./apps/FusionApp";
 import { CleanSlateApp } from "./apps/CleanSlateApp";
 import { TakeoverApp } from "./apps/TakeoverApp";
 import { LeadGenApp } from "./apps/LeadGenApp";
+import { SearchConsoleApp } from "./apps/SearchConsoleApp";
 
 export function AppContent({ appId, wm }: { appId: AppId; wm: WindowManager }) {
   switch (appId) {
@@ -121,6 +122,8 @@ export function AppContent({ appId, wm }: { appId: AppId; wm: WindowManager }) {
       return <TakeoverApp />;
     case "lead-gen":
       return <LeadGenApp />;
+    case "search-console":
+      return <SearchConsoleApp />;
     default:
       return null;
   }
