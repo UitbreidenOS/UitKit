@@ -288,6 +288,13 @@ export const APPS: Record<AppId, AppMeta> = {
     accent: "#ec4899",
     defaultSize: { width: 840, height: 580 },
   },
+  "pipeline": {
+    id: "pipeline",
+    title: "Pipeline Builder",
+    icon: "🔗",
+    accent: "#10b981",
+    defaultSize: { width: 880, height: 600 },
+  },
 };
 
 export const DESKTOP_ICONS: AppId[] = [
@@ -331,5 +338,6 @@ export const DESKTOP_ICONS: AppId[] = [
   "lead-gen",
   "search-console",
   "studios",
+  "pipeline",
   "trash",
 ];

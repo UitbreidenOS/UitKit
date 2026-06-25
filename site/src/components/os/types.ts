@@ -39,7 +39,8 @@ export type AppId =
   | "takeover"
   | "lead-gen"
   | "search-console"
-  | "studios";
+  | "studios"
+  | "pipeline";
 
 export interface AppMeta {
   id: AppId;
