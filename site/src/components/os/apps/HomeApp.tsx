@@ -57,7 +57,7 @@ export function HomeApp({ wm }: { wm: WindowManager }) {
         
         <div className="space-y-1 z-10">
           <Eyebrow color="#10b981">Mission Control Dashboard</Eyebrow>
-          <h1 className="text-2xl font-extrabold tracking-tight">Agent-OS Central Hub</h1>
+          <h1 className="text-2xl font-extrabold tracking-tight">UitKit Central Hub</h1>
           <div className="flex items-center gap-2 text-[12px] text-zinc-400 mt-1">
             <span className="inline-block size-2 rounded-full bg-emerald-500 animate-pulse" />
             <span>{agentStatus}</span>

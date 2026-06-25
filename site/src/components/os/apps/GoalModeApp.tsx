@@ -313,7 +313,7 @@ export function GoalModeApp() {
             {/* Agent Context Display */}
             <Card className="bg-zinc-950 text-zinc-350 p-4 font-mono text-[11.5px] border-none shadow-md">
               <h4 className="text-[11px] font-bold text-zinc-500 border-b border-zinc-900 pb-1.5 mb-2 uppercase tracking-wider">
-                🤖 Agent-OS Goal Memory Stream
+                🤖 UitKit Goal Memory Stream
               </h4>
               <div className="space-y-1 text-zinc-400">
                 <div>[SYSTEM] Goal context loaded to memory vectors.</div>
