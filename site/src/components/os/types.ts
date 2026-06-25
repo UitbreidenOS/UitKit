@@ -43,7 +43,8 @@ export type AppId =
   | "pipeline"
   | "radar-feed"
   | "roadmap"
-  | "mastermind";
+  | "mastermind"
+  | "old-vs-new";
 
 export interface AppMeta {
   id: AppId;

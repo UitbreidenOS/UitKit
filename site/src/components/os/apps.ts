@@ -316,6 +316,13 @@ export const APPS: Record<AppId, AppMeta> = {
     accent: "#b62ad9",
     defaultSize: { width: 780, height: 560 },
   },
+  "old-vs-new": {
+    id: "old-vs-new",
+    title: "Old vs New Way",
+    icon: "📈",
+    accent: "#ef4444",
+    defaultSize: { width: 780, height: 520 },
+  },
 };
 
 export const DESKTOP_ICONS: AppId[] = [
@@ -363,5 +370,6 @@ export const DESKTOP_ICONS: AppId[] = [
   "radar-feed",
   "roadmap",
   "mastermind",
+  "old-vs-new",
   "trash",
 ];
