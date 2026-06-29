@@ -1,6 +1,6 @@
 {
   "name": "uitkit",
-  "version": "1.1.0",
+  "version": "1.10.1",
   "description": "The Claude Code knowledge system — installable plugin marketplace with 400+ skills, 182+ agents, 42 workspace stacks, 41 MCP configs, 100+ commands, 40 hooks, 32 rules, 10 routines, 100+ guides, 83 structures, output styles, themes, statuslines, keybindings, settings templates, and an Agent SDK pack in 5 languages. Features: matrix CLI tool, SVG inspector, swarm sandbox, and advanced CLI automation.",
   "keywords": [
     "claude-code",

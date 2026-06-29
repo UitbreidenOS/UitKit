@@ -48,7 +48,6 @@ import { MastermindApp } from "./apps/MastermindApp";
 import { OldVsNewApp } from "./apps/OldVsNewApp";
 import { AnimatedFlowApp } from "./apps/AnimatedFlowApp";
 import { TestimonialsApp } from "./apps/TestimonialsApp";
-import { PonytailApp } from "./apps/PonytailApp";
 
 export function AppContent({ appId, wm }: { appId: AppId; wm: WindowManager }) {
   switch (appId) {
@@ -149,8 +148,6 @@ export function AppContent({ appId, wm }: { appId: AppId; wm: WindowManager }) {
       return <AnimatedFlowApp />;
     case "testimonials":
       return <TestimonialsApp />;
-    case "ponytail":
-      return <PonytailApp />;
     default:
       return null;
   }
