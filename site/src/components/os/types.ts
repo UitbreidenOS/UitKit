@@ -46,7 +46,8 @@ export type AppId =
   | "mastermind"
   | "old-vs-new"
   | "animated-flow"
-  | "testimonials";
+  | "testimonials"
+  | "ponytail";
 
 export interface AppMeta {
   id: AppId;

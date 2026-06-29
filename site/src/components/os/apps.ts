@@ -337,6 +337,13 @@ export const APPS: Record<AppId, AppMeta> = {
     accent: "#fb7185",
     defaultSize: { width: 820, height: 560 },
   },
+  "ponytail": {
+    id: "ponytail",
+    title: "Ponytail YAGNI",
+    icon: "💇",
+    accent: "#a855f7",
+    defaultSize: { width: 840, height: 585 },
+  },
 };
 
 export const DESKTOP_ICONS: AppId[] = [
@@ -387,5 +394,6 @@ export const DESKTOP_ICONS: AppId[] = [
   "old-vs-new",
   "animated-flow",
   "testimonials",
+  "ponytail",
   "trash",
 ];

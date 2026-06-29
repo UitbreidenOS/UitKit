@@ -6,7 +6,7 @@ import { cn } from "../../utils/cn";
 const CATEGORY_MAP: Record<string, string[]> = {
   Core: ["home", "graph", "skills", "agents", "mcp", "guides", "stacks", "cli", "install", "about", "sidekick-settings"],
   Workflows: ["loop-eng", "goals", "kanban", "workflows", "pipeline", "roadmap", "mastermind", "old-vs-new", "animated-flow"],
-  Tools: ["oracle", "learn-eng", "jarvis", "token-saver", "fusion", "clean-slate", "takeover", "lead-gen", "search-console", "studios", "radar-feed", "benchmarks", "community", "showcase", "enterprise", "compare", "marketplace", "examples", "feature-flags", "hooks", "rules", "commands", "plugins", "personas", "toolkit", "testimonials"]
+  Tools: ["oracle", "learn-eng", "jarvis", "token-saver", "fusion", "clean-slate", "takeover", "lead-gen", "search-console", "studios", "radar-feed", "benchmarks", "community", "showcase", "enterprise", "compare", "marketplace", "examples", "feature-flags", "hooks", "rules", "commands", "plugins", "personas", "toolkit", "testimonials", "ponytail"]
 };
 
 export function Desktop({ wm }: { wm: WindowManager }) {
